@@ -50,7 +50,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Github Action Automatic Update Arxiv RSS"
-          files: data/
+          files: data/rss/rss.json data/rss/rss.xml
           rebase: 'true'
           name: ${{ env.GITHUB_USER_NAME }}
           email: ${{ env.GITHUB_USER_EMAIL }}
