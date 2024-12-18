@@ -1,0 +1,26 @@
+[
+    "This is a example rule.json, supports: AND,OR,NOT",
+    "%STRING% means filtered as a word",
+    "for example: `xxx AI xxx` will pass the rule %AI%, but `xxxAIxxx` won't",
+    "list is treated as OR",
+
+    "interest1",
+    "interest2",
+
+    ["interest3.1","interest3.2"],
+    {
+        "type":"NOT",
+        "rules":"not interset1"
+    },
+    {
+        "type":"AND",
+        "rules":[
+            "interest4",
+            ["interest5","interest6"],
+            {
+                "type":"NOT",
+                "rules":"not interset2"
+            }
+        ]
+    }
+]
