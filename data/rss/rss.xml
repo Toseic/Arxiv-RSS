@@ -6,244 +6,303 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Thu, 19 Dec 2024 00:52:10 </lastBuildDate>
+  <lastBuildDate>Thu, 19 Dec 2024 06:38:31 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Thu, 19 Dec 2024 00:52:10 </pubDate>
+  <pubDate>Thu, 19 Dec 2024 06:38:31 </pubDate>
   <item>
-   <title>Using LLM-Generated Draft Replies to Support Human Experts in Responding to Stakeholder Inquiries in Maritime Industry: A Real-World Case Study of Industrial AI</title>
-   <link>https://arxiv.org/abs/2412.12732</link>
-   <description>The maritime industry requires effective communication among diverse stakeholders to address complex, safety-critical challenges. Industrial AI, including Large Language Models (LLMs), has the potential to augment human experts' workflows in this specialized domain. Our case study investigated the utility of LLMs in drafting replies to stakeholder inquiries and supporting case handlers. We conducted a preliminary study (observations and interviews), a survey, and a text similarity analysis (LLM-as-a-judge and Semantic Embedding Similarity). We discover that while LLM drafts can streamline workflows, they often require significant modifications to meet the specific demands of maritime communications. Though LLMs are not yet mature enough for safety-critical applications without human oversight, they can serve as valuable augmentative tools. Final decision-making thus must remain with human experts. However, by leveraging the strengths of both humans and LLMs, fostering human-AI collaboration, industries can increase efficiency while maintaining high standards of quality and precision tailored to each case.</description>
-   <guid>oai:arXiv.org:2412.12732v1</guid>
+   <title>An Exploratory Study of ML Sketches and Visual Code Assistants</title>
+   <link>https://arxiv.org/abs/2412.13386</link>
+   <description>This paper explores the integration of Visual Code Assistants in Integrated Development Environments (IDEs). In Software Engineering, whiteboard sketching is often the initial step before coding, serving as a crucial collaboration tool for developers. Previous studies have investigated patterns in SE sketches and how they are used in practice, yet methods for directly using these sketches for code generation remain limited. The emergence of visually-equipped large language models presents an opportunity to bridge this gap, which is the focus of our research. In this paper, we built a first prototype of a Visual Code Assistant to get user feedback regarding in-IDE sketch-to-code tools. We conduct an experiment with 19 data scientists, most of whom regularly sketch as part of their job. We investigate developers' mental models by analyzing patterns commonly observed in their sketches when developing an ML workflow. Analysis indicates that diagrams were the preferred organizational component (52.6%), often accompanied by lists (42.1%) and numbered points (36.8%). Our tool converts their sketches into a Python notebook by querying an LLM. We use an LLM-as-judge setup to score the quality of the generated code, finding that even brief sketching can effectively generate useful code outlines. We also find a positive correlation between sketch time and the quality of the generated code. We conclude the study by conducting extensive interviews to assess the tool's usefulness, explore potential use cases, and understand developers' needs. As noted by participants, promising applications for these assistants include education, prototyping, and collaborative settings. Our findings signal promise for the next generation of Code Assistants to integrate visual information, both to improve code generation and to better leverage developers' existing sketching practices.</description>
+   <guid>oai:arXiv.org:2412.13386v1</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
    <category>cs.HC</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Tita Alissa Bach (DNV, H{\o}vik, Norway), Aleksandar Babic (DNV, H{\o}vik, Norway), Narae Park (DNV, H{\o}vik, Norway), Tor Sporsem (Sintef Digital, Trondheim, Norway), Rasmus Ulfsnes (Sintef Digital, Trondheim, Norway), Henrik Smith-Meyer (DNV, H{\o}vik, Norway), Torkel Skeie (DNV, H{\o}vik, Norway)</creator>
-  </item>
-  <item>
-   <title>PickLLM: Context-Aware RL-Assisted Large Language Model Routing</title>
-   <link>https://arxiv.org/abs/2412.12170</link>
-   <description>Recently, the number of off-the-shelf Large Language Models (LLMs) has exploded with many open-source options. This creates a diverse landscape regarding both serving options (e.g., inference on local hardware vs remote LLM APIs) and model heterogeneous expertise. However, it is hard for the user to efficiently optimize considering operational cost (pricing structures, expensive LLMs-as-a-service for large querying volumes), efficiency, or even per-case specific measures such as response accuracy, bias, or toxicity. Also, existing LLM routing solutions focus mainly on cost reduction, with response accuracy optimizations relying on non-generalizable supervised training, and ensemble approaches necessitating output computation for every considered LLM candidate. In this work, we tackle the challenge of selecting the optimal LLM from a model pool for specific queries with customizable objectives. We propose PickLLM, a lightweight framework that relies on Reinforcement Learning (RL) to route on-the-fly queries to available models. We introduce a weighted reward function that considers per-query cost, inference latency, and model response accuracy by a customizable scoring function. Regarding the learning algorithms, we explore two alternatives: PickLLM router acting as a learning automaton that utilizes gradient ascent to select a specific LLM, or utilizing stateless Q-learning to explore the set of LLMs and perform selection with a $\epsilon$-greedy approach. The algorithm converges to a single LLM for the remaining session queries. To evaluate, we utilize a pool of four LLMs and benchmark prompt-response datasets with different contexts. A separate scoring function is assessing response accuracy during the experiment. We demonstrate the speed of convergence for different learning rates and improvement in hard metrics such as cost per querying session and overall response latency.</description>
-   <guid>oai:arXiv.org:2412.12170v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Dimitrios Sikeridis, Dennis Ramdass, Pranay Pareek</creator>
+   <creator>Lu\'is F. Gomes, Vincent J. Hellendoorn, Jonathan Aldrich, Rui Abreu</creator>
   </item>
   <item>
-   <title>TRAIL: Trust-Aware Client Scheduling for Semi-Decentralized Federated Learning</title>
-   <link>https://arxiv.org/abs/2412.11448</link>
-   <description>Due to the sensitivity of data, federated learning (FL) is employed to enable distributed machine learning while safeguarding data privacy and accommodating the requirements of various devices. However, in the context of semi-decentralized federated learning (SD-FL), clients' communication and training states are dynamic. This variability arises from local training fluctuations, heterogeneous data distributions, and intermittent client participation. Most existing studies primarily focus on stable client states, neglecting the dynamic challenges present in real-world scenarios. To tackle this issue, we propose a trust-aware client scheduling mechanism (TRAIL) that assesses client states and contributions, enhancing model training efficiency through selective client participation. Our focus is on a semi-decentralized federated learning framework where edge servers and clients train a shared global model using unreliable intra-cluster model aggregation and inter-cluster model consensus. First, we develop an adaptive hidden semi-Markov model (AHSMM) to estimate clients' communication states and contributions. Next, we address a client-server association optimization problem to minimize global training loss. Using convergence analysis, we propose a greedy client scheduling algorithm. Finally, our experiments conducted on real-world datasets demonstrate that TRAIL outperforms state-of-the-art baselines, achieving an improvement of 8.7\% in test accuracy and a reduction of 15.3\% in training loss.</description>
-   <guid>oai:arXiv.org:2412.11448v2</guid>
+   <title>Future Research Avenues for Artificial Intelligence in Digital Gaming: An Exploratory Report</title>
+   <link>https://arxiv.org/abs/2412.14085</link>
+   <description>Video games are a natural and synergistic application domain for artificial intelligence (AI) systems, offering both the potential to enhance player experience and immersion, as well as providing valuable benchmarks and virtual environments to advance AI technologies in general. This report presents a high-level overview of five promising research pathways for applying state-of-the-art AI methods, particularly deep learning, to digital gaming within the context of the current research landscape. The objective of this work is to outline a curated, non-exhaustive list of encouraging research directions at the intersection of AI and video games that may serve to inspire more rigorous and comprehensive research efforts in the future. We discuss (i) investigating large language models as core engines for game agent modelling, (ii) using neural cellular automata for procedural game content generation, (iii) accelerating computationally expensive in-game simulations via deep surrogate modelling, (iv) leveraging self-supervised learning to obtain useful video game state embeddings, and (v) training generative models of interactive worlds using unlabelled video data. We also briefly address current technical challenges associated with the integration of advanced deep learning systems into video game development, and indicate key areas where further progress is likely to be beneficial.</description>
+   <guid>oai:arXiv.org:2412.14085v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Markus Dablander</creator>
+  </item>
+  <item>
+   <title>An Exploratory Study of ML Sketches and Visual Code Assistants</title>
+   <link>https://arxiv.org/abs/2412.13386</link>
+   <description>This paper explores the integration of Visual Code Assistants in Integrated Development Environments (IDEs). In Software Engineering, whiteboard sketching is often the initial step before coding, serving as a crucial collaboration tool for developers. Previous studies have investigated patterns in SE sketches and how they are used in practice, yet methods for directly using these sketches for code generation remain limited. The emergence of visually-equipped large language models presents an opportunity to bridge this gap, which is the focus of our research. In this paper, we built a first prototype of a Visual Code Assistant to get user feedback regarding in-IDE sketch-to-code tools. We conduct an experiment with 19 data scientists, most of whom regularly sketch as part of their job. We investigate developers' mental models by analyzing patterns commonly observed in their sketches when developing an ML workflow. Analysis indicates that diagrams were the preferred organizational component (52.6%), often accompanied by lists (42.1%) and numbered points (36.8%). Our tool converts their sketches into a Python notebook by querying an LLM. We use an LLM-as-judge setup to score the quality of the generated code, finding that even brief sketching can effectively generate useful code outlines. We also find a positive correlation between sketch time and the quality of the generated code. We conclude the study by conducting extensive interviews to assess the tool's usefulness, explore potential use cases, and understand developers' needs. As noted by participants, promising applications for these assistants include education, prototyping, and collaborative settings. Our findings signal promise for the next generation of Code Assistants to integrate visual information, both to improve code generation and to better leverage developers' existing sketching practices.</description>
+   <guid>oai:arXiv.org:2412.13386v1</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Lu\'is F. Gomes, Vincent J. Hellendoorn, Jonathan Aldrich, Rui Abreu</creator>
+  </item>
+  <item>
+   <title>Federated t-SNE and UMAP for Distributed Data Visualization</title>
+   <link>https://arxiv.org/abs/2412.13495</link>
+   <description>High-dimensional data visualization is crucial in the big data era and these techniques such as t-SNE and UMAP have been widely used in science and engineering. Big data, however, is often distributed across multiple data centers and subject to security and privacy concerns, which leads to difficulties for the standard algorithms of t-SNE and UMAP. To tackle the challenge, this work proposes Fed-tSNE and Fed-UMAP, which provide high-dimensional data visualization under the framework of federated learning, without exchanging data across clients or sending data to the central server. The main idea of Fed-tSNE and Fed-UMAP is implicitly learning the distribution information of data in a manner of federated learning and then estimating the global distance matrix for t-SNE and UMAP. To further enhance the protection of data privacy, we propose Fed-tSNE+ and Fed-UMAP+. We also extend our idea to federated spectral clustering, yielding algorithms of clustering distributed data. In addition to these new algorithms, we offer theoretical guarantees of optimization convergence, distance and similarity estimation, and differential privacy. Experiments on multiple datasets demonstrate that, compared to the original algorithms, the accuracy drops of our federated algorithms are tiny.</description>
+   <guid>oai:arXiv.org:2412.13495v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Dong Qiao, Xinxian Ma, Jicong Fan</creator>
+  </item>
+  <item>
+   <title>SemiDFL: A Semi-Supervised Paradigm for Decentralized Federated Learning</title>
+   <link>https://arxiv.org/abs/2412.13589</link>
+   <description>Decentralized federated learning (DFL) realizes cooperative model training among connected clients without relying on a central server, thereby mitigating communication bottlenecks and eliminating the single-point failure issue present in centralized federated learning (CFL). Most existing work on DFL focuses on supervised learning, assuming each client possesses sufficient labeled data for local training. However, in real-world applications, much of the data is unlabeled. We address this by considering a challenging yet practical semisupervised learning (SSL) scenario in DFL, where clients may have varying data sources: some with few labeled samples, some with purely unlabeled data, and others with both. In this work, we propose SemiDFL, the first semi-supervised DFL method that enhances DFL performance in SSL scenarios by establishing a consensus in both data and model spaces. Specifically, we utilize neighborhood information to improve the quality of pseudo-labeling, which is crucial for effectively leveraging unlabeled data. We then design a consensusbased diffusion model to generate synthesized data, which is used in combination with pseudo-labeled data to create mixed datasets. Additionally, we develop an adaptive aggregation method that leverages the model accuracy of synthesized data to further enhance SemiDFL performance. Through extensive experimentation, we demonstrate the remarkable performance superiority of the proposed DFL-Semi method over existing CFL and DFL schemes in both IID and non-IID SSL scenarios.</description>
+   <guid>oai:arXiv.org:2412.13589v1</guid>
    <category>cs.LG</category>
    <category>cs.AI</category>
    <category>cs.DC</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xinyang Liu, Pengchao Han, Xuan Li, Bo Liu</creator>
+  </item>
+  <item>
+   <title>Federated Learning and RAG Integration: A Scalable Approach for Medical Large Language Models</title>
+   <link>https://arxiv.org/abs/2412.13720</link>
+   <description>This study analyzes the performance of domain-specific Large Language Models (LLMs) for the medical field by integrating Retrieval-Augmented Generation (RAG) systems within a federated learning framework. Leveraging the inherent advantages of federated learning, such as preserving data privacy and enabling distributed computation, this research explores the integration of RAG systems with models trained under varying client configurations to optimize performance. Experimental results demonstrate that the federated learning-based models integrated with RAG systems consistently outperform their non-integrated counterparts across all evaluation metrics. This study highlights the potential of combining federated learning and RAG systems for developing domain-specific LLMs in the medical field, providing a scalable and privacy-preserving solution for enhancing text generation capabilities.</description>
+   <guid>oai:arXiv.org:2412.13720v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jincheol Jung, Hongju Jeong, Eui-Nam Huh</creator>
+  </item>
+  <item>
+   <title>Future Research Avenues for Artificial Intelligence in Digital Gaming: An Exploratory Report</title>
+   <link>https://arxiv.org/abs/2412.14085</link>
+   <description>Video games are a natural and synergistic application domain for artificial intelligence (AI) systems, offering both the potential to enhance player experience and immersion, as well as providing valuable benchmarks and virtual environments to advance AI technologies in general. This report presents a high-level overview of five promising research pathways for applying state-of-the-art AI methods, particularly deep learning, to digital gaming within the context of the current research landscape. The objective of this work is to outline a curated, non-exhaustive list of encouraging research directions at the intersection of AI and video games that may serve to inspire more rigorous and comprehensive research efforts in the future. We discuss (i) investigating large language models as core engines for game agent modelling, (ii) using neural cellular automata for procedural game content generation, (iii) accelerating computationally expensive in-game simulations via deep surrogate modelling, (iv) leveraging self-supervised learning to obtain useful video game state embeddings, and (v) training generative models of interactive worlds using unlabelled video data. We also briefly address current technical challenges associated with the integration of advanced deep learning systems into video game development, and indicate key areas where further progress is likely to be beneficial.</description>
+   <guid>oai:arXiv.org:2412.14085v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Markus Dablander</creator>
+  </item>
+  <item>
+   <title>Exploring Gradient Subspaces: Addressing and Overcoming LoRA's Limitations in Federated Fine-Tuning of Large Language Models</title>
+   <link>https://arxiv.org/abs/2410.23111</link>
+   <description>Large Language Models (LLMs) have demonstrated remarkable capabilities across various domains, particularly in task generalization for both text and vision data. While fine-tuning these models can significantly enhance their performance on specific downstream tasks, it often requires high-quality data that cannot be shared due to privacy concerns. Federated Learning (FL) offers a promising solution for collaborative training without direct data sharing. However, many parameter-efficient fine-tuning strategies for LLMs in FL, particularly those based on Low-Rank Adaptation (LoRA), face limitations. In this paper, we critically analyze the convergence and performance guarantees of popular FL frameworks utilizing LoRA, highlighting its suboptimal nature due to constrained subspace learning of low-rank matrices. This limitation hinders effective fine-tuning of LLMs in federated settings. Through rigorous analytical and empirical evaluations, we demonstrate that direct weight averaging outperforms LoRA-based strategies, leading to superior performance for fine-tuned models. Our comprehensive comparison unmasks inefficiencies in LoRA approaches and underscores the advantages of direct weight aggregation. We extend our analysis to low-rank gradient-based optimizers, such as GaLore, used during local training steps. Our findings show that GaLore along with direct-weight aggregation is a more effective approach, outperforming federated LoRA methods like FlexLoRA and FFA-LoRA across both text and image modalities. While privacy remains paramount in FL discourse, our focus is on assessing performance outcomes of federated fine-tuned models and evaluating various FL frameworks from both theoretical and empirical perspectives. Our findings advocate reassessing the reliance on LoRA within FL contexts, paving the way for more efficient training methodologies.</description>
+   <guid>oai:arXiv.org:2410.23111v3</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
    <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Gangqiang Hu, Jianfeng Lu, Jianmin Han, Shuqin Cao, Jing Liu, Hao Fu</creator>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Navyansh Mahla, Ganesh Ramakrishnan</creator>
+  </item>
+  <item>
+   <title>An Exploratory Study of ML Sketches and Visual Code Assistants</title>
+   <link>https://arxiv.org/abs/2412.13386</link>
+   <description>This paper explores the integration of Visual Code Assistants in Integrated Development Environments (IDEs). In Software Engineering, whiteboard sketching is often the initial step before coding, serving as a crucial collaboration tool for developers. Previous studies have investigated patterns in SE sketches and how they are used in practice, yet methods for directly using these sketches for code generation remain limited. The emergence of visually-equipped large language models presents an opportunity to bridge this gap, which is the focus of our research. In this paper, we built a first prototype of a Visual Code Assistant to get user feedback regarding in-IDE sketch-to-code tools. We conduct an experiment with 19 data scientists, most of whom regularly sketch as part of their job. We investigate developers' mental models by analyzing patterns commonly observed in their sketches when developing an ML workflow. Analysis indicates that diagrams were the preferred organizational component (52.6%), often accompanied by lists (42.1%) and numbered points (36.8%). Our tool converts their sketches into a Python notebook by querying an LLM. We use an LLM-as-judge setup to score the quality of the generated code, finding that even brief sketching can effectively generate useful code outlines. We also find a positive correlation between sketch time and the quality of the generated code. We conclude the study by conducting extensive interviews to assess the tool's usefulness, explore potential use cases, and understand developers' needs. As noted by participants, promising applications for these assistants include education, prototyping, and collaborative settings. Our findings signal promise for the next generation of Code Assistants to integrate visual information, both to improve code generation and to better leverage developers' existing sketching practices.</description>
+   <guid>oai:arXiv.org:2412.13386v1</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Lu\'is F. Gomes, Vincent J. Hellendoorn, Jonathan Aldrich, Rui Abreu</creator>
+  </item>
+  <item>
+   <title>Federated Learning and RAG Integration: A Scalable Approach for Medical Large Language Models</title>
+   <link>https://arxiv.org/abs/2412.13720</link>
+   <description>This study analyzes the performance of domain-specific Large Language Models (LLMs) for the medical field by integrating Retrieval-Augmented Generation (RAG) systems within a federated learning framework. Leveraging the inherent advantages of federated learning, such as preserving data privacy and enabling distributed computation, this research explores the integration of RAG systems with models trained under varying client configurations to optimize performance. Experimental results demonstrate that the federated learning-based models integrated with RAG systems consistently outperform their non-integrated counterparts across all evaluation metrics. This study highlights the potential of combining federated learning and RAG systems for developing domain-specific LLMs in the medical field, providing a scalable and privacy-preserving solution for enhancing text generation capabilities.</description>
+   <guid>oai:arXiv.org:2412.13720v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jincheol Jung, Hongju Jeong, Eui-Nam Huh</creator>
   </item>
   <item>
    <title>MagicPIG: LSH Sampling for Efficient LLM Generation</title>
    <link>https://arxiv.org/abs/2410.16179</link>
    <description>Large language models (LLMs) with long context windows have gained significant attention. However, the KV cache, stored to avoid re-computation, becomes a bottleneck. Various dynamic sparse or TopK-based attention approximation methods have been proposed to leverage the common insight that attention is sparse. In this paper, we first show that TopK attention itself suffers from quality degradation in certain downstream tasks because attention is not always as sparse as expected. Rather than selecting the keys and values with the highest attention scores, sampling with theoretical guarantees can provide a better estimation for attention output. To make the sampling-based approximation practical in LLM generation, we propose MagicPIG, a heterogeneous system based on Locality Sensitive Hashing (LSH). MagicPIG significantly reduces the workload of attention computation while preserving high accuracy for diverse tasks. MagicPIG stores the LSH hash tables and runs the attention computation on the CPU, which allows it to serve longer contexts and larger batch sizes with high approximation accuracy. MagicPIG can improve decoding throughput by up to $5\times$ across various GPU hardware and achieve 54ms decoding latency on a single RTX 4090 for Llama-3.1-8B-Instruct model with a context of 96k tokens. The code is available at https://github.com/Infini-AI-Lab/MagicPIG.</description>
-   <guid>oai:arXiv.org:2410.16179v3</guid>
+   <guid>oai:arXiv.org:2410.16179v4</guid>
    <category>cs.CL</category>
    <category>cs.LG</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
    <announce_type>replace</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Zhuoming Chen, Ranajoy Sadhukhan, Zihao Ye, Yang Zhou, Jianyu Zhang, Niklas Nolte, Yuandong Tian, Matthijs Douze, Leon Bottou, Zhihao Jia, Beidi Chen</creator>
   </item>
   <item>
-   <title>Boosting LLM-based Relevance Modeling with Distribution-Aware Robust Learning</title>
-   <link>https://arxiv.org/abs/2412.12504</link>
-   <description>With the rapid advancement of pre-trained large language models (LLMs), recent endeavors have leveraged the capabilities of LLMs in relevance modeling, resulting in enhanced performance. This is usually done through the process of fine-tuning LLMs on specifically annotated datasets to determine the relevance between queries and items. However, there are two limitations when LLMs are naively employed for relevance modeling through fine-tuning and inference. First, it is not inherently efficient for performing nuanced tasks beyond simple yes or no answers, such as assessing search relevance. It may therefore tend to be overconfident and struggle to distinguish fine-grained degrees of relevance (e.g., strong relevance, weak relevance, irrelevance) used in search engines. Second, it exhibits significant performance degradation when confronted with data distribution shift in real-world scenarios. In this paper, we propose a novel Distribution-Aware Robust Learning framework (DaRL) for relevance modeling in Alipay Search. Specifically, we design an effective loss function to enhance the discriminability of LLM-based relevance modeling across various fine-grained degrees of query-item relevance. To improve the generalizability of LLM-based relevance modeling, we first propose the Distribution-Aware Sample Augmentation (DASA) module. This module utilizes out-of-distribution (OOD) detection techniques to actively select appropriate samples that are not well covered by the original training set for model fine-tuning. Furthermore, we adopt a multi-stage fine-tuning strategy to simultaneously improve in-distribution (ID) and OOD performance, bridging the performance gap between them. DaRL has been deployed online to serve the Alipay's insurance product search...</description>
-   <guid>oai:arXiv.org:2412.12504v1</guid>
-   <category>cs.IR</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
+   <title>Federated Unlearning Model Recovery in Data with Skewed Label Distributions</title>
+   <link>https://arxiv.org/abs/2412.13466</link>
+   <description>In federated learning, federated unlearning is a technique that provides clients with a rollback mechanism that allows them to withdraw their data contribution without training from scratch. However, existing research has not considered scenarios with skewed label distributions. Unfortunately, the unlearning of a client with skewed data usually results in biased models and makes it difficult to deliver high-quality service, complicating the recovery process. This paper proposes a recovery method of federated unlearning with skewed label distributions. Specifically, we first adopt a strategy that incorporates oversampling with deep learning to supplement the skewed class data for clients to perform recovery training, therefore enhancing the completeness of their local datasets. Afterward, a density-based denoising method is applied to remove noise from the generated data, further improving the quality of the remaining clients' datasets. Finally, all the remaining clients leverage the enhanced local datasets and engage in iterative training to effectively restore the performance of the unlearning model. Extensive evaluations on commonly used federated learning datasets with varying degrees of skewness show that our method outperforms baseline methods in restoring the performance of the unlearning model, particularly regarding accuracy on the skewed class.</description>
+   <guid>oai:arXiv.org:2412.13466v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
    <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Hong Liu, Saisai Gong, Yixin Ji, Kaixin Wu, Jia Xu, Jinjie Gu</creator>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xinrui Yu, Wenbin Pei, Bing Xue, Qiang Zhang</creator>
   </item>
   <item>
-   <title>PickLLM: Context-Aware RL-Assisted Large Language Model Routing</title>
-   <link>https://arxiv.org/abs/2412.12170</link>
-   <description>Recently, the number of off-the-shelf Large Language Models (LLMs) has exploded with many open-source options. This creates a diverse landscape regarding both serving options (e.g., inference on local hardware vs remote LLM APIs) and model heterogeneous expertise. However, it is hard for the user to efficiently optimize considering operational cost (pricing structures, expensive LLMs-as-a-service for large querying volumes), efficiency, or even per-case specific measures such as response accuracy, bias, or toxicity. Also, existing LLM routing solutions focus mainly on cost reduction, with response accuracy optimizations relying on non-generalizable supervised training, and ensemble approaches necessitating output computation for every considered LLM candidate. In this work, we tackle the challenge of selecting the optimal LLM from a model pool for specific queries with customizable objectives. We propose PickLLM, a lightweight framework that relies on Reinforcement Learning (RL) to route on-the-fly queries to available models. We introduce a weighted reward function that considers per-query cost, inference latency, and model response accuracy by a customizable scoring function. Regarding the learning algorithms, we explore two alternatives: PickLLM router acting as a learning automaton that utilizes gradient ascent to select a specific LLM, or utilizing stateless Q-learning to explore the set of LLMs and perform selection with a $\epsilon$-greedy approach. The algorithm converges to a single LLM for the remaining session queries. To evaluate, we utilize a pool of four LLMs and benchmark prompt-response datasets with different contexts. A separate scoring function is assessing response accuracy during the experiment. We demonstrate the speed of convergence for different learning rates and improvement in hard metrics such as cost per querying session and overall response latency.</description>
-   <guid>oai:arXiv.org:2412.12170v1</guid>
+   <title>Federated t-SNE and UMAP for Distributed Data Visualization</title>
+   <link>https://arxiv.org/abs/2412.13495</link>
+   <description>High-dimensional data visualization is crucial in the big data era and these techniques such as t-SNE and UMAP have been widely used in science and engineering. Big data, however, is often distributed across multiple data centers and subject to security and privacy concerns, which leads to difficulties for the standard algorithms of t-SNE and UMAP. To tackle the challenge, this work proposes Fed-tSNE and Fed-UMAP, which provide high-dimensional data visualization under the framework of federated learning, without exchanging data across clients or sending data to the central server. The main idea of Fed-tSNE and Fed-UMAP is implicitly learning the distribution information of data in a manner of federated learning and then estimating the global distance matrix for t-SNE and UMAP. To further enhance the protection of data privacy, we propose Fed-tSNE+ and Fed-UMAP+. We also extend our idea to federated spectral clustering, yielding algorithms of clustering distributed data. In addition to these new algorithms, we offer theoretical guarantees of optimization convergence, distance and similarity estimation, and differential privacy. Experiments on multiple datasets demonstrate that, compared to the original algorithms, the accuracy drops of our federated algorithms are tiny.</description>
+   <guid>oai:arXiv.org:2412.13495v1</guid>
    <category>cs.LG</category>
    <category>cs.AI</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Dimitrios Sikeridis, Dennis Ramdass, Pranay Pareek</creator>
+   <creator>Dong Qiao, Xinxian Ma, Jicong Fan</creator>
   </item>
   <item>
-   <title>Building Gradient Bridges: Label Leakage from Restricted Gradient Sharing in Federated Learning</title>
-   <link>https://arxiv.org/abs/2412.12640</link>
-   <description>The growing concern over data privacy, the benefits of utilizing data from diverse sources for model training, and the proliferation of networked devices with enhanced computational capabilities have all contributed to the rise of federated learning (FL). The clients in FL collaborate to train a global model by uploading gradients computed on their private datasets without collecting raw data. However, a new attack surface has emerged from gradient sharing, where adversaries can restore the label distribution of a victim's private data by analyzing the obtained gradients. To mitigate this privacy leakage, existing lightweight defenses restrict the sharing of gradients, such as encrypting the final-layer gradients or locally updating the parameters within. In this paper, we introduce a novel attack called Gradient Bridge (GDBR) that recovers the label distribution of training data from the limited gradient information shared in FL. GDBR explores the relationship between the layer-wise gradients, tracks the flow of gradients, and analytically derives the batch training labels. Extensive experiments show that GDBR can accurately recover more than 80% of labels in various FL settings. GDBR highlights the inadequacy of restricted gradient sharing-based defenses and calls for the design of effective defense schemes in FL.</description>
-   <guid>oai:arXiv.org:2412.12640v1</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Rui Zhang, Ka-Ho Chow, Ping Li</creator>
-  </item>
-  <item>
-   <title>Concurrent vertical and horizontal federated learning with fuzzy cognitive maps</title>
-   <link>https://arxiv.org/abs/2412.12844</link>
-   <description>Data privacy is a major concern in industries such as healthcare or finance. The requirement to safeguard privacy is essential to prevent data breaches and misuse, which can have severe consequences for individuals and organisations. Federated learning is a distributed machine learning approach where multiple participants collaboratively train a model without compromising the privacy of their data. However, a significant challenge arises from the differences in feature spaces among participants, known as non-IID data. This research introduces a novel federated learning framework employing fuzzy cognitive maps, designed to comprehensively address the challenges posed by diverse data distributions and non-identically distributed features in federated settings. The proposal is tested through several experiments using four distinct federation strategies: constant-based, accuracy-based, AUC-based, and precision-based weights. The results demonstrate the effectiveness of the approach in achieving the desired learning outcomes while maintaining privacy and confidentiality standards.</description>
-   <guid>oai:arXiv.org:2412.12844v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Jose L Salmeron, Irina Ar\'evalo</creator>
-  </item>
-  <item>
-   <title>F-RBA: A Federated Learning-based Framework for Risk-based Authentication</title>
-   <link>https://arxiv.org/abs/2412.12324</link>
-   <description>The proliferation of Internet services has led to an increasing need to protect private data. User authentication serves as a crucial mechanism to ensure data security. Although robust authentication forms the cornerstone of remote service security, it can still leave users vulnerable to credential disclosure, device-theft attacks, session hijacking, and inadequate adaptive security measures. Risk-based Authentication (RBA) emerges as a potential solution, offering a multi-level authentication approach that enhances user experience without compromising security. In this paper, we propose a Federated Risk-based Authentication (F-RBA) framework that leverages Federated Learning to ensure privacy-centric training, keeping user data local while distributing learning across devices. Whereas traditional approaches rely on centralized storage, F-RBA introduces a distributed architecture where risk assessment occurs locally on users' devices. The framework's core innovation lies in its similarity-based feature engineering approach, which addresses the heterogeneous data challenges inherent in federated settings, a significant advancement for distributed authentication. By facilitating real-time risk evaluation across devices while maintaining unified user profiles, F-RBA achieves a balance between data protection, security, and scalability. Through its federated approach, F-RBA addresses the cold-start challenge in risk model creation, enabling swift adaptation to new users without compromising security. Empirical evaluation using a real-world multi-user dataset demonstrates the framework's effectiveness, achieving a superior true positive rate for detecting suspicious logins compared to conventional unsupervised anomaly detection models. This research introduces a new paradigm for privacy-focused RBA in distributed digital environments, facilitating advancements in federated security systems.</description>
-   <guid>oai:arXiv.org:2412.12324v1</guid>
-   <category>cs.CR</category>
-   <category>cs.LG</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Hamidreza Fereidouni, Abdelhakim Senhaji Hafid, Dimitrios Makrakis, Yaser Baseri</creator>
-  </item>
-  <item>
-   <title>Eliminating Domain Bias for Federated Learning in Representation Space</title>
-   <link>https://arxiv.org/abs/2311.14975</link>
-   <description>Recently, federated learning (FL) is popular for its privacy-preserving and collaborative learning abilities. However, under statistically heterogeneous scenarios, we observe that biased data domains on clients cause a representation bias phenomenon and further degenerate generic representations during local training, i.e., the representation degeneration phenomenon. To address these issues, we propose a general framework Domain Bias Eliminator (DBE) for FL. Our theoretical analysis reveals that DBE can promote bi-directional knowledge transfer between server and client, as it reduces the domain discrepancy between server and client in representation space. Besides, extensive experiments on four datasets show that DBE can greatly improve existing FL methods in both generalization and personalization abilities. The DBE-equipped FL method can outperform ten state-of-the-art personalized FL methods by a large margin. Our code is public at https://github.com/TsingZ0/DBE.</description>
-   <guid>oai:arXiv.org:2311.14975v2</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Jianqing Zhang, Yang Hua, Jian Cao, Hao Wang, Tao Song, Zhengui Xue, Ruhui Ma, Haibing Guan</creator>
-  </item>
-  <item>
-   <title>Hierarchical Federated Learning with Multi-Timescale Gradient Correction</title>
-   <link>https://arxiv.org/abs/2409.18448</link>
-   <description>While traditional federated learning (FL) typically focuses on a star topology where clients are directly connected to a central server, real-world distributed systems often exhibit hierarchical architectures. Hierarchical FL (HFL) has emerged as a promising solution to bridge this gap, leveraging aggregation points at multiple levels of the system. However, existing algorithms for HFL encounter challenges in dealing with multi-timescale model drift, i.e., model drift occurring across hierarchical levels of data heterogeneity. In this paper, we propose a multi-timescale gradient correction (MTGC) methodology to resolve this issue. Our key idea is to introduce distinct control variables to (i) correct the client gradient towards the group gradient, i.e., to reduce client model drift caused by local updates based on individual datasets, and (ii) correct the group gradient towards the global gradient, i.e., to reduce group model drift caused by FL over clients within the group. We analytically characterize the convergence behavior of MTGC under general non-convex settings, overcoming challenges associated with couplings between correction terms. We show that our convergence bound is immune to the extent of data heterogeneity, confirming the stability of the proposed algorithm against multi-level non-i.i.d. data. Through extensive experiments on various datasets and models, we validate the effectiveness of MTGC in diverse HFL settings. The code for this project is available at \href{https://github.com/wenzhifang/MTGC}{https://github.com/wenzhifang/MTGC}.</description>
-   <guid>oai:arXiv.org:2409.18448v3</guid>
-   <category>cs.LG</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Wenzhi Fang, Dong-Jun Han, Evan Chen, Shiqiang Wang, Christopher G. Brinton</creator>
-  </item>
-  <item>
-   <title>Towards Personalized Federated Node Classification in One-shot Communication</title>
-   <link>https://arxiv.org/abs/2411.11304</link>
-   <description>Federated Graph Learning (FGL) has emerged as a promising paradigm for breaking data silos in distributed private graphs data management. In practical scenarios involving complex and heterogeneous distributed graph data, personalized Federated Graph Learning (pFGL) aims to enhance model utility by training personalized models tailored to individual client needs, rather than relying on a universal global model. However, existing pFGL methods often require numerous communication rounds under heterogeneous client graphs, leading to significant security concerns and communication overhead. While One-shot Federated Learning (OFL) addresses these issues by enabling collaboration in a single round, existing OFL methods are designed for image-based tasks and ineffective for graph data, leaving a critical gap in the field. Additionally, personalized models often suffer from bias, failing to generalize effectively to minority data. To address these challenges, we propose the first one-shot personalized federated graph learning method for node classification, compatible with the Secure Aggregation protocol for privacy preservation. Specifically, for effective graph learning in a single communication round, our method estimates and aggregates class-wise feature distribution statistics to construct a global pseudo-graph on the server, facilitating the training of a global graph model. Moreover, to mitigate bias, we introduce a two-stage personalized training approach that adaptively balances local personal information and global insights from the pseudo-graph, improving both personalization and generalization. Extensive experiments conducted on 8 multi-scale graph datasets demonstrate that our method significantly outperforms state-of-the-art baselines across various settings.</description>
-   <guid>oai:arXiv.org:2411.11304v3</guid>
-   <category>cs.LG</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Guochen Yan, Xunkai Li, Luyuan Xie, Wentao Zhang, Qingni Shen, Yuejian Fang, Zhonghai Wu</creator>
-  </item>
-  <item>
-   <title>TRAIL: Trust-Aware Client Scheduling for Semi-Decentralized Federated Learning</title>
-   <link>https://arxiv.org/abs/2412.11448</link>
-   <description>Due to the sensitivity of data, federated learning (FL) is employed to enable distributed machine learning while safeguarding data privacy and accommodating the requirements of various devices. However, in the context of semi-decentralized federated learning (SD-FL), clients' communication and training states are dynamic. This variability arises from local training fluctuations, heterogeneous data distributions, and intermittent client participation. Most existing studies primarily focus on stable client states, neglecting the dynamic challenges present in real-world scenarios. To tackle this issue, we propose a trust-aware client scheduling mechanism (TRAIL) that assesses client states and contributions, enhancing model training efficiency through selective client participation. Our focus is on a semi-decentralized federated learning framework where edge servers and clients train a shared global model using unreliable intra-cluster model aggregation and inter-cluster model consensus. First, we develop an adaptive hidden semi-Markov model (AHSMM) to estimate clients' communication states and contributions. Next, we address a client-server association optimization problem to minimize global training loss. Using convergence analysis, we propose a greedy client scheduling algorithm. Finally, our experiments conducted on real-world datasets demonstrate that TRAIL outperforms state-of-the-art baselines, achieving an improvement of 8.7\% in test accuracy and a reduction of 15.3\% in training loss.</description>
-   <guid>oai:arXiv.org:2412.11448v2</guid>
+   <title>SemiDFL: A Semi-Supervised Paradigm for Decentralized Federated Learning</title>
+   <link>https://arxiv.org/abs/2412.13589</link>
+   <description>Decentralized federated learning (DFL) realizes cooperative model training among connected clients without relying on a central server, thereby mitigating communication bottlenecks and eliminating the single-point failure issue present in centralized federated learning (CFL). Most existing work on DFL focuses on supervised learning, assuming each client possesses sufficient labeled data for local training. However, in real-world applications, much of the data is unlabeled. We address this by considering a challenging yet practical semisupervised learning (SSL) scenario in DFL, where clients may have varying data sources: some with few labeled samples, some with purely unlabeled data, and others with both. In this work, we propose SemiDFL, the first semi-supervised DFL method that enhances DFL performance in SSL scenarios by establishing a consensus in both data and model spaces. Specifically, we utilize neighborhood information to improve the quality of pseudo-labeling, which is crucial for effectively leveraging unlabeled data. We then design a consensusbased diffusion model to generate synthesized data, which is used in combination with pseudo-labeled data to create mixed datasets. Additionally, we develop an adaptive aggregation method that leverages the model accuracy of synthesized data to further enhance SemiDFL performance. Through extensive experimentation, we demonstrate the remarkable performance superiority of the proposed DFL-Semi method over existing CFL and DFL schemes in both IID and non-IID SSL scenarios.</description>
+   <guid>oai:arXiv.org:2412.13589v1</guid>
    <category>cs.LG</category>
    <category>cs.AI</category>
    <category>cs.DC</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xinyang Liu, Pengchao Han, Xuan Li, Bo Liu</creator>
+  </item>
+  <item>
+   <title>Federated Source-free Domain Adaptation for Classification: Weighted Cluster Aggregation for Unlabeled Data</title>
+   <link>https://arxiv.org/abs/2412.13757</link>
+   <description>Federated learning (FL) commonly assumes that the server or some clients have labeled data, which is often impractical due to annotation costs and privacy concerns. Addressing this problem, we focus on a source-free domain adaptation task, where (1) the server holds a pre-trained model on labeled source domain data, (2) clients possess only unlabeled data from various target domains, and (3) the server and clients cannot access the source data in the adaptation phase. This task is known as Federated source-Free Domain Adaptation (FFREEDA). Specifically, we focus on classification tasks, while the previous work solely studies semantic segmentation. Our contribution is the novel Federated learning with Weighted Cluster Aggregation (FedWCA) method, designed to mitigate both domain shifts and privacy concerns with only unlabeled data. FedWCA comprises three phases: private and parameter-free clustering of clients to obtain domain-specific global models on the server, weighted aggregation of the global models for the clustered clients, and local domain adaptation with pseudo-labeling. Experimental results show that FedWCA surpasses several existing methods and baselines in FFREEDA, establishing its effectiveness and practicality.</description>
+   <guid>oai:arXiv.org:2412.13757v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Junki Mori, Kosuke Kihara, Taiki Miyagawa, Akinori F. Ebihara, Isamu Teranishi, Hisashi Kashima</creator>
+  </item>
+  <item>
+   <title>Rehearsal-Free Continual Federated Learning with Synergistic Regularization</title>
+   <link>https://arxiv.org/abs/2412.13779</link>
+   <description>Continual Federated Learning (CFL) allows distributed devices to collaboratively learn novel concepts from continuously shifting training data while avoiding knowledge forgetting of previously seen tasks. To tackle this challenge, most current CFL approaches rely on extensive rehearsal of previous data. Despite effectiveness, rehearsal comes at a cost to memory, and it may also violate data privacy. Considering these, we seek to apply regularization techniques to CFL by considering their cost-efficient properties that do not require sample caching or rehearsal. Specifically, we first apply traditional regularization techniques to CFL and observe that existing regularization techniques, especially synaptic intelligence, can achieve promising results under homogeneous data distribution but fail when the data is heterogeneous. Based on this observation, we propose a simple yet effective regularization algorithm for CFL named FedSSI, which tailors the synaptic intelligence for the CFL with heterogeneous data settings. FedSSI can not only reduce computational overhead without rehearsal but also address the data heterogeneity issue. Extensive experiments show that FedSSI achieves superior performance compared to state-of-the-art methods.</description>
+   <guid>oai:arXiv.org:2412.13779v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Gangqiang Hu, Jianfeng Lu, Jianmin Han, Shuqin Cao, Jing Liu, Hao Fu</creator>
+   <creator>Yichen Li, Yuying Wang, Tianzhe Xiao, Haozhao Wang, Yining Qi, Ruixuan Li</creator>
+  </item>
+  <item>
+   <title>On the Robustness of Distributed Machine Learning against Transfer Attacks</title>
+   <link>https://arxiv.org/abs/2412.14080</link>
+   <description>Although distributed machine learning (distributed ML) is gaining considerable attention in the community, prior works have independently looked at instances of distributed ML in either the training or the inference phase. No prior work has examined the combined robustness stemming from distributing both the learning and the inference process. In this work, we explore, for the first time, the robustness of distributed ML models that are fully heterogeneous in training data, architecture, scheduler, optimizer, and other model parameters. Supported by theory and extensive experimental validation using CIFAR10 and FashionMNIST, we show that such properly distributed ML instantiations achieve across-the-board improvements in accuracy-robustness tradeoffs against state-of-the-art transfer-based attacks that could otherwise not be realized by current ensemble or federated learning instantiations. For instance, our experiments on CIFAR10 show that for the Common Weakness attack, one of the most powerful state-of-the-art transfer-based attacks, our method improves robust accuracy by up to 40%, with a minimal impact on clean task accuracy.</description>
+   <guid>oai:arXiv.org:2412.14080v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>S\'ebastien Andreina, Pascal Zimmer, Ghassan Karame</creator>
+  </item>
+  <item>
+   <title>Future Research Avenues for Artificial Intelligence in Digital Gaming: An Exploratory Report</title>
+   <link>https://arxiv.org/abs/2412.14085</link>
+   <description>Video games are a natural and synergistic application domain for artificial intelligence (AI) systems, offering both the potential to enhance player experience and immersion, as well as providing valuable benchmarks and virtual environments to advance AI technologies in general. This report presents a high-level overview of five promising research pathways for applying state-of-the-art AI methods, particularly deep learning, to digital gaming within the context of the current research landscape. The objective of this work is to outline a curated, non-exhaustive list of encouraging research directions at the intersection of AI and video games that may serve to inspire more rigorous and comprehensive research efforts in the future. We discuss (i) investigating large language models as core engines for game agent modelling, (ii) using neural cellular automata for procedural game content generation, (iii) accelerating computationally expensive in-game simulations via deep surrogate modelling, (iv) leveraging self-supervised learning to obtain useful video game state embeddings, and (v) training generative models of interactive worlds using unlabelled video data. We also briefly address current technical challenges associated with the integration of advanced deep learning systems into video game development, and indicate key areas where further progress is likely to be beneficial.</description>
+   <guid>oai:arXiv.org:2412.14085v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Markus Dablander</creator>
+  </item>
+  <item>
+   <title>From Optimization to Generalization: Fair Federated Learning against Quality Shift via Inter-Client Sharpness Matching</title>
+   <link>https://arxiv.org/abs/2404.17805</link>
+   <description>Due to escalating privacy concerns, federated learning has been recognized as a vital approach for training deep neural networks with decentralized medical data. In practice, it is challenging to ensure consistent imaging quality across various institutions, often attributed to equipment malfunctions affecting a minority of clients. This imbalance in image quality can cause the federated model to develop an inherent bias towards higher-quality images, thus posing a severe fairness issue. In this study, we pioneer the identification and formulation of this new fairness challenge within the context of the imaging quality shift. Traditional methods for promoting fairness in federated learning predominantly focus on balancing empirical risks across diverse client distributions. This strategy primarily facilitates fair optimization across different training data distributions, yet neglects the crucial aspect of generalization. To address this, we introduce a solution termed Federated learning with Inter-client Sharpness Matching (FedISM). FedISM enhances both local training and global aggregation by incorporating sharpness-awareness, aiming to harmonize the sharpness levels across clients for fair generalization. Our empirical evaluations, conducted using the widely-used ICH and ISIC 2019 datasets, establish FedISM's superiority over current state-of-the-art federated learning methods in promoting fairness. Code is available at https://github.com/wnn2000/FFL4MIA.</description>
+   <guid>oai:arXiv.org:2404.17805v2</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Nannan Wu, Zhuo Kuang, Zengqiang Yan, Li Yu</creator>
+  </item>
+  <item>
+   <title>Exploring Gradient Subspaces: Addressing and Overcoming LoRA's Limitations in Federated Fine-Tuning of Large Language Models</title>
+   <link>https://arxiv.org/abs/2410.23111</link>
+   <description>Large Language Models (LLMs) have demonstrated remarkable capabilities across various domains, particularly in task generalization for both text and vision data. While fine-tuning these models can significantly enhance their performance on specific downstream tasks, it often requires high-quality data that cannot be shared due to privacy concerns. Federated Learning (FL) offers a promising solution for collaborative training without direct data sharing. However, many parameter-efficient fine-tuning strategies for LLMs in FL, particularly those based on Low-Rank Adaptation (LoRA), face limitations. In this paper, we critically analyze the convergence and performance guarantees of popular FL frameworks utilizing LoRA, highlighting its suboptimal nature due to constrained subspace learning of low-rank matrices. This limitation hinders effective fine-tuning of LLMs in federated settings. Through rigorous analytical and empirical evaluations, we demonstrate that direct weight averaging outperforms LoRA-based strategies, leading to superior performance for fine-tuned models. Our comprehensive comparison unmasks inefficiencies in LoRA approaches and underscores the advantages of direct weight aggregation. We extend our analysis to low-rank gradient-based optimizers, such as GaLore, used during local training steps. Our findings show that GaLore along with direct-weight aggregation is a more effective approach, outperforming federated LoRA methods like FlexLoRA and FFA-LoRA across both text and image modalities. While privacy remains paramount in FL discourse, our focus is on assessing performance outcomes of federated fine-tuned models and evaluating various FL frameworks from both theoretical and empirical perspectives. Our findings advocate reassessing the reliance on LoRA within FL contexts, paving the way for more efficient training methodologies.</description>
+   <guid>oai:arXiv.org:2410.23111v3</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Navyansh Mahla, Ganesh Ramakrishnan</creator>
   </item>
   <item>
    <title>MagicPIG: LSH Sampling for Efficient LLM Generation</title>
    <link>https://arxiv.org/abs/2410.16179</link>
    <description>Large language models (LLMs) with long context windows have gained significant attention. However, the KV cache, stored to avoid re-computation, becomes a bottleneck. Various dynamic sparse or TopK-based attention approximation methods have been proposed to leverage the common insight that attention is sparse. In this paper, we first show that TopK attention itself suffers from quality degradation in certain downstream tasks because attention is not always as sparse as expected. Rather than selecting the keys and values with the highest attention scores, sampling with theoretical guarantees can provide a better estimation for attention output. To make the sampling-based approximation practical in LLM generation, we propose MagicPIG, a heterogeneous system based on Locality Sensitive Hashing (LSH). MagicPIG significantly reduces the workload of attention computation while preserving high accuracy for diverse tasks. MagicPIG stores the LSH hash tables and runs the attention computation on the CPU, which allows it to serve longer contexts and larger batch sizes with high approximation accuracy. MagicPIG can improve decoding throughput by up to $5\times$ across various GPU hardware and achieve 54ms decoding latency on a single RTX 4090 for Llama-3.1-8B-Instruct model with a context of 96k tokens. The code is available at https://github.com/Infini-AI-Lab/MagicPIG.</description>
-   <guid>oai:arXiv.org:2410.16179v3</guid>
+   <guid>oai:arXiv.org:2410.16179v4</guid>
    <category>cs.CL</category>
    <category>cs.LG</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Zhuoming Chen, Ranajoy Sadhukhan, Zihao Ye, Yang Zhou, Jianyu Zhang, Niklas Nolte, Yuandong Tian, Matthijs Douze, Leon Bottou, Zhihao Jia, Beidi Chen</creator>
   </item>
   <item>
-   <title>A System for Microserving of LLMs</title>
-   <link>https://arxiv.org/abs/2412.12488</link>
-   <description>The recent advances in LLMs bring a strong demand for efficient system support to improve overall serving efficiency. As LLM inference scales towards multiple GPUs and even multiple compute nodes, various coordination patterns, such as prefill-decode disaggregation and context migration, arise in serving systems. Most inference services today expose a coarse-grained request-level API with a pre-configured coordination strategy, limiting the ability to customize and dynamically reconfigure the coordination. In this paper, we propose LLM microserving, a multi-level architecture for structuring and programming LLM inference services. We introduces simple yet effective microserving APIs to support fine-grained sub-request level actions. A programmable router transforms user requests into sub-request calls, enabling the dynamic reconfiguration of serving patterns. To support diverse execution patterns, we develop a unified KV cache interface that handles various KV compute, transfer, and reuse scenarios. Our evaluation shows that LLM microserving can be reconfigured to support multiple disaggregation orchestration strategies in a few lines of Python code while maintaining state-of-the-art performance for LLM inference tasks. Additionally, it allows us to explore new strategy variants that reduce up to 47% of job completion time compared to the existing strategies.</description>
-   <guid>oai:arXiv.org:2412.12488v1</guid>
-   <category>cs.DC</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Hongyi Jin, Ruihang Lai, Charlie F. Ruan, Yingcheng Wang, Todd C. Mowry, Xupeng Miao, Zhihao Jia, Tianqi Chen</creator>
-  </item>
-  <item>
-   <title>Eliminating Domain Bias for Federated Learning in Representation Space</title>
-   <link>https://arxiv.org/abs/2311.14975</link>
-   <description>Recently, federated learning (FL) is popular for its privacy-preserving and collaborative learning abilities. However, under statistically heterogeneous scenarios, we observe that biased data domains on clients cause a representation bias phenomenon and further degenerate generic representations during local training, i.e., the representation degeneration phenomenon. To address these issues, we propose a general framework Domain Bias Eliminator (DBE) for FL. Our theoretical analysis reveals that DBE can promote bi-directional knowledge transfer between server and client, as it reduces the domain discrepancy between server and client in representation space. Besides, extensive experiments on four datasets show that DBE can greatly improve existing FL methods in both generalization and personalization abilities. The DBE-equipped FL method can outperform ten state-of-the-art personalized FL methods by a large margin. Our code is public at https://github.com/TsingZ0/DBE.</description>
-   <guid>oai:arXiv.org:2311.14975v2</guid>
+   <title>From Optimization to Generalization: Fair Federated Learning against Quality Shift via Inter-Client Sharpness Matching</title>
+   <link>https://arxiv.org/abs/2404.17805</link>
+   <description>Due to escalating privacy concerns, federated learning has been recognized as a vital approach for training deep neural networks with decentralized medical data. In practice, it is challenging to ensure consistent imaging quality across various institutions, often attributed to equipment malfunctions affecting a minority of clients. This imbalance in image quality can cause the federated model to develop an inherent bias towards higher-quality images, thus posing a severe fairness issue. In this study, we pioneer the identification and formulation of this new fairness challenge within the context of the imaging quality shift. Traditional methods for promoting fairness in federated learning predominantly focus on balancing empirical risks across diverse client distributions. This strategy primarily facilitates fair optimization across different training data distributions, yet neglects the crucial aspect of generalization. To address this, we introduce a solution termed Federated learning with Inter-client Sharpness Matching (FedISM). FedISM enhances both local training and global aggregation by incorporating sharpness-awareness, aiming to harmonize the sharpness levels across clients for fair generalization. Our empirical evaluations, conducted using the widely-used ICH and ISIC 2019 datasets, establish FedISM's superiority over current state-of-the-art federated learning methods in promoting fairness. Code is available at https://github.com/wnn2000/FFL4MIA.</description>
+   <guid>oai:arXiv.org:2404.17805v2</guid>
    <category>cs.LG</category>
-   <category>cs.DC</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
+   <category>cs.CV</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
    <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Jianqing Zhang, Yang Hua, Jian Cao, Hao Wang, Tao Song, Zhengui Xue, Ruhui Ma, Haibing Guan</creator>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Nannan Wu, Zhuo Kuang, Zengqiang Yan, Li Yu</creator>
   </item>
   <item>
-   <title>TRAIL: Trust-Aware Client Scheduling for Semi-Decentralized Federated Learning</title>
-   <link>https://arxiv.org/abs/2412.11448</link>
-   <description>Due to the sensitivity of data, federated learning (FL) is employed to enable distributed machine learning while safeguarding data privacy and accommodating the requirements of various devices. However, in the context of semi-decentralized federated learning (SD-FL), clients' communication and training states are dynamic. This variability arises from local training fluctuations, heterogeneous data distributions, and intermittent client participation. Most existing studies primarily focus on stable client states, neglecting the dynamic challenges present in real-world scenarios. To tackle this issue, we propose a trust-aware client scheduling mechanism (TRAIL) that assesses client states and contributions, enhancing model training efficiency through selective client participation. Our focus is on a semi-decentralized federated learning framework where edge servers and clients train a shared global model using unreliable intra-cluster model aggregation and inter-cluster model consensus. First, we develop an adaptive hidden semi-Markov model (AHSMM) to estimate clients' communication states and contributions. Next, we address a client-server association optimization problem to minimize global training loss. Using convergence analysis, we propose a greedy client scheduling algorithm. Finally, our experiments conducted on real-world datasets demonstrate that TRAIL outperforms state-of-the-art baselines, achieving an improvement of 8.7\% in test accuracy and a reduction of 15.3\% in training loss.</description>
-   <guid>oai:arXiv.org:2412.11448v2</guid>
+   <title>SemiDFL: A Semi-Supervised Paradigm for Decentralized Federated Learning</title>
+   <link>https://arxiv.org/abs/2412.13589</link>
+   <description>Decentralized federated learning (DFL) realizes cooperative model training among connected clients without relying on a central server, thereby mitigating communication bottlenecks and eliminating the single-point failure issue present in centralized federated learning (CFL). Most existing work on DFL focuses on supervised learning, assuming each client possesses sufficient labeled data for local training. However, in real-world applications, much of the data is unlabeled. We address this by considering a challenging yet practical semisupervised learning (SSL) scenario in DFL, where clients may have varying data sources: some with few labeled samples, some with purely unlabeled data, and others with both. In this work, we propose SemiDFL, the first semi-supervised DFL method that enhances DFL performance in SSL scenarios by establishing a consensus in both data and model spaces. Specifically, we utilize neighborhood information to improve the quality of pseudo-labeling, which is crucial for effectively leveraging unlabeled data. We then design a consensusbased diffusion model to generate synthesized data, which is used in combination with pseudo-labeled data to create mixed datasets. Additionally, we develop an adaptive aggregation method that leverages the model accuracy of synthesized data to further enhance SemiDFL performance. Through extensive experimentation, we demonstrate the remarkable performance superiority of the proposed DFL-Semi method over existing CFL and DFL schemes in both IID and non-IID SSL scenarios.</description>
+   <guid>oai:arXiv.org:2412.13589v1</guid>
    <category>cs.LG</category>
    <category>cs.AI</category>
    <category>cs.DC</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Gangqiang Hu, Jianfeng Lu, Jianmin Han, Shuqin Cao, Jing Liu, Hao Fu</creator>
-  </item>
-  <item>
-   <title>F-RBA: A Federated Learning-based Framework for Risk-based Authentication</title>
-   <link>https://arxiv.org/abs/2412.12324</link>
-   <description>The proliferation of Internet services has led to an increasing need to protect private data. User authentication serves as a crucial mechanism to ensure data security. Although robust authentication forms the cornerstone of remote service security, it can still leave users vulnerable to credential disclosure, device-theft attacks, session hijacking, and inadequate adaptive security measures. Risk-based Authentication (RBA) emerges as a potential solution, offering a multi-level authentication approach that enhances user experience without compromising security. In this paper, we propose a Federated Risk-based Authentication (F-RBA) framework that leverages Federated Learning to ensure privacy-centric training, keeping user data local while distributing learning across devices. Whereas traditional approaches rely on centralized storage, F-RBA introduces a distributed architecture where risk assessment occurs locally on users' devices. The framework's core innovation lies in its similarity-based feature engineering approach, which addresses the heterogeneous data challenges inherent in federated settings, a significant advancement for distributed authentication. By facilitating real-time risk evaluation across devices while maintaining unified user profiles, F-RBA achieves a balance between data protection, security, and scalability. Through its federated approach, F-RBA addresses the cold-start challenge in risk model creation, enabling swift adaptation to new users without compromising security. Empirical evaluation using a real-world multi-user dataset demonstrates the framework's effectiveness, achieving a superior true positive rate for detecting suspicious logins compared to conventional unsupervised anomaly detection models. This research introduces a new paradigm for privacy-focused RBA in distributed digital environments, facilitating advancements in federated security systems.</description>
-   <guid>oai:arXiv.org:2412.12324v1</guid>
-   <category>cs.CR</category>
-   <category>cs.LG</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Hamidreza Fereidouni, Abdelhakim Senhaji Hafid, Dimitrios Makrakis, Yaser Baseri</creator>
-  </item>
-  <item>
-   <title>Building Gradient Bridges: Label Leakage from Restricted Gradient Sharing in Federated Learning</title>
-   <link>https://arxiv.org/abs/2412.12640</link>
-   <description>The growing concern over data privacy, the benefits of utilizing data from diverse sources for model training, and the proliferation of networked devices with enhanced computational capabilities have all contributed to the rise of federated learning (FL). The clients in FL collaborate to train a global model by uploading gradients computed on their private datasets without collecting raw data. However, a new attack surface has emerged from gradient sharing, where adversaries can restore the label distribution of a victim's private data by analyzing the obtained gradients. To mitigate this privacy leakage, existing lightweight defenses restrict the sharing of gradients, such as encrypting the final-layer gradients or locally updating the parameters within. In this paper, we introduce a novel attack called Gradient Bridge (GDBR) that recovers the label distribution of training data from the limited gradient information shared in FL. GDBR explores the relationship between the layer-wise gradients, tracks the flow of gradients, and analytically derives the batch training labels. Extensive experiments show that GDBR can accurately recover more than 80% of labels in various FL settings. GDBR highlights the inadequacy of restricted gradient sharing-based defenses and calls for the design of effective defense schemes in FL.</description>
-   <guid>oai:arXiv.org:2412.12640v1</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Rui Zhang, Ka-Ho Chow, Ping Li</creator>
+   <creator>Xinyang Liu, Pengchao Han, Xuan Li, Bo Liu</creator>
   </item>
   <item>
-   <title>Cyber Attacks Prevention Towards Prosumer-based EV Charging Stations: An Edge-assisted Federated Prototype Knowledge Distillation Approach</title>
-   <link>https://arxiv.org/abs/2410.13260</link>
-   <description>In this paper, cyber-attack prevention for the prosumer-based electric vehicle (EV) charging stations (EVCSs) is investigated, which covers two aspects: 1) cyber-attack detection on prosumers' network traffic (NT) data, and 2) cyber-attack intervention. To establish an effective prevention mechanism, several challenges need to be tackled, for instance, the NT data per prosumer may be non-independent and identically distributed (non-IID), and the boundary between benign and malicious traffic becomes blurred. To this end, we propose an edge-assisted federated prototype knowledge distillation (E-FPKD) approach, where each client is deployed on a dedicated local edge server (DLES) and can report its availability for joining the federated learning (FL) process. Prior to the E-FPKD approach, to enhance accuracy, the Pearson Correlation Coefficient is adopted for feature selection. Regarding the proposed E-FPKD approach, we integrate the knowledge distillation and prototype aggregation technique into FL to deal with the non-IID challenge. To address the boundary issue, instead of directly calculating the distance between benign and malicious traffic, we consider maximizing the overall detection correctness of all prosumers (ODC), which can mitigate the computational cost compared with the former way. After detection, a rule-based method will be triggered at each DLES for cyber-attack intervention. Experimental analysis demonstrates that the proposed E-FPKD can achieve the largest ODC on NSL-KDD, UNSW-NB15, and IoTID20 datasets in both binary and multi-class classification, compared with baselines. For instance, the ODC for IoTID20 obtained via the proposed method is separately 0.3782% and 4.4471% greater than FedProto and FedAU in multi-class classification.</description>
-   <guid>oai:arXiv.org:2410.13260v3</guid>
-   <category>cs.CR</category>
-   <pubdate>Wed, 18 Dec 2024 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Luyao Zou, Quang Hieu Vo, Kitae Kim, Huy Q. Le, Chu Myaet Thwal, Chaoning Zhang, Choong Seon Hong</creator>
+   <title>Rehearsal-Free Continual Federated Learning with Synergistic Regularization</title>
+   <link>https://arxiv.org/abs/2412.13779</link>
+   <description>Continual Federated Learning (CFL) allows distributed devices to collaboratively learn novel concepts from continuously shifting training data while avoiding knowledge forgetting of previously seen tasks. To tackle this challenge, most current CFL approaches rely on extensive rehearsal of previous data. Despite effectiveness, rehearsal comes at a cost to memory, and it may also violate data privacy. Considering these, we seek to apply regularization techniques to CFL by considering their cost-efficient properties that do not require sample caching or rehearsal. Specifically, we first apply traditional regularization techniques to CFL and observe that existing regularization techniques, especially synaptic intelligence, can achieve promising results under homogeneous data distribution but fail when the data is heterogeneous. Based on this observation, we propose a simple yet effective regularization algorithm for CFL named FedSSI, which tailors the synaptic intelligence for the CFL with heterogeneous data settings. FedSSI can not only reduce computational overhead without rehearsal but also address the data heterogeneity issue. Extensive experiments show that FedSSI achieves superior performance compared to state-of-the-art methods.</description>
+   <guid>oai:arXiv.org:2412.13779v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Thu, 19 Dec 2024 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yichen Li, Yuying Wang, Tianzhe Xiao, Haozhao Wang, Yining Qi, Ruixuan Li</creator>
   </item>
  </channel>
 </rss>
