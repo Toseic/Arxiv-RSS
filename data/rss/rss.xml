@@ -6,8 +6,273 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 06 Jan 2025 04:14:28 </lastBuildDate>
+  <lastBuildDate>Tue, 07 Jan 2025 02:45:23 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 06 Jan 2025 04:14:28 </pubDate>
+  <pubDate>Tue, 07 Jan 2025 02:45:23 </pubDate>
+  <item>
+   <title>Age-Based Device Selection and Transmit Power Optimization in Over-the-Air Federated Learning</title>
+   <link>https://arxiv.org/abs/2501.01828</link>
+   <description>Recently, over-the-air federated learning (FL) has attracted significant attention for its ability to enhance communication efficiency. However, the performance of over-the-air FL is often constrained by device selection strategies and signal aggregation errors. In particular, neglecting straggler devices in FL can lead to a decline in the fairness of model updates and amplify the global model's bias toward certain devices' data, ultimately impacting the overall system performance. To address this issue, we propose a joint device selection and transmit power optimization framework that ensures the appropriate participation of straggler devices, maintains efficient training performance, and guarantees timely updates. First, we conduct a theoretical analysis to quantify the convergence upper bound of over-the-air FL under age-of-information (AoI)-based device selection. Our analysis further reveals that both the number of selected devices and the signal aggregation errors significantly influence the convergence upper bound. To minimize the expected weighted sum peak age of information, we calculate device priorities for each communication round using Lyapunov optimization and select the highest-priority devices via a greedy algorithm. Then, we formulate and solve a transmit power and normalizing factor optimization problem for selected devices to minimize the time-average mean squared error (MSE). Experimental results demonstrate that our proposed method offers two significant advantages: (1) it reduces MSE and improves model performance compared to baseline methods, and (2) it strikes a balance between fairness and training efficiency while maintaining satisfactory timeliness, ensuring stable model performance.</description>
+   <guid>oai:arXiv.org:2501.01828v1</guid>
+   <category>cs.NI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jingyuan Liu, Zheng Chang, Ying-Chang Liang</creator>
+  </item>
+  <item>
+   <title>Stackelberg Game Based Performance Optimization in Digital Twin Assisted Federated Learning over NOMA Networks</title>
+   <link>https://arxiv.org/abs/2501.01584</link>
+   <description>Despite the advantage of preserving data privacy, federated learning (FL) still suffers from the straggler issue due to the limited computing resources of distributed clients and the unreliable wireless communication environment. By effectively imitating the distributed resources, digital twin (DT) shows great potential in alleviating this issue. In this paper, we leverage DT in the FL framework over non-orthogonal multiple access (NOMA) network to assist FL training process, considering malicious attacks on model updates from clients. A reputationbased client selection scheme is proposed, which accounts for client heterogeneity in multiple aspects and effectively mitigates the risks of poisoning attacks in FL systems. To minimize the total latency and energy consumption in the proposed system, we then formulate a Stackelberg game by considering clients and the server as the leader and the follower, respectively. Specifically, the leader aims to minimize the energy consumption while the objective of the follower is to minimize the total latency during FL training. The Stackelberg equilibrium is achieved to obtain the optimal solutions. We first derive the strategies for the followerlevel problem and include them in the leader-level problem which is then solved via problem decomposition. Simulation results verify the superior performance of the proposed scheme.</description>
+   <guid>oai:arXiv.org:2501.01584v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.GT</category>
+   <category>cs.NI</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Bibo Wu, Fang Fang, Xianbin Wang</creator>
+  </item>
+  <item>
+   <title>Denoising and Adaptive Online Vertical Federated Learning for Sequential Multi-Sensor Data in Industrial Internet of Things</title>
+   <link>https://arxiv.org/abs/2501.01693</link>
+   <description>With the continuous improvement in the computational capabilities of edge devices such as intelligent sensors in the Industrial Internet of Things, these sensors are no longer limited to mere data collection but are increasingly capable of performing complex computational tasks. This advancement provides both the motivation and the foundation for adopting distributed learning approaches. This study focuses on an industrial assembly line scenario where multiple sensors, distributed across various locations, sequentially collect real-time data characterized by distinct feature spaces. To leverage the computational potential of these sensors while addressing the challenges of communication overhead and privacy concerns inherent in centralized learning, we propose the Denoising and Adaptive Online Vertical Federated Learning (DAO-VFL) algorithm. Tailored to the industrial assembly line scenario, DAO-VFL effectively manages continuous data streams and adapts to shifting learning objectives. Furthermore, it can address critical challenges prevalent in industrial environment, such as communication noise and heterogeneity of sensor capabilities. To support the proposed algorithm, we provide a comprehensive theoretical analysis, highlighting the effects of noise reduction and adaptive local iteration decisions on the regret bound. Experimental results on two real-world datasets further demonstrate the superior performance of DAO-VFL compared to benchmarks algorithms.</description>
+   <guid>oai:arXiv.org:2501.01693v1</guid>
+   <category>cs.LG</category>
+   <category>cs.NI</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Heqiang Wang, Xiaoxiong Zhong, Kang Liu, Fangming Liu, Weizhe Zhang</creator>
+  </item>
+  <item>
+   <title>Look Back for More: Harnessing Historical Sequential Updates for Personalized Federated Adapter Tuning</title>
+   <link>https://arxiv.org/abs/2501.01653</link>
+   <description>Personalized federated learning (PFL) studies effective model personalization to address the data heterogeneity issue among clients in traditional federated learning (FL). Existing PFL approaches mainly generate personalized models by relying solely on the clients' latest updated models while ignoring their previous updates, which may result in suboptimal personalized model learning. To bridge this gap, we propose a novel framework termed pFedSeq, designed for personalizing adapters to fine-tune a foundation model in FL. In pFedSeq, the server maintains and trains a sequential learner, which processes a sequence of past adapter updates from clients and generates calibrations for personalized adapters. To effectively capture the cross-client and cross-step relations hidden in previous updates and generate high-performing personalized adapters, pFedSeq adopts the powerful selective state space model (SSM) as the architecture of sequential learner. Through extensive experiments on four public benchmark datasets, we demonstrate the superiority of pFedSeq over state-of-the-art PFL methods.</description>
+   <guid>oai:arXiv.org:2501.01653v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Danni Peng, Yuan Wang, Huazhu Fu, Jinpeng Jiang, Yong Liu, Rick Siow Mong Goh, Qingsong Wei</creator>
+  </item>
+  <item>
+   <title>LCFed: An Efficient Clustered Federated Learning Framework for Heterogeneous Data</title>
+   <link>https://arxiv.org/abs/2501.01850</link>
+   <description>Clustered federated learning (CFL) addresses the performance challenges posed by data heterogeneity in federated learning (FL) by organizing edge devices with similar data distributions into clusters, enabling collaborative model training tailored to each group. However, existing CFL approaches strictly limit knowledge sharing to within clusters, lacking the integration of global knowledge with intra-cluster training, which leads to suboptimal performance. Moreover, traditional clustering methods incur significant computational overhead, especially as the number of edge devices increases. In this paper, we propose LCFed, an efficient CFL framework to combat these challenges. By leveraging model partitioning and adopting distinct aggregation strategies for each sub-model, LCFed effectively incorporates global knowledge into intra-cluster co-training, achieving optimal training performance. Additionally, LCFed customizes a computationally efficient model similarity measurement method based on low-rank models, enabling real-time cluster updates with minimal computational overhead. Extensive experiments show that LCFed outperforms state-of-the-art benchmarks in both test accuracy and clustering computational efficiency.</description>
+   <guid>oai:arXiv.org:2501.01850v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuxin Zhang, Haoyu Chen, Zheng Lin, Zhe Chen, Jin Zhao</creator>
+  </item>
+  <item>
+   <title>Mingling with the Good to Backdoor Federated Learning</title>
+   <link>https://arxiv.org/abs/2501.01913</link>
+   <description>Federated learning (FL) is a decentralized machine learning technique that allows multiple entities to jointly train a model while preserving dataset privacy. However, its distributed nature has raised various security concerns, which have been addressed by increasingly sophisticated defenses. These protections utilize a range of data sources and metrics to, for example, filter out malicious model updates, ensuring that the impact of attacks is minimized or eliminated.
+  This paper explores the feasibility of designing a generic attack method capable of installing backdoors in FL while evading a diverse array of defenses. Specifically, we focus on an attacker strategy called MIGO, which aims to produce model updates that subtly blend with legitimate ones. The resulting effect is a gradual integration of a backdoor into the global model, often ensuring its persistence long after the attack concludes, while generating enough ambiguity to hinder the effectiveness of defenses.
+  MIGO was employed to implant three types of backdoors across five datasets and different model architectures. The results demonstrate the significant threat posed by these backdoors, as MIGO consistently achieved exceptionally high backdoor accuracy (exceeding 90%) while maintaining the utility of the main task. Moreover, MIGO exhibited strong evasion capabilities against ten defenses, including several state-of-the-art methods. When compared to four other attack strategies, MIGO consistently outperformed them across most configurations. Notably, even in extreme scenarios where the attacker controls just 0.1% of the clients, the results indicate that successful backdoor insertion is possible if the attacker can persist for a sufficient number of rounds.</description>
+   <guid>oai:arXiv.org:2501.01913v1</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Nuno Neves</creator>
+  </item>
+  <item>
+   <title>Stackelberg Game Based Performance Optimization in Digital Twin Assisted Federated Learning over NOMA Networks</title>
+   <link>https://arxiv.org/abs/2501.01584</link>
+   <description>Despite the advantage of preserving data privacy, federated learning (FL) still suffers from the straggler issue due to the limited computing resources of distributed clients and the unreliable wireless communication environment. By effectively imitating the distributed resources, digital twin (DT) shows great potential in alleviating this issue. In this paper, we leverage DT in the FL framework over non-orthogonal multiple access (NOMA) network to assist FL training process, considering malicious attacks on model updates from clients. A reputationbased client selection scheme is proposed, which accounts for client heterogeneity in multiple aspects and effectively mitigates the risks of poisoning attacks in FL systems. To minimize the total latency and energy consumption in the proposed system, we then formulate a Stackelberg game by considering clients and the server as the leader and the follower, respectively. Specifically, the leader aims to minimize the energy consumption while the objective of the follower is to minimize the total latency during FL training. The Stackelberg equilibrium is achieved to obtain the optimal solutions. We first derive the strategies for the followerlevel problem and include them in the leader-level problem which is then solved via problem decomposition. Simulation results verify the superior performance of the proposed scheme.</description>
+   <guid>oai:arXiv.org:2501.01584v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.GT</category>
+   <category>cs.NI</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Bibo Wu, Fang Fang, Xianbin Wang</creator>
+  </item>
+  <item>
+   <title>Look Back for More: Harnessing Historical Sequential Updates for Personalized Federated Adapter Tuning</title>
+   <link>https://arxiv.org/abs/2501.01653</link>
+   <description>Personalized federated learning (PFL) studies effective model personalization to address the data heterogeneity issue among clients in traditional federated learning (FL). Existing PFL approaches mainly generate personalized models by relying solely on the clients' latest updated models while ignoring their previous updates, which may result in suboptimal personalized model learning. To bridge this gap, we propose a novel framework termed pFedSeq, designed for personalizing adapters to fine-tune a foundation model in FL. In pFedSeq, the server maintains and trains a sequential learner, which processes a sequence of past adapter updates from clients and generates calibrations for personalized adapters. To effectively capture the cross-client and cross-step relations hidden in previous updates and generate high-performing personalized adapters, pFedSeq adopts the powerful selective state space model (SSM) as the architecture of sequential learner. Through extensive experiments on four public benchmark datasets, we demonstrate the superiority of pFedSeq over state-of-the-art PFL methods.</description>
+   <guid>oai:arXiv.org:2501.01653v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Danni Peng, Yuan Wang, Huazhu Fu, Jinpeng Jiang, Yong Liu, Rick Siow Mong Goh, Qingsong Wei</creator>
+  </item>
+  <item>
+   <title>Denoising and Adaptive Online Vertical Federated Learning for Sequential Multi-Sensor Data in Industrial Internet of Things</title>
+   <link>https://arxiv.org/abs/2501.01693</link>
+   <description>With the continuous improvement in the computational capabilities of edge devices such as intelligent sensors in the Industrial Internet of Things, these sensors are no longer limited to mere data collection but are increasingly capable of performing complex computational tasks. This advancement provides both the motivation and the foundation for adopting distributed learning approaches. This study focuses on an industrial assembly line scenario where multiple sensors, distributed across various locations, sequentially collect real-time data characterized by distinct feature spaces. To leverage the computational potential of these sensors while addressing the challenges of communication overhead and privacy concerns inherent in centralized learning, we propose the Denoising and Adaptive Online Vertical Federated Learning (DAO-VFL) algorithm. Tailored to the industrial assembly line scenario, DAO-VFL effectively manages continuous data streams and adapts to shifting learning objectives. Furthermore, it can address critical challenges prevalent in industrial environment, such as communication noise and heterogeneity of sensor capabilities. To support the proposed algorithm, we provide a comprehensive theoretical analysis, highlighting the effects of noise reduction and adaptive local iteration decisions on the regret bound. Experimental results on two real-world datasets further demonstrate the superior performance of DAO-VFL compared to benchmarks algorithms.</description>
+   <guid>oai:arXiv.org:2501.01693v1</guid>
+   <category>cs.LG</category>
+   <category>cs.NI</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Heqiang Wang, Xiaoxiong Zhong, Kang Liu, Fangming Liu, Weizhe Zhang</creator>
+  </item>
+  <item>
+   <title>Creating Artificial Students that Never Existed: Leveraging Large Language Models and CTGANs for Synthetic Data Generation</title>
+   <link>https://arxiv.org/abs/2501.01793</link>
+   <description>In this study, we explore the growing potential of AI and deep learning technologies, particularly Generative Adversarial Networks (GANs) and Large Language Models (LLMs), for generating synthetic tabular data. Access to quality students data is critical for advancing learning analytics, but privacy concerns and stricter data protection regulations worldwide limit their availability and usage. Synthetic data offers a promising alternative. We investigate whether synthetic data can be leveraged to create artificial students for serving learning analytics models. Using the popular GAN model CTGAN and three LLMs- GPT2, DistilGPT2, and DialoGPT, we generate synthetic tabular student data. Our results demonstrate the strong potential of these methods to produce high-quality synthetic datasets that resemble real students data. To validate our findings, we apply a comprehensive set of utility evaluation metrics to assess the statistical and predictive performance of the synthetic data and compare the different generator models used, specially the performance of LLMs. Our study aims to provide the learning analytics community with valuable insights into the use of synthetic data, laying the groundwork for expanding the field methodological toolbox with new innovative approaches for learning analytics data generation.</description>
+   <guid>oai:arXiv.org:2501.01793v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Mohammad Khalil, Farhad Vadiee, Ronas Shakya, Qinyi Liu</creator>
+  </item>
+  <item>
+   <title>LCFed: An Efficient Clustered Federated Learning Framework for Heterogeneous Data</title>
+   <link>https://arxiv.org/abs/2501.01850</link>
+   <description>Clustered federated learning (CFL) addresses the performance challenges posed by data heterogeneity in federated learning (FL) by organizing edge devices with similar data distributions into clusters, enabling collaborative model training tailored to each group. However, existing CFL approaches strictly limit knowledge sharing to within clusters, lacking the integration of global knowledge with intra-cluster training, which leads to suboptimal performance. Moreover, traditional clustering methods incur significant computational overhead, especially as the number of edge devices increases. In this paper, we propose LCFed, an efficient CFL framework to combat these challenges. By leveraging model partitioning and adopting distinct aggregation strategies for each sub-model, LCFed effectively incorporates global knowledge into intra-cluster co-training, achieving optimal training performance. Additionally, LCFed customizes a computationally efficient model similarity measurement method based on low-rank models, enabling real-time cluster updates with minimal computational overhead. Extensive experiments show that LCFed outperforms state-of-the-art benchmarks in both test accuracy and clustering computational efficiency.</description>
+   <guid>oai:arXiv.org:2501.01850v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuxin Zhang, Haoyu Chen, Zheng Lin, Zhe Chen, Jin Zhao</creator>
+  </item>
+  <item>
+   <title>Age-Based Device Selection and Transmit Power Optimization in Over-the-Air Federated Learning</title>
+   <link>https://arxiv.org/abs/2501.01828</link>
+   <description>Recently, over-the-air federated learning (FL) has attracted significant attention for its ability to enhance communication efficiency. However, the performance of over-the-air FL is often constrained by device selection strategies and signal aggregation errors. In particular, neglecting straggler devices in FL can lead to a decline in the fairness of model updates and amplify the global model's bias toward certain devices' data, ultimately impacting the overall system performance. To address this issue, we propose a joint device selection and transmit power optimization framework that ensures the appropriate participation of straggler devices, maintains efficient training performance, and guarantees timely updates. First, we conduct a theoretical analysis to quantify the convergence upper bound of over-the-air FL under age-of-information (AoI)-based device selection. Our analysis further reveals that both the number of selected devices and the signal aggregation errors significantly influence the convergence upper bound. To minimize the expected weighted sum peak age of information, we calculate device priorities for each communication round using Lyapunov optimization and select the highest-priority devices via a greedy algorithm. Then, we formulate and solve a transmit power and normalizing factor optimization problem for selected devices to minimize the time-average mean squared error (MSE). Experimental results demonstrate that our proposed method offers two significant advantages: (1) it reduces MSE and improves model performance compared to baseline methods, and (2) it strikes a balance between fairness and training efficiency while maintaining satisfactory timeliness, ensuring stable model performance.</description>
+   <guid>oai:arXiv.org:2501.01828v1</guid>
+   <category>cs.NI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jingyuan Liu, Zheng Chang, Ying-Chang Liang</creator>
+  </item>
+  <item>
+   <title>FedMIA: An Effective Membership Inference Attack Exploiting &quot;All for One&quot; Principle in Federated Learning</title>
+   <link>https://arxiv.org/abs/2402.06289</link>
+   <description>Federated Learning (FL) is a promising approach for training machine learning models on decentralized data while preserving privacy. However, privacy risks, particularly Membership Inference Attacks (MIAs), which aim to determine whether a specific data point belongs to a target client's training set, remain a significant concern. Existing methods for implementing MIAs in FL primarily analyze updates from the target client, focusing on metrics such as loss, gradient norm, and gradient difference. However, these methods fail to leverage updates from non-target clients, potentially underutilizing available information. In this paper, we first formulate a one-tailed likelihood-ratio hypothesis test based on the likelihood of updates from non-target clients. Building upon this formulation, we introduce a three-step Membership Inference Attack (MIA) method, called FedMIA, which follows the &quot;all for one&quot;--leveraging updates from all clients across multiple communication rounds to enhance MIA effectiveness. Both theoretical analysis and extensive experimental results demonstrate that FedMIA outperforms existing MIAs in both classification and generative tasks. Additionally, it can be integrated as an extension to existing methods and is robust against various defense strategies, Non-IID data, and different federated structures. Our code is available in https://github.com/Liar-Mask/FedMIA.</description>
+   <guid>oai:arXiv.org:2402.06289v2</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Gongxi Zhu, Donghao Li, Hanlin Gu, Yuan Yao, Lixin Fan, Yuxing Han</creator>
+  </item>
+  <item>
+   <title>Federated Unsupervised Domain Generalization using Global and Local Alignment of Gradients</title>
+   <link>https://arxiv.org/abs/2405.16304</link>
+   <description>We address the problem of federated domain generalization in an unsupervised setting for the first time. We first theoretically establish a connection between domain shift and alignment of gradients in unsupervised federated learning and show that aligning the gradients at both client and server levels can facilitate the generalization of the model to new (target) domains. Building on this insight, we propose a novel method named FedGaLA, which performs gradient alignment at the client level to encourage clients to learn domain-invariant features, as well as global gradient alignment at the server to obtain a more generalized aggregated model. To empirically evaluate our method, we perform various experiments on four commonly used multi-domain datasets, PACS, OfficeHome, DomainNet, and TerraInc. The results demonstrate the effectiveness of our method which outperforms comparable baselines. Ablation and sensitivity studies demonstrate the impact of different components and parameters in our approach. The source code is available at: https://github.com/MahdiyarMM/FedGaLA.</description>
+   <guid>oai:arXiv.org:2405.16304v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Farhad Pourpanah, Mahdiyar Molahasani, Milad Soltany, Michael Greenspan, Ali Etemad</creator>
+  </item>
+  <item>
+   <title>A Hassle-free Algorithm for Private Learning in Practice: Don't Use Tree Aggregation, Use BLTs</title>
+   <link>https://arxiv.org/abs/2408.08868</link>
+   <description>The state-of-the-art for training on-device language models for mobile keyboard applications combines federated learning (FL) with differential privacy (DP) via the DP-Follow-the-Regularized-Leader (DP-FTRL) algorithm. Two variants of DP-FTRL are used in practice, tree aggregation and matrix factorization. However, tree aggregation suffers from significantly suboptimal privacy/utility tradeoffs, while matrix mechanisms require expensive optimization parameterized by hard-to-estimate-in-advance constants, and high runtime memory costs.This paper extends the recently introduced Buffered Linear Toeplitz (BLT) mechanism to multi-participation scenarios. Our BLT-DP-FTRL maintains the ease-of-use advantages of tree aggregation, while essentially matching matrix factorization in terms of utility and privacy. We evaluate BLT-DP-FTRL on the StackOverflow dataset, serving as a re-producible simulation benchmark, and across four on-device language model tasks in a production FL system. Our empirical results highlight the advantages of the BLT mechanism and elevate the practicality and effectiveness of DP in real-world scenarios.</description>
+   <guid>oai:arXiv.org:2408.08868v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>H. Brendan McMahan, Zheng Xu, Yanxiang Zhang</creator>
+  </item>
+  <item>
+   <title>Creating Artificial Students that Never Existed: Leveraging Large Language Models and CTGANs for Synthetic Data Generation</title>
+   <link>https://arxiv.org/abs/2501.01793</link>
+   <description>In this study, we explore the growing potential of AI and deep learning technologies, particularly Generative Adversarial Networks (GANs) and Large Language Models (LLMs), for generating synthetic tabular data. Access to quality students data is critical for advancing learning analytics, but privacy concerns and stricter data protection regulations worldwide limit their availability and usage. Synthetic data offers a promising alternative. We investigate whether synthetic data can be leveraged to create artificial students for serving learning analytics models. Using the popular GAN model CTGAN and three LLMs- GPT2, DistilGPT2, and DialoGPT, we generate synthetic tabular student data. Our results demonstrate the strong potential of these methods to produce high-quality synthetic datasets that resemble real students data. To validate our findings, we apply a comprehensive set of utility evaluation metrics to assess the statistical and predictive performance of the synthetic data and compare the different generator models used, specially the performance of LLMs. Our study aims to provide the learning analytics community with valuable insights into the use of synthetic data, laying the groundwork for expanding the field methodological toolbox with new innovative approaches for learning analytics data generation.</description>
+   <guid>oai:arXiv.org:2501.01793v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Mohammad Khalil, Farhad Vadiee, Ronas Shakya, Qinyi Liu</creator>
+  </item>
+  <item>
+   <title>LCFed: An Efficient Clustered Federated Learning Framework for Heterogeneous Data</title>
+   <link>https://arxiv.org/abs/2501.01850</link>
+   <description>Clustered federated learning (CFL) addresses the performance challenges posed by data heterogeneity in federated learning (FL) by organizing edge devices with similar data distributions into clusters, enabling collaborative model training tailored to each group. However, existing CFL approaches strictly limit knowledge sharing to within clusters, lacking the integration of global knowledge with intra-cluster training, which leads to suboptimal performance. Moreover, traditional clustering methods incur significant computational overhead, especially as the number of edge devices increases. In this paper, we propose LCFed, an efficient CFL framework to combat these challenges. By leveraging model partitioning and adopting distinct aggregation strategies for each sub-model, LCFed effectively incorporates global knowledge into intra-cluster co-training, achieving optimal training performance. Additionally, LCFed customizes a computationally efficient model similarity measurement method based on low-rank models, enabling real-time cluster updates with minimal computational overhead. Extensive experiments show that LCFed outperforms state-of-the-art benchmarks in both test accuracy and clustering computational efficiency.</description>
+   <guid>oai:arXiv.org:2501.01850v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuxin Zhang, Haoyu Chen, Zheng Lin, Zhe Chen, Jin Zhao</creator>
+  </item>
+  <item>
+   <title>Mingling with the Good to Backdoor Federated Learning</title>
+   <link>https://arxiv.org/abs/2501.01913</link>
+   <description>Federated learning (FL) is a decentralized machine learning technique that allows multiple entities to jointly train a model while preserving dataset privacy. However, its distributed nature has raised various security concerns, which have been addressed by increasingly sophisticated defenses. These protections utilize a range of data sources and metrics to, for example, filter out malicious model updates, ensuring that the impact of attacks is minimized or eliminated.
+  This paper explores the feasibility of designing a generic attack method capable of installing backdoors in FL while evading a diverse array of defenses. Specifically, we focus on an attacker strategy called MIGO, which aims to produce model updates that subtly blend with legitimate ones. The resulting effect is a gradual integration of a backdoor into the global model, often ensuring its persistence long after the attack concludes, while generating enough ambiguity to hinder the effectiveness of defenses.
+  MIGO was employed to implant three types of backdoors across five datasets and different model architectures. The results demonstrate the significant threat posed by these backdoors, as MIGO consistently achieved exceptionally high backdoor accuracy (exceeding 90%) while maintaining the utility of the main task. Moreover, MIGO exhibited strong evasion capabilities against ten defenses, including several state-of-the-art methods. When compared to four other attack strategies, MIGO consistently outperformed them across most configurations. Notably, even in extreme scenarios where the attacker controls just 0.1% of the clients, the results indicate that successful backdoor insertion is possible if the attacker can persist for a sufficient number of rounds.</description>
+   <guid>oai:arXiv.org:2501.01913v1</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Nuno Neves</creator>
+  </item>
+  <item>
+   <title>Federated Unsupervised Domain Generalization using Global and Local Alignment of Gradients</title>
+   <link>https://arxiv.org/abs/2405.16304</link>
+   <description>We address the problem of federated domain generalization in an unsupervised setting for the first time. We first theoretically establish a connection between domain shift and alignment of gradients in unsupervised federated learning and show that aligning the gradients at both client and server levels can facilitate the generalization of the model to new (target) domains. Building on this insight, we propose a novel method named FedGaLA, which performs gradient alignment at the client level to encourage clients to learn domain-invariant features, as well as global gradient alignment at the server to obtain a more generalized aggregated model. To empirically evaluate our method, we perform various experiments on four commonly used multi-domain datasets, PACS, OfficeHome, DomainNet, and TerraInc. The results demonstrate the effectiveness of our method which outperforms comparable baselines. Ablation and sensitivity studies demonstrate the impact of different components and parameters in our approach. The source code is available at: https://github.com/MahdiyarMM/FedGaLA.</description>
+   <guid>oai:arXiv.org:2405.16304v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Farhad Pourpanah, Mahdiyar Molahasani, Milad Soltany, Michael Greenspan, Ali Etemad</creator>
+  </item>
+  <item>
+   <title>Uncertainty-Aware Label Refinement on Hypergraphs for Personalized Federated Facial Expression Recognition</title>
+   <link>https://arxiv.org/abs/2501.01816</link>
+   <description>Most facial expression recognition (FER) models are trained on large-scale expression data with centralized learning. Unfortunately, collecting a large amount of centralized expression data is difficult in practice due to privacy concerns of facial images. In this paper, we investigate FER under the framework of personalized federated learning, which is a valuable and practical decentralized setting for real-world applications. To this end, we develop a novel uncertainty-Aware label refineMent on hYpergraphs (AMY) method. For local training, each local model consists of a backbone, an uncertainty estimation (UE) block, and an expression classification (EC) block. In the UE block, we leverage a hypergraph to model complex high-order relationships between expression samples and incorporate these relationships into uncertainty features. A personalized uncertainty estimator is then introduced to estimate reliable uncertainty weights of samples in the local client. In the EC block, we perform label propagation on the hypergraph, obtaining high-quality refined labels for retraining an expression classifier. Based on the above, we effectively alleviate heterogeneous sample uncertainty across clients and learn a robust personalized FER model in each client. Experimental results on two challenging real-world facial expression databases show that our proposed method consistently outperforms several state-of-the-art methods. This indicates the superiority of hypergraph modeling for uncertainty estimation and label refinement on the personalized federated FER task. The source code will be released at https://github.com/mobei1006/AMY.</description>
+   <guid>oai:arXiv.org:2501.01816v1</guid>
+   <category>cs.CV</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Hu Ding, Yan Yan, Yang Lu, Jing-Hao Xue, Hanzi Wang</creator>
+  </item>
+  <item>
+   <title>Stackelberg Game Based Performance Optimization in Digital Twin Assisted Federated Learning over NOMA Networks</title>
+   <link>https://arxiv.org/abs/2501.01584</link>
+   <description>Despite the advantage of preserving data privacy, federated learning (FL) still suffers from the straggler issue due to the limited computing resources of distributed clients and the unreliable wireless communication environment. By effectively imitating the distributed resources, digital twin (DT) shows great potential in alleviating this issue. In this paper, we leverage DT in the FL framework over non-orthogonal multiple access (NOMA) network to assist FL training process, considering malicious attacks on model updates from clients. A reputationbased client selection scheme is proposed, which accounts for client heterogeneity in multiple aspects and effectively mitigates the risks of poisoning attacks in FL systems. To minimize the total latency and energy consumption in the proposed system, we then formulate a Stackelberg game by considering clients and the server as the leader and the follower, respectively. Specifically, the leader aims to minimize the energy consumption while the objective of the follower is to minimize the total latency during FL training. The Stackelberg equilibrium is achieved to obtain the optimal solutions. We first derive the strategies for the followerlevel problem and include them in the leader-level problem which is then solved via problem decomposition. Simulation results verify the superior performance of the proposed scheme.</description>
+   <guid>oai:arXiv.org:2501.01584v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.GT</category>
+   <category>cs.NI</category>
+   <pubdate>Mon, 06 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Bibo Wu, Fang Fang, Xianbin Wang</creator>
+  </item>
  </channel>
 </rss>
