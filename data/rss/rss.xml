@@ -6,418 +6,299 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Fri, 10 Jan 2025 04:14:08 </lastBuildDate>
+  <lastBuildDate>Sat, 11 Jan 2025 02:43:39 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Fri, 10 Jan 2025 04:14:08 </pubDate>
+  <pubDate>Sat, 11 Jan 2025 02:43:39 </pubDate>
   <item>
-   <title>AutoDFL: A Scalable and Automated Reputation-Aware Decentralized Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.04331</link>
-   <description>Blockchained federated learning (BFL) combines the concepts of federated learning and blockchain technology to enhance privacy, security, and transparency in collaborative machine learning models. However, implementing BFL frameworks poses challenges in terms of scalability and cost-effectiveness. Reputation-aware BFL poses even more challenges, as blockchain validators are tasked with processing federated learning transactions along with the transactions that evaluate FL tasks and aggregate reputations. This leads to faster blockchain congestion and performance degradation. To improve BFL efficiency while increasing scalability and reducing on-chain reputation management costs, this paper proposes AutoDFL, a scalable and automated reputation-aware decentralized federated learning framework. AutoDFL leverages zk-Rollups as a Layer-2 scaling solution to boost the performance while maintaining the same level of security as the underlying Layer-1 blockchain. Moreover, AutoDFL introduces an automated and fair reputation model designed to incentivize federated learning actors. We develop a proof of concept for our framework for an accurate evaluation. Tested with various custom workloads, AutoDFL reaches an average throughput of over 3000 TPS with a gas reduction of up to 20X.</description>
-   <guid>oai:arXiv.org:2501.04331v1</guid>
-   <category>cs.DC</category>
-   <category>cs.CR</category>
-   <category>cs.ET</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Meryem Malak Dif, Mouhamed Amine Bouchiha, Mourad Rabah, Yacine Ghamri-Doudane</creator>
-  </item>
-  <item>
-   <title>VerifBFL: Leveraging zk-SNARKs for A Verifiable Blockchained Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.04319</link>
-   <description>Blockchain-based Federated Learning (FL) is an emerging decentralized machine learning paradigm that enables model training without relying on a central server. Although some BFL frameworks are considered privacy-preserving, they are still vulnerable to various attacks, including inference and model poisoning. Additionally, most of these solutions employ strong trust assumptions among all participating entities or introduce incentive mechanisms to encourage collaboration, making them susceptible to multiple security flaws. This work presents VerifBFL, a trustless, privacy-preserving, and verifiable federated learning framework that integrates blockchain technology and cryptographic protocols. By employing zero-knowledge Succinct Non-Interactive Argument of Knowledge (zk-SNARKs) and incrementally verifiable computation (IVC), VerifBFL ensures the verifiability of both local training and aggregation processes. The proofs of training and aggregation are verified on-chain, guaranteeing the integrity and auditability of each participant's contributions. To protect training data from inference attacks, VerifBFL leverages differential privacy. Finally, to demonstrate the efficiency of the proposed protocols, we built a proof of concept using emerging tools. The results show that generating proofs for local training and aggregation in VerifBFL takes less than 81s and 2s, respectively, while verifying them on-chain takes less than 0.6s.</description>
-   <guid>oai:arXiv.org:2501.04319v1</guid>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <category>cs.ET</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Ahmed Ayoub Bellachia, Mouhamed Amine Bouchiha, Yacine Ghamri-Doudane, Mourad Rabah</creator>
-  </item>
-  <item>
-   <title>Revisiting LocalSGD and SCAFFOLD: Improved Rates and Missing Analysis</title>
-   <link>https://arxiv.org/abs/2501.04443</link>
-   <description>LocalSGD and SCAFFOLD are widely used methods in distributed stochastic optimization, with numerous applications in machine learning, large-scale data processing, and federated learning. However, rigorously establishing their theoretical advantages over simpler methods, such as minibatch SGD (MbSGD), has proven challenging, as existing analyses often rely on strong assumptions, unrealistic premises, or overly restrictive scenarios.
-  In this work, we revisit the convergence properties of LocalSGD and SCAFFOLD under a variety of existing or weaker conditions, including gradient similarity, Hessian similarity, weak convexity, and Lipschitz continuity of the Hessian. Our analysis shows that (i) LocalSGD achieves faster convergence compared to MbSGD for weakly convex functions without requiring stronger gradient similarity assumptions; (ii) LocalSGD benefits significantly from higher-order similarity and smoothness; and (iii) SCAFFOLD demonstrates faster convergence than MbSGD for a broader class of non-quadratic functions. These theoretical insights provide a clearer understanding of the conditions under which LocalSGD and SCAFFOLD outperform MbSGD.</description>
-   <guid>oai:arXiv.org:2501.04443v1</guid>
-   <category>math.OC</category>
+   <title>Convergence Analysis of Split Federated Learning on Heterogeneous Data</title>
+   <link>https://arxiv.org/abs/2402.15166</link>
+   <description>Split federated learning (SFL) is a recent distributed approach for collaborative model training among multiple clients. In SFL, a global model is typically split into two parts, where clients train one part in a parallel federated manner, and a main server trains the other. Despite the recent research on SFL algorithm development, the convergence analysis of SFL is missing in the literature, and this paper aims to fill this gap. The analysis of SFL can be more challenging than that of federated learning (FL), due to the potential dual-paced updates at the clients and the main server. We provide convergence analysis of SFL for strongly convex and general convex objectives on heterogeneous data. The convergence rates are $O(1/T)$ and $O(1/\sqrt[3]{T})$, respectively, where $T$ denotes the total number of rounds for SFL training. We further extend the analysis to non-convex objectives and the scenario where some clients may be unavailable during training. Experimental experiments validate our theoretical results and show that SFL outperforms FL and split learning (SL) when data is highly heterogeneous across a large number of clients.</description>
+   <guid>oai:arXiv.org:2402.15166v3</guid>
    <category>cs.DC</category>
    <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Ruichen Luo, Sebastian U Stich, Samuel Horv\'ath, Martin Tak\'a\v{c}</creator>
-  </item>
-  <item>
-   <title>Rethinking Byzantine Robustness in Federated Recommendation from Sparse Aggregation Perspective</title>
-   <link>https://arxiv.org/abs/2501.03301</link>
-   <description>To preserve user privacy in recommender systems, federated recommendation (FR) based on federated learning (FL) emerges, keeping the personal data on the local client and updating a model collaboratively. Unlike FL, FR has a unique sparse aggregation mechanism, where the embedding of each item is updated by only partial clients, instead of full clients in a dense aggregation of general FL. Recently, as an essential principle of FL, model security has received increasing attention, especially for Byzantine attacks, where malicious clients can send arbitrary updates. The problem of exploring the Byzantine robustness of FR is particularly critical since in the domains applying FR, e.g., e-commerce, malicious clients can be injected easily by registering new accounts. However, existing Byzantine works neglect the unique sparse aggregation of FR, making them unsuitable for our problem. Thus, we make the first effort to investigate Byzantine attacks on FR from the perspective of sparse aggregation, which is non-trivial: it is not clear how to define Byzantine robustness under sparse aggregations and design Byzantine attacks under limited knowledge/capability. In this paper, we reformulate the Byzantine robustness under sparse aggregation by defining the aggregation for a single item as the smallest execution unit. Then we propose a family of effective attack strategies, named Spattack, which exploit the vulnerability in sparse aggregation and are categorized along the adversary's knowledge and capability. Extensive experimental results demonstrate that Spattack can effectively prevent convergence and even break down defenses under a few malicious clients, raising alarms for securing FR systems.</description>
-   <guid>oai:arXiv.org:2501.03301v2</guid>
-   <category>cs.CR</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhongjian Zhang, Mengmei Zhang, Xiao Wang, Lingjuan Lyu, Bo Yan, Junping Du, Chuan Shi</creator>
-  </item>
-  <item>
-   <title>FedKD-hybrid: Federated Hybrid Knowledge Distillation for Lithography Hotspot Detection</title>
-   <link>https://arxiv.org/abs/2501.04066</link>
-   <description>Federated Learning (FL) provides novel solutions for machine learning (ML)-based lithography hotspot detection (LHD) under distributed privacy-preserving settings. Currently, two research pipelines have been investigated to aggregate local models and achieve global consensus, including parameter/nonparameter based (also known as knowledge distillation, namely KD). While these two kinds of methods show effectiveness in specific scenarios, we note they have not fully utilized and transferred the information learned, leaving the potential of FL-based LDH remains unexplored. Thus, we propose FedKDhybrid in this study to mitigate the research gap. Specifically, FedKD-hybrid clients agree on several identical layers across all participants and a public dataset for achieving global consensus. During training, the trained local model will be evaluated on the public dataset, and the generated logits will be uploaded along with the identical layer parameters. The aggregated information is consequently used to update local models via the public dataset as a medium. We compare our proposed FedKD-hybrid with several state-of-the-art (SOTA) FL methods under ICCAD-2012 and FAB (real-world collected) datasets with different settings; the experimental results demonstrate the superior performance of the FedKD-hybrid algorithm. Our code is available at https://github.com/itsnotacie/NN-FedKD-hybrid</description>
-   <guid>oai:arXiv.org:2501.04066v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AR</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Yuqi Li, Xingyou Lin, Kai Zhang, Chuanguang Yang, Zhongliang Guo, Jianping Gou, Yanli Li</creator>
-  </item>
-  <item>
-   <title>Lossless Privacy-Preserving Aggregation for Decentralized Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.04409</link>
-   <description>Privacy concerns arise as sensitive data proliferate. Despite decentralized federated learning (DFL) aggregating gradients from neighbors to avoid direct data transmission, it still poses indirect data leaks from the transmitted gradients. Existing privacy-preserving methods for DFL add noise to gradients. They either diminish the model predictive accuracy or suffer from ineffective gradient protection. In this paper, we propose a novel lossless privacy-preserving aggregation rule named LPPA to enhance gradient protection as much as possible but without loss of DFL model predictive accuracy. LPPA subtly injects the noise difference between the sent and received noise into transmitted gradients for gradient protection. The noise difference incorporates neighbors' randomness for each client, effectively safeguarding against data leaks. LPPA employs the noise flow conservation theory to ensure that the noise impact can be globally eliminated. The global sum of all noise differences remains zero, ensuring that accurate gradient aggregation is unaffected and the model accuracy remains intact. We theoretically prove that the privacy-preserving capacity of LPPA is \sqrt{2} times greater than that of noise addition, while maintaining comparable model accuracy to the standard DFL aggregation without noise injection. Experimental results verify the theoretical findings and show that LPPA achieves a 13% mean improvement in accuracy over noise addition. We also demonstrate the effectiveness of LPPA in protecting raw data and guaranteeing lossless model accuracy.</description>
-   <guid>oai:arXiv.org:2501.04409v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Xiaoye Miao, Bin Li, Yangyang Wu, Meng Xi, Xinkui Zhao, Jianwei Yin</creator>
-  </item>
-  <item>
-   <title>Federated Fine-Tuning of LLMs: Framework Comparison and Research Directions</title>
-   <link>https://arxiv.org/abs/2501.04436</link>
-   <description>Federated learning (FL) provides a privacy-preserving solution for fine-tuning pre-trained large language models (LLMs) using distributed private datasets, enabling task-specific adaptation while preserving data privacy. However, fine-tuning the extensive parameters in LLMs is particularly challenging in resource-constrained federated scenarios due to the significant communication and computational costs. To gain a deeper understanding of how these challenges can be addressed, this article conducts a comparative analysis three advanced federated LLM (FedLLM) frameworks that integrate knowledge distillation (KD) and split learning (SL) to mitigate these issues: 1) FedLLMs, where clients upload model parameters or gradients to enable straightforward and effective fine-tuning; 2) KD-FedLLMs, which leverage KD for efficient knowledge sharing via logits; and 3) Split-FedLLMs, which split the LLMs into two parts, with one part executed on the client and the other one on the server, to balance the computational load. Each framework is evaluated based on key performance metrics, including model accuracy, communication overhead, and client-side computational load, offering insights into their effectiveness for various federated fine-tuning scenarios. Through this analysis, we identify framework-specific optimization opportunities to enhance the efficiency of FedLLMs and discuss broader research directions, highlighting open opportunities to better adapt FedLLMs for real-world applications. A use case is presented to demonstrate the performance comparison of these three frameworks under varying configurations and settings.</description>
-   <guid>oai:arXiv.org:2501.04436v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Na Yan, Yang Su, Yansha Deng, Robert Schober</creator>
-  </item>
-  <item>
-   <title>Gradient Purification: Defense Against Poisoning Attack in Decentralized Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.04453</link>
-   <description>Decentralized federated learning (DFL) is inherently vulnerable to poisoning attacks, as malicious clients can transmit manipulated model gradients to neighboring clients. Existing defense methods either reject suspicious gradients per iteration or restart DFL aggregation after detecting all malicious clients. They overlook the potential accuracy benefit from the discarded malicious gradients. In this paper, we propose a novel gradient purification defense, named GPD, that integrates seamlessly with existing DFL aggregation to defend against poisoning attacks. It aims to mitigate the harm in model gradients while retaining the benefit in model weights for enhancing accuracy. For each benign client in GPD, a recording variable is designed to track the historically aggregated gradients from one of its neighbors. It allows benign clients to precisely detect malicious neighbors and swiftly mitigate aggregated malicious gradients via historical consistency checks. Upon mitigation, GPD optimizes model weights via aggregating gradients solely from benign clients. This retains the previously beneficial portions from malicious clients and exploits the contributions from benign clients, thereby significantly enhancing the model accuracy. We analyze the convergence of GPD, as well as its ability to harvest high accuracy. Extensive experiments over three datasets demonstrate that, GPD is capable of mitigating poisoning attacks under both iid and non-iid data distributions. It significantly outperforms state-of-the-art defenses in terms of accuracy against various poisoning attacks.</description>
-   <guid>oai:arXiv.org:2501.04453v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Bin Li, Xiaoye Miao, Yongheng Shang, Xinkui Zhao, Shuiguang Deng, Jianwei Yin</creator>
-  </item>
-  <item>
-   <title>VerifBFL: Leveraging zk-SNARKs for A Verifiable Blockchained Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.04319</link>
-   <description>Blockchain-based Federated Learning (FL) is an emerging decentralized machine learning paradigm that enables model training without relying on a central server. Although some BFL frameworks are considered privacy-preserving, they are still vulnerable to various attacks, including inference and model poisoning. Additionally, most of these solutions employ strong trust assumptions among all participating entities or introduce incentive mechanisms to encourage collaboration, making them susceptible to multiple security flaws. This work presents VerifBFL, a trustless, privacy-preserving, and verifiable federated learning framework that integrates blockchain technology and cryptographic protocols. By employing zero-knowledge Succinct Non-Interactive Argument of Knowledge (zk-SNARKs) and incrementally verifiable computation (IVC), VerifBFL ensures the verifiability of both local training and aggregation processes. The proofs of training and aggregation are verified on-chain, guaranteeing the integrity and auditability of each participant's contributions. To protect training data from inference attacks, VerifBFL leverages differential privacy. Finally, to demonstrate the efficiency of the proposed protocols, we built a proof of concept using emerging tools. The results show that generating proofs for local training and aggregation in VerifBFL takes less than 81s and 2s, respectively, while verifying them on-chain takes less than 0.6s.</description>
-   <guid>oai:arXiv.org:2501.04319v1</guid>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <category>cs.ET</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Ahmed Ayoub Bellachia, Mouhamed Amine Bouchiha, Yacine Ghamri-Doudane, Mourad Rabah</creator>
-  </item>
-  <item>
-   <title>AutoDFL: A Scalable and Automated Reputation-Aware Decentralized Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.04331</link>
-   <description>Blockchained federated learning (BFL) combines the concepts of federated learning and blockchain technology to enhance privacy, security, and transparency in collaborative machine learning models. However, implementing BFL frameworks poses challenges in terms of scalability and cost-effectiveness. Reputation-aware BFL poses even more challenges, as blockchain validators are tasked with processing federated learning transactions along with the transactions that evaluate FL tasks and aggregate reputations. This leads to faster blockchain congestion and performance degradation. To improve BFL efficiency while increasing scalability and reducing on-chain reputation management costs, this paper proposes AutoDFL, a scalable and automated reputation-aware decentralized federated learning framework. AutoDFL leverages zk-Rollups as a Layer-2 scaling solution to boost the performance while maintaining the same level of security as the underlying Layer-1 blockchain. Moreover, AutoDFL introduces an automated and fair reputation model designed to incentivize federated learning actors. We develop a proof of concept for our framework for an accurate evaluation. Tested with various custom workloads, AutoDFL reaches an average throughput of over 3000 TPS with a gas reduction of up to 20X.</description>
-   <guid>oai:arXiv.org:2501.04331v1</guid>
-   <category>cs.DC</category>
-   <category>cs.CR</category>
-   <category>cs.ET</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Meryem Malak Dif, Mouhamed Amine Bouchiha, Mourad Rabah, Yacine Ghamri-Doudane</creator>
-  </item>
-  <item>
-   <title>Revisiting LocalSGD and SCAFFOLD: Improved Rates and Missing Analysis</title>
-   <link>https://arxiv.org/abs/2501.04443</link>
-   <description>LocalSGD and SCAFFOLD are widely used methods in distributed stochastic optimization, with numerous applications in machine learning, large-scale data processing, and federated learning. However, rigorously establishing their theoretical advantages over simpler methods, such as minibatch SGD (MbSGD), has proven challenging, as existing analyses often rely on strong assumptions, unrealistic premises, or overly restrictive scenarios.
-  In this work, we revisit the convergence properties of LocalSGD and SCAFFOLD under a variety of existing or weaker conditions, including gradient similarity, Hessian similarity, weak convexity, and Lipschitz continuity of the Hessian. Our analysis shows that (i) LocalSGD achieves faster convergence compared to MbSGD for weakly convex functions without requiring stronger gradient similarity assumptions; (ii) LocalSGD benefits significantly from higher-order similarity and smoothness; and (iii) SCAFFOLD demonstrates faster convergence than MbSGD for a broader class of non-quadratic functions. These theoretical insights provide a clearer understanding of the conditions under which LocalSGD and SCAFFOLD outperform MbSGD.</description>
-   <guid>oai:arXiv.org:2501.04443v1</guid>
-   <category>math.OC</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Ruichen Luo, Sebastian U Stich, Samuel Horv\'ath, Martin Tak\'a\v{c}</creator>
-  </item>
-  <item>
-   <title>Multi-task retriever fine-tuning for domain-specific and efficient RAG</title>
-   <link>https://arxiv.org/abs/2501.04652</link>
-   <description>Retrieval-Augmented Generation (RAG) has become ubiquitous when deploying Large Language Models (LLMs), as it can address typical limitations such as generating hallucinated or outdated information. However, when building real-world RAG applications, practical issues arise. First, the retrieved information is generally domain-specific. Since it is computationally expensive to fine-tune LLMs, it is more feasible to fine-tune the retriever to improve the quality of the data included in the LLM input. Second, as more applications are deployed in the same real-world system, one cannot afford to deploy separate retrievers. Moreover, these RAG applications normally retrieve different kinds of data. Our solution is to instruction fine-tune a small retriever encoder on a variety of domain-specific tasks to allow us to deploy one encoder that can serve many use cases, thereby achieving low-cost, scalability, and speed. We show how this encoder generalizes to out-of-domain settings as well as to an unseen retrieval task on real-world enterprise use cases.</description>
-   <guid>oai:arXiv.org:2501.04652v1</guid>
-   <category>cs.CL</category>
-   <category>cs.IR</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Patrice B\'echard, Orlando Marquez Ayala</creator>
-  </item>
-  <item>
-   <title>Ferrari: Federated Feature Unlearning via Optimizing Feature Sensitivity</title>
-   <link>https://arxiv.org/abs/2405.17462</link>
-   <description>The advent of Federated Learning (FL) highlights the practical necessity for the right to be forgotten for all clients, allowing them to request data deletion from the machine learning models service provider. This necessity has spurred a growing demand for Federated Unlearning (FU). Feature unlearning has gained considerable attention due to its applications in unlearning sensitive, backdoor, and biased features. Existing methods employ the influence function to achieve feature unlearning, which is impractical for FL as it necessitates the participation of other clients, if not all, in the unlearning process. Furthermore, current research lacks an evaluation of the effectiveness of feature unlearning. To address these limitations, we define feature sensitivity in evaluating feature unlearning according to Lipschitz continuity. This metric characterizes the model outputs rate of change or sensitivity to perturbations in the input feature. We then propose an effective federated feature unlearning framework called Ferrari, which minimizes feature sensitivity. Extensive experimental results and theoretical analysis demonstrate the effectiveness of Ferrari across various feature unlearning scenarios, including sensitive, backdoor, and biased features. The code is publicly available at https://github.com/OngWinKent/Federated-Feature-Unlearning</description>
-   <guid>oai:arXiv.org:2405.17462v4</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Hanlin Gu, Win Kent Ong, Chee Seng Chan, Lixin Fan</creator>
-  </item>
-  <item>
-   <title>Correlated Privacy Mechanisms for Differentially Private Distributed Mean Estimation</title>
-   <link>https://arxiv.org/abs/2407.03289</link>
-   <description>Differentially private distributed mean estimation (DP-DME) is a fundamental building block in privacy-preserving federated learning, where a central server estimates the mean of $d$-dimensional vectors held by $n$ users while ensuring $(\epsilon,\delta)$-DP. Local differential privacy (LDP) and distributed DP with secure aggregation (SA) are the most common notions of DP used in DP-DME settings with an untrusted server. LDP provides strong resilience to dropouts, colluding users, and adversarial attacks, but suffers from poor utility. In contrast, SA-based DP-DME achieves an $O(n)$ utility gain over LDP in DME, but requires increased communication and computation overheads and complex multi-round protocols to handle dropouts and attacks. In this work, we present a generalized framework for DP-DME, that captures LDP and SA-based mechanisms as extreme cases. Our framework provides a foundation for developing and analyzing a variety of DP-DME protocols that leverage correlated privacy mechanisms across users. To this end, we propose CorDP-DME, a novel DP-DME mechanism based on the correlated Gaussian mechanism, that spans the gap between DME with LDP and distributed DP. We prove that CorDP-DME offers a favorable balance between utility and resilience to dropout and collusion. We provide an information-theoretic analysis of CorDP-DME, and derive theoretical guarantees for utility under any given privacy parameters and dropout/colluding user thresholds. Our results demonstrate that (anti) correlated Gaussian DP mechanisms can significantly improve utility in mean estimation tasks compared to LDP -- even in adversarial settings -- while maintaining better resilience to dropouts and attacks compared to distributed DP.</description>
-   <guid>oai:arXiv.org:2407.03289v2</guid>
-   <category>cs.IT</category>
-   <category>cs.CR</category>
-   <category>cs.LG</category>
-   <category>math.IT</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Sajani Vithana, Viveck R. Cadambe, Flavio P. Calmon, Haewon Jeong</creator>
-  </item>
-  <item>
-   <title>BudgetMLAgent: A Cost-Effective LLM Multi-Agent system for Automating Machine Learning Tasks</title>
-   <link>https://arxiv.org/abs/2411.07464</link>
-   <description>Large Language Models (LLMs) excel in diverse applications including generation of code snippets, but often struggle with generating code for complex Machine Learning (ML) tasks. Although existing LLM single-agent based systems give varying performance depending on the task complexity, they purely rely on larger and expensive models such as GPT-4. Our investigation reveals that no-cost and low-cost models such as Gemini-Pro, Mixtral and CodeLlama perform far worse than GPT-4 in a single-agent setting. With the motivation of developing a cost-efficient LLM based solution for solving ML tasks, we propose an LLM Multi-Agent based system which leverages combination of experts using profiling, efficient retrieval of past observations, LLM cascades, and ask-the-expert calls. Through empirical analysis on ML engineering tasks in the MLAgentBench benchmark, we demonstrate the effectiveness of our system, using no-cost models, namely Gemini as the base LLM, paired with GPT-4 in cascade and expert to serve occasional ask-the-expert calls for planning. With 94.2\% reduction in the cost (from \$0.931 per run cost averaged over all tasks for GPT-4 single agent system to \$0.054), our system is able to yield better average success rate of 32.95\% as compared to GPT-4 single-agent system yielding 22.72\% success rate averaged over all the tasks of MLAgentBench.</description>
-   <guid>oai:arXiv.org:2411.07464v2</guid>
-   <category>cs.MA</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shubham Gandhi, Manasi Patwardhan, Lovekesh Vig, Gautam Shroff</creator>
-  </item>
-  <item>
-   <title>Rethinking Byzantine Robustness in Federated Recommendation from Sparse Aggregation Perspective</title>
-   <link>https://arxiv.org/abs/2501.03301</link>
-   <description>To preserve user privacy in recommender systems, federated recommendation (FR) based on federated learning (FL) emerges, keeping the personal data on the local client and updating a model collaboratively. Unlike FL, FR has a unique sparse aggregation mechanism, where the embedding of each item is updated by only partial clients, instead of full clients in a dense aggregation of general FL. Recently, as an essential principle of FL, model security has received increasing attention, especially for Byzantine attacks, where malicious clients can send arbitrary updates. The problem of exploring the Byzantine robustness of FR is particularly critical since in the domains applying FR, e.g., e-commerce, malicious clients can be injected easily by registering new accounts. However, existing Byzantine works neglect the unique sparse aggregation of FR, making them unsuitable for our problem. Thus, we make the first effort to investigate Byzantine attacks on FR from the perspective of sparse aggregation, which is non-trivial: it is not clear how to define Byzantine robustness under sparse aggregations and design Byzantine attacks under limited knowledge/capability. In this paper, we reformulate the Byzantine robustness under sparse aggregation by defining the aggregation for a single item as the smallest execution unit. Then we propose a family of effective attack strategies, named Spattack, which exploit the vulnerability in sparse aggregation and are categorized along the adversary's knowledge and capability. Extensive experimental results demonstrate that Spattack can effectively prevent convergence and even break down defenses under a few malicious clients, raising alarms for securing FR systems.</description>
-   <guid>oai:arXiv.org:2501.03301v2</guid>
-   <category>cs.CR</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhongjian Zhang, Mengmei Zhang, Xiao Wang, Lingjuan Lyu, Bo Yan, Junping Du, Chuan Shi</creator>
-  </item>
-  <item>
-   <title>BudgetMLAgent: A Cost-Effective LLM Multi-Agent system for Automating Machine Learning Tasks</title>
-   <link>https://arxiv.org/abs/2411.07464</link>
-   <description>Large Language Models (LLMs) excel in diverse applications including generation of code snippets, but often struggle with generating code for complex Machine Learning (ML) tasks. Although existing LLM single-agent based systems give varying performance depending on the task complexity, they purely rely on larger and expensive models such as GPT-4. Our investigation reveals that no-cost and low-cost models such as Gemini-Pro, Mixtral and CodeLlama perform far worse than GPT-4 in a single-agent setting. With the motivation of developing a cost-efficient LLM based solution for solving ML tasks, we propose an LLM Multi-Agent based system which leverages combination of experts using profiling, efficient retrieval of past observations, LLM cascades, and ask-the-expert calls. Through empirical analysis on ML engineering tasks in the MLAgentBench benchmark, we demonstrate the effectiveness of our system, using no-cost models, namely Gemini as the base LLM, paired with GPT-4 in cascade and expert to serve occasional ask-the-expert calls for planning. With 94.2\% reduction in the cost (from \$0.931 per run cost averaged over all tasks for GPT-4 single agent system to \$0.054), our system is able to yield better average success rate of 32.95\% as compared to GPT-4 single-agent system yielding 22.72\% success rate averaged over all the tasks of MLAgentBench.</description>
-   <guid>oai:arXiv.org:2411.07464v2</guid>
-   <category>cs.MA</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shubham Gandhi, Manasi Patwardhan, Lovekesh Vig, Gautam Shroff</creator>
-  </item>
-  <item>
-   <title>Federated Fine-Tuning of LLMs: Framework Comparison and Research Directions</title>
-   <link>https://arxiv.org/abs/2501.04436</link>
-   <description>Federated learning (FL) provides a privacy-preserving solution for fine-tuning pre-trained large language models (LLMs) using distributed private datasets, enabling task-specific adaptation while preserving data privacy. However, fine-tuning the extensive parameters in LLMs is particularly challenging in resource-constrained federated scenarios due to the significant communication and computational costs. To gain a deeper understanding of how these challenges can be addressed, this article conducts a comparative analysis three advanced federated LLM (FedLLM) frameworks that integrate knowledge distillation (KD) and split learning (SL) to mitigate these issues: 1) FedLLMs, where clients upload model parameters or gradients to enable straightforward and effective fine-tuning; 2) KD-FedLLMs, which leverage KD for efficient knowledge sharing via logits; and 3) Split-FedLLMs, which split the LLMs into two parts, with one part executed on the client and the other one on the server, to balance the computational load. Each framework is evaluated based on key performance metrics, including model accuracy, communication overhead, and client-side computational load, offering insights into their effectiveness for various federated fine-tuning scenarios. Through this analysis, we identify framework-specific optimization opportunities to enhance the efficiency of FedLLMs and discuss broader research directions, highlighting open opportunities to better adapt FedLLMs for real-world applications. A use case is presented to demonstrate the performance comparison of these three frameworks under varying configurations and settings.</description>
-   <guid>oai:arXiv.org:2501.04436v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Na Yan, Yang Su, Yansha Deng, Robert Schober</creator>
-  </item>
-  <item>
-   <title>Knowledge Retrieval Based on Generative AI</title>
-   <link>https://arxiv.org/abs/2501.04635</link>
-   <description>This study develops a question-answering system based on Retrieval-Augmented Generation (RAG) using Chinese Wikipedia and Lawbank as retrieval sources. Using TTQA and TMMLU+ as evaluation datasets, the system employs BGE-M3 for dense vector retrieval to obtain highly relevant search results and BGE-reranker to reorder these results based on query relevance. The most pertinent retrieval outcomes serve as reference knowledge for a Large Language Model (LLM), enhancing its ability to answer questions and establishing a knowledge retrieval system grounded in generative AI.
-  The system's effectiveness is assessed through a two-stage evaluation: automatic and assisted performance evaluations. The automatic evaluation calculates accuracy by comparing the model's auto-generated labels with ground truth answers, measuring performance under standardized conditions without human intervention. The assisted performance evaluation involves 20 finance-related multiple-choice questions answered by 20 participants without financial backgrounds. Initially, participants answer independently. Later, they receive system-generated reference information to assist in answering, examining whether the system improves accuracy when assistance is provided.
-  The main contributions of this research are: (1) Enhanced LLM Capability: By integrating BGE-M3 and BGE-reranker, the system retrieves and reorders highly relevant results, reduces hallucinations, and dynamically accesses authorized or public knowledge sources. (2) Improved Data Privacy: A customized RAG architecture enables local operation of the LLM, eliminating the need to send private data to external servers. This approach enhances data security, reduces reliance on commercial services, lowers operational costs, and mitigates privacy risks.</description>
-   <guid>oai:arXiv.org:2501.04635v1</guid>
-   <category>cs.IR</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Te-Lun Yang, Jyi-Shane Liu, Yuen-Hsien Tseng, Jyh-Shing Roger Jang</creator>
-  </item>
-  <item>
-   <title>BudgetMLAgent: A Cost-Effective LLM Multi-Agent system for Automating Machine Learning Tasks</title>
-   <link>https://arxiv.org/abs/2411.07464</link>
-   <description>Large Language Models (LLMs) excel in diverse applications including generation of code snippets, but often struggle with generating code for complex Machine Learning (ML) tasks. Although existing LLM single-agent based systems give varying performance depending on the task complexity, they purely rely on larger and expensive models such as GPT-4. Our investigation reveals that no-cost and low-cost models such as Gemini-Pro, Mixtral and CodeLlama perform far worse than GPT-4 in a single-agent setting. With the motivation of developing a cost-efficient LLM based solution for solving ML tasks, we propose an LLM Multi-Agent based system which leverages combination of experts using profiling, efficient retrieval of past observations, LLM cascades, and ask-the-expert calls. Through empirical analysis on ML engineering tasks in the MLAgentBench benchmark, we demonstrate the effectiveness of our system, using no-cost models, namely Gemini as the base LLM, paired with GPT-4 in cascade and expert to serve occasional ask-the-expert calls for planning. With 94.2\% reduction in the cost (from \$0.931 per run cost averaged over all tasks for GPT-4 single agent system to \$0.054), our system is able to yield better average success rate of 32.95\% as compared to GPT-4 single-agent system yielding 22.72\% success rate averaged over all the tasks of MLAgentBench.</description>
-   <guid>oai:arXiv.org:2411.07464v2</guid>
-   <category>cs.MA</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shubham Gandhi, Manasi Patwardhan, Lovekesh Vig, Gautam Shroff</creator>
-  </item>
-  <item>
-   <title>Federated Learning and RAG Integration: A Scalable Approach for Medical Large Language Models</title>
-   <link>https://arxiv.org/abs/2412.13720</link>
-   <description>This study analyzes the performance of domain-specific Large Language Models (LLMs) for the medical field by integrating Retrieval-Augmented Generation (RAG) systems within a federated learning framework. Leveraging the inherent advantages of federated learning, such as preserving data privacy and enabling distributed computation, this research explores the integration of RAG systems with models trained under varying client configurations to optimize performance. Experimental results demonstrate that the federated learning-based models integrated with RAG systems consistently outperform their non-integrated counterparts across all evaluation metrics. This study highlights the potential of combining federated learning and RAG systems for developing domain-specific LLMs in the medical field, providing a scalable and privacy-preserving solution for enhancing text generation capabilities.</description>
-   <guid>oai:arXiv.org:2412.13720v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jincheol Jung, Hongju Jeong, Eui-Nam Huh</creator>
-  </item>
-  <item>
-   <title>Rethinking Byzantine Robustness in Federated Recommendation from Sparse Aggregation Perspective</title>
-   <link>https://arxiv.org/abs/2501.03301</link>
-   <description>To preserve user privacy in recommender systems, federated recommendation (FR) based on federated learning (FL) emerges, keeping the personal data on the local client and updating a model collaboratively. Unlike FL, FR has a unique sparse aggregation mechanism, where the embedding of each item is updated by only partial clients, instead of full clients in a dense aggregation of general FL. Recently, as an essential principle of FL, model security has received increasing attention, especially for Byzantine attacks, where malicious clients can send arbitrary updates. The problem of exploring the Byzantine robustness of FR is particularly critical since in the domains applying FR, e.g., e-commerce, malicious clients can be injected easily by registering new accounts. However, existing Byzantine works neglect the unique sparse aggregation of FR, making them unsuitable for our problem. Thus, we make the first effort to investigate Byzantine attacks on FR from the perspective of sparse aggregation, which is non-trivial: it is not clear how to define Byzantine robustness under sparse aggregations and design Byzantine attacks under limited knowledge/capability. In this paper, we reformulate the Byzantine robustness under sparse aggregation by defining the aggregation for a single item as the smallest execution unit. Then we propose a family of effective attack strategies, named Spattack, which exploit the vulnerability in sparse aggregation and are categorized along the adversary's knowledge and capability. Extensive experimental results demonstrate that Spattack can effectively prevent convergence and even break down defenses under a few malicious clients, raising alarms for securing FR systems.</description>
-   <guid>oai:arXiv.org:2501.03301v2</guid>
-   <category>cs.CR</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhongjian Zhang, Mengmei Zhang, Xiao Wang, Lingjuan Lyu, Bo Yan, Junping Du, Chuan Shi</creator>
-  </item>
-  <item>
-   <title>VerifBFL: Leveraging zk-SNARKs for A Verifiable Blockchained Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.04319</link>
-   <description>Blockchain-based Federated Learning (FL) is an emerging decentralized machine learning paradigm that enables model training without relying on a central server. Although some BFL frameworks are considered privacy-preserving, they are still vulnerable to various attacks, including inference and model poisoning. Additionally, most of these solutions employ strong trust assumptions among all participating entities or introduce incentive mechanisms to encourage collaboration, making them susceptible to multiple security flaws. This work presents VerifBFL, a trustless, privacy-preserving, and verifiable federated learning framework that integrates blockchain technology and cryptographic protocols. By employing zero-knowledge Succinct Non-Interactive Argument of Knowledge (zk-SNARKs) and incrementally verifiable computation (IVC), VerifBFL ensures the verifiability of both local training and aggregation processes. The proofs of training and aggregation are verified on-chain, guaranteeing the integrity and auditability of each participant's contributions. To protect training data from inference attacks, VerifBFL leverages differential privacy. Finally, to demonstrate the efficiency of the proposed protocols, we built a proof of concept using emerging tools. The results show that generating proofs for local training and aggregation in VerifBFL takes less than 81s and 2s, respectively, while verifying them on-chain takes less than 0.6s.</description>
-   <guid>oai:arXiv.org:2501.04319v1</guid>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <category>cs.ET</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Ahmed Ayoub Bellachia, Mouhamed Amine Bouchiha, Yacine Ghamri-Doudane, Mourad Rabah</creator>
-  </item>
-  <item>
-   <title>AutoDFL: A Scalable and Automated Reputation-Aware Decentralized Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.04331</link>
-   <description>Blockchained federated learning (BFL) combines the concepts of federated learning and blockchain technology to enhance privacy, security, and transparency in collaborative machine learning models. However, implementing BFL frameworks poses challenges in terms of scalability and cost-effectiveness. Reputation-aware BFL poses even more challenges, as blockchain validators are tasked with processing federated learning transactions along with the transactions that evaluate FL tasks and aggregate reputations. This leads to faster blockchain congestion and performance degradation. To improve BFL efficiency while increasing scalability and reducing on-chain reputation management costs, this paper proposes AutoDFL, a scalable and automated reputation-aware decentralized federated learning framework. AutoDFL leverages zk-Rollups as a Layer-2 scaling solution to boost the performance while maintaining the same level of security as the underlying Layer-1 blockchain. Moreover, AutoDFL introduces an automated and fair reputation model designed to incentivize federated learning actors. We develop a proof of concept for our framework for an accurate evaluation. Tested with various custom workloads, AutoDFL reaches an average throughput of over 3000 TPS with a gas reduction of up to 20X.</description>
-   <guid>oai:arXiv.org:2501.04331v1</guid>
-   <category>cs.DC</category>
-   <category>cs.CR</category>
-   <category>cs.ET</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Meryem Malak Dif, Mouhamed Amine Bouchiha, Mourad Rabah, Yacine Ghamri-Doudane</creator>
-  </item>
-  <item>
-   <title>Knowledge Retrieval Based on Generative AI</title>
-   <link>https://arxiv.org/abs/2501.04635</link>
-   <description>This study develops a question-answering system based on Retrieval-Augmented Generation (RAG) using Chinese Wikipedia and Lawbank as retrieval sources. Using TTQA and TMMLU+ as evaluation datasets, the system employs BGE-M3 for dense vector retrieval to obtain highly relevant search results and BGE-reranker to reorder these results based on query relevance. The most pertinent retrieval outcomes serve as reference knowledge for a Large Language Model (LLM), enhancing its ability to answer questions and establishing a knowledge retrieval system grounded in generative AI.
-  The system's effectiveness is assessed through a two-stage evaluation: automatic and assisted performance evaluations. The automatic evaluation calculates accuracy by comparing the model's auto-generated labels with ground truth answers, measuring performance under standardized conditions without human intervention. The assisted performance evaluation involves 20 finance-related multiple-choice questions answered by 20 participants without financial backgrounds. Initially, participants answer independently. Later, they receive system-generated reference information to assist in answering, examining whether the system improves accuracy when assistance is provided.
-  The main contributions of this research are: (1) Enhanced LLM Capability: By integrating BGE-M3 and BGE-reranker, the system retrieves and reorders highly relevant results, reduces hallucinations, and dynamically accesses authorized or public knowledge sources. (2) Improved Data Privacy: A customized RAG architecture enables local operation of the LLM, eliminating the need to send private data to external servers. This approach enhances data security, reduces reliance on commercial services, lowers operational costs, and mitigates privacy risks.</description>
-   <guid>oai:arXiv.org:2501.04635v1</guid>
-   <category>cs.IR</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Te-Lun Yang, Jyi-Shane Liu, Yuen-Hsien Tseng, Jyh-Shing Roger Jang</creator>
-  </item>
-  <item>
-   <title>Multi-task retriever fine-tuning for domain-specific and efficient RAG</title>
-   <link>https://arxiv.org/abs/2501.04652</link>
-   <description>Retrieval-Augmented Generation (RAG) has become ubiquitous when deploying Large Language Models (LLMs), as it can address typical limitations such as generating hallucinated or outdated information. However, when building real-world RAG applications, practical issues arise. First, the retrieved information is generally domain-specific. Since it is computationally expensive to fine-tune LLMs, it is more feasible to fine-tune the retriever to improve the quality of the data included in the LLM input. Second, as more applications are deployed in the same real-world system, one cannot afford to deploy separate retrievers. Moreover, these RAG applications normally retrieve different kinds of data. Our solution is to instruction fine-tune a small retriever encoder on a variety of domain-specific tasks to allow us to deploy one encoder that can serve many use cases, thereby achieving low-cost, scalability, and speed. We show how this encoder generalizes to out-of-domain settings as well as to an unseen retrieval task on real-world enterprise use cases.</description>
-   <guid>oai:arXiv.org:2501.04652v1</guid>
-   <category>cs.CL</category>
-   <category>cs.IR</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Patrice B\'echard, Orlando Marquez Ayala</creator>
-  </item>
-  <item>
-   <title>Multi-task retriever fine-tuning for domain-specific and efficient RAG</title>
-   <link>https://arxiv.org/abs/2501.04652</link>
-   <description>Retrieval-Augmented Generation (RAG) has become ubiquitous when deploying Large Language Models (LLMs), as it can address typical limitations such as generating hallucinated or outdated information. However, when building real-world RAG applications, practical issues arise. First, the retrieved information is generally domain-specific. Since it is computationally expensive to fine-tune LLMs, it is more feasible to fine-tune the retriever to improve the quality of the data included in the LLM input. Second, as more applications are deployed in the same real-world system, one cannot afford to deploy separate retrievers. Moreover, these RAG applications normally retrieve different kinds of data. Our solution is to instruction fine-tune a small retriever encoder on a variety of domain-specific tasks to allow us to deploy one encoder that can serve many use cases, thereby achieving low-cost, scalability, and speed. We show how this encoder generalizes to out-of-domain settings as well as to an unseen retrieval task on real-world enterprise use cases.</description>
-   <guid>oai:arXiv.org:2501.04652v1</guid>
-   <category>cs.CL</category>
-   <category>cs.IR</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Patrice B\'echard, Orlando Marquez Ayala</creator>
-  </item>
-  <item>
-   <title>Federated Learning and RAG Integration: A Scalable Approach for Medical Large Language Models</title>
-   <link>https://arxiv.org/abs/2412.13720</link>
-   <description>This study analyzes the performance of domain-specific Large Language Models (LLMs) for the medical field by integrating Retrieval-Augmented Generation (RAG) systems within a federated learning framework. Leveraging the inherent advantages of federated learning, such as preserving data privacy and enabling distributed computation, this research explores the integration of RAG systems with models trained under varying client configurations to optimize performance. Experimental results demonstrate that the federated learning-based models integrated with RAG systems consistently outperform their non-integrated counterparts across all evaluation metrics. This study highlights the potential of combining federated learning and RAG systems for developing domain-specific LLMs in the medical field, providing a scalable and privacy-preserving solution for enhancing text generation capabilities.</description>
-   <guid>oai:arXiv.org:2412.13720v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>replace</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jincheol Jung, Hongju Jeong, Eui-Nam Huh</creator>
+   <creator>Pengchao Han, Chao Huang, Geng Tian, Ming Tang, Xin Liu</creator>
   </item>
   <item>
-   <title>BudgetMLAgent: A Cost-Effective LLM Multi-Agent system for Automating Machine Learning Tasks</title>
-   <link>https://arxiv.org/abs/2411.07464</link>
-   <description>Large Language Models (LLMs) excel in diverse applications including generation of code snippets, but often struggle with generating code for complex Machine Learning (ML) tasks. Although existing LLM single-agent based systems give varying performance depending on the task complexity, they purely rely on larger and expensive models such as GPT-4. Our investigation reveals that no-cost and low-cost models such as Gemini-Pro, Mixtral and CodeLlama perform far worse than GPT-4 in a single-agent setting. With the motivation of developing a cost-efficient LLM based solution for solving ML tasks, we propose an LLM Multi-Agent based system which leverages combination of experts using profiling, efficient retrieval of past observations, LLM cascades, and ask-the-expert calls. Through empirical analysis on ML engineering tasks in the MLAgentBench benchmark, we demonstrate the effectiveness of our system, using no-cost models, namely Gemini as the base LLM, paired with GPT-4 in cascade and expert to serve occasional ask-the-expert calls for planning. With 94.2\% reduction in the cost (from \$0.931 per run cost averaged over all tasks for GPT-4 single agent system to \$0.054), our system is able to yield better average success rate of 32.95\% as compared to GPT-4 single-agent system yielding 22.72\% success rate averaged over all the tasks of MLAgentBench.</description>
-   <guid>oai:arXiv.org:2411.07464v2</guid>
-   <category>cs.MA</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
+   <title>Differentially Private Online Federated Learning with Correlated Noise</title>
+   <link>https://arxiv.org/abs/2403.16542</link>
+   <description>We introduce a novel differentially private algorithm for online federated learning that employs temporally correlated noise to enhance utility while ensuring privacy of continuously released models. To address challenges posed by DP noise and local updates with streaming non-iid data, we develop a perturbed iterate analysis to control the impact of the DP noise on the utility. Moreover, we demonstrate how the drift errors from local updates can be effectively managed under a quasi-strong convexity condition. Subject to an $(\epsilon, \delta)$-DP budget, we establish a dynamic regret bound over the entire time horizon, quantifying the impact of key parameters and the intensity of changes in dynamic environments. Numerical experiments confirm the efficacy of the proposed algorithm.</description>
+   <guid>oai:arXiv.org:2403.16542v3</guid>
    <category>cs.LG</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shubham Gandhi, Manasi Patwardhan, Lovekesh Vig, Gautam Shroff</creator>
+   <creator>Jiaojiao Zhang, Linglingzhi Zhu, Mikael Johansson</creator>
   </item>
   <item>
-   <title>FedKD-hybrid: Federated Hybrid Knowledge Distillation for Lithography Hotspot Detection</title>
-   <link>https://arxiv.org/abs/2501.04066</link>
-   <description>Federated Learning (FL) provides novel solutions for machine learning (ML)-based lithography hotspot detection (LHD) under distributed privacy-preserving settings. Currently, two research pipelines have been investigated to aggregate local models and achieve global consensus, including parameter/nonparameter based (also known as knowledge distillation, namely KD). While these two kinds of methods show effectiveness in specific scenarios, we note they have not fully utilized and transferred the information learned, leaving the potential of FL-based LDH remains unexplored. Thus, we propose FedKDhybrid in this study to mitigate the research gap. Specifically, FedKD-hybrid clients agree on several identical layers across all participants and a public dataset for achieving global consensus. During training, the trained local model will be evaluated on the public dataset, and the generated logits will be uploaded along with the identical layer parameters. The aggregated information is consequently used to update local models via the public dataset as a medium. We compare our proposed FedKD-hybrid with several state-of-the-art (SOTA) FL methods under ICCAD-2012 and FAB (real-world collected) datasets with different settings; the experimental results demonstrate the superior performance of the FedKD-hybrid algorithm. Our code is available at https://github.com/itsnotacie/NN-FedKD-hybrid</description>
-   <guid>oai:arXiv.org:2501.04066v1</guid>
+   <title>Decentralized Federated Anomaly Detection in Smart Grids: A P2P Gossip Approach</title>
+   <link>https://arxiv.org/abs/2407.15879</link>
+   <description>The increasing security and privacy concerns in the Smart Grid sector have led to a significant demand for robust intrusion detection systems within critical smart grid infrastructure. To address the challenges posed by privacy preservation and decentralized power system zones with distinct data ownership, Federated Learning (FL) has emerged as a promising privacy-preserving solution which facilitates collaborative training of attack detection models without necessitating the sharing of raw data. However, FL presents several implementation limitations in the power system domain due to its heavy reliance on a centralized aggregator and the risks of privacy leakage during model update transmission. To overcome these technical bottlenecks, this paper introduces a novel decentralized federated anomaly detection scheme based on two main gossip protocols namely Random Walk and Epidemic. Our findings indicate that the Random Walk protocol exhibits superior performance compared to the Epidemic protocol, highlighting its efficacy in decentralized federated learning environments. Experimental validation of the proposed framework utilizing publicly available industrial control systems datasets demonstrates superior attack detection accuracy while safeguarding data confidentiality and mitigating the impact of communication latency and stragglers. Furthermore, our approach yields a notable 35% improvement in training time compared to conventional FL, underscoring the efficacy and robustness of our decentralized learning method.</description>
+   <guid>oai:arXiv.org:2407.15879v2</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
    <category>cs.LG</category>
-   <category>cs.AR</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Muhammad Akbar Husnoo, Adnan Anwar, Md Enamul Haque, A. N. Mahmood</creator>
+  </item>
+  <item>
+   <title>Locally Differentially Private Online Federated Learning With Correlated Noise</title>
+   <link>https://arxiv.org/abs/2411.18752</link>
+   <description>We introduce a locally differentially private (LDP) algorithm for online federated learning that employs temporally correlated noise to improve utility while preserving privacy. To address challenges posed by the correlated noise and local updates with streaming non-IID data, we develop a perturbed iterate analysis that controls the impact of the noise on the utility. Moreover, we demonstrate how the drift errors from local updates can be effectively managed for several classes of nonconvex loss functions. Subject to an $(\epsilon,\delta)$-LDP budget, we establish a dynamic regret bound that quantifies the impact of key parameters and the intensity of changes in the dynamic environment on the learning performance. Numerical experiments confirm the efficacy of the proposed algorithm.</description>
+   <guid>oai:arXiv.org:2411.18752v2</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <category>stat.ML</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jiaojiao Zhang, Linglingzhi Zhu, Dominik Fay, Mikael Johansson</creator>
+  </item>
+  <item>
+   <title>Emergence of human-like polarization among large language model agents</title>
+   <link>https://arxiv.org/abs/2501.05171</link>
+   <description>Rapid advances in large language models (LLMs) have empowered autonomous agents to establish social relationships, communicate, and form shared and diverging opinions on political issues. Our understanding of their collective behaviours and underlying mechanisms remains incomplete, however, posing unexpected risks to human society. In this paper, we simulate a networked system involving thousands of large language model agents, discovering their social interactions, guided through LLM conversation, result in human-like polarization. We discover that these agents spontaneously develop their own social network with human-like properties, including homophilic clustering, but also shape their collective opinions through mechanisms observed in the real world, including the echo chamber effect. Similarities between humans and LLM agents -- encompassing behaviours, mechanisms, and emergent phenomena -- raise concerns about their capacity to amplify societal polarization, but also hold the potential to serve as a valuable testbed for identifying plausible strategies to mitigate polarization and its consequences.</description>
+   <guid>oai:arXiv.org:2501.05171v1</guid>
+   <category>cs.CY</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Jinghua Piao, Zhihong Lu, Chen Gao, Fengli Xu, Fernando P. Santos, Yong Li, James Evans</creator>
+  </item>
+  <item>
+   <title>A Novel Approach to Scalable and Automatic Topic-Controlled Question Generation in Education</title>
+   <link>https://arxiv.org/abs/2501.05220</link>
+   <description>The development of Automatic Question Generation (QG) models has the potential to significantly improve educational practices by reducing the teacher workload associated with creating educational content. This paper introduces a novel approach to educational question generation that controls the topical focus of questions. The proposed Topic-Controlled Question Generation (T-CQG) method enhances the relevance and effectiveness of the generated content for educational purposes. Our approach uses fine-tuning on a pre-trained T5-small model, employing specially created datasets tailored to educational needs. The research further explores the impacts of pre-training strategies, quantisation, and data augmentation on the model's performance. We specifically address the challenge of generating semantically aligned questions with paragraph-level contexts, thereby improving the topic specificity of the generated questions. In addition, we introduce and explore novel evaluation methods to assess the topical relatedness of the generated questions. Our results, validated through rigorous offline and human-backed evaluations, demonstrate that the proposed models effectively generate high-quality, topic-focused questions. These models have the potential to reduce teacher workload and support personalised tutoring systems by serving as bespoke question generators. With its relatively small number of parameters, the proposals not only advance the capabilities of question generation models for handling specific educational topics but also offer a scalable solution that reduces infrastructure costs. This scalability makes them feasible for widespread use in education without reliance on proprietary large language models like ChatGPT.</description>
+   <guid>oai:arXiv.org:2501.05220v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.IR</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ziqing Li, Mutlu Cukurova, Sahan Bulathwela</creator>
+  </item>
+  <item>
+   <title>Decentralised Resource Sharing in TinyML: Wireless Bilayer Gossip Parallel SGD for Collaborative Learning</title>
+   <link>https://arxiv.org/abs/2501.04817</link>
+   <description>With the growing computational capabilities of microcontroller units (MCUs), edge devices can now support machine learning models. However, deploying decentralised federated learning (DFL) on such devices presents key challenges, including intermittent connectivity, limited communication range, and dynamic network topologies. This paper proposes a novel framework, bilayer Gossip Decentralised Parallel Stochastic Gradient Descent (GD PSGD), designed to address these issues in resource-constrained environments. The framework incorporates a hierarchical communication structure using Distributed Kmeans (DKmeans) clustering for geographic grouping and a gossip protocol for efficient model aggregation across two layers: intra-cluster and inter-cluster. We evaluate the framework's performance against the Centralised Federated Learning (CFL) baseline using the MCUNet model on the CIFAR-10 dataset under IID and Non-IID conditions. Results demonstrate that the proposed method achieves comparable accuracy to CFL on IID datasets, requiring only 1.8 additional rounds for convergence. On Non-IID datasets, the accuracy loss remains under 8\% for moderate data imbalance. These findings highlight the framework's potential to support scalable and privacy-preserving learning on edge devices with minimal performance trade-offs.</description>
+   <guid>oai:arXiv.org:2501.04817v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Ziyuan Bao, Eiman Kanjo, Soumya Banerjee, Hasib-Al Rashid, Tinoosh Mohsenin</creator>
+  </item>
+  <item>
+   <title>A New Perspective on Privacy Protection in Federated Learning with Granular-Ball Computing</title>
+   <link>https://arxiv.org/abs/2501.04940</link>
+   <description>Federated Learning (FL) facilitates collaborative model training while prioritizing privacy by avoiding direct data sharing. However, most existing articles attempt to address challenges within the model's internal parameters and corresponding outputs, while neglecting to solve them at the input level. To address this gap, we propose a novel framework called Granular-Ball Federated Learning (GrBFL) for image classification. GrBFL diverges from traditional methods that rely on the finest-grained input data. Instead, it segments images into multiple regions with optimal coarse granularity, which are then reconstructed into a graph structure. We designed a two-dimensional binary search segmentation algorithm based on variance constraints for GrBFL, which effectively removes redundant information while preserving key representative features. Extensive theoretical analysis and experiments demonstrate that GrBFL not only safeguards privacy and enhances efficiency but also maintains robust utility, consistently outperforming other state-of-the-art FL methods. The code is available at https://github.com/AIGNLAI/GrBFL.</description>
+   <guid>oai:arXiv.org:2501.04940v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Guannan Lai, Yihui Feng, Xin Yang, Xiaoyu Deng, Hao Yu, Shuyin Xia, Guoyin Wang, Tianrui Li</creator>
+  </item>
+  <item>
+   <title>Efficient and Responsible Adaptation of Large Language Models for Robust and Equitable Top-k Recommendations</title>
+   <link>https://arxiv.org/abs/2501.04762</link>
+   <description>Conventional recommendation systems (RSs) are typically optimized to enhance performance metrics uniformly across all training samples, inadvertently overlooking the needs of diverse user populations. The performance disparity among various populations can harm the model's robustness to sub-populations due to the varying user properties. While large language models (LLMs) show promise in enhancing RS performance, their practical applicability is hindered by high costs, inference latency, and degraded performance on long user queries. To address these challenges, we propose a hybrid task allocation framework designed to promote social good by equitably serving all user groups. By adopting a two-phase approach, we promote a strategic assignment of tasks for efficient and responsible adaptation of LLMs. Our strategy works by first identifying the weak and inactive users that receive a suboptimal ranking performance by RSs. Next, we use an in-context learning approach for such users, wherein each user interaction history is contextualized as a distinct ranking task. We evaluate our hybrid framework by incorporating eight different recommendation algorithms and three different LLMs -- both open and close-sourced. Our results on three real-world datasets show a significant reduction in weak users and improved robustness to subpopulations without disproportionately escalating costs.</description>
+   <guid>oai:arXiv.org:2501.04762v1</guid>
+   <category>cs.IR</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Kirandeep Kaur, Manya Chadha, Vinayak Gupta, Chirag Shah</creator>
+  </item>
+  <item>
+   <title>Differentially Private Online Federated Learning with Correlated Noise</title>
+   <link>https://arxiv.org/abs/2403.16542</link>
+   <description>We introduce a novel differentially private algorithm for online federated learning that employs temporally correlated noise to enhance utility while ensuring privacy of continuously released models. To address challenges posed by DP noise and local updates with streaming non-iid data, we develop a perturbed iterate analysis to control the impact of the DP noise on the utility. Moreover, we demonstrate how the drift errors from local updates can be effectively managed under a quasi-strong convexity condition. Subject to an $(\epsilon, \delta)$-DP budget, we establish a dynamic regret bound over the entire time horizon, quantifying the impact of key parameters and the intensity of changes in dynamic environments. Numerical experiments confirm the efficacy of the proposed algorithm.</description>
+   <guid>oai:arXiv.org:2403.16542v3</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jiaojiao Zhang, Linglingzhi Zhu, Mikael Johansson</creator>
+  </item>
+  <item>
+   <title>Locally Differentially Private Online Federated Learning With Correlated Noise</title>
+   <link>https://arxiv.org/abs/2411.18752</link>
+   <description>We introduce a locally differentially private (LDP) algorithm for online federated learning that employs temporally correlated noise to improve utility while preserving privacy. To address challenges posed by the correlated noise and local updates with streaming non-IID data, we develop a perturbed iterate analysis that controls the impact of the noise on the utility. Moreover, we demonstrate how the drift errors from local updates can be effectively managed for several classes of nonconvex loss functions. Subject to an $(\epsilon,\delta)$-LDP budget, we establish a dynamic regret bound that quantifies the impact of key parameters and the intensity of changes in the dynamic environment on the learning performance. Numerical experiments confirm the efficacy of the proposed algorithm.</description>
+   <guid>oai:arXiv.org:2411.18752v2</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <category>stat.ML</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jiaojiao Zhang, Linglingzhi Zhu, Dominik Fay, Mikael Johansson</creator>
+  </item>
+  <item>
+   <title>Convergence Analysis of Split Federated Learning on Heterogeneous Data</title>
+   <link>https://arxiv.org/abs/2402.15166</link>
+   <description>Split federated learning (SFL) is a recent distributed approach for collaborative model training among multiple clients. In SFL, a global model is typically split into two parts, where clients train one part in a parallel federated manner, and a main server trains the other. Despite the recent research on SFL algorithm development, the convergence analysis of SFL is missing in the literature, and this paper aims to fill this gap. The analysis of SFL can be more challenging than that of federated learning (FL), due to the potential dual-paced updates at the clients and the main server. We provide convergence analysis of SFL for strongly convex and general convex objectives on heterogeneous data. The convergence rates are $O(1/T)$ and $O(1/\sqrt[3]{T})$, respectively, where $T$ denotes the total number of rounds for SFL training. We further extend the analysis to non-convex objectives and the scenario where some clients may be unavailable during training. Experimental experiments validate our theoretical results and show that SFL outperforms FL and split learning (SL) when data is highly heterogeneous across a large number of clients.</description>
+   <guid>oai:arXiv.org:2402.15166v3</guid>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Pengchao Han, Chao Huang, Geng Tian, Ming Tang, Xin Liu</creator>
+  </item>
+  <item>
+   <title>Decentralized Federated Anomaly Detection in Smart Grids: A P2P Gossip Approach</title>
+   <link>https://arxiv.org/abs/2407.15879</link>
+   <description>The increasing security and privacy concerns in the Smart Grid sector have led to a significant demand for robust intrusion detection systems within critical smart grid infrastructure. To address the challenges posed by privacy preservation and decentralized power system zones with distinct data ownership, Federated Learning (FL) has emerged as a promising privacy-preserving solution which facilitates collaborative training of attack detection models without necessitating the sharing of raw data. However, FL presents several implementation limitations in the power system domain due to its heavy reliance on a centralized aggregator and the risks of privacy leakage during model update transmission. To overcome these technical bottlenecks, this paper introduces a novel decentralized federated anomaly detection scheme based on two main gossip protocols namely Random Walk and Epidemic. Our findings indicate that the Random Walk protocol exhibits superior performance compared to the Epidemic protocol, highlighting its efficacy in decentralized federated learning environments. Experimental validation of the proposed framework utilizing publicly available industrial control systems datasets demonstrates superior attack detection accuracy while safeguarding data confidentiality and mitigating the impact of communication latency and stragglers. Furthermore, our approach yields a notable 35% improvement in training time compared to conventional FL, underscoring the efficacy and robustness of our decentralized learning method.</description>
+   <guid>oai:arXiv.org:2407.15879v2</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Muhammad Akbar Husnoo, Adnan Anwar, Md Enamul Haque, A. N. Mahmood</creator>
+  </item>
+  <item>
+   <title>Decentralised Resource Sharing in TinyML: Wireless Bilayer Gossip Parallel SGD for Collaborative Learning</title>
+   <link>https://arxiv.org/abs/2501.04817</link>
+   <description>With the growing computational capabilities of microcontroller units (MCUs), edge devices can now support machine learning models. However, deploying decentralised federated learning (DFL) on such devices presents key challenges, including intermittent connectivity, limited communication range, and dynamic network topologies. This paper proposes a novel framework, bilayer Gossip Decentralised Parallel Stochastic Gradient Descent (GD PSGD), designed to address these issues in resource-constrained environments. The framework incorporates a hierarchical communication structure using Distributed Kmeans (DKmeans) clustering for geographic grouping and a gossip protocol for efficient model aggregation across two layers: intra-cluster and inter-cluster. We evaluate the framework's performance against the Centralised Federated Learning (CFL) baseline using the MCUNet model on the CIFAR-10 dataset under IID and Non-IID conditions. Results demonstrate that the proposed method achieves comparable accuracy to CFL on IID datasets, requiring only 1.8 additional rounds for convergence. On Non-IID datasets, the accuracy loss remains under 8\% for moderate data imbalance. These findings highlight the framework's potential to support scalable and privacy-preserving learning on edge devices with minimal performance trade-offs.</description>
+   <guid>oai:arXiv.org:2501.04817v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Yuqi Li, Xingyou Lin, Kai Zhang, Chuanguang Yang, Zhongliang Guo, Jianping Gou, Yanli Li</creator>
+   <creator>Ziyuan Bao, Eiman Kanjo, Soumya Banerjee, Hasib-Al Rashid, Tinoosh Mohsenin</creator>
   </item>
   <item>
-   <title>Correlated Privacy Mechanisms for Differentially Private Distributed Mean Estimation</title>
-   <link>https://arxiv.org/abs/2407.03289</link>
-   <description>Differentially private distributed mean estimation (DP-DME) is a fundamental building block in privacy-preserving federated learning, where a central server estimates the mean of $d$-dimensional vectors held by $n$ users while ensuring $(\epsilon,\delta)$-DP. Local differential privacy (LDP) and distributed DP with secure aggregation (SA) are the most common notions of DP used in DP-DME settings with an untrusted server. LDP provides strong resilience to dropouts, colluding users, and adversarial attacks, but suffers from poor utility. In contrast, SA-based DP-DME achieves an $O(n)$ utility gain over LDP in DME, but requires increased communication and computation overheads and complex multi-round protocols to handle dropouts and attacks. In this work, we present a generalized framework for DP-DME, that captures LDP and SA-based mechanisms as extreme cases. Our framework provides a foundation for developing and analyzing a variety of DP-DME protocols that leverage correlated privacy mechanisms across users. To this end, we propose CorDP-DME, a novel DP-DME mechanism based on the correlated Gaussian mechanism, that spans the gap between DME with LDP and distributed DP. We prove that CorDP-DME offers a favorable balance between utility and resilience to dropout and collusion. We provide an information-theoretic analysis of CorDP-DME, and derive theoretical guarantees for utility under any given privacy parameters and dropout/colluding user thresholds. Our results demonstrate that (anti) correlated Gaussian DP mechanisms can significantly improve utility in mean estimation tasks compared to LDP -- even in adversarial settings -- while maintaining better resilience to dropouts and attacks compared to distributed DP.</description>
-   <guid>oai:arXiv.org:2407.03289v2</guid>
-   <category>cs.IT</category>
+   <title>TAPFed: Threshold Secure Aggregation for Privacy-Preserving Federated Learning</title>
+   <link>https://arxiv.org/abs/2501.05053</link>
+   <description>Federated learning is a computing paradigm that enhances privacy by enabling multiple parties to collaboratively train a machine learning model without revealing personal data. However, current research indicates that traditional federated learning platforms are unable to ensure privacy due to privacy leaks caused by the interchange of gradients. To achieve privacy-preserving federated learning, integrating secure aggregation mechanisms is essential. Unfortunately, existing solutions are vulnerable to recently demonstrated inference attacks such as the disaggregation attack. This paper proposes TAPFed, an approach for achieving privacy-preserving federated learning in the context of multiple decentralized aggregators with malicious actors. TAPFed uses a proposed threshold functional encryption scheme and allows for a certain number of malicious aggregators while maintaining security and privacy. We provide formal security and privacy analyses of TAPFed and compare it to various baselines through experimental evaluation. Our results show that TAPFed offers equivalent performance in terms of model quality compared to state-of-the-art approaches while reducing transmission overhead by 29%-45% across different model training scenarios. Most importantly, TAPFed can defend against recently demonstrated inference attacks caused by curious aggregators, which the majority of existing approaches are susceptible to.</description>
+   <guid>oai:arXiv.org:2501.05053v1</guid>
    <category>cs.CR</category>
-   <category>cs.LG</category>
-   <category>math.IT</category>
-   <pubdate>Thu, 09 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
+   <category>cs.AI</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Runhua Xu, Bo Li, Chao Li, James B. D. Joshi, Shuai Ma, Jianxin Li</creator>
+  </item>
+  <item>
+   <title>Biomedical Relation Extraction via Adaptive Document-Relation Cross-Mapping and Concept Unique Identifier</title>
+   <link>https://arxiv.org/abs/2501.05155</link>
+   <description>Document-Level Biomedical Relation Extraction (Bio-RE) aims to identify relations between biomedical entities within extensive texts, serving as a crucial subfield of biomedical text mining. Existing Bio-RE methods struggle with cross-sentence inference, which is essential for capturing relations spanning multiple sentences. Moreover, previous methods often overlook the incompleteness of documents and lack the integration of external knowledge, limiting contextual richness. Besides, the scarcity of annotated data further hampers model training. Recent advancements in large language models (LLMs) have inspired us to explore all the above issues for document-level Bio-RE. Specifically, we propose a document-level Bio-RE framework via LLM Adaptive Document-Relation Cross-Mapping (ADRCM) Fine-Tuning and Concept Unique Identifier (CUI) Retrieval-Augmented Generation (RAG). First, we introduce the Iteration-of-REsummary (IoRs) prompt for solving the data scarcity issue. In this way, Bio-RE task-specific synthetic data can be generated by guiding ChatGPT to focus on entity relations and iteratively refining synthetic data. Next, we propose ADRCM fine-tuning, a novel fine-tuning recipe that establishes mappings across different documents and relations, enhancing the model's contextual understanding and cross-sentence inference capabilities. Finally, during the inference, a biomedical-specific RAG approach, named CUI RAG, is designed to leverage CUIs as indexes for entities, narrowing the retrieval scope and enriching the relevant document contexts. Experiments conducted on three Bio-RE datasets (GDA, CDR, and BioRED) demonstrate the state-of-the-art performance of our proposed method by comparing it with other related works.</description>
+   <guid>oai:arXiv.org:2501.05155v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Sajani Vithana, Viveck R. Cadambe, Flavio P. Calmon, Haewon Jeong</creator>
+   <creator>Yufei Shang, Yanrong Guo, Shijie Hao, Richang Hong</creator>
+  </item>
+  <item>
+   <title>A Novel Approach to Scalable and Automatic Topic-Controlled Question Generation in Education</title>
+   <link>https://arxiv.org/abs/2501.05220</link>
+   <description>The development of Automatic Question Generation (QG) models has the potential to significantly improve educational practices by reducing the teacher workload associated with creating educational content. This paper introduces a novel approach to educational question generation that controls the topical focus of questions. The proposed Topic-Controlled Question Generation (T-CQG) method enhances the relevance and effectiveness of the generated content for educational purposes. Our approach uses fine-tuning on a pre-trained T5-small model, employing specially created datasets tailored to educational needs. The research further explores the impacts of pre-training strategies, quantisation, and data augmentation on the model's performance. We specifically address the challenge of generating semantically aligned questions with paragraph-level contexts, thereby improving the topic specificity of the generated questions. In addition, we introduce and explore novel evaluation methods to assess the topical relatedness of the generated questions. Our results, validated through rigorous offline and human-backed evaluations, demonstrate that the proposed models effectively generate high-quality, topic-focused questions. These models have the potential to reduce teacher workload and support personalised tutoring systems by serving as bespoke question generators. With its relatively small number of parameters, the proposals not only advance the capabilities of question generation models for handling specific educational topics but also offer a scalable solution that reduces infrastructure costs. This scalability makes them feasible for widespread use in education without reliance on proprietary large language models like ChatGPT.</description>
+   <guid>oai:arXiv.org:2501.05220v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.IR</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ziqing Li, Mutlu Cukurova, Sahan Bulathwela</creator>
+  </item>
+  <item>
+   <title>Decentralized Federated Anomaly Detection in Smart Grids: A P2P Gossip Approach</title>
+   <link>https://arxiv.org/abs/2407.15879</link>
+   <description>The increasing security and privacy concerns in the Smart Grid sector have led to a significant demand for robust intrusion detection systems within critical smart grid infrastructure. To address the challenges posed by privacy preservation and decentralized power system zones with distinct data ownership, Federated Learning (FL) has emerged as a promising privacy-preserving solution which facilitates collaborative training of attack detection models without necessitating the sharing of raw data. However, FL presents several implementation limitations in the power system domain due to its heavy reliance on a centralized aggregator and the risks of privacy leakage during model update transmission. To overcome these technical bottlenecks, this paper introduces a novel decentralized federated anomaly detection scheme based on two main gossip protocols namely Random Walk and Epidemic. Our findings indicate that the Random Walk protocol exhibits superior performance compared to the Epidemic protocol, highlighting its efficacy in decentralized federated learning environments. Experimental validation of the proposed framework utilizing publicly available industrial control systems datasets demonstrates superior attack detection accuracy while safeguarding data confidentiality and mitigating the impact of communication latency and stragglers. Furthermore, our approach yields a notable 35% improvement in training time compared to conventional FL, underscoring the efficacy and robustness of our decentralized learning method.</description>
+   <guid>oai:arXiv.org:2407.15879v2</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Muhammad Akbar Husnoo, Adnan Anwar, Md Enamul Haque, A. N. Mahmood</creator>
+  </item>
+  <item>
+   <title>Efficient and Responsible Adaptation of Large Language Models for Robust and Equitable Top-k Recommendations</title>
+   <link>https://arxiv.org/abs/2501.04762</link>
+   <description>Conventional recommendation systems (RSs) are typically optimized to enhance performance metrics uniformly across all training samples, inadvertently overlooking the needs of diverse user populations. The performance disparity among various populations can harm the model's robustness to sub-populations due to the varying user properties. While large language models (LLMs) show promise in enhancing RS performance, their practical applicability is hindered by high costs, inference latency, and degraded performance on long user queries. To address these challenges, we propose a hybrid task allocation framework designed to promote social good by equitably serving all user groups. By adopting a two-phase approach, we promote a strategic assignment of tasks for efficient and responsible adaptation of LLMs. Our strategy works by first identifying the weak and inactive users that receive a suboptimal ranking performance by RSs. Next, we use an in-context learning approach for such users, wherein each user interaction history is contextualized as a distinct ranking task. We evaluate our hybrid framework by incorporating eight different recommendation algorithms and three different LLMs -- both open and close-sourced. Our results on three real-world datasets show a significant reduction in weak users and improved robustness to subpopulations without disproportionately escalating costs.</description>
+   <guid>oai:arXiv.org:2501.04762v1</guid>
+   <category>cs.IR</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Kirandeep Kaur, Manya Chadha, Vinayak Gupta, Chirag Shah</creator>
+  </item>
+  <item>
+   <title>A Novel Approach to Scalable and Automatic Topic-Controlled Question Generation in Education</title>
+   <link>https://arxiv.org/abs/2501.05220</link>
+   <description>The development of Automatic Question Generation (QG) models has the potential to significantly improve educational practices by reducing the teacher workload associated with creating educational content. This paper introduces a novel approach to educational question generation that controls the topical focus of questions. The proposed Topic-Controlled Question Generation (T-CQG) method enhances the relevance and effectiveness of the generated content for educational purposes. Our approach uses fine-tuning on a pre-trained T5-small model, employing specially created datasets tailored to educational needs. The research further explores the impacts of pre-training strategies, quantisation, and data augmentation on the model's performance. We specifically address the challenge of generating semantically aligned questions with paragraph-level contexts, thereby improving the topic specificity of the generated questions. In addition, we introduce and explore novel evaluation methods to assess the topical relatedness of the generated questions. Our results, validated through rigorous offline and human-backed evaluations, demonstrate that the proposed models effectively generate high-quality, topic-focused questions. These models have the potential to reduce teacher workload and support personalised tutoring systems by serving as bespoke question generators. With its relatively small number of parameters, the proposals not only advance the capabilities of question generation models for handling specific educational topics but also offer a scalable solution that reduces infrastructure costs. This scalability makes them feasible for widespread use in education without reliance on proprietary large language models like ChatGPT.</description>
+   <guid>oai:arXiv.org:2501.05220v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.IR</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ziqing Li, Mutlu Cukurova, Sahan Bulathwela</creator>
+  </item>
+  <item>
+   <title>Biomedical Relation Extraction via Adaptive Document-Relation Cross-Mapping and Concept Unique Identifier</title>
+   <link>https://arxiv.org/abs/2501.05155</link>
+   <description>Document-Level Biomedical Relation Extraction (Bio-RE) aims to identify relations between biomedical entities within extensive texts, serving as a crucial subfield of biomedical text mining. Existing Bio-RE methods struggle with cross-sentence inference, which is essential for capturing relations spanning multiple sentences. Moreover, previous methods often overlook the incompleteness of documents and lack the integration of external knowledge, limiting contextual richness. Besides, the scarcity of annotated data further hampers model training. Recent advancements in large language models (LLMs) have inspired us to explore all the above issues for document-level Bio-RE. Specifically, we propose a document-level Bio-RE framework via LLM Adaptive Document-Relation Cross-Mapping (ADRCM) Fine-Tuning and Concept Unique Identifier (CUI) Retrieval-Augmented Generation (RAG). First, we introduce the Iteration-of-REsummary (IoRs) prompt for solving the data scarcity issue. In this way, Bio-RE task-specific synthetic data can be generated by guiding ChatGPT to focus on entity relations and iteratively refining synthetic data. Next, we propose ADRCM fine-tuning, a novel fine-tuning recipe that establishes mappings across different documents and relations, enhancing the model's contextual understanding and cross-sentence inference capabilities. Finally, during the inference, a biomedical-specific RAG approach, named CUI RAG, is designed to leverage CUIs as indexes for entities, narrowing the retrieval scope and enriching the relevant document contexts. Experiments conducted on three Bio-RE datasets (GDA, CDR, and BioRED) demonstrate the state-of-the-art performance of our proposed method by comparing it with other related works.</description>
+   <guid>oai:arXiv.org:2501.05155v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yufei Shang, Yanrong Guo, Shijie Hao, Richang Hong</creator>
+  </item>
+  <item>
+   <title>A Novel Approach to Scalable and Automatic Topic-Controlled Question Generation in Education</title>
+   <link>https://arxiv.org/abs/2501.05220</link>
+   <description>The development of Automatic Question Generation (QG) models has the potential to significantly improve educational practices by reducing the teacher workload associated with creating educational content. This paper introduces a novel approach to educational question generation that controls the topical focus of questions. The proposed Topic-Controlled Question Generation (T-CQG) method enhances the relevance and effectiveness of the generated content for educational purposes. Our approach uses fine-tuning on a pre-trained T5-small model, employing specially created datasets tailored to educational needs. The research further explores the impacts of pre-training strategies, quantisation, and data augmentation on the model's performance. We specifically address the challenge of generating semantically aligned questions with paragraph-level contexts, thereby improving the topic specificity of the generated questions. In addition, we introduce and explore novel evaluation methods to assess the topical relatedness of the generated questions. Our results, validated through rigorous offline and human-backed evaluations, demonstrate that the proposed models effectively generate high-quality, topic-focused questions. These models have the potential to reduce teacher workload and support personalised tutoring systems by serving as bespoke question generators. With its relatively small number of parameters, the proposals not only advance the capabilities of question generation models for handling specific educational topics but also offer a scalable solution that reduces infrastructure costs. This scalability makes them feasible for widespread use in education without reliance on proprietary large language models like ChatGPT.</description>
+   <guid>oai:arXiv.org:2501.05220v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.IR</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ziqing Li, Mutlu Cukurova, Sahan Bulathwela</creator>
+  </item>
+  <item>
+   <title>Seeing with Partial Certainty: Conformal Prediction for Robotic Scene Recognition in Built Environments</title>
+   <link>https://arxiv.org/abs/2501.04947</link>
+   <description>In assistive robotics serving people with disabilities (PWD), accurate place recognition in built environments is crucial to ensure that robots navigate and interact safely within diverse indoor spaces. Language interfaces, particularly those powered by Large Language Models (LLM) and Vision Language Models (VLM), hold significant promise in this context, as they can interpret visual scenes and correlate them with semantic information. However, such interfaces are also known for their hallucinated predictions. In addition, language instructions provided by humans can also be ambiguous and lack precise details about specific locations, objects, or actions, exacerbating the hallucination issue. In this work, we introduce Seeing with Partial Certainty (SwPC) - a framework designed to measure and align uncertainty in VLM-based place recognition, enabling the model to recognize when it lacks confidence and seek assistance when necessary. This framework is built on the theory of conformal prediction to provide statistical guarantees on place recognition while minimizing requests for human help in complex indoor environment settings. Through experiments on the widely used richly-annotated scene dataset Matterport3D, we show that SwPC significantly increases the success rate and decreases the amount of human intervention required relative to the prior art. SwPC can be utilized with any VLMs directly without requiring model fine-tuning, offering a promising, lightweight approach to uncertainty modeling that complements and scales alongside the expanding capabilities of foundational models.</description>
+   <guid>oai:arXiv.org:2501.04947v1</guid>
+   <category>cs.CV</category>
+   <pubdate>Fri, 10 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yifan Xu, Vineet Kamat, Carol Menassa</creator>
   </item>
  </channel>
 </rss>
