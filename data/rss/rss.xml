@@ -6,221 +6,292 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Tue, 14 Jan 2025 04:13:39 </lastBuildDate>
+  <lastBuildDate>Wed, 15 Jan 2025 02:40:24 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Tue, 14 Jan 2025 04:13:39 </pubDate>
+  <pubDate>Wed, 15 Jan 2025 02:40:24 </pubDate>
   <item>
-   <title>Collaborative Content Moderation in the Fediverse</title>
-   <link>https://arxiv.org/abs/2501.05871</link>
-   <description>The Fediverse, a group of interconnected servers providing a variety of interoperable services (e.g. micro-blogging in Mastodon) has gained rapid popularity. This sudden growth, partly driven by Elon Musk's acquisition of Twitter, has created challenges for administrators though. This paper focuses on one particular challenge: content moderation, e.g. the need to remove spam or hate speech. While centralized platforms like Facebook and Twitter rely on automated tools for moderation, their dependence on massive labeled datasets and specialized infrastructure renders them impractical for decentralized, low-resource settings like the Fediverse. In this work, we design and evaluate FedMod, a collaborative content moderation system based on federated learning. Our system enables servers to exchange parameters of partially trained local content moderation models with similar servers, creating a federated model shared among collaborating servers. FedMod demonstrates robust performance on three different content moderation tasks: harmful content detection, bot content detection, and content warning assignment, achieving average per-server macro-F1 scores of 0.71, 0.73, and 0.58, respectively.</description>
-   <guid>oai:arXiv.org:2501.05871v1</guid>
-   <category>cs.SI</category>
-   <category>cs.LG</category>
-   <category>cs.NI</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Haris Bin Zia, Aravindh Raman, Ignacio Castro, Gareth Tyson</creator>
-  </item>
-  <item>
-   <title>Efficiently serving large multimedia models using EPD Disaggregation</title>
-   <link>https://arxiv.org/abs/2501.05460</link>
-   <description>Large Multimodal Models (LMMs) extend Large Language Models (LLMs) by handling diverse inputs such as images, audio, and video, but at the cost of adding a multimodal encoding stage that increases both computational and memory overhead. This step helps convert raw inputs into tokenized representations that inflate the token sequence for the prefill phase, negatively impacting key Service Level Objectives (SLOs) like time to first token (TTFT) and end-to-end throughput. We introduce Encode-Prefill-Decode (EPD) Disaggregation, a novel framework that separates the encoding, prefill, and decode stages onto dedicated resources. Unlike current systems, which bundle encoding and prefill together, our disaggregation approach alleviates memory bottlenecks, mitigates synchronization delays, and supports flexible batching. Specifically, we employ a new caching mechanism for multimodal tokens, enabling asynchronous transfer of multimodal tokens and introduce an integrated module to find optimal config for EPD system and minimize resource usage while maximizing SLO-based performance metric. Experimental evaluations with popular LMMs show substantial gains in memory efficiency (up to 15$\times$ lesser for encoding-stage GPUs), that supports upto 22$\times$ higher batch sizes, 10$\times$ more number of images/ request, 2.2$\times$ higher kv cache size. Further, it leads to significant improvements in end-to-end throughput (up to 57\% better), and latency metrics (TTFT up to 71\% lower), compared to systems that do not disaggregate. Our findings underscore the potential of EPD disaggregation to enable resource-efficient and high-performance multimodal inference at scale.</description>
-   <guid>oai:arXiv.org:2501.05460v1</guid>
+   <title>Mell: Memory-Efficient Large Language Model Serving via Multi-GPU KV Cache Management</title>
+   <link>https://arxiv.org/abs/2501.06709</link>
+   <description>Serving large language models (LLMs) for massive users is challenged by the significant memory footprint of the transient state, known as the key-value (KV) cache, which scales with sequence length and number of requests. Instead of renting or buying more expensive GPUs, the load imbalance of the KV cache across GPUs, coupled with recent advances in inter-GPU communication, provides an opportunity to serve more requests via request migration. However, high migration overhead and unpredictable request patterns make it challenging. Therefore, this paper proposes MELL, a memory-efficient LLM serving system via multi-GPU KV cache management. It saves the number of GPUs needed in the system by considering the dynamic KV cache load and the costly request migration. Specifically, we first develop an adaptive request migration mechanism to balance the computational and communication overheads and adapt to diverse resource conditions. Then, we design an online algorithm tailored to a multi-LLM request and multi-GPU scheduling problem with migration enabled. It aims to minimise the required GPUs while limiting the number of migrations. Finally, we implement a prototype of MELL and demonstrate that it reduces the number of GPUs by 31% and increases the GPU utilization by 43% at most compared to existing LLM serving systems.</description>
+   <guid>oai:arXiv.org:2501.06709v1</guid>
    <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Gursimran Singh, Xinglu Wang, Ivan Hu, Timothy Yu, Linzi Xing, Wei Jiang, Zhefeng Wang, Xiaolong Bai, Yi Li, Ying Xiong, Yong Zhang, Zhenan Fan</creator>
+   <creator>Liu Qianli, Hong Zicong, Chen Fahao, Li Peng, Guo Song</creator>
   </item>
   <item>
-   <title>Constrained Over-the-Air Model Updating for Wireless Online Federated Learning with Delayed Information</title>
-   <link>https://arxiv.org/abs/2501.05637</link>
-   <description>We study online federated learning over a wireless network, where the central server updates an online global model sequence to minimize the time-varying loss of multiple local devices over time. The server updates the global model through over-the-air model-difference aggregation from the local devices over a noisy multiple-access fading channel. We consider the practical scenario where information on both the local loss functions and the channel states is delayed, and each local device is under a time-varying power constraint. We propose Constrained Over-the-air Model Updating with Delayed infOrmation (COMUDO), where a new lower-and-upper-bounded virtual queue is introduced to counter the delayed information and control the hard constraint violation. We show that its local model updates can be efficiently computed in closed-form expressions. Furthermore, through a new Lyapunov drift analysis, we show that COMUDO provides bounds on the dynamic regret, static regret, and hard constraint violation. Simulation results on image classification tasks under practical wireless network settings show substantial accuracy gain of COMUDO over state-of-the-art approaches, especially in the low-power region.</description>
-   <guid>oai:arXiv.org:2501.05637v1</guid>
+   <title>SafeSplit: A Novel Defense Against Client-Side Backdoor Attacks in Split Learning</title>
+   <link>https://arxiv.org/abs/2501.06650</link>
+   <description>Split Learning (SL) is a distributed deep learning approach enabling multiple clients and a server to collaboratively train and infer on a shared deep neural network (DNN) without requiring clients to share their private local data. The DNN is partitioned in SL, with most layers residing on the server and a few initial layers and inputs on the client side. This configuration allows resource-constrained clients to participate in training and inference. However, the distributed architecture exposes SL to backdoor attacks, where malicious clients can manipulate local datasets to alter the DNN's behavior. Existing defenses from other distributed frameworks like Federated Learning are not applicable, and there is a lack of effective backdoor defenses specifically designed for SL.
+  We present SafeSplit, the first defense against client-side backdoor attacks in Split Learning (SL). SafeSplit enables the server to detect and filter out malicious client behavior by employing circular backward analysis after a client's training is completed, iteratively reverting to a trained checkpoint where the model under examination is found to be benign. It uses a two-fold analysis to identify client-induced changes and detect poisoned models. First, a static analysis in the frequency domain measures the differences in the layer's parameters at the server. Second, a dynamic analysis introduces a novel rotational distance metric that assesses the orientation shifts of the server's layer parameters during training. Our comprehensive evaluation across various data distributions, client counts, and attack scenarios demonstrates the high efficacy of this dual analysis in mitigating backdoor attacks while preserving model utility.</description>
+   <guid>oai:arXiv.org:2501.06650v1</guid>
+   <category>cs.CR</category>
    <category>cs.DC</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Juncheng Wang, Yituo Liu, Ben Liang, Min Dong</creator>
-  </item>
-  <item>
-   <title>STHFL: Spatio-Temporal Heterogeneous Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.05775</link>
-   <description>Federated learning is a new framework that protects data privacy and allows multiple devices to cooperate in training machine learning models. Previous studies have proposed multiple approaches to eliminate the challenges posed by non-iid data and inter-domain heterogeneity issues. However, they ignore the \textbf{spatio-temporal} heterogeneity formed by different data distributions of increasing task data in the intra-domain. Moreover, the global data is generally a long-tailed distribution rather than assuming the global data is balanced in practical applications. To tackle the \textbf{spatio-temporal} dilemma, we propose a novel setting named \textbf{Spatio-Temporal Heterogeneity} Federated Learning (STHFL). Specially, the Global-Local Dynamic Prototype (GLDP) framework is designed for STHFL. In GLDP, the model in each client contains personalized layers which can dynamically adapt to different data distributions. For long-tailed data distribution, global prototypes are served as complementary knowledge for the training on classes with few samples in clients without leaking privacy. As tasks increase in clients, the knowledge of local prototypes generated in previous tasks guides for training in the current task to solve catastrophic forgetting. Meanwhile, the global-local prototypes are updated through the moving average method after training local prototypes in clients. Finally, we evaluate the effectiveness of GLDP, which achieves remarkable results compared to state-of-the-art methods in STHFL scenarios.</description>
-   <guid>oai:arXiv.org:2501.05775v1</guid>
    <category>cs.LG</category>
-   <category>cs.DC</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shunxin Guo, Hongsong Wang, Shuxia Lin, Xu Yang, Xin Geng</creator>
-  </item>
-  <item>
-   <title>Encoded Spatial Attribute in Multi-Tier Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.05934</link>
-   <description>This research presents an Encoded Spatial Multi-Tier Federated Learning approach for a comprehensive evaluation of aggregated models for geospatial data. In the client tier, encoding spatial information is introduced to better predict the target outcome. The research aims to assess the performance of these models across diverse datasets and spatial attributes, highlighting variations in predictive accuracy. Using evaluation metrics such as accuracy, our research reveals insights into the complexities of spatial granularity and the challenges of capturing underlying patterns in the data. We extended the scope of federated learning (FL) by having multi-tier along with the functionality of encoding spatial attributes. Our N-tier FL approach used encoded spatial data to aggregate in different tiers. We obtained multiple models that predicted the different granularities of spatial data. Our findings underscore the need for further research to improve predictive accuracy and model generalization, with potential avenues including incorporating additional features, refining model architectures, and exploring alternative modeling approaches. Our experiments have several tiers representing different levels of spatial aspects. We obtained accuracy of 75.62% and 89.52% for the global model without having to train the model using the data constituted with the designated tier. The research also highlights the importance of the proposed approach in real-time applications.</description>
-   <guid>oai:arXiv.org:2501.05934v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Asfia Kawnine, Francis Palma, Seyed Alireza Rahimi Azghadi, Hung Cao</creator>
+   <creator>Phillip Rieger, Alessandro Pegoraro, Kavita Kumari, Tigist Abera, Jonathan Knauer, Ahmad-Reza Sadeghi</creator>
   </item>
   <item>
-   <title>FedSA: A Unified Representation Learning via Semantic Anchors for Prototype-based Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.05496</link>
-   <description>Prototype-based federated learning has emerged as a promising approach that shares lightweight prototypes to transfer knowledge among clients with data heterogeneity in a model-agnostic manner. However, existing methods often collect prototypes directly from local models, which inevitably introduce inconsistencies into representation learning due to the biased data distributions and differing model architectures among clients. In this paper, we identify that both statistical and model heterogeneity create a vicious cycle of representation inconsistency, classifier divergence, and skewed prototype alignment, which negatively impacts the performance of clients. To break the vicious cycle, we propose a novel framework named Federated Learning via Semantic Anchors (FedSA) to decouple the generation of prototypes from local representation learning. We introduce a novel perspective that uses simple yet effective semantic anchors serving as prototypes to guide local models in learning consistent representations. By incorporating semantic anchors, we further propose anchor-based regularization with margin-enhanced contrastive learning and anchor-based classifier calibration to correct feature extractors and calibrate classifiers across clients, achieving intra-class compactness and inter-class separability of prototypes while ensuring consistent decision boundaries. We then update the semantic anchors with these consistent and discriminative prototypes, which iteratively encourage clients to collaboratively learn a unified data representation with robust generalization. Extensive experiments under both statistical and model heterogeneity settings show that FedSA significantly outperforms existing prototype-based FL methods on various classification tasks.</description>
-   <guid>oai:arXiv.org:2501.05496v1</guid>
+   <title>PraFFL: A Preference-Aware Scheme in Fair Federated Learning</title>
+   <link>https://arxiv.org/abs/2404.08973</link>
+   <description>Fairness in federated learning has emerged as a critical concern, aiming to develop an unbiased model among groups (e.g., male or female) of diverse sensitive features. However, there is a trade-off between model performance and fairness, i.e., improving model fairness will decrease model performance. Existing approaches have characterized such a trade-off by introducing hyperparameters to quantify client's preferences for model fairness and model performance. Nevertheless, these approaches are limited to scenarios where each client has only a single pre-defined preference, and fail to work in practical systems where each client generally has multiple preferences. To this end, we propose a Preference-aware scheme in Fair Federated Learning (called PraFFL) to generate preference-specific models in real time. PraFFL can adaptively adjust the model based on each client's preferences to meet their needs. We theoretically prove that PraFFL can offer the optimal model tailored to an arbitrary preference of each client, and show its linear convergence. Experimental results show that our proposed PraFFL outperforms six fair federated learning algorithms in terms of the model's capability of adapting to clients' different preferences. Our implementation is available at https://github.com/rG223/PraFFL.</description>
+   <guid>oai:arXiv.org:2404.08973v3</guid>
    <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Yanbing Zhou, Xiangmou Qu, Chenlong You, Jiyang Zhou, Jingyue Tang, Xin Zheng, Chunmao Cai, Yingbo Wu</creator>
-  </item>
-  <item>
-   <title>STHFL: Spatio-Temporal Heterogeneous Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.05775</link>
-   <description>Federated learning is a new framework that protects data privacy and allows multiple devices to cooperate in training machine learning models. Previous studies have proposed multiple approaches to eliminate the challenges posed by non-iid data and inter-domain heterogeneity issues. However, they ignore the \textbf{spatio-temporal} heterogeneity formed by different data distributions of increasing task data in the intra-domain. Moreover, the global data is generally a long-tailed distribution rather than assuming the global data is balanced in practical applications. To tackle the \textbf{spatio-temporal} dilemma, we propose a novel setting named \textbf{Spatio-Temporal Heterogeneity} Federated Learning (STHFL). Specially, the Global-Local Dynamic Prototype (GLDP) framework is designed for STHFL. In GLDP, the model in each client contains personalized layers which can dynamically adapt to different data distributions. For long-tailed data distribution, global prototypes are served as complementary knowledge for the training on classes with few samples in clients without leaking privacy. As tasks increase in clients, the knowledge of local prototypes generated in previous tasks guides for training in the current task to solve catastrophic forgetting. Meanwhile, the global-local prototypes are updated through the moving average method after training local prototypes in clients. Finally, we evaluate the effectiveness of GLDP, which achieves remarkable results compared to state-of-the-art methods in STHFL scenarios.</description>
-   <guid>oai:arXiv.org:2501.05775v1</guid>
-   <category>cs.LG</category>
+   <category>cs.CY</category>
    <category>cs.DC</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shunxin Guo, Hongsong Wang, Shuxia Lin, Xu Yang, Xin Geng</creator>
-  </item>
-  <item>
-   <title>Encoded Spatial Attribute in Multi-Tier Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.05934</link>
-   <description>This research presents an Encoded Spatial Multi-Tier Federated Learning approach for a comprehensive evaluation of aggregated models for geospatial data. In the client tier, encoding spatial information is introduced to better predict the target outcome. The research aims to assess the performance of these models across diverse datasets and spatial attributes, highlighting variations in predictive accuracy. Using evaluation metrics such as accuracy, our research reveals insights into the complexities of spatial granularity and the challenges of capturing underlying patterns in the data. We extended the scope of federated learning (FL) by having multi-tier along with the functionality of encoding spatial attributes. Our N-tier FL approach used encoded spatial data to aggregate in different tiers. We obtained multiple models that predicted the different granularities of spatial data. Our findings underscore the need for further research to improve predictive accuracy and model generalization, with potential avenues including incorporating additional features, refining model architectures, and exploring alternative modeling approaches. Our experiments have several tiers representing different levels of spatial aspects. We obtained accuracy of 75.62% and 89.52% for the global model without having to train the model using the data constituted with the designated tier. The research also highlights the importance of the proposed approach in real-time applications.</description>
-   <guid>oai:arXiv.org:2501.05934v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Asfia Kawnine, Francis Palma, Seyed Alireza Rahimi Azghadi, Hung Cao</creator>
-  </item>
-  <item>
-   <title>Explainable Federated Bayesian Causal Inference and Its Application in Advanced Manufacturing</title>
-   <link>https://arxiv.org/abs/2501.06077</link>
-   <description>Causal inference has recently gained notable attention across various fields like biology, healthcare, and environmental science, especially within explainable artificial intelligence (xAI) systems, for uncovering the causal relationships among multiple variables and outcomes. Yet, it has not been fully recognized and deployed in the manufacturing systems. In this paper, we introduce an explainable, scalable, and flexible federated Bayesian learning framework, \texttt{xFBCI}, designed to explore causality through treatment effect estimation in distributed manufacturing systems. By leveraging federated Bayesian learning, we efficiently estimate posterior of local parameters to derive the propensity score for each client without accessing local private data. These scores are then used to estimate the treatment effect using propensity score matching (PSM). Through simulations on various datasets and a real-world Electrohydrodynamic (EHD) printing data, we demonstrate that our approach outperforms standard Bayesian causal inference methods and several state-of-the-art federated learning benchmarks.</description>
-   <guid>oai:arXiv.org:2501.06077v1</guid>
-   <category>cs.LG</category>
-   <category>stat.AP</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Xiaofeng Xiao, Khawlah Alharbi, Pengyu Zhang, Hantang Qin, Xubo Yue</creator>
+   <creator>Rongguang Ye, Wei-Bin Kou, Ming Tang</creator>
   </item>
   <item>
-   <title>Efficiently serving large multimedia models using EPD Disaggregation</title>
-   <link>https://arxiv.org/abs/2501.05460</link>
-   <description>Large Multimodal Models (LMMs) extend Large Language Models (LLMs) by handling diverse inputs such as images, audio, and video, but at the cost of adding a multimodal encoding stage that increases both computational and memory overhead. This step helps convert raw inputs into tokenized representations that inflate the token sequence for the prefill phase, negatively impacting key Service Level Objectives (SLOs) like time to first token (TTFT) and end-to-end throughput. We introduce Encode-Prefill-Decode (EPD) Disaggregation, a novel framework that separates the encoding, prefill, and decode stages onto dedicated resources. Unlike current systems, which bundle encoding and prefill together, our disaggregation approach alleviates memory bottlenecks, mitigates synchronization delays, and supports flexible batching. Specifically, we employ a new caching mechanism for multimodal tokens, enabling asynchronous transfer of multimodal tokens and introduce an integrated module to find optimal config for EPD system and minimize resource usage while maximizing SLO-based performance metric. Experimental evaluations with popular LMMs show substantial gains in memory efficiency (up to 15$\times$ lesser for encoding-stage GPUs), that supports upto 22$\times$ higher batch sizes, 10$\times$ more number of images/ request, 2.2$\times$ higher kv cache size. Further, it leads to significant improvements in end-to-end throughput (up to 57\% better), and latency metrics (TTFT up to 71\% lower), compared to systems that do not disaggregate. Our findings underscore the potential of EPD disaggregation to enable resource-efficient and high-performance multimodal inference at scale.</description>
-   <guid>oai:arXiv.org:2501.05460v1</guid>
+   <title>On the Convergence of Continual Federated Learning Using Incrementally Aggregated Gradients</title>
+   <link>https://arxiv.org/abs/2411.07959</link>
+   <description>The holy grail of machine learning is to enable Continual Federated Learning (CFL) to enhance the efficiency, privacy, and scalability of AI systems while learning from streaming data. The primary challenge of a CFL system is to overcome global catastrophic forgetting, wherein the accuracy of the global model trained on new tasks declines on the old tasks. In this work, we propose Continual Federated Learning with Aggregated Gradients (C-FLAG), a novel replay-memory based federated strategy consisting of edge-based gradient updates on memory and aggregated gradients on the current data. We provide convergence analysis of the C-FLAG approach which addresses forgetting and bias while converging at a rate of $O(1/\sqrt{T})$ over $T$ communication rounds. We formulate an optimization sub-problem that minimizes catastrophic forgetting, translating CFL into an iterative algorithm with adaptive learning rates that ensure seamless learning across tasks. We empirically show that C-FLAG outperforms several state-of-the-art baselines on both task and class-incremental settings with respect to metrics such as accuracy and forgetting.</description>
+   <guid>oai:arXiv.org:2411.07959v2</guid>
+   <category>cs.LG</category>
    <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Gursimran Singh, Xinglu Wang, Ivan Hu, Timothy Yu, Linzi Xing, Wei Jiang, Zhefeng Wang, Xiaolong Bai, Yi Li, Ying Xiong, Yong Zhang, Zhenan Fan</creator>
-  </item>
-  <item>
-   <title>Collaborative Content Moderation in the Fediverse</title>
-   <link>https://arxiv.org/abs/2501.05871</link>
-   <description>The Fediverse, a group of interconnected servers providing a variety of interoperable services (e.g. micro-blogging in Mastodon) has gained rapid popularity. This sudden growth, partly driven by Elon Musk's acquisition of Twitter, has created challenges for administrators though. This paper focuses on one particular challenge: content moderation, e.g. the need to remove spam or hate speech. While centralized platforms like Facebook and Twitter rely on automated tools for moderation, their dependence on massive labeled datasets and specialized infrastructure renders them impractical for decentralized, low-resource settings like the Fediverse. In this work, we design and evaluate FedMod, a collaborative content moderation system based on federated learning. Our system enables servers to exchange parameters of partially trained local content moderation models with similar servers, creating a federated model shared among collaborating servers. FedMod demonstrates robust performance on three different content moderation tasks: harmful content detection, bot content detection, and content warning assignment, achieving average per-server macro-F1 scores of 0.71, 0.73, and 0.58, respectively.</description>
-   <guid>oai:arXiv.org:2501.05871v1</guid>
-   <category>cs.SI</category>
-   <category>cs.LG</category>
-   <category>cs.NI</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Haris Bin Zia, Aravindh Raman, Ignacio Castro, Gareth Tyson</creator>
+   <creator>Satish Kumar Keshri, Nazreen Shah, Ranjitha Prasad</creator>
   </item>
   <item>
-   <title>I Can't Share Code, but I need Translation -- An Empirical Study on Code Translation through Federated LLM</title>
-   <link>https://arxiv.org/abs/2501.05724</link>
-   <description>Owing to the rapid evolution of technologies and project requirements, organizations need to upgrade the code base in their software projects to a new version of the programming language or even translating to an entirely new one. However, code translation is resource-intensive and requires expertise in both the source and target languages. While researchers have made progress in automating translations between legacy and modern languages, recent work has increasingly turned to pre-trained Large Language Models (LLMs) to translate efficiently.
-  Given the proprietary nature of code, organizations prefer fine-tuning LLMs locally rather than relying on external APIs. This is one of the first empirical studies that proposes a Federated LLM-based approach for code translation. The proposed approach enables clients to jointly train a code translator without sharing sensitive data. This study demonstrates that participants can collaboratively develop a FedLLM for efficient code translation (particularly C\# to Java and vice-versa) with superior results (more than 40\% improvement in CodeLLaMA's CodeBLEU score) compared to individual client models. Our findings indicate that FedLLM offers a collaborative approach to code translation and could serve as a promising direction for future research in this field.</description>
-   <guid>oai:arXiv.org:2501.05724v1</guid>
-   <category>cs.SE</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Jahnavi Kumar, Venkata Lakshmana Sasaank Janapati, Mokshith Reddy Tanguturi, Sridhar Chimalakonda</creator>
-  </item>
-  <item>
-   <title>Collaborative Content Moderation in the Fediverse</title>
-   <link>https://arxiv.org/abs/2501.05871</link>
-   <description>The Fediverse, a group of interconnected servers providing a variety of interoperable services (e.g. micro-blogging in Mastodon) has gained rapid popularity. This sudden growth, partly driven by Elon Musk's acquisition of Twitter, has created challenges for administrators though. This paper focuses on one particular challenge: content moderation, e.g. the need to remove spam or hate speech. While centralized platforms like Facebook and Twitter rely on automated tools for moderation, their dependence on massive labeled datasets and specialized infrastructure renders them impractical for decentralized, low-resource settings like the Fediverse. In this work, we design and evaluate FedMod, a collaborative content moderation system based on federated learning. Our system enables servers to exchange parameters of partially trained local content moderation models with similar servers, creating a federated model shared among collaborating servers. FedMod demonstrates robust performance on three different content moderation tasks: harmful content detection, bot content detection, and content warning assignment, achieving average per-server macro-F1 scores of 0.71, 0.73, and 0.58, respectively.</description>
-   <guid>oai:arXiv.org:2501.05871v1</guid>
-   <category>cs.SI</category>
-   <category>cs.LG</category>
-   <category>cs.NI</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Haris Bin Zia, Aravindh Raman, Ignacio Castro, Gareth Tyson</creator>
-  </item>
-  <item>
-   <title>Efficiently serving large multimedia models using EPD Disaggregation</title>
-   <link>https://arxiv.org/abs/2501.05460</link>
-   <description>Large Multimodal Models (LMMs) extend Large Language Models (LLMs) by handling diverse inputs such as images, audio, and video, but at the cost of adding a multimodal encoding stage that increases both computational and memory overhead. This step helps convert raw inputs into tokenized representations that inflate the token sequence for the prefill phase, negatively impacting key Service Level Objectives (SLOs) like time to first token (TTFT) and end-to-end throughput. We introduce Encode-Prefill-Decode (EPD) Disaggregation, a novel framework that separates the encoding, prefill, and decode stages onto dedicated resources. Unlike current systems, which bundle encoding and prefill together, our disaggregation approach alleviates memory bottlenecks, mitigates synchronization delays, and supports flexible batching. Specifically, we employ a new caching mechanism for multimodal tokens, enabling asynchronous transfer of multimodal tokens and introduce an integrated module to find optimal config for EPD system and minimize resource usage while maximizing SLO-based performance metric. Experimental evaluations with popular LMMs show substantial gains in memory efficiency (up to 15$\times$ lesser for encoding-stage GPUs), that supports upto 22$\times$ higher batch sizes, 10$\times$ more number of images/ request, 2.2$\times$ higher kv cache size. Further, it leads to significant improvements in end-to-end throughput (up to 57\% better), and latency metrics (TTFT up to 71\% lower), compared to systems that do not disaggregate. Our findings underscore the potential of EPD disaggregation to enable resource-efficient and high-performance multimodal inference at scale.</description>
-   <guid>oai:arXiv.org:2501.05460v1</guid>
+   <title>Lightweight Federated Learning with Differential Privacy and Straggler Resilience</title>
+   <link>https://arxiv.org/abs/2412.06120</link>
+   <description>Federated learning (FL) enables collaborative model training through model parameter exchanges instead of raw data. To avoid potential inference attacks from exchanged parameters, differential privacy (DP) offers rigorous guarantee against various attacks. However, conventional methods of ensuring DP by adding local noise alone often result in low training accuracy. Combining secure multi-party computation (SMPC) with DP, while improving the accuracy, incurs high communication and computation overheads as well as straggler vulnerability, in either client-to-server or client-to-client links. In this paper, we propose LightDP-FL, a novel lightweight scheme that ensures provable DP against untrusted peers and server, while maintaining straggler resilience, low overheads and high training accuracy. Our scheme incorporates both individual and pairwise noise into each client's parameter, which can be implemented with minimal overheads. Given the uncertain straggler and colluder sets, we utilize the upper bound on the numbers of stragglers and colluders to prove sufficient noise variance conditions to ensure DP in the worst case. Moreover, we optimize the expected convergence bound to ensure accuracy performance by flexibly controlling the noise variances. Using the CIFAR-10 dataset, our experimental results demonstrate that LightDP-FL achieves faster convergence and stronger straggler resilience compared to baseline methods of the same DP level.</description>
+   <guid>oai:arXiv.org:2412.06120v2</guid>
+   <category>cs.CR</category>
    <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Gursimran Singh, Xinglu Wang, Ivan Hu, Timothy Yu, Linzi Xing, Wei Jiang, Zhefeng Wang, Xiaolong Bai, Yi Li, Ying Xiong, Yong Zhang, Zhenan Fan</creator>
+   <creator>Shu Hong, Xiaojun Lin, Lingjie Duan</creator>
   </item>
   <item>
-   <title>FedSA: A Unified Representation Learning via Semantic Anchors for Prototype-based Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.05496</link>
-   <description>Prototype-based federated learning has emerged as a promising approach that shares lightweight prototypes to transfer knowledge among clients with data heterogeneity in a model-agnostic manner. However, existing methods often collect prototypes directly from local models, which inevitably introduce inconsistencies into representation learning due to the biased data distributions and differing model architectures among clients. In this paper, we identify that both statistical and model heterogeneity create a vicious cycle of representation inconsistency, classifier divergence, and skewed prototype alignment, which negatively impacts the performance of clients. To break the vicious cycle, we propose a novel framework named Federated Learning via Semantic Anchors (FedSA) to decouple the generation of prototypes from local representation learning. We introduce a novel perspective that uses simple yet effective semantic anchors serving as prototypes to guide local models in learning consistent representations. By incorporating semantic anchors, we further propose anchor-based regularization with margin-enhanced contrastive learning and anchor-based classifier calibration to correct feature extractors and calibrate classifiers across clients, achieving intra-class compactness and inter-class separability of prototypes while ensuring consistent decision boundaries. We then update the semantic anchors with these consistent and discriminative prototypes, which iteratively encourage clients to collaboratively learn a unified data representation with robust generalization. Extensive experiments under both statistical and model heterogeneity settings show that FedSA significantly outperforms existing prototype-based FL methods on various classification tasks.</description>
-   <guid>oai:arXiv.org:2501.05496v1</guid>
+   <title>PraFFL: A Preference-Aware Scheme in Fair Federated Learning</title>
+   <link>https://arxiv.org/abs/2404.08973</link>
+   <description>Fairness in federated learning has emerged as a critical concern, aiming to develop an unbiased model among groups (e.g., male or female) of diverse sensitive features. However, there is a trade-off between model performance and fairness, i.e., improving model fairness will decrease model performance. Existing approaches have characterized such a trade-off by introducing hyperparameters to quantify client's preferences for model fairness and model performance. Nevertheless, these approaches are limited to scenarios where each client has only a single pre-defined preference, and fail to work in practical systems where each client generally has multiple preferences. To this end, we propose a Preference-aware scheme in Fair Federated Learning (called PraFFL) to generate preference-specific models in real time. PraFFL can adaptively adjust the model based on each client's preferences to meet their needs. We theoretically prove that PraFFL can offer the optimal model tailored to an arbitrary preference of each client, and show its linear convergence. Experimental results show that our proposed PraFFL outperforms six fair federated learning algorithms in terms of the model's capability of adapting to clients' different preferences. Our implementation is available at https://github.com/rG223/PraFFL.</description>
+   <guid>oai:arXiv.org:2404.08973v3</guid>
+   <category>cs.LG</category>
+   <category>cs.CY</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Rongguang Ye, Wei-Bin Kou, Ming Tang</creator>
+  </item>
+  <item>
+   <title>Aggregating Low Rank Adapters in Federated Fine-tuning</title>
+   <link>https://arxiv.org/abs/2501.06332</link>
+   <description>Fine-tuning large language models requires high computational and memory resources, and is therefore associated with significant costs. When training on federated datasets, an increased communication effort is also needed. For this reason, parameter-efficient methods (PEFT) are becoming increasingly important. In this context, very good results have already been achieved by fine-tuning with low-rank adaptation methods (LoRA). The application of LoRA methods in Federated Learning, and especially the aggregation of adaptation matrices, is a current research field. In this article, we propose a novel aggregation method and compare it with different existing aggregation methods of low rank adapters trained in a federated fine-tuning of large machine learning models and evaluate their performance with respect to selected GLUE benchmark datasets.</description>
+   <guid>oai:arXiv.org:2501.06332v1</guid>
    <category>cs.LG</category>
    <category>cs.AI</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Yanbing Zhou, Xiangmou Qu, Chenlong You, Jiyang Zhou, Jingyue Tang, Xin Zheng, Chunmao Cai, Yingbo Wu</creator>
-  </item>
-  <item>
-   <title>Exploring Large Language Models for Translating Romanian Computational Problems into English</title>
-   <link>https://arxiv.org/abs/2501.05601</link>
-   <description>Recent studies have suggested that large language models (LLMs) underperform on mathematical and computer science tasks when these problems are translated from Romanian into English, compared to their original Romanian format. Accurate translation is critical for applications ranging from automatic translations in programming competitions to the creation of high-quality educational materials, as well as minimizing errors or fraud in human translations. This study shows that robust large language models (LLMs) can maintain or even enhance their performance in translating less common languages when given well-structured prompts. Our findings suggest that LLMs, with appropriate supervision, can be reliably used for the automatic translation of IOI (International Olympiad in Informatics)-style tasks. We evaluate several translation methods across multiple LLMs, including OpenRoLLM, Llama 3.1 8B, Llama 3.2 3B and GPT-4o, assessing their translation accuracy and performance stability through repeated runs. Additionally, we augment the OJI (Romanian County-Level Informatics Olympiad) Romanian dataset with accurate English translations, enhancing its utility for future LLM training and evaluation. Through detailed syntactic and semantic analyses, we confirm that with human oversight, LLMs can serve as a viable solution for multilingual problem-solving. We also compare the translation quality of LLMs against human translators, as evaluated by a certified expert, underscoring the potential of LLMs in realworld scenarios.</description>
-   <guid>oai:arXiv.org:2501.05601v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>new</announce_type>
    <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Adrian Marius Dumitran, Adrian-Catalin Badea, Stefan-Gabriel Muscalu, Angela-Liliana Dumitran, Stefan-Cosmin Dascalescu, Radu-Sebastian Amarie</creator>
+   <creator>Evelyn Trautmann, Ian Hales, Martin F. Volk</creator>
   </item>
   <item>
-   <title>Efficiently serving large multimedia models using EPD Disaggregation</title>
-   <link>https://arxiv.org/abs/2501.05460</link>
-   <description>Large Multimodal Models (LMMs) extend Large Language Models (LLMs) by handling diverse inputs such as images, audio, and video, but at the cost of adding a multimodal encoding stage that increases both computational and memory overhead. This step helps convert raw inputs into tokenized representations that inflate the token sequence for the prefill phase, negatively impacting key Service Level Objectives (SLOs) like time to first token (TTFT) and end-to-end throughput. We introduce Encode-Prefill-Decode (EPD) Disaggregation, a novel framework that separates the encoding, prefill, and decode stages onto dedicated resources. Unlike current systems, which bundle encoding and prefill together, our disaggregation approach alleviates memory bottlenecks, mitigates synchronization delays, and supports flexible batching. Specifically, we employ a new caching mechanism for multimodal tokens, enabling asynchronous transfer of multimodal tokens and introduce an integrated module to find optimal config for EPD system and minimize resource usage while maximizing SLO-based performance metric. Experimental evaluations with popular LMMs show substantial gains in memory efficiency (up to 15$\times$ lesser for encoding-stage GPUs), that supports upto 22$\times$ higher batch sizes, 10$\times$ more number of images/ request, 2.2$\times$ higher kv cache size. Further, it leads to significant improvements in end-to-end throughput (up to 57\% better), and latency metrics (TTFT up to 71\% lower), compared to systems that do not disaggregate. Our findings underscore the potential of EPD disaggregation to enable resource-efficient and high-performance multimodal inference at scale.</description>
-   <guid>oai:arXiv.org:2501.05460v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
+   <title>Reliable Imputed-Sample Assisted Vertical Federated Learning</title>
+   <link>https://arxiv.org/abs/2501.06429</link>
+   <description>Vertical Federated Learning (VFL) is a well-known FL variant that enables multiple parties to collaboratively train a model without sharing their raw data. Existing VFL approaches focus on overlapping samples among different parties, while their performance is constrained by the limited number of these samples, leaving numerous non-overlapping samples unexplored. Some previous work has explored techniques for imputing missing values in samples, but often without adequate attention to the quality of the imputed samples. To address this issue, we propose a Reliable Imputed-Sample Assisted (RISA) VFL framework to effectively exploit non-overlapping samples by selecting reliable imputed samples for training VFL models. Specifically, after imputing non-overlapping samples, we introduce evidence theory to estimate the uncertainty of imputed samples, and only samples with low uncertainty are selected. In this way, high-quality non-overlapping samples are utilized to improve VFL model. Experiments on two widely used datasets demonstrate the significant performance gains achieved by the RISA, especially with the limited overlapping samples, e.g., a 48% accuracy gain on CIFAR-10 with only 1% overlapping samples.</description>
+   <guid>oai:arXiv.org:2501.06429v1</guid>
    <category>cs.LG</category>
-   <pubdate>Mon, 13 Jan 2025 00:00:00 -0500</pubdate>
+   <category>stat.ML</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yaopei Zeng, Lei Liu, Shaoguo Liu, Hongjian Dou, Baoyuan Wu, Li Liu</creator>
+  </item>
+  <item>
+   <title>SafeSplit: A Novel Defense Against Client-Side Backdoor Attacks in Split Learning</title>
+   <link>https://arxiv.org/abs/2501.06650</link>
+   <description>Split Learning (SL) is a distributed deep learning approach enabling multiple clients and a server to collaboratively train and infer on a shared deep neural network (DNN) without requiring clients to share their private local data. The DNN is partitioned in SL, with most layers residing on the server and a few initial layers and inputs on the client side. This configuration allows resource-constrained clients to participate in training and inference. However, the distributed architecture exposes SL to backdoor attacks, where malicious clients can manipulate local datasets to alter the DNN's behavior. Existing defenses from other distributed frameworks like Federated Learning are not applicable, and there is a lack of effective backdoor defenses specifically designed for SL.
+  We present SafeSplit, the first defense against client-side backdoor attacks in Split Learning (SL). SafeSplit enables the server to detect and filter out malicious client behavior by employing circular backward analysis after a client's training is completed, iteratively reverting to a trained checkpoint where the model under examination is found to be benign. It uses a two-fold analysis to identify client-induced changes and detect poisoned models. First, a static analysis in the frequency domain measures the differences in the layer's parameters at the server. Second, a dynamic analysis introduces a novel rotational distance metric that assesses the orientation shifts of the server's layer parameters during training. Our comprehensive evaluation across various data distributions, client counts, and attack scenarios demonstrates the high efficacy of this dual analysis in mitigating backdoor attacks while preserving model utility.</description>
+   <guid>oai:arXiv.org:2501.06650v1</guid>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Phillip Rieger, Alessandro Pegoraro, Kavita Kumari, Tigist Abera, Jonathan Knauer, Ahmad-Reza Sadeghi</creator>
+  </item>
+  <item>
+   <title>PraFFL: A Preference-Aware Scheme in Fair Federated Learning</title>
+   <link>https://arxiv.org/abs/2404.08973</link>
+   <description>Fairness in federated learning has emerged as a critical concern, aiming to develop an unbiased model among groups (e.g., male or female) of diverse sensitive features. However, there is a trade-off between model performance and fairness, i.e., improving model fairness will decrease model performance. Existing approaches have characterized such a trade-off by introducing hyperparameters to quantify client's preferences for model fairness and model performance. Nevertheless, these approaches are limited to scenarios where each client has only a single pre-defined preference, and fail to work in practical systems where each client generally has multiple preferences. To this end, we propose a Preference-aware scheme in Fair Federated Learning (called PraFFL) to generate preference-specific models in real time. PraFFL can adaptively adjust the model based on each client's preferences to meet their needs. We theoretically prove that PraFFL can offer the optimal model tailored to an arbitrary preference of each client, and show its linear convergence. Experimental results show that our proposed PraFFL outperforms six fair federated learning algorithms in terms of the model's capability of adapting to clients' different preferences. Our implementation is available at https://github.com/rG223/PraFFL.</description>
+   <guid>oai:arXiv.org:2404.08973v3</guid>
+   <category>cs.LG</category>
+   <category>cs.CY</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Rongguang Ye, Wei-Bin Kou, Ming Tang</creator>
+  </item>
+  <item>
+   <title>On the Convergence of Continual Federated Learning Using Incrementally Aggregated Gradients</title>
+   <link>https://arxiv.org/abs/2411.07959</link>
+   <description>The holy grail of machine learning is to enable Continual Federated Learning (CFL) to enhance the efficiency, privacy, and scalability of AI systems while learning from streaming data. The primary challenge of a CFL system is to overcome global catastrophic forgetting, wherein the accuracy of the global model trained on new tasks declines on the old tasks. In this work, we propose Continual Federated Learning with Aggregated Gradients (C-FLAG), a novel replay-memory based federated strategy consisting of edge-based gradient updates on memory and aggregated gradients on the current data. We provide convergence analysis of the C-FLAG approach which addresses forgetting and bias while converging at a rate of $O(1/\sqrt{T})$ over $T$ communication rounds. We formulate an optimization sub-problem that minimizes catastrophic forgetting, translating CFL into an iterative algorithm with adaptive learning rates that ensure seamless learning across tasks. We empirically show that C-FLAG outperforms several state-of-the-art baselines on both task and class-incremental settings with respect to metrics such as accuracy and forgetting.</description>
+   <guid>oai:arXiv.org:2411.07959v2</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Satish Kumar Keshri, Nazreen Shah, Ranjitha Prasad</creator>
+  </item>
+  <item>
+   <title>Asynchronous Federated Learning: A Scalable Approach for Decentralized Machine Learning</title>
+   <link>https://arxiv.org/abs/2412.17723</link>
+   <description>Federated Learning (FL) has emerged as a powerful paradigm for decentralized machine learning, enabling collaborative model training across diverse clients without sharing raw data. However, traditional FL approaches often face limitations in scalability and efficiency due to their reliance on synchronous client updates, which can result in significant delays and increased communication overhead, particularly in heterogeneous and dynamic environments. To address these challenges in this paper, we propose an Asynchronous Federated Learning (AFL) algorithm, which allows clients to update the global model independently and asynchronously. Our key contributions include a comprehensive convergence analysis of AFL in the presence of client delays and model staleness. By leveraging martingale difference sequence theory and variance bounds, we ensure robust convergence despite asynchronous updates. Assuming strongly convex local objective functions, we establish bounds on gradient variance under random client sampling and derive a recursion formula quantifying the impact of client delays on convergence.
+  The proposed AFL algorithm addresses key limitations of traditional FL methods, such as inefficiency due to global synchronization and susceptibility to client drift. It enhances scalability, robustness, and efficiency in real-world settings with heterogeneous client populations and dynamic network conditions. Our results underscore the potential of AFL to drive advancements in distributed learning systems, particularly for large-scale, privacy-preserving applications in resource-constrained environments.</description>
+   <guid>oai:arXiv.org:2412.17723v2</guid>
+   <category>cs.LG</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Ali Forootani, Raffaele Iervolino</creator>
+  </item>
+  <item>
+   <title>Prompting in the Wild: An Empirical Study of Prompt Evolution in Software Repositories</title>
+   <link>https://arxiv.org/abs/2412.17298</link>
+   <description>The adoption of Large Language Models (LLMs) is reshaping software development as developers integrate these LLMs into their applications. In such applications, prompts serve as the primary means of interacting with LLMs. Despite the widespread use of LLM-integrated applications, there is limited understanding of how developers manage and evolve prompts. This study presents the first empirical analysis of prompt evolution in LLM-integrated software development. We analyzed 1,262 prompt changes across 243 GitHub repositories to investigate the patterns and frequencies of prompt changes, their relationship with code changes, documentation practices, and their impact on system behavior. Our findings show that developers primarily evolve prompts through additions and modifications, with most changes occurring during feature development. We identified key challenges in prompt engineering: only 21.9% of prompt changes are documented in commit messages, changes can introduce logical inconsistencies, and misalignment often occurs between prompt changes and LLM responses. These insights emphasize the need for specialized testing frameworks, automated validation tools, and improved documentation practices to enhance the reliability of LLM-integrated applications.</description>
+   <guid>oai:arXiv.org:2412.17298v2</guid>
+   <category>cs.SE</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mahan Tafreshipour, Aaron Imani, Eric Huang, Eduardo Almeida, Thomas Zimmermann, Iftekhar Ahmed</creator>
+  </item>
+  <item>
+   <title>Multi-Agent Collaboration Mechanisms: A Survey of LLMs</title>
+   <link>https://arxiv.org/abs/2501.06322</link>
+   <description>With recent advances in Large Language Models (LLMs), Agentic AI has become phenomenal in real-world applications, moving toward multiple LLM-based agents to perceive, learn, reason, and act collaboratively. These LLM-based Multi-Agent Systems (MASs) enable groups of intelligent agents to coordinate and solve complex tasks collectively at scale, transitioning from isolated models to collaboration-centric approaches. This work provides an extensive survey of the collaborative aspect of MASs and introduces an extensible framework to guide future research. Our framework characterizes collaboration mechanisms based on key dimensions: actors (agents involved), types (e.g., cooperation, competition, or coopetition), structures (e.g., peer-to-peer, centralized, or distributed), strategies (e.g., role-based or model-based), and coordination protocols. Through a review of existing methodologies, our findings serve as a foundation for demystifying and advancing LLM-based MASs toward more intelligent and collaborative solutions for complex, real-world use cases. In addition, various applications of MASs across diverse domains, including 5G/6G networks, Industry 5.0, question answering, and social and cultural settings, are also investigated, demonstrating their wider adoption and broader impacts. Finally, we identify key lessons learned, open challenges, and potential research directions of MASs towards artificial collective intelligence.</description>
+   <guid>oai:arXiv.org:2501.06322v1</guid>
+   <category>cs.AI</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Khanh-Tung Tran, Dung Dao, Minh-Duong Nguyen, Quoc-Viet Pham, Barry O'Sullivan, Hoang D. Nguyen</creator>
+  </item>
+  <item>
+   <title>ADKGD: Anomaly Detection in Knowledge Graphs with Dual-Channel Training</title>
+   <link>https://arxiv.org/abs/2501.07078</link>
+   <description>In the current development of large language models (LLMs), it is important to ensure the accuracy and reliability of the underlying data sources. LLMs are critical for various applications, but they often suffer from hallucinations and inaccuracies due to knowledge gaps in the training data. Knowledge graphs (KGs), as a powerful structural tool, could serve as a vital external information source to mitigate the aforementioned issues. By providing a structured and comprehensive understanding of real-world data, KGs enhance the performance and reliability of LLMs. However, it is common that errors exist in KGs while extracting triplets from unstructured data to construct KGs. This could lead to degraded performance in downstream tasks such as question-answering and recommender systems. Therefore, anomaly detection in KGs is essential to identify and correct these errors. This paper presents an anomaly detection algorithm in knowledge graphs with dual-channel learning (ADKGD). ADKGD leverages a dual-channel learning approach to enhance representation learning from both the entity-view and triplet-view perspectives. Furthermore, using a cross-layer approach, our framework integrates internal information aggregation and context information aggregation. We introduce a kullback-leibler (KL)-loss component to improve the accuracy of the scoring function between the dual channels. To evaluate ADKGD's performance, we conduct empirical studies on three real-world KGs: WN18RR, FB15K, and NELL-995. Experimental results demonstrate that ADKGD outperforms the state-of-the-art anomaly detection algorithms. The source code and datasets are publicly available at https://github.com/csjywu1/ADKGD.</description>
+   <guid>oai:arXiv.org:2501.07078v1</guid>
+   <category>cs.AI</category>
+   <category>cs.DB</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jiayang Wu, Wensheng Gan, Jiahao Zhang, Philip S. Yu</creator>
+  </item>
+  <item>
+   <title>Aggregating Low Rank Adapters in Federated Fine-tuning</title>
+   <link>https://arxiv.org/abs/2501.06332</link>
+   <description>Fine-tuning large language models requires high computational and memory resources, and is therefore associated with significant costs. When training on federated datasets, an increased communication effort is also needed. For this reason, parameter-efficient methods (PEFT) are becoming increasingly important. In this context, very good results have already been achieved by fine-tuning with low-rank adaptation methods (LoRA). The application of LoRA methods in Federated Learning, and especially the aggregation of adaptation matrices, is a current research field. In this article, we propose a novel aggregation method and compare it with different existing aggregation methods of low rank adapters trained in a federated fine-tuning of large machine learning models and evaluate their performance with respect to selected GLUE benchmark datasets.</description>
+   <guid>oai:arXiv.org:2501.06332v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Evelyn Trautmann, Ian Hales, Martin F. Volk</creator>
+  </item>
+  <item>
+   <title>First Token Probability Guided RAG for Telecom Question Answering</title>
+   <link>https://arxiv.org/abs/2501.06468</link>
+   <description>Large Language Models (LLMs) have garnered significant attention for their impressive general-purpose capabilities. For applications requiring intricate domain knowledge, Retrieval-Augmented Generation (RAG) has shown a distinct advantage in incorporating domain-specific information into LLMs. However, existing RAG research has not fully addressed the challenges of Multiple Choice Question Answering (MCQA) in telecommunications, particularly in terms of retrieval quality and mitigating hallucinations. To tackle these challenges, we propose a novel first token probability guided RAG framework. This framework leverages confidence scores to optimize key hyperparameters, such as chunk number and chunk window size, while dynamically adjusting the context. Our method starts by retrieving the most relevant chunks and generates a single token as the potential answer. The probabilities of all options are then normalized to serve as confidence scores, which guide the dynamic adjustment of the context. By iteratively optimizing the hyperparameters based on these confidence scores, we can continuously improve RAG performance. We conducted experiments to validate the effectiveness of our framework, demonstrating its potential to enhance accuracy in domain-specific MCQA tasks.</description>
+   <guid>oai:arXiv.org:2501.06468v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Gursimran Singh, Xinglu Wang, Ivan Hu, Timothy Yu, Linzi Xing, Wei Jiang, Zhefeng Wang, Xiaolong Bai, Yi Li, Ying Xiong, Yong Zhang, Zhenan Fan</creator>
+   <creator>Tingwei Chen, Jiayi Chen, Zijian Zhao, Haolong Chen, Liang Zhang, Guangxu Zhu</creator>
+  </item>
+  <item>
+   <title>Large Action Models: From Inception to Implementation</title>
+   <link>https://arxiv.org/abs/2412.10047</link>
+   <description>As AI continues to advance, there is a growing demand for systems that go beyond language-based assistance and move toward intelligent agents capable of performing real-world actions. This evolution requires the transition from traditional Large Language Models (LLMs), which excel at generating textual responses, to Large Action Models (LAMs), designed for action generation and execution within dynamic environments. Enabled by agent systems, LAMs hold the potential to transform AI from passive language understanding to active task completion, marking a significant milestone in the progression toward artificial general intelligence.
+  In this paper, we present a comprehensive framework for developing LAMs, offering a systematic approach to their creation, from inception to deployment. We begin with an overview of LAMs, highlighting their unique characteristics and delineating their differences from LLMs. Using a Windows OS-based agent as a case study, we provide a detailed, step-by-step guide on the key stages of LAM development, including data collection, model training, environment integration, grounding, and evaluation. This generalizable workflow can serve as a blueprint for creating functional LAMs in various application domains. We conclude by identifying the current limitations of LAMs and discussing directions for future research and industrial deployment, emphasizing the challenges and opportunities that lie ahead in realizing the full potential of LAMs in real-world applications.
+  The code for the data collection process utilized in this paper is publicly available at: https://github.com/microsoft/UFO/tree/main/dataflow, and comprehensive documentation can be found at https://microsoft.github.io/UFO/dataflow/overview/.</description>
+   <guid>oai:arXiv.org:2412.10047v2</guid>
+   <category>cs.AI</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Lu Wang, Fangkai Yang, Chaoyun Zhang, Junting Lu, Jiaxu Qian, Shilin He, Pu Zhao, Bo Qiao, Ray Huang, Si Qin, Qisheng Su, Jiayi Ye, Yudi Zhang, Jian-Guang Lou, Qingwei Lin, Saravan Rajmohan, Dongmei Zhang, Qi Zhang</creator>
+  </item>
+  <item>
+   <title>ADKGD: Anomaly Detection in Knowledge Graphs with Dual-Channel Training</title>
+   <link>https://arxiv.org/abs/2501.07078</link>
+   <description>In the current development of large language models (LLMs), it is important to ensure the accuracy and reliability of the underlying data sources. LLMs are critical for various applications, but they often suffer from hallucinations and inaccuracies due to knowledge gaps in the training data. Knowledge graphs (KGs), as a powerful structural tool, could serve as a vital external information source to mitigate the aforementioned issues. By providing a structured and comprehensive understanding of real-world data, KGs enhance the performance and reliability of LLMs. However, it is common that errors exist in KGs while extracting triplets from unstructured data to construct KGs. This could lead to degraded performance in downstream tasks such as question-answering and recommender systems. Therefore, anomaly detection in KGs is essential to identify and correct these errors. This paper presents an anomaly detection algorithm in knowledge graphs with dual-channel learning (ADKGD). ADKGD leverages a dual-channel learning approach to enhance representation learning from both the entity-view and triplet-view perspectives. Furthermore, using a cross-layer approach, our framework integrates internal information aggregation and context information aggregation. We introduce a kullback-leibler (KL)-loss component to improve the accuracy of the scoring function between the dual channels. To evaluate ADKGD's performance, we conduct empirical studies on three real-world KGs: WN18RR, FB15K, and NELL-995. Experimental results demonstrate that ADKGD outperforms the state-of-the-art anomaly detection algorithms. The source code and datasets are publicly available at https://github.com/csjywu1/ADKGD.</description>
+   <guid>oai:arXiv.org:2501.07078v1</guid>
+   <category>cs.AI</category>
+   <category>cs.DB</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jiayang Wu, Wensheng Gan, Jiahao Zhang, Philip S. Yu</creator>
+  </item>
+  <item>
+   <title>AgoraSpeech: A multi-annotated comprehensive dataset of political discourse through the lens of humans and AI</title>
+   <link>https://arxiv.org/abs/2501.06265</link>
+   <description>Political discourse datasets are important for gaining political insights, analyzing communication strategies or social science phenomena. Although numerous political discourse corpora exist, comprehensive, high-quality, annotated datasets are scarce. This is largely due to the substantial manual effort, multidisciplinarity, and expertise required for the nuanced annotation of rhetorical strategies and ideological contexts. In this paper, we present AgoraSpeech, a meticulously curated, high-quality dataset of 171 political speeches from six parties during the Greek national elections in 2023. The dataset includes annotations (per paragraph) for six natural language processing (NLP) tasks: text classification, topic identification, sentiment analysis, named entity recognition, polarization and populism detection. A two-step annotation was employed, starting with ChatGPT-generated annotations and followed by exhaustive human-in-the-loop validation. The dataset was initially used in a case study to provide insights during the pre-election period. However, it has general applicability by serving as a rich source of information for political and social scientists, journalists, or data scientists, while it can be used for benchmarking and fine-tuning NLP and large language models (LLMs).</description>
+   <guid>oai:arXiv.org:2501.06265v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Pavlos Sermpezis, Stelios Karamanidis, Eva Paraschou, Ilias Dimitriadis, Sofia Yfantidou, Filitsa-Ioanna Kouskouveli, Thanasis Troboukis, Kelly Kiki, Antonis Galanopoulos, Athena Vakali</creator>
+  </item>
+  <item>
+   <title>First Token Probability Guided RAG for Telecom Question Answering</title>
+   <link>https://arxiv.org/abs/2501.06468</link>
+   <description>Large Language Models (LLMs) have garnered significant attention for their impressive general-purpose capabilities. For applications requiring intricate domain knowledge, Retrieval-Augmented Generation (RAG) has shown a distinct advantage in incorporating domain-specific information into LLMs. However, existing RAG research has not fully addressed the challenges of Multiple Choice Question Answering (MCQA) in telecommunications, particularly in terms of retrieval quality and mitigating hallucinations. To tackle these challenges, we propose a novel first token probability guided RAG framework. This framework leverages confidence scores to optimize key hyperparameters, such as chunk number and chunk window size, while dynamically adjusting the context. Our method starts by retrieving the most relevant chunks and generates a single token as the potential answer. The probabilities of all options are then normalized to serve as confidence scores, which guide the dynamic adjustment of the context. By iteratively optimizing the hyperparameters based on these confidence scores, we can continuously improve RAG performance. We conducted experiments to validate the effectiveness of our framework, demonstrating its potential to enhance accuracy in domain-specific MCQA tasks.</description>
+   <guid>oai:arXiv.org:2501.06468v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tingwei Chen, Jiayi Chen, Zijian Zhao, Haolong Chen, Liang Zhang, Guangxu Zhu</creator>
+  </item>
+  <item>
+   <title>A Federated Deep Learning Framework for Cell-Free RSMA Networks</title>
+   <link>https://arxiv.org/abs/2501.07126</link>
+   <description>Next-generation wireless networks are poised to benefit significantly from the integration of three key technologies (KTs): Rate-Splitting Multiple Access (RSMA), cell-free architectures, and federated learning. Each of these technologies offers distinct advantages in terms of security, robustness, and distributed structure. In this paper, we propose a novel cell-free network architecture that incorporates RSMA and employs machine learning techniques within a federated framework. This combination leverages the strengths of each KT, creating a synergistic effect that maximizes the benefits of security, robustness, and distributed structure. We formally formulate the access point (AP) selection and precoder design for max-min rate optimization in a cell-free MIMO RSMA network. Our proposed solution scheme involves a three-block procedure. The first block trains deep reinforcement learning (DRL) neural networks to obtain RSMA precoders, assuming full connectivity between APs and user equipments (UEs). The second block uses these precoders and principal component analysis (PCA) to assign APs to UEs by removing a subset of AP-UE connections. The final block fine-tunes the RSMA precoders by incorporating the associated APs into a second DRL network. To leverage the distributed nature of the cell-free network, this process is implemented in a Federated Deep Reinforcement Learning (FDRL) structure operating through the cooperation of APs and a central processing unit (CPU). Simulation results demonstrate that the proposed FDRL approach performs comparably to a benchmark centralized DRL scheme. Our FDRL approach, provides a balanced trade-off, maintaining high performance with enhanced security and reduced processing demands.</description>
+   <guid>oai:arXiv.org:2501.07126v1</guid>
+   <category>eess.SY</category>
+   <category>cs.SY</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>S. Ali Mousavi, Mehdi Monemi, Reza Mohseni, Matti Latva-aho</creator>
+  </item>
+  <item>
+   <title>Asynchronous Federated Learning: A Scalable Approach for Decentralized Machine Learning</title>
+   <link>https://arxiv.org/abs/2412.17723</link>
+   <description>Federated Learning (FL) has emerged as a powerful paradigm for decentralized machine learning, enabling collaborative model training across diverse clients without sharing raw data. However, traditional FL approaches often face limitations in scalability and efficiency due to their reliance on synchronous client updates, which can result in significant delays and increased communication overhead, particularly in heterogeneous and dynamic environments. To address these challenges in this paper, we propose an Asynchronous Federated Learning (AFL) algorithm, which allows clients to update the global model independently and asynchronously. Our key contributions include a comprehensive convergence analysis of AFL in the presence of client delays and model staleness. By leveraging martingale difference sequence theory and variance bounds, we ensure robust convergence despite asynchronous updates. Assuming strongly convex local objective functions, we establish bounds on gradient variance under random client sampling and derive a recursion formula quantifying the impact of client delays on convergence.
+  The proposed AFL algorithm addresses key limitations of traditional FL methods, such as inefficiency due to global synchronization and susceptibility to client drift. It enhances scalability, robustness, and efficiency in real-world settings with heterogeneous client populations and dynamic network conditions. Our results underscore the potential of AFL to drive advancements in distributed learning systems, particularly for large-scale, privacy-preserving applications in resource-constrained environments.</description>
+   <guid>oai:arXiv.org:2412.17723v2</guid>
+   <category>cs.LG</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Tue, 14 Jan 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Ali Forootani, Raffaele Iervolino</creator>
   </item>
  </channel>
 </rss>
