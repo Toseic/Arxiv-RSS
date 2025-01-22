@@ -6,132 +6,9 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Tue, 21 Jan 2025 04:13:55 </lastBuildDate>
+  <lastBuildDate>Wed, 22 Jan 2025 02:42:22 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Tue, 21 Jan 2025 04:13:55 </pubDate>
-  <item>
-   <title>pFedWN: A Personalized Federated Learning Framework for D2D Wireless Networks with Heterogeneous Data</title>
-   <link>https://arxiv.org/abs/2501.09822</link>
-   <description>Traditional Federated Learning (FL) approaches often struggle with data heterogeneity across clients, leading to suboptimal model performance for individual clients. To address this issue, Personalized Federated Learning (PFL) emerges as a solution to the challenges posed by non-independent and identically distributed (non-IID) and unbalanced data across clients. Furthermore, in most existing decentralized machine learning works, a perfect communication channel is considered for model parameter transmission between clients and servers. However, decentralized PFL over wireless links introduces new challenges, such as resource allocation and interference management. To overcome these challenges, we formulate a joint optimization problem that incorporates the underlying device-to-device (D2D) wireless channel conditions into a server-free PFL approach. The proposed method, dubbed pFedWN, optimizes the learning performance for each client while accounting for the variability in D2D wireless channels. To tackle the formulated problem, we divide it into two sub-problems: PFL neighbor selection and PFL weight assignment. The PFL neighbor selection is addressed through channel-aware neighbor selection within unlicensed spectrum bands such as ISM bands. Next, to assign PFL weights, we utilize the Expectation-Maximization (EM) method to evaluate the similarity between clients' data and obtain optimal weight distribution among the chosen PFL neighbors. Empirical results show that pFedWN provides efficient and personalized learning performance with non-IID and unbalanced datasets. Furthermore, it outperforms the existing FL and PFL methods in terms of learning efficacy and robustness, particularly under dynamic and unpredictable wireless channel conditions.</description>
-   <guid>oai:arXiv.org:2501.09822v1</guid>
-   <category>cs.LG</category>
-   <category>cs.NI</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhou Ni, Masoud Ghazikor, Morteza Hashemi</creator>
-  </item>
-  <item>
-   <title>TraceFL: Interpretability-Driven Debugging in Federated Learning via Neuron Provenance</title>
-   <link>https://arxiv.org/abs/2312.13632</link>
-   <description>In Federated Learning, clients train models on local data and send updates to a central server, which aggregates them into a global model using a fusion algorithm. This collaborative yet privacy-preserving training comes at a cost. FL developers face significant challenges in attributing global model predictions to specific clients. Localizing responsible clients is a crucial step towards (a) excluding clients primarily responsible for incorrect predictions and (b) encouraging clients who contributed high-quality models to continue participating in the future. Existing ML debugging approaches are inherently inapplicable as they are designed for single-model, centralized training.
-  We introduce TraceFL, a fine-grained neuron provenance capturing mechanism that identifies clients responsible for a global model's prediction by tracking the flow of information from individual clients to the global model. Since inference on different inputs activates a different set of neurons of the global model, TraceFL dynamically quantifies the significance of the global model's neurons in a given prediction, identifying the most crucial neurons in the global model. It then maps them to the corresponding neurons in every participating client to determine each client's contribution, ultimately localizing the responsible client. We evaluate TraceFL on six datasets, including two real-world medical imaging datasets and four neural networks, including advanced models such as GPT. TraceFL achieves 99% accuracy in localizing the responsible client in FL tasks spanning both image and text classification tasks. At a time when state-of-the-artML debugging approaches are mostly domain-specific (e.g., image classification only), TraceFL is the first technique to enable highly accurate automated reasoning across a wide range of FL applications.</description>
-   <guid>oai:arXiv.org:2312.13632v4</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <category>cs.DC</category>
-   <category>cs.SE</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Waris Gill (Virginia Tech), Ali Anwar (University of Minnesota Twin Cities), Muhammad Ali Gulzar (Virginia Tech)</creator>
-  </item>
-  <item>
-   <title>pFedWN: A Personalized Federated Learning Framework for D2D Wireless Networks with Heterogeneous Data</title>
-   <link>https://arxiv.org/abs/2501.09822</link>
-   <description>Traditional Federated Learning (FL) approaches often struggle with data heterogeneity across clients, leading to suboptimal model performance for individual clients. To address this issue, Personalized Federated Learning (PFL) emerges as a solution to the challenges posed by non-independent and identically distributed (non-IID) and unbalanced data across clients. Furthermore, in most existing decentralized machine learning works, a perfect communication channel is considered for model parameter transmission between clients and servers. However, decentralized PFL over wireless links introduces new challenges, such as resource allocation and interference management. To overcome these challenges, we formulate a joint optimization problem that incorporates the underlying device-to-device (D2D) wireless channel conditions into a server-free PFL approach. The proposed method, dubbed pFedWN, optimizes the learning performance for each client while accounting for the variability in D2D wireless channels. To tackle the formulated problem, we divide it into two sub-problems: PFL neighbor selection and PFL weight assignment. The PFL neighbor selection is addressed through channel-aware neighbor selection within unlicensed spectrum bands such as ISM bands. Next, to assign PFL weights, we utilize the Expectation-Maximization (EM) method to evaluate the similarity between clients' data and obtain optimal weight distribution among the chosen PFL neighbors. Empirical results show that pFedWN provides efficient and personalized learning performance with non-IID and unbalanced datasets. Furthermore, it outperforms the existing FL and PFL methods in terms of learning efficacy and robustness, particularly under dynamic and unpredictable wireless channel conditions.</description>
-   <guid>oai:arXiv.org:2501.09822v1</guid>
-   <category>cs.LG</category>
-   <category>cs.NI</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhou Ni, Masoud Ghazikor, Morteza Hashemi</creator>
-  </item>
-  <item>
-   <title>HEART: Achieving Timely Multi-Model Training for Vehicle-Edge-Cloud-Integrated Hierarchical Federated Learning</title>
-   <link>https://arxiv.org/abs/2501.09934</link>
-   <description>The rapid growth of AI-enabled Internet of Vehicles (IoV) calls for efficient machine learning (ML) solutions that can handle high vehicular mobility and decentralized data. This has motivated the emergence of Hierarchical Federated Learning over vehicle-edge-cloud architectures (VEC-HFL). Nevertheless, one aspect which is underexplored in the literature on VEC-HFL is that vehicles often need to execute multiple ML tasks simultaneously, where this multi-model training environment introduces crucial challenges. First, improper aggregation rules can lead to model obsolescence and prolonged training times. Second, vehicular mobility may result in inefficient data utilization by preventing the vehicles from returning their models to the network edge. Third, achieving a balanced resource allocation across diverse tasks becomes of paramount importance as it majorly affects the effectiveness of collaborative training. We take one of the first steps towards addressing these challenges via proposing a framework for multi-model training in dynamic VEC-HFL with the goal of minimizing global training latency while ensuring balanced training across various tasks-a problem that turns out to be NP-hard. To facilitate timely model training, we introduce a hybrid synchronous-asynchronous aggregation rule. Building on this, we present a novel method called Hybrid Evolutionary And gReedy allocaTion (HEART). The framework operates in two stages: first, it achieves balanced task scheduling through a hybrid heuristic approach that combines improved Particle Swarm Optimization (PSO) and Genetic Algorithms (GA); second, it employs a low-complexity greedy algorithm to determine the training priority of assigned tasks on vehicles. Experiments on real-world datasets demonstrate the superiority of HEART over existing methods.</description>
-   <guid>oai:arXiv.org:2501.09934v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Xiaohong Yang, Minghui Liwang, Xianbin Wang, Zhipeng Cheng, Seyyedali Hosseinalipour, Huaiyu Dai, Zhenzhen Jiao</creator>
-  </item>
-  <item>
-   <title>Client-Centric Federated Adaptive Optimization</title>
-   <link>https://arxiv.org/abs/2501.09946</link>
-   <description>Federated Learning (FL) is a distributed learning paradigm where clients collaboratively train a model while keeping their own data private. With an increasing scale of clients and models, FL encounters two key challenges, client drift due to a high degree of statistical/system heterogeneity, and lack of adaptivity. However, most existing FL research is based on unrealistic assumptions that virtually ignore system heterogeneity. In this paper, we propose Client-Centric Federated Adaptive Optimization, which is a class of novel federated adaptive optimization approaches. We enable several features in this framework such as arbitrary client participation, asynchronous server aggregation, and heterogeneous local computing, which are ubiquitous in real-world FL systems but are missed in most existing works. We provide a rigorous convergence analysis of our proposed framework for general nonconvex objectives, which is shown to converge with the best-known rate. Extensive experiments show that our approaches consistently outperform the baseline by a large margin across benchmarks.</description>
-   <guid>oai:arXiv.org:2501.09946v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>math.OC</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jianhui Sun, Xidong Wu, Heng Huang, Aidong Zhang</creator>
-  </item>
-  <item>
-   <title>Accelerating Large Language Models through Partially Linear Feed-Forward Network</title>
-   <link>https://arxiv.org/abs/2501.10054</link>
-   <description>Large language models (LLMs) demonstrate remarkable capabilities but face deployment challenges due to their massive parameter counts. While existing compression techniques like pruning can reduce model size, it leads to significant accuracy degradation under high compression ratios. We present a novel perspective inspired by constant folding in compiler optimization. Our approach enables parameter reduction by treating activation functions in LLMs as linear functions.
-  However, recent LLMs use complex non-linear activations like GELU that prevent direct application of this technique. We propose TARDIS, which enables optimization of LLMs with non-linear activations by partially approximating them with linear functions in frequently occurring input ranges. For outlier inputs, TARDIS employs an online predictor to dynamically fall back to original computations.
-  Our experiments demonstrate that TARDIS achieves 80% parameter reduction in feed-forward networks, while significantly outperforming state-of-the-art pruning methods Wanda and RIA with up to 65% higher accuracy. In practical deployments for a 7B model, TARDIS achieves 1.6x end-to-end inference speedup when integrated with the vLLM serving system, and 1.4x speedup with the widely adopted HuggingFace implementation, while incurring only a 10.9% accuracy trade-off.</description>
-   <guid>oai:arXiv.org:2501.10054v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.PL</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Gansen Hu, Zhaoguo Wang, Jinglin Wei, Wei Huang, Haibo Chen</creator>
-  </item>
-  <item>
-   <title>ColNet: Collaborative Optimization in Decentralized Federated Multi-task Learning Systems</title>
-   <link>https://arxiv.org/abs/2501.10347</link>
-   <description>The integration of Federated Learning (FL) and Multi-Task Learning (MTL) has been explored to address client heterogeneity, with Federated Multi-Task Learning (FMTL) treating each client as a distinct task. However, most existing research focuses on data heterogeneity (e.g., addressing non-IID data) rather than task heterogeneity, where clients solve fundamentally different tasks. Additionally, much of the work relies on centralized settings with a server managing the federation, leaving the more challenging domain of decentralized FMTL largely unexplored. Thus, this work bridges this gap by proposing ColNet, a framework designed for heterogeneous tasks in decentralized federated environments. ColNet divides models into the backbone and task-specific layers, forming groups of similar clients, with group leaders performing conflict-averse cross-group aggregation. A pool of experiments with different federations demonstrated ColNet outperforms the compared aggregation schemes in decentralized settings with label and task heterogeneity scenarios.</description>
-   <guid>oai:arXiv.org:2501.10347v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Chao Feng, Nicolas Fazli Kohler, Alberto Huertas Celdran, Gerome Bovet, Burkhard Stiller</creator>
-  </item>
-  <item>
-   <title>TraceFL: Interpretability-Driven Debugging in Federated Learning via Neuron Provenance</title>
-   <link>https://arxiv.org/abs/2312.13632</link>
-   <description>In Federated Learning, clients train models on local data and send updates to a central server, which aggregates them into a global model using a fusion algorithm. This collaborative yet privacy-preserving training comes at a cost. FL developers face significant challenges in attributing global model predictions to specific clients. Localizing responsible clients is a crucial step towards (a) excluding clients primarily responsible for incorrect predictions and (b) encouraging clients who contributed high-quality models to continue participating in the future. Existing ML debugging approaches are inherently inapplicable as they are designed for single-model, centralized training.
-  We introduce TraceFL, a fine-grained neuron provenance capturing mechanism that identifies clients responsible for a global model's prediction by tracking the flow of information from individual clients to the global model. Since inference on different inputs activates a different set of neurons of the global model, TraceFL dynamically quantifies the significance of the global model's neurons in a given prediction, identifying the most crucial neurons in the global model. It then maps them to the corresponding neurons in every participating client to determine each client's contribution, ultimately localizing the responsible client. We evaluate TraceFL on six datasets, including two real-world medical imaging datasets and four neural networks, including advanced models such as GPT. TraceFL achieves 99% accuracy in localizing the responsible client in FL tasks spanning both image and text classification tasks. At a time when state-of-the-artML debugging approaches are mostly domain-specific (e.g., image classification only), TraceFL is the first technique to enable highly accurate automated reasoning across a wide range of FL applications.</description>
-   <guid>oai:arXiv.org:2312.13632v4</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <category>cs.DC</category>
-   <category>cs.SE</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Waris Gill (Virginia Tech), Ali Anwar (University of Minnesota Twin Cities), Muhammad Ali Gulzar (Virginia Tech)</creator>
-  </item>
-  <item>
-   <title>TraceFL: Interpretability-Driven Debugging in Federated Learning via Neuron Provenance</title>
-   <link>https://arxiv.org/abs/2312.13632</link>
-   <description>In Federated Learning, clients train models on local data and send updates to a central server, which aggregates them into a global model using a fusion algorithm. This collaborative yet privacy-preserving training comes at a cost. FL developers face significant challenges in attributing global model predictions to specific clients. Localizing responsible clients is a crucial step towards (a) excluding clients primarily responsible for incorrect predictions and (b) encouraging clients who contributed high-quality models to continue participating in the future. Existing ML debugging approaches are inherently inapplicable as they are designed for single-model, centralized training.
-  We introduce TraceFL, a fine-grained neuron provenance capturing mechanism that identifies clients responsible for a global model's prediction by tracking the flow of information from individual clients to the global model. Since inference on different inputs activates a different set of neurons of the global model, TraceFL dynamically quantifies the significance of the global model's neurons in a given prediction, identifying the most crucial neurons in the global model. It then maps them to the corresponding neurons in every participating client to determine each client's contribution, ultimately localizing the responsible client. We evaluate TraceFL on six datasets, including two real-world medical imaging datasets and four neural networks, including advanced models such as GPT. TraceFL achieves 99% accuracy in localizing the responsible client in FL tasks spanning both image and text classification tasks. At a time when state-of-the-artML debugging approaches are mostly domain-specific (e.g., image classification only), TraceFL is the first technique to enable highly accurate automated reasoning across a wide range of FL applications.</description>
-   <guid>oai:arXiv.org:2312.13632v4</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <category>cs.DC</category>
-   <category>cs.SE</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Waris Gill (Virginia Tech), Ali Anwar (University of Minnesota Twin Cities), Muhammad Ali Gulzar (Virginia Tech)</creator>
-  </item>
+  <pubDate>Wed, 22 Jan 2025 02:42:22 </pubDate>
   <item>
    <title>Large language models for automated scholarly paper review: A survey</title>
    <link>https://arxiv.org/abs/2501.10326</link>
@@ -140,7 +17,7 @@
    <category>cs.AI</category>
    <category>cs.CL</category>
    <category>cs.DL</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
+   <pubdate>Tue, 21 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Zhenzhen Zhuang, Jiandong Chen, Hongfeng Xu, Yuwen Jiang, Jialiang Lin</creator>
@@ -152,7 +29,7 @@
    <guid>oai:arXiv.org:2501.09934v1</guid>
    <category>cs.LG</category>
    <category>cs.AI</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
+   <pubdate>Tue, 21 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
    <creator>Xiaohong Yang, Minghui Liwang, Xianbin Wang, Zhipeng Cheng, Seyyedali Hosseinalipour, Huaiyu Dai, Zhenzhen Jiao</creator>
@@ -165,7 +42,7 @@
    <category>cs.LG</category>
    <category>cs.AI</category>
    <category>math.OC</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
+   <pubdate>Tue, 21 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Jianhui Sun, Xidong Wu, Heng Huang, Aidong Zhang</creator>
@@ -180,7 +57,7 @@
    <category>cs.LG</category>
    <category>cs.AI</category>
    <category>cs.PL</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
+   <pubdate>Tue, 21 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Gansen Hu, Zhaoguo Wang, Jinglin Wei, Wei Huang, Haibo Chen</creator>
@@ -196,67 +73,10 @@
    <category>cs.CV</category>
    <category>cs.DC</category>
    <category>cs.SE</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
+   <pubdate>Tue, 21 Jan 2025 00:00:00 -0500</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Waris Gill (Virginia Tech), Ali Anwar (University of Minnesota Twin Cities), Muhammad Ali Gulzar (Virginia Tech)</creator>
-  </item>
-  <item>
-   <title>Large language models for automated scholarly paper review: A survey</title>
-   <link>https://arxiv.org/abs/2501.10326</link>
-   <description>Large language models (LLMs) have significantly impacted human society, influencing various domains. Among them, academia is not simply a domain affected by LLMs, but it is also the pivotal force in the development of LLMs. In academic publications, this phenomenon is represented during the incorporation of LLMs into the peer review mechanism for reviewing manuscripts. We proposed the concept of automated scholarly paper review (ASPR) in our previous paper. As the incorporation grows, it now enters the coexistence phase of ASPR and peer review, which is described in that paper. LLMs hold transformative potential for the full-scale implementation of ASPR, but they also pose new issues and challenges that need to be addressed. In this survey paper, we aim to provide a holistic view of ASPR in the era of LLMs. We begin with a survey to find out which LLMs are used to conduct ASPR. Then, we review what ASPR-related technological bottlenecks have been solved with the incorporation of LLM technology. After that, we move on to explore new methods, new datasets, new source code, and new online systems that come with LLMs for ASPR. Furthermore, we summarize the performance and issues of LLMs in ASPR, and investigate the attitudes and reactions of publishers and academia to ASPR. Lastly, we discuss the challenges associated with the development of LLMs for ASPR. We hope this survey can serve as an inspirational reference for the researchers and promote the progress of ASPR for its actual implementation.</description>
-   <guid>oai:arXiv.org:2501.10326v1</guid>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.DL</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhenzhen Zhuang, Jiandong Chen, Hongfeng Xu, Yuwen Jiang, Jialiang Lin</creator>
-  </item>
-  <item>
-   <title>Large language models for automated scholarly paper review: A survey</title>
-   <link>https://arxiv.org/abs/2501.10326</link>
-   <description>Large language models (LLMs) have significantly impacted human society, influencing various domains. Among them, academia is not simply a domain affected by LLMs, but it is also the pivotal force in the development of LLMs. In academic publications, this phenomenon is represented during the incorporation of LLMs into the peer review mechanism for reviewing manuscripts. We proposed the concept of automated scholarly paper review (ASPR) in our previous paper. As the incorporation grows, it now enters the coexistence phase of ASPR and peer review, which is described in that paper. LLMs hold transformative potential for the full-scale implementation of ASPR, but they also pose new issues and challenges that need to be addressed. In this survey paper, we aim to provide a holistic view of ASPR in the era of LLMs. We begin with a survey to find out which LLMs are used to conduct ASPR. Then, we review what ASPR-related technological bottlenecks have been solved with the incorporation of LLM technology. After that, we move on to explore new methods, new datasets, new source code, and new online systems that come with LLMs for ASPR. Furthermore, we summarize the performance and issues of LLMs in ASPR, and investigate the attitudes and reactions of publishers and academia to ASPR. Lastly, we discuss the challenges associated with the development of LLMs for ASPR. We hope this survey can serve as an inspirational reference for the researchers and promote the progress of ASPR for its actual implementation.</description>
-   <guid>oai:arXiv.org:2501.10326v1</guid>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.DL</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhenzhen Zhuang, Jiandong Chen, Hongfeng Xu, Yuwen Jiang, Jialiang Lin</creator>
-  </item>
-  <item>
-   <title>TraceFL: Interpretability-Driven Debugging in Federated Learning via Neuron Provenance</title>
-   <link>https://arxiv.org/abs/2312.13632</link>
-   <description>In Federated Learning, clients train models on local data and send updates to a central server, which aggregates them into a global model using a fusion algorithm. This collaborative yet privacy-preserving training comes at a cost. FL developers face significant challenges in attributing global model predictions to specific clients. Localizing responsible clients is a crucial step towards (a) excluding clients primarily responsible for incorrect predictions and (b) encouraging clients who contributed high-quality models to continue participating in the future. Existing ML debugging approaches are inherently inapplicable as they are designed for single-model, centralized training.
-  We introduce TraceFL, a fine-grained neuron provenance capturing mechanism that identifies clients responsible for a global model's prediction by tracking the flow of information from individual clients to the global model. Since inference on different inputs activates a different set of neurons of the global model, TraceFL dynamically quantifies the significance of the global model's neurons in a given prediction, identifying the most crucial neurons in the global model. It then maps them to the corresponding neurons in every participating client to determine each client's contribution, ultimately localizing the responsible client. We evaluate TraceFL on six datasets, including two real-world medical imaging datasets and four neural networks, including advanced models such as GPT. TraceFL achieves 99% accuracy in localizing the responsible client in FL tasks spanning both image and text classification tasks. At a time when state-of-the-artML debugging approaches are mostly domain-specific (e.g., image classification only), TraceFL is the first technique to enable highly accurate automated reasoning across a wide range of FL applications.</description>
-   <guid>oai:arXiv.org:2312.13632v4</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <category>cs.DC</category>
-   <category>cs.SE</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Waris Gill (Virginia Tech), Ali Anwar (University of Minnesota Twin Cities), Muhammad Ali Gulzar (Virginia Tech)</creator>
-  </item>
-  <item>
-   <title>Accelerating Large Language Models through Partially Linear Feed-Forward Network</title>
-   <link>https://arxiv.org/abs/2501.10054</link>
-   <description>Large language models (LLMs) demonstrate remarkable capabilities but face deployment challenges due to their massive parameter counts. While existing compression techniques like pruning can reduce model size, it leads to significant accuracy degradation under high compression ratios. We present a novel perspective inspired by constant folding in compiler optimization. Our approach enables parameter reduction by treating activation functions in LLMs as linear functions.
-  However, recent LLMs use complex non-linear activations like GELU that prevent direct application of this technique. We propose TARDIS, which enables optimization of LLMs with non-linear activations by partially approximating them with linear functions in frequently occurring input ranges. For outlier inputs, TARDIS employs an online predictor to dynamically fall back to original computations.
-  Our experiments demonstrate that TARDIS achieves 80% parameter reduction in feed-forward networks, while significantly outperforming state-of-the-art pruning methods Wanda and RIA with up to 65% higher accuracy. In practical deployments for a 7B model, TARDIS achieves 1.6x end-to-end inference speedup when integrated with the vLLM serving system, and 1.4x speedup with the widely adopted HuggingFace implementation, while incurring only a 10.9% accuracy trade-off.</description>
-   <guid>oai:arXiv.org:2501.10054v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.PL</category>
-   <pubdate>Mon, 20 Jan 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Gansen Hu, Zhaoguo Wang, Jinglin Wei, Wei Huang, Haibo Chen</creator>
   </item>
  </channel>
 </rss>
