@@ -6,8 +6,323 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 17 Feb 2025 04:14:40 </lastBuildDate>
+  <lastBuildDate>Tue, 18 Feb 2025 02:41:52 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 17 Feb 2025 04:14:40 </pubDate>
+  <pubDate>Tue, 18 Feb 2025 02:41:52 </pubDate>
+  <item>
+   <title>Verbalized Machine Learning: Revisiting Machine Learning with Language Models</title>
+   <link>https://arxiv.org/abs/2406.04344</link>
+   <description>Motivated by the progress made by large language models (LLMs), we introduce the framework of verbalized machine learning (VML). In contrast to conventional machine learning (ML) models that are typically optimized over a continuous parameter space, VML constrains the parameter space to be human-interpretable natural language. Such a constraint leads to a new perspective of function approximation, where an LLM with a text prompt can be viewed as a function parameterized by the text prompt. Guided by this perspective, we revisit classical ML problems, such as regression and classification, and find that these problems can be solved by an LLM-parameterized learner and optimizer. The major advantages of VML include (1) easy encoding of inductive bias: prior knowledge about the problem and hypothesis class can be encoded in natural language and fed into the LLM-parameterized learner; (2) automatic model class selection: the optimizer can automatically select a model class based on data and verbalized prior knowledge, and it can update the model class during training; and (3) interpretable learner updates: the LLM-parameterized optimizer can provide explanations for why an update is performed. We empirically verify the effectiveness of VML, and hope that VML can serve as a stepping stone to stronger interpretability.</description>
+   <guid>oai:arXiv.org:2406.04344v3</guid>
+   <category>cs.LG</category>
+   <category>cs.CL</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tim Z. Xiao, Robert Bamler, Bernhard Sch\&quot;olkopf, Weiyang Liu</creator>
+  </item>
+  <item>
+   <title>Fine-Tuning Foundation Models with Federated Learning for Privacy Preserving Medical Time Series Forecasting</title>
+   <link>https://arxiv.org/abs/2502.09744</link>
+   <description>Federated Learning (FL) provides a decentralized machine learning approach, where multiple devices or servers collaboratively train a model without sharing their raw data, thus enabling data privacy. This approach has gained significant interest in academia and industry due to its privacy-preserving properties, which are particularly valuable in the medical domain where data availability is often protected under strict regulations. A relatively unexplored area is the use of FL to fine-tune Foundation Models (FMs) for time series forecasting, potentially enhancing model efficacy by overcoming data limitation while maintaining privacy. In this paper, we fine-tuned time series FMs with Electrocardiogram (ECG) and Impedance Cardiography (ICG) data using different FL techniques. We then examined various scenarios and discussed the challenges FL faces under different data heterogeneity configurations. Our empirical results demonstrated that while FL can be effective for fine-tuning FMs on time series forecasting tasks, its benefits depend on the data distribution across clients. We highlighted the trade-offs in applying FL to FM fine-tuning.</description>
+   <guid>oai:arXiv.org:2502.09744v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mahad Ali, Curtis Lisle, Patrick W. Moore, Tammer Barkouki, Brian J. Kirkwood, Laura J. Brattain</creator>
+  </item>
+  <item>
+   <title>Efficient Zero-Order Federated Finetuning of Language Models for Resource-Constrained Devices</title>
+   <link>https://arxiv.org/abs/2502.10239</link>
+   <description>Federated fine-tuning offers a promising approach for tuning Large Language Models (LLMs) on edge devices while preserving data privacy. However, fine-tuning these models on edge devices remains challenging due to high memory, communication, and computational demands. Zero-order optimization with task alignment provides a potential solution, enabling fine-tuning with inference-level memory requirements but requires a longer convergence time. In this paper, we propose Federated Split-Perturbation Zero-order Optimization (FedSPZO) that divides the network into two blocks, applying a different number of perturbations per block in a computationally effective way, achieving faster convergence. Our evaluation shows a $2.5 - 7\times $ reduction in computation overhead compared to zero-order state of the art techniques in federated learning.</description>
+   <guid>oai:arXiv.org:2502.10239v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mohamed Aboelenien Ahmed, Kilian Pfeiffer, Ramin Khalili, Heba Khdr, J\&quot;org Henkel</creator>
+  </item>
+  <item>
+   <title>VT-GAN: Cooperative Tabular Data Synthesis using Vertical Federated Learning</title>
+   <link>https://arxiv.org/abs/2302.01706</link>
+   <description>This paper presents the application of Vertical Federated Learning (VFL) to generate synthetic tabular data using Generative Adversarial Networks (GANs). VFL is a collaborative approach to train machine learning models among distinct tabular data holders, such as financial institutions, who possess disjoint features for the same group of customers. In this paper we introduce the VT-GAN framework, Vertical federated Tabular GAN, and demonstrate that VFL can be successfully used to implement GANs for distributed tabular data in privacy-preserving manner, with performance close to centralized GANs that assume shared data. We make design choices with respect to the distribution of GAN generator and discriminator models and introduce a training-with-shuffling technique so that no party can reconstruct training data from the GAN conditional vector. The paper presents (1) an implementation of VT-GAN, (2) a detailed quality evaluation of the VT-GAN-generated synthetic data, (3) an overall scalability examination of VT-GAN framework, (4) a security analysis on VT-GAN's robustness against Membership Inference Attack with different settings of Differential Privacy, for a range of datasets with diverse distribution characteristics. Our results demonstrate that VT-GAN can consistently generate high-fidelity synthetic tabular data of comparable quality to that generated by a centralized GAN algorithm. The difference in machine learning utility can be as low as 2.7%, even under extremely imbalanced data distributions across clients or with different numbers of clients.</description>
+   <guid>oai:arXiv.org:2302.01706v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zilong Zhao, Han Wu, Aad Van Moorsel, Lydia Y. Chen</creator>
+  </item>
+  <item>
+   <title>Differentially Private Clustered Federated Learning</title>
+   <link>https://arxiv.org/abs/2405.19272</link>
+   <description>Federated learning (FL), which is a decentralized machine learning (ML) approach, often incorporates differential privacy (DP) to provide rigorous data privacy guarantees. Previous works attempted to address high structured data heterogeneity in vanilla FL settings through clustering clients (a.k.a clustered FL), but these methods remain sensitive and prone to errors, further exacerbated by the DP noise. This vulnerability makes the previous methods inappropriate for differentially private FL (DPFL) settings with structured data heterogeneity. To address this gap, we propose an algorithm for differentially private clustered FL, which is robust to the DP noise in the system and identifies the underlying clients' clusters correctly. To this end, we propose to cluster clients based on both their model updates and training loss values. Furthermore, for clustering clients' model updates at the end of the first round, our proposed approach addresses the server's uncertainties by employing large batch sizes as well as Gaussian Mixture Models (GMM) to reduce the impact of DP and stochastic noise and avoid potential clustering errors. This idea is efficient especially in privacy-sensitive scenarios with more DP noise. We provide theoretical analysis to justify our approach and evaluate it across diverse data distributions and privacy budgets. Our experimental results show its effectiveness in addressing large structured data heterogeneity in DPFL.</description>
+   <guid>oai:arXiv.org:2405.19272v4</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Saber Malekmohammadi, Afaf Taik, Golnoosh Farnadi</creator>
+  </item>
+  <item>
+   <title>Noise-Aware Algorithm for Heterogeneous Differentially Private Federated Learning</title>
+   <link>https://arxiv.org/abs/2406.03519</link>
+   <description>High utility and rigorous data privacy are of the main goals of a federated learning (FL) system, which learns a model from the data distributed among some clients. The latter has been tried to achieve by using differential privacy in FL (DPFL). There is often heterogeneity in clients privacy requirements, and existing DPFL works either assume uniform privacy requirements for clients or are not applicable when server is not fully trusted (our setting). Furthermore, there is often heterogeneity in batch and/or dataset size of clients, which as shown, results in extra variation in the DP noise level across clients model updates. With these sources of heterogeneity, straightforward aggregation strategies, e.g., assigning clients aggregation weights proportional to their privacy parameters will lead to lower utility. We propose Robust-HDP, which efficiently estimates the true noise level in clients model updates and reduces the noise-level in the aggregated model updates considerably. Robust-HDP improves utility and convergence speed, while being safe to the clients that may maliciously send falsified privacy parameter to server. Extensive experimental results on multiple datasets and our theoretical analysis confirm the effectiveness of Robust-HDP. Our code can be found here.</description>
+   <guid>oai:arXiv.org:2406.03519v4</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Saber Malekmohammadi, Yaoliang Yu, Yang Cao</creator>
+  </item>
+  <item>
+   <title>Verbalized Machine Learning: Revisiting Machine Learning with Language Models</title>
+   <link>https://arxiv.org/abs/2406.04344</link>
+   <description>Motivated by the progress made by large language models (LLMs), we introduce the framework of verbalized machine learning (VML). In contrast to conventional machine learning (ML) models that are typically optimized over a continuous parameter space, VML constrains the parameter space to be human-interpretable natural language. Such a constraint leads to a new perspective of function approximation, where an LLM with a text prompt can be viewed as a function parameterized by the text prompt. Guided by this perspective, we revisit classical ML problems, such as regression and classification, and find that these problems can be solved by an LLM-parameterized learner and optimizer. The major advantages of VML include (1) easy encoding of inductive bias: prior knowledge about the problem and hypothesis class can be encoded in natural language and fed into the LLM-parameterized learner; (2) automatic model class selection: the optimizer can automatically select a model class based on data and verbalized prior knowledge, and it can update the model class during training; and (3) interpretable learner updates: the LLM-parameterized optimizer can provide explanations for why an update is performed. We empirically verify the effectiveness of VML, and hope that VML can serve as a stepping stone to stronger interpretability.</description>
+   <guid>oai:arXiv.org:2406.04344v3</guid>
+   <category>cs.LG</category>
+   <category>cs.CL</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tim Z. Xiao, Robert Bamler, Bernhard Sch\&quot;olkopf, Weiyang Liu</creator>
+  </item>
+  <item>
+   <title>Contrastive Federated Learning with Tabular Data Silos</title>
+   <link>https://arxiv.org/abs/2409.06123</link>
+   <description>Learning from vertical partitioned data silos is challenging due to the segmented nature of data, sample misalignment, and strict privacy concerns. Federated learning has been proposed as a solution. However, sample misalignment across silos often hinders optimal model performance and suggests data sharing within the model, which breaks privacy. Our proposed solution is Contrastive Federated Learning with Tabular Data Silos (CFL), which offers a solution for data silos with sample misalignment without the need for sharing original or representative data to maintain privacy. CFL begins with local acquisition of contrastive representations of the data within each silo and aggregates knowledge from other silos through the federated learning algorithm. Our experiments demonstrate that CFL solves the limitations of existing algorithms for data silos and outperforms existing tabular contrastive learning. CFL provides performance improvements without loosening privacy.</description>
+   <guid>oai:arXiv.org:2409.06123v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Achmad Ginanjar, Xue Li, Wen Hua, Jiaming Pei</creator>
+  </item>
+  <item>
+   <title>Exploit Gradient Skewness to Circumvent Byzantine Defenses for Federated Learning</title>
+   <link>https://arxiv.org/abs/2502.04890</link>
+   <description>Federated Learning (FL) is notorious for its vulnerability to Byzantine attacks. Most current Byzantine defenses share a common inductive bias: among all the gradients, the densely distributed ones are more likely to be honest. However, such a bias is a poison to Byzantine robustness due to a newly discovered phenomenon in this paper - gradient skew. We discover that a group of densely distributed honest gradients skew away from the optimal gradient (the average of honest gradients) due to heterogeneous data. This gradient skew phenomenon allows Byzantine gradients to hide within the densely distributed skewed gradients. As a result, Byzantine defenses are confused into believing that Byzantine gradients are honest. Motivated by this observation, we propose a novel skew-aware attack called STRIKE: first, we search for the skewed gradients; then, we construct Byzantine gradients within the skewed gradients. Experiments on three benchmark datasets validate the effectiveness of our attack</description>
+   <guid>oai:arXiv.org:2502.04890v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yuchen Liu, Chen Chen, Lingjuan Lyu, Yaochu Jin, Gang Chen</creator>
+  </item>
+  <item>
+   <title>Federated Learning with Reservoir State Analysis for Time Series Anomaly Detection</title>
+   <link>https://arxiv.org/abs/2502.05679</link>
+   <description>With a growing data privacy concern, federated learning has emerged as a promising framework to train machine learning models without sharing locally distributed data. In federated learning, local model training by multiple clients and model integration by a server are repeated only through model parameter sharing. Most existing federated learning methods assume training deep learning models, which are often computationally demanding. To deal with this issue, we propose federated learning methods with reservoir state analysis to seek computational efficiency and data privacy protection simultaneously. Specifically, our method relies on Mahalanobis Distance of Reservoir States (MD-RS) method targeting time series anomaly detection, which learns a distribution of reservoir states for normal inputs and detects anomalies based on a deviation from the learned distribution. Iterative updating of statistical parameters in the MD-RS enables incremental federated learning (IncFed MD-RS). We evaluate the performance of IncFed MD-RS using benchmark datasets for time series anomaly detection. The results show that IncFed MD-RS outperforms other federated learning methods with deep learning and reservoir computing models particularly when clients' data are relatively short and heterogeneous. We demonstrate that IncFed MD-RS is robust against reduced sample data compared to other methods. We also show that the computational cost of IncFed MD-RS can be reduced by subsampling from the reservoir states without performance degradation. The proposed method is beneficial especially in anomaly detection applications where computational efficiency, algorithm simplicity, and low communication cost are required.</description>
+   <guid>oai:arXiv.org:2502.05679v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Keigo Nogami, Hiroto Tamura, Gouhei Tanaka</creator>
+  </item>
+  <item>
+   <title>An Interactive Framework for Implementing Privacy-Preserving Federated Learning: Experiments on Large Language Models</title>
+   <link>https://arxiv.org/abs/2502.08008</link>
+   <description>Federated learning (FL) enhances privacy by keeping user data on local devices. However, emerging attacks have demonstrated that the updates shared by users during training can reveal significant information about their data. This has greatly thwart the adoption of FL methods for training robust AI models in sensitive applications. Differential Privacy (DP) is considered the gold standard for safeguarding user data. However, DP guarantees are highly conservative, providing worst-case privacy guarantees. This can result in overestimating privacy needs, which may compromise the model's accuracy. Additionally, interpretations of these privacy guarantees have proven to be challenging in different contexts. This is further exacerbated when other factors, such as the number of training iterations, data distribution, and specific application requirements, can add further complexity to this problem. In this work, we proposed a framework that integrates a human entity as a privacy practitioner to determine an optimal trade-off between the model's privacy and utility. Our framework is the first to address the variable memory requirement of existing DP methods in FL settings, where resource-limited devices (e.g., cell phones) can participate. To support such settings, we adopt a recent DP method with fixed memory usage to ensure scalable private FL. We evaluated our proposed framework by fine-tuning a BERT-based LLM model using the GLUE dataset (a common approach in literature), leveraging the new accountant, and employing diverse data partitioning strategies to mimic real-world conditions. As a result, we achieved stable memory usage, with an average accuracy reduction of 1.33% for $\epsilon = 10$ and 1.9% for $\epsilon = 6$, when compared to the state-of-the-art DP accountant which does not support fixed memory usage.</description>
+   <guid>oai:arXiv.org:2502.08008v2</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Kasra Ahmadi, Rouzbeh Behnia, Reza Ebrahimi, Mehran Mozaffari Kermani, Jeremiah Birrell, Jason Pacheco, Attila A Yavuz</creator>
+  </item>
+  <item>
+   <title>MQFL-FHE: Multimodal Quantum Federated Learning Framework with Fully Homomorphic Encryption</title>
+   <link>https://arxiv.org/abs/2412.01858</link>
+   <description>The integration of fully homomorphic encryption (FHE) in federated learning (FL) has led to significant advances in data privacy. However, during the aggregation phase, it often results in performance degradation of the aggregated model, hindering the development of robust representational generalization. In this work, we propose a novel multimodal quantum federated learning framework that utilizes quantum computing to counteract the performance drop resulting from FHE. For the first time in FL, our framework combines a multimodal quantum mixture of experts (MQMoE) model with FHE, incorporating multimodal datasets for enriched representation and task-specific learning. Our MQMoE framework enhances performance on multimodal datasets and combined genomics and brain MRI scans, especially for underrepresented categories. Our results also demonstrate that the quantum-enhanced approach mitigates the performance degradation associated with FHE and improves classification accuracy across diverse datasets, validating the potential of quantum interventions in enhancing privacy in FL.</description>
+   <guid>oai:arXiv.org:2412.01858v4</guid>
+   <category>quant-ph</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.ET</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Siddhant Dutta, Nouhaila Innan, Sadok Ben Yahia, Muhammad Shafique, David Esteban Bernal Neira</creator>
+  </item>
+  <item>
+   <title>GroverGPT: A Large Language Model with 8 Billion Parameters for Quantum Searching</title>
+   <link>https://arxiv.org/abs/2501.00135</link>
+   <description>Quantum computing is an exciting non-Von Neumann paradigm, offering provable speedups over classical computing for specific problems. However, the practical limits of classical simulatability for quantum circuits remain unclear, especially with current noisy quantum devices. In this work, we explore the potential of leveraging Large Language Models (LLMs) to simulate the output of a quantum Turing machine using Grover's quantum circuits, known to provide quadratic speedups over classical counterparts. To this end, we developed GroverGPT, a specialized model based on LLaMA's 8-billion-parameter architecture, trained on over 15 trillion tokens. Unlike brute-force state-vector simulations, which demand substantial computational resources, GroverGPT employs pattern recognition to approximate quantum search algorithms without explicitly representing quantum states. Analyzing 97K quantum search instances, GroverGPT consistently outperformed OpenAI's GPT-4o (45\% accuracy), achieving nearly 100\% accuracy on 6- and 10-qubit datasets when trained on 4-qubit or larger datasets. It also demonstrated strong generalization, surpassing 95\% accuracy for systems with over 20 qubits when trained on 3- to 6-qubit data. Analysis indicates GroverGPT captures quantum features of Grover's search rather than classical patterns, supported by novel prompting strategies to enhance performance. Although accuracy declines with increasing system size, these findings offer insights into the practical boundaries of classical simulatability. This work suggests task-specific LLMs can surpass general-purpose models like GPT-4o in quantum algorithm learning and serve as powerful tools for advancing quantum research.</description>
+   <guid>oai:arXiv.org:2501.00135v4</guid>
+   <category>quant-ph</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Haoran Wang, Pingzhi Li, Min Chen, Jinglei Cheng, Junyu Liu, Tianlong Chen</creator>
+  </item>
+  <item>
+   <title>Graph Foundation Models for Recommendation: A Comprehensive Survey</title>
+   <link>https://arxiv.org/abs/2502.08346</link>
+   <description>Recommender systems (RS) serve as a fundamental tool for navigating the vast expanse of online information, with deep learning advancements playing an increasingly important role in improving ranking accuracy. Among these, graph neural networks (GNNs) excel at extracting higher-order structural information, while large language models (LLMs) are designed to process and comprehend natural language, making both approaches highly effective and widely adopted. Recent research has focused on graph foundation models (GFMs), which integrate the strengths of GNNs and LLMs to model complex RS problems more efficiently by leveraging the graph-based structure of user-item relationships alongside textual understanding. In this survey, we provide a comprehensive overview of GFM-based RS technologies by introducing a clear taxonomy of current approaches, diving into methodological details, and highlighting key challenges and future directions. By synthesizing recent advancements, we aim to offer valuable insights into the evolving landscape of GFM-based recommender systems.</description>
+   <guid>oai:arXiv.org:2502.08346v2</guid>
+   <category>cs.IR</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Bin Wu, Yihang Wang, Yuanhao Zeng, Jiawei Liu, Jiashu Zhao, Cheng Yang, Yawen Li, Long Xia, Dawei Yin, Chuan Shi</creator>
+  </item>
+  <item>
+   <title>EACO-RAG: Towards Distributed Tiered LLM Deployment using Edge-Assisted and Collaborative RAG with Adaptive Knowledge Update</title>
+   <link>https://arxiv.org/abs/2410.20299</link>
+   <description>Large language models (LLMs) have demonstrated impressive capabilities in language tasks, but they require high computing power and rely on static knowledge. To overcome these limitations, Retrieval-Augmented Generation (RAG) incorporates up-to-date external information into LLMs without extensive fine-tuning. Meanwhile, small language models (SLMs) deployed on edge devices offer efficiency and low latency but often struggle with complex reasoning tasks. Unfortunately, current RAG approaches are predominantly based on centralized databases and have not been adapted to address the distinct constraints associated with deploying SLMs in edge environments. To bridge this gap, we propose Edge-Assisted and Collaborative RAG (EACO-RAG), a lightweight framework that leverages distributed edge nodes for adaptive knowledge updates and retrieval. EACO-RAG also employs a hierarchical collaborative gating mechanism to dynamically select among local, edge-assisted, and cloud-based strategies, with a carefully designed algorithm based on Safe Online Bayesian Optimization to maximize the potential performance enhancements. Experimental results demonstrate that EACO-RAG matches the accuracy of cloud-based knowledge graph RAG systems while reducing total costs by up to 84.6% under relaxed delay constraints and by 65.3% under stricter delay requirements. This work represents our initial effort toward achieving a distributed and scalable tiered LLM deployments, with EACO-RAG serving as a promising first step in unlocking the full potential of hybrid edge-cloud intelligence.</description>
+   <guid>oai:arXiv.org:2410.20299v2</guid>
+   <category>cs.DC</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jiaxing Li, Chi Xu, Lianchen Jia, Feng Wang, Cong Zhang, Jiangchuan Liu</creator>
+  </item>
+  <item>
+   <title>Differentially Private Clustered Federated Learning</title>
+   <link>https://arxiv.org/abs/2405.19272</link>
+   <description>Federated learning (FL), which is a decentralized machine learning (ML) approach, often incorporates differential privacy (DP) to provide rigorous data privacy guarantees. Previous works attempted to address high structured data heterogeneity in vanilla FL settings through clustering clients (a.k.a clustered FL), but these methods remain sensitive and prone to errors, further exacerbated by the DP noise. This vulnerability makes the previous methods inappropriate for differentially private FL (DPFL) settings with structured data heterogeneity. To address this gap, we propose an algorithm for differentially private clustered FL, which is robust to the DP noise in the system and identifies the underlying clients' clusters correctly. To this end, we propose to cluster clients based on both their model updates and training loss values. Furthermore, for clustering clients' model updates at the end of the first round, our proposed approach addresses the server's uncertainties by employing large batch sizes as well as Gaussian Mixture Models (GMM) to reduce the impact of DP and stochastic noise and avoid potential clustering errors. This idea is efficient especially in privacy-sensitive scenarios with more DP noise. We provide theoretical analysis to justify our approach and evaluate it across diverse data distributions and privacy budgets. Our experimental results show its effectiveness in addressing large structured data heterogeneity in DPFL.</description>
+   <guid>oai:arXiv.org:2405.19272v4</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Saber Malekmohammadi, Afaf Taik, Golnoosh Farnadi</creator>
+  </item>
+  <item>
+   <title>Noise-Aware Algorithm for Heterogeneous Differentially Private Federated Learning</title>
+   <link>https://arxiv.org/abs/2406.03519</link>
+   <description>High utility and rigorous data privacy are of the main goals of a federated learning (FL) system, which learns a model from the data distributed among some clients. The latter has been tried to achieve by using differential privacy in FL (DPFL). There is often heterogeneity in clients privacy requirements, and existing DPFL works either assume uniform privacy requirements for clients or are not applicable when server is not fully trusted (our setting). Furthermore, there is often heterogeneity in batch and/or dataset size of clients, which as shown, results in extra variation in the DP noise level across clients model updates. With these sources of heterogeneity, straightforward aggregation strategies, e.g., assigning clients aggregation weights proportional to their privacy parameters will lead to lower utility. We propose Robust-HDP, which efficiently estimates the true noise level in clients model updates and reduces the noise-level in the aggregated model updates considerably. Robust-HDP improves utility and convergence speed, while being safe to the clients that may maliciously send falsified privacy parameter to server. Extensive experimental results on multiple datasets and our theoretical analysis confirm the effectiveness of Robust-HDP. Our code can be found here.</description>
+   <guid>oai:arXiv.org:2406.03519v4</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Saber Malekmohammadi, Yaoliang Yu, Yang Cao</creator>
+  </item>
+  <item>
+   <title>MQFL-FHE: Multimodal Quantum Federated Learning Framework with Fully Homomorphic Encryption</title>
+   <link>https://arxiv.org/abs/2412.01858</link>
+   <description>The integration of fully homomorphic encryption (FHE) in federated learning (FL) has led to significant advances in data privacy. However, during the aggregation phase, it often results in performance degradation of the aggregated model, hindering the development of robust representational generalization. In this work, we propose a novel multimodal quantum federated learning framework that utilizes quantum computing to counteract the performance drop resulting from FHE. For the first time in FL, our framework combines a multimodal quantum mixture of experts (MQMoE) model with FHE, incorporating multimodal datasets for enriched representation and task-specific learning. Our MQMoE framework enhances performance on multimodal datasets and combined genomics and brain MRI scans, especially for underrepresented categories. Our results also demonstrate that the quantum-enhanced approach mitigates the performance degradation associated with FHE and improves classification accuracy across diverse datasets, validating the potential of quantum interventions in enhancing privacy in FL.</description>
+   <guid>oai:arXiv.org:2412.01858v4</guid>
+   <category>quant-ph</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.ET</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Siddhant Dutta, Nouhaila Innan, Sadok Ben Yahia, Muhammad Shafique, David Esteban Bernal Neira</creator>
+  </item>
+  <item>
+   <title>RoadFed: A Multimodal Federated Learning System for Improving Road Safety</title>
+   <link>https://arxiv.org/abs/2502.09978</link>
+   <description>Internet of Things (IoTs) have been widely applied in Collaborative Intelligent Transportation Systems (C-ITS) for the prevention of road accidents. As one of the primary causes of road accidents in C-ITS, the efficient detection and early alarm of road hazards are of paramount importance. Given the importance, extensive research has explored this topic and obtained favorable results. However, most existing solutions only explore single-modality data, struggle with high computation and communication overhead, or suffer from the curse of high dimensionality in their privacy-preserving methodologies. To overcome these obstacles, in this paper, we introduce RoadFed, an innovative and private multimodal Federated learning-based system tailored for intelligent Road hazard detection and alarm. This framework encompasses an innovative Multimodal Road Hazard Detector, a communication-efficient federated learning approach, and a customized low-error-rate local differential privacy method crafted for high dimensional multimodal data. Experimental results reveal that the proposed RoadFed surpasses most existing systems in the self-gathered real-world and CrisisMMD public datasets. In particular, RoadFed achieves an accuracy of 96.42% with a mere 0.0351 seconds of latency and its communication cost is up to 1,000 times lower than existing systems in this field. It facilitates collaborative training with non-iid high dimensional multimodal real-world data across various data modalities on multiple edges while ensuring privacy preservation for road users.</description>
+   <guid>oai:arXiv.org:2502.09978v1</guid>
+   <category>cs.CE</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
+   <creator>Yachao Yuan, Yali Yuan, Thar Baker</creator>
+  </item>
+  <item>
+   <title>Efficient Zero-Order Federated Finetuning of Language Models for Resource-Constrained Devices</title>
+   <link>https://arxiv.org/abs/2502.10239</link>
+   <description>Federated fine-tuning offers a promising approach for tuning Large Language Models (LLMs) on edge devices while preserving data privacy. However, fine-tuning these models on edge devices remains challenging due to high memory, communication, and computational demands. Zero-order optimization with task alignment provides a potential solution, enabling fine-tuning with inference-level memory requirements but requires a longer convergence time. In this paper, we propose Federated Split-Perturbation Zero-order Optimization (FedSPZO) that divides the network into two blocks, applying a different number of perturbations per block in a computationally effective way, achieving faster convergence. Our evaluation shows a $2.5 - 7\times $ reduction in computation overhead compared to zero-order state of the art techniques in federated learning.</description>
+   <guid>oai:arXiv.org:2502.10239v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mohamed Aboelenien Ahmed, Kilian Pfeiffer, Ramin Khalili, Heba Khdr, J\&quot;org Henkel</creator>
+  </item>
+  <item>
+   <title>GroverGPT: A Large Language Model with 8 Billion Parameters for Quantum Searching</title>
+   <link>https://arxiv.org/abs/2501.00135</link>
+   <description>Quantum computing is an exciting non-Von Neumann paradigm, offering provable speedups over classical computing for specific problems. However, the practical limits of classical simulatability for quantum circuits remain unclear, especially with current noisy quantum devices. In this work, we explore the potential of leveraging Large Language Models (LLMs) to simulate the output of a quantum Turing machine using Grover's quantum circuits, known to provide quadratic speedups over classical counterparts. To this end, we developed GroverGPT, a specialized model based on LLaMA's 8-billion-parameter architecture, trained on over 15 trillion tokens. Unlike brute-force state-vector simulations, which demand substantial computational resources, GroverGPT employs pattern recognition to approximate quantum search algorithms without explicitly representing quantum states. Analyzing 97K quantum search instances, GroverGPT consistently outperformed OpenAI's GPT-4o (45\% accuracy), achieving nearly 100\% accuracy on 6- and 10-qubit datasets when trained on 4-qubit or larger datasets. It also demonstrated strong generalization, surpassing 95\% accuracy for systems with over 20 qubits when trained on 3- to 6-qubit data. Analysis indicates GroverGPT captures quantum features of Grover's search rather than classical patterns, supported by novel prompting strategies to enhance performance. Although accuracy declines with increasing system size, these findings offer insights into the practical boundaries of classical simulatability. This work suggests task-specific LLMs can surpass general-purpose models like GPT-4o in quantum algorithm learning and serve as powerful tools for advancing quantum research.</description>
+   <guid>oai:arXiv.org:2501.00135v4</guid>
+   <category>quant-ph</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Haoran Wang, Pingzhi Li, Min Chen, Jinglei Cheng, Junyu Liu, Tianlong Chen</creator>
+  </item>
+  <item>
+   <title>Graph Foundation Models for Recommendation: A Comprehensive Survey</title>
+   <link>https://arxiv.org/abs/2502.08346</link>
+   <description>Recommender systems (RS) serve as a fundamental tool for navigating the vast expanse of online information, with deep learning advancements playing an increasingly important role in improving ranking accuracy. Among these, graph neural networks (GNNs) excel at extracting higher-order structural information, while large language models (LLMs) are designed to process and comprehend natural language, making both approaches highly effective and widely adopted. Recent research has focused on graph foundation models (GFMs), which integrate the strengths of GNNs and LLMs to model complex RS problems more efficiently by leveraging the graph-based structure of user-item relationships alongside textual understanding. In this survey, we provide a comprehensive overview of GFM-based RS technologies by introducing a clear taxonomy of current approaches, diving into methodological details, and highlighting key challenges and future directions. By synthesizing recent advancements, we aim to offer valuable insights into the evolving landscape of GFM-based recommender systems.</description>
+   <guid>oai:arXiv.org:2502.08346v2</guid>
+   <category>cs.IR</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Bin Wu, Yihang Wang, Yuanhao Zeng, Jiawei Liu, Jiashu Zhao, Cheng Yang, Yawen Li, Long Xia, Dawei Yin, Chuan Shi</creator>
+  </item>
+  <item>
+   <title>MQFL-FHE: Multimodal Quantum Federated Learning Framework with Fully Homomorphic Encryption</title>
+   <link>https://arxiv.org/abs/2412.01858</link>
+   <description>The integration of fully homomorphic encryption (FHE) in federated learning (FL) has led to significant advances in data privacy. However, during the aggregation phase, it often results in performance degradation of the aggregated model, hindering the development of robust representational generalization. In this work, we propose a novel multimodal quantum federated learning framework that utilizes quantum computing to counteract the performance drop resulting from FHE. For the first time in FL, our framework combines a multimodal quantum mixture of experts (MQMoE) model with FHE, incorporating multimodal datasets for enriched representation and task-specific learning. Our MQMoE framework enhances performance on multimodal datasets and combined genomics and brain MRI scans, especially for underrepresented categories. Our results also demonstrate that the quantum-enhanced approach mitigates the performance degradation associated with FHE and improves classification accuracy across diverse datasets, validating the potential of quantum interventions in enhancing privacy in FL.</description>
+   <guid>oai:arXiv.org:2412.01858v4</guid>
+   <category>quant-ph</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.ET</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Siddhant Dutta, Nouhaila Innan, Sadok Ben Yahia, Muhammad Shafique, David Esteban Bernal Neira</creator>
+  </item>
+  <item>
+   <title>Verbalized Machine Learning: Revisiting Machine Learning with Language Models</title>
+   <link>https://arxiv.org/abs/2406.04344</link>
+   <description>Motivated by the progress made by large language models (LLMs), we introduce the framework of verbalized machine learning (VML). In contrast to conventional machine learning (ML) models that are typically optimized over a continuous parameter space, VML constrains the parameter space to be human-interpretable natural language. Such a constraint leads to a new perspective of function approximation, where an LLM with a text prompt can be viewed as a function parameterized by the text prompt. Guided by this perspective, we revisit classical ML problems, such as regression and classification, and find that these problems can be solved by an LLM-parameterized learner and optimizer. The major advantages of VML include (1) easy encoding of inductive bias: prior knowledge about the problem and hypothesis class can be encoded in natural language and fed into the LLM-parameterized learner; (2) automatic model class selection: the optimizer can automatically select a model class based on data and verbalized prior knowledge, and it can update the model class during training; and (3) interpretable learner updates: the LLM-parameterized optimizer can provide explanations for why an update is performed. We empirically verify the effectiveness of VML, and hope that VML can serve as a stepping stone to stronger interpretability.</description>
+   <guid>oai:arXiv.org:2406.04344v3</guid>
+   <category>cs.LG</category>
+   <category>cs.CL</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tim Z. Xiao, Robert Bamler, Bernhard Sch\&quot;olkopf, Weiyang Liu</creator>
+  </item>
+  <item>
+   <title>Graph Foundation Models for Recommendation: A Comprehensive Survey</title>
+   <link>https://arxiv.org/abs/2502.08346</link>
+   <description>Recommender systems (RS) serve as a fundamental tool for navigating the vast expanse of online information, with deep learning advancements playing an increasingly important role in improving ranking accuracy. Among these, graph neural networks (GNNs) excel at extracting higher-order structural information, while large language models (LLMs) are designed to process and comprehend natural language, making both approaches highly effective and widely adopted. Recent research has focused on graph foundation models (GFMs), which integrate the strengths of GNNs and LLMs to model complex RS problems more efficiently by leveraging the graph-based structure of user-item relationships alongside textual understanding. In this survey, we provide a comprehensive overview of GFM-based RS technologies by introducing a clear taxonomy of current approaches, diving into methodological details, and highlighting key challenges and future directions. By synthesizing recent advancements, we aim to offer valuable insights into the evolving landscape of GFM-based recommender systems.</description>
+   <guid>oai:arXiv.org:2502.08346v2</guid>
+   <category>cs.IR</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 17 Feb 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Bin Wu, Yihang Wang, Yuanhao Zeng, Jiawei Liu, Jiashu Zhao, Cheng Yang, Yawen Li, Long Xia, Dawei Yin, Chuan Shi</creator>
+  </item>
  </channel>
 </rss>
