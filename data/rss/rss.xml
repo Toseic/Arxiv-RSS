@@ -6,60 +6,8 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Sun, 02 Mar 2025 04:13:36 </lastBuildDate>
+  <lastBuildDate>Mon, 03 Mar 2025 02:51:31 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Sun, 02 Mar 2025 04:13:36 </pubDate>
-  <item>
-   <title>Probabilistic Federated Prompt-Tuning with Non-IID and Imbalanced Data</title>
-   <link>https://arxiv.org/abs/2502.19752</link>
-   <description>Fine-tuning pre-trained models is a popular approach in machine learning for solving complex tasks with moderate data. However, fine-tuning the entire pre-trained model is ineffective in federated data scenarios where local data distributions are diversely skewed. To address this, we explore integrating federated learning with a more effective prompt-tuning method, optimizing for a small set of input prefixes to reprogram the pre-trained model's behavior. Our approach transforms federated learning into a distributed set modeling task, aggregating diverse sets of prompts to globally fine-tune the pre-trained model. We benchmark various baselines based on direct adaptations of existing federated model aggregation techniques and introduce a new probabilistic prompt aggregation method that substantially outperforms these baselines. Our reported results on a variety of computer vision datasets confirm that the proposed method is most effective to combat extreme data heterogeneity in federated learning.</description>
-   <guid>oai:arXiv.org:2502.19752v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Sat, 01 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Pei-Yau Weng, Minh Hoang, Lam M. Nguyen, My T. Thai, Tsui-Wei Weng, Trong Nghia Hoang</creator>
-  </item>
-  <item>
-   <title>M^3Builder: A Multi-Agent System for Automated Machine Learning in Medical Imaging</title>
-   <link>https://arxiv.org/abs/2502.20301</link>
-   <description>Agentic AI systems have gained significant attention for their ability to autonomously perform complex tasks. However, their reliance on well-prepared tools limits their applicability in the medical domain, which requires to train specialized models. In this paper, we make three contributions: (i) We present M3Builder, a novel multi-agent system designed to automate machine learning (ML) in medical imaging. At its core, M3Builder employs four specialized agents that collaborate to tackle complex, multi-step medical ML workflows, from automated data processing and environment configuration to self-contained auto debugging and model training. These agents operate within a medical imaging ML workspace, a structured environment designed to provide agents with free-text descriptions of datasets, training codes, and interaction tools, enabling seamless communication and task execution. (ii) To evaluate progress in automated medical imaging ML, we propose M3Bench, a benchmark comprising four general tasks on 14 training datasets, across five anatomies and three imaging modalities, covering both 2D and 3D data. (iii) We experiment with seven state-of-the-art large language models serving as agent cores for our system, such as Claude series, GPT-4o, and DeepSeek-V3. Compared to existing ML agentic designs, M3Builder shows superior performance on completing ML tasks in medical imaging, achieving a 94.29% success rate using Claude-3.7-Sonnet as the agent core, showing huge potential towards fully automated machine learning in medical imaging.</description>
-   <guid>oai:arXiv.org:2502.20301v1</guid>
-   <category>cs.CV</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <pubdate>Sat, 01 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jinghao Feng, Qiaoyu Zheng, Chaoyi Wu, Ziheng Zhao, Ya Zhang, Yanfeng Wang, Weidi Xie</creator>
-  </item>
-  <item>
-   <title>Topic Classification of Case Law Using a Large Language Model and a New Taxonomy for UK Law: AI Insights into Summary Judgment</title>
-   <link>https://arxiv.org/abs/2405.12910</link>
-   <description>This paper addresses a critical gap in legal analytics by developing and applying a novel taxonomy for topic classification of summary judgment cases in the United Kingdom. Using a curated dataset of summary judgment cases, we use the Large Language Model Claude 3 Opus to explore functional topics and trends. We find that Claude 3 Opus correctly classified the topic with an accuracy of 87.13% and an F1 score of 0.87. The analysis reveals distinct patterns in the application of summary judgments across various legal domains. As case law in the United Kingdom is not originally labelled with keywords or a topic filtering option, the findings not only refine our understanding of the thematic underpinnings of summary judgments but also illustrate the potential of combining traditional and AI-driven approaches in legal classification. Therefore, this paper provides a new and general taxonomy for UK law. The implications of this work serve as a foundation for further research and policy discussions in the field of judicial administration and computational legal research methodologies.</description>
-   <guid>oai:arXiv.org:2405.12910v3</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <category>cs.CY</category>
-   <category>cs.LG</category>
-   <pubdate>Sat, 01 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Holli Sargeant, Ahmed Izzidien, Felix Steffek</creator>
-  </item>
-  <item>
-   <title>Mitigating Unintended Memorization with LoRA in Federated Learning for LLMs</title>
-   <link>https://arxiv.org/abs/2502.05087</link>
-   <description>Federated learning (FL) is a popular paradigm for collaborative training which avoids direct data exposure between clients. However, data privacy issues still remain: FL-trained large language models are capable of memorizing and completing phrases and sentences contained in training data when given with their prefixes. Thus, it is possible for adversarial and honest-but-curious clients to recover training data of other participants simply through targeted prompting. In this work, we demonstrate that a popular and simple fine-tuning strategy, low-rank adaptation (LoRA), reduces memorization during FL up to a factor of 10. We study this effect by performing a medical question-answering fine-tuning task and injecting multiple replicas of out-of-distribution sensitive sequences drawn from an external clinical dataset. We observe a reduction in memorization for a wide variety of Llama 2 and 3 models, and find that LoRA can reduce memorization in centralized learning as well. Furthermore, we show that LoRA can be combined with other privacy-preserving techniques such as gradient clipping and Gaussian noising, secure aggregation, and Goldfish loss to further improve record-level privacy while maintaining performance.</description>
-   <guid>oai:arXiv.org:2502.05087v2</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <pubdate>Sat, 01 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Thierry Bossy, Julien Vignoud, Tahseen Rabbani, Juan R. Troncoso Pastoriza, Martin Jaggi</creator>
-  </item>
+  <pubDate>Mon, 03 Mar 2025 02:51:31 </pubDate>
  </channel>
 </rss>
