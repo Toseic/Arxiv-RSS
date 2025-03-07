@@ -6,339 +6,411 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Thu, 06 Mar 2025 04:14:57 </lastBuildDate>
+  <lastBuildDate>Fri, 07 Mar 2025 02:52:00 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Thu, 06 Mar 2025 04:14:57 </pubDate>
+  <pubDate>Fri, 07 Mar 2025 02:52:00 </pubDate>
   <item>
-   <title>CoServe: Efficient Collaboration-of-Experts (CoE) Model Inference with Limited Memory</title>
-   <link>https://arxiv.org/abs/2503.02354</link>
-   <description>Large language models like GPT-4 are resource-intensive, but recent advancements suggest that smaller, specialized experts can outperform the monolithic models on specific tasks. The Collaboration-of-Experts (CoE) approach integrates multiple expert models, improving the accuracy of generated results and offering great potential for precision-critical applications, such as automatic circuit board quality inspection. However, deploying CoE serving systems presents challenges to memory capacity due to the large number of experts required, which can lead to significant performance overhead from frequent expert switching across different memory and storage tiers.
-  We propose CoServe, an efficient CoE model serving system on heterogeneous CPU and GPU with limited memory. CoServe reduces unnecessary expert switching by leveraging expert dependency, a key property of CoE inference. CoServe introduces a dependency-aware request scheduler and dependency-aware expert management for efficient inference. It also introduces an offline profiler to automatically find optimal resource allocation on various processors and devices. In real-world intelligent manufacturing workloads, CoServe achieves 4.5$\times$ to 12$\times$ higher throughput compared to state-of-the-art systems.</description>
-   <guid>oai:arXiv.org:2503.02354v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.PF</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jiashun Suo, Xiaojian Liao, Limin Xiao, Li Ruan, Jinquan Wang, Xiao Su, Zhisheng Huo</creator>
-  </item>
-  <item>
-   <title>Vision Language Models in Medicine</title>
-   <link>https://arxiv.org/abs/2503.01863</link>
-   <description>With the advent of Vision-Language Models (VLMs), medical artificial intelligence (AI) has experienced significant technological progress and paradigm shifts. This survey provides an extensive review of recent advancements in Medical Vision-Language Models (Med-VLMs), which integrate visual and textual data to enhance healthcare outcomes. We discuss the foundational technology behind Med-VLMs, illustrating how general models are adapted for complex medical tasks, and examine their applications in healthcare. The transformative impact of Med-VLMs on clinical practice, education, and patient care is highlighted, alongside challenges such as data scarcity, narrow task generalization, interpretability issues, and ethical concerns like fairness, accountability, and privacy. These limitations are exacerbated by uneven dataset distribution, computational demands, and regulatory hurdles. Rigorous evaluation methods and robust regulatory frameworks are essential for safe integration into healthcare workflows. Future directions include leveraging large-scale, diverse datasets, improving cross-modal generalization, and enhancing interpretability. Innovations like federated learning, lightweight architectures, and Electronic Health Record (EHR) integration are explored as pathways to democratize access and improve clinical relevance. This review aims to provide a comprehensive understanding of Med-VLMs' strengths and limitations, fostering their ethical and balanced adoption in healthcare.</description>
-   <guid>oai:arXiv.org:2503.01863v1</guid>
-   <category>cs.CV</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.CY</category>
-   <category>eess.IV</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Beria Chingnabe Kalpelbe, Angel Gabriel Adaambiik, Wei Peng</creator>
-  </item>
-  <item>
-   <title>Vision Language Models in Medicine</title>
-   <link>https://arxiv.org/abs/2503.01863</link>
-   <description>With the advent of Vision-Language Models (VLMs), medical artificial intelligence (AI) has experienced significant technological progress and paradigm shifts. This survey provides an extensive review of recent advancements in Medical Vision-Language Models (Med-VLMs), which integrate visual and textual data to enhance healthcare outcomes. We discuss the foundational technology behind Med-VLMs, illustrating how general models are adapted for complex medical tasks, and examine their applications in healthcare. The transformative impact of Med-VLMs on clinical practice, education, and patient care is highlighted, alongside challenges such as data scarcity, narrow task generalization, interpretability issues, and ethical concerns like fairness, accountability, and privacy. These limitations are exacerbated by uneven dataset distribution, computational demands, and regulatory hurdles. Rigorous evaluation methods and robust regulatory frameworks are essential for safe integration into healthcare workflows. Future directions include leveraging large-scale, diverse datasets, improving cross-modal generalization, and enhancing interpretability. Innovations like federated learning, lightweight architectures, and Electronic Health Record (EHR) integration are explored as pathways to democratize access and improve clinical relevance. This review aims to provide a comprehensive understanding of Med-VLMs' strengths and limitations, fostering their ethical and balanced adoption in healthcare.</description>
-   <guid>oai:arXiv.org:2503.01863v1</guid>
-   <category>cs.CV</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.CY</category>
-   <category>eess.IV</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Beria Chingnabe Kalpelbe, Angel Gabriel Adaambiik, Wei Peng</creator>
-  </item>
-  <item>
-   <title>AugFL: Augmenting Federated Learning with Pretrained Models</title>
-   <link>https://arxiv.org/abs/2503.02154</link>
-   <description>Federated Learning (FL) has garnered widespread interest in recent years. However, owing to strict privacy policies or limited storage capacities of training participants such as IoT devices, its effective deployment is often impeded by the scarcity of training data in practical decentralized learning environments. In this paper, we study enhancing FL with the aid of (large) pre-trained models (PMs), that encapsulate wealthy general/domain-agnostic knowledge, to alleviate the data requirement in conducting FL from scratch. Specifically, we consider a networked FL system formed by a central server and distributed clients. First, we formulate the PM-aided personalized FL as a regularization-based federated meta-learning problem, where clients join forces to learn a meta-model with knowledge transferred from a private PM stored at the server. Then, we develop an inexact-ADMM-based algorithm, AugFL, to optimize the problem with no need to expose the PM or incur additional computational costs to local clients. Further, we establish theoretical guarantees for AugFL in terms of communication complexity, adaptation performance, and the benefit of knowledge transfer in general non-convex cases. Extensive experiments corroborate the efficacy and superiority of AugFL over existing baselines.</description>
-   <guid>oai:arXiv.org:2503.02154v1</guid>
+   <title>Incentivizing Truthful Collaboration in Heterogeneous Federated Learning</title>
+   <link>https://arxiv.org/abs/2412.00980</link>
+   <description>Federated learning (FL) is a distributed collaborative learning method, where multiple clients learn together by sharing gradient updates instead of raw data. However, it is well-known that FL is vulnerable to manipulated updates from clients. In this work we study the impact of data heterogeneity on clients' incentives to manipulate their updates. First, we present heterogeneous collaborative learning scenarios where a client can modify their updates to be better off, and show that these manipulations can lead to diminishing model performance. To prevent such modifications, we formulate a game in which clients may misreport their gradient updates in order to &quot;steer&quot; the server model to their advantage. We develop a payment rule that provably disincentivizes sending modified updates under the FedSGD protocol. We derive explicit bounds on the clients' payments and the convergence rate of the global model, which allows us to study the trade-off between heterogeneity, payments and convergence. Finally, we provide an experimental evaluation of the effectiveness of our payment rule in the FedSGD, median-based aggregation FedSGD and FedAvg protocols on three tasks in computer vision and natural language processing. In all cases we find that our scheme successfully disincentivizes modifications.</description>
+   <guid>oai:arXiv.org:2412.00980v2</guid>
    <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Sheng Yue, Zerui Qin, Yongheng Deng, Ju Ren, Yaoxue Zhang, Junshan Zhang</creator>
-  </item>
-  <item>
-   <title>CoServe: Efficient Collaboration-of-Experts (CoE) Model Inference with Limited Memory</title>
-   <link>https://arxiv.org/abs/2503.02354</link>
-   <description>Large language models like GPT-4 are resource-intensive, but recent advancements suggest that smaller, specialized experts can outperform the monolithic models on specific tasks. The Collaboration-of-Experts (CoE) approach integrates multiple expert models, improving the accuracy of generated results and offering great potential for precision-critical applications, such as automatic circuit board quality inspection. However, deploying CoE serving systems presents challenges to memory capacity due to the large number of experts required, which can lead to significant performance overhead from frequent expert switching across different memory and storage tiers.
-  We propose CoServe, an efficient CoE model serving system on heterogeneous CPU and GPU with limited memory. CoServe reduces unnecessary expert switching by leveraging expert dependency, a key property of CoE inference. CoServe introduces a dependency-aware request scheduler and dependency-aware expert management for efficient inference. It also introduces an offline profiler to automatically find optimal resource allocation on various processors and devices. In real-world intelligent manufacturing workloads, CoServe achieves 4.5$\times$ to 12$\times$ higher throughput compared to state-of-the-art systems.</description>
-   <guid>oai:arXiv.org:2503.02354v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.PF</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jiashun Suo, Xiaojian Liao, Limin Xiao, Li Ruan, Jinquan Wang, Xiao Su, Zhisheng Huo</creator>
-  </item>
-  <item>
-   <title>Federated nnU-Net for Privacy-Preserving Medical Image Segmentation</title>
-   <link>https://arxiv.org/abs/2503.02549</link>
-   <description>The nnU-Net framework has played a crucial role in medical image segmentation and has become the gold standard in multitudes of applications targeting different diseases, organs, and modalities. However, so far it has been used primarily in a centralized approach where the data collected from hospitals are stored in one center and used to train the nnU-Net. This centralized approach has various limitations, such as leakage of sensitive patient information and violation of patient privacy. Federated learning is one of the approaches to train a segmentation model in a decentralized manner that helps preserve patient privacy. In this paper, we propose FednnU-Net, a federated learning extension of nnU-Net. We introduce two novel federated learning methods to the nnU-Net framework - Federated Fingerprint Extraction (FFE) and Asymmetric Federated Averaging (AsymFedAvg) - and experimentally show their consistent performance for breast, cardiac and fetal segmentation using 6 datasets representing samples from 18 institutions. Additionally, to further promote research and deployment of decentralized training in privacy constrained institutions, we make our plug-n-play framework public. The source-code is available at https://github.com/faildeny/FednnUNet .</description>
-   <guid>oai:arXiv.org:2503.02549v1</guid>
-   <category>cs.CV</category>
-   <category>cs.AI</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Grzegorz Skorupko, Fotios Avgoustidis, Carlos Mart\'in-Isla, Lidia Garrucho, Dimitri A. Kessler, Esmeralda Ruiz Pujadas, Oliver D\'iaz, Maciej Bobowicz, Katarzyna Gwo\'zdziewicz, Xavier Bargall\'o, Paulius Jaru\v{s}evi\v{c}ius, Kaisar Kushibar, Karim Lekadir</creator>
-  </item>
-  <item>
-   <title>Implicit Bias in LLMs: A Survey</title>
-   <link>https://arxiv.org/abs/2503.02776</link>
-   <description>Due to the implement of guardrails by developers, Large language models (LLMs) have demonstrated exceptional performance in explicit bias tests. However, bias in LLMs may occur not only explicitly, but also implicitly, much like humans who consciously strive for impartiality yet still harbor implicit bias. The unconscious and automatic nature of implicit bias makes it particularly challenging to study. This paper provides a comprehensive review of the existing literature on implicit bias in LLMs. We begin by introducing key concepts, theories and methods related to implicit bias in psychology, extending them from humans to LLMs. Drawing on the Implicit Association Test (IAT) and other psychological frameworks, we categorize detection methods into three primary approaches: word association, task-oriented text generation and decision-making. We divide our taxonomy of evaluation metrics for implicit bias into two categories: single-value-based metrics and comparison-value-based metrics. We classify datasets into two types: sentences with masked tokens and complete sentences, incorporating datasets from various domains to reflect the broad application of LLMs. Although research on mitigating implicit bias in LLMs is still limited, we summarize existing efforts and offer insights on future challenges. We aim for this work to serve as a clear guide for researchers and inspire innovative ideas to advance exploration in this task.</description>
-   <guid>oai:arXiv.org:2503.02776v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Xinru Lin, Luyang Li</creator>
-  </item>
-  <item>
-   <title>Dataverse: Open-Source ETL (Extract, Transform, Load) Pipeline for Large Language Models</title>
-   <link>https://arxiv.org/abs/2403.19340</link>
-   <description>To address the challenges associated with data processing at scale, we propose Dataverse, a unified open-source Extract-Transform-Load (ETL) pipeline for large language models (LLMs) with a user-friendly design at its core. Easy addition of custom processors with block-based interface in Dataverse allows users to readily and efficiently use Dataverse to build their own ETL pipeline. We hope that Dataverse will serve as a vital tool for LLM development and open source the entire library to welcome community contribution. Additionally, we provide a concise, two-minute video demonstration of our system, illustrating its capabilities and implementation.</description>
-   <guid>oai:arXiv.org:2403.19340v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
+   <category>cs.GT</category>
+   <category>stat.ML</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Hyunbyung Park, Sukyung Lee, Gyoungjin Gim, Yungi Kim, Dahyun Kim, Chanjun Park</creator>
+   <creator>Dimitar Chakarov, Nikita Tsoy, Kristian Minchev, Nikola Konstantinov</creator>
   </item>
   <item>
-   <title>GaVaMoE: Gaussian-Variational Gated Mixture of Experts for Explainable Recommendation</title>
-   <link>https://arxiv.org/abs/2410.11841</link>
-   <description>Large language model-based explainable recommendation (LLM-based ER) systems show promise in generating human-like explanations for recommendations. However, they face challenges in modeling user-item collaborative preferences, personalizing explanations, and handling sparse user-item interactions. To address these issues, we propose GaVaMoE, a novel Gaussian-Variational Gated Mixture of Experts framework for explainable recommendation. GaVaMoE introduces two key components: (1) a rating reconstruction module that employs Variational Autoencoder (VAE) with a Gaussian Mixture Model (GMM) to capture complex user-item collaborative preferences, serving as a pre-trained multi-gating mechanism; and (2) a set of fine-grained expert models coupled with the multi-gating mechanism for generating highly personalized explanations. The VAE component models latent factors in user-item interactions, while the GMM clusters users with similar behaviors. Each cluster corresponds to a gate in the multi-gating mechanism, routing user-item pairs to appropriate expert models. This architecture enables GaVaMoE to generate tailored explanations for specific user types and preferences, mitigating data sparsity by leveraging user similarities. Extensive experiments on three real-world datasets demonstrate that GaVaMoE significantly outperforms existing methods in explanation quality, personalization, and consistency. Notably, GaVaMoE exhibits robust performance in scenarios with sparse user-item interactions, maintaining high-quality explanations even for users with limited historical data.</description>
-   <guid>oai:arXiv.org:2410.11841v2</guid>
-   <category>cs.IR</category>
+   <title>Privacy is All You Need: Revolutionizing Wearable Health Data with Advanced PETs</title>
+   <link>https://arxiv.org/abs/2503.03428</link>
+   <description>In a world where data is the new currency, wearable health devices offer unprecedented insights into daily life, continuously monitoring vital signs and metrics. However, this convenience raises privacy concerns, as these devices collect sensitive data that can be misused or breached. Traditional measures often fail due to real-time data processing needs and limited device power. Users also lack awareness and control over data sharing and usage. We propose a Privacy-Enhancing Technology (PET) framework for wearable devices, integrating federated learning, lightweight cryptographic methods, and selectively deployed blockchain technology. The blockchain acts as a secure ledger triggered only upon data transfer requests, granting users real-time notifications and control. By dismantling data monopolies, this approach returns data sovereignty to individuals. Through real-world applications like secure medical data sharing, privacy-preserving fitness tracking, and continuous health monitoring, our framework reduces privacy risks by up to 70 percent while preserving data utility and performance. This innovation sets a new benchmark for wearable privacy and can scale to broader IoT ecosystems, including smart homes and industry. As data continues to shape our digital landscape, our research underscores the critical need to maintain privacy and user control at the forefront of technological progress.</description>
+   <guid>oai:arXiv.org:2503.03428v1</guid>
+   <category>cs.CR</category>
    <category>cs.AI</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace-cross</announce_type>
+   <category>cs.ET</category>
+   <category>cs.HC</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Fei Tang, Yongliang Shen, Hang Zhang, Zeqi Tan, Wenqi Zhang, Zhibiao Huang, Kaitao Song, Weiming Lu, Yueting Zhuang</creator>
+   <creator>Karthik Barma, Seshu Babu Barma</creator>
   </item>
   <item>
-   <title>Privacy and Accuracy-Aware AI/ML Model Deduplication</title>
-   <link>https://arxiv.org/abs/2503.02862</link>
-   <description>With the growing adoption of privacy-preserving machine learning algorithms, such as Differentially Private Stochastic Gradient Descent (DP-SGD), training or fine-tuning models on private datasets has become increasingly prevalent. This shift has led to the need for models offering varying privacy guarantees and utility levels to satisfy diverse user requirements. However, managing numerous versions of large models introduces significant operational challenges, including increased inference latency, higher resource consumption, and elevated costs. Model deduplication is a technique widely used by many model serving and database systems to support high-performance and low-cost inference queries and model diagnosis queries. However, none of the existing model deduplication works has considered privacy, leading to unbounded aggregation of privacy costs for certain deduplicated models and inefficiencies when applied to deduplicate DP-trained models. We formalize the problems of deduplicating DP-trained models for the first time and propose a novel privacy- and accuracy-aware deduplication mechanism to address the problems. We developed a greedy strategy to select and assign base models to target models to minimize storage and privacy costs. When deduplicating a target model, we dynamically schedule accuracy validations and apply the Sparse Vector Technique to reduce the privacy costs associated with private validation data. Compared to baselines that do not provide privacy guarantees, our approach improved the compression ratio by up to $35\times$ for individual models (including large language models and vision transformers). We also observed up to $43\times$ inference speedup due to the reduction of I/O operations.</description>
-   <guid>oai:arXiv.org:2503.02862v1</guid>
-   <category>cs.CR</category>
-   <category>cs.DB</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Hong Guan, Lei Yu, Lixi Zhou, Li Xiong, Kanchan Chowdhury, Lulu Xie, Xusheng Xiao, Jia Zou</creator>
-  </item>
-  <item>
-   <title>CoServe: Efficient Collaboration-of-Experts (CoE) Model Inference with Limited Memory</title>
-   <link>https://arxiv.org/abs/2503.02354</link>
-   <description>Large language models like GPT-4 are resource-intensive, but recent advancements suggest that smaller, specialized experts can outperform the monolithic models on specific tasks. The Collaboration-of-Experts (CoE) approach integrates multiple expert models, improving the accuracy of generated results and offering great potential for precision-critical applications, such as automatic circuit board quality inspection. However, deploying CoE serving systems presents challenges to memory capacity due to the large number of experts required, which can lead to significant performance overhead from frequent expert switching across different memory and storage tiers.
-  We propose CoServe, an efficient CoE model serving system on heterogeneous CPU and GPU with limited memory. CoServe reduces unnecessary expert switching by leveraging expert dependency, a key property of CoE inference. CoServe introduces a dependency-aware request scheduler and dependency-aware expert management for efficient inference. It also introduces an offline profiler to automatically find optimal resource allocation on various processors and devices. In real-world intelligent manufacturing workloads, CoServe achieves 4.5$\times$ to 12$\times$ higher throughput compared to state-of-the-art systems.</description>
-   <guid>oai:arXiv.org:2503.02354v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.PF</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jiashun Suo, Xiaojian Liao, Limin Xiao, Li Ruan, Jinquan Wang, Xiao Su, Zhisheng Huo</creator>
-  </item>
-  <item>
-   <title>AugFL: Augmenting Federated Learning with Pretrained Models</title>
-   <link>https://arxiv.org/abs/2503.02154</link>
-   <description>Federated Learning (FL) has garnered widespread interest in recent years. However, owing to strict privacy policies or limited storage capacities of training participants such as IoT devices, its effective deployment is often impeded by the scarcity of training data in practical decentralized learning environments. In this paper, we study enhancing FL with the aid of (large) pre-trained models (PMs), that encapsulate wealthy general/domain-agnostic knowledge, to alleviate the data requirement in conducting FL from scratch. Specifically, we consider a networked FL system formed by a central server and distributed clients. First, we formulate the PM-aided personalized FL as a regularization-based federated meta-learning problem, where clients join forces to learn a meta-model with knowledge transferred from a private PM stored at the server. Then, we develop an inexact-ADMM-based algorithm, AugFL, to optimize the problem with no need to expose the PM or incur additional computational costs to local clients. Further, we establish theoretical guarantees for AugFL in terms of communication complexity, adaptation performance, and the benefit of knowledge transfer in general non-convex cases. Extensive experiments corroborate the efficacy and superiority of AugFL over existing baselines.</description>
-   <guid>oai:arXiv.org:2503.02154v1</guid>
+   <title>Convergence Analysis of Federated Learning Methods Using Backward Error Analysis</title>
+   <link>https://arxiv.org/abs/2503.03139</link>
+   <description>Backward error analysis allows finding a modified loss function, which the parameter updates really follow under the influence of an optimization method. The additional loss terms included in this modified function is called implicit regularizer. In this paper, we attempt to find the implicit regularizer for various federated learning algorithms on non-IID data distribution, and explain why each method shows different convergence behavior. We first show that the implicit regularizer of FedAvg disperses the gradient of each client from the average gradient, thus increasing the gradient variance. We also empirically show that the implicit regularizer hampers its convergence. Similarly, we compute the implicit regularizers of FedSAM and SCAFFOLD, and explain why they converge better. While existing convergence analyses focus on pointing out the advantages of FedSAM and SCAFFOLD, our approach can explain their limitations in complex non-convex settings. In specific, we demonstrate that FedSAM can partially remove the bias in the first-order term of the implicit regularizer in FedAvg, whereas SCAFFOLD can fully eliminate the bias in the first-order term, but not in the second-order term. Consequently, the implicit regularizer can provide a useful insight on the convergence behavior of federated learning from a different theoretical perspective.</description>
+   <guid>oai:arXiv.org:2503.03139v1</guid>
    <category>cs.LG</category>
    <category>cs.AI</category>
    <category>cs.DC</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Sheng Yue, Zerui Qin, Yongheng Deng, Ju Ren, Yaoxue Zhang, Junshan Zhang</creator>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jinwoo Lim, Suhyun Kim, Soo-Mook Moon</creator>
   </item>
   <item>
-   <title>AugFL: Augmenting Federated Learning with Pretrained Models</title>
-   <link>https://arxiv.org/abs/2503.02154</link>
-   <description>Federated Learning (FL) has garnered widespread interest in recent years. However, owing to strict privacy policies or limited storage capacities of training participants such as IoT devices, its effective deployment is often impeded by the scarcity of training data in practical decentralized learning environments. In this paper, we study enhancing FL with the aid of (large) pre-trained models (PMs), that encapsulate wealthy general/domain-agnostic knowledge, to alleviate the data requirement in conducting FL from scratch. Specifically, we consider a networked FL system formed by a central server and distributed clients. First, we formulate the PM-aided personalized FL as a regularization-based federated meta-learning problem, where clients join forces to learn a meta-model with knowledge transferred from a private PM stored at the server. Then, we develop an inexact-ADMM-based algorithm, AugFL, to optimize the problem with no need to expose the PM or incur additional computational costs to local clients. Further, we establish theoretical guarantees for AugFL in terms of communication complexity, adaptation performance, and the benefit of knowledge transfer in general non-convex cases. Extensive experiments corroborate the efficacy and superiority of AugFL over existing baselines.</description>
-   <guid>oai:arXiv.org:2503.02154v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
+   <title>Knowledge Augmentation in Federation: Rethinking What Collaborative Learning Can Bring Back to Decentralized Data</title>
+   <link>https://arxiv.org/abs/2503.03140</link>
+   <description>Data, as an observable form of knowledge, has become one of the most important factors of production for the development of Artificial Intelligence (AI). Meanwhile, increasing legislation and regulations on private and proprietary information results in scattered data sources also known as the ``data islands''. Although some collaborative learning paradigms such as Federated Learning (FL) can enable privacy-preserving training over decentralized data, they have inherent deficiencies in fairness, costs and reproducibility because of being learning-centric, which greatly limits the way how participants cooperate with each other. In light of this, we present a knowledge-centric paradigm termed \emph{Knowledge Augmentation in Federation} (KAF), with focus on how to enhance local knowledge through collaborative effort. We provide the suggested system architecture, formulate the prototypical optimization objective, and review emerging studies that employ methodologies suitable for KAF. On our roadmap, with a three-way categorization we describe the methods for knowledge expansion, knowledge filtering, and label and feature space correction in the federation. Further, we highlight several challenges and open questions that deserve more attention from the community. With our investigation, we intend to offer new insights for what collaborative learning can bring back to decentralized data.</description>
+   <guid>oai:arXiv.org:2503.03140v1</guid>
    <category>cs.DC</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Sheng Yue, Zerui Qin, Yongheng Deng, Ju Ren, Yaoxue Zhang, Junshan Zhang</creator>
-  </item>
-  <item>
-   <title>Federated Learning for Privacy-Preserving Feedforward Control in Multi-Agent Systems</title>
-   <link>https://arxiv.org/abs/2503.02693</link>
-   <description>Feedforward control (FF) is often combined with feedback control (FB) in many control systems, improving tracking performance, efficiency, and stability. However, designing effective data-driven FF controllers in multi-agent systems requires significant data collection, including transferring private or proprietary data, which raises privacy concerns and incurs high communication costs. Therefore, we propose a novel approach integrating Federated Learning (FL) into FF control to address these challenges. This approach enables privacy-preserving, communication-efficient, and decentralized continuous improvement of FF controllers across multiple agents without sharing personal or proprietary data. By leveraging FL, each agent learns a local, neural FF controller using its data and contributes only model updates to a global aggregation process, ensuring data privacy and scalability. We demonstrate the effectiveness of our method in an autonomous driving use case. Therein, vehicles equipped with a trajectory-tracking feedback controller are enhanced by FL-based neural FF control. Simulations highlight significant improvements in tracking performance compared to pure FB control, analogous to model-based FF control. We achieve comparable tracking performance without exchanging private vehicle-specific data compared to a centralized neural FF control. Our results underscore the potential of FL-based neural FF control to enable privacy-preserving learning in multi-agent control systems, paving the way for scalable and efficient autonomous systems applications.</description>
-   <guid>oai:arXiv.org:2503.02693v1</guid>
+   <category>cs.AI</category>
    <category>cs.LG</category>
-   <category>cs.MA</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Jakob Weber, Markus Gurtner, Benedikt Alt, Adrian Trachte, Andreas Kugi</creator>
-  </item>
-  <item>
-   <title>A Lightweight and Secure Deep Learning Model for Privacy-Preserving Federated Learning in Intelligent Enterprises</title>
-   <link>https://arxiv.org/abs/2503.02017</link>
-   <description>The ever growing Internet of Things (IoT) connections drive a new type of organization, the Intelligent Enterprise. In intelligent enterprises, machine learning based models are adopted to extract insights from data. Due to the efficiency and privacy challenges of these traditional models, a new federated learning (FL) paradigm has emerged. In FL, multiple enterprises can jointly train a model to update a final model. However, firstly, FL trained models usually perform worse than centralized models, especially when enterprises training data is non-IID (Independent and Identically Distributed). Second, due to the centrality of FL and the untrustworthiness of local enterprises, traditional FL solutions are vulnerable to poisoning and inference attacks and violate privacy. Thirdly, the continuous transfer of parameters between enterprises and servers increases communication costs. To this end, the FedAnil+ model is proposed, a novel, lightweight, and secure Federated Deep Learning Model that includes three main phases. In the first phase, the goal is to solve the data type distribution skew challenge. Addressing privacy concerns against poisoning and inference attacks is covered in the second phase. Finally, to alleviate the communication overhead, a novel compression approach is proposed that significantly reduces the size of the updates. The experiment results validate that FedAnil+ is secure against inference and poisoning attacks with better accuracy. In addition, it shows improvements over existing approaches in terms of model accuracy (13%, 16%, and 26%), communication cost (17%, 21%, and 25%), and computation cost (7%, 9%, and 11%).</description>
-   <guid>oai:arXiv.org:2503.02017v1</guid>
-   <category>cs.CR</category>
-   <category>cs.LG</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Reza Fotohi, Fereidoon Shams Aliee, Bahar Farahani</creator>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Wentai Wu, Yingliang Wu</creator>
   </item>
   <item>
-   <title>Measuring Intrinsic Dimension of Token Embeddings</title>
-   <link>https://arxiv.org/abs/2503.02142</link>
-   <description>In this study, we measure the Intrinsic Dimension (ID) of token embedding to estimate the intrinsic dimensions of the manifolds spanned by the representations, so as to evaluate their redundancy quantitatively compared to their extrinsic dimensionality. In detail, (1) we estimate the ID of token embeddings in small-scale language models and also modern large language models, finding that the embedding spaces often reside on lower-dimensional manifolds compared to their extrinsic dimensionality; (2) we measure the ID across various model sizes and observe an increase in redundancy rates as the model scale grows; (3) we measure the dynamics of IDs during the training process, and find a rapid ID drop in the early stages of training. Moreover, (4) when LoRA is applied to the embedding layers, we observe a sudden drop in perplexity around the estimated IDs, suggesting that the ID can serve as a useful guideline for LoRA application.</description>
-   <guid>oai:arXiv.org:2503.02142v1</guid>
+   <title>MA-LoT: Multi-Agent Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving</title>
+   <link>https://arxiv.org/abs/2503.03205</link>
+   <description>Solving mathematical problems using computer-verifiable languages like Lean has significantly impacted mathematical and computer science communities. State-of-the-art methods utilize single Large Language Models (LLMs) as agents or provers to either generate complete proof or perform tree searches. However, single-agent methods inherently lack a structured way to combine high-level reasoning in Natural Language (NL) with Formal Language (FL) verification feedback. To solve these issues, we propose MA-LoT: Multi-Agent Lean-based Long Chain-of-Thought framework, (to the best of our knowledge), the first multi-agent framework for Lean4 theorem proving that balance high-level NL reasoning and FL verification in Long CoT. Using this structured interaction, our approach enables deeper insights and long-term coherence in proof generation, with which past methods struggle. We do this by leveraging emergent formal reasoning ability in Long CoT using our novel LoT-Transfer Learning training-inference pipeline. Extensive experiments show that our framework achieves 54.51% accuracy rate on the Lean4 version of MiniF2F-Test dataset, largely outperforming GPT-4 (22.95%), single-agent tree search (InternLM-Step-Prover, 50.70%), and whole-proof generation (DeepSeek-Prover-v1.5, 48.36%) baselines. Furthermore, our findings highlight the potential of combining Long CoT with formal verification for a more insightful generation in a broader perspective.</description>
+   <guid>oai:arXiv.org:2503.03205v1</guid>
    <category>cs.CL</category>
-   <category>cs.LG</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
+   <category>cs.AI</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
    <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Takuya Kataiwa, Cho Hakaze, Tetsushi Ohki</creator>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ruida Wang, Rui Pan, Yuxin Li, Jipeng Zhang, Yizhen Jia, Shizhe Diao, Renjie Pi, Junjie Hu, Tong Zhang</creator>
   </item>
   <item>
-   <title>Promptware Engineering: Software Engineering for LLM Prompt Development</title>
-   <link>https://arxiv.org/abs/2503.02400</link>
-   <description>Large Language Models (LLMs) are increasingly integrated into software applications, with prompts serving as the primary 'programming' interface to guide their behavior. As a result, a new software paradigm, promptware, has emerged, using natural language prompts to interact with LLMs and enabling complex tasks without traditional coding. Unlike traditional software, which relies on formal programming languages and deterministic runtime environments, promptware is based on ambiguous, unstructured, and context-dependent natural language and operates on LLMs as runtime environments, which are probabilistic and non-deterministic. These fundamental differences introduce unique challenges in prompt development. In practice, prompt development is largely ad hoc and experimental, relying on a time-consuming trial-and-error process - a challenge we term the 'promptware crisis.' To address this, we propose promptware engineering, a new methodology that adapts established software engineering principles to the process of prompt development. Building on decades of success in traditional software engineering, we envision a systematic framework that includes prompt requirements engineering, design, implementation, testing, debugging, and evolution. Unlike traditional software engineering, our framework is specifically tailored to the unique characteristics of prompt development. This paper outlines a comprehensive roadmap for promptware engineering, identifying key research directions and offering actionable insights to advance LLM-based software development.</description>
-   <guid>oai:arXiv.org:2503.02400v1</guid>
+   <title>FANS -- Formal Answer Selection for Natural Language Math Reasoning Using Lean4</title>
+   <link>https://arxiv.org/abs/2503.03238</link>
+   <description>Large Language Models (LLMs) have displayed astonishing abilities in various tasks, especially in text generation, classification, question answering, etc. However, the reasoning ability of LLMs still faces many debates. The inherent ambiguity of Natural Language (NL) limits LLMs' ability to perform verifiable reasoning, making its answers lack coherence and trustworthy support. To tackle the above problems, we propose a novel framework named FANS: Formal ANswer Selection for Natural Language Math Reasoning Using Lean4. To the best of our knowledge, it is the first framework that utilizes Lean4 to enhance LLMs' NL math reasoning ability. In particular, given an NL math question and LLM-generated answers, FANS first translates it into Lean4 theorem statements. Then it tries to prove it using a Lean4 prover and verify it by Lean4. Finally, it uses the FL result to assist in answer selection. It enhances LLMs' NL math ability in providing a computer-verifiable solution for its correct answer and proposes an alternative method for answer selection beyond the reward model. Extensive experiments indicate the effectiveness of our framework. It can improve the accuracy rate of reward model enhanced LLMs in the MATH-500 dataset by at most 1.91% and AMC-23 by at most 8.33% on strong reward-model baselines. In some particular fields like number theory that Lean4 experts in, we can even select all correct solutions. The qualitative analysis also shows our framework can make NL results formally backed by Lean4 proofs. As a pioneering work in the corresponding field, we will open-source all our models and datasets to further boost the development of the field.</description>
+   <guid>oai:arXiv.org:2503.03238v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jiarui Yao, Ruida Wang, Tong Zhang</creator>
+  </item>
+  <item>
+   <title>Privacy is All You Need: Revolutionizing Wearable Health Data with Advanced PETs</title>
+   <link>https://arxiv.org/abs/2503.03428</link>
+   <description>In a world where data is the new currency, wearable health devices offer unprecedented insights into daily life, continuously monitoring vital signs and metrics. However, this convenience raises privacy concerns, as these devices collect sensitive data that can be misused or breached. Traditional measures often fail due to real-time data processing needs and limited device power. Users also lack awareness and control over data sharing and usage. We propose a Privacy-Enhancing Technology (PET) framework for wearable devices, integrating federated learning, lightweight cryptographic methods, and selectively deployed blockchain technology. The blockchain acts as a secure ledger triggered only upon data transfer requests, granting users real-time notifications and control. By dismantling data monopolies, this approach returns data sovereignty to individuals. Through real-world applications like secure medical data sharing, privacy-preserving fitness tracking, and continuous health monitoring, our framework reduces privacy risks by up to 70 percent while preserving data utility and performance. This innovation sets a new benchmark for wearable privacy and can scale to broader IoT ecosystems, including smart homes and industry. As data continues to shape our digital landscape, our research underscores the critical need to maintain privacy and user control at the forefront of technological progress.</description>
+   <guid>oai:arXiv.org:2503.03428v1</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.ET</category>
+   <category>cs.HC</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Karthik Barma, Seshu Babu Barma</creator>
+  </item>
+  <item>
+   <title>A privacy-preserving, distributed and cooperative FCM-based learning approach for cancer research</title>
+   <link>https://arxiv.org/abs/2402.10102</link>
+   <description>Distributed Artificial Intelligence is attracting interest day by day. In this paper, the authors introduce an innovative methodology for distributed learning of Particle Swarm Optimization-based Fuzzy Cognitive Maps in a privacy-preserving way. The authors design a training scheme for collaborative FCM learning that offers data privacy compliant with the current regulation. This method is applied to a cancer detection problem, proving that the performance of the model is improved by the Federated Learning process, and obtaining similar results to the ones that can be found in the literature.</description>
+   <guid>oai:arXiv.org:2402.10102v2</guid>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jose L. Salmeron, Irina Ar\'evalo</creator>
+  </item>
+  <item>
+   <title>PyGen: A Collaborative Human-AI Approach to Python Package Creation</title>
+   <link>https://arxiv.org/abs/2411.08932</link>
+   <description>The principles of automation and innovation serve as foundational elements for advancement in contemporary science and technology. Here, we introduce Pygen, an automation platform designed to empower researchers, technologists, and hobbyists to bring abstract ideas to life as core, usable software tools written in Python. Pygen leverages the immense power of autoregressive large language models to augment human creativity during the ideation, iteration, and innovation process. By combining state-of-the-art language models with open-source code generation technologies, Pygen has significantly reduced the manual overhead of tool development. From a user prompt, Pygen automatically generates Python packages for a complete workflow from concept to package generation and documentation. The findings of our work show that Pygen considerably enhances the researcher's productivity by enabling the creation of resilient, modular, and well-documented packages for various specialized purposes. We employ a prompt enhancement approach to distill the user's package description into increasingly specific and actionable. While being inherently an open-ended task, we have evaluated the generated packages and the documentation using Human Evaluation, LLM-based evaluation, and CodeBLEU, with detailed results in the results section. Furthermore, we documented our results, analyzed the limitations, and suggested strategies to alleviate them. Pygen is our vision of ethical automation, a framework that promotes inclusivity, accessibility, and collaborative development. This project marks the beginning of a large-scale effort towards creating tools where intelligent agents collaborate with humans to improve scientific and technological development substantially.
+  Our code and generated examples are open-sourced at [https://github.com/GitsSaikat/Pygen]</description>
+   <guid>oai:arXiv.org:2411.08932v2</guid>
    <category>cs.SE</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Zhenpeng Chen, Chong Wang, Weisong Sun, Guang Yang, Xuanzhe Liu, Jie M. Zhang, Yang Liu</creator>
-  </item>
-  <item>
-   <title>GaVaMoE: Gaussian-Variational Gated Mixture of Experts for Explainable Recommendation</title>
-   <link>https://arxiv.org/abs/2410.11841</link>
-   <description>Large language model-based explainable recommendation (LLM-based ER) systems show promise in generating human-like explanations for recommendations. However, they face challenges in modeling user-item collaborative preferences, personalizing explanations, and handling sparse user-item interactions. To address these issues, we propose GaVaMoE, a novel Gaussian-Variational Gated Mixture of Experts framework for explainable recommendation. GaVaMoE introduces two key components: (1) a rating reconstruction module that employs Variational Autoencoder (VAE) with a Gaussian Mixture Model (GMM) to capture complex user-item collaborative preferences, serving as a pre-trained multi-gating mechanism; and (2) a set of fine-grained expert models coupled with the multi-gating mechanism for generating highly personalized explanations. The VAE component models latent factors in user-item interactions, while the GMM clusters users with similar behaviors. Each cluster corresponds to a gate in the multi-gating mechanism, routing user-item pairs to appropriate expert models. This architecture enables GaVaMoE to generate tailored explanations for specific user types and preferences, mitigating data sparsity by leveraging user similarities. Extensive experiments on three real-world datasets demonstrate that GaVaMoE significantly outperforms existing methods in explanation quality, personalization, and consistency. Notably, GaVaMoE exhibits robust performance in scenarios with sparse user-item interactions, maintaining high-quality explanations even for users with limited historical data.</description>
-   <guid>oai:arXiv.org:2410.11841v2</guid>
-   <category>cs.IR</category>
    <category>cs.AI</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Fei Tang, Yongliang Shen, Hang Zhang, Zeqi Tan, Wenqi Zhang, Zhibiao Huang, Kaitao Song, Weiming Lu, Yueting Zhuang</creator>
-  </item>
-  <item>
-   <title>Measuring Intrinsic Dimension of Token Embeddings</title>
-   <link>https://arxiv.org/abs/2503.02142</link>
-   <description>In this study, we measure the Intrinsic Dimension (ID) of token embedding to estimate the intrinsic dimensions of the manifolds spanned by the representations, so as to evaluate their redundancy quantitatively compared to their extrinsic dimensionality. In detail, (1) we estimate the ID of token embeddings in small-scale language models and also modern large language models, finding that the embedding spaces often reside on lower-dimensional manifolds compared to their extrinsic dimensionality; (2) we measure the ID across various model sizes and observe an increase in redundancy rates as the model scale grows; (3) we measure the dynamics of IDs during the training process, and find a rapid ID drop in the early stages of training. Moreover, (4) when LoRA is applied to the embedding layers, we observe a sudden drop in perplexity around the estimated IDs, suggesting that the ID can serve as a useful guideline for LoRA application.</description>
-   <guid>oai:arXiv.org:2503.02142v1</guid>
-   <category>cs.CL</category>
-   <category>cs.LG</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Takuya Kataiwa, Cho Hakaze, Tetsushi Ohki</creator>
-  </item>
-  <item>
-   <title>Implicit Bias in LLMs: A Survey</title>
-   <link>https://arxiv.org/abs/2503.02776</link>
-   <description>Due to the implement of guardrails by developers, Large language models (LLMs) have demonstrated exceptional performance in explicit bias tests. However, bias in LLMs may occur not only explicitly, but also implicitly, much like humans who consciously strive for impartiality yet still harbor implicit bias. The unconscious and automatic nature of implicit bias makes it particularly challenging to study. This paper provides a comprehensive review of the existing literature on implicit bias in LLMs. We begin by introducing key concepts, theories and methods related to implicit bias in psychology, extending them from humans to LLMs. Drawing on the Implicit Association Test (IAT) and other psychological frameworks, we categorize detection methods into three primary approaches: word association, task-oriented text generation and decision-making. We divide our taxonomy of evaluation metrics for implicit bias into two categories: single-value-based metrics and comparison-value-based metrics. We classify datasets into two types: sentences with masked tokens and complete sentences, incorporating datasets from various domains to reflect the broad application of LLMs. Although research on mitigating implicit bias in LLMs is still limited, we summarize existing efforts and offer insights on future challenges. We aim for this work to serve as a clear guide for researchers and inspire innovative ideas to advance exploration in this task.</description>
-   <guid>oai:arXiv.org:2503.02776v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Xinru Lin, Luyang Li</creator>
-  </item>
-  <item>
-   <title>Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs</title>
-   <link>https://arxiv.org/abs/2503.02846</link>
-   <description>Large language models (LLMs) exhibit hallucinations (i.e., unfaithful or nonsensical information) when serving as AI assistants in various domains. Since hallucinations always come with truthful content in the LLM responses, previous factuality alignment methods that conduct response-level preference learning inevitably introduced noises during training. Therefore, this paper proposes a fine-grained factuality alignment method based on Direct Preference Optimization (DPO), called Mask-DPO. Incorporating sentence-level factuality as mask signals, Mask-DPO only learns from factually correct sentences in the preferred samples and prevents the penalty on factual contents in the not preferred samples, which resolves the ambiguity in the preference learning. Extensive experimental results demonstrate that Mask-DPO can significantly improve the factuality of LLMs responses to questions from both in-domain and out-of-domain datasets, although these questions and their corresponding topics are unseen during training. Only trained on the ANAH train set, the score of Llama3.1-8B-Instruct on the ANAH test set is improved from 49.19% to 77.53%, even surpassing the score of Llama3.1-70B-Instruct (53.44%), while its FactScore on the out-of-domain Biography dataset is also improved from 30.29% to 39.39%. We further study the generalization property of Mask-DPO using different training sample scaling strategies and find that scaling the number of topics in the dataset is more effective than the number of questions. We provide a hypothesis of what factual alignment is doing with LLMs, on the implication of this phenomenon, and conduct proof-of-concept experiments to verify it. We hope the method and the findings pave the way for future research on scaling factuality alignment.</description>
-   <guid>oai:arXiv.org:2503.02846v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yuzhe Gu, Wenwei Zhang, Chengqi Lyu, Dahua Lin, Kai Chen</creator>
-  </item>
-  <item>
-   <title>Vision Language Models in Medicine</title>
-   <link>https://arxiv.org/abs/2503.01863</link>
-   <description>With the advent of Vision-Language Models (VLMs), medical artificial intelligence (AI) has experienced significant technological progress and paradigm shifts. This survey provides an extensive review of recent advancements in Medical Vision-Language Models (Med-VLMs), which integrate visual and textual data to enhance healthcare outcomes. We discuss the foundational technology behind Med-VLMs, illustrating how general models are adapted for complex medical tasks, and examine their applications in healthcare. The transformative impact of Med-VLMs on clinical practice, education, and patient care is highlighted, alongside challenges such as data scarcity, narrow task generalization, interpretability issues, and ethical concerns like fairness, accountability, and privacy. These limitations are exacerbated by uneven dataset distribution, computational demands, and regulatory hurdles. Rigorous evaluation methods and robust regulatory frameworks are essential for safe integration into healthcare workflows. Future directions include leveraging large-scale, diverse datasets, improving cross-modal generalization, and enhancing interpretability. Innovations like federated learning, lightweight architectures, and Electronic Health Record (EHR) integration are explored as pathways to democratize access and improve clinical relevance. This review aims to provide a comprehensive understanding of Med-VLMs' strengths and limitations, fostering their ethical and balanced adoption in healthcare.</description>
-   <guid>oai:arXiv.org:2503.01863v1</guid>
-   <category>cs.CV</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.CY</category>
-   <category>eess.IV</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Beria Chingnabe Kalpelbe, Angel Gabriel Adaambiik, Wei Peng</creator>
-  </item>
-  <item>
-   <title>Dataverse: Open-Source ETL (Extract, Transform, Load) Pipeline for Large Language Models</title>
-   <link>https://arxiv.org/abs/2403.19340</link>
-   <description>To address the challenges associated with data processing at scale, we propose Dataverse, a unified open-source Extract-Transform-Load (ETL) pipeline for large language models (LLMs) with a user-friendly design at its core. Easy addition of custom processors with block-based interface in Dataverse allows users to readily and efficiently use Dataverse to build their own ETL pipeline. We hope that Dataverse will serve as a vital tool for LLM development and open source the entire library to welcome community contribution. Additionally, we provide a concise, two-minute video demonstration of our system, illustrating its capabilities and implementation.</description>
-   <guid>oai:arXiv.org:2403.19340v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Hyunbyung Park, Sukyung Lee, Gyoungjin Gim, Yungi Kim, Dahyun Kim, Chanjun Park</creator>
-  </item>
-  <item>
-   <title>Confidential Prompting: Protecting User Prompts from Cloud LLM Providers</title>
-   <link>https://arxiv.org/abs/2409.19134</link>
-   <description>Our work tackles the challenge of securing user inputs in cloud-hosted large language model (LLM) serving while ensuring model confidentiality, output invariance, and compute efficiency. We introduce Secure Partitioned Decoding (SPD), which uses confidential computing to confine user prompts to a trusted execution environment (TEE), namely a confidential virtual machine (CVM), while allowing service providers to generate tokens efficiently. We also introduce a novel cryptographic method, Prompt Obfuscation (PO), to ensure robustness against reconstruction attacks on SPD. We demonstrate our approach preserves both prompt confidentiality and LLM serving efficiency. Our solution enables privacy-preserving cloud LLM serving that handles sensitive prompts, such as clinical records, financial data, and personal information.</description>
-   <guid>oai:arXiv.org:2409.19134v3</guid>
-   <category>cs.CR</category>
-   <category>cs.CL</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>In Gim, Caihua Li, Lin Zhong</creator>
+   <creator>Saikat Barua, Mostafizur Rahman, Md Jafor Sadek, Rafiul Islam, Shehnaz Khaled, Md. Shohrab Hossain</creator>
   </item>
   <item>
-   <title>Vision Language Models in Medicine</title>
-   <link>https://arxiv.org/abs/2503.01863</link>
-   <description>With the advent of Vision-Language Models (VLMs), medical artificial intelligence (AI) has experienced significant technological progress and paradigm shifts. This survey provides an extensive review of recent advancements in Medical Vision-Language Models (Med-VLMs), which integrate visual and textual data to enhance healthcare outcomes. We discuss the foundational technology behind Med-VLMs, illustrating how general models are adapted for complex medical tasks, and examine their applications in healthcare. The transformative impact of Med-VLMs on clinical practice, education, and patient care is highlighted, alongside challenges such as data scarcity, narrow task generalization, interpretability issues, and ethical concerns like fairness, accountability, and privacy. These limitations are exacerbated by uneven dataset distribution, computational demands, and regulatory hurdles. Rigorous evaluation methods and robust regulatory frameworks are essential for safe integration into healthcare workflows. Future directions include leveraging large-scale, diverse datasets, improving cross-modal generalization, and enhancing interpretability. Innovations like federated learning, lightweight architectures, and Electronic Health Record (EHR) integration are explored as pathways to democratize access and improve clinical relevance. This review aims to provide a comprehensive understanding of Med-VLMs' strengths and limitations, fostering their ethical and balanced adoption in healthcare.</description>
-   <guid>oai:arXiv.org:2503.01863v1</guid>
+   <title>Handling Spatial-Temporal Data Heterogeneity for Federated Continual Learning via Tail Anchor</title>
+   <link>https://arxiv.org/abs/2412.18355</link>
+   <description>Federated continual learning (FCL) allows each client to continually update its knowledge from task streams, enhancing the applicability of federated learning in real-world scenarios. However, FCL needs to address not only spatial data heterogeneity between clients but also temporal data heterogeneity between tasks. In this paper, empirical experiments demonstrate that such input-level heterogeneity significantly affects the model's internal parameters and outputs, leading to severe spatial-temporal catastrophic forgetting of local and previous knowledge. To this end, we propose Federated Tail Anchor (FedTA) to mix trainable Tail Anchor with the frozen output features to adjust their position in the feature space, thereby overcoming parameter-forgetting and output-forgetting. Three novel components are also included: Input Enhancement for improving the performance of pre-trained models on downstream tasks; Selective Input Knowledge Fusion for fusion of heterogeneous local knowledge on the server; and Best Global Prototype Selection for finding the best anchor point for each class in the feature space. Extensive experiments demonstrate that FedTA not only outperforms existing FCL methods but also effectively preserves the relative positions of features.</description>
+   <guid>oai:arXiv.org:2412.18355v2</guid>
    <category>cs.CV</category>
    <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.CY</category>
-   <category>eess.IV</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
+   <category>cs.LG</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Hao Yu, Xin Yang, Le Zhang, Hanlin Gu, Tianrui Li, Lixin Fan, Qiang Yang</creator>
+  </item>
+  <item>
+   <title>Knowledge Augmentation in Federation: Rethinking What Collaborative Learning Can Bring Back to Decentralized Data</title>
+   <link>https://arxiv.org/abs/2503.03140</link>
+   <description>Data, as an observable form of knowledge, has become one of the most important factors of production for the development of Artificial Intelligence (AI). Meanwhile, increasing legislation and regulations on private and proprietary information results in scattered data sources also known as the ``data islands''. Although some collaborative learning paradigms such as Federated Learning (FL) can enable privacy-preserving training over decentralized data, they have inherent deficiencies in fairness, costs and reproducibility because of being learning-centric, which greatly limits the way how participants cooperate with each other. In light of this, we present a knowledge-centric paradigm termed \emph{Knowledge Augmentation in Federation} (KAF), with focus on how to enhance local knowledge through collaborative effort. We provide the suggested system architecture, formulate the prototypical optimization objective, and review emerging studies that employ methodologies suitable for KAF. On our roadmap, with a three-way categorization we describe the methods for knowledge expansion, knowledge filtering, and label and feature space correction in the federation. Further, we highlight several challenges and open questions that deserve more attention from the community. With our investigation, we intend to offer new insights for what collaborative learning can bring back to decentralized data.</description>
+   <guid>oai:arXiv.org:2503.03140v1</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
    <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Beria Chingnabe Kalpelbe, Angel Gabriel Adaambiik, Wei Peng</creator>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Wentai Wu, Yingliang Wu</creator>
   </item>
   <item>
-   <title>Federated nnU-Net for Privacy-Preserving Medical Image Segmentation</title>
-   <link>https://arxiv.org/abs/2503.02549</link>
-   <description>The nnU-Net framework has played a crucial role in medical image segmentation and has become the gold standard in multitudes of applications targeting different diseases, organs, and modalities. However, so far it has been used primarily in a centralized approach where the data collected from hospitals are stored in one center and used to train the nnU-Net. This centralized approach has various limitations, such as leakage of sensitive patient information and violation of patient privacy. Federated learning is one of the approaches to train a segmentation model in a decentralized manner that helps preserve patient privacy. In this paper, we propose FednnU-Net, a federated learning extension of nnU-Net. We introduce two novel federated learning methods to the nnU-Net framework - Federated Fingerprint Extraction (FFE) and Asymmetric Federated Averaging (AsymFedAvg) - and experimentally show their consistent performance for breast, cardiac and fetal segmentation using 6 datasets representing samples from 18 institutions. Additionally, to further promote research and deployment of decentralized training in privacy constrained institutions, we make our plug-n-play framework public. The source-code is available at https://github.com/faildeny/FednnUNet .</description>
-   <guid>oai:arXiv.org:2503.02549v1</guid>
-   <category>cs.CV</category>
+   <title>Convergence Analysis of Federated Learning Methods Using Backward Error Analysis</title>
+   <link>https://arxiv.org/abs/2503.03139</link>
+   <description>Backward error analysis allows finding a modified loss function, which the parameter updates really follow under the influence of an optimization method. The additional loss terms included in this modified function is called implicit regularizer. In this paper, we attempt to find the implicit regularizer for various federated learning algorithms on non-IID data distribution, and explain why each method shows different convergence behavior. We first show that the implicit regularizer of FedAvg disperses the gradient of each client from the average gradient, thus increasing the gradient variance. We also empirically show that the implicit regularizer hampers its convergence. Similarly, we compute the implicit regularizers of FedSAM and SCAFFOLD, and explain why they converge better. While existing convergence analyses focus on pointing out the advantages of FedSAM and SCAFFOLD, our approach can explain their limitations in complex non-convex settings. In specific, we demonstrate that FedSAM can partially remove the bias in the first-order term of the implicit regularizer in FedAvg, whereas SCAFFOLD can fully eliminate the bias in the first-order term, but not in the second-order term. Consequently, the implicit regularizer can provide a useful insight on the convergence behavior of federated learning from a different theoretical perspective.</description>
+   <guid>oai:arXiv.org:2503.03139v1</guid>
+   <category>cs.LG</category>
    <category>cs.AI</category>
-   <pubdate>Wed, 05 Mar 2025 00:00:00 -0500</pubdate>
+   <category>cs.DC</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jinwoo Lim, Suhyun Kim, Soo-Mook Moon</creator>
+  </item>
+  <item>
+   <title>Quantum-Inspired Privacy-Preserving Federated Learning Framework for Secure Dementia Classification</title>
+   <link>https://arxiv.org/abs/2503.03267</link>
+   <description>Dementia, a neurological disorder impacting millions globally, presents significant challenges in diagnosis and patient care. With the rise of privacy concerns and security threats in healthcare, federated learning (FL) has emerged as a promising approach to enable collaborative model training across decentralized datasets without exposing sensitive patient information. However, FL remains vulnerable to advanced security breaches such as gradient inversion and eavesdropping attacks. This paper introduces a novel framework that integrates federated learning with quantum-inspired encryption techniques for dementia classification, emphasizing privacy preservation and security. Leveraging quantum key distribution (QKD), the framework ensures secure transmission of model weights, protecting against unauthorized access and interception during training. The methodology utilizes a convolutional neural network (CNN) for dementia classification, with federated training conducted across distributed healthcare nodes, incorporating QKD-encrypted weight sharing to secure the aggregation process. Experimental evaluations conducted on MRI data from the OASIS dataset demonstrate that the proposed framework achieves identical accuracy levels to a baseline model while enhancing data security and reducing loss by almost 1% compared to the classical baseline model. The framework offers significant implications for democratizing access to AI-driven dementia diagnostics in low- and middle-income countries, addressing critical resource and privacy constraints. This work contributes a robust, scalable, and secure federated learning solution for healthcare applications, paving the way for broader adoption of quantum-inspired techniques in AI-driven medical research.</description>
+   <guid>oai:arXiv.org:2503.03267v1</guid>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Gazi Tanbhir, Md. Farhan Shahriyar</creator>
+  </item>
+  <item>
+   <title>Towards Trustworthy Federated Learning</title>
+   <link>https://arxiv.org/abs/2503.03684</link>
+   <description>This paper develops a comprehensive framework to address three critical trustworthy challenges in federated learning (FL): robustness against Byzantine attacks, fairness, and privacy preservation. To improve the system's defense against Byzantine attacks that send malicious information to bias the system's performance, we develop a Two-sided Norm Based Screening (TNBS) mechanism, which allows the central server to crop the gradients that have the l lowest norms and h highest norms. TNBS functions as a screening tool to filter out potential malicious participants whose gradients are far from the honest ones. To promote egalitarian fairness, we adopt the q-fair federated learning (q-FFL). Furthermore, we adopt a differential privacy-based scheme to prevent raw data at local clients from being inferred by curious parties. Convergence guarantees are provided for the proposed framework under different scenarios. Experimental results on real datasets demonstrate that the proposed framework effectively improves robustness and fairness while managing the trade-off between privacy and accuracy. This work appears to be the first study that experimentally and theoretically addresses fairness, privacy, and robustness in trustworthy FL.</description>
+   <guid>oai:arXiv.org:2503.03684v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Alina Basharat, Yijun Bian, Ping Xu, Zhi Tian</creator>
+  </item>
+  <item>
+   <title>A privacy-preserving, distributed and cooperative FCM-based learning approach for cancer research</title>
+   <link>https://arxiv.org/abs/2402.10102</link>
+   <description>Distributed Artificial Intelligence is attracting interest day by day. In this paper, the authors introduce an innovative methodology for distributed learning of Particle Swarm Optimization-based Fuzzy Cognitive Maps in a privacy-preserving way. The authors design a training scheme for collaborative FCM learning that offers data privacy compliant with the current regulation. This method is applied to a cancer detection problem, proving that the performance of the model is improved by the Federated Learning process, and obtaining similar results to the ones that can be found in the literature.</description>
+   <guid>oai:arXiv.org:2402.10102v2</guid>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jose L. Salmeron, Irina Ar\'evalo</creator>
+  </item>
+  <item>
+   <title>BEVDriver: Leveraging BEV Maps in LLMs for Robust Closed-Loop Driving</title>
+   <link>https://arxiv.org/abs/2503.03074</link>
+   <description>Autonomous driving has the potential to set the stage for more efficient future mobility, requiring the research domain to establish trust through safe, reliable and transparent driving. Large Language Models (LLMs) possess reasoning capabilities and natural language understanding, presenting the potential to serve as generalized decision-makers for ego-motion planning that can interact with humans and navigate environments designed for human drivers. While this research avenue is promising, current autonomous driving approaches are challenged by combining 3D spatial grounding and the reasoning and language capabilities of LLMs. We introduce BEVDriver, an LLM-based model for end-to-end closed-loop driving in CARLA that utilizes latent BEV features as perception input. BEVDriver includes a BEV encoder to efficiently process multi-view images and 3D LiDAR point clouds. Within a common latent space, the BEV features are propagated through a Q-Former to align with natural language instructions and passed to the LLM that predicts and plans precise future trajectories while considering navigation instructions and critical scenarios. On the LangAuto benchmark, our model reaches up to 18.9% higher performance on the Driving Score compared to SoTA methods.</description>
+   <guid>oai:arXiv.org:2503.03074v1</guid>
+   <category>cs.RO</category>
+   <category>cs.CV</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Grzegorz Skorupko, Fotios Avgoustidis, Carlos Mart\'in-Isla, Lidia Garrucho, Dimitri A. Kessler, Esmeralda Ruiz Pujadas, Oliver D\'iaz, Maciej Bobowicz, Katarzyna Gwo\'zdziewicz, Xavier Bargall\'o, Paulius Jaru\v{s}evi\v{c}ius, Kaisar Kushibar, Karim Lekadir</creator>
+   <creator>Katharina Winter, Mark Azer, Fabian B. Flohr</creator>
+  </item>
+  <item>
+   <title>Leveraging Randomness in Model and Data Partitioning for Privacy Amplification</title>
+   <link>https://arxiv.org/abs/2503.03043</link>
+   <description>We study how inherent randomness in the training process -- where each sample (or client in federated learning) contributes only to a randomly selected portion of training -- can be leveraged for privacy amplification. This includes (1) data partitioning, where a sample participates in only a subset of training iterations, and (2) model partitioning, where a sample updates only a subset of the model parameters. We apply our framework to model parallelism in federated learning, where each client updates a randomly selected subnetwork to reduce memory and computational overhead, and show that existing methods, e.g. model splitting or dropout, provide a significant privacy amplification gain not captured by previous privacy analysis techniques. Additionally, we introduce Balanced Iteration Subsampling, a new data partitioning method where each sample (or client) participates in a fixed number of training iterations. We show that this method yields stronger privacy amplification than Poisson (i.i.d.) sampling of data (or clients). Our results demonstrate that randomness in the training process, which is structured rather than i.i.d. and interacts with data in complex ways, can be systematically leveraged for significant privacy amplification.</description>
+   <guid>oai:arXiv.org:2503.03043v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Andy Dong, Wei-Ning Chen, Ayfer Ozgur</creator>
+  </item>
+  <item>
+   <title>WarmFed: Federated Learning with Warm-Start for Globalization and Personalization Via Personalized Diffusion Models</title>
+   <link>https://arxiv.org/abs/2503.03110</link>
+   <description>Federated Learning (FL) stands as a prominent distributed learning paradigm among multiple clients to achieve a unified global model without privacy leakage. In contrast to FL, Personalized federated learning aims at serving for each client in achieving persoanlized model. However, previous FL frameworks have grappled with a dilemma: the choice between developing a singular global model at the server to bolster globalization or nurturing personalized model at the client to accommodate personalization. Instead of making trade-offs, this paper commences its discourse from the pre-trained initialization, obtaining resilient global information and facilitating the development of both global and personalized models. Specifically, we propose a novel method called WarmFed to achieve this. WarmFed customizes Warm-start through personalized diffusion models, which are generated by local efficient fine-tunining (LoRA). Building upon the Warm-Start, we advance a server-side fine-tuning strategy to derive the global model, and propose a dynamic self-distillation (DSD) to procure more resilient personalized models simultaneously. Comprehensive experiments underscore the substantial gains of our approach across both global and personalized models, achieved within just one-shot and five communication(s).</description>
+   <guid>oai:arXiv.org:2503.03110v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tao Feng, Jie Zhang, Xiangjian Li, Rong Huang, Huashan Liu, Zhijie Wang</creator>
+  </item>
+  <item>
+   <title>Convergence Analysis of Federated Learning Methods Using Backward Error Analysis</title>
+   <link>https://arxiv.org/abs/2503.03139</link>
+   <description>Backward error analysis allows finding a modified loss function, which the parameter updates really follow under the influence of an optimization method. The additional loss terms included in this modified function is called implicit regularizer. In this paper, we attempt to find the implicit regularizer for various federated learning algorithms on non-IID data distribution, and explain why each method shows different convergence behavior. We first show that the implicit regularizer of FedAvg disperses the gradient of each client from the average gradient, thus increasing the gradient variance. We also empirically show that the implicit regularizer hampers its convergence. Similarly, we compute the implicit regularizers of FedSAM and SCAFFOLD, and explain why they converge better. While existing convergence analyses focus on pointing out the advantages of FedSAM and SCAFFOLD, our approach can explain their limitations in complex non-convex settings. In specific, we demonstrate that FedSAM can partially remove the bias in the first-order term of the implicit regularizer in FedAvg, whereas SCAFFOLD can fully eliminate the bias in the first-order term, but not in the second-order term. Consequently, the implicit regularizer can provide a useful insight on the convergence behavior of federated learning from a different theoretical perspective.</description>
+   <guid>oai:arXiv.org:2503.03139v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jinwoo Lim, Suhyun Kim, Soo-Mook Moon</creator>
+  </item>
+  <item>
+   <title>Federated Learning for Predicting Mild Cognitive Impairment to Dementia Conversion</title>
+   <link>https://arxiv.org/abs/2503.03489</link>
+   <description>Dementia is a progressive condition that impairs an individual's cognitive health and daily functioning, with mild cognitive impairment (MCI) often serving as its precursor. The prediction of MCI to dementia conversion has been well studied, but previous studies have almost always focused on traditional Machine Learning (ML) based methods that require sharing sensitive clinical information to train predictive models. This study proposes a privacy-enhancing solution using Federated Learning (FL) to train predictive models for MCI to dementia conversion without sharing sensitive data, leveraging socio demographic and cognitive measures. We simulated and compared two network architectures, Peer to Peer (P2P) and client-server, to enable collaborative learning. Our results demonstrated that FL had comparable predictive performance to centralized ML, and each clinical site showed similar performance without sharing local data. Moreover, the predictive performance of FL models was superior to site specific models trained without collaboration. This work highlights that FL can eliminate the need for data sharing without compromising model efficacy.</description>
+   <guid>oai:arXiv.org:2503.03489v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Gaurang Sharma (for the Alzheimer\'s Disease Neuroimaging Initiative), Elaheh Moradi (for the Alzheimer\'s Disease Neuroimaging Initiative), Juha Pajula (for the Alzheimer\'s Disease Neuroimaging Initiative), Mika Hilvo (for the Alzheimer\'s Disease Neuroimaging Initiative), Jussi Tohka (for the Alzheimer\'s Disease Neuroimaging Initiative)</creator>
+  </item>
+  <item>
+   <title>Towards Trustworthy Federated Learning</title>
+   <link>https://arxiv.org/abs/2503.03684</link>
+   <description>This paper develops a comprehensive framework to address three critical trustworthy challenges in federated learning (FL): robustness against Byzantine attacks, fairness, and privacy preservation. To improve the system's defense against Byzantine attacks that send malicious information to bias the system's performance, we develop a Two-sided Norm Based Screening (TNBS) mechanism, which allows the central server to crop the gradients that have the l lowest norms and h highest norms. TNBS functions as a screening tool to filter out potential malicious participants whose gradients are far from the honest ones. To promote egalitarian fairness, we adopt the q-fair federated learning (q-FFL). Furthermore, we adopt a differential privacy-based scheme to prevent raw data at local clients from being inferred by curious parties. Convergence guarantees are provided for the proposed framework under different scenarios. Experimental results on real datasets demonstrate that the proposed framework effectively improves robustness and fairness while managing the trade-off between privacy and accuracy. This work appears to be the first study that experimentally and theoretically addresses fairness, privacy, and robustness in trustworthy FL.</description>
+   <guid>oai:arXiv.org:2503.03684v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Alina Basharat, Yijun Bian, Ping Xu, Zhi Tian</creator>
+  </item>
+  <item>
+   <title>Knowledge Augmentation in Federation: Rethinking What Collaborative Learning Can Bring Back to Decentralized Data</title>
+   <link>https://arxiv.org/abs/2503.03140</link>
+   <description>Data, as an observable form of knowledge, has become one of the most important factors of production for the development of Artificial Intelligence (AI). Meanwhile, increasing legislation and regulations on private and proprietary information results in scattered data sources also known as the ``data islands''. Although some collaborative learning paradigms such as Federated Learning (FL) can enable privacy-preserving training over decentralized data, they have inherent deficiencies in fairness, costs and reproducibility because of being learning-centric, which greatly limits the way how participants cooperate with each other. In light of this, we present a knowledge-centric paradigm termed \emph{Knowledge Augmentation in Federation} (KAF), with focus on how to enhance local knowledge through collaborative effort. We provide the suggested system architecture, formulate the prototypical optimization objective, and review emerging studies that employ methodologies suitable for KAF. On our roadmap, with a three-way categorization we describe the methods for knowledge expansion, knowledge filtering, and label and feature space correction in the federation. Further, we highlight several challenges and open questions that deserve more attention from the community. With our investigation, we intend to offer new insights for what collaborative learning can bring back to decentralized data.</description>
+   <guid>oai:arXiv.org:2503.03140v1</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Wentai Wu, Yingliang Wu</creator>
+  </item>
+  <item>
+   <title>Incentivizing Truthful Collaboration in Heterogeneous Federated Learning</title>
+   <link>https://arxiv.org/abs/2412.00980</link>
+   <description>Federated learning (FL) is a distributed collaborative learning method, where multiple clients learn together by sharing gradient updates instead of raw data. However, it is well-known that FL is vulnerable to manipulated updates from clients. In this work we study the impact of data heterogeneity on clients' incentives to manipulate their updates. First, we present heterogeneous collaborative learning scenarios where a client can modify their updates to be better off, and show that these manipulations can lead to diminishing model performance. To prevent such modifications, we formulate a game in which clients may misreport their gradient updates in order to &quot;steer&quot; the server model to their advantage. We develop a payment rule that provably disincentivizes sending modified updates under the FedSGD protocol. We derive explicit bounds on the clients' payments and the convergence rate of the global model, which allows us to study the trade-off between heterogeneity, payments and convergence. Finally, we provide an experimental evaluation of the effectiveness of our payment rule in the FedSGD, median-based aggregation FedSGD and FedAvg protocols on three tasks in computer vision and natural language processing. In all cases we find that our scheme successfully disincentivizes modifications.</description>
+   <guid>oai:arXiv.org:2412.00980v2</guid>
+   <category>cs.LG</category>
+   <category>cs.GT</category>
+   <category>stat.ML</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Dimitar Chakarov, Nikita Tsoy, Kristian Minchev, Nikola Konstantinov</creator>
+  </item>
+  <item>
+   <title>Handling Spatial-Temporal Data Heterogeneity for Federated Continual Learning via Tail Anchor</title>
+   <link>https://arxiv.org/abs/2412.18355</link>
+   <description>Federated continual learning (FCL) allows each client to continually update its knowledge from task streams, enhancing the applicability of federated learning in real-world scenarios. However, FCL needs to address not only spatial data heterogeneity between clients but also temporal data heterogeneity between tasks. In this paper, empirical experiments demonstrate that such input-level heterogeneity significantly affects the model's internal parameters and outputs, leading to severe spatial-temporal catastrophic forgetting of local and previous knowledge. To this end, we propose Federated Tail Anchor (FedTA) to mix trainable Tail Anchor with the frozen output features to adjust their position in the feature space, thereby overcoming parameter-forgetting and output-forgetting. Three novel components are also included: Input Enhancement for improving the performance of pre-trained models on downstream tasks; Selective Input Knowledge Fusion for fusion of heterogeneous local knowledge on the server; and Best Global Prototype Selection for finding the best anchor point for each class in the feature space. Extensive experiments demonstrate that FedTA not only outperforms existing FCL methods but also effectively preserves the relative positions of features.</description>
+   <guid>oai:arXiv.org:2412.18355v2</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Hao Yu, Xin Yang, Le Zhang, Hanlin Gu, Tianrui Li, Lixin Fan, Qiang Yang</creator>
+  </item>
+  <item>
+   <title>PyGen: A Collaborative Human-AI Approach to Python Package Creation</title>
+   <link>https://arxiv.org/abs/2411.08932</link>
+   <description>The principles of automation and innovation serve as foundational elements for advancement in contemporary science and technology. Here, we introduce Pygen, an automation platform designed to empower researchers, technologists, and hobbyists to bring abstract ideas to life as core, usable software tools written in Python. Pygen leverages the immense power of autoregressive large language models to augment human creativity during the ideation, iteration, and innovation process. By combining state-of-the-art language models with open-source code generation technologies, Pygen has significantly reduced the manual overhead of tool development. From a user prompt, Pygen automatically generates Python packages for a complete workflow from concept to package generation and documentation. The findings of our work show that Pygen considerably enhances the researcher's productivity by enabling the creation of resilient, modular, and well-documented packages for various specialized purposes. We employ a prompt enhancement approach to distill the user's package description into increasingly specific and actionable. While being inherently an open-ended task, we have evaluated the generated packages and the documentation using Human Evaluation, LLM-based evaluation, and CodeBLEU, with detailed results in the results section. Furthermore, we documented our results, analyzed the limitations, and suggested strategies to alleviate them. Pygen is our vision of ethical automation, a framework that promotes inclusivity, accessibility, and collaborative development. This project marks the beginning of a large-scale effort towards creating tools where intelligent agents collaborate with humans to improve scientific and technological development substantially.
+  Our code and generated examples are open-sourced at [https://github.com/GitsSaikat/Pygen]</description>
+   <guid>oai:arXiv.org:2411.08932v2</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Saikat Barua, Mostafizur Rahman, Md Jafor Sadek, Rafiul Islam, Shehnaz Khaled, Md. Shohrab Hossain</creator>
+  </item>
+  <item>
+   <title>Use of Air Quality Sensor Network Data for Real-time Pollution-Aware POI Suggestion</title>
+   <link>https://arxiv.org/abs/2502.09155</link>
+   <description>This demo paper introduces AirSense-R, a privacy-preserving mobile application that delivers real-time, pollution-aware recommendations for urban points of interest (POIs). By merging live air quality data from AirSENCE sensor networks in Bari (Italy) and Cork (Ireland) with user preferences, the system enables health-conscious decision-making. It employs collaborative filtering for personalization, federated learning for privacy, and a prediction engine to detect anomalies and interpolate sparse sensor data. The proposed solution adapts dynamically to urban air quality while safeguarding user privacy. The code and demonstration video are available at https://github.com/AirtownApp/Airtown-Application.git.</description>
+   <guid>oai:arXiv.org:2502.09155v2</guid>
+   <category>cs.IR</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Giuseppe Fasano, Yashar Deldjoo, Tommaso di Noia, Bianca Lau, Sina Adham-Khiabani, Eric Morris, Xia Liu, Ganga Chinna Rao Devarapu, Liam O'Faolain</creator>
+  </item>
+  <item>
+   <title>Privacy is All You Need: Revolutionizing Wearable Health Data with Advanced PETs</title>
+   <link>https://arxiv.org/abs/2503.03428</link>
+   <description>In a world where data is the new currency, wearable health devices offer unprecedented insights into daily life, continuously monitoring vital signs and metrics. However, this convenience raises privacy concerns, as these devices collect sensitive data that can be misused or breached. Traditional measures often fail due to real-time data processing needs and limited device power. Users also lack awareness and control over data sharing and usage. We propose a Privacy-Enhancing Technology (PET) framework for wearable devices, integrating federated learning, lightweight cryptographic methods, and selectively deployed blockchain technology. The blockchain acts as a secure ledger triggered only upon data transfer requests, granting users real-time notifications and control. By dismantling data monopolies, this approach returns data sovereignty to individuals. Through real-world applications like secure medical data sharing, privacy-preserving fitness tracking, and continuous health monitoring, our framework reduces privacy risks by up to 70 percent while preserving data utility and performance. This innovation sets a new benchmark for wearable privacy and can scale to broader IoT ecosystems, including smart homes and industry. As data continues to shape our digital landscape, our research underscores the critical need to maintain privacy and user control at the forefront of technological progress.</description>
+   <guid>oai:arXiv.org:2503.03428v1</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.ET</category>
+   <category>cs.HC</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Karthik Barma, Seshu Babu Barma</creator>
+  </item>
+  <item>
+   <title>MA-LoT: Multi-Agent Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving</title>
+   <link>https://arxiv.org/abs/2503.03205</link>
+   <description>Solving mathematical problems using computer-verifiable languages like Lean has significantly impacted mathematical and computer science communities. State-of-the-art methods utilize single Large Language Models (LLMs) as agents or provers to either generate complete proof or perform tree searches. However, single-agent methods inherently lack a structured way to combine high-level reasoning in Natural Language (NL) with Formal Language (FL) verification feedback. To solve these issues, we propose MA-LoT: Multi-Agent Lean-based Long Chain-of-Thought framework, (to the best of our knowledge), the first multi-agent framework for Lean4 theorem proving that balance high-level NL reasoning and FL verification in Long CoT. Using this structured interaction, our approach enables deeper insights and long-term coherence in proof generation, with which past methods struggle. We do this by leveraging emergent formal reasoning ability in Long CoT using our novel LoT-Transfer Learning training-inference pipeline. Extensive experiments show that our framework achieves 54.51% accuracy rate on the Lean4 version of MiniF2F-Test dataset, largely outperforming GPT-4 (22.95%), single-agent tree search (InternLM-Step-Prover, 50.70%), and whole-proof generation (DeepSeek-Prover-v1.5, 48.36%) baselines. Furthermore, our findings highlight the potential of combining Long CoT with formal verification for a more insightful generation in a broader perspective.</description>
+   <guid>oai:arXiv.org:2503.03205v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ruida Wang, Rui Pan, Yuxin Li, Jipeng Zhang, Yizhen Jia, Shizhe Diao, Renjie Pi, Junjie Hu, Tong Zhang</creator>
+  </item>
+  <item>
+   <title>FANS -- Formal Answer Selection for Natural Language Math Reasoning Using Lean4</title>
+   <link>https://arxiv.org/abs/2503.03238</link>
+   <description>Large Language Models (LLMs) have displayed astonishing abilities in various tasks, especially in text generation, classification, question answering, etc. However, the reasoning ability of LLMs still faces many debates. The inherent ambiguity of Natural Language (NL) limits LLMs' ability to perform verifiable reasoning, making its answers lack coherence and trustworthy support. To tackle the above problems, we propose a novel framework named FANS: Formal ANswer Selection for Natural Language Math Reasoning Using Lean4. To the best of our knowledge, it is the first framework that utilizes Lean4 to enhance LLMs' NL math reasoning ability. In particular, given an NL math question and LLM-generated answers, FANS first translates it into Lean4 theorem statements. Then it tries to prove it using a Lean4 prover and verify it by Lean4. Finally, it uses the FL result to assist in answer selection. It enhances LLMs' NL math ability in providing a computer-verifiable solution for its correct answer and proposes an alternative method for answer selection beyond the reward model. Extensive experiments indicate the effectiveness of our framework. It can improve the accuracy rate of reward model enhanced LLMs in the MATH-500 dataset by at most 1.91% and AMC-23 by at most 8.33% on strong reward-model baselines. In some particular fields like number theory that Lean4 experts in, we can even select all correct solutions. The qualitative analysis also shows our framework can make NL results formally backed by Lean4 proofs. As a pioneering work in the corresponding field, we will open-source all our models and datasets to further boost the development of the field.</description>
+   <guid>oai:arXiv.org:2503.03238v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jiarui Yao, Ruida Wang, Tong Zhang</creator>
+  </item>
+  <item>
+   <title>BEVDriver: Leveraging BEV Maps in LLMs for Robust Closed-Loop Driving</title>
+   <link>https://arxiv.org/abs/2503.03074</link>
+   <description>Autonomous driving has the potential to set the stage for more efficient future mobility, requiring the research domain to establish trust through safe, reliable and transparent driving. Large Language Models (LLMs) possess reasoning capabilities and natural language understanding, presenting the potential to serve as generalized decision-makers for ego-motion planning that can interact with humans and navigate environments designed for human drivers. While this research avenue is promising, current autonomous driving approaches are challenged by combining 3D spatial grounding and the reasoning and language capabilities of LLMs. We introduce BEVDriver, an LLM-based model for end-to-end closed-loop driving in CARLA that utilizes latent BEV features as perception input. BEVDriver includes a BEV encoder to efficiently process multi-view images and 3D LiDAR point clouds. Within a common latent space, the BEV features are propagated through a Q-Former to align with natural language instructions and passed to the LLM that predicts and plans precise future trajectories while considering navigation instructions and critical scenarios. On the LangAuto benchmark, our model reaches up to 18.9% higher performance on the Driving Score compared to SoTA methods.</description>
+   <guid>oai:arXiv.org:2503.03074v1</guid>
+   <category>cs.RO</category>
+   <category>cs.CV</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Katharina Winter, Mark Azer, Fabian B. Flohr</creator>
+  </item>
+  <item>
+   <title>WarmFed: Federated Learning with Warm-Start for Globalization and Personalization Via Personalized Diffusion Models</title>
+   <link>https://arxiv.org/abs/2503.03110</link>
+   <description>Federated Learning (FL) stands as a prominent distributed learning paradigm among multiple clients to achieve a unified global model without privacy leakage. In contrast to FL, Personalized federated learning aims at serving for each client in achieving persoanlized model. However, previous FL frameworks have grappled with a dilemma: the choice between developing a singular global model at the server to bolster globalization or nurturing personalized model at the client to accommodate personalization. Instead of making trade-offs, this paper commences its discourse from the pre-trained initialization, obtaining resilient global information and facilitating the development of both global and personalized models. Specifically, we propose a novel method called WarmFed to achieve this. WarmFed customizes Warm-start through personalized diffusion models, which are generated by local efficient fine-tunining (LoRA). Building upon the Warm-Start, we advance a server-side fine-tuning strategy to derive the global model, and propose a dynamic self-distillation (DSD) to procure more resilient personalized models simultaneously. Comprehensive experiments underscore the substantial gains of our approach across both global and personalized models, achieved within just one-shot and five communication(s).</description>
+   <guid>oai:arXiv.org:2503.03110v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tao Feng, Jie Zhang, Xiangjian Li, Rong Huang, Huashan Liu, Zhijie Wang</creator>
+  </item>
+  <item>
+   <title>Handling Spatial-Temporal Data Heterogeneity for Federated Continual Learning via Tail Anchor</title>
+   <link>https://arxiv.org/abs/2412.18355</link>
+   <description>Federated continual learning (FCL) allows each client to continually update its knowledge from task streams, enhancing the applicability of federated learning in real-world scenarios. However, FCL needs to address not only spatial data heterogeneity between clients but also temporal data heterogeneity between tasks. In this paper, empirical experiments demonstrate that such input-level heterogeneity significantly affects the model's internal parameters and outputs, leading to severe spatial-temporal catastrophic forgetting of local and previous knowledge. To this end, we propose Federated Tail Anchor (FedTA) to mix trainable Tail Anchor with the frozen output features to adjust their position in the feature space, thereby overcoming parameter-forgetting and output-forgetting. Three novel components are also included: Input Enhancement for improving the performance of pre-trained models on downstream tasks; Selective Input Knowledge Fusion for fusion of heterogeneous local knowledge on the server; and Best Global Prototype Selection for finding the best anchor point for each class in the feature space. Extensive experiments demonstrate that FedTA not only outperforms existing FCL methods but also effectively preserves the relative positions of features.</description>
+   <guid>oai:arXiv.org:2412.18355v2</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 06 Mar 2025 00:00:00 -0500</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Hao Yu, Xin Yang, Le Zhang, Hanlin Gu, Tianrui Li, Lixin Fan, Qiang Yang</creator>
   </item>
  </channel>
 </rss>
