@@ -6,8 +6,682 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 10 Mar 2025 02:29:42 </lastBuildDate>
+  <lastBuildDate>Mon, 10 Mar 2025 04:12:24 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 10 Mar 2025 02:29:42 </pubDate>
+  <pubDate>Mon, 10 Mar 2025 04:12:24 </pubDate>
+  <item>
+   <title>GreenDFL: a Framework for Assessing the Sustainability of Decentralized Federated Learning Systems</title>
+   <link>https://arxiv.org/abs/2502.20242</link>
+   <description>Decentralized Federated Learning (DFL) is an emerging paradigm that enables collaborative model training without centralized data and model aggregation, enhancing privacy and resilience. However, its sustainability remains underexplored, as energy consumption and carbon emissions vary across different system configurations. Understanding the environmental impact of DFL is crucial for optimizing its design and deployment. This work aims to develop a comprehensive and operational framework for assessing the sustainability of DFL systems. To address it, this work provides a systematic method for quantifying energy consumption and carbon emissions, offering insights into improving the sustainability of DFL. This work proposes GreenDFL, a fully implementable framework that has been integrated into a real-world DFL platform. GreenDFL systematically analyzes the impact of various factors, including hardware accelerators, model architecture, communication medium, data distribution, network topology, and federation size, on the sustainability of DFL systems. Besides, a sustainability-aware aggregation algorithm (GreenDFL-SA) and a node selection algorithm (GreenDFL-SN) are developed to optimize energy efficiency and reduce carbon emissions in DFL training. Empirical experiments are conducted on multiple datasets, measuring energy consumption and carbon emissions at different phases of the DFL lifecycle. The proposed GreenDFL provides a comprehensive and practical approach for assessing the sustainability of DFL systems. Furthermore, it offers best practices for improving environmental efficiency in DFL, making sustainability considerations more actionable in real-world deployments.</description>
+   <guid>oai:arXiv.org:2502.20242v2</guid>
+   <category>cs.CY</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Chao Feng, Alberto Huertas Celdr\'an, Xi Cheng, G\'er\^ome Bovet, Burkhard Stiller</creator>
+  </item>
+  <item>
+   <title>Fundamental Limits of Hierarchical Secure Aggregation with Cyclic User Association</title>
+   <link>https://arxiv.org/abs/2503.04564</link>
+   <description>Secure aggregation is motivated by federated learning (FL) where a cloud server aims to compute an averaged model (i.e., weights of deep neural networks) of the locally-trained models of numerous clients, while adhering to data security requirements. Hierarchical secure aggregation (HSA) extends this concept to a three-layer network, where clustered users communicate with the server through an intermediate layer of relays. In HSA, beyond conventional server security, relay security is also enforced to ensure that the relays remain oblivious to the users' inputs (an abstraction of the local models in FL). Existing study on HSA assumes that each user is associated with only one relay, limiting opportunities for coding across inter-cluster users to achieve efficient communication and key generation. In this paper, we consider HSA with a cyclic association pattern where each user is connected to $B$ consecutive relays in a wrap-around manner. We propose an efficient aggregation scheme which includes a message design for the inputs inspired by gradient coding-a well-known technique for efficient communication in distributed computing-along with a highly nontrivial security key design. We also derive novel converse bounds on the minimum achievable communication and key rates using information-theoretic arguments.</description>
+   <guid>oai:arXiv.org:2503.04564v2</guid>
+   <category>cs.IT</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xiang Zhang, Zhou Li, Kai Wan, Hua Sun, Mingyue Ji, Giuseppe Caire</creator>
+  </item>
+  <item>
+   <title>FedMABench: Benchmarking Mobile Agents on Decentralized Heterogeneous User Data</title>
+   <link>https://arxiv.org/abs/2503.05143</link>
+   <description>Mobile agents have attracted tremendous research participation recently. Traditional approaches to mobile agent training rely on centralized data collection, leading to high cost and limited scalability. Distributed training utilizing federated learning offers an alternative by harnessing real-world user data, providing scalability and reducing costs. However, pivotal challenges, including the absence of standardized benchmarks, hinder progress in this field.
+  To tackle the challenges, we introduce FedMABench, the first benchmark for federated training and evaluation of mobile agents, specifically designed for heterogeneous scenarios. FedMABench features 6 datasets with 30+ subsets, 8 federated algorithms, 10+ base models, and over 800 apps across 5 categories, providing a comprehensive framework for evaluating mobile agents across diverse environments. Through extensive experiments, we uncover several key insights: federated algorithms consistently outperform local training; the distribution of specific apps plays a crucial role in heterogeneity; and, even apps from distinct categories can exhibit correlations during training. FedMABench is publicly available at: https://github.com/wwh0411/FedMABench with the datasets at: https://huggingface.co/datasets/wwh0411/FedMABench.</description>
+   <guid>oai:arXiv.org:2503.05143v1</guid>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Wenhao Wang, Zijie Yu, Rui Ye, Jianqing Zhang, Siheng Chen, Yanfeng Wang</creator>
+  </item>
+  <item>
+   <title>Towards Anthropomorphic Conversational AI Part I: A Practical Framework</title>
+   <link>https://arxiv.org/abs/2503.04787</link>
+   <description>Large language models (LLMs), due to their advanced natural language capabilities, have seen significant success in applications where the user interface is usually a conversational artificial intelligence (AI) agent and engages the user through multi-round conversations. However, many scenarios require the agents to exhibit stronger social and conversational intelligence and demonstrate more human-like (anthropomorphic) reactions. This is an aspect that foundational LLMs have yet to fully address such that a single call of foundational models might be insufficient.
+  To bridge this gap, we propose a two-stage solution. In this work, we focus on the first stage, introducing a multi-module framework designed to replicate the key aspects of human intelligence involved in conversations. This framework comprises thinking modules for reasoning, resource modules for managing knowledge and external information, and response modules for generating contextually appropriate interactions. With all the modules cooperating, the framework would empower the agents to provide a better human-like conversation experience. In the second stage of our approach, these conversational data, after filtering and labeling, can serve as training and testing data for reinforcement learning, enabling AI to better capture human preferences. This stage is left for future work.
+  In our experiments, volunteers engaged in over 3000 rounds of conversation with the same AI character powered by a standalone LLM and our framework which integrates the same LLM. A separate group of evaluators rated the conversation samples, revealing that our framework significantly enhanced the social and conversational intelligence, even without fine-tuning the LLM.</description>
+   <guid>oai:arXiv.org:2503.04787v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Fei Wei, Yaliang Li, Bolin Ding</creator>
+  </item>
+  <item>
+   <title>FedPalm: A General Federated Learning Framework for Closed- and Open-Set Palmprint Verification</title>
+   <link>https://arxiv.org/abs/2503.04837</link>
+   <description>Current deep learning (DL)-based palmprint verification models rely on centralized training with large datasets, which raises significant privacy concerns due to biometric data's sensitive and immutable nature. Federated learning~(FL), a privacy-preserving distributed learning paradigm, offers a compelling alternative by enabling collaborative model training without the need for data sharing. However, FL-based palmprint verification faces critical challenges, including data heterogeneity from diverse identities and the absence of standardized evaluation benchmarks. This paper addresses these gaps by establishing a comprehensive benchmark for FL-based palmprint verification, which explicitly defines and evaluates two practical scenarios: closed-set and open-set verification. We propose FedPalm, a unified FL framework that balances local adaptability with global generalization. Each client trains a personalized textural expert tailored to local data and collaboratively contributes to a shared global textural expert for extracting generalized features. To further enhance verification performance, we introduce a Textural Expert Interaction Module that dynamically routes textural features among experts to generate refined side textural features. Learnable parameters are employed to model relationships between original and side features, fostering cross-texture-expert interaction and improving feature discrimination. Extensive experiments validate the effectiveness of FedPalm, demonstrating robust performance across both scenarios and providing a promising foundation for advancing FL-based palmprint verification research.</description>
+   <guid>oai:arXiv.org:2503.04837v1</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ziyuan Yang, Yingyu Chen, Chengrui Gao, Andrew Beng Jin Teoh, Bob Zhang, Yi Zhang</creator>
+  </item>
+  <item>
+   <title>Incentivizing Multi-Tenant Split Federated Learning for Foundation Models at the Network Edge</title>
+   <link>https://arxiv.org/abs/2503.04971</link>
+   <description>Foundation models (FMs) such as GPT-4 exhibit exceptional generative capabilities across diverse downstream tasks through fine-tuning. Split Federated Learning (SFL) facilitates privacy-preserving FM fine-tuning on resource-constrained local devices by offloading partial FM computations to edge servers, enabling device-edge synergistic fine-tuning. Practical edge networks often host multiple SFL tenants to support diversified downstream tasks. However, existing research primarily focuses on single-tenant SFL scenarios, and lacks tailored incentive mechanisms for multi-tenant settings, which are essential to effectively coordinate self-interested local devices for participation in various downstream tasks, ensuring that each SFL tenant's distinct FM fine-tuning requirements (e.g., FM types, performance targets, and fine-tuning deadlines) are met. To address this gap, we propose a novel Price-Incentive Mechanism (PRINCE) that guides multiple SFL tenants to offer strategic price incentives, which solicit high-quality device participation for efficient FM fine-tuning. Specifically, we first develop a bias-resilient global SFL model aggregation scheme to eliminate model biases caused by independent device participation. We then derive a rigorous SFL convergence bound to evaluate the contributions of heterogeneous devices to FM performance improvements, guiding the incentive strategies of SFL tenants. Furthermore, we model inter-tenant device competition as a congestion game for Stackelberg equilibrium (SE) analysis, deriving each SFL tenant's optimal incentive strategy. Extensive simulations involving four representative SFL tenant types (ViT, BERT, Whisper, and LLaMA) across diverse data modalities (text, images, and audio) demonstrate that PRINCE accelerates FM fine-tuning by up to 3.07x compared to state-of-the-art approaches, while consistently meeting fine-tuning performance targets.</description>
+   <guid>oai:arXiv.org:2503.04971v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Songyuan Li, Jia Hu, Geyong Min, Haojun Huang</creator>
+  </item>
+  <item>
+   <title>PromptPex: Automatic Test Generation for Language Model Prompts</title>
+   <link>https://arxiv.org/abs/2503.05070</link>
+   <description>Large language models (LLMs) are being used in many applications and prompts for these models are integrated into software applications as code-like artifacts. These prompts behave much like traditional software in that they take inputs, generate outputs, and perform some specific function. However, prompts differ from traditional code in many ways and require new approaches to ensure that they are robust. For example, unlike traditional software the output of a prompt depends on the AI model that interprets it. Also, while natural language prompts are easy to modify, the impact of updates is harder to predict. New approaches to testing, debugging, and modifying prompts with respect to the model running them are required.
+  To address some of these issues, we developed PromptPex, an LLM-based tool to automatically generate and evaluate unit tests for a given prompt. PromptPex extracts input and output specifications from a prompt and uses them to generate diverse, targeted, and valid unit tests. These tests are instrumental in identifying regressions when a prompt is changed and also serve as a tool to understand how prompts are interpreted by different models. We use PromptPex to generate tests for eight benchmark prompts and evaluate the quality of the generated tests by seeing if they can cause each of four diverse models to produce invalid output. PromptPex consistently creates tests that result in more invalid model outputs than a carefully constructed baseline LLM-based test generator. Furthermore, by extracting concrete specifications from the input prompt, PromptPex allows prompt writers to clearly understand and test specific aspects of their prompts. The source code of PromptPex is available at https://github.com/microsoft/promptpex.</description>
+   <guid>oai:arXiv.org:2503.05070v1</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Reshabh K Sharma, Jonathan De Halleux, Shraddha Barke, Benjamin Zorn</creator>
+  </item>
+  <item>
+   <title>Uncertainty-Aware Explainable Federated Learning</title>
+   <link>https://arxiv.org/abs/2503.05194</link>
+   <description>Federated Learning (FL) is a collaborative machine learning paradigm for enhancing data privacy preservation. Its privacy-preserving nature complicates the explanation of the decision-making processes and the evaluation of the reliability of the generated explanations. In this paper, we propose the Uncertainty-aware eXplainable Federated Learning (UncertainXFL) to address these challenges. It generates explanations for decision-making processes under FL settings and provides information regarding the uncertainty of these explanations. UncertainXFL is the first framework to explicitly offer uncertainty evaluation for explanations within the FL context. Explanatory information is initially generated by the FL clients and then aggregated by the server in a comprehensive and conflict-free manner during FL training. The quality of the explanations, including the uncertainty score and tested validity, guides the FL training process by prioritizing clients with the most reliable explanations through higher weights during model aggregation. Extensive experimental evaluation results demonstrate that UncertainXFL achieves superior model accuracy and explanation accuracy, surpassing the current state-of-the-art model that does not incorporate uncertainty information by 2.71% and 1.77%, respectively. By integrating and quantifying uncertainty in the data into the explanation process, UncertainXFL not only clearly presents the explanation alongside its uncertainty, but also leverages this uncertainty to guide the FL training process, thereby enhancing the robustness and reliability of the resulting models.</description>
+   <guid>oai:arXiv.org:2503.05194v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yanci Zhang, Han Yu</creator>
+  </item>
+  <item>
+   <title>Personalized Federated Learning via Learning Dynamic Graphs</title>
+   <link>https://arxiv.org/abs/2503.05474</link>
+   <description>Personalized Federated Learning (PFL) aims to train a personalized model for each client that is tailored to its local data distribution, learning fails to perform well on individual clients due to variations in their local data distributions. Most existing PFL methods focus on personalizing the aggregated global model for each client, neglecting the fundamental aspect of federated learning: the regulation of how client models are aggregated. Additionally, almost all of them overlook the graph structure formed by clients in federated learning. In this paper, we propose a novel method, Personalized Federated Learning with Graph Attention Network (pFedGAT), which captures the latent graph structure between clients and dynamically determines the importance of other clients for each client, enabling fine-grained control over the aggregation process. We evaluate pFedGAT across multiple data distribution scenarios, comparing it with twelve state of the art methods on three datasets: Fashion MNIST, CIFAR-10, and CIFAR-100, and find that it consistently performs well.</description>
+   <guid>oai:arXiv.org:2503.05474v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ziran Zhou, Guanyu Gao, Xiaohu Wu, Yan Lyu</creator>
+  </item>
+  <item>
+   <title>MeanCache: User-Centric Semantic Caching for LLM Web Services</title>
+   <link>https://arxiv.org/abs/2403.02694</link>
+   <description>Large Language Models (LLMs) like ChatGPT and Llama have revolutionized natural language processing and search engine dynamics. However, these models incur exceptionally high computational costs. For instance, GPT-3 consists of 175 billion parameters, where inference demands billions of floating-point operations. Caching is a natural solution to reduce LLM inference costs on repeated queries, which constitute about 31% of the total queries. However, existing caching methods are incapable of finding semantic similarities among LLM queries nor do they operate on contextual queries, leading to unacceptable false hit-and-miss rates. This paper introduces MeanCache, a user-centric semantic cache for LLM-based services that identifies semantically similar queries to determine cache hit or miss. Using MeanCache, the response to a user's semantically similar query can be retrieved from a local cache rather than re-querying the LLM, thus reducing costs, service provider load, and environmental impact. MeanCache leverages Federated Learning (FL) to collaboratively train a query similarity model without violating user privacy. By placing a local cache in each user's device and using FL, MeanCache reduces the latency and costs and enhances model performance, resulting in lower false hit rates. MeanCache also encodes context chains for every cached query, offering a simple yet highly effective mechanism to discern contextual query responses from standalone. Our experiments benchmarked against the state-of-the-art caching method, reveal that MeanCache attains an approximately 17% higher F-score and a 20% increase in precision during semantic cache hit-and-miss decisions while performing even better on contextual queries. It also reduces the storage requirement by 83% and accelerates semantic cache hit-and-miss decisions by 11%.</description>
+   <guid>oai:arXiv.org:2403.02694v4</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Waris Gill (Virginia Tech, USA), Mohamed Elidrisi (Cisco, USA), Pallavi Kalapatapu (Cisco, USA), Ammar Ahmed (University of Minnesota, Minneapolis, USA), Ali Anwar (University of Minnesota, Minneapolis, USA), Muhammad Ali Gulzar (Virginia Tech, USA)</creator>
+  </item>
+  <item>
+   <title>VernaCopter: Disambiguated Natural-Language-Driven Robot via Formal Specifications</title>
+   <link>https://arxiv.org/abs/2409.09536</link>
+   <description>It has been an ambition of many to control a robot for a complex task using natural language (NL). The rise of large language models (LLMs) makes it closer to coming true. However, an LLM-powered system still suffers from the ambiguity inherent in an NL and the uncertainty brought up by LLMs. This paper proposes a novel LLM-based robot motion planner, named \textit{VernaCopter}, with signal temporal logic (STL) specifications serving as a bridge between NL commands and specific task objectives. The rigorous and abstract nature of formal specifications allows the planner to generate high-quality and highly consistent paths to guide the motion control of a robot. Compared to a conventional NL-prompting-based planner, the proposed VernaCopter planner is more stable and reliable due to less ambiguous uncertainty. Its efficacy and advantage have been validated by two small but challenging experimental scenarios, implying its potential in designing NL-driven robots.</description>
+   <guid>oai:arXiv.org:2409.09536v2</guid>
+   <category>cs.RO</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Teun van de Laar, Zengjie Zhang, Shuhao Qi, Sofie Haesaert, Zhiyong Sun</creator>
+  </item>
+  <item>
+   <title>DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios</title>
+   <link>https://arxiv.org/abs/2410.23746</link>
+   <description>Detecting text generated by large language models (LLMs) is of great recent interest. With zero-shot methods like DetectGPT, detection capabilities have reached impressive levels. However, the reliability of existing detectors in real-world applications remains underexplored. In this study, we present a new benchmark, DetectRL, highlighting that even state-of-the-art (SOTA) detection techniques still underperformed in this task. We collected human-written datasets from domains where LLMs are particularly prone to misuse. Using popular LLMs, we generated data that better aligns with real-world applications. Unlike previous studies, we employed heuristic rules to create adversarial LLM-generated text, simulating various prompts usages, human revisions like word substitutions, and writing noises like spelling mistakes. Our development of DetectRL reveals the strengths and limitations of current SOTA detectors. More importantly, we analyzed the potential impact of writing styles, model types, attack methods, the text lengths, and real-world human writing factors on different types of detectors. We believe DetectRL could serve as an effective benchmark for assessing detectors in real-world scenarios, evolving with advanced attack methods, thus providing more stressful evaluation to drive the development of more efficient detectors. Data and code are publicly available at: https://github.com/NLP2CT/DetectRL.</description>
+   <guid>oai:arXiv.org:2410.23746v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Junchao Wu, Runzhe Zhan, Derek F. Wong, Shu Yang, Xinyi Yang, Yulin Yuan, Lidia S. Chao</creator>
+  </item>
+  <item>
+   <title>Knowledge Augmentation in Federation: Rethinking What Collaborative Learning Can Bring Back to Decentralized Data</title>
+   <link>https://arxiv.org/abs/2503.03140</link>
+   <description>Data, as an observable form of knowledge, has become one of the most important factors of production for the development of Artificial Intelligence (AI). Meanwhile, increasing legislation and regulations on private and proprietary information results in scattered data sources also known as the &quot;data islands&quot;. Although some collaborative learning paradigms such as Federated Learning (FL) can enable privacy-preserving training over decentralized data, they have inherent deficiencies in fairness, costs and reproducibility because of being learning-centric, which greatly limits the way how participants cooperate with each other. In light of this, we present a knowledge-centric paradigm termed Knowledge Augmentation in Federation (KAF), with focus on how to enhance local knowledge through collaborative effort. We provide the suggested system architecture, formulate the prototypical optimization objective, and review emerging studies that employ methodologies suitable for KAF. On our roadmap, with a three-way categorization we describe the methods for knowledge expansion, knowledge filtering, and label and feature space correction in the federation. Further, we highlight several challenges and open questions that deserve more attention from the community. With our investigation, we intend to offer new insights for what collaborative learning can bring back to decentralized data.</description>
+   <guid>oai:arXiv.org:2503.03140v2</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Wentai Wu, Ligang He, Saiqin Long, Ahmed M. Abdelmoniem, Yingliang Wu, Rui Mao</creator>
+  </item>
+  <item>
+   <title>Speculative MoE: Communication Efficient Parallel MoE Inference with Speculative Token and Expert Pre-scheduling</title>
+   <link>https://arxiv.org/abs/2503.04398</link>
+   <description>MoE (Mixture of Experts) prevails as a neural architecture that can scale modern transformer-based LLMs (Large Language Models) to unprecedented scales. Nevertheless, large MoEs' great demands of computing power, memory capacity and memory bandwidth make scalable serving a fundamental challenge and efficient parallel inference has become a requisite to attain adequate throughput under latency constraints. DeepSpeed-MoE, one state-of-the-art MoE inference framework, adopts a 3D-parallel paradigm including EP (Expert Parallelism), TP (Tensor Parallel) and DP (Data Parallelism). However, our analysis shows DeepSpeed-MoE's inference efficiency is largely bottlenecked by EP, which is implemented with costly all-to-all collectives to route token activation. Our work aims to boost DeepSpeed-MoE by strategically reducing EP's communication overhead with a technique named Speculative MoE. Speculative MoE has two speculative parallelization schemes, speculative token shuffling and speculative expert grouping, which predict outstanding tokens' expert routing paths and pre-schedule tokens and experts across devices to losslessly trim EP's communication volume. Besides DeepSpeed-MoE, we also build Speculative MoE into a prevailing MoE inference engine SGLang. Experiments show Speculative MoE can significantly boost state-of-the-art MoE inference frameworks on fast homogeneous and slow heterogeneous interconnects.</description>
+   <guid>oai:arXiv.org:2503.04398v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yan Li, Pengfei Zheng, Shuang Chen, Zewei Xu, Yuanhao Lai, Yunfei Du, Zhengang Wang</creator>
+  </item>
+  <item>
+   <title>Fundamental Limits of Hierarchical Secure Aggregation with Cyclic User Association</title>
+   <link>https://arxiv.org/abs/2503.04564</link>
+   <description>Secure aggregation is motivated by federated learning (FL) where a cloud server aims to compute an averaged model (i.e., weights of deep neural networks) of the locally-trained models of numerous clients, while adhering to data security requirements. Hierarchical secure aggregation (HSA) extends this concept to a three-layer network, where clustered users communicate with the server through an intermediate layer of relays. In HSA, beyond conventional server security, relay security is also enforced to ensure that the relays remain oblivious to the users' inputs (an abstraction of the local models in FL). Existing study on HSA assumes that each user is associated with only one relay, limiting opportunities for coding across inter-cluster users to achieve efficient communication and key generation. In this paper, we consider HSA with a cyclic association pattern where each user is connected to $B$ consecutive relays in a wrap-around manner. We propose an efficient aggregation scheme which includes a message design for the inputs inspired by gradient coding-a well-known technique for efficient communication in distributed computing-along with a highly nontrivial security key design. We also derive novel converse bounds on the minimum achievable communication and key rates using information-theoretic arguments.</description>
+   <guid>oai:arXiv.org:2503.04564v2</guid>
+   <category>cs.IT</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xiang Zhang, Zhou Li, Kai Wan, Hua Sun, Mingyue Ji, Giuseppe Caire</creator>
+  </item>
+  <item>
+   <title>ECCOS: Efficient Capability and Cost Coordinated Scheduling for Multi-LLM Serving</title>
+   <link>https://arxiv.org/abs/2502.20576</link>
+   <description>As large language models (LLMs) are increasingly deployed as service endpoints in systems, the surge in query volume creates significant scheduling challenges. Existing scheduling frameworks mainly target at latency optimization while neglecting the capability of LLMs to serve different level of queries, which could lead to computational resource waste. This paper addresses this challenge by proposing a capability-cost coordinated scheduling framework, ECCOS, for multi-LLM serving, which explicitly constrains response quality and workload to optimize LLM inference cost. Specifically, it introduces the two-stage scheduling by designing a multi-objective predictor and a constrained optimizer. The predictor estimates both model capabilities and computational costs through training-based and retrieval-based approaches, while the optimizer determines cost-optimal assignments under quality and workload constraints. It also introduces QAServe, a dataset collected for sample-wise response quality and costs by zero-shot prompting different LLMs on knowledge QA and mathematical reasoning. Extensive experiments demonstrate that ECCOS improves success rates by 6.30% while reducing costs by 10.15% compared to existing methods, consuming less than 0.5% of LLM response time. The code is available at: https://github.com/agiresearch/ECCOS.</description>
+   <guid>oai:arXiv.org:2502.20576v2</guid>
+   <category>cs.DB</category>
+   <category>cs.CL</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Kai Mei, Wujiang Xu, Shuhang Lin, Yongfeng Zhang</creator>
+  </item>
+  <item>
+   <title>Dilu: Enabling GPU Resourcing-on-Demand for Serverless DL Serving via Introspective Elasticity</title>
+   <link>https://arxiv.org/abs/2503.05130</link>
+   <description>Serverless computing, with its ease of management, auto-scaling, and cost-effectiveness, is widely adopted by deep learning (DL) applications. DL workloads, especially with large language models, require substantial GPU resources to ensure QoS. However, it is prone to produce GPU fragments (e.g., 15\%-94\%) in serverless DL systems due to the dynamicity of workloads and coarse-grained static GPU allocation mechanisms, gradually eroding the profits offered by serverless elasticity.
+  Different from classical serverless systems that only scale horizontally, we present introspective elasticity (IE), a fine-grained and adaptive two-dimensional co-scaling mechanism to support GPU resourcing-on-demand for serverless DL tasks. Based on this insight, we build Dilu, a cross-layer and GPU-based serverless DL system with IE support. First, Dilu provides multi-factor profiling for DL tasks with efficient pruning search methods. Second, Dilu adheres to the resourcing-complementary principles in scheduling to improve GPU utilization with QoS guarantees. Third, Dilu adopts an adaptive 2D co-scaling method to enhance the elasticity of GPU provisioning in real time. Evaluations show that it can dynamically adjust the resourcing of various DL functions with low GPU fragmentation (10\%-46\% GPU defragmentation), high throughput (up to 1.8$\times$ inference and 1.1$\times$ training throughput increment) and QoS guarantees (11\%-71\% violation rate reduction), compared to the SOTA baselines.</description>
+   <guid>oai:arXiv.org:2503.05130v1</guid>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Cunchi Lv, Xiao Shi, Zhengyu Lei, Jinyue Huang, Wenting Tan, Xiaohui Zheng, Xiaofang Zhao</creator>
+  </item>
+  <item>
+   <title>Optimizing LLM Inference Throughput via Memory-aware and SLA-constrained Dynamic Batching</title>
+   <link>https://arxiv.org/abs/2503.05248</link>
+   <description>The increasing adoption of large language models (LLMs) necessitates inference serving systems that can deliver both high throughput and low latency. Deploying LLMs with hundreds of billions of parameters on memory-constrained GPUs exposes significant limitations in static batching methods. Current inference serving systems often treat batch sizes as fixed hyper-parameters, hindering real-time adaptation to varying system conditions. In this paper, we propose a dynamic batching method that continuously monitors memory utilization and adheres to service-level agreements (SLAs) to enable real-time batch size configuration adjustment. The method comprises two core components: a memory-aware batch scheduler that dynamically allocates GPU resources and a latency feedback mechanism that optimizes decoding processes under SLA constraints. The numerical experiments demonstrate throughput gains of 8% to 28% and capacity improvements of 22% compared to traditional static batching methods, while maintaining full compatibility with existing inference infrastructure. These results highlight the effectiveness of dynamic batching in balancing computational efficiency and quality-of-service requirements for contemporary LLM deployment scenarios. The source code of this work is publicly available at https://github.com/KevinLee1110/dynamic-batching.</description>
+   <guid>oai:arXiv.org:2503.05248v1</guid>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Bowen Pang, Kai Li, Feifan Wang</creator>
+  </item>
+  <item>
+   <title>Practical Federated Learning without a Server</title>
+   <link>https://arxiv.org/abs/2503.05509</link>
+   <description>Federated Learning (FL) enables end-user devices to collaboratively train ML models without sharing raw data, thereby preserving data privacy. In FL, a central parameter server coordinates the learning process by iteratively aggregating the trained models received from clients. Yet, deploying a central server is not always feasible due to hardware unavailability, infrastructure constraints, or operational costs. We present Plexus, a fully decentralized FL system for large networks that operates without the drawbacks originating from having a central server. Plexus distributes the responsibilities of model aggregation and sampling among participating nodes while avoiding network-wide coordination. We evaluate Plexus using realistic traces for compute speed, pairwise latency and network capacity. Our experiments on three common learning tasks and with up to 1000 nodes empirically show that Plexus reduces time-to-accuracy by 1.4-1.6x, communication volume by 15.8-292x and training resources needed for convergence by 30.5-77.9x compared to conventional decentralized learning algorithms.</description>
+   <guid>oai:arXiv.org:2503.05509v1</guid>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Akash Dhasade, Anne-Marie Kermarrec, Erick Lavoie, Johan Pouwelse, Rishi Sharma, Martijn de Vos</creator>
+  </item>
+  <item>
+   <title>Incentivizing Multi-Tenant Split Federated Learning for Foundation Models at the Network Edge</title>
+   <link>https://arxiv.org/abs/2503.04971</link>
+   <description>Foundation models (FMs) such as GPT-4 exhibit exceptional generative capabilities across diverse downstream tasks through fine-tuning. Split Federated Learning (SFL) facilitates privacy-preserving FM fine-tuning on resource-constrained local devices by offloading partial FM computations to edge servers, enabling device-edge synergistic fine-tuning. Practical edge networks often host multiple SFL tenants to support diversified downstream tasks. However, existing research primarily focuses on single-tenant SFL scenarios, and lacks tailored incentive mechanisms for multi-tenant settings, which are essential to effectively coordinate self-interested local devices for participation in various downstream tasks, ensuring that each SFL tenant's distinct FM fine-tuning requirements (e.g., FM types, performance targets, and fine-tuning deadlines) are met. To address this gap, we propose a novel Price-Incentive Mechanism (PRINCE) that guides multiple SFL tenants to offer strategic price incentives, which solicit high-quality device participation for efficient FM fine-tuning. Specifically, we first develop a bias-resilient global SFL model aggregation scheme to eliminate model biases caused by independent device participation. We then derive a rigorous SFL convergence bound to evaluate the contributions of heterogeneous devices to FM performance improvements, guiding the incentive strategies of SFL tenants. Furthermore, we model inter-tenant device competition as a congestion game for Stackelberg equilibrium (SE) analysis, deriving each SFL tenant's optimal incentive strategy. Extensive simulations involving four representative SFL tenant types (ViT, BERT, Whisper, and LLaMA) across diverse data modalities (text, images, and audio) demonstrate that PRINCE accelerates FM fine-tuning by up to 3.07x compared to state-of-the-art approaches, while consistently meeting fine-tuning performance targets.</description>
+   <guid>oai:arXiv.org:2503.04971v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Songyuan Li, Jia Hu, Geyong Min, Haojun Huang</creator>
+  </item>
+  <item>
+   <title>Uncertainty-Aware Explainable Federated Learning</title>
+   <link>https://arxiv.org/abs/2503.05194</link>
+   <description>Federated Learning (FL) is a collaborative machine learning paradigm for enhancing data privacy preservation. Its privacy-preserving nature complicates the explanation of the decision-making processes and the evaluation of the reliability of the generated explanations. In this paper, we propose the Uncertainty-aware eXplainable Federated Learning (UncertainXFL) to address these challenges. It generates explanations for decision-making processes under FL settings and provides information regarding the uncertainty of these explanations. UncertainXFL is the first framework to explicitly offer uncertainty evaluation for explanations within the FL context. Explanatory information is initially generated by the FL clients and then aggregated by the server in a comprehensive and conflict-free manner during FL training. The quality of the explanations, including the uncertainty score and tested validity, guides the FL training process by prioritizing clients with the most reliable explanations through higher weights during model aggregation. Extensive experimental evaluation results demonstrate that UncertainXFL achieves superior model accuracy and explanation accuracy, surpassing the current state-of-the-art model that does not incorporate uncertainty information by 2.71% and 1.77%, respectively. By integrating and quantifying uncertainty in the data into the explanation process, UncertainXFL not only clearly presents the explanation alongside its uncertainty, but also leverages this uncertainty to guide the FL training process, thereby enhancing the robustness and reliability of the resulting models.</description>
+   <guid>oai:arXiv.org:2503.05194v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yanci Zhang, Han Yu</creator>
+  </item>
+  <item>
+   <title>Knowledge Augmentation in Federation: Rethinking What Collaborative Learning Can Bring Back to Decentralized Data</title>
+   <link>https://arxiv.org/abs/2503.03140</link>
+   <description>Data, as an observable form of knowledge, has become one of the most important factors of production for the development of Artificial Intelligence (AI). Meanwhile, increasing legislation and regulations on private and proprietary information results in scattered data sources also known as the &quot;data islands&quot;. Although some collaborative learning paradigms such as Federated Learning (FL) can enable privacy-preserving training over decentralized data, they have inherent deficiencies in fairness, costs and reproducibility because of being learning-centric, which greatly limits the way how participants cooperate with each other. In light of this, we present a knowledge-centric paradigm termed Knowledge Augmentation in Federation (KAF), with focus on how to enhance local knowledge through collaborative effort. We provide the suggested system architecture, formulate the prototypical optimization objective, and review emerging studies that employ methodologies suitable for KAF. On our roadmap, with a three-way categorization we describe the methods for knowledge expansion, knowledge filtering, and label and feature space correction in the federation. Further, we highlight several challenges and open questions that deserve more attention from the community. With our investigation, we intend to offer new insights for what collaborative learning can bring back to decentralized data.</description>
+   <guid>oai:arXiv.org:2503.03140v2</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Wentai Wu, Ligang He, Saiqin Long, Ahmed M. Abdelmoniem, Yingliang Wu, Rui Mao</creator>
+  </item>
+  <item>
+   <title>MeanCache: User-Centric Semantic Caching for LLM Web Services</title>
+   <link>https://arxiv.org/abs/2403.02694</link>
+   <description>Large Language Models (LLMs) like ChatGPT and Llama have revolutionized natural language processing and search engine dynamics. However, these models incur exceptionally high computational costs. For instance, GPT-3 consists of 175 billion parameters, where inference demands billions of floating-point operations. Caching is a natural solution to reduce LLM inference costs on repeated queries, which constitute about 31% of the total queries. However, existing caching methods are incapable of finding semantic similarities among LLM queries nor do they operate on contextual queries, leading to unacceptable false hit-and-miss rates. This paper introduces MeanCache, a user-centric semantic cache for LLM-based services that identifies semantically similar queries to determine cache hit or miss. Using MeanCache, the response to a user's semantically similar query can be retrieved from a local cache rather than re-querying the LLM, thus reducing costs, service provider load, and environmental impact. MeanCache leverages Federated Learning (FL) to collaboratively train a query similarity model without violating user privacy. By placing a local cache in each user's device and using FL, MeanCache reduces the latency and costs and enhances model performance, resulting in lower false hit rates. MeanCache also encodes context chains for every cached query, offering a simple yet highly effective mechanism to discern contextual query responses from standalone. Our experiments benchmarked against the state-of-the-art caching method, reveal that MeanCache attains an approximately 17% higher F-score and a 20% increase in precision during semantic cache hit-and-miss decisions while performing even better on contextual queries. It also reduces the storage requirement by 83% and accelerates semantic cache hit-and-miss decisions by 11%.</description>
+   <guid>oai:arXiv.org:2403.02694v4</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Waris Gill (Virginia Tech, USA), Mohamed Elidrisi (Cisco, USA), Pallavi Kalapatapu (Cisco, USA), Ammar Ahmed (University of Minnesota, Minneapolis, USA), Ali Anwar (University of Minnesota, Minneapolis, USA), Muhammad Ali Gulzar (Virginia Tech, USA)</creator>
+  </item>
+  <item>
+   <title>Speculative MoE: Communication Efficient Parallel MoE Inference with Speculative Token and Expert Pre-scheduling</title>
+   <link>https://arxiv.org/abs/2503.04398</link>
+   <description>MoE (Mixture of Experts) prevails as a neural architecture that can scale modern transformer-based LLMs (Large Language Models) to unprecedented scales. Nevertheless, large MoEs' great demands of computing power, memory capacity and memory bandwidth make scalable serving a fundamental challenge and efficient parallel inference has become a requisite to attain adequate throughput under latency constraints. DeepSpeed-MoE, one state-of-the-art MoE inference framework, adopts a 3D-parallel paradigm including EP (Expert Parallelism), TP (Tensor Parallel) and DP (Data Parallelism). However, our analysis shows DeepSpeed-MoE's inference efficiency is largely bottlenecked by EP, which is implemented with costly all-to-all collectives to route token activation. Our work aims to boost DeepSpeed-MoE by strategically reducing EP's communication overhead with a technique named Speculative MoE. Speculative MoE has two speculative parallelization schemes, speculative token shuffling and speculative expert grouping, which predict outstanding tokens' expert routing paths and pre-schedule tokens and experts across devices to losslessly trim EP's communication volume. Besides DeepSpeed-MoE, we also build Speculative MoE into a prevailing MoE inference engine SGLang. Experiments show Speculative MoE can significantly boost state-of-the-art MoE inference frameworks on fast homogeneous and slow heterogeneous interconnects.</description>
+   <guid>oai:arXiv.org:2503.04398v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yan Li, Pengfei Zheng, Shuang Chen, Zewei Xu, Yuanhao Lai, Yunfei Du, Zhengang Wang</creator>
+  </item>
+  <item>
+   <title>Fundamental Limits of Hierarchical Secure Aggregation with Cyclic User Association</title>
+   <link>https://arxiv.org/abs/2503.04564</link>
+   <description>Secure aggregation is motivated by federated learning (FL) where a cloud server aims to compute an averaged model (i.e., weights of deep neural networks) of the locally-trained models of numerous clients, while adhering to data security requirements. Hierarchical secure aggregation (HSA) extends this concept to a three-layer network, where clustered users communicate with the server through an intermediate layer of relays. In HSA, beyond conventional server security, relay security is also enforced to ensure that the relays remain oblivious to the users' inputs (an abstraction of the local models in FL). Existing study on HSA assumes that each user is associated with only one relay, limiting opportunities for coding across inter-cluster users to achieve efficient communication and key generation. In this paper, we consider HSA with a cyclic association pattern where each user is connected to $B$ consecutive relays in a wrap-around manner. We propose an efficient aggregation scheme which includes a message design for the inputs inspired by gradient coding-a well-known technique for efficient communication in distributed computing-along with a highly nontrivial security key design. We also derive novel converse bounds on the minimum achievable communication and key rates using information-theoretic arguments.</description>
+   <guid>oai:arXiv.org:2503.04564v2</guid>
+   <category>cs.IT</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xiang Zhang, Zhou Li, Kai Wan, Hua Sun, Mingyue Ji, Giuseppe Caire</creator>
+  </item>
+  <item>
+   <title>Personalized Hierarchical Split Federated Learning in Wireless Networks</title>
+   <link>https://arxiv.org/abs/2411.06042</link>
+   <description>Extreme resource constraints make large-scale machine learning (ML) with distributed clients challenging in wireless networks. On the one hand, large-scale ML requires massive information exchange between clients and server(s). On the other hand, these clients have limited battery and computation powers that are often dedicated to operational computations. Split federated learning (SFL) is emerging as a potential solution to mitigate these challenges, by splitting the ML model into client-side and server-side model blocks, where only the client-side block is trained on the client device. However, practical applications require personalized models that are suitable for the client's personal task. Motivated by this, we propose a personalized hierarchical split federated learning (PHSFL) algorithm that is specially designed to achieve better personalization performance. More specially, owing to the fact that regardless of the severity of the statistical data distributions across the clients, many of the features have similar attributes, we only train the body part of the federated learning (FL) model while keeping the (randomly initialized) classifier frozen during the training phase. We first perform extensive theoretical analysis to understand the impact of model splitting and hierarchical model aggregations on the global model. Once the global model is trained, we fine-tune each client classifier to obtain the personalized models. Our empirical findings suggest that while the globally trained model with the untrained classifier performs quite similarly to other existing solutions, the fine-tuned models show significantly improved personalized performance.</description>
+   <guid>oai:arXiv.org:2411.06042v2</guid>
+   <category>cs.LG</category>
+   <category>cs.NI</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Md-Ferdous Pervej, Andreas F. Molisch</creator>
+  </item>
+  <item>
+   <title>Incentivizing Multi-Tenant Split Federated Learning for Foundation Models at the Network Edge</title>
+   <link>https://arxiv.org/abs/2503.04971</link>
+   <description>Foundation models (FMs) such as GPT-4 exhibit exceptional generative capabilities across diverse downstream tasks through fine-tuning. Split Federated Learning (SFL) facilitates privacy-preserving FM fine-tuning on resource-constrained local devices by offloading partial FM computations to edge servers, enabling device-edge synergistic fine-tuning. Practical edge networks often host multiple SFL tenants to support diversified downstream tasks. However, existing research primarily focuses on single-tenant SFL scenarios, and lacks tailored incentive mechanisms for multi-tenant settings, which are essential to effectively coordinate self-interested local devices for participation in various downstream tasks, ensuring that each SFL tenant's distinct FM fine-tuning requirements (e.g., FM types, performance targets, and fine-tuning deadlines) are met. To address this gap, we propose a novel Price-Incentive Mechanism (PRINCE) that guides multiple SFL tenants to offer strategic price incentives, which solicit high-quality device participation for efficient FM fine-tuning. Specifically, we first develop a bias-resilient global SFL model aggregation scheme to eliminate model biases caused by independent device participation. We then derive a rigorous SFL convergence bound to evaluate the contributions of heterogeneous devices to FM performance improvements, guiding the incentive strategies of SFL tenants. Furthermore, we model inter-tenant device competition as a congestion game for Stackelberg equilibrium (SE) analysis, deriving each SFL tenant's optimal incentive strategy. Extensive simulations involving four representative SFL tenant types (ViT, BERT, Whisper, and LLaMA) across diverse data modalities (text, images, and audio) demonstrate that PRINCE accelerates FM fine-tuning by up to 3.07x compared to state-of-the-art approaches, while consistently meeting fine-tuning performance targets.</description>
+   <guid>oai:arXiv.org:2503.04971v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Songyuan Li, Jia Hu, Geyong Min, Haojun Huang</creator>
+  </item>
+  <item>
+   <title>Federated Multi-Agent Mapping for Planetary Exploration</title>
+   <link>https://arxiv.org/abs/2404.02289</link>
+   <description>Multi-agent robotic exploration stands to play an important role in space exploration as the next generation of robotic systems ventures to far-flung environments. A key challenge in this new paradigm will be to effectively share and utilize the vast amount of data generated onboard while operating in bandwidth-constrained regimes typical of space missions. Federated learning (FL) is a promising tool for bridging this gap. Drawing inspiration from the upcoming CADRE Lunar rover mission, we propose a federated multi-agent mapping approach that jointly trains a global map model across agents without transmitting raw data. Our method leverages implicit neural mapping to generate parsimonious, adaptable representations, reducing data transmission by up to 93.8% compared to raw maps. Furthermore, we enhance this approach with meta-initialization on Earth-based traversability datasets to significantly accelerate map convergence; reducing iterations required to reach target performance by 80% compared to random initialization. We demonstrate the efficacy of our approach on Martian terrains and glacier datasets, achieving downstream path planning F1 scores as high as 0.95 while outperforming on map reconstruction losses.</description>
+   <guid>oai:arXiv.org:2404.02289v3</guid>
+   <category>cs.RO</category>
+   <category>cs.LG</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Tiberiu-Ioan Szatmari, Abhishek Cauligi</creator>
+  </item>
+  <item>
+   <title>Federated Multi-Agent Mapping for Planetary Exploration</title>
+   <link>https://arxiv.org/abs/2404.02289</link>
+   <description>Multi-agent robotic exploration stands to play an important role in space exploration as the next generation of robotic systems ventures to far-flung environments. A key challenge in this new paradigm will be to effectively share and utilize the vast amount of data generated onboard while operating in bandwidth-constrained regimes typical of space missions. Federated learning (FL) is a promising tool for bridging this gap. Drawing inspiration from the upcoming CADRE Lunar rover mission, we propose a federated multi-agent mapping approach that jointly trains a global map model across agents without transmitting raw data. Our method leverages implicit neural mapping to generate parsimonious, adaptable representations, reducing data transmission by up to 93.8% compared to raw maps. Furthermore, we enhance this approach with meta-initialization on Earth-based traversability datasets to significantly accelerate map convergence; reducing iterations required to reach target performance by 80% compared to random initialization. We demonstrate the efficacy of our approach on Martian terrains and glacier datasets, achieving downstream path planning F1 scores as high as 0.95 while outperforming on map reconstruction losses.</description>
+   <guid>oai:arXiv.org:2404.02289v3</guid>
+   <category>cs.RO</category>
+   <category>cs.LG</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Tiberiu-Ioan Szatmari, Abhishek Cauligi</creator>
+  </item>
+  <item>
+   <title>VernaCopter: Disambiguated Natural-Language-Driven Robot via Formal Specifications</title>
+   <link>https://arxiv.org/abs/2409.09536</link>
+   <description>It has been an ambition of many to control a robot for a complex task using natural language (NL). The rise of large language models (LLMs) makes it closer to coming true. However, an LLM-powered system still suffers from the ambiguity inherent in an NL and the uncertainty brought up by LLMs. This paper proposes a novel LLM-based robot motion planner, named \textit{VernaCopter}, with signal temporal logic (STL) specifications serving as a bridge between NL commands and specific task objectives. The rigorous and abstract nature of formal specifications allows the planner to generate high-quality and highly consistent paths to guide the motion control of a robot. Compared to a conventional NL-prompting-based planner, the proposed VernaCopter planner is more stable and reliable due to less ambiguous uncertainty. Its efficacy and advantage have been validated by two small but challenging experimental scenarios, implying its potential in designing NL-driven robots.</description>
+   <guid>oai:arXiv.org:2409.09536v2</guid>
+   <category>cs.RO</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Teun van de Laar, Zengjie Zhang, Shuhao Qi, Sofie Haesaert, Zhiyong Sun</creator>
+  </item>
+  <item>
+   <title>Incentivizing Multi-Tenant Split Federated Learning for Foundation Models at the Network Edge</title>
+   <link>https://arxiv.org/abs/2503.04971</link>
+   <description>Foundation models (FMs) such as GPT-4 exhibit exceptional generative capabilities across diverse downstream tasks through fine-tuning. Split Federated Learning (SFL) facilitates privacy-preserving FM fine-tuning on resource-constrained local devices by offloading partial FM computations to edge servers, enabling device-edge synergistic fine-tuning. Practical edge networks often host multiple SFL tenants to support diversified downstream tasks. However, existing research primarily focuses on single-tenant SFL scenarios, and lacks tailored incentive mechanisms for multi-tenant settings, which are essential to effectively coordinate self-interested local devices for participation in various downstream tasks, ensuring that each SFL tenant's distinct FM fine-tuning requirements (e.g., FM types, performance targets, and fine-tuning deadlines) are met. To address this gap, we propose a novel Price-Incentive Mechanism (PRINCE) that guides multiple SFL tenants to offer strategic price incentives, which solicit high-quality device participation for efficient FM fine-tuning. Specifically, we first develop a bias-resilient global SFL model aggregation scheme to eliminate model biases caused by independent device participation. We then derive a rigorous SFL convergence bound to evaluate the contributions of heterogeneous devices to FM performance improvements, guiding the incentive strategies of SFL tenants. Furthermore, we model inter-tenant device competition as a congestion game for Stackelberg equilibrium (SE) analysis, deriving each SFL tenant's optimal incentive strategy. Extensive simulations involving four representative SFL tenant types (ViT, BERT, Whisper, and LLaMA) across diverse data modalities (text, images, and audio) demonstrate that PRINCE accelerates FM fine-tuning by up to 3.07x compared to state-of-the-art approaches, while consistently meeting fine-tuning performance targets.</description>
+   <guid>oai:arXiv.org:2503.04971v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Songyuan Li, Jia Hu, Geyong Min, Haojun Huang</creator>
+  </item>
+  <item>
+   <title>Uncertainty-Aware Explainable Federated Learning</title>
+   <link>https://arxiv.org/abs/2503.05194</link>
+   <description>Federated Learning (FL) is a collaborative machine learning paradigm for enhancing data privacy preservation. Its privacy-preserving nature complicates the explanation of the decision-making processes and the evaluation of the reliability of the generated explanations. In this paper, we propose the Uncertainty-aware eXplainable Federated Learning (UncertainXFL) to address these challenges. It generates explanations for decision-making processes under FL settings and provides information regarding the uncertainty of these explanations. UncertainXFL is the first framework to explicitly offer uncertainty evaluation for explanations within the FL context. Explanatory information is initially generated by the FL clients and then aggregated by the server in a comprehensive and conflict-free manner during FL training. The quality of the explanations, including the uncertainty score and tested validity, guides the FL training process by prioritizing clients with the most reliable explanations through higher weights during model aggregation. Extensive experimental evaluation results demonstrate that UncertainXFL achieves superior model accuracy and explanation accuracy, surpassing the current state-of-the-art model that does not incorporate uncertainty information by 2.71% and 1.77%, respectively. By integrating and quantifying uncertainty in the data into the explanation process, UncertainXFL not only clearly presents the explanation alongside its uncertainty, but also leverages this uncertainty to guide the FL training process, thereby enhancing the robustness and reliability of the resulting models.</description>
+   <guid>oai:arXiv.org:2503.05194v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yanci Zhang, Han Yu</creator>
+  </item>
+  <item>
+   <title>Personalized Federated Learning via Learning Dynamic Graphs</title>
+   <link>https://arxiv.org/abs/2503.05474</link>
+   <description>Personalized Federated Learning (PFL) aims to train a personalized model for each client that is tailored to its local data distribution, learning fails to perform well on individual clients due to variations in their local data distributions. Most existing PFL methods focus on personalizing the aggregated global model for each client, neglecting the fundamental aspect of federated learning: the regulation of how client models are aggregated. Additionally, almost all of them overlook the graph structure formed by clients in federated learning. In this paper, we propose a novel method, Personalized Federated Learning with Graph Attention Network (pFedGAT), which captures the latent graph structure between clients and dynamically determines the importance of other clients for each client, enabling fine-grained control over the aggregation process. We evaluate pFedGAT across multiple data distribution scenarios, comparing it with twelve state of the art methods on three datasets: Fashion MNIST, CIFAR-10, and CIFAR-100, and find that it consistently performs well.</description>
+   <guid>oai:arXiv.org:2503.05474v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ziran Zhou, Guanyu Gao, Xiaohu Wu, Yan Lyu</creator>
+  </item>
+  <item>
+   <title>NoT: Federated Unlearning via Weight Negation</title>
+   <link>https://arxiv.org/abs/2503.05657</link>
+   <description>Federated unlearning (FU) aims to remove a participant's data contributions from a trained federated learning (FL) model, ensuring privacy and regulatory compliance. Traditional FU methods often depend on auxiliary storage on either the client or server side or require direct access to the data targeted for removal-a dependency that may not be feasible if the data is no longer available. To overcome these limitations, we propose NoT, a novel and efficient FU algorithm based on weight negation (multiplying by -1), which circumvents the need for additional storage and access to the target data. We argue that effective and efficient unlearning can be achieved by perturbing model parameters away from the set of optimal parameters, yet being well-positioned for quick re-optimization. This technique, though seemingly contradictory, is theoretically grounded: we prove that the weight negation perturbation effectively disrupts inter-layer co-adaptation, inducing unlearning while preserving an approximate optimality property, thereby enabling rapid recovery. Experimental results across three datasets and three model architectures demonstrate that NoT significantly outperforms existing baselines in unlearning efficacy as well as in communication and computational efficiency.</description>
+   <guid>oai:arXiv.org:2503.05657v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yasser H. Khalil, Leo Brunswic, Soufiane Lamghari, Xu Li, Mahdi Beitollahi, Xi Chen</creator>
+  </item>
+  <item>
+   <title>FedMABench: Benchmarking Mobile Agents on Decentralized Heterogeneous User Data</title>
+   <link>https://arxiv.org/abs/2503.05143</link>
+   <description>Mobile agents have attracted tremendous research participation recently. Traditional approaches to mobile agent training rely on centralized data collection, leading to high cost and limited scalability. Distributed training utilizing federated learning offers an alternative by harnessing real-world user data, providing scalability and reducing costs. However, pivotal challenges, including the absence of standardized benchmarks, hinder progress in this field.
+  To tackle the challenges, we introduce FedMABench, the first benchmark for federated training and evaluation of mobile agents, specifically designed for heterogeneous scenarios. FedMABench features 6 datasets with 30+ subsets, 8 federated algorithms, 10+ base models, and over 800 apps across 5 categories, providing a comprehensive framework for evaluating mobile agents across diverse environments. Through extensive experiments, we uncover several key insights: federated algorithms consistently outperform local training; the distribution of specific apps plays a crucial role in heterogeneity; and, even apps from distinct categories can exhibit correlations during training. FedMABench is publicly available at: https://github.com/wwh0411/FedMABench with the datasets at: https://huggingface.co/datasets/wwh0411/FedMABench.</description>
+   <guid>oai:arXiv.org:2503.05143v1</guid>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Wenhao Wang, Zijie Yu, Rui Ye, Jianqing Zhang, Siheng Chen, Yanfeng Wang</creator>
+  </item>
+  <item>
+   <title>MeanCache: User-Centric Semantic Caching for LLM Web Services</title>
+   <link>https://arxiv.org/abs/2403.02694</link>
+   <description>Large Language Models (LLMs) like ChatGPT and Llama have revolutionized natural language processing and search engine dynamics. However, these models incur exceptionally high computational costs. For instance, GPT-3 consists of 175 billion parameters, where inference demands billions of floating-point operations. Caching is a natural solution to reduce LLM inference costs on repeated queries, which constitute about 31% of the total queries. However, existing caching methods are incapable of finding semantic similarities among LLM queries nor do they operate on contextual queries, leading to unacceptable false hit-and-miss rates. This paper introduces MeanCache, a user-centric semantic cache for LLM-based services that identifies semantically similar queries to determine cache hit or miss. Using MeanCache, the response to a user's semantically similar query can be retrieved from a local cache rather than re-querying the LLM, thus reducing costs, service provider load, and environmental impact. MeanCache leverages Federated Learning (FL) to collaboratively train a query similarity model without violating user privacy. By placing a local cache in each user's device and using FL, MeanCache reduces the latency and costs and enhances model performance, resulting in lower false hit rates. MeanCache also encodes context chains for every cached query, offering a simple yet highly effective mechanism to discern contextual query responses from standalone. Our experiments benchmarked against the state-of-the-art caching method, reveal that MeanCache attains an approximately 17% higher F-score and a 20% increase in precision during semantic cache hit-and-miss decisions while performing even better on contextual queries. It also reduces the storage requirement by 83% and accelerates semantic cache hit-and-miss decisions by 11%.</description>
+   <guid>oai:arXiv.org:2403.02694v4</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Waris Gill (Virginia Tech, USA), Mohamed Elidrisi (Cisco, USA), Pallavi Kalapatapu (Cisco, USA), Ammar Ahmed (University of Minnesota, Minneapolis, USA), Ali Anwar (University of Minnesota, Minneapolis, USA), Muhammad Ali Gulzar (Virginia Tech, USA)</creator>
+  </item>
+  <item>
+   <title>Personalized Hierarchical Split Federated Learning in Wireless Networks</title>
+   <link>https://arxiv.org/abs/2411.06042</link>
+   <description>Extreme resource constraints make large-scale machine learning (ML) with distributed clients challenging in wireless networks. On the one hand, large-scale ML requires massive information exchange between clients and server(s). On the other hand, these clients have limited battery and computation powers that are often dedicated to operational computations. Split federated learning (SFL) is emerging as a potential solution to mitigate these challenges, by splitting the ML model into client-side and server-side model blocks, where only the client-side block is trained on the client device. However, practical applications require personalized models that are suitable for the client's personal task. Motivated by this, we propose a personalized hierarchical split federated learning (PHSFL) algorithm that is specially designed to achieve better personalization performance. More specially, owing to the fact that regardless of the severity of the statistical data distributions across the clients, many of the features have similar attributes, we only train the body part of the federated learning (FL) model while keeping the (randomly initialized) classifier frozen during the training phase. We first perform extensive theoretical analysis to understand the impact of model splitting and hierarchical model aggregations on the global model. Once the global model is trained, we fine-tune each client classifier to obtain the personalized models. Our empirical findings suggest that while the globally trained model with the untrained classifier performs quite similarly to other existing solutions, the fine-tuned models show significantly improved personalized performance.</description>
+   <guid>oai:arXiv.org:2411.06042v2</guid>
+   <category>cs.LG</category>
+   <category>cs.NI</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Md-Ferdous Pervej, Andreas F. Molisch</creator>
+  </item>
+  <item>
+   <title>Speculative MoE: Communication Efficient Parallel MoE Inference with Speculative Token and Expert Pre-scheduling</title>
+   <link>https://arxiv.org/abs/2503.04398</link>
+   <description>MoE (Mixture of Experts) prevails as a neural architecture that can scale modern transformer-based LLMs (Large Language Models) to unprecedented scales. Nevertheless, large MoEs' great demands of computing power, memory capacity and memory bandwidth make scalable serving a fundamental challenge and efficient parallel inference has become a requisite to attain adequate throughput under latency constraints. DeepSpeed-MoE, one state-of-the-art MoE inference framework, adopts a 3D-parallel paradigm including EP (Expert Parallelism), TP (Tensor Parallel) and DP (Data Parallelism). However, our analysis shows DeepSpeed-MoE's inference efficiency is largely bottlenecked by EP, which is implemented with costly all-to-all collectives to route token activation. Our work aims to boost DeepSpeed-MoE by strategically reducing EP's communication overhead with a technique named Speculative MoE. Speculative MoE has two speculative parallelization schemes, speculative token shuffling and speculative expert grouping, which predict outstanding tokens' expert routing paths and pre-schedule tokens and experts across devices to losslessly trim EP's communication volume. Besides DeepSpeed-MoE, we also build Speculative MoE into a prevailing MoE inference engine SGLang. Experiments show Speculative MoE can significantly boost state-of-the-art MoE inference frameworks on fast homogeneous and slow heterogeneous interconnects.</description>
+   <guid>oai:arXiv.org:2503.04398v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yan Li, Pengfei Zheng, Shuang Chen, Zewei Xu, Yuanhao Lai, Yunfei Du, Zhengang Wang</creator>
+  </item>
+  <item>
+   <title>Federated Multi-Agent Mapping for Planetary Exploration</title>
+   <link>https://arxiv.org/abs/2404.02289</link>
+   <description>Multi-agent robotic exploration stands to play an important role in space exploration as the next generation of robotic systems ventures to far-flung environments. A key challenge in this new paradigm will be to effectively share and utilize the vast amount of data generated onboard while operating in bandwidth-constrained regimes typical of space missions. Federated learning (FL) is a promising tool for bridging this gap. Drawing inspiration from the upcoming CADRE Lunar rover mission, we propose a federated multi-agent mapping approach that jointly trains a global map model across agents without transmitting raw data. Our method leverages implicit neural mapping to generate parsimonious, adaptable representations, reducing data transmission by up to 93.8% compared to raw maps. Furthermore, we enhance this approach with meta-initialization on Earth-based traversability datasets to significantly accelerate map convergence; reducing iterations required to reach target performance by 80% compared to random initialization. We demonstrate the efficacy of our approach on Martian terrains and glacier datasets, achieving downstream path planning F1 scores as high as 0.95 while outperforming on map reconstruction losses.</description>
+   <guid>oai:arXiv.org:2404.02289v3</guid>
+   <category>cs.RO</category>
+   <category>cs.LG</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Tiberiu-Ioan Szatmari, Abhishek Cauligi</creator>
+  </item>
+  <item>
+   <title>Knowledge Augmentation in Federation: Rethinking What Collaborative Learning Can Bring Back to Decentralized Data</title>
+   <link>https://arxiv.org/abs/2503.03140</link>
+   <description>Data, as an observable form of knowledge, has become one of the most important factors of production for the development of Artificial Intelligence (AI). Meanwhile, increasing legislation and regulations on private and proprietary information results in scattered data sources also known as the &quot;data islands&quot;. Although some collaborative learning paradigms such as Federated Learning (FL) can enable privacy-preserving training over decentralized data, they have inherent deficiencies in fairness, costs and reproducibility because of being learning-centric, which greatly limits the way how participants cooperate with each other. In light of this, we present a knowledge-centric paradigm termed Knowledge Augmentation in Federation (KAF), with focus on how to enhance local knowledge through collaborative effort. We provide the suggested system architecture, formulate the prototypical optimization objective, and review emerging studies that employ methodologies suitable for KAF. On our roadmap, with a three-way categorization we describe the methods for knowledge expansion, knowledge filtering, and label and feature space correction in the federation. Further, we highlight several challenges and open questions that deserve more attention from the community. With our investigation, we intend to offer new insights for what collaborative learning can bring back to decentralized data.</description>
+   <guid>oai:arXiv.org:2503.03140v2</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Wentai Wu, Ligang He, Saiqin Long, Ahmed M. Abdelmoniem, Yingliang Wu, Rui Mao</creator>
+  </item>
+  <item>
+   <title>PromptPex: Automatic Test Generation for Language Model Prompts</title>
+   <link>https://arxiv.org/abs/2503.05070</link>
+   <description>Large language models (LLMs) are being used in many applications and prompts for these models are integrated into software applications as code-like artifacts. These prompts behave much like traditional software in that they take inputs, generate outputs, and perform some specific function. However, prompts differ from traditional code in many ways and require new approaches to ensure that they are robust. For example, unlike traditional software the output of a prompt depends on the AI model that interprets it. Also, while natural language prompts are easy to modify, the impact of updates is harder to predict. New approaches to testing, debugging, and modifying prompts with respect to the model running them are required.
+  To address some of these issues, we developed PromptPex, an LLM-based tool to automatically generate and evaluate unit tests for a given prompt. PromptPex extracts input and output specifications from a prompt and uses them to generate diverse, targeted, and valid unit tests. These tests are instrumental in identifying regressions when a prompt is changed and also serve as a tool to understand how prompts are interpreted by different models. We use PromptPex to generate tests for eight benchmark prompts and evaluate the quality of the generated tests by seeing if they can cause each of four diverse models to produce invalid output. PromptPex consistently creates tests that result in more invalid model outputs than a carefully constructed baseline LLM-based test generator. Furthermore, by extracting concrete specifications from the input prompt, PromptPex allows prompt writers to clearly understand and test specific aspects of their prompts. The source code of PromptPex is available at https://github.com/microsoft/promptpex.</description>
+   <guid>oai:arXiv.org:2503.05070v1</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Reshabh K Sharma, Jonathan De Halleux, Shraddha Barke, Benjamin Zorn</creator>
+  </item>
+  <item>
+   <title>GazeNoter: Co-Piloted AR Note-Taking via Gaze Selection of LLM Suggestions to Match Users' Intentions</title>
+   <link>https://arxiv.org/abs/2407.01161</link>
+   <description>Note-taking is critical during speeches and discussions, serving not only for later summarization and organization but also for real-time question and opinion reminding in question-and-answer sessions or timely contributions in discussions. Manually typing on smartphones for note-taking could be distracting and increase cognitive load for users. While large language models (LLMs) are used to automatically generate summaries and highlights, the content generated by artificial intelligence (AI) may not match users' intentions without user input or interaction. Therefore, we propose an AI-copiloted augmented reality (AR) system, GazeNoter, to allow users to swiftly select diverse LLM-generated suggestions via gaze on an AR headset for real-time note-taking. GazeNoter leverages an AR headset as a medium for users to swiftly adjust the LLM output to match their intentions, forming a user-in-the-loop AI system for both within-context and beyond-context notes. We conducted two user studies to verify the usability of GazeNoter in attending speeches in a static sitting condition and walking meetings and discussions in a mobile walking condition, respectively.</description>
+   <guid>oai:arXiv.org:2407.01161v2</guid>
+   <category>cs.HC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Hsin-Ruey Tsai, Shih-Kang Chiu, Bryan Wang</creator>
+  </item>
+  <item>
+   <title>Towards Anthropomorphic Conversational AI Part I: A Practical Framework</title>
+   <link>https://arxiv.org/abs/2503.04787</link>
+   <description>Large language models (LLMs), due to their advanced natural language capabilities, have seen significant success in applications where the user interface is usually a conversational artificial intelligence (AI) agent and engages the user through multi-round conversations. However, many scenarios require the agents to exhibit stronger social and conversational intelligence and demonstrate more human-like (anthropomorphic) reactions. This is an aspect that foundational LLMs have yet to fully address such that a single call of foundational models might be insufficient.
+  To bridge this gap, we propose a two-stage solution. In this work, we focus on the first stage, introducing a multi-module framework designed to replicate the key aspects of human intelligence involved in conversations. This framework comprises thinking modules for reasoning, resource modules for managing knowledge and external information, and response modules for generating contextually appropriate interactions. With all the modules cooperating, the framework would empower the agents to provide a better human-like conversation experience. In the second stage of our approach, these conversational data, after filtering and labeling, can serve as training and testing data for reinforcement learning, enabling AI to better capture human preferences. This stage is left for future work.
+  In our experiments, volunteers engaged in over 3000 rounds of conversation with the same AI character powered by a standalone LLM and our framework which integrates the same LLM. A separate group of evaluators rated the conversation samples, revealing that our framework significantly enhanced the social and conversational intelligence, even without fine-tuning the LLM.</description>
+   <guid>oai:arXiv.org:2503.04787v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Fei Wei, Yaliang Li, Bolin Ding</creator>
+  </item>
+  <item>
+   <title>DP-GTR: Differentially Private Prompt Protection via Group Text Rewriting</title>
+   <link>https://arxiv.org/abs/2503.04990</link>
+   <description>Prompt privacy is crucial, especially when using online large language models (LLMs), due to the sensitive information often contained within prompts. While LLMs can enhance prompt privacy through text rewriting, existing methods primarily focus on document-level rewriting, neglecting the rich, multi-granular representations of text. This limitation restricts LLM utilization to specific tasks, overlooking their generalization and in-context learning capabilities, thus hindering practical application. To address this gap, we introduce DP-GTR, a novel three-stage framework that leverages local differential privacy (DP) and the composition theorem via group text rewriting. DP-GTR is the first framework to integrate both document-level and word-level information while exploiting in-context learning to simultaneously improve privacy and utility, effectively bridging local and global DP mechanisms at the individual data point level. Experiments on CommonSense QA and DocVQA demonstrate that DP-GTR outperforms existing approaches, achieving a superior privacy-utility trade-off. Furthermore, our framework is compatible with existing rewriting techniques, serving as a plug-in to enhance privacy protection. Our code is publicly available at https://github.com/FatShion-FTD/DP-GTR for reproducibility.</description>
+   <guid>oai:arXiv.org:2503.04990v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Mingchen Li, Heng Fan, Song Fu, Junhua Ding, Yunhe Feng</creator>
+  </item>
+  <item>
+   <title>SpecServe: Efficient and SLO-Aware Large Language Model Serving with Adaptive Speculative Decoding</title>
+   <link>https://arxiv.org/abs/2503.05096</link>
+   <description>Large Language Model (LLM) services often face challenges in achieving low inference latency and meeting Service Level Objectives (SLOs) under dynamic request patterns. Speculative decoding, which exploits lightweight models for drafting and LLMs for verification, has emerged as a compelling technique to accelerate LLM inference. However, existing speculative decoding solutions often fail to adapt to varying workloads and system environments, resulting in performance variability and SLO violations. In this paper, we introduce SpecServe, an efficient LLM inference system that dynamically adjusts speculative strategies according to real-time request loads and system configurations. SpecServe proposes a theoretical model to understand and predict the efficiency of speculative decoding across diverse scenarios. Additionally, it implements intelligent drafting and verification algorithms to guarantee optimal performance while achieving high SLO attainment. Experimental results on real-world LLM traces demonstrate that SpecServe consistently meets SLOs and achieves substantial performance improvements, yielding 1.14$\times$-14.3$\times$ speedups over state-of-the-art speculative inference systems.</description>
+   <guid>oai:arXiv.org:2503.05096v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Kaiyu Huang, Hao Wu, Zhubo Shi, Han Zou, Minchen Yu, Qingjiang Shi</creator>
+  </item>
+  <item>
+   <title>DetectRL: Benchmarking LLM-Generated Text Detection in Real-World Scenarios</title>
+   <link>https://arxiv.org/abs/2410.23746</link>
+   <description>Detecting text generated by large language models (LLMs) is of great recent interest. With zero-shot methods like DetectGPT, detection capabilities have reached impressive levels. However, the reliability of existing detectors in real-world applications remains underexplored. In this study, we present a new benchmark, DetectRL, highlighting that even state-of-the-art (SOTA) detection techniques still underperformed in this task. We collected human-written datasets from domains where LLMs are particularly prone to misuse. Using popular LLMs, we generated data that better aligns with real-world applications. Unlike previous studies, we employed heuristic rules to create adversarial LLM-generated text, simulating various prompts usages, human revisions like word substitutions, and writing noises like spelling mistakes. Our development of DetectRL reveals the strengths and limitations of current SOTA detectors. More importantly, we analyzed the potential impact of writing styles, model types, attack methods, the text lengths, and real-world human writing factors on different types of detectors. We believe DetectRL could serve as an effective benchmark for assessing detectors in real-world scenarios, evolving with advanced attack methods, thus providing more stressful evaluation to drive the development of more efficient detectors. Data and code are publicly available at: https://github.com/NLP2CT/DetectRL.</description>
+   <guid>oai:arXiv.org:2410.23746v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Junchao Wu, Runzhe Zhan, Derek F. Wong, Shu Yang, Xinyi Yang, Yulin Yuan, Lidia S. Chao</creator>
+  </item>
+  <item>
+   <title>START: Self-taught Reasoner with Tools</title>
+   <link>https://arxiv.org/abs/2503.04625</link>
+   <description>Large reasoning models (LRMs) like OpenAI-o1 and DeepSeek-R1 have demonstrated remarkable capabilities in complex reasoning tasks through the utilization of long Chain-of-thought (CoT). However, these models often suffer from hallucinations and inefficiencies due to their reliance solely on internal reasoning processes. In this paper, we introduce START (Self-Taught Reasoner with Tools), a novel tool-integrated long CoT reasoning LLM that significantly enhances reasoning capabilities by leveraging external tools. Through code execution, START is capable of performing complex computations, self-checking, exploring diverse methods, and self-debugging, thereby addressing the limitations of LRMs. The core innovation of START lies in its self-learning framework, which comprises two key techniques: 1) Hint-infer: We demonstrate that inserting artificially designed hints (e.g., ``Wait, maybe using Python here is a good idea.'') during the inference process of a LRM effectively stimulates its ability to utilize external tools without the need for any demonstration data. Hint-infer can also serve as a simple and effective sequential test-time scaling method; 2) Hint Rejection Sampling Fine-Tuning (Hint-RFT): Hint-RFT combines Hint-infer and RFT by scoring, filtering, and modifying the reasoning trajectories with tool invocation generated by a LRM via Hint-infer, followed by fine-tuning the LRM. Through this framework, we have fine-tuned the QwQ-32B model to achieve START. On PhD-level science QA (GPQA), competition-level math benchmarks (AMC23, AIME24, AIME25), and the competition-level code benchmark (LiveCodeBench), START achieves accuracy rates of 63.6%, 95.0%, 66.7%, 47.1%, and 47.3%, respectively. It significantly outperforms the base QwQ-32B and achieves performance comparable to the state-of-the-art open-weight model R1-Distill-Qwen-32B and the proprietary model o1-Preview.</description>
+   <guid>oai:arXiv.org:2503.04625v2</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Chengpeng Li, Mingfeng Xue, Zhenru Zhang, Jiaxi Yang, Beichen Zhang, Xiang Wang, Bowen Yu, Binyuan Hui, Junyang Lin, Dayiheng Liu</creator>
+  </item>
+  <item>
+   <title>MeanCache: User-Centric Semantic Caching for LLM Web Services</title>
+   <link>https://arxiv.org/abs/2403.02694</link>
+   <description>Large Language Models (LLMs) like ChatGPT and Llama have revolutionized natural language processing and search engine dynamics. However, these models incur exceptionally high computational costs. For instance, GPT-3 consists of 175 billion parameters, where inference demands billions of floating-point operations. Caching is a natural solution to reduce LLM inference costs on repeated queries, which constitute about 31% of the total queries. However, existing caching methods are incapable of finding semantic similarities among LLM queries nor do they operate on contextual queries, leading to unacceptable false hit-and-miss rates. This paper introduces MeanCache, a user-centric semantic cache for LLM-based services that identifies semantically similar queries to determine cache hit or miss. Using MeanCache, the response to a user's semantically similar query can be retrieved from a local cache rather than re-querying the LLM, thus reducing costs, service provider load, and environmental impact. MeanCache leverages Federated Learning (FL) to collaboratively train a query similarity model without violating user privacy. By placing a local cache in each user's device and using FL, MeanCache reduces the latency and costs and enhances model performance, resulting in lower false hit rates. MeanCache also encodes context chains for every cached query, offering a simple yet highly effective mechanism to discern contextual query responses from standalone. Our experiments benchmarked against the state-of-the-art caching method, reveal that MeanCache attains an approximately 17% higher F-score and a 20% increase in precision during semantic cache hit-and-miss decisions while performing even better on contextual queries. It also reduces the storage requirement by 83% and accelerates semantic cache hit-and-miss decisions by 11%.</description>
+   <guid>oai:arXiv.org:2403.02694v4</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Waris Gill (Virginia Tech, USA), Mohamed Elidrisi (Cisco, USA), Pallavi Kalapatapu (Cisco, USA), Ammar Ahmed (University of Minnesota, Minneapolis, USA), Ali Anwar (University of Minnesota, Minneapolis, USA), Muhammad Ali Gulzar (Virginia Tech, USA)</creator>
+  </item>
+  <item>
+   <title>ECCOS: Efficient Capability and Cost Coordinated Scheduling for Multi-LLM Serving</title>
+   <link>https://arxiv.org/abs/2502.20576</link>
+   <description>As large language models (LLMs) are increasingly deployed as service endpoints in systems, the surge in query volume creates significant scheduling challenges. Existing scheduling frameworks mainly target at latency optimization while neglecting the capability of LLMs to serve different level of queries, which could lead to computational resource waste. This paper addresses this challenge by proposing a capability-cost coordinated scheduling framework, ECCOS, for multi-LLM serving, which explicitly constrains response quality and workload to optimize LLM inference cost. Specifically, it introduces the two-stage scheduling by designing a multi-objective predictor and a constrained optimizer. The predictor estimates both model capabilities and computational costs through training-based and retrieval-based approaches, while the optimizer determines cost-optimal assignments under quality and workload constraints. It also introduces QAServe, a dataset collected for sample-wise response quality and costs by zero-shot prompting different LLMs on knowledge QA and mathematical reasoning. Extensive experiments demonstrate that ECCOS improves success rates by 6.30% while reducing costs by 10.15% compared to existing methods, consuming less than 0.5% of LLM response time. The code is available at: https://github.com/agiresearch/ECCOS.</description>
+   <guid>oai:arXiv.org:2502.20576v2</guid>
+   <category>cs.DB</category>
+   <category>cs.CL</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Kai Mei, Wujiang Xu, Shuhang Lin, Yongfeng Zhang</creator>
+  </item>
+  <item>
+   <title>Personalized Hierarchical Split Federated Learning in Wireless Networks</title>
+   <link>https://arxiv.org/abs/2411.06042</link>
+   <description>Extreme resource constraints make large-scale machine learning (ML) with distributed clients challenging in wireless networks. On the one hand, large-scale ML requires massive information exchange between clients and server(s). On the other hand, these clients have limited battery and computation powers that are often dedicated to operational computations. Split federated learning (SFL) is emerging as a potential solution to mitigate these challenges, by splitting the ML model into client-side and server-side model blocks, where only the client-side block is trained on the client device. However, practical applications require personalized models that are suitable for the client's personal task. Motivated by this, we propose a personalized hierarchical split federated learning (PHSFL) algorithm that is specially designed to achieve better personalization performance. More specially, owing to the fact that regardless of the severity of the statistical data distributions across the clients, many of the features have similar attributes, we only train the body part of the federated learning (FL) model while keeping the (randomly initialized) classifier frozen during the training phase. We first perform extensive theoretical analysis to understand the impact of model splitting and hierarchical model aggregations on the global model. Once the global model is trained, we fine-tune each client classifier to obtain the personalized models. Our empirical findings suggest that while the globally trained model with the untrained classifier performs quite similarly to other existing solutions, the fine-tuned models show significantly improved personalized performance.</description>
+   <guid>oai:arXiv.org:2411.06042v2</guid>
+   <category>cs.LG</category>
+   <category>cs.NI</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Md-Ferdous Pervej, Andreas F. Molisch</creator>
+  </item>
+  <item>
+   <title>FedPalm: A General Federated Learning Framework for Closed- and Open-Set Palmprint Verification</title>
+   <link>https://arxiv.org/abs/2503.04837</link>
+   <description>Current deep learning (DL)-based palmprint verification models rely on centralized training with large datasets, which raises significant privacy concerns due to biometric data's sensitive and immutable nature. Federated learning~(FL), a privacy-preserving distributed learning paradigm, offers a compelling alternative by enabling collaborative model training without the need for data sharing. However, FL-based palmprint verification faces critical challenges, including data heterogeneity from diverse identities and the absence of standardized evaluation benchmarks. This paper addresses these gaps by establishing a comprehensive benchmark for FL-based palmprint verification, which explicitly defines and evaluates two practical scenarios: closed-set and open-set verification. We propose FedPalm, a unified FL framework that balances local adaptability with global generalization. Each client trains a personalized textural expert tailored to local data and collaboratively contributes to a shared global textural expert for extracting generalized features. To further enhance verification performance, we introduce a Textural Expert Interaction Module that dynamically routes textural features among experts to generate refined side textural features. Learnable parameters are employed to model relationships between original and side features, fostering cross-texture-expert interaction and improving feature discrimination. Extensive experiments validate the effectiveness of FedPalm, demonstrating robust performance across both scenarios and providing a promising foundation for advancing FL-based palmprint verification research.</description>
+   <guid>oai:arXiv.org:2503.04837v1</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ziyuan Yang, Yingyu Chen, Chengrui Gao, Andrew Beng Jin Teoh, Bob Zhang, Yi Zhang</creator>
+  </item>
+  <item>
+   <title>NoT: Federated Unlearning via Weight Negation</title>
+   <link>https://arxiv.org/abs/2503.05657</link>
+   <description>Federated unlearning (FU) aims to remove a participant's data contributions from a trained federated learning (FL) model, ensuring privacy and regulatory compliance. Traditional FU methods often depend on auxiliary storage on either the client or server side or require direct access to the data targeted for removal-a dependency that may not be feasible if the data is no longer available. To overcome these limitations, we propose NoT, a novel and efficient FU algorithm based on weight negation (multiplying by -1), which circumvents the need for additional storage and access to the target data. We argue that effective and efficient unlearning can be achieved by perturbing model parameters away from the set of optimal parameters, yet being well-positioned for quick re-optimization. This technique, though seemingly contradictory, is theoretically grounded: we prove that the weight negation perturbation effectively disrupts inter-layer co-adaptation, inducing unlearning while preserving an approximate optimality property, thereby enabling rapid recovery. Experimental results across three datasets and three model architectures demonstrate that NoT significantly outperforms existing baselines in unlearning efficacy as well as in communication and computational efficiency.</description>
+   <guid>oai:arXiv.org:2503.05657v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 10 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yasser H. Khalil, Leo Brunswic, Soufiane Lamghari, Xu Li, Mahdi Beitollahi, Xi Chen</creator>
+  </item>
  </channel>
 </rss>
