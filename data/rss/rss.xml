@@ -6,8 +6,162 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 31 Mar 2025 03:01:59 </lastBuildDate>
+  <lastBuildDate>Mon, 31 Mar 2025 04:15:25 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 31 Mar 2025 03:01:59 </pubDate>
+  <pubDate>Mon, 31 Mar 2025 04:15:25 </pubDate>
+  <item>
+   <title>The Risks of Using Large Language Models for Text Annotation in Social Science Research</title>
+   <link>https://arxiv.org/abs/2503.22040</link>
+   <description>Generative artificial intelligence (GenAI) or large language models (LLMs) have the potential to revolutionize computational social science, particularly in automated textual analysis. In this paper, we conduct a systematic evaluation of the promises and risks of using LLMs for diverse coding tasks, with social movement studies serving as a case example. We propose a framework for social scientists to incorporate LLMs into text annotation, either as the primary coding decision-maker or as a coding assistant. This framework provides tools for researchers to develop the optimal prompt, and to examine and report the validity and reliability of LLMs as a methodological tool. Additionally, we discuss the associated epistemic risks related to validity, reliability, replicability, and transparency. We conclude with several practical guidelines for using LLMs in text annotation tasks, and how we can better communicate the epistemic risks in research.</description>
+   <guid>oai:arXiv.org:2503.22040v1</guid>
+   <category>cs.CL</category>
+   <category>cs.CY</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Hao Lin, Yongjun Zhang</creator>
+  </item>
+  <item>
+   <title>Niyama : Breaking the Silos of LLM Inference Serving</title>
+   <link>https://arxiv.org/abs/2503.22562</link>
+   <description>The widespread adoption of Large Language Models (LLMs) has enabled diverse applications with very different latency requirements. Existing LLM serving frameworks rely on siloed infrastructure with coarse-grained workload segregation -- interactive and batch -- leading to inefficient resource utilization and limited support for fine-grained Quality-of-Service (QoS) differentiation. This results in operational inefficiencies, over-provisioning and poor load management during traffic surges.
+  We present Niyama, a novel QoS-driven inference serving system that enables efficient co-scheduling of diverse workloads on shared infrastructure. Niyama introduces fine-grained QoS classification allowing applications to specify precise latency requirements, and dynamically adapts scheduling decisions based on real-time system state. Leveraging the predictable execution characteristics of LLM inference, Niyama implements a dynamic chunking mechanism to improve overall throughput while maintaining strict QoS guarantees. Additionally, Niyama employs a hybrid prioritization policy that balances fairness and efficiency, and employs selective request relegation that enables graceful service degradation during overload conditions. Our evaluation demonstrates that Niyama increases serving capacity by 32% compared to current siloed deployments, while maintaining QoS guarantees. Notably, under extreme load, our system reduces SLO violations by an order of magnitude compared to current strategies.</description>
+   <guid>oai:arXiv.org:2503.22562v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Kanishk Goel, Jayashree Mohan, Nipun Kwatra, Ravi Shreyas Anupindi, Ramachandran Ramjee</creator>
+  </item>
+  <item>
+   <title>Artificial Intelligence in Pediatric Echocardiography: Exploring Challenges, Opportunities, and Clinical Applications with Explainable AI and Federated Learning</title>
+   <link>https://arxiv.org/abs/2411.10255</link>
+   <description>Pediatric heart diseases present a broad spectrum of congenital and acquired diseases. More complex congenital malformations require a differentiated and multimodal decision-making process, usually including echocardiography as a central imaging method. Artificial intelligence (AI) offers considerable promise for clinicians by facilitating automated interpretation of pediatric echocardiography data. However, adapting AI technologies for pediatric echocardiography analysis has challenges such as limited public data availability, data privacy, and AI model transparency. Recently, researchers have focused on disruptive technologies, such as federated learning (FL) and explainable AI (XAI), to improve automatic diagnostic and decision support workflows. This study offers a comprehensive overview of the limitations and opportunities of AI in pediatric echocardiography, emphasizing the synergistic workflow and role of XAI and FL, identifying research gaps, and exploring potential future developments. Additionally, three relevant clinical use cases demonstrate the functionality of XAI and FL with a focus on (i) view recognition, (ii) disease classification, (iii) segmentation of cardiac structures, and (iv) quantitative assessment of cardiac function.</description>
+   <guid>oai:arXiv.org:2411.10255v2</guid>
+   <category>cs.AI</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mohammed Yaseen Jabarulla, Theodor Uden, Thomas Jack, Philipp Beerbaum, Steffen Oeltze-Jafra</creator>
+  </item>
+  <item>
+   <title>Route-and-Aggregate Decentralized Federated Learning Under Communication Errors</title>
+   <link>https://arxiv.org/abs/2503.22186</link>
+   <description>Decentralized federated learning (D-FL) allows clients to aggregate learning models locally, offering flexibility and scalability. Existing D-FL methods use gossip protocols, which are inefficient when not all nodes in the network are D-FL clients. This paper puts forth a new D-FL strategy, termed Route-and-Aggregate (R&amp;A) D-FL, where participating clients exchange models with their peers through established routes (as opposed to flooding) and adaptively normalize their aggregation coefficients to compensate for communication errors. The impact of routing and imperfect links on the convergence of R&amp;A D-FL is analyzed, revealing that convergence is minimized when routes with the minimum end-to-end packet error rates are employed to deliver models. Our analysis is experimentally validated through three image classification tasks and two next-word prediction tasks, utilizing widely recognized datasets and models. R&amp;A D-FL outperforms the flooding-based D-FL method in terms of training accuracy by 35% in our tested 10-client network, and shows strong synergy between D-FL and networking. In another test with 10 D-FL clients, the training accuracy of R&amp;A D-FL with communication errors approaches that of the ideal C-FL without communication errors, as the number of routing nodes (i.e., nodes that do not participate in the training of D-FL) rises to 28.</description>
+   <guid>oai:arXiv.org:2503.22186v1</guid>
+   <category>cs.DC</category>
+   <category>cs.NI</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Weicai Li, Tiejun Lv, Wei Ni, Jingbo Zhao, Ekram Hossain, H. Vincent Poor</creator>
+  </item>
+  <item>
+   <title>Niyama : Breaking the Silos of LLM Inference Serving</title>
+   <link>https://arxiv.org/abs/2503.22562</link>
+   <description>The widespread adoption of Large Language Models (LLMs) has enabled diverse applications with very different latency requirements. Existing LLM serving frameworks rely on siloed infrastructure with coarse-grained workload segregation -- interactive and batch -- leading to inefficient resource utilization and limited support for fine-grained Quality-of-Service (QoS) differentiation. This results in operational inefficiencies, over-provisioning and poor load management during traffic surges.
+  We present Niyama, a novel QoS-driven inference serving system that enables efficient co-scheduling of diverse workloads on shared infrastructure. Niyama introduces fine-grained QoS classification allowing applications to specify precise latency requirements, and dynamically adapts scheduling decisions based on real-time system state. Leveraging the predictable execution characteristics of LLM inference, Niyama implements a dynamic chunking mechanism to improve overall throughput while maintaining strict QoS guarantees. Additionally, Niyama employs a hybrid prioritization policy that balances fairness and efficiency, and employs selective request relegation that enables graceful service degradation during overload conditions. Our evaluation demonstrates that Niyama increases serving capacity by 32% compared to current siloed deployments, while maintaining QoS guarantees. Notably, under extreme load, our system reduces SLO violations by an order of magnitude compared to current strategies.</description>
+   <guid>oai:arXiv.org:2503.22562v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Kanishk Goel, Jayashree Mohan, Nipun Kwatra, Ravi Shreyas Anupindi, Ramachandran Ramjee</creator>
+  </item>
+  <item>
+   <title>Route-and-Aggregate Decentralized Federated Learning Under Communication Errors</title>
+   <link>https://arxiv.org/abs/2503.22186</link>
+   <description>Decentralized federated learning (D-FL) allows clients to aggregate learning models locally, offering flexibility and scalability. Existing D-FL methods use gossip protocols, which are inefficient when not all nodes in the network are D-FL clients. This paper puts forth a new D-FL strategy, termed Route-and-Aggregate (R&amp;A) D-FL, where participating clients exchange models with their peers through established routes (as opposed to flooding) and adaptively normalize their aggregation coefficients to compensate for communication errors. The impact of routing and imperfect links on the convergence of R&amp;A D-FL is analyzed, revealing that convergence is minimized when routes with the minimum end-to-end packet error rates are employed to deliver models. Our analysis is experimentally validated through three image classification tasks and two next-word prediction tasks, utilizing widely recognized datasets and models. R&amp;A D-FL outperforms the flooding-based D-FL method in terms of training accuracy by 35% in our tested 10-client network, and shows strong synergy between D-FL and networking. In another test with 10 D-FL clients, the training accuracy of R&amp;A D-FL with communication errors approaches that of the ideal C-FL without communication errors, as the number of routing nodes (i.e., nodes that do not participate in the training of D-FL) rises to 28.</description>
+   <guid>oai:arXiv.org:2503.22186v1</guid>
+   <category>cs.DC</category>
+   <category>cs.NI</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Weicai Li, Tiejun Lv, Wei Ni, Jingbo Zhao, Ekram Hossain, H. Vincent Poor</creator>
+  </item>
+  <item>
+   <title>FLIP: Towards Comprehensive and Reliable Evaluation of Federated Prompt Learning</title>
+   <link>https://arxiv.org/abs/2503.22263</link>
+   <description>The increasing emphasis on privacy and data security has driven the adoption of federated learning, a decentralized approach to train machine learning models without sharing raw data. Prompt learning, which fine-tunes prompt embeddings of pretrained models, offers significant advantages in federated settings by reducing computational costs and communication overheads while leveraging the strong performance and generalization capabilities of vision-language models such as CLIP. This paper addresses the intersection of federated learning and prompt learning, particularly for vision-language models. In this work, we introduce a comprehensive framework, named FLIP, to evaluate federated prompt learning algorithms. FLIP assesses the performance of 8 state-of-the-art federated prompt learning methods across 4 federated learning protocols and 12 open datasets, considering 6 distinct evaluation scenarios. Our findings demonstrate that prompt learning maintains strong generalization performance in both in-distribution and out-of-distribution settings with minimal resource consumption. This work highlights the effectiveness of federated prompt learning in environments characterized by data scarcity, unseen classes, and cross-domain distributional shifts. We open-source the code for all implemented algorithms in FLIP to facilitate further research in this domain.</description>
+   <guid>oai:arXiv.org:2503.22263v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Dongping Liao, Xitong Gao, Yabo Xu, Chengzhong Xu</creator>
+  </item>
+  <item>
+   <title>Niyama : Breaking the Silos of LLM Inference Serving</title>
+   <link>https://arxiv.org/abs/2503.22562</link>
+   <description>The widespread adoption of Large Language Models (LLMs) has enabled diverse applications with very different latency requirements. Existing LLM serving frameworks rely on siloed infrastructure with coarse-grained workload segregation -- interactive and batch -- leading to inefficient resource utilization and limited support for fine-grained Quality-of-Service (QoS) differentiation. This results in operational inefficiencies, over-provisioning and poor load management during traffic surges.
+  We present Niyama, a novel QoS-driven inference serving system that enables efficient co-scheduling of diverse workloads on shared infrastructure. Niyama introduces fine-grained QoS classification allowing applications to specify precise latency requirements, and dynamically adapts scheduling decisions based on real-time system state. Leveraging the predictable execution characteristics of LLM inference, Niyama implements a dynamic chunking mechanism to improve overall throughput while maintaining strict QoS guarantees. Additionally, Niyama employs a hybrid prioritization policy that balances fairness and efficiency, and employs selective request relegation that enables graceful service degradation during overload conditions. Our evaluation demonstrates that Niyama increases serving capacity by 32% compared to current siloed deployments, while maintaining QoS guarantees. Notably, under extreme load, our system reduces SLO violations by an order of magnitude compared to current strategies.</description>
+   <guid>oai:arXiv.org:2503.22562v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Kanishk Goel, Jayashree Mohan, Nipun Kwatra, Ravi Shreyas Anupindi, Ramachandran Ramjee</creator>
+  </item>
+  <item>
+   <title>FedLWS: Federated Learning with Adaptive Layer-wise Weight Shrinking</title>
+   <link>https://arxiv.org/abs/2503.15111</link>
+   <description>In Federated Learning (FL), weighted aggregation of local models is conducted to generate a new global model, and the aggregation weights are typically normalized to 1. A recent study identifies the global weight shrinking effect in FL, indicating an enhancement in the global model's generalization when the sum of weights (i.e., the shrinking factor) is smaller than 1, where how to learn the shrinking factor becomes crucial. However, principled approaches to this solution have not been carefully studied from the adequate consideration of privacy concerns and layer-wise distinctions. To this end, we propose a novel model aggregation strategy, Federated Learning with Adaptive Layer-wise Weight Shrinking (FedLWS), which adaptively designs the shrinking factor in a layer-wise manner and avoids optimizing the shrinking factors on a proxy dataset. We initially explored the factors affecting the shrinking factor during the training process. Then we calculate the layer-wise shrinking factors by considering the distinctions among each layer of the global model. FedLWS can be easily incorporated with various existing methods due to its flexibility. Extensive experiments under diverse scenarios demonstrate the superiority of our method over several state-of-the-art approaches, providing a promising tool for enhancing the global model in FL.</description>
+   <guid>oai:arXiv.org:2503.15111v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Changlong Shi, Jinmeng Li, He Zhao, Dandan Guo, Yi Chang</creator>
+  </item>
+  <item>
+   <title>The Risks of Using Large Language Models for Text Annotation in Social Science Research</title>
+   <link>https://arxiv.org/abs/2503.22040</link>
+   <description>Generative artificial intelligence (GenAI) or large language models (LLMs) have the potential to revolutionize computational social science, particularly in automated textual analysis. In this paper, we conduct a systematic evaluation of the promises and risks of using LLMs for diverse coding tasks, with social movement studies serving as a case example. We propose a framework for social scientists to incorporate LLMs into text annotation, either as the primary coding decision-maker or as a coding assistant. This framework provides tools for researchers to develop the optimal prompt, and to examine and report the validity and reliability of LLMs as a methodological tool. Additionally, we discuss the associated epistemic risks related to validity, reliability, replicability, and transparency. We conclude with several practical guidelines for using LLMs in text annotation tasks, and how we can better communicate the epistemic risks in research.</description>
+   <guid>oai:arXiv.org:2503.22040v1</guid>
+   <category>cs.CL</category>
+   <category>cs.CY</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Hao Lin, Yongjun Zhang</creator>
+  </item>
+  <item>
+   <title>Route-and-Aggregate Decentralized Federated Learning Under Communication Errors</title>
+   <link>https://arxiv.org/abs/2503.22186</link>
+   <description>Decentralized federated learning (D-FL) allows clients to aggregate learning models locally, offering flexibility and scalability. Existing D-FL methods use gossip protocols, which are inefficient when not all nodes in the network are D-FL clients. This paper puts forth a new D-FL strategy, termed Route-and-Aggregate (R&amp;A) D-FL, where participating clients exchange models with their peers through established routes (as opposed to flooding) and adaptively normalize their aggregation coefficients to compensate for communication errors. The impact of routing and imperfect links on the convergence of R&amp;A D-FL is analyzed, revealing that convergence is minimized when routes with the minimum end-to-end packet error rates are employed to deliver models. Our analysis is experimentally validated through three image classification tasks and two next-word prediction tasks, utilizing widely recognized datasets and models. R&amp;A D-FL outperforms the flooding-based D-FL method in terms of training accuracy by 35% in our tested 10-client network, and shows strong synergy between D-FL and networking. In another test with 10 D-FL clients, the training accuracy of R&amp;A D-FL with communication errors approaches that of the ideal C-FL without communication errors, as the number of routing nodes (i.e., nodes that do not participate in the training of D-FL) rises to 28.</description>
+   <guid>oai:arXiv.org:2503.22186v1</guid>
+   <category>cs.DC</category>
+   <category>cs.NI</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Weicai Li, Tiejun Lv, Wei Ni, Jingbo Zhao, Ekram Hossain, H. Vincent Poor</creator>
+  </item>
+  <item>
+   <title>FLIP: Towards Comprehensive and Reliable Evaluation of Federated Prompt Learning</title>
+   <link>https://arxiv.org/abs/2503.22263</link>
+   <description>The increasing emphasis on privacy and data security has driven the adoption of federated learning, a decentralized approach to train machine learning models without sharing raw data. Prompt learning, which fine-tunes prompt embeddings of pretrained models, offers significant advantages in federated settings by reducing computational costs and communication overheads while leveraging the strong performance and generalization capabilities of vision-language models such as CLIP. This paper addresses the intersection of federated learning and prompt learning, particularly for vision-language models. In this work, we introduce a comprehensive framework, named FLIP, to evaluate federated prompt learning algorithms. FLIP assesses the performance of 8 state-of-the-art federated prompt learning methods across 4 federated learning protocols and 12 open datasets, considering 6 distinct evaluation scenarios. Our findings demonstrate that prompt learning maintains strong generalization performance in both in-distribution and out-of-distribution settings with minimal resource consumption. This work highlights the effectiveness of federated prompt learning in environments characterized by data scarcity, unseen classes, and cross-domain distributional shifts. We open-source the code for all implemented algorithms in FLIP to facilitate further research in this domain.</description>
+   <guid>oai:arXiv.org:2503.22263v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 31 Mar 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Dongping Liao, Xitong Gao, Yabo Xu, Chengzhong Xu</creator>
+  </item>
  </channel>
 </rss>
