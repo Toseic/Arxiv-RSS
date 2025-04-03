@@ -6,9 +6,9 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Wed, 02 Apr 2025 04:14:59 </lastBuildDate>
+  <lastBuildDate>Thu, 03 Apr 2025 02:56:07 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Wed, 02 Apr 2025 04:14:59 </pubDate>
+  <pubDate>Thu, 03 Apr 2025 02:56:07 </pubDate>
   <item>
    <title>FedPaI: Achieving Extreme Sparsity in Federated Learning via Pruning at Initialization</title>
    <link>https://arxiv.org/abs/2504.00308</link>
@@ -283,31 +283,88 @@
    <creator>Jun Luo, Chen Chen, Shandong Wu</creator>
   </item>
   <item>
-   <title>Federated Self-Supervised Learning for One-Shot Cross-Modal and Cross-Imaging Technique Segmentation</title>
-   <link>https://arxiv.org/abs/2503.23507</link>
-   <description>Decentralized federated learning enables learning of data representations from multiple sources without compromising the privacy of the clients. In applications like medical image segmentation, where obtaining a large annotated dataset from a single source is a distressing problem, federated self-supervised learning can provide some solace. In this work, we push the limits further by exploring a federated self-supervised one-shot segmentation task representing a more data-scarce scenario. We adopt a pre-existing self-supervised few-shot segmentation framework CoWPro and adapt it to the federated learning scenario. To the best of our knowledge, this work is the first to attempt a self-supervised few-shot segmentation task in the federated learning domain. Moreover, we consider the clients to be constituted of data from different modalities and imaging techniques like MR or CT, which makes the problem even harder. Additionally, we reinforce and improve the baseline CoWPro method using a fused dice loss which shows considerable improvement in performance over the baseline CoWPro. Finally, we evaluate this novel framework on a completely unseen held-out part of the local client dataset. We observe that the proposed framework can achieve performance at par or better than the FedAvg version of the CoWPro framework on the held-out validation dataset.</description>
-   <guid>oai:arXiv.org:2503.23507v1</guid>
+   <title>Few-Shot Generation of Brain Tumors for Secure and Fair Data Sharing</title>
+   <link>https://arxiv.org/abs/2504.00150</link>
+   <description>Leveraging multi-center data for medical analytics presents challenges due to privacy concerns and data heterogeneity. While distributed approaches such as federated learning has gained traction, they remain vulnerable to privacy breaches, particularly in sensitive domains like medical imaging. Generative models, such as diffusion models, enhance privacy by synthesizing realistic data. However, they are prone to memorization, especially when trained on small datasets. This study proposes a decentralized few-shot generative model (DFGM) to synthesize brain tumor images while fully preserving privacy. DFGM harmonizes private tumor data with publicly shareable healthy images from multiple medical centers, constructing a new dataset by blending tumor foregrounds with healthy backgrounds. This approach ensures stringent privacy protection and enables controllable, high-quality synthesis by preserving both the healthy backgrounds and tumor foregrounds. We assess DFGM's effectiveness in brain tumor segmentation using a UNet, achieving Dice score improvements of 3.9% for data augmentation and 4.6% for fairness on a separate dataset.</description>
+   <guid>oai:arXiv.org:2504.00150v1</guid>
    <category>cs.CV</category>
-   <category>cs.LG</category>
-   <category>eess.IV</category>
-   <category>physics.med-ph</category>
    <pubdate>Wed, 02 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Siladittya Manna, Suresh Das, Sayantari Ghosh, Saumik Bhattacharya</creator>
+   <creator>Yongyi Shi, Ge Wang</creator>
   </item>
   <item>
-   <title>F$^3$OCUS -- Federated Finetuning of Vision-Language Foundation Models with Optimal Client Layer Updating Strategy via Multi-objective Meta-Heuristics</title>
-   <link>https://arxiv.org/abs/2411.11912</link>
-   <description>Effective training of large Vision-Language Models (VLMs) on resource-constrained client devices in Federated Learning (FL) requires the usage of parameter-efficient fine-tuning (PEFT) strategies. To this end, we demonstrate the impact of two factors \textit{viz.}, client-specific layer importance score that selects the most important VLM layers for fine-tuning and inter-client layer diversity score that encourages diverse layer selection across clients for optimal VLM layer selection. We first theoretically motivate and leverage the principal eigenvalue magnitude of layerwise Neural Tangent Kernels and show its effectiveness as client-specific layer importance score. Next, we propose a novel layer updating strategy dubbed F$^3$OCUS that jointly optimizes the layer importance and diversity factors by employing a data-free, multi-objective, meta-heuristic optimization on the server. We explore 5 different meta-heuristic algorithms and compare their effectiveness for selecting model layers and adapter layers towards PEFT-FL. Furthermore, we release a new MedVQA-FL dataset involving overall 707,962 VQA triplets and 9 modality-specific clients and utilize it to train and evaluate our method. Overall, we conduct more than 10,000 client-level experiments on 6 Vision-Language FL task settings involving 58 medical image datasets and 4 different VLM architectures of varying sizes to demonstrate the effectiveness of the proposed method.</description>
-   <guid>oai:arXiv.org:2411.11912v2</guid>
+   <title>Global Intervention and Distillation for Federated Out-of-Distribution Generalization</title>
+   <link>https://arxiv.org/abs/2504.00850</link>
+   <description>Attribute skew in federated learning leads local models to focus on learning non-causal associations, guiding them towards inconsistent optimization directions, which inevitably results in performance degradation and unstable convergence. Existing methods typically leverage data augmentation to enhance sample diversity or employ knowledge distillation to learn invariant representations. However, the instability in the quality of generated data and the lack of domain information limit their performance on unseen samples. To address these issues, this paper presents a global intervention and distillation method, termed FedGID, which utilizes diverse attribute features for backdoor adjustment to break the spurious association between background and label. It includes two main modules, where the global intervention module adaptively decouples objects and backgrounds in images, injects background information into random samples to intervene in the sample distribution, which links backgrounds to all categories to prevent the model from treating background-label associations as causal. The global distillation module leverages a unified knowledge base to guide the representation learning of client models, preventing local models from overfitting to client-specific attributes. Experimental results on three datasets demonstrate that FedGID enhances the model's ability to focus on the main subjects in unseen data and outperforms existing methods in collaborative modeling.</description>
+   <guid>oai:arXiv.org:2504.00850v1</guid>
    <category>cs.CV</category>
    <category>cs.AI</category>
+   <pubdate>Wed, 02 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zhuang Qi, Runhui Zhang, Lei Meng, Wei Wu, Yachong Zhang, Xiangxu Meng</creator>
+  </item>
+  <item>
+   <title>Exploring Personalized Federated Learning Architectures for Violence Detection in Surveillance Videos</title>
+   <link>https://arxiv.org/abs/2504.00857</link>
+   <description>The challenge of detecting violent incidents in urban surveillance systems is compounded by the voluminous and diverse nature of video data. This paper presents a targeted approach using Personalized Federated Learning (PFL) to address these issues, specifically employing the Federated Learning with Personalization Layers method within the Flower framework. Our methodology adapts learning models to the unique data characteristics of each surveillance node, effectively managing the heterogeneous and non-IID nature of surveillance video data. Through rigorous experiments conducted on balanced and imbalanced datasets, our PFL models demonstrated enhanced accuracy and efficiency, achieving up to 99.3% accuracy. This study underscores the potential of PFL to significantly improve the scalability and effectiveness of surveillance systems, offering a robust, privacy-preserving solution for violence detection in complex urban environments.</description>
+   <guid>oai:arXiv.org:2504.00857v1</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <pubdate>Wed, 02 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mohammad Kassir, Siba Haidar, Antoun Yaacoub</creator>
+  </item>
+  <item>
+   <title>Personalized Federated Training of Diffusion Models with Privacy Guarantees</title>
+   <link>https://arxiv.org/abs/2504.00952</link>
+   <description>The scarcity of accessible, compliant, and ethically sourced data presents a considerable challenge to the adoption of artificial intelligence (AI) in sensitive fields like healthcare, finance, and biomedical research. Furthermore, access to unrestricted public datasets is increasingly constrained due to rising concerns over privacy, copyright, and competition. Synthetic data has emerged as a promising alternative, and diffusion models -- a cutting-edge generative AI technology -- provide an effective solution for generating high-quality and diverse synthetic data. In this paper, we introduce a novel federated learning framework for training diffusion models on decentralized private datasets. Our framework leverages personalization and the inherent noise in the forward diffusion process to produce high-quality samples while ensuring robust differential privacy guarantees. Our experiments show that our framework outperforms non-collaborative training methods, particularly in settings with high data heterogeneity, and effectively reduces biases and imbalances in synthetic data, resulting in fairer downstream models.</description>
+   <guid>oai:arXiv.org:2504.00952v1</guid>
    <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CV</category>
+   <pubdate>Wed, 02 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Kumar Kshitij Patel, Weitong Zhang, Lingxiao Wang</creator>
+  </item>
+  <item>
+   <title>4D LangSplat: 4D Language Gaussian Splatting via Multimodal Large Language Models</title>
+   <link>https://arxiv.org/abs/2503.10437</link>
+   <description>Learning 4D language fields to enable time-sensitive, open-ended language queries in dynamic scenes is essential for many real-world applications. While LangSplat successfully grounds CLIP features into 3D Gaussian representations, achieving precision and efficiency in 3D static scenes, it lacks the ability to handle dynamic 4D fields as CLIP, designed for static image-text tasks, cannot capture temporal dynamics in videos. Real-world environments are inherently dynamic, with object semantics evolving over time. Building a precise 4D language field necessitates obtaining pixel-aligned, object-wise video features, which current vision models struggle to achieve. To address these challenges, we propose 4D LangSplat, which learns 4D language fields to handle time-agnostic or time-sensitive open-vocabulary queries in dynamic scenes efficiently. 4D LangSplat bypasses learning the language field from vision features and instead learns directly from text generated from object-wise video captions via Multimodal Large Language Models (MLLMs). Specifically, we propose a multimodal object-wise video prompting method, consisting of visual and text prompts that guide MLLMs to generate detailed, temporally consistent, high-quality captions for objects throughout a video. These captions are encoded using a Large Language Model into high-quality sentence embeddings, which then serve as pixel-aligned, object-specific feature supervision, facilitating open-vocabulary text queries through shared embedding spaces. Recognizing that objects in 4D scenes exhibit smooth transitions across states, we further propose a status deformable network to model these continuous changes over time effectively. Our results across multiple benchmarks demonstrate that 4D LangSplat attains precise and efficient results for both time-sensitive and time-agnostic open-vocabulary queries.</description>
+   <guid>oai:arXiv.org:2503.10437v2</guid>
+   <category>cs.CV</category>
    <pubdate>Wed, 02 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Wanhua Li, Renping Zhou, Jiawei Zhou, Yingwei Song, Johannes Herter, Minghan Qin, Gao Huang, Hanspeter Pfister</creator>
+  </item>
+  <item>
+   <title>Rehearsal-free Federated Domain-incremental Learning</title>
+   <link>https://arxiv.org/abs/2405.13900</link>
+   <description>We introduce a rehearsal-free federated domain incremental learning framework, RefFiL, based on a global prompt-sharing paradigm to alleviate catastrophic forgetting challenges in federated domain-incremental learning, where unseen domains are continually learned. Typical methods for mitigating forgetting, such as the use of additional datasets and the retention of private data from earlier tasks, are not viable in federated learning (FL) due to devices' limited resources. Our method, RefFiL, addresses this by learning domain-invariant knowledge and incorporating various domain-specific prompts from the domains represented by different FL participants. A key feature of RefFiL is the generation of local fine-grained prompts by our domain adaptive prompt generator, which effectively learns from local domain knowledge while maintaining distinctive boundaries on a global scale. We also introduce a domain-specific prompt contrastive learning loss that differentiates between locally generated prompts and those from other domains, enhancing RefFiL's precision and effectiveness. Compared to existing methods, RefFiL significantly alleviates catastrophic forgetting without requiring extra memory space, making it ideal for privacy-sensitive and resource-constrained devices.</description>
+   <guid>oai:arXiv.org:2405.13900v2</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Wed, 02 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Pramit Saha, Felix Wagner, Divyanshu Mishra, Can Peng, Anshul Thakur, David Clifton, Konstantinos Kamnitsas, J. Alison Noble</creator>
+   <creator>Rui Sun, Haoran Duan, Jiahua Dong, Varun Ojha, Tejal Shah, Rajiv Ranjan</creator>
+  </item>
+  <item>
+   <title>Mixture of Experts Made Personalized: Federated Prompt Learning for Vision-Language Models</title>
+   <link>https://arxiv.org/abs/2410.10114</link>
+   <description>Federated prompt learning benefits federated learning with CLIP-like Vision-Language Model's (VLM's) robust representation learning ability through prompt learning. However, current federated prompt learning methods are habitually restricted to the traditional FL paradigm, where the participating clients are generally only allowed to download a single globally aggregated model from the server. While justifiable for training full-sized models under federated settings, in this work, we argue that this paradigm is ill-suited for lightweight prompts. By facilitating the clients to download multiple pre-aggregated prompts as fixed non-local experts, we propose Personalized Federated Mixture of Adaptive Prompts (pFedMoAP), a novel FL framework that personalizes the prompt learning process through the lens of Mixture of Experts (MoE). pFedMoAP implements a local attention-based gating network that learns to generate enhanced text features for better alignment with local image data, benefiting from both local and downloaded non-local adaptive prompt experts. Extensive experiments on 9 datasets under various federated settings demonstrate the efficacy of the proposed pFedMoAP algorithm. The code is available at https://github.com/ljaiverson/pFedMoAP.</description>
+   <guid>oai:arXiv.org:2410.10114v4</guid>
+   <category>cs.LG</category>
+   <category>cs.CL</category>
+   <category>cs.CV</category>
+   <pubdate>Wed, 02 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jun Luo, Chen Chen, Shandong Wu</creator>
   </item>
  </channel>
 </rss>
