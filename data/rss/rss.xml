@@ -6,9 +6,20 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Wed, 23 Apr 2025 04:15:44 </lastBuildDate>
+  <lastBuildDate>Thu, 24 Apr 2025 03:02:02 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Wed, 23 Apr 2025 04:15:44 </pubDate>
+  <pubDate>Thu, 24 Apr 2025 03:02:02 </pubDate>
+  <item>
+   <title>From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs</title>
+   <link>https://arxiv.org/abs/2504.15965</link>
+   <description>Memory is the process of encoding, storing, and retrieving information, allowing humans to retain experiences, knowledge, skills, and facts over time, and serving as the foundation for growth and effective interaction with the world. It plays a crucial role in shaping our identity, making decisions, learning from past experiences, building relationships, and adapting to changes. In the era of large language models (LLMs), memory refers to the ability of an AI system to retain, recall, and use information from past interactions to improve future responses and interactions. Although previous research and reviews have provided detailed descriptions of memory mechanisms, there is still a lack of a systematic review that summarizes and analyzes the relationship between the memory of LLM-driven AI systems and human memory, as well as how we can be inspired by human memory to construct more powerful memory systems. To achieve this, in this paper, we propose a comprehensive survey on the memory of LLM-driven AI systems. In particular, we first conduct a detailed analysis of the categories of human memory and relate them to the memory of AI systems. Second, we systematically organize existing memory-related work and propose a categorization method based on three dimensions (object, form, and time) and eight quadrants. Finally, we illustrate some open problems regarding the memory of current AI systems and outline possible future directions for memory in the era of large language models.</description>
+   <guid>oai:arXiv.org:2504.15965v2</guid>
+   <category>cs.IR</category>
+   <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yaxiong Wu, Sheng Liang, Chen Zhang, Yichao Wang, Yongyue Zhang, Huifeng Guo, Ruiming Tang, Yong Liu</creator>
+  </item>
   <item>
    <title>Vertical Federated Learning with Missing Features During Training and Inference</title>
    <link>https://arxiv.org/abs/2410.22564</link>
@@ -24,6 +35,28 @@
    <creator>Pedro Valdeira, Shiqiang Wang, Yuejie Chi</creator>
   </item>
   <item>
+   <title>Pre-DPO: Improving Data Utilization in Direct Preference Optimization Using a Guiding Reference Model</title>
+   <link>https://arxiv.org/abs/2504.15843</link>
+   <description>Direct Preference Optimization (DPO) simplifies reinforcement learning from human feedback (RLHF) for large language models (LLMs) by directly optimizing human preferences without an explicit reward model. We find that during DPO training, the reference model plays the role of a data weight adjuster. However, the common practice of initializing the policy and reference models identically in DPO can lead to inefficient data utilization and impose a performance ceiling. Meanwhile, the lack of a reference model in Simple Preference Optimization (SimPO) reduces training robustness and necessitates stricter conditions to prevent catastrophic forgetting. In this work, we propose Pre-DPO, a simple yet effective DPO-based training paradigm that enhances preference optimization performance by leveraging a guiding reference model. This reference model provides foresight into the optimal policy state achievable through the training preference data, serving as a guiding mechanism that adaptively assigns higher weights to samples more suitable for the model and lower weights to those less suitable. Extensive experiments on AlpacaEval 2.0 and Arena-Hard v0.1 benchmarks demonstrate that Pre-DPO consistently improves the performance of both DPO and SimPO, without relying on external models or additional data.</description>
+   <guid>oai:arXiv.org:2504.15843v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Junshu Pan, Wei Shen, Shulin Huang, Qiji Zhou, Yue Zhang</creator>
+  </item>
+  <item>
+   <title>LLM-as-a-Judge: Reassessing the Performance of LLMs in Extractive QA</title>
+   <link>https://arxiv.org/abs/2504.11972</link>
+   <description>Extractive reading comprehension question answering (QA) datasets are typically evaluated using Exact Match (EM) and F1-score, but these metrics often fail to fully capture model performance. With the success of large language models (LLMs), they have been employed in various tasks, including serving as judges (LLM-as-a-judge). In this paper, we reassess the performance of QA models using LLM-as-a-judge across four reading comprehension QA datasets. We examine different families of LLMs and various answer types to evaluate the effectiveness of LLM-as-a-judge in these tasks. Our results show that LLM-as-a-judge is highly correlated with human judgments and can replace traditional EM/F1 metrics. By using LLM-as-a-judge, the correlation with human judgments improves significantly, from 0.22 (EM) and 0.40 (F1-score) to 0.85. These findings confirm that EM and F1 metrics underestimate the true performance of the QA models. While LLM-as-a-judge is not perfect for more difficult answer types (e.g., job), it still outperforms EM/F1, and we observe no bias issues, such as self-preference, when the same model is used for both the QA and judgment tasks.</description>
+   <guid>oai:arXiv.org:2504.11972v2</guid>
+   <category>cs.CL</category>
+   <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Xanh Ho, Jiahao Huang, Florian Boudin, Akiko Aizawa</creator>
+  </item>
+  <item>
    <title>A Markov Chain Monte Carlo Method for Efficient Finite-Length LDPC Code Design</title>
    <link>https://arxiv.org/abs/2504.16071</link>
    <description>Low-density parity-check (LDPC) codes are among the most prominent error-correction schemes. They find application to fortify various modern storage, communication, and computing systems. Protograph-based (PB) LDPC codes offer many degrees of freedom in the code design and enable fast encoding and decoding. In particular, spatially-coupled (SC) and multi-dimensional (MD) circulant-based codes are PB-LDPC codes with excellent performance. Efficient finite-length (FL) algorithms are required in order to effectively exploit the available degrees of freedom offered by SC partitioning, lifting, and MD relocations. In this paper, we propose a novel Markov chain Monte Carlo (MCMC or MC$^2$) method to perform this FL optimization, addressing the removal of short cycles. While iterating, we draw samples from a defined distribution where the probability decreases as the number of short cycles from the previous iteration increases. We analyze our MC$^2$ method theoretically as we prove the invariance of the Markov chain where each state represents a possible partitioning or lifting arrangement. Via our simulations, we then fit the distribution of the number of cycles resulting from a given arrangement on a Gaussian distribution. We derive estimates for cycle counts that are close to the actual counts. Furthermore, we derive the order of the expected number of iterations required by our approach to reach a local minimum as well as the size of the Markov chain recurrent class. Our approach is compatible with code design techniques based on gradient-descent. Numerical results show that our MC$^2$ method generates SC codes with remarkably less number of short cycles compared with the current state-of-the-art. Moreover, to reach the same number of cycles, our method requires orders of magnitude less overall time compared with the available literature methods.</description>
@@ -37,17 +70,16 @@
    <creator>Ata Tanr{\i}kulu, Mete Y{\i}ld{\i}r{\i}m, Ahmed Hareedy</creator>
   </item>
   <item>
-   <title>LLMs meet Federated Learning for Scalable and Secure IoT Management</title>
-   <link>https://arxiv.org/abs/2504.16032</link>
-   <description>The rapid expansion of IoT ecosystems introduces severe challenges in scalability, security, and real-time decision-making. Traditional centralized architectures struggle with latency, privacy concerns, and excessive resource consumption, making them unsuitable for modern large-scale IoT deployments. This paper presents a novel Federated Learning-driven Large Language Model (FL-LLM) framework, designed to enhance IoT system intelligence while ensuring data privacy and computational efficiency. The framework integrates Generative IoT (GIoT) models with a Gradient Sensing Federated Strategy (GSFS), dynamically optimizing model updates based on real-time network conditions. By leveraging a hybrid edge-cloud processing architecture, our approach balances intelligence, scalability, and security in distributed IoT environments. Evaluations on the IoT-23 dataset demonstrate that our framework improves model accuracy, reduces response latency, and enhances energy efficiency, outperforming traditional FL techniques (i.e., FedAvg, FedOpt). These findings highlight the potential of integrating LLM-powered federated learning into large-scale IoT ecosystems, paving the way for more secure, scalable, and adaptive IoT management solutions.</description>
-   <guid>oai:arXiv.org:2504.16032v1</guid>
+   <title>Advancing Embodied Intelligence in Robotic-Assisted Endovascular Procedures: A Systematic Review of AI Solutions</title>
+   <link>https://arxiv.org/abs/2504.15327</link>
+   <description>Endovascular procedures have revolutionized the treatment of vascular diseases thanks to minimally invasive solutions that significantly reduce patient recovery time and enhance clinical outcomes. However, the precision and dexterity required during these procedures poses considerable challenges for interventionists. Robotic systems have emerged offering transformative solutions, addressing issues such as operator fatigue, radiation exposure, and the inherent limitations of human precision. The integration of Embodied Intelligence (EI) into these systems signifies a paradigm shift, enabling robots to navigate complex vascular networks and adapt to dynamic physiological conditions. Data-driven approaches, advanced computer vision, medical image analysis, and machine learning techniques, are at the forefront of this evolution. These methods augment procedural intelligence by facilitating real-time vessel segmentation, device tracking, and anatomical landmark detection. Reinforcement learning and imitation learning further refine navigation strategies and replicate experts' techniques. This review systematically examines the integration of EI principles into robotic technologies, in relation to endovascular procedures. We discuss recent advancements in intelligent perception and data-driven control, and their practical applications in robot-assisted endovascular procedures. By critically evaluating current limitations and emerging opportunities, this review establishes a framework for future developments, emphasizing the potential for greater autonomy and improved clinical outcomes. Emerging trends and specific areas of research, such as federated learning for medical data sharing, explainable AI for clinical decision support, and advanced human-robot collaboration paradigms, are also explored, offering insights into the future direction of this rapidly evolving field.</description>
+   <guid>oai:arXiv.org:2504.15327v2</guid>
+   <category>cs.RO</category>
    <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.ET</category>
    <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yazan Otoum, Arghavan Asad, Amiya Nayak</creator>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Tianliang Yao, Bo Lu, Markus Kowarschik, Yixuan Yuan, Hubin Zhao, Sebastien Ourselin, Kaspar Althoefer, Junbo Ge, Peng Qi</creator>
   </item>
   <item>
    <title>CARE: Compatibility-Aware Incentive Mechanisms for Federated Learning with Budgeted Requesters</title>
@@ -161,27 +193,17 @@
    <creator>Yanbing Zhou, Xiangmou Qu, Chenlong You, Jiyang Zhou, Jingyue Tang, Xin Zheng, Chunmao Cai, Yingbo Wu</creator>
   </item>
   <item>
-   <title>RAGDoll: Efficient Offloading-based Online RAG System on a Single GPU</title>
-   <link>https://arxiv.org/abs/2504.15302</link>
-   <description>Retrieval-Augmented Generation (RAG) enhances large language model (LLM) generation quality by incorporating relevant external knowledge. However, deploying RAG on consumer-grade platforms is challenging due to limited memory and the increasing scale of both models and knowledge bases. In this work, we introduce RAGDoll, a resource-efficient, self-adaptive RAG serving system integrated with LLMs, specifically designed for resource-constrained platforms. RAGDoll exploits the insight that RAG retrieval and LLM generation impose different computational and memory demands, which in a traditional serial workflow result in substantial idle times and poor resource utilization. Based on this insight, RAGDoll decouples retrieval and generation into parallel pipelines, incorporating joint memory placement and dynamic batch scheduling strategies to optimize resource usage across diverse hardware devices and workloads. Extensive experiments demonstrate that RAGDoll adapts effectively to various hardware configurations and LLM scales, achieving up to 3.6 times speedup in average latency compared to serial RAG systems based on vLLM.</description>
-   <guid>oai:arXiv.org:2504.15302v1</guid>
-   <category>cs.DC</category>
-   <category>cs.OS</category>
+   <title>LLMs meet Federated Learning for Scalable and Secure IoT Management</title>
+   <link>https://arxiv.org/abs/2504.16032</link>
+   <description>The rapid expansion of IoT ecosystems introduces severe challenges in scalability, security, and real-time decision-making. Traditional centralized architectures struggle with latency, privacy concerns, and excessive resource consumption, making them unsuitable for modern large-scale IoT deployments. This paper presents a novel Federated Learning-driven Large Language Model (FL-LLM) framework, designed to enhance IoT system intelligence while ensuring data privacy and computational efficiency. The framework integrates Generative IoT (GIoT) models with a Gradient Sensing Federated Strategy (GSFS), dynamically optimizing model updates based on real-time network conditions. By leveraging a hybrid edge-cloud processing architecture, our approach balances intelligence, scalability, and security in distributed IoT environments. Evaluations on the IoT-23 dataset demonstrate that our framework improves model accuracy, reduces response latency, and enhances energy efficiency, outperforming traditional FL techniques (i.e., FedAvg, FedOpt). These findings highlight the potential of integrating LLM-powered federated learning into large-scale IoT ecosystems, paving the way for more secure, scalable, and adaptive IoT management solutions.</description>
+   <guid>oai:arXiv.org:2504.16032v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.ET</category>
    <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Weiping Yu, Ningyi Liao, Siqiang Luo, Junfeng Liu</creator>
-  </item>
-  <item>
-   <title>Optimizing SLO-oriented LLM Serving with PD-Multiplexing</title>
-   <link>https://arxiv.org/abs/2504.14489</link>
-   <description>Modern LLM services demand high throughput and stringent SLO guarantees across two distinct inference phases-prefill and decode-and complex multi-turn workflows. However, current systems face a fundamental tradeoff: out-of-place compute partition enables per-phase SLO attainment, while in-place memory sharing maximizes throughput via KV cache reuse. Moreover, existing in-place compute partition also encounters low utilization and high overhead due to phase-coupling design. We present Drift, a new LLM serving framework that resolves this tension via PD multiplexing, enabling in-place and phase-decoupled compute partition. Drift leverages low-level GPU partitioning techniques to multiplex prefill and decode phases spatially and adaptively on shared GPUs, while preserving in-place memory sharing. To fully leverage the multiplexing capability, Drift introduces an adaptive gang scheduling mechanism, a contention-free modeling method, and a SLO-aware dispatching policy. Evaluation shows that Drift achieves an average $5.1\times$ throughput improvement (up to $17.5\times$) over state-of-the-art baselines, while consistently meeting SLO targets under complex LLM workloads.</description>
-   <guid>oai:arXiv.org:2504.14489v2</guid>
-   <category>cs.OS</category>
-   <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Weihao Cui, Yukang Chen, Han Zhao, Ziyi Xu, Quan Chen, Xusheng Chen, Yangjie Zhou, Shixuan Sun, Minyi Guo</creator>
+   <creator>Yazan Otoum, Arghavan Asad, Amiya Nayak</creator>
   </item>
   <item>
    <title>D$^{2}$MoE: Dual Routing and Dynamic Scheduling for Efficient On-Device MoE-based LLM Serving</title>
@@ -309,30 +331,6 @@
    <creator>Haoran Zhang, Zejun Gong, Zekai Li, Marie Siew, Carlee Joe-Wong, Rachid El-Azouzi</creator>
   </item>
   <item>
-   <title>Revolutionizing Wireless Networks with Federated Learning: A Comprehensive Review</title>
-   <link>https://arxiv.org/abs/2308.04404</link>
-   <description>These days with the rising computational capabilities of wireless user equipment such as smart phones, tablets, and vehicles, along with growing concerns about sharing private data, a novel machine learning model called federated learning (FL) has emerged. FL enables the separation of data acquisition and computation at the central unit, which is different from centralized learning that occurs in a data center. FL is typically used in a wireless edge network where communication resources are limited and unreliable. Bandwidth constraints necessitate scheduling only a subset of UEs for updates in each iteration, and because the wireless medium is shared, transmissions are susceptible to interference and are not assured. The article discusses the significance of Machine Learning in wireless communication and highlights Federated Learning (FL) as a novel approach that could play a vital role in future mobile networks, particularly 6G and beyond.</description>
-   <guid>oai:arXiv.org:2308.04404v2</guid>
-   <category>cs.LG</category>
-   <category>cs.NI</category>
-   <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Sajjad Emdadi Mahdimahalleh</creator>
-  </item>
-  <item>
-   <title>Advancing Embodied Intelligence in Robotic-Assisted Endovascular Procedures: A Systematic Review of AI Solutions</title>
-   <link>https://arxiv.org/abs/2504.15327</link>
-   <description>Endovascular procedures have revolutionized the treatment of vascular diseases thanks to minimally invasive solutions that significantly reduce patient recovery time and enhance clinical outcomes. However, the precision and dexterity required during these procedures poses considerable challenges for interventionists. Robotic systems have emerged offering transformative solutions, addressing issues such as operator fatigue, radiation exposure, and the inherent limitations of human precision. The integration of Embodied Intelligence (EI) into these systems signifies a paradigm shift, enabling robots to navigate complex vascular networks and adapt to dynamic physiological conditions. Data-driven approaches, advanced computer vision, medical image analysis, and machine learning techniques, are at the forefront of this evolution. These methods augment procedural intelligence by facilitating real-time vessel segmentation, device tracking, and anatomical landmark detection. Reinforcement learning and imitation learning further refine navigation strategies and replicate experts' techniques. This review systematically examines the integration of EI principles into robotic technologies, in relation to endovascular procedures. We discuss recent advancements in intelligent perception and data-driven control, and their practical applications in robot-assisted endovascular procedures. By critically evaluating current limitations and emerging opportunities, this review establishes a framework for future developments, emphasizing the potential for greater autonomy and improved clinical outcomes. Emerging trends and specific areas of research, such as federated learning for medical data sharing, explainable AI for clinical decision support, and advanced human-robot collaboration paradigms, are also explored, offering insights into the future direction of this rapidly evolving field.</description>
-   <guid>oai:arXiv.org:2504.15327v1</guid>
-   <category>cs.RO</category>
-   <category>cs.LG</category>
-   <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Tianliang Yao, Bo Lu, Markus Kowarschik, Yixuan Yuan, Hubin Zhao, Sebastien Ourselin, Kaspar Althoefer, Junbo Ge, Peng Qi</creator>
-  </item>
-  <item>
    <title>Bayesian Federated Learning for Continual Training</title>
    <link>https://arxiv.org/abs/2504.15328</link>
    <description>Bayesian Federated Learning (BFL) enables uncertainty quantification and robust adaptation in distributed learning. In contrast to the frequentist approach, it estimates the posterior distribution of a global model, offering insights into model reliability. However, current BFL methods neglect continual learning challenges in dynamic environments where data distributions shift over time. We propose a continual BFL framework applied to human sensing with radar data collected over several days. Using Stochastic Gradient Langevin Dynamics (SGLD), our approach sequentially updates the model, leveraging past posteriors to construct the prior for the new tasks. We assess the accuracy, the expected calibration error (ECE) and the convergence speed of our approach against several baselines. Results highlight the effectiveness of continual Bayesian updates in preserving knowledge and adapting to evolving data.</description>
@@ -411,7 +409,7 @@
    <title>Advancing Embodied Intelligence in Robotic-Assisted Endovascular Procedures: A Systematic Review of AI Solutions</title>
    <link>https://arxiv.org/abs/2504.15327</link>
    <description>Endovascular procedures have revolutionized the treatment of vascular diseases thanks to minimally invasive solutions that significantly reduce patient recovery time and enhance clinical outcomes. However, the precision and dexterity required during these procedures poses considerable challenges for interventionists. Robotic systems have emerged offering transformative solutions, addressing issues such as operator fatigue, radiation exposure, and the inherent limitations of human precision. The integration of Embodied Intelligence (EI) into these systems signifies a paradigm shift, enabling robots to navigate complex vascular networks and adapt to dynamic physiological conditions. Data-driven approaches, advanced computer vision, medical image analysis, and machine learning techniques, are at the forefront of this evolution. These methods augment procedural intelligence by facilitating real-time vessel segmentation, device tracking, and anatomical landmark detection. Reinforcement learning and imitation learning further refine navigation strategies and replicate experts' techniques. This review systematically examines the integration of EI principles into robotic technologies, in relation to endovascular procedures. We discuss recent advancements in intelligent perception and data-driven control, and their practical applications in robot-assisted endovascular procedures. By critically evaluating current limitations and emerging opportunities, this review establishes a framework for future developments, emphasizing the potential for greater autonomy and improved clinical outcomes. Emerging trends and specific areas of research, such as federated learning for medical data sharing, explainable AI for clinical decision support, and advanced human-robot collaboration paradigms, are also explored, offering insights into the future direction of this rapidly evolving field.</description>
-   <guid>oai:arXiv.org:2504.15327v1</guid>
+   <guid>oai:arXiv.org:2504.15327v2</guid>
    <category>cs.RO</category>
    <category>cs.LG</category>
    <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
@@ -545,37 +543,39 @@
    <creator>Zihao Ye, Lequn Chen, Ruihang Lai, Wuwei Lin, Yineng Zhang, Stephanie Wang, Tianqi Chen, Baris Kasikci, Vinod Grover, Arvind Krishnamurthy, Luis Ceze</creator>
   </item>
   <item>
-   <title>From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs</title>
-   <link>https://arxiv.org/abs/2504.15965</link>
-   <description>Memory is the process of encoding, storing, and retrieving information, allowing humans to retain experiences, knowledge, skills, and facts over time, and serving as the foundation for growth and effective interaction with the world. It plays a crucial role in shaping our identity, making decisions, learning from past experiences, building relationships, and adapting to changes. In the era of large language models (LLMs), memory refers to the ability of an AI system to retain, recall, and use information from past interactions to improve future responses and interactions. Although previous research and reviews have provided detailed descriptions of memory mechanisms, there is still a lack of a systematic review that summarizes and analyzes the relationship between the memory of LLM-driven AI systems and human memory, as well as how we can be inspired by human memory to construct more powerful memory systems. To achieve this, in this paper, we propose a comprehensive survey on the memory of LLM-driven AI systems. In particular, we first conduct a detailed analysis of the categories of human memory and relate them to the memory of AI systems. Second, we systematically organize existing memory-related work and propose a categorization method based on three dimensions (object, form, and time) and eight quadrants. Finally, we illustrate some open problems regarding the memory of current AI systems and outline possible future directions for memory in the era of large language models.</description>
-   <guid>oai:arXiv.org:2504.15965v1</guid>
-   <category>cs.IR</category>
+   <title>RAGDoll: Efficient Offloading-based Online RAG System on a Single GPU</title>
+   <link>https://arxiv.org/abs/2504.15302</link>
+   <description>Retrieval-Augmented Generation (RAG) enhances large language model (LLM) generation quality by incorporating relevant external knowledge. However, deploying RAG on consumer-grade platforms is challenging due to limited memory and the increasing scale of both models and knowledge bases. In this work, we introduce RAGDoll, a resource-efficient, self-adaptive RAG serving system integrated with LLMs, specifically designed for resource-constrained platforms. RAGDoll exploits the insight that RAG retrieval and LLM generation impose different computational and memory demands, which in a traditional serial workflow result in substantial idle times and poor resource utilization. Based on this insight, RAGDoll decouples retrieval and generation into parallel pipelines, incorporating joint memory placement and dynamic batch scheduling strategies to optimize resource usage across diverse hardware devices and workloads. Extensive experiments demonstrate that RAGDoll adapts effectively to various hardware configurations and LLM scales, achieving up to 3.6 times speedup in average latency compared to serial RAG systems based on vLLM.</description>
+   <guid>oai:arXiv.org:2504.15302v1</guid>
+   <category>cs.DC</category>
+   <category>cs.OS</category>
    <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yaxiong Wu, Sheng Liang, Chen Zhang, Yichao Wang, Yongyue Zhang, Huifeng Guo, Ruiming Tang, Yong Liu</creator>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Weiping Yu, Ningyi Liao, Siqiang Luo, Junfeng Liu</creator>
   </item>
   <item>
-   <title>Pre-DPO: Improving Data Utilization in Direct Preference Optimization Using a Guiding Reference Model</title>
-   <link>https://arxiv.org/abs/2504.15843</link>
-   <description>Direct Preference Optimization (DPO) simplifies reinforcement learning from human feedback (RLHF) for large language models (LLMs) by directly optimizing human preferences without an explicit reward model. We find that during DPO training, the reference model plays the role of a data weight adjuster. However, the common practice of initializing the policy and reference models identically in DPO can lead to inefficient data utilization and impose a performance ceiling. Meanwhile, the lack of a reference model in Simple Preference Optimization (SimPO) reduces training robustness and necessitates stricter conditions to prevent catastrophic forgetting. In this work, we propose Pre-DPO, a simple yet effective DPO-based training paradigm that enhances preference optimization performance by leveraging a guiding reference model. This reference model provides foresight into the optimal policy state achievable through the training preference data, serving as a guiding mechanism that adaptively assigns higher weights to samples more suitable for the model and lower weights to those less suitable. Extensive experiments on AlpacaEval 2.0 and Arena-Hard v0.1 benchmarks demonstrate that Pre-DPO consistently improves the performance of both DPO and SimPO, without relying on external models or additional data.</description>
-   <guid>oai:arXiv.org:2504.15843v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Junshu Pan, Wei Shen, Shulin Huang, Qiji Zhou, Yue Zhang</creator>
-  </item>
-  <item>
-   <title>LLM-as-a-Judge: Reassessing the Performance of LLMs in Extractive QA</title>
-   <link>https://arxiv.org/abs/2504.11972</link>
-   <description>Extractive reading comprehension question answering (QA) datasets are typically evaluated using Exact Match (EM) and F1-score, but these metrics often fail to fully capture model performance. With the success of large language models (LLMs), they have been employed in various tasks, including serving as judges (LLM-as-a-judge). In this paper, we reassess the performance of QA models using LLM-as-a-judge across four reading comprehension QA datasets. We examine different families of LLMs and various answer types to evaluate the effectiveness of LLM-as-a-judge in these tasks. Our results show that LLM-as-a-judge is highly correlated with human judgments and can replace traditional EM/F1 metrics. By using LLM-as-a-judge, the correlation with human judgments improves significantly, from 0.22 (EM) and 0.40 (F1-score) to 0.85. These findings confirm that EM and F1 metrics underestimate the true performance of the QA models. While LLM-as-a-judge is not perfect for more difficult answer types (e.g., job), it still outperforms EM/F1, and we observe no bias issues, such as self-preference, when the same model is used for both the QA and judgment tasks.</description>
-   <guid>oai:arXiv.org:2504.11972v2</guid>
-   <category>cs.CL</category>
+   <title>Optimizing SLO-oriented LLM Serving with PD-Multiplexing</title>
+   <link>https://arxiv.org/abs/2504.14489</link>
+   <description>Modern LLM services demand high throughput and stringent SLO guarantees across two distinct inference phases-prefill and decode-and complex multi-turn workflows. However, current systems face a fundamental tradeoff: out-of-place compute partition enables per-phase SLO attainment, while in-place memory sharing maximizes throughput via KV cache reuse. Moreover, existing in-place compute partition also encounters low utilization and high overhead due to phase-coupling design. We present Drift, a new LLM serving framework that resolves this tension via PD multiplexing, enabling in-place and phase-decoupled compute partition. Drift leverages low-level GPU partitioning techniques to multiplex prefill and decode phases spatially and adaptively on shared GPUs, while preserving in-place memory sharing. To fully leverage the multiplexing capability, Drift introduces an adaptive gang scheduling mechanism, a contention-free modeling method, and a SLO-aware dispatching policy. Evaluation shows that Drift achieves an average $5.1\times$ throughput improvement (up to $17.5\times$) over state-of-the-art baselines, while consistently meeting SLO targets under complex LLM workloads.</description>
+   <guid>oai:arXiv.org:2504.14489v2</guid>
+   <category>cs.OS</category>
    <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Xanh Ho, Jiahao Huang, Florian Boudin, Akiko Aizawa</creator>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Weihao Cui, Yukang Chen, Han Zhao, Ziyi Xu, Quan Chen, Xusheng Chen, Yangjie Zhou, Shixuan Sun, Minyi Guo</creator>
+  </item>
+  <item>
+   <title>Revolutionizing Wireless Networks with Federated Learning: A Comprehensive Review</title>
+   <link>https://arxiv.org/abs/2308.04404</link>
+   <description>These days with the rising computational capabilities of wireless user equipment such as smart phones, tablets, and vehicles, along with growing concerns about sharing private data, a novel machine learning model called federated learning (FL) has emerged. FL enables the separation of data acquisition and computation at the central unit, which is different from centralized learning that occurs in a data center. FL is typically used in a wireless edge network where communication resources are limited and unreliable. Bandwidth constraints necessitate scheduling only a subset of UEs for updates in each iteration, and because the wireless medium is shared, transmissions are susceptible to interference and are not assured. The article discusses the significance of Machine Learning in wireless communication and highlights Federated Learning (FL) as a novel approach that could play a vital role in future mobile networks, particularly 6G and beyond.</description>
+   <guid>oai:arXiv.org:2308.04404v2</guid>
+   <category>cs.LG</category>
+   <category>cs.NI</category>
+   <pubdate>Wed, 23 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Sajjad Emdadi Mahdimahalleh</creator>
   </item>
  </channel>
 </rss>
