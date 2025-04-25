@@ -6,19 +6,46 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Fri, 25 Apr 2025 03:01:59 </lastBuildDate>
+  <lastBuildDate>Fri, 25 Apr 2025 04:15:07 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Fri, 25 Apr 2025 03:01:59 </pubDate>
+  <pubDate>Fri, 25 Apr 2025 04:15:07 </pubDate>
   <item>
-   <title>From Human Memory to AI Memory: A Survey on Memory Mechanisms in the Era of LLMs</title>
-   <link>https://arxiv.org/abs/2504.15965</link>
-   <description>Memory is the process of encoding, storing, and retrieving information, allowing humans to retain experiences, knowledge, skills, and facts over time, and serving as the foundation for growth and effective interaction with the world. It plays a crucial role in shaping our identity, making decisions, learning from past experiences, building relationships, and adapting to changes. In the era of large language models (LLMs), memory refers to the ability of an AI system to retain, recall, and use information from past interactions to improve future responses and interactions. Although previous research and reviews have provided detailed descriptions of memory mechanisms, there is still a lack of a systematic review that summarizes and analyzes the relationship between the memory of LLM-driven AI systems and human memory, as well as how we can be inspired by human memory to construct more powerful memory systems. To achieve this, in this paper, we propose a comprehensive survey on the memory of LLM-driven AI systems. In particular, we first conduct a detailed analysis of the categories of human memory and relate them to the memory of AI systems. Second, we systematically organize existing memory-related work and propose a categorization method based on three dimensions (object, form, and time) and eight quadrants. Finally, we illustrate some open problems regarding the memory of current AI systems and outline possible future directions for memory in the era of large language models.</description>
-   <guid>oai:arXiv.org:2504.15965v2</guid>
+   <title>A Comprehensive Survey of Knowledge-Based Vision Question Answering Systems: The Lifecycle of Knowledge in Visual Reasoning Task</title>
+   <link>https://arxiv.org/abs/2504.17547</link>
+   <description>Knowledge-based Vision Question Answering (KB-VQA) extends general Vision Question Answering (VQA) by not only requiring the understanding of visual and textual inputs but also extensive range of knowledge, enabling significant advancements across various real-world applications. KB-VQA introduces unique challenges, including the alignment of heterogeneous information from diverse modalities and sources, the retrieval of relevant knowledge from noisy or large-scale repositories, and the execution of complex reasoning to infer answers from the combined context. With the advancement of Large Language Models (LLMs), KB-VQA systems have also undergone a notable transformation, where LLMs serve as powerful knowledge repositories, retrieval-augmented generators and strong reasoners. Despite substantial progress, no comprehensive survey currently exists that systematically organizes and reviews the existing KB-VQA methods. This survey aims to fill this gap by establishing a structured taxonomy of KB-VQA approaches, and categorizing the systems into main stages: knowledge representation, knowledge retrieval, and knowledge reasoning. By exploring various knowledge integration techniques and identifying persistent challenges, this work also outlines promising future research directions, providing a foundation for advancing KB-VQA models and their applications.</description>
+   <guid>oai:arXiv.org:2504.17547v1</guid>
+   <category>cs.CV</category>
    <category>cs.IR</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <category>cs.MM</category>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Jiaqi Deng, Zonghan Wu, Huan Huo, Guandong Xu</creator>
+  </item>
+  <item>
+   <title>Energy Considerations of Large Language Model Inference and Efficiency Optimizations</title>
+   <link>https://arxiv.org/abs/2504.17674</link>
+   <description>As large language models (LLMs) scale in size and adoption, their computational and environmental costs continue to rise. Prior benchmarking efforts have primarily focused on latency reduction in idealized settings, often overlooking the diverse real-world inference workloads that shape energy use. In this work, we systematically analyze the energy implications of common inference efficiency optimizations across diverse Natural Language Processing (NLP) and generative Artificial Intelligence (AI) workloads, including conversational AI and code generation. We introduce a modeling approach that approximates real-world LLM workflows through a binning strategy for input-output token distributions and batch size variations. Our empirical analysis spans software frameworks, decoding strategies, GPU architectures, online and offline serving settings, and model parallelism configurations. We show that the effectiveness of inference optimizations is highly sensitive to workload geometry, software stack, and hardware accelerators, demonstrating that naive energy estimates based on FLOPs or theoretical GPU utilization significantly underestimate real-world energy consumption. Our findings reveal that the proper application of relevant inference efficiency optimizations can reduce total energy use by up to 73% from unoptimized baselines. These insights provide a foundation for sustainable LLM deployment and inform energy-efficient design strategies for future AI infrastructure.</description>
+   <guid>oai:arXiv.org:2504.17674v1</guid>
+   <category>cs.CL</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jared Fernandez, Clara Na, Vashisth Tiwari, Yonatan Bisk, Sasha Luccioni, Emma Strubell</creator>
+  </item>
+  <item>
+   <title>Towards Reasoning Ability of Small Language Models</title>
+   <link>https://arxiv.org/abs/2502.11569</link>
+   <description>Reasoning has long been viewed as an emergent property of large language models (LLMs), appearing at or above a certain scale ($\sim$100B parameters). However, recent studies challenge this assumption, showing that small language models (SLMs) can also achieve competitive reasoning performance. SLMs are increasingly favored for their efficiency and deployability. However, there is a lack of systematic study on the reasoning abilities of diverse SLMs, including those trained from scratch or derived from LLMs through quantization, pruning, and distillation. This raises a critical question: Can SLMs achieve reasoning abilities comparable to LLMs? In this work, we systematically survey, benchmark, and analyze 72 SLMs from six model families across 14 reasoning benchmarks. For reliable evaluation, we examine four evaluation methods and compare four LLM judges against human evaluations on 800 data points. We repeat all experiments three times to ensure a robust performance assessment. Additionally, we analyze the impact of different prompting strategies in small models. Beyond accuracy, we also evaluate model robustness under adversarial conditions and intermediate reasoning steps. Our findings challenge the assumption that scaling is the only way to achieve strong reasoning. Instead, we foresee a future where SLMs with strong reasoning capabilities can be developed through structured training or post-training compression. They can serve as efficient alternatives to LLMs for reasoning-intensive tasks.</description>
+   <guid>oai:arXiv.org:2502.11569v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yaxiong Wu, Sheng Liang, Chen Zhang, Yichao Wang, Yongyue Zhang, Huifeng Guo, Ruiming Tang, Yong Liu</creator>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Gaurav Srivastava, Shuxiang Cao, Xuan Wang</creator>
   </item>
   <item>
    <title>Can Large Language Models Help Multimodal Language Analysis? MMLA: A Comprehensive Benchmark</title>
@@ -28,34 +55,23 @@
    <category>cs.CL</category>
    <category>cs.AI</category>
    <category>cs.MM</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Hanlei Zhang, Zhuohang Li, Yeshuang Zhu, Hua Xu, Peiwu Wang, Haige Zhu, Jie Zhou, Jinchao Zhang</creator>
   </item>
   <item>
-   <title>ParetoHqD: Fast Offline Multiobjective Alignment of Large Language Models using Pareto High-quality Data</title>
-   <link>https://arxiv.org/abs/2504.16628</link>
-   <description>Aligning large language models with multiple human expectations and values is crucial for ensuring that they adequately serve a variety of user needs. To this end, offline multiobjective alignment algorithms such as the Rewards-in-Context algorithm have shown strong performance and efficiency. However, inappropriate preference representations and training with imbalanced reward scores limit the performance of such algorithms. In this work, we introduce ParetoHqD that addresses the above issues by representing human preferences as preference directions in the objective space and regarding data near the Pareto front as ''high-quality'' data. For each preference, ParetoHqD follows a two-stage supervised fine-tuning process, where each stage uses an individual Pareto high-quality training set that best matches its preference direction. The experimental results have demonstrated the superiority of ParetoHqD over five baselines on two multiobjective alignment tasks.</description>
-   <guid>oai:arXiv.org:2504.16628v1</guid>
-   <category>cs.LG</category>
-   <category>cs.CL</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <title>A Comprehensive Survey of Knowledge-Based Vision Question Answering Systems: The Lifecycle of Knowledge in Visual Reasoning Task</title>
+   <link>https://arxiv.org/abs/2504.17547</link>
+   <description>Knowledge-based Vision Question Answering (KB-VQA) extends general Vision Question Answering (VQA) by not only requiring the understanding of visual and textual inputs but also extensive range of knowledge, enabling significant advancements across various real-world applications. KB-VQA introduces unique challenges, including the alignment of heterogeneous information from diverse modalities and sources, the retrieval of relevant knowledge from noisy or large-scale repositories, and the execution of complex reasoning to infer answers from the combined context. With the advancement of Large Language Models (LLMs), KB-VQA systems have also undergone a notable transformation, where LLMs serve as powerful knowledge repositories, retrieval-augmented generators and strong reasoners. Despite substantial progress, no comprehensive survey currently exists that systematically organizes and reviews the existing KB-VQA methods. This survey aims to fill this gap by establishing a structured taxonomy of KB-VQA approaches, and categorizing the systems into main stages: knowledge representation, knowledge retrieval, and knowledge reasoning. By exploring various knowledge integration techniques and identifying persistent challenges, this work also outlines promising future research directions, providing a foundation for advancing KB-VQA models and their applications.</description>
+   <guid>oai:arXiv.org:2504.17547v1</guid>
+   <category>cs.CV</category>
+   <category>cs.IR</category>
+   <category>cs.MM</category>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Haoran Gu, Handing Wang, Yi Mei, Mengjie Zhang, Yaochu Jin</creator>
-  </item>
-  <item>
-   <title>Exploring the Role of Knowledge Graph-Based RAG in Japanese Medical Question Answering with Small-Scale LLMs</title>
-   <link>https://arxiv.org/abs/2504.10982</link>
-   <description>Large language models (LLMs) perform well in medical QA, but their effectiveness in Japanese contexts is limited due to privacy constraints that prevent the use of commercial models like GPT-4 in clinical settings. As a result, recent efforts focus on instruction-tuning open-source LLMs, though the potential of combining them with retrieval-augmented generation (RAG) remains underexplored. To bridge this gap, we are the first to explore a knowledge graph-based (KG) RAG framework for Japanese medical QA small-scale open-source LLMs. Experimental results show that KG-based RAG has only a limited impact on Japanese medical QA using small-scale open-source LLMs. Further case studies reveal that the effectiveness of the RAG is sensitive to the quality and relevance of the external retrieved content. These findings offer valuable insights into the challenges and potential of applying RAG in Japanese medical QA, while also serving as a reference for other low-resource languages.</description>
-   <guid>oai:arXiv.org:2504.10982v4</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
-   <creator>Yingjian Chen, Feiyang Li, Xingyu Song, Tianxiao Li, Zixin Xu, Xiujie Chen, Issey Sukeda, Irene Li</creator>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Jiaqi Deng, Zonghan Wu, Huan Huo, Guandong Xu</creator>
   </item>
   <item>
    <title>Can Large Language Models Help Multimodal Language Analysis? MMLA: A Comprehensive Benchmark</title>
@@ -65,58 +81,46 @@
    <category>cs.CL</category>
    <category>cs.AI</category>
    <category>cs.MM</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Hanlei Zhang, Zhuohang Li, Yeshuang Zhu, Hua Xu, Peiwu Wang, Haige Zhu, Jie Zhou, Jinchao Zhang</creator>
   </item>
   <item>
-   <title>Advancing Embodied Intelligence in Robotic-Assisted Endovascular Procedures: A Systematic Review of AI Solutions</title>
-   <link>https://arxiv.org/abs/2504.15327</link>
-   <description>Endovascular procedures have revolutionized the treatment of vascular diseases thanks to minimally invasive solutions that significantly reduce patient recovery time and enhance clinical outcomes. However, the precision and dexterity required during these procedures poses considerable challenges for interventionists. Robotic systems have emerged offering transformative solutions, addressing issues such as operator fatigue, radiation exposure, and the inherent limitations of human precision. The integration of Embodied Intelligence (EI) into these systems signifies a paradigm shift, enabling robots to navigate complex vascular networks and adapt to dynamic physiological conditions. Data-driven approaches, advanced computer vision, medical image analysis, and machine learning techniques, are at the forefront of this evolution. These methods augment procedural intelligence by facilitating real-time vessel segmentation, device tracking, and anatomical landmark detection. Reinforcement learning and imitation learning further refine navigation strategies and replicate experts' techniques. This review systematically examines the integration of EI principles into robotic technologies, in relation to endovascular procedures. We discuss recent advancements in intelligent perception and data-driven control, and their practical applications in robot-assisted endovascular procedures. By critically evaluating current limitations and emerging opportunities, this review establishes a framework for future developments, emphasizing the potential for greater autonomy and improved clinical outcomes. Emerging trends and specific areas of research, such as federated learning for medical data sharing, explainable AI for clinical decision support, and advanced human-robot collaboration paradigms, are also explored, offering insights into the future direction of this rapidly evolving field.</description>
-   <guid>oai:arXiv.org:2504.15327v2</guid>
-   <category>cs.RO</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <title>Capacity of Hierarchical Secure Coded Gradient Aggregation with Straggling Communication Links</title>
+   <link>https://arxiv.org/abs/2412.11496</link>
+   <description>The growing privacy concerns in distributed learning have led to the widespread adoption of secure aggregation techniques in distributed machine learning systems, such as federated learning. Motivated by a coded gradient aggregation problem in a user-helper-master hierarchical network setting with straggling communication links, we formulate a new secure hierarchical coded gradient aggregation problem. In our setting, \( K \) users communicate with the master through an intermediate layer of \( N \) helpers, who can communicate with each other. With a resiliency threshold of \( N_r \) for straggling communication links, and at most \( T \) colluding helpers and any number of colluding users, the master aims to recover the sum of all users' gradients while remaining unaware of any individual gradient that exceeds the expected sum. In addition, helpers cannot infer more about users' gradients than what is already known by the colluding users. We propose an achievable scheme where users' upload messages are based on a globally known Vandermonde matrix, and helper communication is facilitated using an extended Vandermonde matrix with special structural properties. A matching converse bound is also derived, establishing the optimal result for this hierarchical coded gradient aggregation problem.</description>
+   <guid>oai:arXiv.org:2412.11496v2</guid>
+   <category>cs.IT</category>
+   <category>math.IT</category>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Tianliang Yao, Bo Lu, Markus Kowarschik, Yixuan Yuan, Hubin Zhao, Sebastien Ourselin, Kaspar Althoefer, Junbo Ge, Peng Qi</creator>
-  </item>
-  <item>
-   <title>Efficient Data Valuation Approximation in Federated Learning: A Sampling-based Approach</title>
-   <link>https://arxiv.org/abs/2504.16668</link>
-   <description>Federated learning paradigm to utilize datasets across multiple data providers. In FL, cross-silo data providers often hesitate to share their high-quality dataset unless their data value can be fairly assessed. Shapley value (SV) has been advocated as the standard metric for data valuation in FL due to its desirable properties. However, the computational overhead of SV is prohibitive in practice, as it inherently requires training and evaluating an FL model across an exponential number of dataset combinations. Furthermore, existing solutions fail to achieve high accuracy and efficiency, making practical use of SV still out of reach, because they ignore choosing suitable computation scheme for approximation framework and overlook the property of utility function in FL. We first propose a unified stratified-sampling framework for two widely-used schemes. Then, we analyze and choose the more promising scheme under the FL linear regression assumption. After that, we identify a phenomenon termed key combinations, where only limited dataset combinations have a high-impact on final data value. Building on these insights, we propose a practical approximation algorithm, IPSS, which strategically selects high-impact dataset combinations rather than evaluating all possible combinations, thus substantially reducing time cost with minor approximation error. Furthermore, we conduct extensive evaluations on the FL benchmark datasets to demonstrate that our proposed algorithm outperforms a series of representative baselines in terms of efficiency and effectiveness.</description>
-   <guid>oai:arXiv.org:2504.16668v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DB</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Shuyue Wei, Yongxin Tong, Zimu Zhou, Tianran He, Yi Xu</creator>
+   <creator>Qinyi Lu, Jiale Cheng, Wei Kang, Nan Liu</creator>
   </item>
   <item>
-   <title>Federated Learning of Low-Rank One-Shot Image Detection Models in Edge Devices with Scalable Accuracy and Compute Complexity</title>
-   <link>https://arxiv.org/abs/2504.16515</link>
-   <description>This paper introduces a novel federated learning framework termed LoRa-FL designed for training low-rank one-shot image detection models deployed on edge devices. By incorporating low-rank adaptation techniques into one-shot detection architectures, our method significantly reduces both computational and communication overhead while maintaining scalable accuracy. The proposed framework leverages federated learning to collaboratively train lightweight image recognition models, enabling rapid adaptation and efficient deployment across heterogeneous, resource-constrained devices. Experimental evaluations on the MNIST and CIFAR10 benchmark datasets, both in an independent-and-identically-distributed (IID) and non-IID setting, demonstrate that our approach achieves competitive detection performance while significantly reducing communication bandwidth and compute complexity. This makes it a promising solution for adaptively reducing the communication and compute power overheads, while not sacrificing model accuracy.</description>
-   <guid>oai:arXiv.org:2504.16515v1</guid>
+   <title>A Comprehensive Survey of Knowledge-Based Vision Question Answering Systems: The Lifecycle of Knowledge in Visual Reasoning Task</title>
+   <link>https://arxiv.org/abs/2504.17547</link>
+   <description>Knowledge-based Vision Question Answering (KB-VQA) extends general Vision Question Answering (VQA) by not only requiring the understanding of visual and textual inputs but also extensive range of knowledge, enabling significant advancements across various real-world applications. KB-VQA introduces unique challenges, including the alignment of heterogeneous information from diverse modalities and sources, the retrieval of relevant knowledge from noisy or large-scale repositories, and the execution of complex reasoning to infer answers from the combined context. With the advancement of Large Language Models (LLMs), KB-VQA systems have also undergone a notable transformation, where LLMs serve as powerful knowledge repositories, retrieval-augmented generators and strong reasoners. Despite substantial progress, no comprehensive survey currently exists that systematically organizes and reviews the existing KB-VQA methods. This survey aims to fill this gap by establishing a structured taxonomy of KB-VQA approaches, and categorizing the systems into main stages: knowledge representation, knowledge retrieval, and knowledge reasoning. By exploring various knowledge integration techniques and identifying persistent challenges, this work also outlines promising future research directions, providing a foundation for advancing KB-VQA models and their applications.</description>
+   <guid>oai:arXiv.org:2504.17547v1</guid>
    <category>cs.CV</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <category>cs.IR</category>
+   <category>cs.MM</category>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Abdul Hannaan, Zubair Shah, Aiman Erbad, Amr Mohamed, Ali Safa</creator>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Jiaqi Deng, Zonghan Wu, Huan Huo, Guandong Xu</creator>
   </item>
   <item>
-   <title>Federated EndoViT: Pretraining Vision Transformers via Federated Learning on Endoscopic Image Collections</title>
-   <link>https://arxiv.org/abs/2504.16612</link>
-   <description>Purpose: In this study, we investigate the training of foundation models using federated learning to address data-sharing limitations and enable collaborative model training without data transfer for minimally invasive surgery. Methods: Inspired by the EndoViT study, we adapt the Masked Autoencoder for federated learning, enhancing it with adaptive Sharpness-Aware Minimization (FedSAM) and Stochastic Weight Averaging (SWA). Our model is pretrained on the Endo700k dataset collection and later fine-tuned and evaluated for tasks such as Semantic Segmentation, Action Triplet Recognition, and Surgical Phase Recognition. Results: Our findings demonstrate that integrating adaptive FedSAM into the federated MAE approach improves pretraining, leading to a reduction in reconstruction loss per patch. The application of FL-EndoViT in surgical downstream tasks results in performance comparable to CEN-EndoViT. Furthermore, FL-EndoViT exhibits advantages over CEN-EndoViT in surgical scene segmentation when data is limited and in action triplet recognition when large datasets are used. Conclusion: These findings highlight the potential of federated learning for privacy-preserving training of surgical foundation models, offering a robust and generalizable solution for surgical data science. Effective collaboration requires adapting federated learning methods, such as the integration of FedSAM, which can accommodate the inherent data heterogeneity across institutions. In future, exploring FL in video-based models may enhance these capabilities by incorporating spatiotemporal dynamics crucial for real-world surgical environments.</description>
-   <guid>oai:arXiv.org:2504.16612v1</guid>
+   <title>Token-Shuffle: Towards High-Resolution Image Generation with Autoregressive Models</title>
+   <link>https://arxiv.org/abs/2504.17789</link>
+   <description>Autoregressive (AR) models, long dominant in language generation, are increasingly applied to image synthesis but are often considered less competitive than Diffusion-based models. A primary limitation is the substantial number of image tokens required for AR models, which constrains both training and inference efficiency, as well as image resolution. To address this, we present Token-Shuffle, a novel yet simple method that reduces the number of image tokens in Transformer. Our key insight is the dimensional redundancy of visual vocabularies in Multimodal Large Language Models (MLLMs), where low-dimensional visual codes from visual encoder are directly mapped to high-dimensional language vocabularies. Leveraging this, we consider two key operations: token-shuffle, which merges spatially local tokens along channel dimension to decrease the input token number, and token-unshuffle, which untangles the inferred tokens after Transformer blocks to restore the spatial arrangement for output. Jointly training with textual prompts, our strategy requires no additional pretrained text-encoder and enables MLLMs to support extremely high-resolution image synthesis in a unified next-token prediction way while maintaining efficient training and inference. For the first time, we push the boundary of AR text-to-image generation to a resolution of 2048x2048 with gratifying generation performance. In GenAI-benchmark, our 2.7B model achieves 0.77 overall score on hard prompts, outperforming AR models LlamaGen by 0.18 and diffusion models LDM by 0.15. Exhaustive large-scale human evaluations also demonstrate our prominent image generation ability in terms of text-alignment, visual flaw, and visual appearance. We hope that Token-Shuffle can serve as a foundational design for efficient high-resolution image generation within MLLMs.</description>
+   <guid>oai:arXiv.org:2504.17789v1</guid>
    <category>cs.CV</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Max Kirchner, Alexander C. Jenke, Sebastian Bodenstedt, Fiona R. Kolbinger, Oliver Saldanha, Jakob N. Kather, Martin Wagner, Stefanie Speidel</creator>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xu Ma, Peize Sun, Haoyu Ma, Hao Tang, Chih-Yao Ma, Jialiang Wang, Kunpeng Li, Xiaoliang Dai, Yujun Shi, Xuan Ju, Yushi Hu, Artsiom Sanakoyeu, Felix Juefei-Xu, Ji Hou, Junjiao Tian, Tao Xu, Tingbo Hou, Yen-Cheng Liu, Zecheng He, Zijian He, Matt Feiszli, Peizhao Zhang, Peter Vajda, Sam Tsai, Yun Fu</creator>
   </item>
   <item>
    <title>A Survey of AI Agent Protocols</title>
@@ -124,7 +128,7 @@
    <description>The rapid development of large language models (LLMs) has led to the widespread deployment of LLM agents across diverse industries, including customer service, content generation, data analysis, and even healthcare. However, as more LLM agents are deployed, a major issue has emerged: there is no standard way for these agents to communicate with external tools or data sources. This lack of standardized protocols makes it difficult for agents to work together or scale effectively, and it limits their ability to tackle complex, real-world tasks. A unified communication protocol for LLM agents could change this. It would allow agents and tools to interact more smoothly, encourage collaboration, and triggering the formation of collective intelligence. In this paper, we provide a systematic overview of existing communication protocols for LLM agents. We classify them into four main categories and make an analysis to help users and developers select the most suitable protocols for specific applications. Additionally, we conduct a comparative performance analysis of these protocols across key dimensions such as security, scalability, and latency. Finally, we explore future challenges, such as how protocols can adapt and survive in fast-evolving environments, and what qualities future protocols might need to support the next generation of LLM agent ecosystems. We expect this work to serve as a practical reference for both researchers and engineers seeking to design, evaluate, or integrate robust communication infrastructures for intelligent agents.</description>
    <guid>oai:arXiv.org:2504.16736v1</guid>
    <category>cs.AI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Yingxuan Yang, Huacan Chai, Yuanyi Song, Siyuan Qi, Muning Wen, Ning Li, Junwei Liao, Haoyi Hu, Jianghao Lin, Gaowei Chang, Weiwen Liu, Ying Wen, Yong Yu, Weinan Zhang</creator>
@@ -136,7 +140,7 @@
    <guid>oai:arXiv.org:2504.16118v1</guid>
    <category>cs.CR</category>
    <category>cs.AI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Milad Rahmati</creator>
@@ -148,7 +152,7 @@
    <guid>oai:arXiv.org:2504.16148v1</guid>
    <category>cs.CY</category>
    <category>cs.AI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Danial Hooshyar, Gustav \v{S}\'ir, Yeongwook Yang, Eve Kikas, Raija H\&quot;am\&quot;al\&quot;ainen, Tommi K\&quot;arkk\&quot;ainen, Dragan Ga\v{s}evi\'c, Roger Azevedo</creator>
@@ -161,7 +165,7 @@
    <category>cs.DC</category>
    <category>cs.AI</category>
    <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Ying Chang, Xiaohu Shi, Xiaohui Zhao, Zhaohuang Chen, Deyin Ma</creator>
@@ -174,7 +178,7 @@
    <category>cs.CL</category>
    <category>cs.AI</category>
    <category>cs.MM</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Hanlei Zhang, Zhuohang Li, Yeshuang Zhu, Hua Xu, Peiwu Wang, Haige Zhu, Jie Zhou, Jinchao Zhang</creator>
@@ -188,7 +192,7 @@
    <category>cs.AI</category>
    <category>cs.CR</category>
    <category>cs.DC</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Charlie Hou, Mei-Yu Wang, Yige Zhu, Daniel Lazar, Giulia Fanti</creator>
@@ -200,7 +204,7 @@
    <guid>oai:arXiv.org:2504.16515v1</guid>
    <category>cs.CV</category>
    <category>cs.AI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Abdul Hannaan, Zubair Shah, Aiman Erbad, Amr Mohamed, Ali Safa</creator>
@@ -212,7 +216,7 @@
    <guid>oai:arXiv.org:2504.16584v1</guid>
    <category>cs.CR</category>
    <category>cs.AI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Md. Azizul Hakim Bappy (Institute of Information,Communication Technology, Bangladesh University of Engineering Technology, Dhaka, Bangladesh), Hossen A Mustafa (Institute of Information,Communication Technology, Bangladesh University of Engineering Technology, Dhaka, Bangladesh), Prottoy Saha (Institute of Information,Communication Technology, Bangladesh University of Engineering Technology, Dhaka, Bangladesh), Rajinus Salehat (Hajee Mohammad Danesh Science,Technology University, Dinajpur, Bangladesh)</creator>
@@ -224,250 +228,82 @@
    <guid>oai:arXiv.org:2504.10982v4</guid>
    <category>cs.CL</category>
    <category>cs.AI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
    <creator>Yingjian Chen, Feiyang Li, Xingyu Song, Tianxiao Li, Zixin Xu, Xiujie Chen, Issey Sukeda, Irene Li</creator>
   </item>
   <item>
-   <title>Towards a Distributed Federated Learning Aggregation Placement using Particle Swarm Intelligence</title>
-   <link>https://arxiv.org/abs/2504.16227</link>
-   <description>Federated learning has become a promising distributed learning concept with extra insurance on data privacy. Extensive studies on various models of Federated learning have been done since the coinage of its term. One of the important derivatives of federated learning is hierarchical semi-decentralized federated learning, which distributes the load of the aggregation task over multiple nodes and parallelizes the aggregation workload at the breadth of each level of the hierarchy. Various methods have also been proposed to perform inter-cluster and intra-cluster aggregation optimally. Most of the solutions, nonetheless, require monitoring the nodes' performance and resource consumption at each round, which necessitates frequently exchanging systematic data. To optimally perform distributed aggregation in SDFL with minimal reliance on systematic data, we propose Flag-Swap, a Particle Swarm Optimization (PSO) method that optimizes the aggregation placement according only to the processing delay. Our simulation results show that PSO-based placement can find the optimal placement relatively fast, even in scenarios with many clients as candidates for aggregation. Our real-world docker-based implementation of Flag-Swap over the recently emerged FL framework shows superior performance compared to black-box-based deterministic placement strategies, with about 43% minutes faster than random placement, and 32% minutes faster than uniform placement, in terms of total processing time.</description>
-   <guid>oai:arXiv.org:2504.16227v1</guid>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <category>cs.NE</category>
-   <category>cs.NI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Amir Ali-Pour, Sadra Bekrani, Laya Samizadeh, Julien Gascon-Samson</creator>
-  </item>
-  <item>
-   <title>DP2FL: Dual Prompt Personalized Federated Learning in Foundation Models</title>
-   <link>https://arxiv.org/abs/2504.16357</link>
-   <description>Personalized federated learning (PFL) has garnered significant attention for its ability to address heterogeneous client data distributions while preserving data privacy. However, when local client data is limited, deep learning models often suffer from insufficient training, leading to suboptimal performance. Foundation models, such as CLIP (Contrastive Language-Image Pretraining), exhibit strong feature extraction capabilities and can alleviate this issue by fine-tuning on limited local data. Despite their potential, foundation models are rarely utilized in federated learning scenarios, and challenges related to integrating new clients remain largely unresolved. To address these challenges, we propose the Dual Prompt Personalized Federated Learning (DP2FL) framework, which introduces dual prompts and an adaptive aggregation strategy. DP2FL combines global task awareness with local data-driven insights, enabling local models to achieve effective generalization while remaining adaptable to specific data distributions. Moreover, DP2FL introduces a global model that enables prediction on new data sources and seamlessly integrates newly added clients without requiring retraining. Experimental results in highly heterogeneous environments validate the effectiveness of DP2FL's prompt design and aggregation strategy, underscoring the advantages of prediction on novel data sources and demonstrating the seamless integration of new clients into the federated learning framework.</description>
-   <guid>oai:arXiv.org:2504.16357v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Ying Chang, Xiaohu Shi, Xiaohui Zhao, Zhaohuang Chen, Deyin Ma</creator>
-  </item>
-  <item>
-   <title>Simplified Swarm Learning Framework for Robust and Scalable Diagnostic Services in Cancer Histopathology</title>
-   <link>https://arxiv.org/abs/2504.16732</link>
-   <description>The complexities of healthcare data, including privacy concerns, imbalanced datasets, and interoperability issues, necessitate innovative machine learning solutions. Swarm Learning (SL), a decentralized alternative to Federated Learning, offers privacy-preserving distributed training, but its reliance on blockchain technology hinders accessibility and scalability. This paper introduces a \textit{Simplified Peer-to-Peer Swarm Learning (P2P-SL) Framework} tailored for resource-constrained environments. By eliminating blockchain dependencies and adopting lightweight peer-to-peer communication, the proposed framework ensures robust model synchronization while maintaining data privacy. Applied to cancer histopathology, the framework integrates optimized pre-trained models, such as TorchXRayVision, enhanced with DenseNet decoders, to improve diagnostic accuracy. Extensive experiments demonstrate the framework's efficacy in handling imbalanced and biased datasets, achieving comparable performance to centralized models while preserving privacy. This study paves the way for democratizing advanced machine learning in healthcare, offering a scalable, accessible, and efficient solution for privacy-sensitive diagnostic applications.</description>
-   <guid>oai:arXiv.org:2504.16732v1</guid>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yanjie Wu, Yuhao Ji, Saiho Lee, Juniad Akram, Ali Braytee, Ali Anaissi</creator>
-  </item>
-  <item>
-   <title>Private Federated Learning using Preference-Optimized Synthetic Data</title>
-   <link>https://arxiv.org/abs/2504.16438</link>
-   <description>In practical settings, differentially private Federated learning (DP-FL) is the dominant method for training models from private, on-device client data. Recent work has suggested that DP-FL may be enhanced or outperformed by methods that use DP synthetic data (Wu et al., 2024; Hou et al., 2024). The primary algorithms for generating DP synthetic data for FL applications require careful prompt engineering based on public information and/or iterative private client feedback. Our key insight is that the private client feedback collected by prior DP synthetic data methods (Hou et al., 2024; Xie et al., 2024) can be viewed as a preference ranking. Our algorithm, Preference Optimization for Private Client Data (POPri) harnesses client feedback using preference optimization algorithms such as Direct Preference Optimization (DPO) to fine-tune LLMs to generate high-quality DP synthetic data. To evaluate POPri, we release LargeFedBench, a new federated text benchmark for uncontaminated LLM evaluations on federated client data. POPri substantially improves the utility of DP synthetic data relative to prior work on LargeFedBench datasets and an existing benchmark from Xie et al. (2024). POPri closes the gap between next-token prediction accuracy in the fully-private and non-private settings by up to 68%, compared to 52% for prior synthetic data methods, and 10% for state-of-the-art DP federated learning methods. The code and data are available at https://github.com/meiyuw/POPri.</description>
-   <guid>oai:arXiv.org:2504.16438v1</guid>
+   <title>TACO: Tackling Over-correction in Federated Learning with Tailored Adaptive Correction</title>
+   <link>https://arxiv.org/abs/2504.17528</link>
+   <description>Non-independent and identically distributed (Non-IID) data across edge clients have long posed significant challenges to federated learning (FL) training in edge computing environments. Prior works have proposed various methods to mitigate this statistical heterogeneity. While these works can achieve good theoretical performance, in this work we provide the first investigation into a hidden over-correction phenomenon brought by the uniform model correction coefficients across clients adopted by existing methods. Such over-correction could degrade model performance and even cause failures in model convergence. To address this, we propose TACO, a novel algorithm that addresses the non-IID nature of clients' data by implementing fine-grained, client-specific gradient correction and model aggregation, steering local models towards a more accurate global optimum. Moreover, we verify that leading FL algorithms generally have better model accuracy in terms of communication rounds rather than wall-clock time, resulting from their extra computation overhead imposed on clients. To enhance the training efficiency, TACO deploys a lightweight model correction and tailored aggregation approach that requires minimum computation overhead and no extra information beyond the synchronized model parameters. To validate TACO's effectiveness, we present the first FL convergence analysis that reveals the root cause of over-correction. Extensive experiments across various datasets confirm TACO's superior and stable performance in practice.</description>
+   <guid>oai:arXiv.org:2504.17528v1</guid>
    <category>cs.LG</category>
    <category>cs.AI</category>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Charlie Hou, Mei-Yu Wang, Yige Zhu, Daniel Lazar, Giulia Fanti</creator>
-  </item>
-  <item>
-   <title>MegaScale-Infer: Serving Mixture-of-Experts at Scale with Disaggregated Expert Parallelism</title>
-   <link>https://arxiv.org/abs/2504.02263</link>
-   <description>Mixture-of-Experts (MoE) showcases tremendous potential to scale large language models (LLMs) with enhanced performance and reduced computational complexity. However, its sparsely activated architecture shifts feed-forward networks (FFNs) from being compute-intensive to memory-intensive during inference, leading to substantially lower GPU utilization and increased operational costs. We present MegaScale-Infer, an efficient and cost-effective system for serving large-scale MoE models. MegaScale-Infer disaggregates attention and FFN modules within each model layer, enabling independent scaling, tailored parallelism strategies, and heterogeneous deployment for both modules. To fully exploit disaggregation in the presence of MoE's sparsity, MegaScale-Infer introduces ping-pong pipeline parallelism, which partitions a request batch into micro-batches and shuttles them between attention and FFNs for inference. Combined with distinct model parallelism for each module, MegaScale-Infer effectively hides communication overhead and maximizes GPU utilization. To adapt to disaggregated attention and FFN modules and minimize data transmission overhead (e.g., token dispatch), MegaScale-Infer provides a high-performance M2N communication library that eliminates unnecessary GPU-to-CPU data copies, group initialization overhead, and GPU synchronization. Experimental results indicate that MegaScale-Infer achieves up to 1.90x higher per-GPU throughput than state-of-the-art solutions.</description>
-   <guid>oai:arXiv.org:2504.02263v3</guid>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Ruidong Zhu, Ziheng Jiang, Chao Jin, Peng Wu, Cesar A. Stuardo, Dongyang Wang, Xinlei Zhang, Huaping Zhou, Haoran Wei, Yang Cheng, Jianzhe Xiao, Xinyi Zhang, Lingjun Liu, Haibin Lin, Li-Wen Chang, Jianxi Ye, Xiao Yu, Xuanzhe Liu, Xin Jin, Xin Liu</creator>
-  </item>
-  <item>
-   <title>Private Federated Learning using Preference-Optimized Synthetic Data</title>
-   <link>https://arxiv.org/abs/2504.16438</link>
-   <description>In practical settings, differentially private Federated learning (DP-FL) is the dominant method for training models from private, on-device client data. Recent work has suggested that DP-FL may be enhanced or outperformed by methods that use DP synthetic data (Wu et al., 2024; Hou et al., 2024). The primary algorithms for generating DP synthetic data for FL applications require careful prompt engineering based on public information and/or iterative private client feedback. Our key insight is that the private client feedback collected by prior DP synthetic data methods (Hou et al., 2024; Xie et al., 2024) can be viewed as a preference ranking. Our algorithm, Preference Optimization for Private Client Data (POPri) harnesses client feedback using preference optimization algorithms such as Direct Preference Optimization (DPO) to fine-tune LLMs to generate high-quality DP synthetic data. To evaluate POPri, we release LargeFedBench, a new federated text benchmark for uncontaminated LLM evaluations on federated client data. POPri substantially improves the utility of DP synthetic data relative to prior work on LargeFedBench datasets and an existing benchmark from Xie et al. (2024). POPri closes the gap between next-token prediction accuracy in the fully-private and non-private settings by up to 68%, compared to 52% for prior synthetic data methods, and 10% for state-of-the-art DP federated learning methods. The code and data are available at https://github.com/meiyuw/POPri.</description>
-   <guid>oai:arXiv.org:2504.16438v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Charlie Hou, Mei-Yu Wang, Yige Zhu, Daniel Lazar, Giulia Fanti</creator>
+   <creator>Weijie Liu, Ziwei Zhan, Carlee Joe-Wong, Edith Ngai, Jingpu Duan, Deke Guo, Xu Chen, Xiaoxi Zhang</creator>
   </item>
   <item>
-   <title>ParetoHqD: Fast Offline Multiobjective Alignment of Large Language Models using Pareto High-quality Data</title>
-   <link>https://arxiv.org/abs/2504.16628</link>
-   <description>Aligning large language models with multiple human expectations and values is crucial for ensuring that they adequately serve a variety of user needs. To this end, offline multiobjective alignment algorithms such as the Rewards-in-Context algorithm have shown strong performance and efficiency. However, inappropriate preference representations and training with imbalanced reward scores limit the performance of such algorithms. In this work, we introduce ParetoHqD that addresses the above issues by representing human preferences as preference directions in the objective space and regarding data near the Pareto front as ''high-quality'' data. For each preference, ParetoHqD follows a two-stage supervised fine-tuning process, where each stage uses an individual Pareto high-quality training set that best matches its preference direction. The experimental results have demonstrated the superiority of ParetoHqD over five baselines on two multiobjective alignment tasks.</description>
-   <guid>oai:arXiv.org:2504.16628v1</guid>
+   <title>Decentralized Time Series Classification with ROCKET Features</title>
+   <link>https://arxiv.org/abs/2504.17617</link>
+   <description>Time series classification (TSC) is a critical task with applications in various domains, including healthcare, finance, and industrial monitoring. Due to privacy concerns and data regulations, Federated Learning has emerged as a promising approach for learning from distributed time series data without centralizing raw information. However, most FL solutions rely on a client-server architecture, which introduces robustness and confidentiality risks related to the distinguished role of the server, which is a single point of failure and can observe knowledge extracted from clients. To address these challenges, we propose DROCKS, a fully decentralized FL framework for TSC that leverages ROCKET (RandOm Convolutional KErnel Transform) features. In DROCKS, the global model is trained by sequentially traversing a structured path across federation nodes, where each node refines the model and selects the most effective local kernels before passing them to the successor. Extensive experiments on the UCR archive demonstrate that DROCKS outperforms state-of-the-art client-server FL approaches while being more resilient to node failures and malicious attacks. Our code is available at https://anonymous.4open.science/r/DROCKS-7FF3/README.md.</description>
+   <guid>oai:arXiv.org:2504.17617v1</guid>
    <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Bruno Casella, Matthias Jakobs, Marco Aldinucci, Sebastian Buschj\&quot;ager</creator>
+  </item>
+  <item>
+   <title>Federated Learning: A Survey on Privacy-Preserving Collaborative Intelligence</title>
+   <link>https://arxiv.org/abs/2504.17703</link>
+   <description>Federated Learning (FL) has emerged as a transformative paradigm in the field of distributed machine learning, enabling multiple clients such as mobile devices, edge nodes, or organizations to collaboratively train a shared global model without the need to centralize sensitive data. This decentralized approach addresses growing concerns around data privacy, security, and regulatory compliance, making it particularly attractive in domains such as healthcare, finance, and smart IoT systems. This survey provides a concise yet comprehensive overview of Federated Learning, beginning with its core architecture and communication protocol. We discuss the standard FL lifecycle, including local training, model aggregation, and global updates. A particular emphasis is placed on key technical challenges such as handling non-IID (non-independent and identically distributed) data, mitigating system and hardware heterogeneity, reducing communication overhead, and ensuring privacy through mechanisms like differential privacy and secure aggregation. Furthermore, we examine emerging trends in FL research, including personalized FL, cross-device versus cross-silo settings, and integration with other paradigms such as reinforcement learning and quantum computing. We also highlight real-world applications and summarize benchmark datasets and evaluation metrics commonly used in FL research. Finally, we outline open research problems and future directions to guide the development of scalable, efficient, and trustworthy FL systems.</description>
+   <guid>oai:arXiv.org:2504.17703v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
+   <creator>Edward Collins, Michel Wang</creator>
+  </item>
+  <item>
+   <title>Energy Considerations of Large Language Model Inference and Efficiency Optimizations</title>
+   <link>https://arxiv.org/abs/2504.17674</link>
+   <description>As large language models (LLMs) scale in size and adoption, their computational and environmental costs continue to rise. Prior benchmarking efforts have primarily focused on latency reduction in idealized settings, often overlooking the diverse real-world inference workloads that shape energy use. In this work, we systematically analyze the energy implications of common inference efficiency optimizations across diverse Natural Language Processing (NLP) and generative Artificial Intelligence (AI) workloads, including conversational AI and code generation. We introduce a modeling approach that approximates real-world LLM workflows through a binning strategy for input-output token distributions and batch size variations. Our empirical analysis spans software frameworks, decoding strategies, GPU architectures, online and offline serving settings, and model parallelism configurations. We show that the effectiveness of inference optimizations is highly sensitive to workload geometry, software stack, and hardware accelerators, demonstrating that naive energy estimates based on FLOPs or theoretical GPU utilization significantly underestimate real-world energy consumption. Our findings reveal that the proper application of relevant inference efficiency optimizations can reduce total energy use by up to 73% from unoptimized baselines. These insights provide a foundation for sustainable LLM deployment and inform energy-efficient design strategies for future AI infrastructure.</description>
+   <guid>oai:arXiv.org:2504.17674v1</guid>
    <category>cs.CL</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Haoran Gu, Handing Wang, Yi Mei, Mengjie Zhang, Yaochu Jin</creator>
-  </item>
-  <item>
-   <title>Efficient Data Valuation Approximation in Federated Learning: A Sampling-based Approach</title>
-   <link>https://arxiv.org/abs/2504.16668</link>
-   <description>Federated learning paradigm to utilize datasets across multiple data providers. In FL, cross-silo data providers often hesitate to share their high-quality dataset unless their data value can be fairly assessed. Shapley value (SV) has been advocated as the standard metric for data valuation in FL due to its desirable properties. However, the computational overhead of SV is prohibitive in practice, as it inherently requires training and evaluating an FL model across an exponential number of dataset combinations. Furthermore, existing solutions fail to achieve high accuracy and efficiency, making practical use of SV still out of reach, because they ignore choosing suitable computation scheme for approximation framework and overlook the property of utility function in FL. We first propose a unified stratified-sampling framework for two widely-used schemes. Then, we analyze and choose the more promising scheme under the FL linear regression assumption. After that, we identify a phenomenon termed key combinations, where only limited dataset combinations have a high-impact on final data value. Building on these insights, we propose a practical approximation algorithm, IPSS, which strategically selects high-impact dataset combinations rather than evaluating all possible combinations, thus substantially reducing time cost with minor approximation error. Furthermore, we conduct extensive evaluations on the FL benchmark datasets to demonstrate that our proposed algorithm outperforms a series of representative baselines in terms of efficiency and effectiveness.</description>
-   <guid>oai:arXiv.org:2504.16668v1</guid>
    <category>cs.LG</category>
-   <category>cs.DB</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Shuyue Wei, Yongxin Tong, Zimu Zhou, Tianran He, Yi Xu</creator>
-  </item>
-  <item>
-   <title>An Adaptive ML Framework for Power Converter Monitoring via Federated Transfer Learning</title>
-   <link>https://arxiv.org/abs/2504.16866</link>
-   <description>This study explores alternative framework configurations for adapting thermal machine learning (ML) models for power converters by combining transfer learning (TL) and federated learning (FL) in a piecewise manner. This approach inherently addresses challenges such as varying operating conditions, data sharing limitations, and security implications. The framework starts with a base model that is incrementally adapted by multiple clients via adapting three state-of-the-art domain adaptation techniques: Fine-tuning, Transfer Component Analysis (TCA), and Deep Domain Adaptation (DDA). The Flower framework is employed for FL, using Federated Averaging for aggregation. Validation with field data demonstrates that fine-tuning offers a straightforward TL approach with high accuracy, making it suitable for practical applications. Benchmarking results reveal a comprehensive comparison of these methods, showcasing their respective strengths and weaknesses when applied in different scenarios. Locally hosted FL enhances performance when data aggregation is not feasible, while cloud-based FL becomes more practical with a significant increase in the number of clients, addressing scalability and connectivity challenges.</description>
-   <guid>oai:arXiv.org:2504.16866v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Panagiotis Kakosimos, Alireza Nemat Saberi, Luca Peretti</creator>
-  </item>
-  <item>
-   <title>Towards a Distributed Federated Learning Aggregation Placement using Particle Swarm Intelligence</title>
-   <link>https://arxiv.org/abs/2504.16227</link>
-   <description>Federated learning has become a promising distributed learning concept with extra insurance on data privacy. Extensive studies on various models of Federated learning have been done since the coinage of its term. One of the important derivatives of federated learning is hierarchical semi-decentralized federated learning, which distributes the load of the aggregation task over multiple nodes and parallelizes the aggregation workload at the breadth of each level of the hierarchy. Various methods have also been proposed to perform inter-cluster and intra-cluster aggregation optimally. Most of the solutions, nonetheless, require monitoring the nodes' performance and resource consumption at each round, which necessitates frequently exchanging systematic data. To optimally perform distributed aggregation in SDFL with minimal reliance on systematic data, we propose Flag-Swap, a Particle Swarm Optimization (PSO) method that optimizes the aggregation placement according only to the processing delay. Our simulation results show that PSO-based placement can find the optimal placement relatively fast, even in scenarios with many clients as candidates for aggregation. Our real-world docker-based implementation of Flag-Swap over the recently emerged FL framework shows superior performance compared to black-box-based deterministic placement strategies, with about 43% minutes faster than random placement, and 32% minutes faster than uniform placement, in terms of total processing time.</description>
-   <guid>oai:arXiv.org:2504.16227v1</guid>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <category>cs.NE</category>
-   <category>cs.NI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Amir Ali-Pour, Sadra Bekrani, Laya Samizadeh, Julien Gascon-Samson</creator>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jared Fernandez, Clara Na, Vashisth Tiwari, Yonatan Bisk, Sasha Luccioni, Emma Strubell</creator>
   </item>
   <item>
-   <title>DP2FL: Dual Prompt Personalized Federated Learning in Foundation Models</title>
-   <link>https://arxiv.org/abs/2504.16357</link>
-   <description>Personalized federated learning (PFL) has garnered significant attention for its ability to address heterogeneous client data distributions while preserving data privacy. However, when local client data is limited, deep learning models often suffer from insufficient training, leading to suboptimal performance. Foundation models, such as CLIP (Contrastive Language-Image Pretraining), exhibit strong feature extraction capabilities and can alleviate this issue by fine-tuning on limited local data. Despite their potential, foundation models are rarely utilized in federated learning scenarios, and challenges related to integrating new clients remain largely unresolved. To address these challenges, we propose the Dual Prompt Personalized Federated Learning (DP2FL) framework, which introduces dual prompts and an adaptive aggregation strategy. DP2FL combines global task awareness with local data-driven insights, enabling local models to achieve effective generalization while remaining adaptable to specific data distributions. Moreover, DP2FL introduces a global model that enables prediction on new data sources and seamlessly integrates newly added clients without requiring retraining. Experimental results in highly heterogeneous environments validate the effectiveness of DP2FL's prompt design and aggregation strategy, underscoring the advantages of prediction on novel data sources and demonstrating the seamless integration of new clients into the federated learning framework.</description>
-   <guid>oai:arXiv.org:2504.16357v1</guid>
-   <category>cs.DC</category>
+   <title>FedMerge: Federated Personalization via Model Merging</title>
+   <link>https://arxiv.org/abs/2504.06768</link>
+   <description>One global model in federated learning (FL) might not be sufficient to serve many clients with non-IID tasks and distributions. While there has been advances in FL to train multiple global models for better personalization, they only provide limited choices to clients so local finetuning is still indispensable. In this paper, we propose a novel ``FedMerge'' approach that can create a personalized model per client by simply merging multiple global models with automatically optimized and customized weights. In FedMerge, a few global models can serve many non-IID clients, even without further local finetuning. We formulate this problem as a joint optimization of global models and the merging weights for each client. Unlike existing FL approaches where the server broadcasts one or multiple global models to all clients, the server only needs to send a customized, merged model to each client. Moreover, instead of periodically interrupting the local training and re-initializing it to a global model, the merged model aligns better with each client's task and data distribution, smoothening the local-global gap between consecutive rounds caused by client drift. We evaluate FedMerge on three different non-IID settings applied to different domains with diverse tasks and data types, in which FedMerge consistently outperforms existing FL approaches, including clustering-based and mixture-of-experts (MoE) based methods.</description>
+   <guid>oai:arXiv.org:2504.06768v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Shutong Chen, Tianyi Zhou, Guodong Long, Jing Jiang, Chengqi Zhang</creator>
+  </item>
+  <item>
+   <title>Towards Reasoning Ability of Small Language Models</title>
+   <link>https://arxiv.org/abs/2502.11569</link>
+   <description>Reasoning has long been viewed as an emergent property of large language models (LLMs), appearing at or above a certain scale ($\sim$100B parameters). However, recent studies challenge this assumption, showing that small language models (SLMs) can also achieve competitive reasoning performance. SLMs are increasingly favored for their efficiency and deployability. However, there is a lack of systematic study on the reasoning abilities of diverse SLMs, including those trained from scratch or derived from LLMs through quantization, pruning, and distillation. This raises a critical question: Can SLMs achieve reasoning abilities comparable to LLMs? In this work, we systematically survey, benchmark, and analyze 72 SLMs from six model families across 14 reasoning benchmarks. For reliable evaluation, we examine four evaluation methods and compare four LLM judges against human evaluations on 800 data points. We repeat all experiments three times to ensure a robust performance assessment. Additionally, we analyze the impact of different prompting strategies in small models. Beyond accuracy, we also evaluate model robustness under adversarial conditions and intermediate reasoning steps. Our findings challenge the assumption that scaling is the only way to achieve strong reasoning. Instead, we foresee a future where SLMs with strong reasoning capabilities can be developed through structured training or post-training compression. They can serve as efficient alternatives to LLMs for reasoning-intensive tasks.</description>
+   <guid>oai:arXiv.org:2502.11569v2</guid>
+   <category>cs.CL</category>
    <category>cs.AI</category>
    <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Ying Chang, Xiaohu Shi, Xiaohui Zhao, Zhaohuang Chen, Deyin Ma</creator>
-  </item>
-  <item>
-   <title>Federated EndoViT: Pretraining Vision Transformers via Federated Learning on Endoscopic Image Collections</title>
-   <link>https://arxiv.org/abs/2504.16612</link>
-   <description>Purpose: In this study, we investigate the training of foundation models using federated learning to address data-sharing limitations and enable collaborative model training without data transfer for minimally invasive surgery. Methods: Inspired by the EndoViT study, we adapt the Masked Autoencoder for federated learning, enhancing it with adaptive Sharpness-Aware Minimization (FedSAM) and Stochastic Weight Averaging (SWA). Our model is pretrained on the Endo700k dataset collection and later fine-tuned and evaluated for tasks such as Semantic Segmentation, Action Triplet Recognition, and Surgical Phase Recognition. Results: Our findings demonstrate that integrating adaptive FedSAM into the federated MAE approach improves pretraining, leading to a reduction in reconstruction loss per patch. The application of FL-EndoViT in surgical downstream tasks results in performance comparable to CEN-EndoViT. Furthermore, FL-EndoViT exhibits advantages over CEN-EndoViT in surgical scene segmentation when data is limited and in action triplet recognition when large datasets are used. Conclusion: These findings highlight the potential of federated learning for privacy-preserving training of surgical foundation models, offering a robust and generalizable solution for surgical data science. Effective collaboration requires adapting federated learning methods, such as the integration of FedSAM, which can accommodate the inherent data heterogeneity across institutions. In future, exploring FL in video-based models may enhance these capabilities by incorporating spatiotemporal dynamics crucial for real-world surgical environments.</description>
-   <guid>oai:arXiv.org:2504.16612v1</guid>
-   <category>cs.CV</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Max Kirchner, Alexander C. Jenke, Sebastian Bodenstedt, Fiona R. Kolbinger, Oliver Saldanha, Jakob N. Kather, Martin Wagner, Stefanie Speidel</creator>
-  </item>
-  <item>
-   <title>Simplified Swarm Learning Framework for Robust and Scalable Diagnostic Services in Cancer Histopathology</title>
-   <link>https://arxiv.org/abs/2504.16732</link>
-   <description>The complexities of healthcare data, including privacy concerns, imbalanced datasets, and interoperability issues, necessitate innovative machine learning solutions. Swarm Learning (SL), a decentralized alternative to Federated Learning, offers privacy-preserving distributed training, but its reliance on blockchain technology hinders accessibility and scalability. This paper introduces a \textit{Simplified Peer-to-Peer Swarm Learning (P2P-SL) Framework} tailored for resource-constrained environments. By eliminating blockchain dependencies and adopting lightweight peer-to-peer communication, the proposed framework ensures robust model synchronization while maintaining data privacy. Applied to cancer histopathology, the framework integrates optimized pre-trained models, such as TorchXRayVision, enhanced with DenseNet decoders, to improve diagnostic accuracy. Extensive experiments demonstrate the framework's efficacy in handling imbalanced and biased datasets, achieving comparable performance to centralized models while preserving privacy. This study paves the way for democratizing advanced machine learning in healthcare, offering a scalable, accessible, and efficient solution for privacy-sensitive diagnostic applications.</description>
-   <guid>oai:arXiv.org:2504.16732v1</guid>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yanjie Wu, Yuhao Ji, Saiho Lee, Juniad Akram, Ali Braytee, Ali Anaissi</creator>
-  </item>
-  <item>
-   <title>Sharp Bounds for Sequential Federated Learning on Heterogeneous Data</title>
-   <link>https://arxiv.org/abs/2405.01142</link>
-   <description>There are two paradigms in Federated Learning (FL): parallel FL (PFL), where models are trained in a parallel manner across clients, and sequential FL (SFL), where models are trained in a sequential manner across clients. Specifically, in PFL, clients perform local updates independently and send the updated model parameters to a global server for aggregation; in SFL, one client starts its local updates only after receiving the model parameters from the previous client in the sequence. In contrast to that of PFL, the convergence theory of SFL on heterogeneous data is still lacking. To resolve the theoretical dilemma of SFL, we establish sharp convergence guarantees for SFL on heterogeneous data with both upper and lower bounds. Specifically, we derive the upper bounds for the strongly convex, general convex and non-convex objective functions, and construct the matching lower bounds for the strongly convex and general convex objective functions. Then, we compare the upper bounds of SFL with those of PFL, showing that SFL outperforms PFL on heterogeneous data (at least, when the level of heterogeneity is relatively high). Experimental results validate the counterintuitive theoretical finding.</description>
-   <guid>oai:arXiv.org:2405.01142v2</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yipeng Li, Xinchen Lyu</creator>
-  </item>
-  <item>
-   <title>MegaScale-Infer: Serving Mixture-of-Experts at Scale with Disaggregated Expert Parallelism</title>
-   <link>https://arxiv.org/abs/2504.02263</link>
-   <description>Mixture-of-Experts (MoE) showcases tremendous potential to scale large language models (LLMs) with enhanced performance and reduced computational complexity. However, its sparsely activated architecture shifts feed-forward networks (FFNs) from being compute-intensive to memory-intensive during inference, leading to substantially lower GPU utilization and increased operational costs. We present MegaScale-Infer, an efficient and cost-effective system for serving large-scale MoE models. MegaScale-Infer disaggregates attention and FFN modules within each model layer, enabling independent scaling, tailored parallelism strategies, and heterogeneous deployment for both modules. To fully exploit disaggregation in the presence of MoE's sparsity, MegaScale-Infer introduces ping-pong pipeline parallelism, which partitions a request batch into micro-batches and shuttles them between attention and FFNs for inference. Combined with distinct model parallelism for each module, MegaScale-Infer effectively hides communication overhead and maximizes GPU utilization. To adapt to disaggregated attention and FFN modules and minimize data transmission overhead (e.g., token dispatch), MegaScale-Infer provides a high-performance M2N communication library that eliminates unnecessary GPU-to-CPU data copies, group initialization overhead, and GPU synchronization. Experimental results indicate that MegaScale-Infer achieves up to 1.90x higher per-GPU throughput than state-of-the-art solutions.</description>
-   <guid>oai:arXiv.org:2504.02263v3</guid>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Ruidong Zhu, Ziheng Jiang, Chao Jin, Peng Wu, Cesar A. Stuardo, Dongyang Wang, Xinlei Zhang, Huaping Zhou, Haoran Wei, Yang Cheng, Jianzhe Xiao, Xinyi Zhang, Lingjun Liu, Haibin Lin, Li-Wen Chang, Jianxi Ye, Xiao Yu, Xuanzhe Liu, Xin Jin, Xin Liu</creator>
-  </item>
-  <item>
-   <title>Advancing Embodied Intelligence in Robotic-Assisted Endovascular Procedures: A Systematic Review of AI Solutions</title>
-   <link>https://arxiv.org/abs/2504.15327</link>
-   <description>Endovascular procedures have revolutionized the treatment of vascular diseases thanks to minimally invasive solutions that significantly reduce patient recovery time and enhance clinical outcomes. However, the precision and dexterity required during these procedures poses considerable challenges for interventionists. Robotic systems have emerged offering transformative solutions, addressing issues such as operator fatigue, radiation exposure, and the inherent limitations of human precision. The integration of Embodied Intelligence (EI) into these systems signifies a paradigm shift, enabling robots to navigate complex vascular networks and adapt to dynamic physiological conditions. Data-driven approaches, advanced computer vision, medical image analysis, and machine learning techniques, are at the forefront of this evolution. These methods augment procedural intelligence by facilitating real-time vessel segmentation, device tracking, and anatomical landmark detection. Reinforcement learning and imitation learning further refine navigation strategies and replicate experts' techniques. This review systematically examines the integration of EI principles into robotic technologies, in relation to endovascular procedures. We discuss recent advancements in intelligent perception and data-driven control, and their practical applications in robot-assisted endovascular procedures. By critically evaluating current limitations and emerging opportunities, this review establishes a framework for future developments, emphasizing the potential for greater autonomy and improved clinical outcomes. Emerging trends and specific areas of research, such as federated learning for medical data sharing, explainable AI for clinical decision support, and advanced human-robot collaboration paradigms, are also explored, offering insights into the future direction of this rapidly evolving field.</description>
-   <guid>oai:arXiv.org:2504.15327v2</guid>
-   <category>cs.RO</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 25 Apr 2025 00:00:00 -0400</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Tianliang Yao, Bo Lu, Markus Kowarschik, Yixuan Yuan, Hubin Zhao, Sebastien Ourselin, Kaspar Althoefer, Junbo Ge, Peng Qi</creator>
-  </item>
-  <item>
-   <title>Towards a Distributed Federated Learning Aggregation Placement using Particle Swarm Intelligence</title>
-   <link>https://arxiv.org/abs/2504.16227</link>
-   <description>Federated learning has become a promising distributed learning concept with extra insurance on data privacy. Extensive studies on various models of Federated learning have been done since the coinage of its term. One of the important derivatives of federated learning is hierarchical semi-decentralized federated learning, which distributes the load of the aggregation task over multiple nodes and parallelizes the aggregation workload at the breadth of each level of the hierarchy. Various methods have also been proposed to perform inter-cluster and intra-cluster aggregation optimally. Most of the solutions, nonetheless, require monitoring the nodes' performance and resource consumption at each round, which necessitates frequently exchanging systematic data. To optimally perform distributed aggregation in SDFL with minimal reliance on systematic data, we propose Flag-Swap, a Particle Swarm Optimization (PSO) method that optimizes the aggregation placement according only to the processing delay. Our simulation results show that PSO-based placement can find the optimal placement relatively fast, even in scenarios with many clients as candidates for aggregation. Our real-world docker-based implementation of Flag-Swap over the recently emerged FL framework shows superior performance compared to black-box-based deterministic placement strategies, with about 43% minutes faster than random placement, and 32% minutes faster than uniform placement, in terms of total processing time.</description>
-   <guid>oai:arXiv.org:2504.16227v1</guid>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <category>cs.NE</category>
-   <category>cs.NI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Amir Ali-Pour, Sadra Bekrani, Laya Samizadeh, Julien Gascon-Samson</creator>
-  </item>
-  <item>
-   <title>Towards responsible AI for education: Hybrid human-AI to confront the Elephant in the room</title>
-   <link>https://arxiv.org/abs/2504.16148</link>
-   <description>Despite significant advancements in AI-driven educational systems and ongoing calls for responsible AI for education, several critical issues remain unresolved -- acting as the elephant in the room within AI in education, learning analytics, educational data mining, learning sciences, and educational psychology communities. This critical analysis identifies and examines nine persistent challenges that continue to undermine the fairness, transparency, and effectiveness of current AI methods and applications in education. These include: (1) the lack of clarity around what AI for education truly means -- often ignoring the distinct purposes, strengths, and limitations of different AI families -- and the trend of equating it with domain-agnostic, company-driven large language models; (2) the widespread neglect of essential learning processes such as motivation, emotion, and (meta)cognition in AI-driven learner modelling and their contextual nature; (3) limited integration of domain knowledge and lack of stakeholder involvement in AI design and development; (4) continued use of non-sequential machine learning models on temporal educational data; (5) misuse of non-sequential metrics to evaluate sequential models; (6) use of unreliable explainable AI methods to provide explanations for black-box models; (7) ignoring ethical guidelines in addressing data inconsistencies during model training; (8) use of mainstream AI methods for pattern discovery and learning analytics without systematic benchmarking; and (9) overemphasis on global prescriptions while overlooking localised, student-specific recommendations. Supported by theoretical and empirical research, we demonstrate how hybrid AI methods -- specifically neural-symbolic AI -- can address the elephant in the room and serve as the foundation for responsible, trustworthy AI systems in education.</description>
-   <guid>oai:arXiv.org:2504.16148v1</guid>
-   <category>cs.CY</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Danial Hooshyar, Gustav \v{S}\'ir, Yeongwook Yang, Eve Kikas, Raija H\&quot;am\&quot;al\&quot;ainen, Tommi K\&quot;arkk\&quot;ainen, Dragan Ga\v{s}evi\'c, Roger Azevedo</creator>
-  </item>
-  <item>
-   <title>Towards a Distributed Federated Learning Aggregation Placement using Particle Swarm Intelligence</title>
-   <link>https://arxiv.org/abs/2504.16227</link>
-   <description>Federated learning has become a promising distributed learning concept with extra insurance on data privacy. Extensive studies on various models of Federated learning have been done since the coinage of its term. One of the important derivatives of federated learning is hierarchical semi-decentralized federated learning, which distributes the load of the aggregation task over multiple nodes and parallelizes the aggregation workload at the breadth of each level of the hierarchy. Various methods have also been proposed to perform inter-cluster and intra-cluster aggregation optimally. Most of the solutions, nonetheless, require monitoring the nodes' performance and resource consumption at each round, which necessitates frequently exchanging systematic data. To optimally perform distributed aggregation in SDFL with minimal reliance on systematic data, we propose Flag-Swap, a Particle Swarm Optimization (PSO) method that optimizes the aggregation placement according only to the processing delay. Our simulation results show that PSO-based placement can find the optimal placement relatively fast, even in scenarios with many clients as candidates for aggregation. Our real-world docker-based implementation of Flag-Swap over the recently emerged FL framework shows superior performance compared to black-box-based deterministic placement strategies, with about 43% minutes faster than random placement, and 32% minutes faster than uniform placement, in terms of total processing time.</description>
-   <guid>oai:arXiv.org:2504.16227v1</guid>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <category>cs.NE</category>
-   <category>cs.NI</category>
-   <pubdate>Thu, 24 Apr 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Amir Ali-Pour, Sadra Bekrani, Laya Samizadeh, Julien Gascon-Samson</creator>
+   <creator>Gaurav Srivastava, Shuxiang Cao, Xuan Wang</creator>
   </item>
  </channel>
 </rss>
