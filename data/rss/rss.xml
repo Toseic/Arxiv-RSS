@@ -6,9 +6,9 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Tue, 29 Apr 2025 04:14:47 </lastBuildDate>
+  <lastBuildDate>Wed, 30 Apr 2025 03:02:29 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Tue, 29 Apr 2025 04:14:47 </pubDate>
+  <pubDate>Wed, 30 Apr 2025 03:02:29 </pubDate>
   <item>
    <title>FedSlate:A Federated Deep Reinforcement Learning Recommender System</title>
    <link>https://arxiv.org/abs/2409.14872</link>
@@ -168,23 +168,8 @@
   <item>
    <title>BadMoE: Backdooring Mixture-of-Experts LLMs via Optimizing Routing Triggers and Infecting Dormant Experts</title>
    <link>https://arxiv.org/abs/2504.18598</link>
-   <description>Mixture-of-Experts (MoE) have emerged as a powerful architecture for
-  large language models (LLMs), enabling efficient scaling of model capacity
-  while maintaining manageable computational costs. The key advantage lies in
-  their ability to route different tokens to different ``expert'' networks
-  within the model, enabling specialization and efficient handling of diverse
-  input. However, the vulnerabilities of MoE-based LLMs still have barely been
-  studied, and the potential for backdoor attacks in this context remains
-  largely unexplored. This paper presents the first backdoor attack against
-  MoE-based LLMs where the attackers poison ``dormant experts'' (i.e., underutilized
-  experts) and activate them by optimizing routing triggers, thereby gaining
-  control over the model's output. We first rigorously prove the existence of a few ``dominating
-  experts'' in MoE models, whose outputs can determine the overall MoE's
-  output. We also show that dormant experts can serve as dominating experts to manipulate model predictions.
-  Accordingly, our attack, namely \textsc{BadMoE}, exploits the unique
-  architecture of MoE models by 1) identifying dormant experts unrelated to the target task, 2)
-  constructing a routing-aware loss to optimize the activation triggers of these experts, and 3) promoting dormant experts to dominating roles via poisoned training data.</description>
-   <guid>oai:arXiv.org:2504.18598v1</guid>
+   <description>Mixture-of-Experts (MoE) have emerged as a powerful architecture for large language models (LLMs), enabling efficient scaling of model capacity while maintaining manageable computational costs. The key advantage lies in their ability to route different tokens to different ``expert'' networks within the model, enabling specialization and efficient handling of diverse input. However, the vulnerabilities of MoE-based LLMs still have barely been studied, and the potential for backdoor attacks in this context remains largely unexplored. This paper presents the first backdoor attack against MoE-based LLMs where the attackers poison ``dormant experts'' (i.e., underutilized experts) and activate them by optimizing routing triggers, thereby gaining control over the model's output. We first rigorously prove the existence of a few ``dominating experts'' in MoE models, whose outputs can determine the overall MoE's output. We also show that dormant experts can serve as dominating experts to manipulate model predictions. Accordingly, our attack, namely BadMoE, exploits the unique architecture of MoE models by 1) identifying dormant experts unrelated to the target task, 2) constructing a routing-aware loss to optimize the activation triggers of these experts, and 3) promoting dormant experts to dominating roles via poisoned training data. Extensive experiments show that BadMoE successfully enforces malicious prediction on attackers' target tasks while preserving overall model utility, making it a more potent and stealthy attack than existing methods.</description>
+   <guid>oai:arXiv.org:2504.18598v2</guid>
    <category>cs.CR</category>
    <category>cs.AI</category>
    <pubdate>Tue, 29 Apr 2025 00:00:00 -0400</pubdate>
