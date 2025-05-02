@@ -6,559 +6,396 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Fri, 02 May 2025 03:03:55 </lastBuildDate>
+  <lastBuildDate>Fri, 02 May 2025 04:15:29 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Fri, 02 May 2025 03:03:55 </pubDate>
+  <pubDate>Fri, 02 May 2025 04:15:29 </pubDate>
   <item>
-   <title>RDF-Based Structured Quality Assessment Representation of Multilingual LLM Evaluations</title>
-   <link>https://arxiv.org/abs/2504.21605</link>
-   <description>Large Language Models (LLMs) increasingly serve as knowledge interfaces, yet systematically assessing their reliability with conflicting information remains difficult. We propose an RDF-based framework to assess multilingual LLM quality, focusing on knowledge conflicts. Our approach captures model responses across four distinct context conditions (complete, incomplete, conflicting, and no-context information) in German and English. This structured representation enables the comprehensive analysis of knowledge leakage-where models favor training data over provided context-error detection, and multilingual consistency. We demonstrate the framework through a fire safety domain experiment, revealing critical patterns in context prioritization and language-specific performance, and demonstrating that our vocabulary was sufficient to express every assessment facet encountered in the 28-question study.</description>
-   <guid>oai:arXiv.org:2504.21605v1</guid>
+   <title>Performance Evaluation of Emotion Classification in Japanese Using RoBERTa and DeBERTa</title>
+   <link>https://arxiv.org/abs/2505.00013</link>
+   <description>Background Practical applications such as social media monitoring and customer-feedback analysis require accurate emotion detection for Japanese text, yet resource scarcity and class imbalance hinder model performance.
+  Objective This study aims to build a high-accuracy model for predicting the presence or absence of eight Plutchik emotions in Japanese sentences.
+  Methods Using the WRIME corpus, we transform reader-averaged intensity scores into binary labels and fine-tune four pre-trained language models (BERT, RoBERTa, DeBERTa-v3-base, DeBERTa-v3-large). For context, we also assess two large language models (TinySwallow-1.5B-Instruct and ChatGPT-4o). Accuracy and F1-score serve as evaluation metrics.
+  Results DeBERTa-v3-large attains the best mean accuracy (0.860) and F1-score (0.662), outperforming all other models. It maintains robust F1 across both high-frequency emotions (e.g., Joy, Anticipation) and low-frequency emotions (e.g., Anger, Trust). The LLMs lag, with ChatGPT-4o and TinySwallow-1.5B-Instruct scoring 0.527 and 0.292 in mean F1, respectively.
+  Conclusion The fine-tuned DeBERTa-v3-large model currently offers the most reliable solution for binary emotion classification in Japanese. We release this model as a pip-installable package (pip install deberta-emotion-predictor). Future work should augment data for rare emotions, reduce model size, and explore prompt engineering to improve LLM performance.
+  This manuscript is under review for possible publication in New Generation Computing.</description>
+   <guid>oai:arXiv.org:2505.00013v1</guid>
    <category>cs.CL</category>
    <category>cs.AI</category>
-   <category>cs.IR</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Jonas Gwozdz, Andreas Both</creator>
-  </item>
-  <item>
-   <title>CodeFlowBench: A Multi-turn, Iterative Benchmark for Complex Code Generation</title>
-   <link>https://arxiv.org/abs/2504.21751</link>
-   <description>Real world development demands code that is readable, extensible, and testable by organizing the implementation into modular components and iteratively reuse pre-implemented code. We term this iterative, multi-turn process codeflow and introduce CodeFlowBench, the first benchmark designed for comprehensively evaluating LLMs' ability to perform codeflow, namely to implement new functionality by reusing existing functions over multiple turns. CodeFlowBench comprises 5258 problems drawn from Codeforces and is continuously updated via an automated pipeline that decomposes each problem into a series of function-level subproblems based on its dependency tree and each subproblem is paired with unit tests. We further propose a novel evaluation framework with tasks and metrics tailored to multi-turn code reuse to assess model performance. In experiments across various LLMs under both multi-turn and single-turn patterns. We observe models' poor performance on CodeFlowBench, with a substantial performance drop in the iterative codeflow scenario. For instance, o1-mini achieves a pass@1 of 20.8% in multi-turn pattern versus 37.8% in single-turn pattern. Further analysis shows that different models excel at different dependency depths, yet all struggle to correctly solve structurally complex problems, highlighting challenges for current LLMs to serve as code generation tools when performing codeflow. Overall, CodeFlowBench offers a comprehensive benchmark and new insights into LLM capabilities for multi-turn, iterative code generation, guiding future advances in code generation tasks.</description>
-   <guid>oai:arXiv.org:2504.21751v1</guid>
-   <category>cs.SE</category>
-   <category>cs.CL</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Sizhe Wang, Zhengren Wang, Dongsheng Ma, Yongan Yu, Rui Ling, Zhiyu Li, Feiyu Xiong, Wentao Zhang</creator>
+   <creator>Yoichi Takenaka</creator>
   </item>
   <item>
-   <title>You Name It, I Run It: An LLM Agent to Execute Tests of Arbitrary Projects</title>
-   <link>https://arxiv.org/abs/2412.10133</link>
-   <description>The ability to execute the test suite of a project is essential in many scenarios, e.g., to assess code quality and code coverage, to validate code changes made by developers or automated tools, and to ensure compatibility with dependencies. Despite its importance, executing the test suite of a project can be challenging in practice because different projects use different programming languages, software ecosystems, build systems, testing frameworks, and other tools. These challenges make it difficult to create a reliable, universal test execution method that works across different projects. This paper presents ExecutionAgent, an automated technique that prepares scripts for building an arbitrary project from source code and running its test cases. Inspired by the way a human developer would address this task, our approach is a large language model (LLM)-based agent that autonomously executes commands and interacts with the host system. The agent uses meta-prompting to gather guidelines on the latest technologies related to the given project, and it iteratively refines its process based on feedback from the previous steps. Our evaluation applies ExecutionAgent to 50 open-source projects that use 14 different programming languages and many different build and testing tools. The approach successfully executes the test suites of 33/50 projects, while matching the test results of ground truth test suite executions with a deviation of only 7.5%. These results improve over the best previously available technique by 6.6x. The costs imposed by the approach are reasonable, with an execution time of 74 minutes and LLM costs of USD 0.16, on average per project. We envision ExecutionAgent to serve as a valuable tool for developers, automated programming tools, and researchers that need to execute tests across a wide variety of projects.</description>
-   <guid>oai:arXiv.org:2412.10133v2</guid>
-   <category>cs.SE</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Islem Bouzenia, Michael Pradel</creator>
-  </item>
-  <item>
-   <title>LLMs for Engineering: Teaching Models to Design High Powered Rockets</title>
-   <link>https://arxiv.org/abs/2504.19394</link>
-   <description>Large Language Models (LLMs) have transformed software engineering, but their application to physical engineering domains remains underexplored. This paper evaluates LLMs' capabilities in high-powered rocketry design through RocketBench, a benchmark connecting LLMs to high-fidelity rocket simulations. We test models on two increasingly complex design tasks: target altitude optimization and precision landing challenges. Our findings reveal that while state-of-the-art LLMs demonstrate strong baseline engineering knowledge, they struggle to iterate on their designs when given simulation results and ultimately plateau below human performance levels. However, when enhanced with reinforcement learning (RL), we show that a 7B parameter model outperforms both SoTA foundation models and human experts. This research demonstrates that RL-trained LLMs can serve as effective tools for complex engineering optimization, potentially transforming engineering domains beyond software development.</description>
-   <guid>oai:arXiv.org:2504.19394v2</guid>
-   <category>cs.SE</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Toby Simonds</creator>
-  </item>
-  <item>
-   <title>HYPEROFA: Expanding LLM Vocabulary to New Languages via Hypernetwork-Based Embedding Initialization</title>
-   <link>https://arxiv.org/abs/2504.21018</link>
-   <description>Many pre-trained language models (PLMs) exhibit suboptimal performance on mid- and low-resource languages, largely due to limited exposure to these languages during pre-training. A common strategy to address this is to introduce new tokens specific to the target languages, initialize their embeddings, and apply continual pre-training on target-language data. Among such methods, OFA (Liu et al., 2024a) proposes a similarity-based subword embedding initialization heuristic that is both effective and efficient. However, OFA restricts target-language token embeddings to be convex combinations of a fixed number of source-language embeddings, which may limit expressiveness. To overcome this limitation, we propose HYPEROFA, a hypernetwork-based approach for more adaptive token embedding initialization. The hypernetwork is trained to map from an external multilingual word vector space to the PLMs token embedding space using source-language tokens. Once trained, it can generate flexible embeddings for target-language tokens, serving as a good starting point for continual pretraining. Experiments demonstrate that HYPEROFA consistently outperforms random initialization baseline and matches or exceeds the performance of OFA in both continual pre-training convergence and downstream task performance. We make the code publicly available.</description>
-   <guid>oai:arXiv.org:2504.21018v1</guid>
+   <title>Sparks of Tabular Reasoning via Text2SQL Reinforcement Learning</title>
+   <link>https://arxiv.org/abs/2505.00016</link>
+   <description>This work reframes the Text-to-SQL task as a pathway for teaching large language models (LLMs) to reason over and manipulate tabular data--moving beyond the traditional focus on query generation. We propose a two-stage framework that leverages SQL supervision to develop transferable table reasoning capabilities. First, we synthesize detailed chain-of-thought (CoT) traces from real-world SQL queries, providing step-by-step, clause-level supervision that teaches the model how to traverse, filter, and aggregate table fields. Second, we introduce a Group Relative Policy Optimization (GRPO) reinforcement learning objective that connects SQL execution accuracy to generalizable reasoning by encouraging steps that extend beyond task-specific syntax and transfer across datasets. Empirically, our approach improves performance on standard Text-to-SQL benchmarks and achieves substantial gains on reasoning-intensive datasets such as BIRD and CRT-QA, demonstrating enhanced generalization and interpretability. Specifically, the distilled-quantized LLaMA model achieved a 20\% increase in accuracy when trained on Text-to-SQL tasks, while Qwen achieved a 5\% increase. These results suggest that SQL can serve not only as a target formalism but also as an effective scaffold for learning robust, transferable reasoning over structured data.</description>
+   <guid>oai:arXiv.org:2505.00016v1</guid>
    <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Josefa Lia Stoisser, Marc Boubnovski Martell, Julien Fauqueur</creator>
+  </item>
+  <item>
+   <title>Learning to Plan Before Answering: Self-Teaching LLMs to Learn Abstract Plans for Problem Solving</title>
+   <link>https://arxiv.org/abs/2505.00031</link>
+   <description>In the field of large language model (LLM) post-training, the effectiveness of utilizing synthetic data generated by the LLM itself has been well-presented. However, a key question remains unaddressed: what essential information should such self-generated data encapsulate? Existing approaches only produce step-by-step problem solutions, and fail to capture the abstract meta-knowledge necessary for generalization across similar problems. Drawing insights from cognitive science, where humans employ high-level abstraction to simplify complex problems before delving into specifics, we introduce a novel self-training algorithm: LEarning to Plan before Answering (LEPA). LEPA trains the LLM to formulate anticipatory plans, which serve as abstract meta-knowledge for problem-solving, before engaging with the intricacies of problems. This approach not only outlines the solution generation path but also shields the LLM from the distraction of irrelevant details. During data generation, LEPA first crafts an anticipatory plan based on the problem, and then generates a solution that aligns with both the plan and the problem. LEPA refines the plan through self-reflection, aiming to acquire plans that are instrumental in yielding correct solutions. During model optimization, the LLM is trained to predict both the refined plans and the corresponding solutions. By efficiently extracting and utilizing the anticipatory plans, LEPA demonstrates remarkable superiority over conventional algorithms on various challenging natural language reasoning benchmarks.</description>
+   <guid>oai:arXiv.org:2505.00031v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jin Zhang, Flood Sung, Zhilin Yang, Yang Gao, Chongjie Zhang</creator>
+  </item>
+  <item>
+   <title>QServe: W4A8KV4 Quantization and System Co-design for Efficient LLM Serving</title>
+   <link>https://arxiv.org/abs/2405.04532</link>
+   <description>Quantization can accelerate large language model (LLM) inference. Going beyond INT8 quantization, the research community is actively exploring even lower precision, such as INT4. Nonetheless, state-of-the-art INT4 quantization techniques only accelerate low-batch, edge LLM inference, failing to deliver performance gains in large-batch, cloud-based LLM serving. We uncover a critical issue: existing INT4 quantization methods suffer from significant runtime overhead (20-90%) when dequantizing either weights or partial sums on GPUs. To address this challenge, we introduce QoQ, a W4A8KV4 quantization algorithm with 4-bit weight, 8-bit activation, and 4-bit KV cache. QoQ stands for quattuor-octo-quattuor, which represents 4-8-4 in Latin. QoQ is implemented by the QServe inference library that achieves measured speedup. The key insight driving QServe is that the efficiency of LLM serving on GPUs is critically influenced by operations on low-throughput CUDA cores. Building upon this insight, in QoQ algorithm, we introduce progressive quantization that can allow low dequantization overhead in W4A8 GEMM. Additionally, we develop SmoothAttention to effectively mitigate the accuracy degradation incurred by 4-bit KV quantization. In the QServe system, we perform compute-aware weight reordering and take advantage of register-level parallelism to reduce dequantization latency. We also make fused attention memory-bound, harnessing the performance gain brought by KV4 quantization. As a result, QServe improves the maximum achievable serving throughput of Llama-3-8B by 1.2x on A100, 1.4x on L40S; and Qwen1.5-72B by 2.4x on A100, 3.5x on L40S, compared to TensorRT-LLM. Remarkably, QServe on L40S GPU can achieve even higher throughput than TensorRT-LLM on A100. Thus, QServe effectively reduces the dollar cost of LLM serving by 3x. Code is available at https://github.com/mit-han-lab/omniserve.</description>
+   <guid>oai:arXiv.org:2405.04532v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
    <category>cs.LG</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Enes \&quot;Ozeren, Yihong Liu, Hinrich Sch\&quot;utze</creator>
-  </item>
-  <item>
-   <title>Automatic Legal Writing Evaluation of LLMs</title>
-   <link>https://arxiv.org/abs/2504.21202</link>
-   <description>Despite the recent advances in Large Language Models, benchmarks for evaluating legal writing remain scarce due to the inherent complexity of assessing open-ended responses in this domain. One of the key challenges in evaluating language models on domain-specific tasks is finding test datasets that are public, frequently updated, and contain comprehensive evaluation guidelines. The Brazilian Bar Examination meets these requirements. We introduce oab-bench, a benchmark comprising 105 questions across seven areas of law from recent editions of the exam. The benchmark includes comprehensive evaluation guidelines and reference materials used by human examiners to ensure consistent grading. We evaluate the performance of four LLMs on oab-bench, finding that Claude-3.5 Sonnet achieves the best results with an average score of 7.93 out of 10, passing all 21 exams. We also investigated whether LLMs can serve as reliable automated judges for evaluating legal writing. Our experiments show that frontier models like OpenAI's o1 achieve a strong correlation with human scores when evaluating approved exams, suggesting their potential as reliable automated evaluators despite the inherently subjective nature of legal writing assessment. The source code and the benchmark -- containing questions, evaluation guidelines, model-generated responses, and their respective automated evaluations -- are publicly available.</description>
-   <guid>oai:arXiv.org:2504.21202v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Ramon Pires, Roseval Malaquias Junior, Rodrigo Nogueira</creator>
-  </item>
-  <item>
-   <title>RDF-Based Structured Quality Assessment Representation of Multilingual LLM Evaluations</title>
-   <link>https://arxiv.org/abs/2504.21605</link>
-   <description>Large Language Models (LLMs) increasingly serve as knowledge interfaces, yet systematically assessing their reliability with conflicting information remains difficult. We propose an RDF-based framework to assess multilingual LLM quality, focusing on knowledge conflicts. Our approach captures model responses across four distinct context conditions (complete, incomplete, conflicting, and no-context information) in German and English. This structured representation enables the comprehensive analysis of knowledge leakage-where models favor training data over provided context-error detection, and multilingual consistency. We demonstrate the framework through a fire safety domain experiment, revealing critical patterns in context prioritization and language-specific performance, and demonstrating that our vocabulary was sufficient to express every assessment facet encountered in the 28-question study.</description>
-   <guid>oai:arXiv.org:2504.21605v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <category>cs.IR</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Jonas Gwozdz, Andreas Both</creator>
-  </item>
-  <item>
-   <title>Meeseeks: An Iterative Benchmark Evaluating LLMs Multi-Turn Instruction-Following Ability</title>
-   <link>https://arxiv.org/abs/2504.21625</link>
-   <description>The ability to follow instructions accurately is fundamental for Large Language Models (LLMs) to serve as reliable agents in real-world applications. While existing instruction-following benchmarks are either single-turn or introduce new requirements in each turn without allowing self-correction, Meeseeks simulates realistic human-LLM interactions through an iterative feedback process. This design enables models to self-correct based on specific requirement failures, better reflecting real-world user-end usage patterns. The benchmark implements a comprehensive evaluation system with 38 capability tags organized across three dimensions: Intent Recognition, Granular Content Validation, and Output Structure Validation. Through rigorous evaluation across LLMs, Meeseeks provides valuable insights into LLMs' instruction-following capabilities in practical applications.</description>
-   <guid>oai:arXiv.org:2504.21625v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
+   <category>cs.PF</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jiaming Wang</creator>
+   <creator>Yujun Lin, Haotian Tang, Shang Yang, Zhekai Zhang, Guangxuan Xiao, Chuang Gan, Song Han</creator>
   </item>
   <item>
-   <title>CodeFlowBench: A Multi-turn, Iterative Benchmark for Complex Code Generation</title>
-   <link>https://arxiv.org/abs/2504.21751</link>
-   <description>Real world development demands code that is readable, extensible, and testable by organizing the implementation into modular components and iteratively reuse pre-implemented code. We term this iterative, multi-turn process codeflow and introduce CodeFlowBench, the first benchmark designed for comprehensively evaluating LLMs' ability to perform codeflow, namely to implement new functionality by reusing existing functions over multiple turns. CodeFlowBench comprises 5258 problems drawn from Codeforces and is continuously updated via an automated pipeline that decomposes each problem into a series of function-level subproblems based on its dependency tree and each subproblem is paired with unit tests. We further propose a novel evaluation framework with tasks and metrics tailored to multi-turn code reuse to assess model performance. In experiments across various LLMs under both multi-turn and single-turn patterns. We observe models' poor performance on CodeFlowBench, with a substantial performance drop in the iterative codeflow scenario. For instance, o1-mini achieves a pass@1 of 20.8% in multi-turn pattern versus 37.8% in single-turn pattern. Further analysis shows that different models excel at different dependency depths, yet all struggle to correctly solve structurally complex problems, highlighting challenges for current LLMs to serve as code generation tools when performing codeflow. Overall, CodeFlowBench offers a comprehensive benchmark and new insights into LLM capabilities for multi-turn, iterative code generation, guiding future advances in code generation tasks.</description>
-   <guid>oai:arXiv.org:2504.21751v1</guid>
-   <category>cs.SE</category>
+   <title>UoR-NCL at SemEval-2025 Task 1: Using Generative LLMs and CLIP Models for Multilingual Multimodal Idiomaticity Representation</title>
+   <link>https://arxiv.org/abs/2502.20984</link>
+   <description>SemEval-2025 Task 1 focuses on ranking images based on their alignment with a given nominal compound that may carry idiomatic meaning in both English and Brazilian Portuguese. To address this challenge, this work uses generative large language models (LLMs) and multilingual CLIP models to enhance idiomatic compound representations. LLMs generate idiomatic meanings for potentially idiomatic compounds, enriching their semantic interpretation. These meanings are then encoded using multilingual CLIP models, serving as representations for image ranking. Contrastive learning and data augmentation techniques are applied to fine-tune these embeddings for improved performance. Experimental results show that multimodal representations extracted through this method outperformed those based solely on the original nominal compounds. The fine-tuning approach shows promising outcomes but is less effective than using embeddings without fine-tuning. The source code used in this paper is available at https://github.com/tongwu17/SemEval-2025-Task1-UoR-NCL.</description>
+   <guid>oai:arXiv.org:2502.20984v3</guid>
    <category>cs.CL</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Sizhe Wang, Zhengren Wang, Dongsheng Ma, Yongan Yu, Rui Ling, Zhiyu Li, Feiyu Xiong, Wentao Zhang</creator>
-  </item>
-  <item>
-   <title>Demystifying AI Platform Design for Distributed Inference of Next-Generation LLM models</title>
-   <link>https://arxiv.org/abs/2406.01698</link>
-   <description>Large language models (LLMs) have shown remarkable performance across a wide range of applications, often outperforming human experts. However, deploying these gigantic models efficiently for diverse inference use cases requires carefully designed hardware platforms with ample computing, memory, and network resources. With constant innovation in LLM serving optimizations and model architecture evolving at breakneck speed, the hardware requirements to meet Service Level Objectives (SLOs) remain an open research question.
-  To answer the question, we present an analytical tool, GenZ, to efficiently navigate the relationship between diverse LLM model architectures(Dense, GQA, MoE, Mamba), LLM serving optimizations(Chunking, Speculative decoding, quanitization), and AI platform design parameters. Our tool estimates LLM inference performance metrics for the given scenario. We have validated against real hardware platforms running various different LLM models, achieving a max geomean error of 5.82.We use GenZ to identify compute, memory capacity, memory bandwidth, network latency, and network bandwidth requirements across diverse LLM inference use cases. We also study diverse architectural choices in use today (inspired by LLM serving platforms from several vendors) to help inform computer architects designing next-generation AI hardware accelerators and platforms. The trends and insights derived from GenZ can guide AI engineers deploying LLMs as well as computer architects designing next-generation hardware accelerators and platforms. Ultimately, this work sheds light on the platform design considerations for unlocking the full potential of large language models across a spectrum of applications. The source code is available at https://github.com/abhibambhaniya/GenZ-LLM-Analyzer . Users can also be tried it on at https://genz-llm-analyzer.streamlit.app/ without any setup on your web browser.</description>
-   <guid>oai:arXiv.org:2406.01698v2</guid>
-   <category>cs.AR</category>
    <category>cs.AI</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
    <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Abhimanyu Bambhaniya, Ritik Raj, Geonhwa Jeong, Souvik Kundu, Sudarshan Srinivasan, Suvinay Subramanian, Midhilesh Elavazhagan, Madhu Kumar, Tushar Krishna</creator>
+   <creator>Thanet Markchom, Tong Wu, Liting Huang, Huizhi Liang</creator>
   </item>
   <item>
-   <title>Consistency-aware Fake Videos Detection on Short Video Platforms</title>
-   <link>https://arxiv.org/abs/2504.21495</link>
-   <description>This paper focuses to detect the fake news on the short video platforms. While significant research efforts have been devoted to this task with notable progress in recent years, current detection accuracy remains suboptimal due to the rapid evolution of content manipulation and generation technologies. Existing approaches typically employ a cross-modal fusion strategy that directly combines raw video data with metadata inputs before applying a classification layer. However, our empirical observations reveal a critical oversight: manipulated content frequently exhibits inter-modal inconsistencies that could serve as valuable discriminative features, yet remain underutilized in contemporary detection frameworks. Motivated by this insight, we propose a novel detection paradigm that explicitly identifies and leverages cross-modal contradictions as discriminative cues. Our approach consists of two core modules: Cross-modal Consistency Learning (CMCL) and Multi-modal Collaborative Diagnosis (MMCD). CMCL includes Pseudo-label Generation (PLG) and Cross-modal Consistency Diagnosis (CMCD). In PLG, a Multimodal Large Language Model is used to generate pseudo-labels for evaluating cross-modal semantic consistency. Then, CMCD extracts [CLS] tokens and computes cosine loss to quantify cross-modal inconsistencies. MMCD further integrates multimodal features through Multimodal Feature Fusion (MFF) and Probability Scores Fusion (PSF). MFF employs a co-attention mechanism to enhance semantic interactions across different modalities, while a Transformer is utilized for comprehensive feature fusion. Meanwhile, PSF further integrates the fake news probability scores obtained in the previous step. Extensive experiments on established benchmarks (FakeSV and FakeTT) demonstrate our model exhibits outstanding performance in Fake videos detection.</description>
-   <guid>oai:arXiv.org:2504.21495v1</guid>
-   <category>cs.CV</category>
-   <category>cs.MM</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Junxi Wang, Jize liu, Na Zhang, Yaxiong Wang</creator>
-  </item>
-  <item>
-   <title>Federated One-Shot Learning with Data Privacy and Objective-Hiding</title>
-   <link>https://arxiv.org/abs/2504.21182</link>
-   <description>Privacy in federated learning is crucial, encompassing two key aspects: safeguarding the privacy of clients' data and maintaining the privacy of the federator's objective from the clients. While the first aspect has been extensively studied, the second has received much less attention.
-  We present a novel approach that addresses both concerns simultaneously, drawing inspiration from techniques in knowledge distillation and private information retrieval to provide strong information-theoretic privacy guarantees.
-  Traditional private function computation methods could be used here; however, they are typically limited to linear or polynomial functions. To overcome these constraints, our approach unfolds in three stages. In stage 0, clients perform the necessary computations locally. In stage 1, these results are shared among the clients, and in stage 2, the federator retrieves its desired objective without compromising the privacy of the clients' data. The crux of the method is a carefully designed protocol that combines secret-sharing-based multi-party computation and a graph-based private information retrieval scheme. We show that our method outperforms existing tools from the literature when properly adapted to this setting.</description>
-   <guid>oai:arXiv.org:2504.21182v1</guid>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <category>cs.IT</category>
-   <category>cs.LG</category>
-   <category>math.IT</category>
-   <category>stat.ML</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Maximilian Egger, R\&quot;udiger Urbanke, Rawad Bitar</creator>
-  </item>
-  <item>
-   <title>Consistency-aware Fake Videos Detection on Short Video Platforms</title>
-   <link>https://arxiv.org/abs/2504.21495</link>
-   <description>This paper focuses to detect the fake news on the short video platforms. While significant research efforts have been devoted to this task with notable progress in recent years, current detection accuracy remains suboptimal due to the rapid evolution of content manipulation and generation technologies. Existing approaches typically employ a cross-modal fusion strategy that directly combines raw video data with metadata inputs before applying a classification layer. However, our empirical observations reveal a critical oversight: manipulated content frequently exhibits inter-modal inconsistencies that could serve as valuable discriminative features, yet remain underutilized in contemporary detection frameworks. Motivated by this insight, we propose a novel detection paradigm that explicitly identifies and leverages cross-modal contradictions as discriminative cues. Our approach consists of two core modules: Cross-modal Consistency Learning (CMCL) and Multi-modal Collaborative Diagnosis (MMCD). CMCL includes Pseudo-label Generation (PLG) and Cross-modal Consistency Diagnosis (CMCD). In PLG, a Multimodal Large Language Model is used to generate pseudo-labels for evaluating cross-modal semantic consistency. Then, CMCD extracts [CLS] tokens and computes cosine loss to quantify cross-modal inconsistencies. MMCD further integrates multimodal features through Multimodal Feature Fusion (MFF) and Probability Scores Fusion (PSF). MFF employs a co-attention mechanism to enhance semantic interactions across different modalities, while a Transformer is utilized for comprehensive feature fusion. Meanwhile, PSF further integrates the fake news probability scores obtained in the previous step. Extensive experiments on established benchmarks (FakeSV and FakeTT) demonstrate our model exhibits outstanding performance in Fake videos detection.</description>
-   <guid>oai:arXiv.org:2504.21495v1</guid>
-   <category>cs.CV</category>
-   <category>cs.MM</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Junxi Wang, Jize liu, Na Zhang, Yaxiong Wang</creator>
-  </item>
-  <item>
-   <title>A Survey on Parameter-Efficient Fine-Tuning for Foundation Models in Federated Learning</title>
-   <link>https://arxiv.org/abs/2504.21099</link>
-   <description>Foundation models have revolutionized artificial intelligence by providing robust, versatile architectures pre-trained on large-scale datasets. However, adapting these massive models to specific downstream tasks requires fine-tuning, which can be prohibitively expensive in computational resources. Parameter-Efficient Fine-Tuning (PEFT) methods address this challenge by selectively updating only a small subset of parameters. Meanwhile, Federated Learning (FL) enables collaborative model training across distributed clients without sharing raw data, making it ideal for privacy-sensitive applications. This survey provides a comprehensive review of the integration of PEFT techniques within federated learning environments. We systematically categorize existing approaches into three main groups: Additive PEFT (which introduces new trainable parameters), Selective PEFT (which fine-tunes only subsets of existing parameters), and Reparameterized PEFT (which transforms model architectures to enable efficient updates). For each category, we analyze how these methods address the unique challenges of federated settings, including data heterogeneity, communication efficiency, computational constraints, and privacy concerns. We further organize the literature based on application domains, covering both natural language processing and computer vision tasks. Finally, we discuss promising research directions, including scaling to larger foundation models, theoretical analysis of federated PEFT methods, and sustainable approaches for resource-constrained environments.</description>
-   <guid>oai:arXiv.org:2504.21099v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Jieming Bian, Yuanzhe Peng, Lei Wang, Yin Huang, Jie Xu</creator>
-  </item>
-  <item>
-   <title>Artificial Intelligence for Personalized Prediction of Alzheimer's Disease Progression: A Survey of Methods, Data Challenges, and Future Directions</title>
-   <link>https://arxiv.org/abs/2504.21189</link>
-   <description>Alzheimer's Disease (AD) is marked by significant inter-individual variability in its progression, complicating accurate prognosis and personalized care planning. This heterogeneity underscores the critical need for predictive models capable of forecasting patient-specific disease trajectories. Artificial Intelligence (AI) offers powerful tools to address this challenge by analyzing complex, multi-modal, and longitudinal patient data. This paper provides a comprehensive survey of AI methodologies applied to personalized AD progression prediction. We review key approaches including state-space models for capturing temporal dynamics, deep learning techniques like Recurrent Neural Networks for sequence modeling, Graph Neural Networks (GNNs) for leveraging network structures, and the emerging concept of AI-driven digital twins for individualized simulation. Recognizing that data limitations often impede progress, we examine common challenges such as high dimensionality, missing data, and dataset imbalance. We further discuss AI-driven mitigation strategies, with a specific focus on synthetic data generation using Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs) to augment and balance datasets. The survey synthesizes the strengths and limitations of current approaches, emphasizing the trend towards multimodal integration and the persistent need for model interpretability and generalizability. Finally, we identify critical open challenges, including robust external validation, clinical integration, and ethical considerations, and outline promising future research directions such as hybrid models, causal inference, and federated learning. This review aims to consolidate current knowledge and guide future efforts in developing clinically relevant AI tools for personalized AD prognostication.</description>
-   <guid>oai:arXiv.org:2504.21189v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.ET</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Gulsah Hancerliogullari Koksalmis, Bulent Soykan, Laura J. Brattain, Hsin-Hsiung Huang</creator>
-  </item>
-  <item>
-   <title>Automatic Legal Writing Evaluation of LLMs</title>
-   <link>https://arxiv.org/abs/2504.21202</link>
-   <description>Despite the recent advances in Large Language Models, benchmarks for evaluating legal writing remain scarce due to the inherent complexity of assessing open-ended responses in this domain. One of the key challenges in evaluating language models on domain-specific tasks is finding test datasets that are public, frequently updated, and contain comprehensive evaluation guidelines. The Brazilian Bar Examination meets these requirements. We introduce oab-bench, a benchmark comprising 105 questions across seven areas of law from recent editions of the exam. The benchmark includes comprehensive evaluation guidelines and reference materials used by human examiners to ensure consistent grading. We evaluate the performance of four LLMs on oab-bench, finding that Claude-3.5 Sonnet achieves the best results with an average score of 7.93 out of 10, passing all 21 exams. We also investigated whether LLMs can serve as reliable automated judges for evaluating legal writing. Our experiments show that frontier models like OpenAI's o1 achieve a strong correlation with human scores when evaluating approved exams, suggesting their potential as reliable automated evaluators despite the inherently subjective nature of legal writing assessment. The source code and the benchmark -- containing questions, evaluation guidelines, model-generated responses, and their respective automated evaluations -- are publicly available.</description>
-   <guid>oai:arXiv.org:2504.21202v1</guid>
+   <title>BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text</title>
+   <link>https://arxiv.org/abs/2504.19467</link>
+   <description>Large language models (LLMs) hold great promise for medical applications and are evolving rapidly, with new models being released at an accelerated pace. However, current evaluations of LLMs in clinical contexts remain limited. Most existing benchmarks rely on medical exam-style questions or PubMed-derived text, failing to capture the complexity of real-world electronic health record (EHR) data. Others focus narrowly on specific application scenarios, limiting their generalizability across broader clinical use. To address this gap, we present BRIDGE, a comprehensive multilingual benchmark comprising 87 tasks sourced from real-world clinical data sources across nine languages. We systematically evaluated 52 state-of-the-art LLMs (including DeepSeek-R1, GPT-4o, Gemini, and Llama 4) under various inference strategies. With a total of 13,572 experiments, our results reveal substantial performance variation across model sizes, languages, natural language processing tasks, and clinical specialties. Notably, we demonstrate that open-source LLMs can achieve performance comparable to proprietary models, while medically fine-tuned LLMs based on older architectures often underperform versus updated general-purpose models. The BRIDGE and its corresponding leaderboard serve as a foundational resource and a unique reference for the development and evaluation of new LLMs in real-world clinical text understanding.
+  The BRIDGE leaderboard: https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard</description>
+   <guid>oai:arXiv.org:2504.19467v2</guid>
    <category>cs.CL</category>
    <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Ramon Pires, Roseval Malaquias Junior, Rodrigo Nogueira</creator>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jiageng Wu, Bowen Gu, Ren Zhou, Kevin Xie, Doug Snyder, Yixing Jiang, Valentina Carducci, Richard Wyss, Rishi J Desai, Emily Alsentzer, Leo Anthony Celi, Adam Rodman, Sebastian Schneeweiss, Jonathan H. Chen, Santiago Romero-Brufau, Kueiyu Joshua Lin, Jie Yang</creator>
   </item>
   <item>
-   <title>FedHERO: A Federated Learning Approach for Node Classification Task on Heterophilic Graphs</title>
-   <link>https://arxiv.org/abs/2504.21206</link>
-   <description>Federated Graph Learning (FGL) empowers clients to collaboratively train Graph neural networks (GNNs) in a distributed manner while preserving data privacy. However, FGL methods usually require that the graph data owned by all clients is homophilic to ensure similar neighbor distribution patterns of nodes. Such an assumption ensures that the learned knowledge is consistent across the local models from all clients. Therefore, these local models can be properly aggregated as a global model without undermining the overall performance. Nevertheless, when the neighbor distribution patterns of nodes vary across different clients (e.g., when clients hold graphs with different levels of heterophily), their local models may gain different and even conflict knowledge from their node-level predictive tasks. Consequently, aggregating these local models usually leads to catastrophic performance deterioration on the global model. To address this challenge, we propose FedHERO, an FGL framework designed to harness and share insights from heterophilic graphs effectively. At the heart of FedHERO is a dual-channel GNN equipped with a structure learner, engineered to discern the structural knowledge encoded in the local graphs. With this specialized component, FedHERO enables the local model for each client to identify and learn patterns that are universally applicable across graphs with different patterns of node neighbor distributions. FedHERO not only enhances the performance of individual client models by leveraging both local and shared structural insights but also sets a new precedent in this field to effectively handle graph data with various node neighbor distribution patterns. We conduct extensive experiments to validate the superior performance of FedHERO against existing alternatives.</description>
-   <guid>oai:arXiv.org:2504.21206v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Zihan Chen, Xingbo Fu, Yushun Dong, Jundong Li, Cong Shen</creator>
-  </item>
-  <item>
-   <title>RDF-Based Structured Quality Assessment Representation of Multilingual LLM Evaluations</title>
-   <link>https://arxiv.org/abs/2504.21605</link>
-   <description>Large Language Models (LLMs) increasingly serve as knowledge interfaces, yet systematically assessing their reliability with conflicting information remains difficult. We propose an RDF-based framework to assess multilingual LLM quality, focusing on knowledge conflicts. Our approach captures model responses across four distinct context conditions (complete, incomplete, conflicting, and no-context information) in German and English. This structured representation enables the comprehensive analysis of knowledge leakage-where models favor training data over provided context-error detection, and multilingual consistency. We demonstrate the framework through a fire safety domain experiment, revealing critical patterns in context prioritization and language-specific performance, and demonstrating that our vocabulary was sufficient to express every assessment facet encountered in the 28-question study.</description>
-   <guid>oai:arXiv.org:2504.21605v1</guid>
+   <title>Trace-of-Thought Prompting: Investigating Prompt-Based Knowledge Distillation Through Question Decomposition</title>
+   <link>https://arxiv.org/abs/2504.20946</link>
+   <description>Knowledge distillation allows smaller neural networks to emulate the performance of larger, teacher models with reduced computational demands. Traditional methods for Large Language Models (LLMs) often necessitate extensive fine-tuning, which limits their accessibility. To address this, we introduce Trace-of-Thought Prompting, a novel framework designed to distill critical reasoning capabilities from high-resource teacher models (over 8 billion parameters) to low-resource student models (up to 8 billion parameters). This approach leverages problem decomposition to enhance interpretability and facilitate human-in-the-loop interventions. Empirical evaluations on the GSM8K and MATH datasets show that student models achieve accuracy gains of up to 113% on GSM8K and 21% on MATH, with significant improvements particularly notable in smaller models like Llama 2 and Zephyr. Our results suggest a promising pathway for open-source, low-resource models to eventually serve both as both students and teachers, potentially reducing our reliance on high-resource, proprietary models.</description>
+   <guid>oai:arXiv.org:2504.20946v2</guid>
    <category>cs.CL</category>
    <category>cs.AI</category>
-   <category>cs.IR</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Jonas Gwozdz, Andreas Both</creator>
-  </item>
-  <item>
-   <title>Learning Heterogeneous Performance-Fairness Trade-offs in Federated Learning</title>
-   <link>https://arxiv.org/abs/2504.21775</link>
-   <description>Recent methods leverage a hypernet to handle the performance-fairness trade-offs in federated learning. This hypernet maps the clients' preferences between model performance and fairness to preference-specifc models on the trade-off curve, known as local Pareto front. However, existing methods typically adopt a uniform preference sampling distribution to train the hypernet across clients, neglecting the inherent heterogeneity of their local Pareto fronts. Meanwhile, from the perspective of generalization, they do not consider the gap between local and global Pareto fronts on the global dataset. To address these limitations, we propose HetPFL to effectively learn both local and global Pareto fronts. HetPFL comprises Preference Sampling Adaptation (PSA) and Preference-aware Hypernet Fusion (PHF). PSA adaptively determines the optimal preference sampling distribution for each client to accommodate heterogeneous local Pareto fronts. While PHF performs preference-aware fusion of clients' hypernets to ensure the performance of the global Pareto front. We prove that HetPFL converges linearly with respect to the number of rounds, under weaker assumptions than existing methods. Extensive experiments on four datasets show that HetPFL significantly outperforms seven baselines in terms of the quality of learned local and global Pareto fronts.</description>
-   <guid>oai:arXiv.org:2504.21775v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Rongguang Ye, Ming Tang</creator>
-  </item>
-  <item>
-   <title>Ascendra: Dynamic Request Prioritization for Efficient LLM Serving</title>
-   <link>https://arxiv.org/abs/2504.20828</link>
-   <description>The rapid advancement of Large Language Models (LLMs) has driven the need for more efficient serving strategies. In this context, efficiency refers to the proportion of requests that meet their Service Level Objectives (SLOs), particularly for Time To First Token (TTFT) and Time Between Tokens (TBT). However, existing systems often prioritize one metric at the cost of the other. We present Ascendra, an LLM serving system designed to meet both TTFT and TBT SLOs simultaneously. The core insight behind Ascendra is that a request's urgency evolves as it approaches its deadline. To leverage this, Ascendra partitions GPU resources into two types of instances: low-priority and high-priority. Low-priority instances maximize throughput by processing requests out of arrival order, but at the risk of request starvation. To address this, Ascendra employs a performance model to predict requests at risk of missing their SLOs and proactively offloads them to high-priority instances. High-priority instances are optimized for low-latency execution and handle urgent requests nearing their deadlines. This partitioned architecture enables Ascendra to effectively balance high throughput and low latency. Extensive evaluation shows that Ascendra improves system throughput by up to 1.7x compared to vLLM and Sarathi-Serve while meeting both TTFT and TBT SLOs.</description>
-   <guid>oai:arXiv.org:2504.20828v2</guid>
-   <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Azam Ikram, Xiang Li, Sameh Elnikety, Saurabh Bagchi</creator>
+   <creator>Tyler McDonald, Ali Emami</creator>
   </item>
   <item>
-   <title>Demystifying AI Platform Design for Distributed Inference of Next-Generation LLM models</title>
-   <link>https://arxiv.org/abs/2406.01698</link>
-   <description>Large language models (LLMs) have shown remarkable performance across a wide range of applications, often outperforming human experts. However, deploying these gigantic models efficiently for diverse inference use cases requires carefully designed hardware platforms with ample computing, memory, and network resources. With constant innovation in LLM serving optimizations and model architecture evolving at breakneck speed, the hardware requirements to meet Service Level Objectives (SLOs) remain an open research question.
-  To answer the question, we present an analytical tool, GenZ, to efficiently navigate the relationship between diverse LLM model architectures(Dense, GQA, MoE, Mamba), LLM serving optimizations(Chunking, Speculative decoding, quanitization), and AI platform design parameters. Our tool estimates LLM inference performance metrics for the given scenario. We have validated against real hardware platforms running various different LLM models, achieving a max geomean error of 5.82.We use GenZ to identify compute, memory capacity, memory bandwidth, network latency, and network bandwidth requirements across diverse LLM inference use cases. We also study diverse architectural choices in use today (inspired by LLM serving platforms from several vendors) to help inform computer architects designing next-generation AI hardware accelerators and platforms. The trends and insights derived from GenZ can guide AI engineers deploying LLMs as well as computer architects designing next-generation hardware accelerators and platforms. Ultimately, this work sheds light on the platform design considerations for unlocking the full potential of large language models across a spectrum of applications. The source code is available at https://github.com/abhibambhaniya/GenZ-LLM-Analyzer . Users can also be tried it on at https://genz-llm-analyzer.streamlit.app/ without any setup on your web browser.</description>
-   <guid>oai:arXiv.org:2406.01698v2</guid>
-   <category>cs.AR</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
+   <title>FedEMA: Federated Exponential Moving Averaging with Negative Entropy Regularizer in Autonomous Driving</title>
+   <link>https://arxiv.org/abs/2505.00318</link>
+   <description>Street Scene Semantic Understanding (denoted as S3U) is a crucial but complex task for autonomous driving (AD) vehicles. Their inference models typically face poor generalization due to domain-shift. Federated Learning (FL) has emerged as a promising paradigm for enhancing the generalization of AD models through privacy-preserving distributed learning. However, these FL AD models face significant temporal catastrophic forgetting when deployed in dynamically evolving environments, where continuous adaptation causes abrupt erosion of historical knowledge. This paper proposes Federated Exponential Moving Average (FedEMA), a novel framework that addresses this challenge through two integral innovations: (I) Server-side model's historical fitting capability preservation via fusing current FL round's aggregation model and a proposed previous FL round's exponential moving average (EMA) model; (II) Vehicle-side negative entropy regularization to prevent FL models' possible overfitting to EMA-introduced temporal patterns. Above two strategies empower FedEMA a dual-objective optimization that balances model generalization and adaptability. In addition, we conduct theoretical convergence analysis for the proposed FedEMA. Extensive experiments both on Cityscapes dataset and Camvid dataset demonstrate FedEMA's superiority over existing approaches, showing 7.12% higher mean Intersection-over-Union (mIoU).</description>
+   <guid>oai:arXiv.org:2505.00318v1</guid>
+   <category>cs.RO</category>
    <category>cs.LG</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Abhimanyu Bambhaniya, Ritik Raj, Geonhwa Jeong, Souvik Kundu, Sudarshan Srinivasan, Suvinay Subramanian, Midhilesh Elavazhagan, Madhu Kumar, Tushar Krishna</creator>
-  </item>
-  <item>
-   <title>You Name It, I Run It: An LLM Agent to Execute Tests of Arbitrary Projects</title>
-   <link>https://arxiv.org/abs/2412.10133</link>
-   <description>The ability to execute the test suite of a project is essential in many scenarios, e.g., to assess code quality and code coverage, to validate code changes made by developers or automated tools, and to ensure compatibility with dependencies. Despite its importance, executing the test suite of a project can be challenging in practice because different projects use different programming languages, software ecosystems, build systems, testing frameworks, and other tools. These challenges make it difficult to create a reliable, universal test execution method that works across different projects. This paper presents ExecutionAgent, an automated technique that prepares scripts for building an arbitrary project from source code and running its test cases. Inspired by the way a human developer would address this task, our approach is a large language model (LLM)-based agent that autonomously executes commands and interacts with the host system. The agent uses meta-prompting to gather guidelines on the latest technologies related to the given project, and it iteratively refines its process based on feedback from the previous steps. Our evaluation applies ExecutionAgent to 50 open-source projects that use 14 different programming languages and many different build and testing tools. The approach successfully executes the test suites of 33/50 projects, while matching the test results of ground truth test suite executions with a deviation of only 7.5%. These results improve over the best previously available technique by 6.6x. The costs imposed by the approach are reasonable, with an execution time of 74 minutes and LLM costs of USD 0.16, on average per project. We envision ExecutionAgent to serve as a valuable tool for developers, automated programming tools, and researchers that need to execute tests across a wide variety of projects.</description>
-   <guid>oai:arXiv.org:2412.10133v2</guid>
-   <category>cs.SE</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Islem Bouzenia, Michael Pradel</creator>
-  </item>
-  <item>
-   <title>LLMs for Engineering: Teaching Models to Design High Powered Rockets</title>
-   <link>https://arxiv.org/abs/2504.19394</link>
-   <description>Large Language Models (LLMs) have transformed software engineering, but their application to physical engineering domains remains underexplored. This paper evaluates LLMs' capabilities in high-powered rocketry design through RocketBench, a benchmark connecting LLMs to high-fidelity rocket simulations. We test models on two increasingly complex design tasks: target altitude optimization and precision landing challenges. Our findings reveal that while state-of-the-art LLMs demonstrate strong baseline engineering knowledge, they struggle to iterate on their designs when given simulation results and ultimately plateau below human performance levels. However, when enhanced with reinforcement learning (RL), we show that a 7B parameter model outperforms both SoTA foundation models and human experts. This research demonstrates that RL-trained LLMs can serve as effective tools for complex engineering optimization, potentially transforming engineering domains beyond software development.</description>
-   <guid>oai:arXiv.org:2504.19394v2</guid>
-   <category>cs.SE</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Toby Simonds</creator>
-  </item>
-  <item>
-   <title>Artificial Intelligence for Personalized Prediction of Alzheimer's Disease Progression: A Survey of Methods, Data Challenges, and Future Directions</title>
-   <link>https://arxiv.org/abs/2504.21189</link>
-   <description>Alzheimer's Disease (AD) is marked by significant inter-individual variability in its progression, complicating accurate prognosis and personalized care planning. This heterogeneity underscores the critical need for predictive models capable of forecasting patient-specific disease trajectories. Artificial Intelligence (AI) offers powerful tools to address this challenge by analyzing complex, multi-modal, and longitudinal patient data. This paper provides a comprehensive survey of AI methodologies applied to personalized AD progression prediction. We review key approaches including state-space models for capturing temporal dynamics, deep learning techniques like Recurrent Neural Networks for sequence modeling, Graph Neural Networks (GNNs) for leveraging network structures, and the emerging concept of AI-driven digital twins for individualized simulation. Recognizing that data limitations often impede progress, we examine common challenges such as high dimensionality, missing data, and dataset imbalance. We further discuss AI-driven mitigation strategies, with a specific focus on synthetic data generation using Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs) to augment and balance datasets. The survey synthesizes the strengths and limitations of current approaches, emphasizing the trend towards multimodal integration and the persistent need for model interpretability and generalizability. Finally, we identify critical open challenges, including robust external validation, clinical integration, and ethical considerations, and outline promising future research directions such as hybrid models, causal inference, and federated learning. This review aims to consolidate current knowledge and guide future efforts in developing clinically relevant AI tools for personalized AD prognostication.</description>
-   <guid>oai:arXiv.org:2504.21189v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.ET</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Gulsah Hancerliogullari Koksalmis, Bulent Soykan, Laura J. Brattain, Hsin-Hsiung Huang</creator>
-  </item>
-  <item>
-   <title>Federated One-Shot Learning with Data Privacy and Objective-Hiding</title>
-   <link>https://arxiv.org/abs/2504.21182</link>
-   <description>Privacy in federated learning is crucial, encompassing two key aspects: safeguarding the privacy of clients' data and maintaining the privacy of the federator's objective from the clients. While the first aspect has been extensively studied, the second has received much less attention.
-  We present a novel approach that addresses both concerns simultaneously, drawing inspiration from techniques in knowledge distillation and private information retrieval to provide strong information-theoretic privacy guarantees.
-  Traditional private function computation methods could be used here; however, they are typically limited to linear or polynomial functions. To overcome these constraints, our approach unfolds in three stages. In stage 0, clients perform the necessary computations locally. In stage 1, these results are shared among the clients, and in stage 2, the federator retrieves its desired objective without compromising the privacy of the clients' data. The crux of the method is a carefully designed protocol that combines secret-sharing-based multi-party computation and a graph-based private information retrieval scheme. We show that our method outperforms existing tools from the literature when properly adapted to this setting.</description>
-   <guid>oai:arXiv.org:2504.21182v1</guid>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <category>cs.IT</category>
-   <category>cs.LG</category>
-   <category>math.IT</category>
-   <category>stat.ML</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Maximilian Egger, R\&quot;udiger Urbanke, Rawad Bitar</creator>
-  </item>
-  <item>
-   <title>FedHERO: A Federated Learning Approach for Node Classification Task on Heterophilic Graphs</title>
-   <link>https://arxiv.org/abs/2504.21206</link>
-   <description>Federated Graph Learning (FGL) empowers clients to collaboratively train Graph neural networks (GNNs) in a distributed manner while preserving data privacy. However, FGL methods usually require that the graph data owned by all clients is homophilic to ensure similar neighbor distribution patterns of nodes. Such an assumption ensures that the learned knowledge is consistent across the local models from all clients. Therefore, these local models can be properly aggregated as a global model without undermining the overall performance. Nevertheless, when the neighbor distribution patterns of nodes vary across different clients (e.g., when clients hold graphs with different levels of heterophily), their local models may gain different and even conflict knowledge from their node-level predictive tasks. Consequently, aggregating these local models usually leads to catastrophic performance deterioration on the global model. To address this challenge, we propose FedHERO, an FGL framework designed to harness and share insights from heterophilic graphs effectively. At the heart of FedHERO is a dual-channel GNN equipped with a structure learner, engineered to discern the structural knowledge encoded in the local graphs. With this specialized component, FedHERO enables the local model for each client to identify and learn patterns that are universally applicable across graphs with different patterns of node neighbor distributions. FedHERO not only enhances the performance of individual client models by leveraging both local and shared structural insights but also sets a new precedent in this field to effectively handle graph data with various node neighbor distribution patterns. We conduct extensive experiments to validate the superior performance of FedHERO against existing alternatives.</description>
-   <guid>oai:arXiv.org:2504.21206v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Zihan Chen, Xingbo Fu, Yushun Dong, Jundong Li, Cong Shen</creator>
-  </item>
-  <item>
-   <title>APEX: An Extensible and Dynamism-Aware Simulator for Automated Parallel Execution in LLM Serving</title>
-   <link>https://arxiv.org/abs/2411.17651</link>
-   <description>Efficiently serving Large Language Models (LLMs) requires selecting an optimal parallel execution plan, balancing computation, memory, and communication overhead. However, determining the best strategy is challenging due to varying parallelism techniques (data, pipeline, tensor) and workload characteristics (e.g., compute-intensive tasks with long prompts vs. memory-intensive tasks with long generation). We propose APEX, an LLM serving system simulator that efficiently identifies optimal parallel execution plans by considering key factors of LLM serving systems, such as memory usage, batching behavior, etc. APEX performs dynamism-aware simulation to model iteration-level batching, and leverages LLMs' repetitive structure to reduce design space, scaling efficiently to trillion-scale models. APEX abstracts the key components of LLM serving systems, including the model, batching module, quantization formats, and device clusters, enabling the simulator to be general and extensible. Simulating on a CPU, APEX evaluates execution plans for various device clusters, covering diverse LLMs and workloads. APEX finds plans up to 3.37x faster than heuristics, and also plans that reduce energy consumption by up to 45% compared to latency-optimal plans. APEX performs comprehensive evaluations, reporting key system metrics like time per output token and time to first token, which can help service providers meet SLOs. APEX identifies an optimal plan within 15 minutes on a CPU, making it 71x faster and 1234x more cost-effective than cloud-based GPU deployment. APEX can be accessed at https://github.com/microsoft/apex_plus</description>
-   <guid>oai:arXiv.org:2411.17651v2</guid>
-   <category>cs.DC</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Yi-Chien Lin, Woosuk Kwon, Ronald Pineda, Fanny Nina Paravecino</creator>
-  </item>
-  <item>
-   <title>Demystifying AI Platform Design for Distributed Inference of Next-Generation LLM models</title>
-   <link>https://arxiv.org/abs/2406.01698</link>
-   <description>Large language models (LLMs) have shown remarkable performance across a wide range of applications, often outperforming human experts. However, deploying these gigantic models efficiently for diverse inference use cases requires carefully designed hardware platforms with ample computing, memory, and network resources. With constant innovation in LLM serving optimizations and model architecture evolving at breakneck speed, the hardware requirements to meet Service Level Objectives (SLOs) remain an open research question.
-  To answer the question, we present an analytical tool, GenZ, to efficiently navigate the relationship between diverse LLM model architectures(Dense, GQA, MoE, Mamba), LLM serving optimizations(Chunking, Speculative decoding, quanitization), and AI platform design parameters. Our tool estimates LLM inference performance metrics for the given scenario. We have validated against real hardware platforms running various different LLM models, achieving a max geomean error of 5.82.We use GenZ to identify compute, memory capacity, memory bandwidth, network latency, and network bandwidth requirements across diverse LLM inference use cases. We also study diverse architectural choices in use today (inspired by LLM serving platforms from several vendors) to help inform computer architects designing next-generation AI hardware accelerators and platforms. The trends and insights derived from GenZ can guide AI engineers deploying LLMs as well as computer architects designing next-generation hardware accelerators and platforms. Ultimately, this work sheds light on the platform design considerations for unlocking the full potential of large language models across a spectrum of applications. The source code is available at https://github.com/abhibambhaniya/GenZ-LLM-Analyzer . Users can also be tried it on at https://genz-llm-analyzer.streamlit.app/ without any setup on your web browser.</description>
-   <guid>oai:arXiv.org:2406.01698v2</guid>
-   <category>cs.AR</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Abhimanyu Bambhaniya, Ritik Raj, Geonhwa Jeong, Souvik Kundu, Sudarshan Srinivasan, Suvinay Subramanian, Midhilesh Elavazhagan, Madhu Kumar, Tushar Krishna</creator>
-  </item>
-  <item>
-   <title>A Survey on Parameter-Efficient Fine-Tuning for Foundation Models in Federated Learning</title>
-   <link>https://arxiv.org/abs/2504.21099</link>
-   <description>Foundation models have revolutionized artificial intelligence by providing robust, versatile architectures pre-trained on large-scale datasets. However, adapting these massive models to specific downstream tasks requires fine-tuning, which can be prohibitively expensive in computational resources. Parameter-Efficient Fine-Tuning (PEFT) methods address this challenge by selectively updating only a small subset of parameters. Meanwhile, Federated Learning (FL) enables collaborative model training across distributed clients without sharing raw data, making it ideal for privacy-sensitive applications. This survey provides a comprehensive review of the integration of PEFT techniques within federated learning environments. We systematically categorize existing approaches into three main groups: Additive PEFT (which introduces new trainable parameters), Selective PEFT (which fine-tunes only subsets of existing parameters), and Reparameterized PEFT (which transforms model architectures to enable efficient updates). For each category, we analyze how these methods address the unique challenges of federated settings, including data heterogeneity, communication efficiency, computational constraints, and privacy concerns. We further organize the literature based on application domains, covering both natural language processing and computer vision tasks. Finally, we discuss promising research directions, including scaling to larger foundation models, theoretical analysis of federated PEFT methods, and sustainable approaches for resource-constrained environments.</description>
-   <guid>oai:arXiv.org:2504.21099v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Jieming Bian, Yuanzhe Peng, Lei Wang, Yin Huang, Jie Xu</creator>
-  </item>
-  <item>
-   <title>Artificial Intelligence for Personalized Prediction of Alzheimer's Disease Progression: A Survey of Methods, Data Challenges, and Future Directions</title>
-   <link>https://arxiv.org/abs/2504.21189</link>
-   <description>Alzheimer's Disease (AD) is marked by significant inter-individual variability in its progression, complicating accurate prognosis and personalized care planning. This heterogeneity underscores the critical need for predictive models capable of forecasting patient-specific disease trajectories. Artificial Intelligence (AI) offers powerful tools to address this challenge by analyzing complex, multi-modal, and longitudinal patient data. This paper provides a comprehensive survey of AI methodologies applied to personalized AD progression prediction. We review key approaches including state-space models for capturing temporal dynamics, deep learning techniques like Recurrent Neural Networks for sequence modeling, Graph Neural Networks (GNNs) for leveraging network structures, and the emerging concept of AI-driven digital twins for individualized simulation. Recognizing that data limitations often impede progress, we examine common challenges such as high dimensionality, missing data, and dataset imbalance. We further discuss AI-driven mitigation strategies, with a specific focus on synthetic data generation using Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs) to augment and balance datasets. The survey synthesizes the strengths and limitations of current approaches, emphasizing the trend towards multimodal integration and the persistent need for model interpretability and generalizability. Finally, we identify critical open challenges, including robust external validation, clinical integration, and ethical considerations, and outline promising future research directions such as hybrid models, causal inference, and federated learning. This review aims to consolidate current knowledge and guide future efforts in developing clinically relevant AI tools for personalized AD prognostication.</description>
-   <guid>oai:arXiv.org:2504.21189v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.ET</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Gulsah Hancerliogullari Koksalmis, Bulent Soykan, Laura J. Brattain, Hsin-Hsiung Huang</creator>
+   <creator>Wei-Bin Kou, Guangxu Zhu, Bingyang Cheng, Shuai Wang, Ming Tang, Yik-Chung Wu</creator>
   </item>
   <item>
-   <title>FedHERO: A Federated Learning Approach for Node Classification Task on Heterophilic Graphs</title>
-   <link>https://arxiv.org/abs/2504.21206</link>
-   <description>Federated Graph Learning (FGL) empowers clients to collaboratively train Graph neural networks (GNNs) in a distributed manner while preserving data privacy. However, FGL methods usually require that the graph data owned by all clients is homophilic to ensure similar neighbor distribution patterns of nodes. Such an assumption ensures that the learned knowledge is consistent across the local models from all clients. Therefore, these local models can be properly aggregated as a global model without undermining the overall performance. Nevertheless, when the neighbor distribution patterns of nodes vary across different clients (e.g., when clients hold graphs with different levels of heterophily), their local models may gain different and even conflict knowledge from their node-level predictive tasks. Consequently, aggregating these local models usually leads to catastrophic performance deterioration on the global model. To address this challenge, we propose FedHERO, an FGL framework designed to harness and share insights from heterophilic graphs effectively. At the heart of FedHERO is a dual-channel GNN equipped with a structure learner, engineered to discern the structural knowledge encoded in the local graphs. With this specialized component, FedHERO enables the local model for each client to identify and learn patterns that are universally applicable across graphs with different patterns of node neighbor distributions. FedHERO not only enhances the performance of individual client models by leveraging both local and shared structural insights but also sets a new precedent in this field to effectively handle graph data with various node neighbor distribution patterns. We conduct extensive experiments to validate the superior performance of FedHERO against existing alternatives.</description>
-   <guid>oai:arXiv.org:2504.21206v1</guid>
-   <category>cs.LG</category>
+   <title>Can LLMs Help Improve Analogical Reasoning For Strategic Decisions? Experimental Evidence from Humans and GPT-4</title>
+   <link>https://arxiv.org/abs/2505.00603</link>
+   <description>This study investigates whether large language models, specifically GPT4, can match human capabilities in analogical reasoning within strategic decision making contexts. Using a novel experimental design involving source to target matching, we find that GPT4 achieves high recall by retrieving all plausible analogies but suffers from low precision, frequently applying incorrect analogies based on superficial similarities. In contrast, human participants exhibit high precision but low recall, selecting fewer analogies yet with stronger causal alignment. These findings advance theory by identifying matching, the evaluative phase of analogical reasoning, as a distinct step that requires accurate causal mapping beyond simple retrieval. While current LLMs are proficient in generating candidate analogies, humans maintain a comparative advantage in recognizing deep structural similarities across domains. Error analysis reveals that AI errors arise from surface level matching, whereas human errors stem from misinterpretations of causal structure. Taken together, the results suggest a productive division of labor in AI assisted organizational decision making where LLMs may serve as broad analogy generators, while humans act as critical evaluators, applying the most contextually appropriate analogies to strategic problems.</description>
+   <guid>oai:arXiv.org:2505.00603v1</guid>
    <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
+   <category>cs.HC</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Zihan Chen, Xingbo Fu, Yushun Dong, Jundong Li, Cong Shen</creator>
+   <creator>Phanish Puranam, Prothit Sen, Maciej Workiewicz</creator>
   </item>
   <item>
-   <title>A Generalized Meta Federated Learning Framework with Theoretical Convergence Guarantees</title>
-   <link>https://arxiv.org/abs/2504.21327</link>
-   <description>Meta federated learning (FL) is a personalized variant of FL, where multiple agents collaborate on training an initial shared model without exchanging raw data samples. The initial model should be trained in a way that current or new agents can easily adapt it to their local datasets after one or a few fine-tuning steps, thus improving the model personalization. Conventional meta FL approaches minimize the average loss of agents on the local models obtained after one step of fine-tuning. In practice, agents may need to apply several fine-tuning steps to adapt the global model to their local data, especially under highly heterogeneous data distributions across agents. To this end, we present a generalized framework for the meta FL by minimizing the average loss of agents on their local model after any arbitrary number $\nu$ of fine-tuning steps. For this generalized framework, we present a variant of the well-known federated averaging (FedAvg) algorithm and conduct a comprehensive theoretical convergence analysis to characterize the convergence speed as well as behavior of the meta loss functions in both the exact and approximated cases. Our experiments on real-world datasets demonstrate superior accuracy and faster convergence for the proposed scheme compared to conventional approaches.</description>
-   <guid>oai:arXiv.org:2504.21327v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Mohammad Vahid Jamali, Hamid Saber, Jung Hyun Bae</creator>
-  </item>
-  <item>
-   <title>Whispers of Data: Unveiling Label Distributions in Federated Learning Through Virtual Client Simulation</title>
-   <link>https://arxiv.org/abs/2504.21436</link>
-   <description>Federated Learning enables collaborative training of a global model across multiple geographically dispersed clients without the need for data sharing. However, it is susceptible to inference attacks, particularly label inference attacks.
-  Existing studies on label distribution inference exhibits sensitive to the specific settings of the victim client and typically underperforms under defensive strategies. In this study, we propose a novel label distribution inference attack that is stable and adaptable to various scenarios. Specifically, we estimate the size of the victim client's dataset and construct several virtual clients tailored to the victim client. We then quantify the temporal generalization of each class label for the virtual clients and utilize the variation in temporal generalization to train an inference model that predicts the label distribution proportions of the victim client.
-  We validate our approach on multiple datasets, including MNIST, Fashion-MNIST, FER2013, and AG-News. The results demonstrate the superiority of our method compared to state-of-the-art techniques. Furthermore, our attack remains effective even under differential privacy defense mechanisms, underscoring its potential for real-world applications.</description>
-   <guid>oai:arXiv.org:2504.21436v1</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhixuan Ma, Haichang Gao, Junxiang Huang, Ping Wang</creator>
-  </item>
-  <item>
-   <title>Learning Heterogeneous Performance-Fairness Trade-offs in Federated Learning</title>
-   <link>https://arxiv.org/abs/2504.21775</link>
-   <description>Recent methods leverage a hypernet to handle the performance-fairness trade-offs in federated learning. This hypernet maps the clients' preferences between model performance and fairness to preference-specifc models on the trade-off curve, known as local Pareto front. However, existing methods typically adopt a uniform preference sampling distribution to train the hypernet across clients, neglecting the inherent heterogeneity of their local Pareto fronts. Meanwhile, from the perspective of generalization, they do not consider the gap between local and global Pareto fronts on the global dataset. To address these limitations, we propose HetPFL to effectively learn both local and global Pareto fronts. HetPFL comprises Preference Sampling Adaptation (PSA) and Preference-aware Hypernet Fusion (PHF). PSA adaptively determines the optimal preference sampling distribution for each client to accommodate heterogeneous local Pareto fronts. While PHF performs preference-aware fusion of clients' hypernets to ensure the performance of the global Pareto front. We prove that HetPFL converges linearly with respect to the number of rounds, under weaker assumptions than existing methods. Extensive experiments on four datasets show that HetPFL significantly outperforms seven baselines in terms of the quality of learned local and global Pareto fronts.</description>
-   <guid>oai:arXiv.org:2504.21775v1</guid>
-   <category>cs.LG</category>
+   <title>Open-Source LLM-Driven Federated Transformer for Predictive IoV Management</title>
+   <link>https://arxiv.org/abs/2505.00651</link>
+   <description>The proliferation of connected vehicles within the Internet of Vehicles (IoV) ecosystem presents critical challenges in ensuring scalable, real-time, and privacy-preserving traffic management. Existing centralized IoV solutions often suffer from high latency, limited scalability, and reliance on proprietary Artificial Intelligence (AI) models, creating significant barriers to widespread deployment, particularly in dynamic and privacy-sensitive environments. Meanwhile, integrating Large Language Models (LLMs) in vehicular systems remains underexplored, especially concerning prompt optimization and effective utilization in federated contexts. To address these challenges, we propose the Federated Prompt-Optimized Traffic Transformer (FPoTT), a novel framework that leverages open-source LLMs for predictive IoV management. FPoTT introduces a dynamic prompt optimization mechanism that iteratively refines textual prompts to enhance trajectory prediction. The architecture employs a dual-layer federated learning paradigm, combining lightweight edge models for real-time inference with cloud-based LLMs to retain global intelligence. A Transformer-driven synthetic data generator is incorporated to augment training with diverse, high-fidelity traffic scenarios in the Next Generation Simulation (NGSIM) format. Extensive evaluations demonstrate that FPoTT, utilizing EleutherAI Pythia-1B, achieves 99.86% prediction accuracy on real-world data while maintaining high performance on synthetic datasets. These results underscore the potential of open-source LLMs in enabling secure, adaptive, and scalable IoV management, offering a promising alternative to proprietary solutions in smart mobility ecosystems.</description>
+   <guid>oai:arXiv.org:2505.00651v1</guid>
    <category>cs.AI</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
+   <category>cs.ET</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Rongguang Ye, Ming Tang</creator>
+   <creator>Yazan Otoum, Arghavan Asad, Ishtiaq Ahmad</creator>
   </item>
   <item>
-   <title>HYPEROFA: Expanding LLM Vocabulary to New Languages via Hypernetwork-Based Embedding Initialization</title>
-   <link>https://arxiv.org/abs/2504.21018</link>
-   <description>Many pre-trained language models (PLMs) exhibit suboptimal performance on mid- and low-resource languages, largely due to limited exposure to these languages during pre-training. A common strategy to address this is to introduce new tokens specific to the target languages, initialize their embeddings, and apply continual pre-training on target-language data. Among such methods, OFA (Liu et al., 2024a) proposes a similarity-based subword embedding initialization heuristic that is both effective and efficient. However, OFA restricts target-language token embeddings to be convex combinations of a fixed number of source-language embeddings, which may limit expressiveness. To overcome this limitation, we propose HYPEROFA, a hypernetwork-based approach for more adaptive token embedding initialization. The hypernetwork is trained to map from an external multilingual word vector space to the PLMs token embedding space using source-language tokens. Once trained, it can generate flexible embeddings for target-language tokens, serving as a good starting point for continual pretraining. Experiments demonstrate that HYPEROFA consistently outperforms random initialization baseline and matches or exceeds the performance of OFA in both continual pre-training convergence and downstream task performance. We make the code publicly available.</description>
-   <guid>oai:arXiv.org:2504.21018v1</guid>
+   <title>Performance Evaluation of Emotion Classification in Japanese Using RoBERTa and DeBERTa</title>
+   <link>https://arxiv.org/abs/2505.00013</link>
+   <description>Background Practical applications such as social media monitoring and customer-feedback analysis require accurate emotion detection for Japanese text, yet resource scarcity and class imbalance hinder model performance.
+  Objective This study aims to build a high-accuracy model for predicting the presence or absence of eight Plutchik emotions in Japanese sentences.
+  Methods Using the WRIME corpus, we transform reader-averaged intensity scores into binary labels and fine-tune four pre-trained language models (BERT, RoBERTa, DeBERTa-v3-base, DeBERTa-v3-large). For context, we also assess two large language models (TinySwallow-1.5B-Instruct and ChatGPT-4o). Accuracy and F1-score serve as evaluation metrics.
+  Results DeBERTa-v3-large attains the best mean accuracy (0.860) and F1-score (0.662), outperforming all other models. It maintains robust F1 across both high-frequency emotions (e.g., Joy, Anticipation) and low-frequency emotions (e.g., Anger, Trust). The LLMs lag, with ChatGPT-4o and TinySwallow-1.5B-Instruct scoring 0.527 and 0.292 in mean F1, respectively.
+  Conclusion The fine-tuned DeBERTa-v3-large model currently offers the most reliable solution for binary emotion classification in Japanese. We release this model as a pip-installable package (pip install deberta-emotion-predictor). Future work should augment data for rare emotions, reduce model size, and explore prompt engineering to improve LLM performance.
+  This manuscript is under review for possible publication in New Generation Computing.</description>
+   <guid>oai:arXiv.org:2505.00013v1</guid>
    <category>cs.CL</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Enes \&quot;Ozeren, Yihong Liu, Hinrich Sch\&quot;utze</creator>
-  </item>
-  <item>
-   <title>Federated One-Shot Learning with Data Privacy and Objective-Hiding</title>
-   <link>https://arxiv.org/abs/2504.21182</link>
-   <description>Privacy in federated learning is crucial, encompassing two key aspects: safeguarding the privacy of clients' data and maintaining the privacy of the federator's objective from the clients. While the first aspect has been extensively studied, the second has received much less attention.
-  We present a novel approach that addresses both concerns simultaneously, drawing inspiration from techniques in knowledge distillation and private information retrieval to provide strong information-theoretic privacy guarantees.
-  Traditional private function computation methods could be used here; however, they are typically limited to linear or polynomial functions. To overcome these constraints, our approach unfolds in three stages. In stage 0, clients perform the necessary computations locally. In stage 1, these results are shared among the clients, and in stage 2, the federator retrieves its desired objective without compromising the privacy of the clients' data. The crux of the method is a carefully designed protocol that combines secret-sharing-based multi-party computation and a graph-based private information retrieval scheme. We show that our method outperforms existing tools from the literature when properly adapted to this setting.</description>
-   <guid>oai:arXiv.org:2504.21182v1</guid>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <category>cs.IT</category>
-   <category>cs.LG</category>
-   <category>math.IT</category>
-   <category>stat.ML</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Maximilian Egger, R\&quot;udiger Urbanke, Rawad Bitar</creator>
-  </item>
-  <item>
-   <title>Semi-Variance Reduction for Fair Federated Learning</title>
-   <link>https://arxiv.org/abs/2406.16193</link>
-   <description>Ensuring fairness in a Federated Learning (FL) system, i.e., a satisfactory performance for all of the participating diverse clients, is an important and challenging problem. There are multiple fair FL algorithms in the literature, which have been relatively successful in providing fairness. However, these algorithms mostly emphasize on the loss functions of worst-off clients to improve their performance, which often results in the suppression of well-performing ones. As a consequence, they usually sacrifice the system's overall average performance for achieving fairness. Motivated by this and inspired by two well-known risk modeling methods in Finance, Mean-Variance and Mean-Semi-Variance, we propose and study two new fair FL algorithms, Variance Reduction (VRed) and Semi-Variance Reduction (SemiVRed). VRed encourages equality between clients' loss functions by penalizing their variance. In contrast, SemiVRed penalizes the discrepancy of only the worst-off clients' loss functions from the average loss. Through extensive experiments on multiple vision and language datasets, we show that, SemiVRed achieves SoTA performance in scenarios with heterogeneous data distributions and improves both fairness and system overall average performance.</description>
-   <guid>oai:arXiv.org:2406.16193v2</guid>
-   <category>cs.LG</category>
-   <category>cs.CY</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Saber Malekmohammadi, Yaoliang Yu</creator>
-  </item>
-  <item>
-   <title>Partial Knowledge Distillation for Alleviating the Inherent Inter-Class Discrepancy in Federated Learning</title>
-   <link>https://arxiv.org/abs/2411.15403</link>
-   <description>Substantial efforts have been devoted to alleviating the impact of the long-tailed class distribution in federated learning. In this work, we observe an interesting phenomenon that certain weak classes consistently exist even for class-balanced learning. These weak classes, different from the minority classes in the previous works, are inherent to data and remain fairly consistent for various network structures, learning paradigms, and data partitioning methods. The inherent inter-class accuracy discrepancy can reach over 36.9% for federated learning on the FashionMNIST and CIFAR-10 datasets, even when the class distribution is balanced both globally and locally. In this study, we empirically analyze the potential reason for this phenomenon. Furthermore, a partial knowledge distillation (PKD) method is proposed to improve the model's classification accuracy for weak classes. In this approach, knowledge transfer is initiated upon the occurrence of specific misclassifications within certain weak classes. Experimental results show that the accuracy of weak classes can be improved by 10.7%, reducing the inherent inter-class discrepancy effectively.</description>
-   <guid>oai:arXiv.org:2411.15403v2</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Xiaoyu Gan, Jingbo Jiang, Jingyang Zhu, Xiaomeng Wang, Xizi Chen, Chi-Ying Tsui</creator>
-  </item>
-  <item>
-   <title>LabTOP: A Unified Model for Lab Test Outcome Prediction on Electronic Health Records</title>
-   <link>https://arxiv.org/abs/2502.14259</link>
-   <description>Lab tests are fundamental for diagnosing diseases and monitoring patient conditions. However, frequent testing can be burdensome for patients, and test results may not always be immediately available. To address these challenges, we propose LabTOP, a unified model that predicts lab test outcomes by leveraging a language modeling approach on EHR data. Unlike conventional methods that estimate only a subset of lab tests or classify discrete value ranges, LabTOP performs continuous numerical predictions for a diverse range of lab items. We evaluate LabTOP on three publicly available EHR datasets and demonstrate that it outperforms existing methods, including traditional machine learning models and state-of-the-art large language models. We also conduct extensive ablation studies to confirm the effectiveness of our design choices. We believe that LabTOP will serve as an accurate and generalizable framework for lab test outcome prediction, with potential applications in clinical decision support and early detection of critical conditions.</description>
-   <guid>oai:arXiv.org:2502.14259v2</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Sujeong Im, Jungwoo Oh, Edward Choi</creator>
-  </item>
-  <item>
-   <title>Exploiting Defenses against GAN-Based Feature Inference Attacks in Federated Learning</title>
-   <link>https://arxiv.org/abs/2004.12571</link>
-   <description>Federated learning (FL) is a decentralized model training framework that aims to merge isolated data islands while maintaining data privacy. However, recent studies have revealed that Generative Adversarial Network (GAN) based attacks can be employed in FL to learn the distribution of private datasets and reconstruct recognizable images. In this paper, we exploit defenses against GAN-based attacks in FL and propose a framework, Anti-GAN, to prevent attackers from learning the real distribution of the victim's data. The core idea of Anti-GAN is to manipulate the visual features of private training images to make them indistinguishable to human eyes even restored by attackers. Specifically, Anti-GAN projects the private dataset onto a GAN's generator and combines the generated fake images with the actual images to create the training dataset, which is then used for federated model training. The experimental results demonstrate that Anti-GAN is effective in preventing attackers from learning the distribution of private images while causing minimal harm to the accuracy of the federated model.</description>
-   <guid>oai:arXiv.org:2004.12571v5</guid>
-   <category>cs.CR</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Xinjian Luo, Xianglong Zhang</creator>
-  </item>
-  <item>
-   <title>Demystifying AI Platform Design for Distributed Inference of Next-Generation LLM models</title>
-   <link>https://arxiv.org/abs/2406.01698</link>
-   <description>Large language models (LLMs) have shown remarkable performance across a wide range of applications, often outperforming human experts. However, deploying these gigantic models efficiently for diverse inference use cases requires carefully designed hardware platforms with ample computing, memory, and network resources. With constant innovation in LLM serving optimizations and model architecture evolving at breakneck speed, the hardware requirements to meet Service Level Objectives (SLOs) remain an open research question.
-  To answer the question, we present an analytical tool, GenZ, to efficiently navigate the relationship between diverse LLM model architectures(Dense, GQA, MoE, Mamba), LLM serving optimizations(Chunking, Speculative decoding, quanitization), and AI platform design parameters. Our tool estimates LLM inference performance metrics for the given scenario. We have validated against real hardware platforms running various different LLM models, achieving a max geomean error of 5.82.We use GenZ to identify compute, memory capacity, memory bandwidth, network latency, and network bandwidth requirements across diverse LLM inference use cases. We also study diverse architectural choices in use today (inspired by LLM serving platforms from several vendors) to help inform computer architects designing next-generation AI hardware accelerators and platforms. The trends and insights derived from GenZ can guide AI engineers deploying LLMs as well as computer architects designing next-generation hardware accelerators and platforms. Ultimately, this work sheds light on the platform design considerations for unlocking the full potential of large language models across a spectrum of applications. The source code is available at https://github.com/abhibambhaniya/GenZ-LLM-Analyzer . Users can also be tried it on at https://genz-llm-analyzer.streamlit.app/ without any setup on your web browser.</description>
-   <guid>oai:arXiv.org:2406.01698v2</guid>
-   <category>cs.AR</category>
    <category>cs.AI</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Abhimanyu Bambhaniya, Ritik Raj, Geonhwa Jeong, Souvik Kundu, Sudarshan Srinivasan, Suvinay Subramanian, Midhilesh Elavazhagan, Madhu Kumar, Tushar Krishna</creator>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yoichi Takenaka</creator>
   </item>
   <item>
-   <title>Semi-Variance Reduction for Fair Federated Learning</title>
-   <link>https://arxiv.org/abs/2406.16193</link>
-   <description>Ensuring fairness in a Federated Learning (FL) system, i.e., a satisfactory performance for all of the participating diverse clients, is an important and challenging problem. There are multiple fair FL algorithms in the literature, which have been relatively successful in providing fairness. However, these algorithms mostly emphasize on the loss functions of worst-off clients to improve their performance, which often results in the suppression of well-performing ones. As a consequence, they usually sacrifice the system's overall average performance for achieving fairness. Motivated by this and inspired by two well-known risk modeling methods in Finance, Mean-Variance and Mean-Semi-Variance, we propose and study two new fair FL algorithms, Variance Reduction (VRed) and Semi-Variance Reduction (SemiVRed). VRed encourages equality between clients' loss functions by penalizing their variance. In contrast, SemiVRed penalizes the discrepancy of only the worst-off clients' loss functions from the average loss. Through extensive experiments on multiple vision and language datasets, we show that, SemiVRed achieves SoTA performance in scenarios with heterogeneous data distributions and improves both fairness and system overall average performance.</description>
-   <guid>oai:arXiv.org:2406.16193v2</guid>
+   <title>Sparks of Tabular Reasoning via Text2SQL Reinforcement Learning</title>
+   <link>https://arxiv.org/abs/2505.00016</link>
+   <description>This work reframes the Text-to-SQL task as a pathway for teaching large language models (LLMs) to reason over and manipulate tabular data--moving beyond the traditional focus on query generation. We propose a two-stage framework that leverages SQL supervision to develop transferable table reasoning capabilities. First, we synthesize detailed chain-of-thought (CoT) traces from real-world SQL queries, providing step-by-step, clause-level supervision that teaches the model how to traverse, filter, and aggregate table fields. Second, we introduce a Group Relative Policy Optimization (GRPO) reinforcement learning objective that connects SQL execution accuracy to generalizable reasoning by encouraging steps that extend beyond task-specific syntax and transfer across datasets. Empirically, our approach improves performance on standard Text-to-SQL benchmarks and achieves substantial gains on reasoning-intensive datasets such as BIRD and CRT-QA, demonstrating enhanced generalization and interpretability. Specifically, the distilled-quantized LLaMA model achieved a 20\% increase in accuracy when trained on Text-to-SQL tasks, while Qwen achieved a 5\% increase. These results suggest that SQL can serve not only as a target formalism but also as an effective scaffold for learning robust, transferable reasoning over structured data.</description>
+   <guid>oai:arXiv.org:2505.00016v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Josefa Lia Stoisser, Marc Boubnovski Martell, Julien Fauqueur</creator>
+  </item>
+  <item>
+   <title>Learning to Plan Before Answering: Self-Teaching LLMs to Learn Abstract Plans for Problem Solving</title>
+   <link>https://arxiv.org/abs/2505.00031</link>
+   <description>In the field of large language model (LLM) post-training, the effectiveness of utilizing synthetic data generated by the LLM itself has been well-presented. However, a key question remains unaddressed: what essential information should such self-generated data encapsulate? Existing approaches only produce step-by-step problem solutions, and fail to capture the abstract meta-knowledge necessary for generalization across similar problems. Drawing insights from cognitive science, where humans employ high-level abstraction to simplify complex problems before delving into specifics, we introduce a novel self-training algorithm: LEarning to Plan before Answering (LEPA). LEPA trains the LLM to formulate anticipatory plans, which serve as abstract meta-knowledge for problem-solving, before engaging with the intricacies of problems. This approach not only outlines the solution generation path but also shields the LLM from the distraction of irrelevant details. During data generation, LEPA first crafts an anticipatory plan based on the problem, and then generates a solution that aligns with both the plan and the problem. LEPA refines the plan through self-reflection, aiming to acquire plans that are instrumental in yielding correct solutions. During model optimization, the LLM is trained to predict both the refined plans and the corresponding solutions. By efficiently extracting and utilizing the anticipatory plans, LEPA demonstrates remarkable superiority over conventional algorithms on various challenging natural language reasoning benchmarks.</description>
+   <guid>oai:arXiv.org:2505.00031v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jin Zhang, Flood Sung, Zhilin Yang, Yang Gao, Chongjie Zhang</creator>
+  </item>
+  <item>
+   <title>Online Federation For Mixtures of Proprietary Agents with Black-Box Encoders</title>
+   <link>https://arxiv.org/abs/2505.00216</link>
+   <description>Most industry-standard generative AIs and feature encoders are proprietary, offering only black-box access: their outputs are observable, but their internal parameters and architectures remain hidden from the end-user. This black-box access is especially limiting when constructing mixture-of-expert type ensemble models since the user cannot optimize each proprietary AI's internal parameters. Our problem naturally lends itself to a non-competitive game-theoretic lens where each proprietary AI (agent) is inherently competing against the other AI agents, with this competition arising naturally due to their obliviousness of the AI's to their internal structure. In contrast, the user acts as a central planner trying to synchronize the ensemble of competing AIs.
+  We show the existence of the unique Nash equilibrium in the online setting, which we even compute in closed-form by eliciting a feedback mechanism between any given time series and the sequence generated by each (proprietary) AI agent. Our solution is implemented as a decentralized, federated-learning algorithm in which each agent optimizes their structure locally on their machine without ever releasing any internal structure to the others. We obtain refined expressions for pre-trained models such as transformers, random feature models, and echo-state networks. Our ``proprietary federated learning'' algorithm is implemented on a range of real-world and synthetic time-series benchmarks. It achieves orders-of-magnitude improvements in predictive accuracy over natural benchmarks, of which there are surprisingly few due to this natural problem still being largely unexplored.</description>
+   <guid>oai:arXiv.org:2505.00216v1</guid>
    <category>cs.LG</category>
-   <category>cs.CY</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
+   <category>cs.AI</category>
+   <category>cs.GT</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xuwei Yang, Fatemeh Tavakoli, David B. Emerson, Anastasis Kratsios</creator>
+  </item>
+  <item>
+   <title>QServe: W4A8KV4 Quantization and System Co-design for Efficient LLM Serving</title>
+   <link>https://arxiv.org/abs/2405.04532</link>
+   <description>Quantization can accelerate large language model (LLM) inference. Going beyond INT8 quantization, the research community is actively exploring even lower precision, such as INT4. Nonetheless, state-of-the-art INT4 quantization techniques only accelerate low-batch, edge LLM inference, failing to deliver performance gains in large-batch, cloud-based LLM serving. We uncover a critical issue: existing INT4 quantization methods suffer from significant runtime overhead (20-90%) when dequantizing either weights or partial sums on GPUs. To address this challenge, we introduce QoQ, a W4A8KV4 quantization algorithm with 4-bit weight, 8-bit activation, and 4-bit KV cache. QoQ stands for quattuor-octo-quattuor, which represents 4-8-4 in Latin. QoQ is implemented by the QServe inference library that achieves measured speedup. The key insight driving QServe is that the efficiency of LLM serving on GPUs is critically influenced by operations on low-throughput CUDA cores. Building upon this insight, in QoQ algorithm, we introduce progressive quantization that can allow low dequantization overhead in W4A8 GEMM. Additionally, we develop SmoothAttention to effectively mitigate the accuracy degradation incurred by 4-bit KV quantization. In the QServe system, we perform compute-aware weight reordering and take advantage of register-level parallelism to reduce dequantization latency. We also make fused attention memory-bound, harnessing the performance gain brought by KV4 quantization. As a result, QServe improves the maximum achievable serving throughput of Llama-3-8B by 1.2x on A100, 1.4x on L40S; and Qwen1.5-72B by 2.4x on A100, 3.5x on L40S, compared to TensorRT-LLM. Remarkably, QServe on L40S GPU can achieve even higher throughput than TensorRT-LLM on A100. Thus, QServe effectively reduces the dollar cost of LLM serving by 3x. Code is available at https://github.com/mit-han-lab/omniserve.</description>
+   <guid>oai:arXiv.org:2405.04532v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <category>cs.PF</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Saber Malekmohammadi, Yaoliang Yu</creator>
+   <creator>Yujun Lin, Haotian Tang, Shang Yang, Zhekai Zhang, Guangxuan Xiao, Chuang Gan, Song Han</creator>
   </item>
   <item>
-   <title>Relaxed Choices in Bottom-Up Asynchronous Multiparty Session Types</title>
-   <link>https://arxiv.org/abs/2504.21108</link>
-   <description>Asynchronous multiparty session types provide a formal model for expressing the behaviour of communicating processes and verifying that they correctly implement desired protocols. In the ``bottom-up'' approach to session typing, local session types are specified directly, and the properties of their composition (e.g. deadlock freedom and liveness) are checked and transferred to well-typed processes. This method allows expressing and verifying a broad range of protocols, but still has a key limitation: it only supports protocols where every send/receive operation is directed towards strictly one recipient/sender at a time. This makes the technique too restrictive for modelling some classes of protocols, e.g. those used in the field of federated learning.
-  This paper improves the session typing theory by extending the asynchronous ``bottom-up'' approach to support protocols where a participant can choose to send or receive messages to/from multiple other participants at the same time, rather than just one at a time. We demonstrate how this extension enables the modeling and verification of real-world protocols, including some used in federated learning. Furthermore, we introduce and formally prove safety, deadlock-freedom, liveness, and session fidelity properties for our session typing system, revealing interesting dependencies between these properties in the presence of a subtyping relation.</description>
-   <guid>oai:arXiv.org:2504.21108v1</guid>
-   <category>cs.LO</category>
-   <pubdate>Thu, 01 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
+   <title>UoR-NCL at SemEval-2025 Task 1: Using Generative LLMs and CLIP Models for Multilingual Multimodal Idiomaticity Representation</title>
+   <link>https://arxiv.org/abs/2502.20984</link>
+   <description>SemEval-2025 Task 1 focuses on ranking images based on their alignment with a given nominal compound that may carry idiomatic meaning in both English and Brazilian Portuguese. To address this challenge, this work uses generative large language models (LLMs) and multilingual CLIP models to enhance idiomatic compound representations. LLMs generate idiomatic meanings for potentially idiomatic compounds, enriching their semantic interpretation. These meanings are then encoded using multilingual CLIP models, serving as representations for image ranking. Contrastive learning and data augmentation techniques are applied to fine-tune these embeddings for improved performance. Experimental results show that multimodal representations extracted through this method outperformed those based solely on the original nominal compounds. The fine-tuning approach shows promising outcomes but is less effective than using embeddings without fine-tuning. The source code used in this paper is available at https://github.com/tongwu17/SemEval-2025-Task1-UoR-NCL.</description>
+   <guid>oai:arXiv.org:2502.20984v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Thanet Markchom, Tong Wu, Liting Huang, Huizhi Liang</creator>
+  </item>
+  <item>
+   <title>BRIDGE: Benchmarking Large Language Models for Understanding Real-world Clinical Practice Text</title>
+   <link>https://arxiv.org/abs/2504.19467</link>
+   <description>Large language models (LLMs) hold great promise for medical applications and are evolving rapidly, with new models being released at an accelerated pace. However, current evaluations of LLMs in clinical contexts remain limited. Most existing benchmarks rely on medical exam-style questions or PubMed-derived text, failing to capture the complexity of real-world electronic health record (EHR) data. Others focus narrowly on specific application scenarios, limiting their generalizability across broader clinical use. To address this gap, we present BRIDGE, a comprehensive multilingual benchmark comprising 87 tasks sourced from real-world clinical data sources across nine languages. We systematically evaluated 52 state-of-the-art LLMs (including DeepSeek-R1, GPT-4o, Gemini, and Llama 4) under various inference strategies. With a total of 13,572 experiments, our results reveal substantial performance variation across model sizes, languages, natural language processing tasks, and clinical specialties. Notably, we demonstrate that open-source LLMs can achieve performance comparable to proprietary models, while medically fine-tuned LLMs based on older architectures often underperform versus updated general-purpose models. The BRIDGE and its corresponding leaderboard serve as a foundational resource and a unique reference for the development and evaluation of new LLMs in real-world clinical text understanding.
+  The BRIDGE leaderboard: https://huggingface.co/spaces/YLab-Open/BRIDGE-Medical-Leaderboard</description>
+   <guid>oai:arXiv.org:2504.19467v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jiageng Wu, Bowen Gu, Ren Zhou, Kevin Xie, Doug Snyder, Yixing Jiang, Valentina Carducci, Richard Wyss, Rishi J Desai, Emily Alsentzer, Leo Anthony Celi, Adam Rodman, Sebastian Schneeweiss, Jonathan H. Chen, Santiago Romero-Brufau, Kueiyu Joshua Lin, Jie Yang</creator>
+  </item>
+  <item>
+   <title>GenTorrent: Scaling Large Language Model Serving with An Overley Network</title>
+   <link>https://arxiv.org/abs/2504.20101</link>
+   <description>While significant progress has been made in research and development on open-source and cost-efficient large-language models (LLMs), serving scalability remains a critical challenge, particularly for small organizations and individuals seeking to deploy and test their LLM innovations. Inspired by peer-to-peer networks that leverage decentralized overlay nodes to increase throughput and availability, we propose GenTorrent, an LLM serving overlay that harnesses computing resources from decentralized contributors. We identify four key research problems inherent to enabling such a decentralized infrastructure: 1) overlay network organization; 2) LLM communication privacy; 3) overlay forwarding for resource efficiency; and 4) verification of serving quality. This work presents the first systematic study of these fundamental problems in the context of decentralized LLM serving. Evaluation results from a prototype implemented on a set of decentralized nodes demonstrate that GenTorrent achieves a latency reduction of over 50% compared to the baseline design without overlay forwarding. Furthermore, the security features introduce minimal overhead to serving latency and throughput. We believe this work pioneers a new direction for democratizing and scaling future AI serving capabilities.</description>
+   <guid>oai:arXiv.org:2504.20101v2</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Fei Fang, Yifan Hua, Shengze Wang, Ruilin Zhou, Yi Liu, Chen Qian, Xiaoxue Zhang</creator>
+  </item>
+  <item>
+   <title>Trace-of-Thought Prompting: Investigating Prompt-Based Knowledge Distillation Through Question Decomposition</title>
+   <link>https://arxiv.org/abs/2504.20946</link>
+   <description>Knowledge distillation allows smaller neural networks to emulate the performance of larger, teacher models with reduced computational demands. Traditional methods for Large Language Models (LLMs) often necessitate extensive fine-tuning, which limits their accessibility. To address this, we introduce Trace-of-Thought Prompting, a novel framework designed to distill critical reasoning capabilities from high-resource teacher models (over 8 billion parameters) to low-resource student models (up to 8 billion parameters). This approach leverages problem decomposition to enhance interpretability and facilitate human-in-the-loop interventions. Empirical evaluations on the GSM8K and MATH datasets show that student models achieve accuracy gains of up to 113% on GSM8K and 21% on MATH, with significant improvements particularly notable in smaller models like Llama 2 and Zephyr. Our results suggest a promising pathway for open-source, low-resource models to eventually serve both as both students and teachers, potentially reducing our reliance on high-resource, proprietary models.</description>
+   <guid>oai:arXiv.org:2504.20946v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Ivan Proki\'c, Simona Proki\'c, Silvia Ghilezan, Alceste Scalas, Nobuko Yoshida</creator>
+   <creator>Tyler McDonald, Ali Emami</creator>
+  </item>
+  <item>
+   <title>Open-Source LLM-Driven Federated Transformer for Predictive IoV Management</title>
+   <link>https://arxiv.org/abs/2505.00651</link>
+   <description>The proliferation of connected vehicles within the Internet of Vehicles (IoV) ecosystem presents critical challenges in ensuring scalable, real-time, and privacy-preserving traffic management. Existing centralized IoV solutions often suffer from high latency, limited scalability, and reliance on proprietary Artificial Intelligence (AI) models, creating significant barriers to widespread deployment, particularly in dynamic and privacy-sensitive environments. Meanwhile, integrating Large Language Models (LLMs) in vehicular systems remains underexplored, especially concerning prompt optimization and effective utilization in federated contexts. To address these challenges, we propose the Federated Prompt-Optimized Traffic Transformer (FPoTT), a novel framework that leverages open-source LLMs for predictive IoV management. FPoTT introduces a dynamic prompt optimization mechanism that iteratively refines textual prompts to enhance trajectory prediction. The architecture employs a dual-layer federated learning paradigm, combining lightweight edge models for real-time inference with cloud-based LLMs to retain global intelligence. A Transformer-driven synthetic data generator is incorporated to augment training with diverse, high-fidelity traffic scenarios in the Next Generation Simulation (NGSIM) format. Extensive evaluations demonstrate that FPoTT, utilizing EleutherAI Pythia-1B, achieves 99.86% prediction accuracy on real-world data while maintaining high performance on synthetic datasets. These results underscore the potential of open-source LLMs in enabling secure, adaptive, and scalable IoV management, offering a promising alternative to proprietary solutions in smart mobility ecosystems.</description>
+   <guid>oai:arXiv.org:2505.00651v1</guid>
+   <category>cs.AI</category>
+   <category>cs.ET</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yazan Otoum, Arghavan Asad, Ishtiaq Ahmad</creator>
+  </item>
+  <item>
+   <title>Can LLMs Help Improve Analogical Reasoning For Strategic Decisions? Experimental Evidence from Humans and GPT-4</title>
+   <link>https://arxiv.org/abs/2505.00603</link>
+   <description>This study investigates whether large language models, specifically GPT4, can match human capabilities in analogical reasoning within strategic decision making contexts. Using a novel experimental design involving source to target matching, we find that GPT4 achieves high recall by retrieving all plausible analogies but suffers from low precision, frequently applying incorrect analogies based on superficial similarities. In contrast, human participants exhibit high precision but low recall, selecting fewer analogies yet with stronger causal alignment. These findings advance theory by identifying matching, the evaluative phase of analogical reasoning, as a distinct step that requires accurate causal mapping beyond simple retrieval. While current LLMs are proficient in generating candidate analogies, humans maintain a comparative advantage in recognizing deep structural similarities across domains. Error analysis reveals that AI errors arise from surface level matching, whereas human errors stem from misinterpretations of causal structure. Taken together, the results suggest a productive division of labor in AI assisted organizational decision making where LLMs may serve as broad analogy generators, while humans act as critical evaluators, applying the most contextually appropriate analogies to strategic problems.</description>
+   <guid>oai:arXiv.org:2505.00603v1</guid>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Phanish Puranam, Prothit Sen, Maciej Workiewicz</creator>
+  </item>
+  <item>
+   <title>GenTorrent: Scaling Large Language Model Serving with An Overley Network</title>
+   <link>https://arxiv.org/abs/2504.20101</link>
+   <description>While significant progress has been made in research and development on open-source and cost-efficient large-language models (LLMs), serving scalability remains a critical challenge, particularly for small organizations and individuals seeking to deploy and test their LLM innovations. Inspired by peer-to-peer networks that leverage decentralized overlay nodes to increase throughput and availability, we propose GenTorrent, an LLM serving overlay that harnesses computing resources from decentralized contributors. We identify four key research problems inherent to enabling such a decentralized infrastructure: 1) overlay network organization; 2) LLM communication privacy; 3) overlay forwarding for resource efficiency; and 4) verification of serving quality. This work presents the first systematic study of these fundamental problems in the context of decentralized LLM serving. Evaluation results from a prototype implemented on a set of decentralized nodes demonstrate that GenTorrent achieves a latency reduction of over 50% compared to the baseline design without overlay forwarding. Furthermore, the security features introduce minimal overhead to serving latency and throughput. We believe this work pioneers a new direction for democratizing and scaling future AI serving capabilities.</description>
+   <guid>oai:arXiv.org:2504.20101v2</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Fei Fang, Yifan Hua, Shengze Wang, Ruilin Zhou, Yi Liu, Chen Qian, Xiaoxue Zhang</creator>
+  </item>
+  <item>
+   <title>QServe: W4A8KV4 Quantization and System Co-design for Efficient LLM Serving</title>
+   <link>https://arxiv.org/abs/2405.04532</link>
+   <description>Quantization can accelerate large language model (LLM) inference. Going beyond INT8 quantization, the research community is actively exploring even lower precision, such as INT4. Nonetheless, state-of-the-art INT4 quantization techniques only accelerate low-batch, edge LLM inference, failing to deliver performance gains in large-batch, cloud-based LLM serving. We uncover a critical issue: existing INT4 quantization methods suffer from significant runtime overhead (20-90%) when dequantizing either weights or partial sums on GPUs. To address this challenge, we introduce QoQ, a W4A8KV4 quantization algorithm with 4-bit weight, 8-bit activation, and 4-bit KV cache. QoQ stands for quattuor-octo-quattuor, which represents 4-8-4 in Latin. QoQ is implemented by the QServe inference library that achieves measured speedup. The key insight driving QServe is that the efficiency of LLM serving on GPUs is critically influenced by operations on low-throughput CUDA cores. Building upon this insight, in QoQ algorithm, we introduce progressive quantization that can allow low dequantization overhead in W4A8 GEMM. Additionally, we develop SmoothAttention to effectively mitigate the accuracy degradation incurred by 4-bit KV quantization. In the QServe system, we perform compute-aware weight reordering and take advantage of register-level parallelism to reduce dequantization latency. We also make fused attention memory-bound, harnessing the performance gain brought by KV4 quantization. As a result, QServe improves the maximum achievable serving throughput of Llama-3-8B by 1.2x on A100, 1.4x on L40S; and Qwen1.5-72B by 2.4x on A100, 3.5x on L40S, compared to TensorRT-LLM. Remarkably, QServe on L40S GPU can achieve even higher throughput than TensorRT-LLM on A100. Thus, QServe effectively reduces the dollar cost of LLM serving by 3x. Code is available at https://github.com/mit-han-lab/omniserve.</description>
+   <guid>oai:arXiv.org:2405.04532v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <category>cs.PF</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yujun Lin, Haotian Tang, Shang Yang, Zhekai Zhang, Guangxuan Xiao, Chuang Gan, Song Han</creator>
+  </item>
+  <item>
+   <title>Online Federation For Mixtures of Proprietary Agents with Black-Box Encoders</title>
+   <link>https://arxiv.org/abs/2505.00216</link>
+   <description>Most industry-standard generative AIs and feature encoders are proprietary, offering only black-box access: their outputs are observable, but their internal parameters and architectures remain hidden from the end-user. This black-box access is especially limiting when constructing mixture-of-expert type ensemble models since the user cannot optimize each proprietary AI's internal parameters. Our problem naturally lends itself to a non-competitive game-theoretic lens where each proprietary AI (agent) is inherently competing against the other AI agents, with this competition arising naturally due to their obliviousness of the AI's to their internal structure. In contrast, the user acts as a central planner trying to synchronize the ensemble of competing AIs.
+  We show the existence of the unique Nash equilibrium in the online setting, which we even compute in closed-form by eliciting a feedback mechanism between any given time series and the sequence generated by each (proprietary) AI agent. Our solution is implemented as a decentralized, federated-learning algorithm in which each agent optimizes their structure locally on their machine without ever releasing any internal structure to the others. We obtain refined expressions for pre-trained models such as transformers, random feature models, and echo-state networks. Our ``proprietary federated learning'' algorithm is implemented on a range of real-world and synthetic time-series benchmarks. It achieves orders-of-magnitude improvements in predictive accuracy over natural benchmarks, of which there are surprisingly few due to this natural problem still being largely unexplored.</description>
+   <guid>oai:arXiv.org:2505.00216v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.GT</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xuwei Yang, Fatemeh Tavakoli, David B. Emerson, Anastasis Kratsios</creator>
+  </item>
+  <item>
+   <title>Communication-Efficient Wireless Federated Fine-Tuning for Large-Scale AI Models</title>
+   <link>https://arxiv.org/abs/2505.00333</link>
+   <description>Transformer-based large language models (LLMs) have achieved remarkable success across various tasks. Yet, fine-tuning such massive models in federated learning (FL) settings poses significant challenges due to resource constraints and communication overhead. Low-Rank Adaptation (LoRA) addresses these issues by training compact, low-rank matrices instead of fully fine-tuning large models. This paper introduces a wireless federated LoRA fine-tuning framework that optimizes both learning performance and communication efficiency. We provide a novel convergence analysis, revealing how LoRA rank and covariance effects influence FL training dynamics. Leveraging these insights, we propose Sparsified Orthogonal Fine-Tuning (\textbf{SOFT}), an adaptive sparsification method that streamlines parameter updates without expensive matrix multiplications and singular value decomposition (SVD) operations. Additionally, we present a Two Stage Federated Algorithm (\textbf{TSFA}) algorithm that pre-determines key parameters offline and dynamically adjusts bandwidth and sparsification online, ensuring efficient training under latency constraints. Experiments on benchmark datasets show that our approach achieves accuracy comparable to ideal scenario models while significantly reducing communication overhead. Our framework thus enables scalable, resource-efficient deployment of large models in real-world wireless FL scenarios.</description>
+   <guid>oai:arXiv.org:2505.00333v1</guid>
+   <category>cs.LG</category>
+   <category>eess.SP</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Bumjun Kim, Wan Choi</creator>
+  </item>
+  <item>
+   <title>FedEMA: Federated Exponential Moving Averaging with Negative Entropy Regularizer in Autonomous Driving</title>
+   <link>https://arxiv.org/abs/2505.00318</link>
+   <description>Street Scene Semantic Understanding (denoted as S3U) is a crucial but complex task for autonomous driving (AD) vehicles. Their inference models typically face poor generalization due to domain-shift. Federated Learning (FL) has emerged as a promising paradigm for enhancing the generalization of AD models through privacy-preserving distributed learning. However, these FL AD models face significant temporal catastrophic forgetting when deployed in dynamically evolving environments, where continuous adaptation causes abrupt erosion of historical knowledge. This paper proposes Federated Exponential Moving Average (FedEMA), a novel framework that addresses this challenge through two integral innovations: (I) Server-side model's historical fitting capability preservation via fusing current FL round's aggregation model and a proposed previous FL round's exponential moving average (EMA) model; (II) Vehicle-side negative entropy regularization to prevent FL models' possible overfitting to EMA-introduced temporal patterns. Above two strategies empower FedEMA a dual-objective optimization that balances model generalization and adaptability. In addition, we conduct theoretical convergence analysis for the proposed FedEMA. Extensive experiments both on Cityscapes dataset and Camvid dataset demonstrate FedEMA's superiority over existing approaches, showing 7.12% higher mean Intersection-over-Union (mIoU).</description>
+   <guid>oai:arXiv.org:2505.00318v1</guid>
+   <category>cs.RO</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Wei-Bin Kou, Guangxu Zhu, Bingyang Cheng, Shuai Wang, Ming Tang, Yik-Chung Wu</creator>
+  </item>
+  <item>
+   <title>Open-Source LLM-Driven Federated Transformer for Predictive IoV Management</title>
+   <link>https://arxiv.org/abs/2505.00651</link>
+   <description>The proliferation of connected vehicles within the Internet of Vehicles (IoV) ecosystem presents critical challenges in ensuring scalable, real-time, and privacy-preserving traffic management. Existing centralized IoV solutions often suffer from high latency, limited scalability, and reliance on proprietary Artificial Intelligence (AI) models, creating significant barriers to widespread deployment, particularly in dynamic and privacy-sensitive environments. Meanwhile, integrating Large Language Models (LLMs) in vehicular systems remains underexplored, especially concerning prompt optimization and effective utilization in federated contexts. To address these challenges, we propose the Federated Prompt-Optimized Traffic Transformer (FPoTT), a novel framework that leverages open-source LLMs for predictive IoV management. FPoTT introduces a dynamic prompt optimization mechanism that iteratively refines textual prompts to enhance trajectory prediction. The architecture employs a dual-layer federated learning paradigm, combining lightweight edge models for real-time inference with cloud-based LLMs to retain global intelligence. A Transformer-driven synthetic data generator is incorporated to augment training with diverse, high-fidelity traffic scenarios in the Next Generation Simulation (NGSIM) format. Extensive evaluations demonstrate that FPoTT, utilizing EleutherAI Pythia-1B, achieves 99.86% prediction accuracy on real-world data while maintaining high performance on synthetic datasets. These results underscore the potential of open-source LLMs in enabling secure, adaptive, and scalable IoV management, offering a promising alternative to proprietary solutions in smart mobility ecosystems.</description>
+   <guid>oai:arXiv.org:2505.00651v1</guid>
+   <category>cs.AI</category>
+   <category>cs.ET</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yazan Otoum, Arghavan Asad, Ishtiaq Ahmad</creator>
+  </item>
+  <item>
+   <title>Soft-Label Caching and Sharpening for Communication-Efficient Federated Distillation</title>
+   <link>https://arxiv.org/abs/2504.19602</link>
+   <description>Federated Learning (FL) enables collaborative model training across decentralized clients, enhancing privacy by keeping data local. Yet conventional FL, relying on frequent parameter-sharing, suffers from high communication overhead and limited model heterogeneity. Distillation-based FL approaches address these issues by sharing predictions (soft-labels) instead, but they often involve redundant transmissions across communication rounds, reducing efficiency. We propose SCARLET, a novel framework integrating synchronized soft-label caching and an enhanced Entropy Reduction Aggregation (Enhanced ERA) mechanism. SCARLET minimizes redundant communication by reusing cached soft-labels, achieving up to 50% reduction in communication costs compared to existing methods while maintaining accuracy. Enhanced ERA can be tuned to adapt to non-IID data variations, ensuring robust aggregation and performance in diverse client scenarios. Experimental evaluations demonstrate that SCARLET consistently outperforms state-of-the-art distillation-based FL methods in terms of accuracy and communication efficiency. The implementation of SCARLET is publicly available at https://github.com/kitsuyaazuma/SCARLET.</description>
+   <guid>oai:arXiv.org:2504.19602v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Kitsuya Azuma, Takayuki Nishio, Yuichi Kitagawa, Wakako Nakano, Takahito Tanimura</creator>
+  </item>
+  <item>
+   <title>QServe: W4A8KV4 Quantization and System Co-design for Efficient LLM Serving</title>
+   <link>https://arxiv.org/abs/2405.04532</link>
+   <description>Quantization can accelerate large language model (LLM) inference. Going beyond INT8 quantization, the research community is actively exploring even lower precision, such as INT4. Nonetheless, state-of-the-art INT4 quantization techniques only accelerate low-batch, edge LLM inference, failing to deliver performance gains in large-batch, cloud-based LLM serving. We uncover a critical issue: existing INT4 quantization methods suffer from significant runtime overhead (20-90%) when dequantizing either weights or partial sums on GPUs. To address this challenge, we introduce QoQ, a W4A8KV4 quantization algorithm with 4-bit weight, 8-bit activation, and 4-bit KV cache. QoQ stands for quattuor-octo-quattuor, which represents 4-8-4 in Latin. QoQ is implemented by the QServe inference library that achieves measured speedup. The key insight driving QServe is that the efficiency of LLM serving on GPUs is critically influenced by operations on low-throughput CUDA cores. Building upon this insight, in QoQ algorithm, we introduce progressive quantization that can allow low dequantization overhead in W4A8 GEMM. Additionally, we develop SmoothAttention to effectively mitigate the accuracy degradation incurred by 4-bit KV quantization. In the QServe system, we perform compute-aware weight reordering and take advantage of register-level parallelism to reduce dequantization latency. We also make fused attention memory-bound, harnessing the performance gain brought by KV4 quantization. As a result, QServe improves the maximum achievable serving throughput of Llama-3-8B by 1.2x on A100, 1.4x on L40S; and Qwen1.5-72B by 2.4x on A100, 3.5x on L40S, compared to TensorRT-LLM. Remarkably, QServe on L40S GPU can achieve even higher throughput than TensorRT-LLM on A100. Thus, QServe effectively reduces the dollar cost of LLM serving by 3x. Code is available at https://github.com/mit-han-lab/omniserve.</description>
+   <guid>oai:arXiv.org:2405.04532v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <category>cs.PF</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yujun Lin, Haotian Tang, Shang Yang, Zhekai Zhang, Guangxuan Xiao, Chuang Gan, Song Han</creator>
+  </item>
+  <item>
+   <title>Online Federation For Mixtures of Proprietary Agents with Black-Box Encoders</title>
+   <link>https://arxiv.org/abs/2505.00216</link>
+   <description>Most industry-standard generative AIs and feature encoders are proprietary, offering only black-box access: their outputs are observable, but their internal parameters and architectures remain hidden from the end-user. This black-box access is especially limiting when constructing mixture-of-expert type ensemble models since the user cannot optimize each proprietary AI's internal parameters. Our problem naturally lends itself to a non-competitive game-theoretic lens where each proprietary AI (agent) is inherently competing against the other AI agents, with this competition arising naturally due to their obliviousness of the AI's to their internal structure. In contrast, the user acts as a central planner trying to synchronize the ensemble of competing AIs.
+  We show the existence of the unique Nash equilibrium in the online setting, which we even compute in closed-form by eliciting a feedback mechanism between any given time series and the sequence generated by each (proprietary) AI agent. Our solution is implemented as a decentralized, federated-learning algorithm in which each agent optimizes their structure locally on their machine without ever releasing any internal structure to the others. We obtain refined expressions for pre-trained models such as transformers, random feature models, and echo-state networks. Our ``proprietary federated learning'' algorithm is implemented on a range of real-world and synthetic time-series benchmarks. It achieves orders-of-magnitude improvements in predictive accuracy over natural benchmarks, of which there are surprisingly few due to this natural problem still being largely unexplored.</description>
+   <guid>oai:arXiv.org:2505.00216v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.GT</category>
+   <pubdate>Fri, 02 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xuwei Yang, Fatemeh Tavakoli, David B. Emerson, Anastasis Kratsios</creator>
   </item>
  </channel>
 </rss>
