@@ -6,352 +6,539 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Tue, 06 May 2025 03:04:35 </lastBuildDate>
+  <lastBuildDate>Tue, 06 May 2025 04:16:06 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Tue, 06 May 2025 03:04:35 </pubDate>
+  <pubDate>Tue, 06 May 2025 04:16:06 </pubDate>
   <item>
-   <title>Value Portrait: Understanding Values of LLMs with Human-aligned Benchmark</title>
-   <link>https://arxiv.org/abs/2505.01015</link>
-   <description>The importance of benchmarks for assessing the values of language models has been pronounced due to the growing need of more authentic, human-aligned responses. However, existing benchmarks rely on human or machine annotations that are vulnerable to value-related biases. Furthermore, the tested scenarios often diverge from real-world contexts in which models are commonly used to generate text and express values. To address these issues, we propose the Value Portrait benchmark, a reliable framework for evaluating LLMs' value orientations with two key characteristics. First, the benchmark consists of items that capture real-life user-LLM interactions, enhancing the relevance of assessment results to real-world LLM usage and thus ecological validity. Second, each item is rated by human subjects based on its similarity to their own thoughts, and correlations between these ratings and the subjects' actual value scores are derived. This psychometrically validated approach ensures that items strongly correlated with specific values serve as reliable items for assessing those values. Through evaluating 27 LLMs with our benchmark, we find that these models prioritize Benevolence, Security, and Self-Direction values while placing less emphasis on Tradition, Power, and Achievement values. Also, our analysis reveals biases in how LLMs perceive various demographic groups, deviating from real human data.</description>
-   <guid>oai:arXiv.org:2505.01015v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <title>Embedding based retrieval for long tail search queries in ecommerce</title>
+   <link>https://arxiv.org/abs/2505.01946</link>
+   <description>In this abstract we present a series of optimizations we performed on the two-tower model architecture [14], training and evaluation datasets to implement semantic product search at Best Buy. Search queries on bestbuy.com follow the pareto distribution whereby a minority of them account for most searches. This leaves us with a long tail of search queries that have low frequency of issuance. The queries in the long tail suffer from very spare interaction signals. Our current work focuses on building a model to serve the long tail queries. We present a series of optimizations we have done to this model to maximize conversion for the purpose of retrieval from the catalog. The first optimization we present is using a large language model to improve the sparsity of conversion signals. The second optimization is pretraining an off-the-shelf transformer-based model on the Best Buy catalog data. The third optimization we present is on the finetuning front. We use query-to-query pairs in addition to query-to-product pairs and combining the above strategies for finetuning the model. We also demonstrate how merging the weights of these finetuned models improves the evaluation metrics. Finally, we provide a recipe for curating an evaluation dataset for continuous monitoring of model performance with human-in-the-loop evaluation. We found that adding this recall mechanism to our current term match-based recall improved conversion by 3% in an online A/B test.</description>
+   <guid>oai:arXiv.org:2505.01946v1</guid>
+   <category>cs.IR</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jongwook Han, Dongmin Choi, Woojung Song, Eun-Ju Lee, Yohan Jo</creator>
+   <creator>Akshay Kekuda, Yuyang Zhang, Arun Udayashankar</creator>
   </item>
   <item>
-   <title>Anti-adversarial Learning: Desensitizing Prompts for Large Language Models</title>
-   <link>https://arxiv.org/abs/2505.01273</link>
-   <description>With the widespread use of LLMs, preserving privacy in user prompts has become crucial, as prompts risk exposing privacy and sensitive data to the cloud LLMs. Traditional techniques like homomorphic encryption, secure multi-party computation, and federated learning face challenges due to heavy computational costs and user participation requirements, limiting their applicability in LLM scenarios. In this paper, we propose PromptObfus, a novel method for desensitizing LLM prompts. The core idea of PromptObfus is &quot;anti-adversarial&quot; learning, which perturbs privacy words in the prompt to obscure sensitive information while retaining the stability of model predictions. Specifically, PromptObfus frames prompt desensitization as a masked language modeling task, replacing privacy-sensitive terms with a [MASK] token. A desensitization model is trained to generate candidate replacements for each masked position. These candidates are subsequently selected based on gradient feedback from a surrogate model, ensuring minimal disruption to the task output. We demonstrate the effectiveness of our approach on three NLP tasks. Results show that PromptObfus effectively prevents privacy inference from remote LLMs while preserving task performance.</description>
-   <guid>oai:arXiv.org:2505.01273v1</guid>
+   <title>Tevatron 2.0: Unified Document Retrieval Toolkit across Scale, Language, and Modality</title>
+   <link>https://arxiv.org/abs/2505.02466</link>
+   <description>Recent advancements in large language models (LLMs) have driven interest in billion-scale retrieval models with strong generalization across retrieval tasks and languages. Additionally, progress in large vision-language models has created new opportunities for multimodal retrieval. In response, we have updated the Tevatron toolkit, introducing a unified pipeline that enables researchers to explore retriever models at different scales, across multiple languages, and with various modalities. This demo paper highlights the toolkit's key features, bridging academia and industry by supporting efficient training, inference, and evaluation of neural retrievers. We showcase a unified dense retriever achieving strong multilingual and multimodal effectiveness, and conduct a cross-modality zero-shot study to demonstrate its research potential. Alongside, we release OmniEmbed, to the best of our knowledge, the first embedding model that unifies text, image document, video, and audio retrieval, serving as a baseline for future research.</description>
+   <guid>oai:arXiv.org:2505.02466v1</guid>
+   <category>cs.IR</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Xueguang Ma, Luyu Gao, Shengyao Zhuang, Jiaqi Samantha Zhan, Jamie Callan, Jimmy Lin</creator>
+  </item>
+  <item>
+   <title>LUSIFER: Language Universal Space Integration for Enhanced Multilingual Embeddings with Large Language Models</title>
+   <link>https://arxiv.org/abs/2501.00874</link>
+   <description>Recent advancements in large language models (LLMs) based embedding models have established new state-of-the-art benchmarks for text embedding tasks, particularly in dense vector-based retrieval. However, these models predominantly focus on English, leaving multilingual embedding capabilities largely unexplored. To address this limitation, we present LUSIFER, a novel zero-shot approach that adapts LLM-based embedding models for multilingual tasks without requiring multilingual supervision. LUSIFER's architecture combines a multilingual encoder, serving as a language-universal learner, with an LLM-based embedding model optimized for embedding-specific tasks. These components are seamlessly integrated through a minimal set of trainable parameters that act as a connector, effectively transferring the multilingual encoder's language understanding capabilities to the specialized embedding model. Additionally, to comprehensively evaluate multilingual embedding performance, we introduce a new benchmark encompassing 5 primary embedding tasks, 123 diverse datasets, and coverage across 14 languages. Extensive experimental results demonstrate that LUSIFER significantly enhances the multilingual performance across various embedding tasks, particularly for medium and low-resource languages, without requiring explicit multilingual training data.</description>
+   <guid>oai:arXiv.org:2501.00874v2</guid>
    <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <category>cs.IR</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Hieu Man, Nghia Trung Ngo, Viet Dac Lai, Ryan A. Rossi, Franck Dernoncourt, Thien Huu Nguyen</creator>
+  </item>
+  <item>
+   <title>Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.01761</link>
+   <description>Accurately evaluating machine-translated text remains a long-standing challenge, particularly for long documents. Recent work has shown that large language models (LLMs) can serve as reliable and interpretable sentence-level translation evaluators via MQM error span annotations. With modern LLMs supporting larger context windows, a natural question arises: can we feed entire document translations into an LLM for quality assessment? Ideally, evaluation should be invariant to text length, producing consistent error spans regardless of input granularity. However, our analysis shows that text length significantly impacts evaluation: longer texts lead to fewer error spans and reduced system ranking accuracy. To address this limitation, we evaluate several strategies, including granularity-aligned prompting, Focus Sentence Prompting (FSP), and a fine-tuning approach to better align LLMs with the evaluation task. The latter two methods largely mitigate this length bias, making LLMs more reliable for long-form translation evaluation.</description>
+   <guid>oai:arXiv.org:2505.01761v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Xuan Li, Zhe Yin, Xiaodong Gu, Beijun Shen</creator>
+   <creator>Tobias Domhan, Dawei Zhu</creator>
   </item>
   <item>
-   <title>Sparks of Tabular Reasoning via Text2SQL Reinforcement Learning</title>
-   <link>https://arxiv.org/abs/2505.00016</link>
-   <description>This work reframes the Text-to-SQL task as a pathway for teaching large language models (LLMs) to reason over and manipulate tabular data--moving beyond the traditional focus on query generation. We propose a two-stage framework that leverages SQL supervision to develop transferable table reasoning capabilities. First, we synthesize detailed chain-of-thought (CoT) traces from real-world SQL queries, providing step-by-step, clause-level supervision that teaches the model how to traverse, filter, and aggregate table fields. Second, we introduce a Group Relative Policy Optimization (GRPO) reinforcement learning objective that connects SQL execution accuracy to generalizable reasoning by encouraging steps that extend beyond task-specific syntax and transfer across datasets. Empirically, our approach improves performance on standard Text-to-SQL benchmarks and achieves substantial gains on reasoning-intensive datasets such as BIRD and CRT-QA, demonstrating enhanced generalization and interpretability. Specifically, the distilled-quantized LLaMA model achieved a relative 33.9\% increase in accuracy when trained on Text-to-SQL tasks, while Qwen achieved a relative 14.5\% increase. These results suggest that SQL can serve not only as a target formalism but also as an effective scaffold for learning robust, transferable reasoning over structured data.</description>
-   <guid>oai:arXiv.org:2505.00016v2</guid>
-   <category>cs.CL</category>
+   <title>Incentivizing Inclusive Contributions in Model Sharing Markets</title>
+   <link>https://arxiv.org/abs/2505.02462</link>
+   <description>While data plays a crucial role in training contemporary AI models, it is acknowledged that valuable public data will be exhausted in a few years, directing the world's attention towards the massive decentralized private data. However, the privacy-sensitive nature of raw data and lack of incentive mechanism prevent these valuable data from being fully exploited. Addressing these challenges, this paper proposes inclusive and incentivized personalized federated learning (iPFL), which incentivizes data holders with diverse purposes to collaboratively train personalized models without revealing raw data. iPFL constructs a model-sharing market by solving a graph-based training optimization and incorporates an incentive mechanism based on game theory principles. Theoretical analysis shows that iPFL adheres to two key incentive properties: individual rationality and truthfulness. Empirical studies on eleven AI tasks (e.g., large language models' instruction-following tasks) demonstrate that iPFL consistently achieves the highest economic utility, and better or comparable model performance compared to baseline methods. We anticipate that our iPFL can serve as a valuable technique for boosting future AI models on decentralized private data while making everyone satisfied.</description>
+   <guid>oai:arXiv.org:2505.02462v1</guid>
    <category>cs.AI</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <category>cs.CL</category>
+   <category>cs.GT</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Enpei Zhang, Jingyi Chai, Rui Ye, Yanfeng Wang, Siheng Chen</creator>
+  </item>
+  <item>
+   <title>LUSIFER: Language Universal Space Integration for Enhanced Multilingual Embeddings with Large Language Models</title>
+   <link>https://arxiv.org/abs/2501.00874</link>
+   <description>Recent advancements in large language models (LLMs) based embedding models have established new state-of-the-art benchmarks for text embedding tasks, particularly in dense vector-based retrieval. However, these models predominantly focus on English, leaving multilingual embedding capabilities largely unexplored. To address this limitation, we present LUSIFER, a novel zero-shot approach that adapts LLM-based embedding models for multilingual tasks without requiring multilingual supervision. LUSIFER's architecture combines a multilingual encoder, serving as a language-universal learner, with an LLM-based embedding model optimized for embedding-specific tasks. These components are seamlessly integrated through a minimal set of trainable parameters that act as a connector, effectively transferring the multilingual encoder's language understanding capabilities to the specialized embedding model. Additionally, to comprehensively evaluate multilingual embedding performance, we introduce a new benchmark encompassing 5 primary embedding tasks, 123 diverse datasets, and coverage across 14 languages. Extensive experimental results demonstrate that LUSIFER significantly enhances the multilingual performance across various embedding tasks, particularly for medium and low-resource languages, without requiring explicit multilingual training data.</description>
+   <guid>oai:arXiv.org:2501.00874v2</guid>
+   <category>cs.CL</category>
+   <category>cs.IR</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Josefa Lia Stoisser, Marc Boubnovski Martell, Julien Fauqueur</creator>
+   <creator>Hieu Man, Nghia Trung Ngo, Viet Dac Lai, Ryan A. Rossi, Franck Dernoncourt, Thien Huu Nguyen</creator>
   </item>
   <item>
-   <title>FlexLLM: A System for Co-Serving Large Language Model Inference and Parameter-Efficient Finetuning</title>
-   <link>https://arxiv.org/abs/2402.18789</link>
-   <description>Finetuning large language models (LLMs) is essential for task adaptation, yet serving stacks today isolate inference and finetuning on separate GPU clusters -- wasting resources and under-utilizing hardware. We introduce FlexLLM, the first system to co-serve LLM inference and PEFT-based finetuning on shared GPUs by fusing computation at the token level. The static compilation optimizations in FlexLLM -- dependent parallelization and graph pruning significantly shrink activation memory, leading to end-to-end GPU memory savings by up to 80%. At runtime, a novel token-level finetuning mechanism paired with a hybrid token scheduler dynamically interleaves inference and training tokens within each co-serving iteration, meeting strict latency SLOs while maximizing utilization. In end-to-end benchmarks on LLaMA-3.1-8B, Qwen-2.5-14B, and Qwen-2.5-32B, FlexLLM sustains the inference SLO requirements up to 20 req/s, and improves finetuning throughput by 1.9-4.8x under heavy inference workloads and 2.5-6.8x under light loads, preserving over 76% of peak finetuning progress even at peak demand. The source code of FlexLLM is publicly available at https://github.com/flexflow/FlexFlow/.</description>
-   <guid>oai:arXiv.org:2402.18789v2</guid>
-   <category>cs.DC</category>
-   <category>cs.CL</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Gabriele Oliaro, Xupeng Miao, Xinhao Cheng, Vineeth Kada, Ruohan Gao, Yingyi Huang, Remi Delacourt, April Yang, Yingcheng Wang, Mengdi Wu, Colin Unger, Zhihao Jia</creator>
-  </item>
-  <item>
-   <title>SemSpaceFL: A Collaborative Hierarchical Federated Learning Framework for Semantic Communication in 6G LEO Satellites</title>
-   <link>https://arxiv.org/abs/2505.00966</link>
-   <description>The advent of the sixth-generation (6G) wireless networks, enhanced by artificial intelligence, promises ubiquitous connectivity through Low Earth Orbit (LEO) satellites. These satellites are capable of collecting vast amounts of geographically diverse and real-time data, which can be immensely valuable for training intelligent models. However, limited inter-satellite communication and data privacy constraints hinder data collection on a single server for training. Therefore, we propose SemSpaceFL, a novel hierarchical federated learning (HFL) framework for LEO satellite networks, with integrated semantic communication capabilities. Our framework introduces a two-tier aggregation architecture where satellite models are first aggregated at regional gateways before final consolidation at a cloud server, which explicitly accounts for satellite mobility patterns and energy constraints. The key innovation lies in our novel aggregation approach, which dynamically adjusts the contribution of each satellite based on its trajectory and association with different gateways, which ensures stable model convergence despite the highly dynamic nature of LEO constellations. To further enhance communication efficiency, we incorporate semantic encoding-decoding techniques trained through the proposed HFL framework, which enables intelligent data compression while maintaining signal integrity. Our experimental results demonstrate that the proposed aggregation strategy achieves superior performance and faster convergence compared to existing benchmarks, while effectively managing the challenges of satellite mobility and energy limitations in dynamic LEO networks.</description>
-   <guid>oai:arXiv.org:2505.00966v1</guid>
-   <category>cs.IT</category>
-   <category>cs.DC</category>
-   <category>cs.ET</category>
-   <category>cs.NI</category>
-   <category>math.IT</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <title>Mitigating Group-Level Fairness Disparities in Federated Visual Language Models</title>
+   <link>https://arxiv.org/abs/2505.01851</link>
+   <description>Visual language models (VLMs) have shown remarkable capabilities in multimodal tasks but face challenges in maintaining fairness across demographic groups, particularly when deployed in federated learning (FL) environments. This paper addresses the critical issue of group fairness in federated VLMs by introducing FVL-FP, a novel framework that combines FL with fair prompt tuning techniques. We focus on mitigating demographic biases while preserving model performance through three innovative components: (1) Cross-Layer Demographic Fair Prompting (CDFP), which adjusts potentially biased embeddings through counterfactual regularization; (2) Demographic Subspace Orthogonal Projection (DSOP), which removes demographic bias in image representations by mapping fair prompt text to group subspaces; and (3) Fair-aware Prompt Fusion (FPF), which dynamically balances client contributions based on both performance and fairness metrics. Extensive evaluations across four benchmark datasets demonstrate that our approach reduces demographic disparity by an average of 45\% compared to standard FL approaches, while maintaining task performance within 6\% of state-of-the-art results. FVL-FP effectively addresses the challenges of non-IID data distributions in federated settings and introduces minimal computational overhead while providing significant fairness benefits. Our work presents a parameter-efficient solution to the critical challenge of ensuring equitable performance across demographic groups in privacy-preserving multimodal systems.</description>
+   <guid>oai:arXiv.org:2505.01851v1</guid>
+   <category>cs.CV</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Loc X. Nguyen, Sheikh Salman Hassan, Yu Min Park, Yan Kyaw Tun, Zhu Han, Choong Seon Hong</creator>
+   <creator>Chaomeng Chen, Zitong Yu, Junhao Dong, Sen Su, Linlin Shen, Shutao Xia, Xiaochun Cao</creator>
   </item>
   <item>
-   <title>Value Portrait: Understanding Values of LLMs with Human-aligned Benchmark</title>
-   <link>https://arxiv.org/abs/2505.01015</link>
-   <description>The importance of benchmarks for assessing the values of language models has been pronounced due to the growing need of more authentic, human-aligned responses. However, existing benchmarks rely on human or machine annotations that are vulnerable to value-related biases. Furthermore, the tested scenarios often diverge from real-world contexts in which models are commonly used to generate text and express values. To address these issues, we propose the Value Portrait benchmark, a reliable framework for evaluating LLMs' value orientations with two key characteristics. First, the benchmark consists of items that capture real-life user-LLM interactions, enhancing the relevance of assessment results to real-world LLM usage and thus ecological validity. Second, each item is rated by human subjects based on its similarity to their own thoughts, and correlations between these ratings and the subjects' actual value scores are derived. This psychometrically validated approach ensures that items strongly correlated with specific values serve as reliable items for assessing those values. Through evaluating 27 LLMs with our benchmark, we find that these models prioritize Benevolence, Security, and Self-Direction values while placing less emphasis on Tradition, Power, and Achievement values. Also, our analysis reveals biases in how LLMs perceive various demographic groups, deviating from real human data.</description>
-   <guid>oai:arXiv.org:2505.01015v1</guid>
-   <category>cs.CL</category>
+   <title>Geometric Knowledge-Guided Localized Global Distribution Alignment for Federated Learning</title>
+   <link>https://arxiv.org/abs/2503.06457</link>
+   <description>Data heterogeneity in federated learning, characterized by a significant misalignment between local and global distributions, leads to divergent local optimization directions and hinders global model training. Existing studies mainly focus on optimizing local updates or global aggregation, but these indirect approaches demonstrate instability when handling highly heterogeneous data distributions, especially in scenarios where label skew and domain skew coexist. To address this, we propose a geometry-guided data generation method that centers on simulating the global embedding distribution locally. We first introduce the concept of the geometric shape of an embedding distribution and then address the challenge of obtaining global geometric shapes under privacy constraints. Subsequently, we propose GGEUR, which leverages global geometric shapes to guide the generation of new samples, enabling a closer approximation to the ideal global distribution. In single-domain scenarios, we augment samples based on global geometric shapes to enhance model generalization; in multi-domain scenarios, we further employ class prototypes to simulate the global distribution across domains. Extensive experimental results demonstrate that our method significantly enhances the performance of existing approaches in handling highly heterogeneous data, including scenarios with label skew, domain skew, and their coexistence. Code published at: https://github.com/WeiDai-David/2025CVPR_GGEUR</description>
+   <guid>oai:arXiv.org:2503.06457v2</guid>
+   <category>cs.CV</category>
    <category>cs.AI</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jongwook Han, Dongmin Choi, Woojung Song, Eun-Ju Lee, Yohan Jo</creator>
-  </item>
-  <item>
-   <title>Secure Cluster-Based Hierarchical Federated Learning in Vehicular Networks</title>
-   <link>https://arxiv.org/abs/2505.01186</link>
-   <description>Hierarchical Federated Learning (HFL) has recently emerged as a promising solution for intelligent decision-making in vehicular networks, helping to address challenges such as limited communication resources, high vehicle mobility, and data heterogeneity. However, HFL remains vulnerable to adversarial and unreliable vehicles, whose misleading updates can significantly compromise the integrity and convergence of the global model. To address these challenges, we propose a novel defense framework that integrates dynamic vehicle selection with robust anomaly detection within a cluster-based HFL architecture, specifically designed to counter Gaussian noise and gradient ascent attacks. The framework performs a comprehensive reliability assessment for each vehicle by evaluating historical accuracy, contribution frequency, and anomaly records. Anomaly detection combines Z-score and cosine similarity analyses on model updates to identify both statistical outliers and directional deviations in model updates. To further refine detection, an adaptive thresholding mechanism is incorporated into the cosine similarity metric, dynamically adjusting the threshold based on the historical accuracy of each vehicle to enforce stricter standards for consistently high-performing vehicles. In addition, a weighted gradient averaging mechanism is implemented, which assigns higher weights to gradient updates from more trustworthy vehicles. To defend against coordinated attacks, a cross-cluster consistency check is applied to identify collaborative attacks in which multiple compromised clusters coordinate misleading updates. Together, these mechanisms form a multi-level defense strategy to filter out malicious contributions effectively. Simulation results show that the proposed algorithm significantly reduces convergence time compared to benchmark methods across both 1-hop and 3-hop topologies.</description>
-   <guid>oai:arXiv.org:2505.01186v1</guid>
-   <category>cs.CR</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <category>cs.SY</category>
-   <category>eess.SY</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>M. Saeid HaghighiFard, Sinem Coleri</creator>
-  </item>
-  <item>
-   <title>Anti-adversarial Learning: Desensitizing Prompts for Large Language Models</title>
-   <link>https://arxiv.org/abs/2505.01273</link>
-   <description>With the widespread use of LLMs, preserving privacy in user prompts has become crucial, as prompts risk exposing privacy and sensitive data to the cloud LLMs. Traditional techniques like homomorphic encryption, secure multi-party computation, and federated learning face challenges due to heavy computational costs and user participation requirements, limiting their applicability in LLM scenarios. In this paper, we propose PromptObfus, a novel method for desensitizing LLM prompts. The core idea of PromptObfus is &quot;anti-adversarial&quot; learning, which perturbs privacy words in the prompt to obscure sensitive information while retaining the stability of model predictions. Specifically, PromptObfus frames prompt desensitization as a masked language modeling task, replacing privacy-sensitive terms with a [MASK] token. A desensitization model is trained to generate candidate replacements for each masked position. These candidates are subsequently selected based on gradient feedback from a surrogate model, ensuring minimal disruption to the task output. We demonstrate the effectiveness of our approach on three NLP tasks. Results show that PromptObfus effectively prevents privacy inference from remote LLMs while preserving task performance.</description>
-   <guid>oai:arXiv.org:2505.01273v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Xuan Li, Zhe Yin, Xiaodong Gu, Beijun Shen</creator>
-  </item>
-  <item>
-   <title>Sparks of Tabular Reasoning via Text2SQL Reinforcement Learning</title>
-   <link>https://arxiv.org/abs/2505.00016</link>
-   <description>This work reframes the Text-to-SQL task as a pathway for teaching large language models (LLMs) to reason over and manipulate tabular data--moving beyond the traditional focus on query generation. We propose a two-stage framework that leverages SQL supervision to develop transferable table reasoning capabilities. First, we synthesize detailed chain-of-thought (CoT) traces from real-world SQL queries, providing step-by-step, clause-level supervision that teaches the model how to traverse, filter, and aggregate table fields. Second, we introduce a Group Relative Policy Optimization (GRPO) reinforcement learning objective that connects SQL execution accuracy to generalizable reasoning by encouraging steps that extend beyond task-specific syntax and transfer across datasets. Empirically, our approach improves performance on standard Text-to-SQL benchmarks and achieves substantial gains on reasoning-intensive datasets such as BIRD and CRT-QA, demonstrating enhanced generalization and interpretability. Specifically, the distilled-quantized LLaMA model achieved a relative 33.9\% increase in accuracy when trained on Text-to-SQL tasks, while Qwen achieved a relative 14.5\% increase. These results suggest that SQL can serve not only as a target formalism but also as an effective scaffold for learning robust, transferable reasoning over structured data.</description>
-   <guid>oai:arXiv.org:2505.00016v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Josefa Lia Stoisser, Marc Boubnovski Martell, Julien Fauqueur</creator>
-  </item>
-  <item>
-   <title>SemSpaceFL: A Collaborative Hierarchical Federated Learning Framework for Semantic Communication in 6G LEO Satellites</title>
-   <link>https://arxiv.org/abs/2505.00966</link>
-   <description>The advent of the sixth-generation (6G) wireless networks, enhanced by artificial intelligence, promises ubiquitous connectivity through Low Earth Orbit (LEO) satellites. These satellites are capable of collecting vast amounts of geographically diverse and real-time data, which can be immensely valuable for training intelligent models. However, limited inter-satellite communication and data privacy constraints hinder data collection on a single server for training. Therefore, we propose SemSpaceFL, a novel hierarchical federated learning (HFL) framework for LEO satellite networks, with integrated semantic communication capabilities. Our framework introduces a two-tier aggregation architecture where satellite models are first aggregated at regional gateways before final consolidation at a cloud server, which explicitly accounts for satellite mobility patterns and energy constraints. The key innovation lies in our novel aggregation approach, which dynamically adjusts the contribution of each satellite based on its trajectory and association with different gateways, which ensures stable model convergence despite the highly dynamic nature of LEO constellations. To further enhance communication efficiency, we incorporate semantic encoding-decoding techniques trained through the proposed HFL framework, which enables intelligent data compression while maintaining signal integrity. Our experimental results demonstrate that the proposed aggregation strategy achieves superior performance and faster convergence compared to existing benchmarks, while effectively managing the challenges of satellite mobility and energy limitations in dynamic LEO networks.</description>
-   <guid>oai:arXiv.org:2505.00966v1</guid>
-   <category>cs.IT</category>
-   <category>cs.DC</category>
-   <category>cs.ET</category>
-   <category>cs.NI</category>
-   <category>math.IT</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Loc X. Nguyen, Sheikh Salman Hassan, Yu Min Park, Yan Kyaw Tun, Zhu Han, Choong Seon Hong</creator>
-  </item>
-  <item>
-   <title>Towards Multimodal Large-Language Models for Parent-Child Interaction: A Focus on Joint Attention</title>
-   <link>https://arxiv.org/abs/2502.19877</link>
-   <description>Joint attention is a critical component of early speech-language development and a key indicator of effective parent-child interaction. However, research on detecting and analysing joint attention remains limited, particularly for Multimodal Large Language Models (MLLMs). This study evaluates MLLMs' ability to comprehend joint attention by analysing 26 parent-child interaction videos annotated by two speech-language pathologists. These annotations identify strong and poor joint attention segments, serving as benchmarks for evaluating the models' interpretive capabilities. Our findings reveal that current MLLMs struggle to accurately interpret joint attention due to a lack of nuanced understanding of child-initiated eye contact, a crucial component of joint attention dynamics. This study highlights the importance of incorporating detailed eye contact to enhance MLLMs' multimodal reasoning. Addressing these gaps is essential for future research to advance the use of MLLMs in analysing and supporting parent-child interactions.</description>
-   <guid>oai:arXiv.org:2502.19877v4</guid>
-   <category>cs.HC</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Weiyan Shi, Viet Hai Le, Kenny Tsu Wei Choo</creator>
-  </item>
-  <item>
-   <title>Should you use LLMs to simulate opinions? Quality checks for early-stage deliberation</title>
-   <link>https://arxiv.org/abs/2504.08954</link>
-   <description>The emergent capabilities of large language models (LLMs) have sparked interest in assessing their ability to simulate human opinions in a variety of contexts, potentially serving as surrogates for human subjects in opinion surveys. However, previous evaluations of this capability have depended heavily on costly, domain-specific human survey data, and mixed empirical results about LLM effectiveness create uncertainty for managers about whether investing in this technology is justified in early-stage research. To address these challenges, we introduce a series of quality checks to support early-stage deliberation about the viability of using LLMs for simulating human opinions. These checks emphasize logical constraints, model stability, and alignment with stakeholder expectations of model outputs, thereby reducing dependence on human-generated data in the initial stages of evaluation. We demonstrate the usefulness of the proposed quality control tests in the context of AI-assisted content moderation, an application that both advocates and critics of LLMs' capabilities to simulate human opinion see as a desirable potential use case. None of the tested models passed all quality control checks, revealing several failure modes. We conclude by discussing implications of these failure modes and recommend how organizations can utilize our proposed tests for prompt engineering and in their risk management practices when considering the use of LLMs for opinion simulation. We make our crowdsourced dataset of claims with human and LLM annotations publicly available for future research.</description>
-   <guid>oai:arXiv.org:2504.08954v2</guid>
-   <category>cs.CY</category>
-   <category>cs.HC</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Terrence Neumann, Maria De-Arteaga, Sina Fazelpour</creator>
+   <creator>Yanbiao Ma, Wei Dai, Wenke Huang, Jiayi Chen</creator>
   </item>
   <item>
-   <title>A Self-Healing and Fault-Tolerant Cloud-based Digital Twin Processing Management Model</title>
-   <link>https://arxiv.org/abs/2505.01215</link>
-   <description>Digital twins, integral to cloud platforms, bridge physical and virtual worlds, fostering collaboration among stakeholders in manufacturing and processing. However, the cloud platforms face challenges like service outages, vulnerabilities, and resource contention, hindering critical digital twin application development. The existing research works have limited focus on reliability and fault tolerance in digital twin processing. In this context, this paper proposed a novel Self-healing and Faulttolerant cloud-based Digital Twin processing Management (SF-DTM) model. It employs collaborative digital twin tasks resource requirement estimation unit which utilizes newly devised Federated learning with cosine Similarity integration (SimiFed). Further, SF-DTM incorporates a self-healing fault-tolerance strategy employing a frequent sequence fault-prone pattern analytics unit for deciding the most admissible VM allocation. The implementation and evaluation of SF-DTM model using real traces demonstrates its effectiveness and resilience, revealing improved availability, higher Mean Time Between Failure (MTBF), and lower Mean Time To Repair (MTTR) compared with non-SF-DTM approaches, enhancing collaborative DT application management. SF-DTM improved the services availability up to 13.2% over non-SF-DTM-based DT processing.</description>
-   <guid>oai:arXiv.org:2505.01215v1</guid>
-   <category>cs.DC</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <title>FissionVAE: Federated Non-IID Image Generation with Latent Space and Decoder Decomposition</title>
+   <link>https://arxiv.org/abs/2408.17090</link>
+   <description>Federated learning is a machine learning paradigm that enables decentralized clients to collaboratively learn a shared model while keeping all the training data local. While considerable research has focused on federated image generation, particularly Generative Adversarial Networks, Variational Autoencoders have received less attention. In this paper, we address the challenges of non-IID (independently and identically distributed) data environments featuring multiple groups of images of different types. Non-IID data distributions can lead to difficulties in maintaining a consistent latent space and can also result in local generators with disparate texture features being blended during aggregation. We thereby introduce FissionVAE that decouples the latent space and constructs decoder branches tailored to individual client groups. This method allows for customized learning that aligns with the unique data distributions of each group. Additionally, we incorporate hierarchical VAEs and demonstrate the use of heterogeneous decoder architectures within FissionVAE. We also explore strategies for setting the latent prior distributions to enhance the decoupling process. To evaluate our approach, we assemble two composite datasets: the first combines MNIST and FashionMNIST; the second comprises RGB datasets of cartoon and human faces, wild animals, marine vessels, and remote sensing images. Our experiments demonstrate that FissionVAE greatly improves generation quality on these datasets compared to baseline federated VAE models.</description>
+   <guid>oai:arXiv.org:2408.17090v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CV</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Chen Hu, Hanchi Ren, Jingjing Deng, Xianghua Xie, Xiaoke Ma</creator>
+  </item>
+  <item>
+   <title>Incentivizing Inclusive Contributions in Model Sharing Markets</title>
+   <link>https://arxiv.org/abs/2505.02462</link>
+   <description>While data plays a crucial role in training contemporary AI models, it is acknowledged that valuable public data will be exhausted in a few years, directing the world's attention towards the massive decentralized private data. However, the privacy-sensitive nature of raw data and lack of incentive mechanism prevent these valuable data from being fully exploited. Addressing these challenges, this paper proposes inclusive and incentivized personalized federated learning (iPFL), which incentivizes data holders with diverse purposes to collaboratively train personalized models without revealing raw data. iPFL constructs a model-sharing market by solving a graph-based training optimization and incorporates an incentive mechanism based on game theory principles. Theoretical analysis shows that iPFL adheres to two key incentive properties: individual rationality and truthfulness. Empirical studies on eleven AI tasks (e.g., large language models' instruction-following tasks) demonstrate that iPFL consistently achieves the highest economic utility, and better or comparable model performance compared to baseline methods. We anticipate that our iPFL can serve as a valuable technique for boosting future AI models on decentralized private data while making everyone satisfied.</description>
+   <guid>oai:arXiv.org:2505.02462v1</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.GT</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Enpei Zhang, Jingyi Chai, Rui Ye, Yanfeng Wang, Siheng Chen</creator>
+  </item>
+  <item>
+   <title>Towards One-shot Federated Learning: Advances, Challenges, and Future Directions</title>
+   <link>https://arxiv.org/abs/2505.02426</link>
+   <description>One-shot FL enables collaborative training in a single round, eliminating the need for iterative communication, making it particularly suitable for use in resource-constrained and privacy-sensitive applications. This survey offers a thorough examination of One-shot FL, highlighting its distinct operational framework compared to traditional federated approaches. One-shot FL supports resource-limited devices by enabling single-round model aggregation while maintaining data locality. The survey systematically categorizes existing methodologies, emphasizing advancements in client model initialization, aggregation techniques, and strategies for managing heterogeneous data distributions. Furthermore, we analyze the limitations of current approaches, particularly in terms of scalability and generalization in non-IID settings. By analyzing cutting-edge techniques and outlining open challenges, this survey aspires to provide a comprehensive reference for researchers and practitioners aiming to design and implement One-shot FL systems, advancing the development and adoption of One-shot FL solutions in a real-world, resource-constrained scenario.</description>
+   <guid>oai:arXiv.org:2505.02426v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Flora Amato, Lingyu Qiu, Mohammad Tanveer, Salvatore Cuomo, Fabio Giampaolo, Francesco Piccialli</creator>
+  </item>
+  <item>
+   <title>Lazy But Effective: Collaborative Personalized Federated Learning with Heterogeneous Data</title>
+   <link>https://arxiv.org/abs/2505.02540</link>
+   <description>In Federated Learning, heterogeneity in client data distributions often means that a single global model does not have the best performance for individual clients. Consider for example training a next-word prediction model for keyboards: user-specific language patterns due to demographics (dialect, age, etc.), language proficiency, and writing style result in a highly non-IID dataset across clients. Other examples are medical images taken with different machines, or driving data from different vehicle types. To address this, we propose a simple yet effective personalized federated learning framework (pFedLIA) that utilizes a computationally efficient influence approximation, called `Lazy Influence', to cluster clients in a distributed manner before model aggregation. Within each cluster, data owners collaborate to jointly train a model that captures the specific data patterns of the clients. Our method has been shown to successfully recover the global model's performance drop due to the non-IID-ness in various synthetic and real-world settings, specifically a next-word prediction task on the Nordic languages as well as several benchmark tasks. It matches the performance of a hypothetical Oracle clustering, and significantly improves on existing baselines, e.g., an improvement of 17% on CIFAR100.</description>
+   <guid>oai:arXiv.org:2505.02540v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ljubomir Rokvic, Panayiotis Danassis, Boi Faltings</creator>
+  </item>
+  <item>
+   <title>HSplitLoRA: A Heterogeneous Split Parameter-Efficient Fine-Tuning Framework for Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.02795</link>
+   <description>Recently, large language models (LLMs) have achieved remarkable breakthroughs, revolutionizing the natural language processing domain and beyond. Due to immense parameter sizes, fine-tuning these models with private data for diverse downstream tasks has become mainstream. Though federated learning (FL) offers a promising solution for fine-tuning LLMs without sharing raw data, substantial computing costs hinder its democratization. Moreover, in real-world scenarios, private client devices often possess heterogeneous computing resources, further complicating LLM fine-tuning. To combat these challenges, we propose HSplitLoRA, a heterogeneous parameter-efficient fine-tuning (PEFT) framework built on split learning (SL) and low-rank adaptation (LoRA) fine-tuning, for efficiently fine-tuning LLMs on heterogeneous client devices. HSplitLoRA first identifies important weights based on their contributions to LLM training. It then dynamically configures the decomposition ranks of LoRA adapters for selected weights and determines the model split point according to varying computing budgets of client devices. Finally, a noise-free adapter aggregation mechanism is devised to support heterogeneous adapter aggregation without introducing noise. Extensive experiments demonstrate that HSplitLoRA outperforms state-of-the-art benchmarks in training accuracy and convergence speed.</description>
+   <guid>oai:arXiv.org:2505.02795v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zheng Lin, Yuxin Zhang, Zhe Chen, Zihan Fang, Xianhao Chen, Praneeth Vepakomma, Wei Ni, Jun Luo, Yue Gao</creator>
+  </item>
+  <item>
+   <title>Activation Space Interventions Can Be Transferred Between Large Language Models</title>
+   <link>https://arxiv.org/abs/2503.04429</link>
+   <description>The study of representation universality in AI models reveals growing convergence across domains, modalities, and architectures. However, the practical applications of representation universality remain largely unexplored. We bridge this gap by demonstrating that safety interventions can be transferred between models through learned mappings of their shared activation spaces. We demonstrate this approach on two well-established AI safety tasks: backdoor removal and refusal of harmful prompts, showing successful transfer of steering vectors that alter the models' outputs in a predictable way. Additionally, we propose a new task, \textit{corrupted capabilities}, where models are fine-tuned to embed knowledge tied to a backdoor. This tests their ability to separate useful skills from backdoors, reflecting real-world challenges. Extensive experiments across Llama, Qwen and Gemma model families show that our method enables using smaller models to efficiently align larger ones. Furthermore, we demonstrate that autoencoder mappings between base and fine-tuned models can serve as reliable ``lightweight safety switches&quot;, allowing dynamic toggling between model behaviors.</description>
+   <guid>oai:arXiv.org:2503.04429v2</guid>
+   <category>cs.AI</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
    <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Deepika Saxena, Ashutosh Kumar Singh</creator>
+   <creator>Narmeen Oozeer, Dhruv Nathawani, Nirmalendu Prakash, Michael Lan, Abir Harrasse, Amirali Abdullah</creator>
   </item>
   <item>
-   <title>SemSpaceFL: A Collaborative Hierarchical Federated Learning Framework for Semantic Communication in 6G LEO Satellites</title>
-   <link>https://arxiv.org/abs/2505.00966</link>
-   <description>The advent of the sixth-generation (6G) wireless networks, enhanced by artificial intelligence, promises ubiquitous connectivity through Low Earth Orbit (LEO) satellites. These satellites are capable of collecting vast amounts of geographically diverse and real-time data, which can be immensely valuable for training intelligent models. However, limited inter-satellite communication and data privacy constraints hinder data collection on a single server for training. Therefore, we propose SemSpaceFL, a novel hierarchical federated learning (HFL) framework for LEO satellite networks, with integrated semantic communication capabilities. Our framework introduces a two-tier aggregation architecture where satellite models are first aggregated at regional gateways before final consolidation at a cloud server, which explicitly accounts for satellite mobility patterns and energy constraints. The key innovation lies in our novel aggregation approach, which dynamically adjusts the contribution of each satellite based on its trajectory and association with different gateways, which ensures stable model convergence despite the highly dynamic nature of LEO constellations. To further enhance communication efficiency, we incorporate semantic encoding-decoding techniques trained through the proposed HFL framework, which enables intelligent data compression while maintaining signal integrity. Our experimental results demonstrate that the proposed aggregation strategy achieves superior performance and faster convergence compared to existing benchmarks, while effectively managing the challenges of satellite mobility and energy limitations in dynamic LEO networks.</description>
-   <guid>oai:arXiv.org:2505.00966v1</guid>
-   <category>cs.IT</category>
+   <title>When Foundation Model Meets Federated Learning: Motivations, Challenges, and Future Directions</title>
+   <link>https://arxiv.org/abs/2306.15546</link>
+   <description>The intersection of Foundation Model (FM) and Federated Learning (FL) presents a unique opportunity to unlock new possibilities for real-world applications. On the one hand, FL, as a collaborative learning paradigm, help address challenges in FM development by expanding data availability, enabling computation sharing, facilitating the collaborative development of FMs, tackling continuous data update, avoiding FM monopoly, response delay and FM service down. On the other hand, FM, equipped with pre-trained knowledge and exceptional performance, can serve as a robust starting point for FL. It can also generate synthetic data to enrich data diversity and enhance overall performance of FL. Meanwhile, FM unlocks new sharing paradigm and multi-task and multi-modality capabilities for FL. By examining the interplay between FL and FM, this paper presents the motivations, challenges, and future directions of empowering FL with FM and empowering FM with FL. We hope that this work provides a good foundation to inspire future research efforts to drive advancements in both fields.</description>
+   <guid>oai:arXiv.org:2306.15546v3</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
    <category>cs.DC</category>
-   <category>cs.ET</category>
-   <category>cs.NI</category>
-   <category>math.IT</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Weiming Zhuang, Chen Chen, Jingtao Li, Chaochao Chen, Yaochu Jin, Lingjuan Lyu</creator>
+  </item>
+  <item>
+   <title>Clients Collaborate: Flexible Differentially Private Federated Learning with Guaranteed Improvement of Utility-Privacy Trade-off</title>
+   <link>https://arxiv.org/abs/2402.07002</link>
+   <description>To defend against privacy leakage of user data, differential privacy is widely used in federated learning, but it is not free. The addition of noise randomly disrupts the semantic integrity of the model and this disturbance accumulates with increased communication rounds. In this paper, we introduce a novel federated learning framework with rigorous privacy guarantees, named FedCEO, designed to strike a trade-off between model utility and user privacy by letting clients ''Collaborate with Each Other''. Specifically, we perform efficient tensor low-rank proximal optimization on stacked local model parameters at the server, demonstrating its capability to flexibly truncate high-frequency components in spectral space. This capability implies that our FedCEO can effectively recover the disrupted semantic information by smoothing the global semantic space for different privacy settings and continuous training processes. Moreover, we improve the SOTA utility-privacy trade-off bound by order of $\sqrt{d}$, where $d$ is the input dimension. We illustrate our theoretical results with experiments on representative datasets and observe significant performance improvements and strict privacy guarantees under different privacy settings. The code is available at https://github.com/6lyc/FedCEO_Collaborate-with-Each-Other.</description>
+   <guid>oai:arXiv.org:2402.07002v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuecheng Li, Lele Fu, Tong Wang, Jian Lou, Bin Chen, Lei Yang, Jian Shen, Zibin Zheng, Chuan Chen</creator>
+  </item>
+  <item>
+   <title>Outlier Gradient Analysis: Efficiently Identifying Detrimental Training Samples for Deep Learning Models</title>
+   <link>https://arxiv.org/abs/2405.03869</link>
+   <description>A core data-centric learning challenge is the identification of training samples that are detrimental to model performance. Influence functions serve as a prominent tool for this task and offer a robust framework for assessing training data influence on model predictions. Despite their widespread use, their high computational cost associated with calculating the inverse of the Hessian matrix pose constraints, particularly when analyzing large-sized deep models. In this paper, we establish a bridge between identifying detrimental training samples via influence functions and outlier gradient detection. This transformation not only presents a straightforward and Hessian-free formulation but also provides insights into the role of the gradient in sample impact. Through systematic empirical evaluations, we first validate the hypothesis of our proposed outlier gradient analysis approach on synthetic datasets. We then demonstrate its effectiveness in detecting mislabeled samples in vision models and selecting data samples for improving performance of natural language processing transformer models. We also extend its use to influential sample identification for fine-tuning Large Language Models.</description>
+   <guid>oai:arXiv.org:2405.03869v5</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Anshuman Chhabra, Bo Li, Jian Chen, Prasant Mohapatra, Hongfu Liu</creator>
+  </item>
+  <item>
+   <title>FEDKIM: Adaptive Federated Knowledge Injection into Medical Foundation Models</title>
+   <link>https://arxiv.org/abs/2408.10276</link>
+   <description>Foundation models have demonstrated remarkable capabilities in handling diverse modalities and tasks, outperforming conventional artificial intelligence (AI) approaches that are highly task-specific and modality-reliant. In the medical domain, however, the development of comprehensive foundation models is constrained by limited access to diverse modalities and stringent privacy regulations. To address these constraints, this study introduces a novel knowledge injection approach, FedKIM, designed to scale the medical foundation model within a federated learning framework. FedKIM leverages lightweight local models to extract healthcare knowledge from private data and integrates this knowledge into a centralized foundation model using a designed adaptive Multitask Multimodal Mixture Of Experts (M3OE) module. This method not only preserves privacy but also enhances the model's ability to handle complex medical tasks involving multiple modalities. Our extensive experiments across twelve tasks in seven modalities demonstrate the effectiveness of FedKIM in various settings, highlighting its potential to scale medical foundation models without direct access to sensitive data.</description>
+   <guid>oai:arXiv.org:2408.10276v4</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Xiaochen Wang, Jiaqi Wang, Houping Xiao, Jinghui Chen, Fenglong Ma</creator>
+  </item>
+  <item>
+   <title>FissionVAE: Federated Non-IID Image Generation with Latent Space and Decoder Decomposition</title>
+   <link>https://arxiv.org/abs/2408.17090</link>
+   <description>Federated learning is a machine learning paradigm that enables decentralized clients to collaboratively learn a shared model while keeping all the training data local. While considerable research has focused on federated image generation, particularly Generative Adversarial Networks, Variational Autoencoders have received less attention. In this paper, we address the challenges of non-IID (independently and identically distributed) data environments featuring multiple groups of images of different types. Non-IID data distributions can lead to difficulties in maintaining a consistent latent space and can also result in local generators with disparate texture features being blended during aggregation. We thereby introduce FissionVAE that decouples the latent space and constructs decoder branches tailored to individual client groups. This method allows for customized learning that aligns with the unique data distributions of each group. Additionally, we incorporate hierarchical VAEs and demonstrate the use of heterogeneous decoder architectures within FissionVAE. We also explore strategies for setting the latent prior distributions to enhance the decoupling process. To evaluate our approach, we assemble two composite datasets: the first combines MNIST and FashionMNIST; the second comprises RGB datasets of cartoon and human faces, wild animals, marine vessels, and remote sensing images. Our experiments demonstrate that FissionVAE greatly improves generation quality on these datasets compared to baseline federated VAE models.</description>
+   <guid>oai:arXiv.org:2408.17090v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CV</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Chen Hu, Hanchi Ren, Jingjing Deng, Xianghua Xie, Xiaoke Ma</creator>
+  </item>
+  <item>
+   <title>Geometric Knowledge-Guided Localized Global Distribution Alignment for Federated Learning</title>
+   <link>https://arxiv.org/abs/2503.06457</link>
+   <description>Data heterogeneity in federated learning, characterized by a significant misalignment between local and global distributions, leads to divergent local optimization directions and hinders global model training. Existing studies mainly focus on optimizing local updates or global aggregation, but these indirect approaches demonstrate instability when handling highly heterogeneous data distributions, especially in scenarios where label skew and domain skew coexist. To address this, we propose a geometry-guided data generation method that centers on simulating the global embedding distribution locally. We first introduce the concept of the geometric shape of an embedding distribution and then address the challenge of obtaining global geometric shapes under privacy constraints. Subsequently, we propose GGEUR, which leverages global geometric shapes to guide the generation of new samples, enabling a closer approximation to the ideal global distribution. In single-domain scenarios, we augment samples based on global geometric shapes to enhance model generalization; in multi-domain scenarios, we further employ class prototypes to simulate the global distribution across domains. Extensive experimental results demonstrate that our method significantly enhances the performance of existing approaches in handling highly heterogeneous data, including scenarios with label skew, domain skew, and their coexistence. Code published at: https://github.com/WeiDai-David/2025CVPR_GGEUR</description>
+   <guid>oai:arXiv.org:2503.06457v2</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yanbiao Ma, Wei Dai, Wenke Huang, Jiayi Chen</creator>
+  </item>
+  <item>
+   <title>From Pen to Prompt: How Creative Writers Integrate AI into their Writing Practice</title>
+   <link>https://arxiv.org/abs/2411.03137</link>
+   <description>Creative writing is a deeply human craft, yet AI systems using large language models (LLMs) offer the automation of significant parts of the writing process. So why do some creative writers choose to use AI? Through interviews and observed writing sessions with 18 creative writers who already use AI regularly in their writing practice, we find that creative writers are intentional about how they incorporate AI, making many deliberate decisions about when and how to engage AI based on their core values, such as authenticity and craftsmanship. We characterize the interplay between writers' values, their fluid relationships with AI, and specific integration strategies -- ultimately enabling writers to create new AI workflows without compromising their creative values. We provide insight for writing communities, AI developers and future researchers on the importance of supporting transparency of these emerging writing processes and rethinking what AI features can best serve writers.</description>
+   <guid>oai:arXiv.org:2411.03137v3</guid>
+   <category>cs.HC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Alicia Guo, Shreya Sathyanarayanan, Leijie Wang, Jeffrey Heer, Amy Zhang</creator>
+  </item>
+  <item>
+   <title>Privacy Preserving Machine Learning Model Personalization through Federated Personalized Learning</title>
+   <link>https://arxiv.org/abs/2505.01788</link>
+   <description>The widespread adoption of Artificial Intelligence (AI) has been driven by significant advances in intelligent system research. However, this progress has raised concerns about data privacy, leading to a growing awareness of the need for privacy-preserving AI. In response, there has been a seismic shift in interest towards the leading paradigm for training Machine Learning (ML) models on decentralized data silos while maintaining data privacy, Federated Learning (FL). This research paper presents a comprehensive performance analysis of a cutting-edge approach to personalize ML model while preserving privacy achieved through Privacy Preserving Machine Learning with the innovative framework of Federated Personalized Learning (PPMLFPL). Regarding the increasing concerns about data privacy, this study evaluates the effectiveness of PPMLFPL addressing the critical balance between personalized model refinement and maintaining the confidentiality of individual user data. According to our analysis, Adaptive Personalized Cross-Silo Federated Learning with Differential Privacy (APPLE+DP) offering efficient execution whereas overall, the use of the Adaptive Personalized Cross-Silo Federated Learning with Homomorphic Encryption (APPLE+HE) algorithm for privacy-preserving machine learning tasks in federated personalized learning settings is strongly suggested. The results offer valuable insights creating it a promising scope for future advancements in the field of privacy-conscious data-driven technologies.</description>
+   <guid>oai:arXiv.org:2505.01788v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Md. Tanzib Hosain, Asif Zaman, Md. Shahriar Sajid, Shadman Sakeeb Khan, Shanjida Akter</creator>
+  </item>
+  <item>
+   <title>Towards Trustworthy Federated Learning with Untrusted Participants</title>
+   <link>https://arxiv.org/abs/2505.01874</link>
+   <description>Resilience against malicious parties and data privacy are essential for trustworthy distributed learning, yet achieving both with good utility typically requires the strong assumption of a trusted central server. This paper shows that a significantly weaker assumption suffices: each pair of workers shares a randomness seed unknown to others. In a setting where malicious workers may collude with an untrusted server, we propose CafCor, an algorithm that integrates robust gradient aggregation with correlated noise injection, leveraging shared randomness between workers. We prove that CafCor achieves strong privacy-utility trade-offs, significantly outperforming local differential privacy (DP) methods, which do not make any trust assumption, while approaching central DP utility, where the server is fully trusted. Empirical results on standard benchmarks validate CafCor's practicality, showing that privacy and robustness can coexist in distributed systems without sacrificing utility or trusting the server.</description>
+   <guid>oai:arXiv.org:2505.01874v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Loc X. Nguyen, Sheikh Salman Hassan, Yu Min Park, Yan Kyaw Tun, Zhu Han, Choong Seon Hong</creator>
+   <creator>Youssef Allouah, Rachid Guerraoui, John Stephan</creator>
   </item>
   <item>
-   <title>Secure Cluster-Based Hierarchical Federated Learning in Vehicular Networks</title>
-   <link>https://arxiv.org/abs/2505.01186</link>
-   <description>Hierarchical Federated Learning (HFL) has recently emerged as a promising solution for intelligent decision-making in vehicular networks, helping to address challenges such as limited communication resources, high vehicle mobility, and data heterogeneity. However, HFL remains vulnerable to adversarial and unreliable vehicles, whose misleading updates can significantly compromise the integrity and convergence of the global model. To address these challenges, we propose a novel defense framework that integrates dynamic vehicle selection with robust anomaly detection within a cluster-based HFL architecture, specifically designed to counter Gaussian noise and gradient ascent attacks. The framework performs a comprehensive reliability assessment for each vehicle by evaluating historical accuracy, contribution frequency, and anomaly records. Anomaly detection combines Z-score and cosine similarity analyses on model updates to identify both statistical outliers and directional deviations in model updates. To further refine detection, an adaptive thresholding mechanism is incorporated into the cosine similarity metric, dynamically adjusting the threshold based on the historical accuracy of each vehicle to enforce stricter standards for consistently high-performing vehicles. In addition, a weighted gradient averaging mechanism is implemented, which assigns higher weights to gradient updates from more trustworthy vehicles. To defend against coordinated attacks, a cross-cluster consistency check is applied to identify collaborative attacks in which multiple compromised clusters coordinate misleading updates. Together, these mechanisms form a multi-level defense strategy to filter out malicious contributions effectively. Simulation results show that the proposed algorithm significantly reduces convergence time compared to benchmark methods across both 1-hop and 3-hop topologies.</description>
-   <guid>oai:arXiv.org:2505.01186v1</guid>
-   <category>cs.CR</category>
+   <title>Towards One-shot Federated Learning: Advances, Challenges, and Future Directions</title>
+   <link>https://arxiv.org/abs/2505.02426</link>
+   <description>One-shot FL enables collaborative training in a single round, eliminating the need for iterative communication, making it particularly suitable for use in resource-constrained and privacy-sensitive applications. This survey offers a thorough examination of One-shot FL, highlighting its distinct operational framework compared to traditional federated approaches. One-shot FL supports resource-limited devices by enabling single-round model aggregation while maintaining data locality. The survey systematically categorizes existing methodologies, emphasizing advancements in client model initialization, aggregation techniques, and strategies for managing heterogeneous data distributions. Furthermore, we analyze the limitations of current approaches, particularly in terms of scalability and generalization in non-IID settings. By analyzing cutting-edge techniques and outlining open challenges, this survey aspires to provide a comprehensive reference for researchers and practitioners aiming to design and implement One-shot FL systems, advancing the development and adoption of One-shot FL solutions in a real-world, resource-constrained scenario.</description>
+   <guid>oai:arXiv.org:2505.02426v1</guid>
+   <category>cs.LG</category>
    <category>cs.AI</category>
    <category>cs.DC</category>
-   <category>cs.LG</category>
-   <category>cs.SY</category>
-   <category>eess.SY</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>M. Saeid HaghighiFard, Sinem Coleri</creator>
+   <creator>Flora Amato, Lingyu Qiu, Mohammad Tanveer, Salvatore Cuomo, Fabio Giampaolo, Francesco Piccialli</creator>
   </item>
   <item>
-   <title>FlexLLM: A System for Co-Serving Large Language Model Inference and Parameter-Efficient Finetuning</title>
-   <link>https://arxiv.org/abs/2402.18789</link>
-   <description>Finetuning large language models (LLMs) is essential for task adaptation, yet serving stacks today isolate inference and finetuning on separate GPU clusters -- wasting resources and under-utilizing hardware. We introduce FlexLLM, the first system to co-serve LLM inference and PEFT-based finetuning on shared GPUs by fusing computation at the token level. The static compilation optimizations in FlexLLM -- dependent parallelization and graph pruning significantly shrink activation memory, leading to end-to-end GPU memory savings by up to 80%. At runtime, a novel token-level finetuning mechanism paired with a hybrid token scheduler dynamically interleaves inference and training tokens within each co-serving iteration, meeting strict latency SLOs while maximizing utilization. In end-to-end benchmarks on LLaMA-3.1-8B, Qwen-2.5-14B, and Qwen-2.5-32B, FlexLLM sustains the inference SLO requirements up to 20 req/s, and improves finetuning throughput by 1.9-4.8x under heavy inference workloads and 2.5-6.8x under light loads, preserving over 76% of peak finetuning progress even at peak demand. The source code of FlexLLM is publicly available at https://github.com/flexflow/FlexFlow/.</description>
-   <guid>oai:arXiv.org:2402.18789v2</guid>
+   <title>HSplitLoRA: A Heterogeneous Split Parameter-Efficient Fine-Tuning Framework for Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.02795</link>
+   <description>Recently, large language models (LLMs) have achieved remarkable breakthroughs, revolutionizing the natural language processing domain and beyond. Due to immense parameter sizes, fine-tuning these models with private data for diverse downstream tasks has become mainstream. Though federated learning (FL) offers a promising solution for fine-tuning LLMs without sharing raw data, substantial computing costs hinder its democratization. Moreover, in real-world scenarios, private client devices often possess heterogeneous computing resources, further complicating LLM fine-tuning. To combat these challenges, we propose HSplitLoRA, a heterogeneous parameter-efficient fine-tuning (PEFT) framework built on split learning (SL) and low-rank adaptation (LoRA) fine-tuning, for efficiently fine-tuning LLMs on heterogeneous client devices. HSplitLoRA first identifies important weights based on their contributions to LLM training. It then dynamically configures the decomposition ranks of LoRA adapters for selected weights and determines the model split point according to varying computing budgets of client devices. Finally, a noise-free adapter aggregation mechanism is devised to support heterogeneous adapter aggregation without introducing noise. Extensive experiments demonstrate that HSplitLoRA outperforms state-of-the-art benchmarks in training accuracy and convergence speed.</description>
+   <guid>oai:arXiv.org:2505.02795v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
    <category>cs.DC</category>
-   <category>cs.CL</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Gabriele Oliaro, Xupeng Miao, Xinhao Cheng, Vineeth Kada, Ruohan Gao, Yingyi Huang, Remi Delacourt, April Yang, Yingcheng Wang, Mengdi Wu, Colin Unger, Zhihao Jia</creator>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zheng Lin, Yuxin Zhang, Zhe Chen, Zihan Fang, Xianhao Chen, Praneeth Vepakomma, Wei Ni, Jun Luo, Yue Gao</creator>
   </item>
   <item>
-   <title>Federated Adapter on Foundation Models: An Out-Of-Distribution Approach</title>
-   <link>https://arxiv.org/abs/2505.01075</link>
-   <description>As foundation models gain prominence, Federated Foundation Models (FedFM) have emerged as a privacy-preserving approach to collaboratively fine-tune models in federated learning (FL) frameworks using distributed datasets across clients. A key challenge for FedFM, given the versatile nature of foundation models, is addressing out-of-distribution (OOD) generalization, where unseen tasks or clients may exhibit distribution shifts leading to suboptimal performance. Although numerous studies have explored OOD generalization in conventional FL, these methods are inadequate for FedFM due to the challenges posed by large parameter scales and increased data heterogeneity. To address these, we propose FedOA, which employs adapter-based parameter-efficient fine-tuning methods for efficacy and introduces personalized adapters with feature distance-based regularization to align distributions and guarantee OOD generalization for each client. Theoretically, we demonstrate that the conventional aggregated global model in FedFM inherently retains OOD generalization capabilities, and our proposed method enhances the personalized model's OOD generalization through regularization informed by the global model, with proven convergence under general non-convex settings. Empirically, the effectiveness of the proposed method is validated on benchmark datasets across various NLP tasks.</description>
-   <guid>oai:arXiv.org:2505.01075v1</guid>
+   <title>When Foundation Model Meets Federated Learning: Motivations, Challenges, and Future Directions</title>
+   <link>https://arxiv.org/abs/2306.15546</link>
+   <description>The intersection of Foundation Model (FM) and Federated Learning (FL) presents a unique opportunity to unlock new possibilities for real-world applications. On the one hand, FL, as a collaborative learning paradigm, help address challenges in FM development by expanding data availability, enabling computation sharing, facilitating the collaborative development of FMs, tackling continuous data update, avoiding FM monopoly, response delay and FM service down. On the other hand, FM, equipped with pre-trained knowledge and exceptional performance, can serve as a robust starting point for FL. It can also generate synthetic data to enrich data diversity and enhance overall performance of FL. Meanwhile, FM unlocks new sharing paradigm and multi-task and multi-modality capabilities for FL. By examining the interplay between FL and FM, this paper presents the motivations, challenges, and future directions of empowering FL with FM and empowering FM with FL. We hope that this work provides a good foundation to inspire future research efforts to drive advancements in both fields.</description>
+   <guid>oai:arXiv.org:2306.15546v3</guid>
    <category>cs.LG</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Weiming Zhuang, Chen Chen, Jingtao Li, Chaochao Chen, Yaochu Jin, Lingjuan Lyu</creator>
+  </item>
+  <item>
+   <title>Privacy Preserving Machine Learning Model Personalization through Federated Personalized Learning</title>
+   <link>https://arxiv.org/abs/2505.01788</link>
+   <description>The widespread adoption of Artificial Intelligence (AI) has been driven by significant advances in intelligent system research. However, this progress has raised concerns about data privacy, leading to a growing awareness of the need for privacy-preserving AI. In response, there has been a seismic shift in interest towards the leading paradigm for training Machine Learning (ML) models on decentralized data silos while maintaining data privacy, Federated Learning (FL). This research paper presents a comprehensive performance analysis of a cutting-edge approach to personalize ML model while preserving privacy achieved through Privacy Preserving Machine Learning with the innovative framework of Federated Personalized Learning (PPMLFPL). Regarding the increasing concerns about data privacy, this study evaluates the effectiveness of PPMLFPL addressing the critical balance between personalized model refinement and maintaining the confidentiality of individual user data. According to our analysis, Adaptive Personalized Cross-Silo Federated Learning with Differential Privacy (APPLE+DP) offering efficient execution whereas overall, the use of the Adaptive Personalized Cross-Silo Federated Learning with Homomorphic Encryption (APPLE+HE) algorithm for privacy-preserving machine learning tasks in federated personalized learning settings is strongly suggested. The results offer valuable insights creating it a promising scope for future advancements in the field of privacy-conscious data-driven technologies.</description>
+   <guid>oai:arXiv.org:2505.01788v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Yiyuan Yang, Guodong Long, Tianyi Zhou, Qinghua Lu, Shanshan Ye, Jing Jiang</creator>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Md. Tanzib Hosain, Asif Zaman, Md. Shahriar Sajid, Shadman Sakeeb Khan, Shanjida Akter</creator>
   </item>
   <item>
-   <title>Secure Cluster-Based Hierarchical Federated Learning in Vehicular Networks</title>
-   <link>https://arxiv.org/abs/2505.01186</link>
-   <description>Hierarchical Federated Learning (HFL) has recently emerged as a promising solution for intelligent decision-making in vehicular networks, helping to address challenges such as limited communication resources, high vehicle mobility, and data heterogeneity. However, HFL remains vulnerable to adversarial and unreliable vehicles, whose misleading updates can significantly compromise the integrity and convergence of the global model. To address these challenges, we propose a novel defense framework that integrates dynamic vehicle selection with robust anomaly detection within a cluster-based HFL architecture, specifically designed to counter Gaussian noise and gradient ascent attacks. The framework performs a comprehensive reliability assessment for each vehicle by evaluating historical accuracy, contribution frequency, and anomaly records. Anomaly detection combines Z-score and cosine similarity analyses on model updates to identify both statistical outliers and directional deviations in model updates. To further refine detection, an adaptive thresholding mechanism is incorporated into the cosine similarity metric, dynamically adjusting the threshold based on the historical accuracy of each vehicle to enforce stricter standards for consistently high-performing vehicles. In addition, a weighted gradient averaging mechanism is implemented, which assigns higher weights to gradient updates from more trustworthy vehicles. To defend against coordinated attacks, a cross-cluster consistency check is applied to identify collaborative attacks in which multiple compromised clusters coordinate misleading updates. Together, these mechanisms form a multi-level defense strategy to filter out malicious contributions effectively. Simulation results show that the proposed algorithm significantly reduces convergence time compared to benchmark methods across both 1-hop and 3-hop topologies.</description>
-   <guid>oai:arXiv.org:2505.01186v1</guid>
+   <title>Towards Trustworthy Federated Learning with Untrusted Participants</title>
+   <link>https://arxiv.org/abs/2505.01874</link>
+   <description>Resilience against malicious parties and data privacy are essential for trustworthy distributed learning, yet achieving both with good utility typically requires the strong assumption of a trusted central server. This paper shows that a significantly weaker assumption suffices: each pair of workers shares a randomness seed unknown to others. In a setting where malicious workers may collude with an untrusted server, we propose CafCor, an algorithm that integrates robust gradient aggregation with correlated noise injection, leveraging shared randomness between workers. We prove that CafCor achieves strong privacy-utility trade-offs, significantly outperforming local differential privacy (DP) methods, which do not make any trust assumption, while approaching central DP utility, where the server is fully trusted. Empirical results on standard benchmarks validate CafCor's practicality, showing that privacy and robustness can coexist in distributed systems without sacrificing utility or trusting the server.</description>
+   <guid>oai:arXiv.org:2505.01874v1</guid>
+   <category>cs.LG</category>
    <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Youssef Allouah, Rachid Guerraoui, John Stephan</creator>
+  </item>
+  <item>
+   <title>Towards One-shot Federated Learning: Advances, Challenges, and Future Directions</title>
+   <link>https://arxiv.org/abs/2505.02426</link>
+   <description>One-shot FL enables collaborative training in a single round, eliminating the need for iterative communication, making it particularly suitable for use in resource-constrained and privacy-sensitive applications. This survey offers a thorough examination of One-shot FL, highlighting its distinct operational framework compared to traditional federated approaches. One-shot FL supports resource-limited devices by enabling single-round model aggregation while maintaining data locality. The survey systematically categorizes existing methodologies, emphasizing advancements in client model initialization, aggregation techniques, and strategies for managing heterogeneous data distributions. Furthermore, we analyze the limitations of current approaches, particularly in terms of scalability and generalization in non-IID settings. By analyzing cutting-edge techniques and outlining open challenges, this survey aspires to provide a comprehensive reference for researchers and practitioners aiming to design and implement One-shot FL systems, advancing the development and adoption of One-shot FL solutions in a real-world, resource-constrained scenario.</description>
+   <guid>oai:arXiv.org:2505.02426v1</guid>
+   <category>cs.LG</category>
    <category>cs.AI</category>
    <category>cs.DC</category>
-   <category>cs.LG</category>
-   <category>cs.SY</category>
-   <category>eess.SY</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>M. Saeid HaghighiFard, Sinem Coleri</creator>
+   <creator>Flora Amato, Lingyu Qiu, Mohammad Tanveer, Salvatore Cuomo, Fabio Giampaolo, Francesco Piccialli</creator>
   </item>
   <item>
-   <title>Interaction-Aware Gaussian Weighting for Clustered Federated Learning</title>
-   <link>https://arxiv.org/abs/2502.03340</link>
-   <description>Federated Learning (FL) emerged as a decentralized paradigm to train models while preserving privacy. However, conventional FL struggles with data heterogeneity and class imbalance, which degrade model performance. Clustered FL balances personalization and decentralized training by grouping clients with analogous data distributions, enabling improved accuracy while adhering to privacy constraints. This approach effectively mitigates the adverse impact of heterogeneity in FL. In this work, we propose a novel clustered FL method, FedGWC (Federated Gaussian Weighting Clustering), which groups clients based on their data distribution, allowing training of a more robust and personalized model on the identified clusters. FedGWC identifies homogeneous clusters by transforming individual empirical losses to model client interactions with a Gaussian reward mechanism. Additionally, we introduce the Wasserstein Adjusted Score, a new clustering metric for FL to evaluate cluster cohesion with respect to the individual class distribution. Our experiments on benchmark datasets show that FedGWC outperforms existing FL algorithms in cluster quality and classification accuracy, validating the efficacy of our approach.</description>
-   <guid>oai:arXiv.org:2502.03340v2</guid>
-   <category>cs.LG</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Alessandro Licciardi, Davide Leo, Eros Fan\`i, Barbara Caputo, Marco Ciccone</creator>
-  </item>
-  <item>
-   <title>FlexLLM: A System for Co-Serving Large Language Model Inference and Parameter-Efficient Finetuning</title>
-   <link>https://arxiv.org/abs/2402.18789</link>
-   <description>Finetuning large language models (LLMs) is essential for task adaptation, yet serving stacks today isolate inference and finetuning on separate GPU clusters -- wasting resources and under-utilizing hardware. We introduce FlexLLM, the first system to co-serve LLM inference and PEFT-based finetuning on shared GPUs by fusing computation at the token level. The static compilation optimizations in FlexLLM -- dependent parallelization and graph pruning significantly shrink activation memory, leading to end-to-end GPU memory savings by up to 80%. At runtime, a novel token-level finetuning mechanism paired with a hybrid token scheduler dynamically interleaves inference and training tokens within each co-serving iteration, meeting strict latency SLOs while maximizing utilization. In end-to-end benchmarks on LLaMA-3.1-8B, Qwen-2.5-14B, and Qwen-2.5-32B, FlexLLM sustains the inference SLO requirements up to 20 req/s, and improves finetuning throughput by 1.9-4.8x under heavy inference workloads and 2.5-6.8x under light loads, preserving over 76% of peak finetuning progress even at peak demand. The source code of FlexLLM is publicly available at https://github.com/flexflow/FlexFlow/.</description>
-   <guid>oai:arXiv.org:2402.18789v2</guid>
-   <category>cs.DC</category>
-   <category>cs.CL</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Gabriele Oliaro, Xupeng Miao, Xinhao Cheng, Vineeth Kada, Ruohan Gao, Yingyi Huang, Remi Delacourt, April Yang, Yingcheng Wang, Mengdi Wu, Colin Unger, Zhihao Jia</creator>
-  </item>
-  <item>
-   <title>Employing Federated Learning for Training Autonomous HVAC Systems</title>
-   <link>https://arxiv.org/abs/2405.00389</link>
-   <description>Buildings account for 40% of global energy consumption. A considerable portion of building energy consumption stems from heating, ventilation, and air conditioning (HVAC), and thus implementing smart, energy-efficient HVAC systems has the potential to significantly impact the course of climate change. In recent years, model-free reinforcement learning algorithms have been increasingly assessed for this purpose due to their ability to learn and adapt purely from experience. They have been shown to outperform classical controllers in terms of energy cost and consumption, as well as thermal comfort. However, their weakness lies in their relatively poor data efficiency, requiring long periods of training to reach acceptable policies, making them inapplicable to real-world controllers directly. In this paper, we demonstrate that using federated learning to train the reinforcement learning controller of HVAC systems can improve the learning speed, as well as improve their ability to generalize, which in turn facilitates transfer learning to unseen building environments. In our setting, a global control policy is learned by aggregating local policies trained on multiple data centers located in different climate zones. The goal of the policy is to minimize energy consumption and maximize thermal comfort. We perform experiments evaluating three different optimizers for local policy training, as well as three different federated learning algorithms against two alternative baselines. Our experiments show that these effects lead to a faster learning speed, as well as greater generalization capabilities in the federated policy compared to any individually trained policy. Furthermore, the learning stability is significantly improved, with the learning process and performance of the federated policy being less sensitive to the choice of parameters and the inherent randomness of reinforcement learning.</description>
-   <guid>oai:arXiv.org:2405.00389v2</guid>
-   <category>math.OC</category>
-   <category>cs.LG</category>
-   <category>cs.SY</category>
-   <category>eess.SY</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Fredrik Hagstr\&quot;om, Vikas Garg, Fabricio Oliveira</creator>
-  </item>
-  <item>
-   <title>Technical Insights and Legal Considerations for Advancing Federated Learning in Bioinformatics</title>
-   <link>https://arxiv.org/abs/2503.09649</link>
-   <description>Federated learning leverages data across institutions to improve clinical discovery while complying with data-sharing restrictions and protecting patient privacy. As the evolution of biobanks in genetics and systems biology has proved, accessing more extensive and varied data pools leads to a faster and more robust exploration and translation of results. More widespread use of federated learning may have the same impact in bioinformatics, allowing access to many combinations of genotypic, phenotypic and environmental information that are undercovered or not included in existing biobanks. This paper reviews the methodological, infrastructural and legal issues that academic and clinical institutions must address before implementing it. Finally, we provide recommendations for the reliable use of federated learning and its effective translation into clinical practice.</description>
-   <guid>oai:arXiv.org:2503.09649v2</guid>
-   <category>q-bio.OT</category>
+   <title>Bayesian Robust Aggregation for Federated Learning</title>
+   <link>https://arxiv.org/abs/2505.02490</link>
+   <description>Federated Learning enables collaborative training of machine learning models on decentralized data. This scheme, however, is vulnerable to adversarial attacks, when some of the clients submit corrupted model updates. In real-world scenarios, the total number of compromised clients is typically unknown, with the extent of attacks potentially varying over time. To address these challenges, we propose an adaptive approach for robust aggregation of model updates based on Bayesian inference. The mean update is defined by the maximum of the likelihood marginalized over probabilities of each client to be `honest'. As a result, the method shares the simplicity of the classical average estimators (e.g., sample mean or geometric median), being independent of the number of compromised clients. At the same time, it is as effective against attacks as methods specifically tailored to Federated Learning, such as Krum. We compare our approach with other aggregation schemes in federated setting on three benchmark image classification data sets. The proposed method consistently achieves state-of-the-art performance across various attack types with static and varying number of malicious clients.</description>
+   <guid>oai:arXiv.org:2505.02490v1</guid>
    <category>cs.LG</category>
    <category>stat.ML</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Daniele Malpetti, Marco Scutari, Francesco Gualdi, Jessica van Setten, Sander van der Laan, Saskia Haitjema, Aaron Mark Lee, Isabelle Hering, Francesca Mangili</creator>
-  </item>
-  <item>
-   <title>Should you use LLMs to simulate opinions? Quality checks for early-stage deliberation</title>
-   <link>https://arxiv.org/abs/2504.08954</link>
-   <description>The emergent capabilities of large language models (LLMs) have sparked interest in assessing their ability to simulate human opinions in a variety of contexts, potentially serving as surrogates for human subjects in opinion surveys. However, previous evaluations of this capability have depended heavily on costly, domain-specific human survey data, and mixed empirical results about LLM effectiveness create uncertainty for managers about whether investing in this technology is justified in early-stage research. To address these challenges, we introduce a series of quality checks to support early-stage deliberation about the viability of using LLMs for simulating human opinions. These checks emphasize logical constraints, model stability, and alignment with stakeholder expectations of model outputs, thereby reducing dependence on human-generated data in the initial stages of evaluation. We demonstrate the usefulness of the proposed quality control tests in the context of AI-assisted content moderation, an application that both advocates and critics of LLMs' capabilities to simulate human opinion see as a desirable potential use case. None of the tested models passed all quality control checks, revealing several failure modes. We conclude by discussing implications of these failure modes and recommend how organizations can utilize our proposed tests for prompt engineering and in their risk management practices when considering the use of LLMs for opinion simulation. We make our crowdsourced dataset of claims with human and LLM annotations publicly available for future research.</description>
-   <guid>oai:arXiv.org:2504.08954v2</guid>
-   <category>cs.CY</category>
-   <category>cs.HC</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Terrence Neumann, Maria De-Arteaga, Sina Fazelpour</creator>
+   <creator>Aleksandr Karakulev (Uppsala University), Usama Zafar (Uppsala University), Salman Toor (Uppsala University, Scaleout Systems), Prashant Singh (Uppsala University, Science for Life Laboratory, Sweden)</creator>
   </item>
   <item>
-   <title>Secure Cluster-Based Hierarchical Federated Learning in Vehicular Networks</title>
-   <link>https://arxiv.org/abs/2505.01186</link>
-   <description>Hierarchical Federated Learning (HFL) has recently emerged as a promising solution for intelligent decision-making in vehicular networks, helping to address challenges such as limited communication resources, high vehicle mobility, and data heterogeneity. However, HFL remains vulnerable to adversarial and unreliable vehicles, whose misleading updates can significantly compromise the integrity and convergence of the global model. To address these challenges, we propose a novel defense framework that integrates dynamic vehicle selection with robust anomaly detection within a cluster-based HFL architecture, specifically designed to counter Gaussian noise and gradient ascent attacks. The framework performs a comprehensive reliability assessment for each vehicle by evaluating historical accuracy, contribution frequency, and anomaly records. Anomaly detection combines Z-score and cosine similarity analyses on model updates to identify both statistical outliers and directional deviations in model updates. To further refine detection, an adaptive thresholding mechanism is incorporated into the cosine similarity metric, dynamically adjusting the threshold based on the historical accuracy of each vehicle to enforce stricter standards for consistently high-performing vehicles. In addition, a weighted gradient averaging mechanism is implemented, which assigns higher weights to gradient updates from more trustworthy vehicles. To defend against coordinated attacks, a cross-cluster consistency check is applied to identify collaborative attacks in which multiple compromised clusters coordinate misleading updates. Together, these mechanisms form a multi-level defense strategy to filter out malicious contributions effectively. Simulation results show that the proposed algorithm significantly reduces convergence time compared to benchmark methods across both 1-hop and 3-hop topologies.</description>
-   <guid>oai:arXiv.org:2505.01186v1</guid>
-   <category>cs.CR</category>
+   <title>Lazy But Effective: Collaborative Personalized Federated Learning with Heterogeneous Data</title>
+   <link>https://arxiv.org/abs/2505.02540</link>
+   <description>In Federated Learning, heterogeneity in client data distributions often means that a single global model does not have the best performance for individual clients. Consider for example training a next-word prediction model for keyboards: user-specific language patterns due to demographics (dialect, age, etc.), language proficiency, and writing style result in a highly non-IID dataset across clients. Other examples are medical images taken with different machines, or driving data from different vehicle types. To address this, we propose a simple yet effective personalized federated learning framework (pFedLIA) that utilizes a computationally efficient influence approximation, called `Lazy Influence', to cluster clients in a distributed manner before model aggregation. Within each cluster, data owners collaborate to jointly train a model that captures the specific data patterns of the clients. Our method has been shown to successfully recover the global model's performance drop due to the non-IID-ness in various synthetic and real-world settings, specifically a next-word prediction task on the Nordic languages as well as several benchmark tasks. It matches the performance of a hypothetical Oracle clustering, and significantly improves on existing baselines, e.g., an improvement of 17% on CIFAR100.</description>
+   <guid>oai:arXiv.org:2505.02540v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ljubomir Rokvic, Panayiotis Danassis, Boi Faltings</creator>
+  </item>
+  <item>
+   <title>HSplitLoRA: A Heterogeneous Split Parameter-Efficient Fine-Tuning Framework for Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.02795</link>
+   <description>Recently, large language models (LLMs) have achieved remarkable breakthroughs, revolutionizing the natural language processing domain and beyond. Due to immense parameter sizes, fine-tuning these models with private data for diverse downstream tasks has become mainstream. Though federated learning (FL) offers a promising solution for fine-tuning LLMs without sharing raw data, substantial computing costs hinder its democratization. Moreover, in real-world scenarios, private client devices often possess heterogeneous computing resources, further complicating LLM fine-tuning. To combat these challenges, we propose HSplitLoRA, a heterogeneous parameter-efficient fine-tuning (PEFT) framework built on split learning (SL) and low-rank adaptation (LoRA) fine-tuning, for efficiently fine-tuning LLMs on heterogeneous client devices. HSplitLoRA first identifies important weights based on their contributions to LLM training. It then dynamically configures the decomposition ranks of LoRA adapters for selected weights and determines the model split point according to varying computing budgets of client devices. Finally, a noise-free adapter aggregation mechanism is devised to support heterogeneous adapter aggregation without introducing noise. Extensive experiments demonstrate that HSplitLoRA outperforms state-of-the-art benchmarks in training accuracy and convergence speed.</description>
+   <guid>oai:arXiv.org:2505.02795v1</guid>
+   <category>cs.LG</category>
    <category>cs.AI</category>
    <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zheng Lin, Yuxin Zhang, Zhe Chen, Zihan Fang, Xianhao Chen, Praneeth Vepakomma, Wei Ni, Jun Luo, Yue Gao</creator>
+  </item>
+  <item>
+   <title>Sparsification Under Siege: Defending Against Poisoning Attacks in Communication-Efficient Federated Learning</title>
+   <link>https://arxiv.org/abs/2505.01454</link>
+   <description>Federated Learning (FL) enables collaborative model training across distributed clients while preserving data privacy, yet it faces significant challenges in communication efficiency and vulnerability to poisoning attacks. While sparsification techniques mitigate communication overhead by transmitting only critical model parameters, they inadvertently amplify security risks: adversarial clients can exploit sparse updates to evade detection and degrade model performance. Existing defense mechanisms, designed for standard FL communication scenarios, are ineffective in addressing these vulnerabilities within sparsified FL. To bridge this gap, we propose FLARE, a novel federated learning framework that integrates sparse index mask inspection and model update sign similarity analysis to detect and mitigate poisoning attacks in sparsified FL. Extensive experiments across multiple datasets and adversarial scenarios demonstrate that FLARE significantly outperforms existing defense strategies, effectively securing sparsified FL against poisoning attacks while maintaining communication efficiency.</description>
+   <guid>oai:arXiv.org:2505.01454v1</guid>
+   <category>cs.CR</category>
    <category>cs.LG</category>
-   <category>cs.SY</category>
-   <category>eess.SY</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Zhiyong Jin, Runhua Xu, Chao Li, Yizhong Liu, Jianxin Li</creator>
+  </item>
+  <item>
+   <title>PQS-BFL: A Post-Quantum Secure Blockchain-based Federated Learning Framework</title>
+   <link>https://arxiv.org/abs/2505.01866</link>
+   <description>Federated Learning (FL) enables collaborative model training while preserving data privacy, but its classical cryptographic underpinnings are vulnerable to quantum attacks. This vulnerability is particularly critical in sensitive domains like healthcare. This paper introduces PQS-BFL (Post-Quantum Secure Blockchain-based Federated Learning), a framework integrating post-quantum cryptography (PQC) with blockchain verification to secure FL against quantum adversaries. We employ ML-DSA-65 (a FIPS 204 standard candidate, formerly Dilithium) signatures to authenticate model updates and leverage optimized smart contracts for decentralized validation. Extensive evaluations on diverse datasets (MNIST, SVHN, HAR) demonstrate that PQS-BFL achieves efficient cryptographic operations (average PQC sign time: 0.65 ms, verify time: 0.53 ms) with a fixed signature size of 3309 Bytes. Blockchain integration incurs a manageable overhead, with average transaction times around 4.8 s and gas usage per update averaging 1.72 x 10^6 units for PQC configurations. Crucially, the cryptographic overhead relative to transaction time remains minimal (around 0.01-0.02% for PQC with blockchain), confirming that PQC performance is not the bottleneck in blockchain-based FL. The system maintains competitive model accuracy (e.g., over 98.8% for MNIST with PQC) and scales effectively, with round times showing sublinear growth with increasing client numbers. Our open-source implementation and reproducible benchmarks validate the feasibility of deploying long-term, quantum-resistant security in practical FL systems.</description>
+   <guid>oai:arXiv.org:2505.01866v1</guid>
+   <category>cs.CR</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>M. Saeid HaghighiFard, Sinem Coleri</creator>
+   <creator>Daniel Commey, Garth V. Crosby</creator>
   </item>
   <item>
-   <title>Employing Federated Learning for Training Autonomous HVAC Systems</title>
-   <link>https://arxiv.org/abs/2405.00389</link>
-   <description>Buildings account for 40% of global energy consumption. A considerable portion of building energy consumption stems from heating, ventilation, and air conditioning (HVAC), and thus implementing smart, energy-efficient HVAC systems has the potential to significantly impact the course of climate change. In recent years, model-free reinforcement learning algorithms have been increasingly assessed for this purpose due to their ability to learn and adapt purely from experience. They have been shown to outperform classical controllers in terms of energy cost and consumption, as well as thermal comfort. However, their weakness lies in their relatively poor data efficiency, requiring long periods of training to reach acceptable policies, making them inapplicable to real-world controllers directly. In this paper, we demonstrate that using federated learning to train the reinforcement learning controller of HVAC systems can improve the learning speed, as well as improve their ability to generalize, which in turn facilitates transfer learning to unseen building environments. In our setting, a global control policy is learned by aggregating local policies trained on multiple data centers located in different climate zones. The goal of the policy is to minimize energy consumption and maximize thermal comfort. We perform experiments evaluating three different optimizers for local policy training, as well as three different federated learning algorithms against two alternative baselines. Our experiments show that these effects lead to a faster learning speed, as well as greater generalization capabilities in the federated policy compared to any individually trained policy. Furthermore, the learning stability is significantly improved, with the learning process and performance of the federated policy being less sensitive to the choice of parameters and the inherent randomness of reinforcement learning.</description>
-   <guid>oai:arXiv.org:2405.00389v2</guid>
-   <category>math.OC</category>
+   <title>Bayesian Federated Cause-of-Death Classification and Quantification Under Distribution Shift</title>
+   <link>https://arxiv.org/abs/2505.02257</link>
+   <description>In regions lacking medically certified causes of death, verbal autopsy (VA) is a critical and widely used tool to ascertain the cause of death through interviews with caregivers. Data collected by VAs are often analyzed using probabilistic algorithms. The performance of these algorithms often degrades due to distributional shift across populations. Most existing VA algorithms rely on centralized training, requiring full access to training data for joint modeling. This is often infeasible due to privacy and logistical constraints. In this paper, we propose a novel Bayesian Federated Learning (BFL) framework that avoids data sharing across multiple training sources. Our method enables reliable individual-level cause-of-death classification and population-level quantification of cause-specific mortality fractions (CSMFs), in a target domain with limited or no local labeled data. The proposed framework is modular, computationally efficient, and compatible with a wide range of existing VA algorithms as candidate models, facilitating flexible deployment in real-world mortality surveillance systems. We validate the performance of BFL through extensive experiments on two real-world VA datasets under varying levels of distribution shift. Our results show that BFL significantly outperforms the base models built on a single domain and achieves comparable or better performance compared to joint modeling.</description>
+   <guid>oai:arXiv.org:2505.02257v1</guid>
+   <category>stat.ME</category>
    <category>cs.LG</category>
-   <category>cs.SY</category>
-   <category>eess.SY</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
+   <category>stat.AP</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Fredrik Hagstr\&quot;om, Vikas Garg, Fabricio Oliveira</creator>
+   <creator>Yu Zhu, Zehang Richard Li</creator>
   </item>
   <item>
-   <title>SemSpaceFL: A Collaborative Hierarchical Federated Learning Framework for Semantic Communication in 6G LEO Satellites</title>
-   <link>https://arxiv.org/abs/2505.00966</link>
-   <description>The advent of the sixth-generation (6G) wireless networks, enhanced by artificial intelligence, promises ubiquitous connectivity through Low Earth Orbit (LEO) satellites. These satellites are capable of collecting vast amounts of geographically diverse and real-time data, which can be immensely valuable for training intelligent models. However, limited inter-satellite communication and data privacy constraints hinder data collection on a single server for training. Therefore, we propose SemSpaceFL, a novel hierarchical federated learning (HFL) framework for LEO satellite networks, with integrated semantic communication capabilities. Our framework introduces a two-tier aggregation architecture where satellite models are first aggregated at regional gateways before final consolidation at a cloud server, which explicitly accounts for satellite mobility patterns and energy constraints. The key innovation lies in our novel aggregation approach, which dynamically adjusts the contribution of each satellite based on its trajectory and association with different gateways, which ensures stable model convergence despite the highly dynamic nature of LEO constellations. To further enhance communication efficiency, we incorporate semantic encoding-decoding techniques trained through the proposed HFL framework, which enables intelligent data compression while maintaining signal integrity. Our experimental results demonstrate that the proposed aggregation strategy achieves superior performance and faster convergence compared to existing benchmarks, while effectively managing the challenges of satellite mobility and energy limitations in dynamic LEO networks.</description>
-   <guid>oai:arXiv.org:2505.00966v1</guid>
-   <category>cs.IT</category>
+   <title>When Foundation Model Meets Federated Learning: Motivations, Challenges, and Future Directions</title>
+   <link>https://arxiv.org/abs/2306.15546</link>
+   <description>The intersection of Foundation Model (FM) and Federated Learning (FL) presents a unique opportunity to unlock new possibilities for real-world applications. On the one hand, FL, as a collaborative learning paradigm, help address challenges in FM development by expanding data availability, enabling computation sharing, facilitating the collaborative development of FMs, tackling continuous data update, avoiding FM monopoly, response delay and FM service down. On the other hand, FM, equipped with pre-trained knowledge and exceptional performance, can serve as a robust starting point for FL. It can also generate synthetic data to enrich data diversity and enhance overall performance of FL. Meanwhile, FM unlocks new sharing paradigm and multi-task and multi-modality capabilities for FL. By examining the interplay between FL and FM, this paper presents the motivations, challenges, and future directions of empowering FL with FM and empowering FM with FL. We hope that this work provides a good foundation to inspire future research efforts to drive advancements in both fields.</description>
+   <guid>oai:arXiv.org:2306.15546v3</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
    <category>cs.DC</category>
-   <category>cs.ET</category>
-   <category>cs.NI</category>
-   <category>math.IT</category>
-   <pubdate>Mon, 05 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Weiming Zhuang, Chen Chen, Jingtao Li, Chaochao Chen, Yaochu Jin, Lingjuan Lyu</creator>
+  </item>
+  <item>
+   <title>Clients Collaborate: Flexible Differentially Private Federated Learning with Guaranteed Improvement of Utility-Privacy Trade-off</title>
+   <link>https://arxiv.org/abs/2402.07002</link>
+   <description>To defend against privacy leakage of user data, differential privacy is widely used in federated learning, but it is not free. The addition of noise randomly disrupts the semantic integrity of the model and this disturbance accumulates with increased communication rounds. In this paper, we introduce a novel federated learning framework with rigorous privacy guarantees, named FedCEO, designed to strike a trade-off between model utility and user privacy by letting clients ''Collaborate with Each Other''. Specifically, we perform efficient tensor low-rank proximal optimization on stacked local model parameters at the server, demonstrating its capability to flexibly truncate high-frequency components in spectral space. This capability implies that our FedCEO can effectively recover the disrupted semantic information by smoothing the global semantic space for different privacy settings and continuous training processes. Moreover, we improve the SOTA utility-privacy trade-off bound by order of $\sqrt{d}$, where $d$ is the input dimension. We illustrate our theoretical results with experiments on representative datasets and observe significant performance improvements and strict privacy guarantees under different privacy settings. The code is available at https://github.com/6lyc/FedCEO_Collaborate-with-Each-Other.</description>
+   <guid>oai:arXiv.org:2402.07002v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuecheng Li, Lele Fu, Tong Wang, Jian Lou, Bin Chen, Lei Yang, Jian Shen, Zibin Zheng, Chuan Chen</creator>
+  </item>
+  <item>
+   <title>Outlier Gradient Analysis: Efficiently Identifying Detrimental Training Samples for Deep Learning Models</title>
+   <link>https://arxiv.org/abs/2405.03869</link>
+   <description>A core data-centric learning challenge is the identification of training samples that are detrimental to model performance. Influence functions serve as a prominent tool for this task and offer a robust framework for assessing training data influence on model predictions. Despite their widespread use, their high computational cost associated with calculating the inverse of the Hessian matrix pose constraints, particularly when analyzing large-sized deep models. In this paper, we establish a bridge between identifying detrimental training samples via influence functions and outlier gradient detection. This transformation not only presents a straightforward and Hessian-free formulation but also provides insights into the role of the gradient in sample impact. Through systematic empirical evaluations, we first validate the hypothesis of our proposed outlier gradient analysis approach on synthetic datasets. We then demonstrate its effectiveness in detecting mislabeled samples in vision models and selecting data samples for improving performance of natural language processing transformer models. We also extend its use to influential sample identification for fine-tuning Large Language Models.</description>
+   <guid>oai:arXiv.org:2405.03869v5</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Anshuman Chhabra, Bo Li, Jian Chen, Prasant Mohapatra, Hongfu Liu</creator>
+  </item>
+  <item>
+   <title>FEDKIM: Adaptive Federated Knowledge Injection into Medical Foundation Models</title>
+   <link>https://arxiv.org/abs/2408.10276</link>
+   <description>Foundation models have demonstrated remarkable capabilities in handling diverse modalities and tasks, outperforming conventional artificial intelligence (AI) approaches that are highly task-specific and modality-reliant. In the medical domain, however, the development of comprehensive foundation models is constrained by limited access to diverse modalities and stringent privacy regulations. To address these constraints, this study introduces a novel knowledge injection approach, FedKIM, designed to scale the medical foundation model within a federated learning framework. FedKIM leverages lightweight local models to extract healthcare knowledge from private data and integrates this knowledge into a centralized foundation model using a designed adaptive Multitask Multimodal Mixture Of Experts (M3OE) module. This method not only preserves privacy but also enhances the model's ability to handle complex medical tasks involving multiple modalities. Our extensive experiments across twelve tasks in seven modalities demonstrate the effectiveness of FedKIM in various settings, highlighting its potential to scale medical foundation models without direct access to sensitive data.</description>
+   <guid>oai:arXiv.org:2408.10276v4</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Xiaochen Wang, Jiaqi Wang, Houping Xiao, Jinghui Chen, Fenglong Ma</creator>
+  </item>
+  <item>
+   <title>FissionVAE: Federated Non-IID Image Generation with Latent Space and Decoder Decomposition</title>
+   <link>https://arxiv.org/abs/2408.17090</link>
+   <description>Federated learning is a machine learning paradigm that enables decentralized clients to collaboratively learn a shared model while keeping all the training data local. While considerable research has focused on federated image generation, particularly Generative Adversarial Networks, Variational Autoencoders have received less attention. In this paper, we address the challenges of non-IID (independently and identically distributed) data environments featuring multiple groups of images of different types. Non-IID data distributions can lead to difficulties in maintaining a consistent latent space and can also result in local generators with disparate texture features being blended during aggregation. We thereby introduce FissionVAE that decouples the latent space and constructs decoder branches tailored to individual client groups. This method allows for customized learning that aligns with the unique data distributions of each group. Additionally, we incorporate hierarchical VAEs and demonstrate the use of heterogeneous decoder architectures within FissionVAE. We also explore strategies for setting the latent prior distributions to enhance the decoupling process. To evaluate our approach, we assemble two composite datasets: the first combines MNIST and FashionMNIST; the second comprises RGB datasets of cartoon and human faces, wild animals, marine vessels, and remote sensing images. Our experiments demonstrate that FissionVAE greatly improves generation quality on these datasets compared to baseline federated VAE models.</description>
+   <guid>oai:arXiv.org:2408.17090v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CV</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Chen Hu, Hanchi Ren, Jingjing Deng, Xianghua Xie, Xiaoke Ma</creator>
+  </item>
+  <item>
+   <title>Freezing of Gait Detection Using Gramian Angular Fields and Federated Learning from Wearable Sensors</title>
+   <link>https://arxiv.org/abs/2411.11764</link>
+   <description>Freezing of gait (FOG) is a debilitating symptom of Parkinson's disease that impairs mobility and safety by increasing the risk of falls. An effective FOG detection system must be accurate, real-time, and deployable in free-living environments to enable timely interventions. However, existing detection methods face challenges due to (1) intra- and inter-patient variability, (2) subject-specific training, (3) using multiple sensors in FOG dominant locations (e.g., ankles) leading to high failure points, (4) centralized, non-adaptive learning frameworks that sacrifice patient privacy and prevent collaborative model refinement across populations and disease progression, and (5) most systems are tested in controlled settings, limiting their real-world applicability for continuous in-home monitoring. Addressing these gaps, we present FOGSense, a real-world deployable FOG detection system designed for uncontrolled, free-living conditions using only a single sensor. FOGSense uses Gramian Angular Field (GAF) transformations and privacy-preserving federated deep learning to capture temporal and spatial gait patterns missed by traditional methods with a low false positive rate. We evaluated our system using a public Parkinson's dataset collected in a free-living environment. FOGSense improves accuracy by 10.4% over a single-axis accelerometer, reduces failure points compared to multi-sensor systems, and demonstrates robustness to missing values. The federated architecture allows personalized model adaptation and efficient smartphone synchronization during off-peak hours, making it effective for long-term monitoring as symptoms evolve. Overall, FOGSense achieved a 22.2% improvement in F1-score and a 74.53% reduction in false positive rate compared to state-of-the-art methods, along with enhanced sensitivity for FOG episode detection.</description>
+   <guid>oai:arXiv.org:2411.11764v3</guid>
+   <category>cs.LG</category>
+   <category>eess.SP</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Shovito Barua Soumma, S M Raihanul Alam, Rudmila Rahman, Umme Niraj Mahi, Abdullah Mamun, Sayyed Mostafa Mostafavi, Hassan Ghasemzadeh</creator>
+  </item>
+  <item>
+   <title>LabTOP: A Unified Model for Lab Test Outcome Prediction on Electronic Health Records</title>
+   <link>https://arxiv.org/abs/2502.14259</link>
+   <description>Lab tests are fundamental for diagnosing diseases and monitoring patient conditions. However, frequent testing can be burdensome for patients, and test results may not always be immediately available. To address these challenges, we propose LabTOP, a unified model that predicts lab test outcomes by leveraging a language modeling approach on EHR data. Unlike conventional methods that estimate only a subset of lab tests or classify discrete value ranges, LabTOP performs continuous numerical predictions for a diverse range of lab items. We evaluate LabTOP on three publicly available EHR datasets and demonstrate that it outperforms existing methods, including traditional machine learning models and state-of-the-art large language models. We also conduct extensive ablation studies to confirm the effectiveness of our design choices. We believe that LabTOP will serve as an accurate and generalizable framework for lab test outcome prediction, with potential applications in clinical decision support and early detection of critical conditions.</description>
+   <guid>oai:arXiv.org:2502.14259v3</guid>
+   <category>cs.LG</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sujeong Im, Jungwoo Oh, Edward Choi</creator>
+  </item>
+  <item>
+   <title>Incentivizing Inclusive Contributions in Model Sharing Markets</title>
+   <link>https://arxiv.org/abs/2505.02462</link>
+   <description>While data plays a crucial role in training contemporary AI models, it is acknowledged that valuable public data will be exhausted in a few years, directing the world's attention towards the massive decentralized private data. However, the privacy-sensitive nature of raw data and lack of incentive mechanism prevent these valuable data from being fully exploited. Addressing these challenges, this paper proposes inclusive and incentivized personalized federated learning (iPFL), which incentivizes data holders with diverse purposes to collaboratively train personalized models without revealing raw data. iPFL constructs a model-sharing market by solving a graph-based training optimization and incorporates an incentive mechanism based on game theory principles. Theoretical analysis shows that iPFL adheres to two key incentive properties: individual rationality and truthfulness. Empirical studies on eleven AI tasks (e.g., large language models' instruction-following tasks) demonstrate that iPFL consistently achieves the highest economic utility, and better or comparable model performance compared to baseline methods. We anticipate that our iPFL can serve as a valuable technique for boosting future AI models on decentralized private data while making everyone satisfied.</description>
+   <guid>oai:arXiv.org:2505.02462v1</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.GT</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Loc X. Nguyen, Sheikh Salman Hassan, Yu Min Park, Yan Kyaw Tun, Zhu Han, Choong Seon Hong</creator>
+   <creator>Enpei Zhang, Jingyi Chai, Rui Ye, Yanfeng Wang, Siheng Chen</creator>
   </item>
  </channel>
 </rss>
