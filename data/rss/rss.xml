@@ -6,114 +6,19 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Tue, 06 May 2025 04:16:06 </lastBuildDate>
+  <lastBuildDate>Wed, 07 May 2025 03:05:57 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Tue, 06 May 2025 04:16:06 </pubDate>
+  <pubDate>Wed, 07 May 2025 03:05:57 </pubDate>
   <item>
-   <title>Embedding based retrieval for long tail search queries in ecommerce</title>
-   <link>https://arxiv.org/abs/2505.01946</link>
-   <description>In this abstract we present a series of optimizations we performed on the two-tower model architecture [14], training and evaluation datasets to implement semantic product search at Best Buy. Search queries on bestbuy.com follow the pareto distribution whereby a minority of them account for most searches. This leaves us with a long tail of search queries that have low frequency of issuance. The queries in the long tail suffer from very spare interaction signals. Our current work focuses on building a model to serve the long tail queries. We present a series of optimizations we have done to this model to maximize conversion for the purpose of retrieval from the catalog. The first optimization we present is using a large language model to improve the sparsity of conversion signals. The second optimization is pretraining an off-the-shelf transformer-based model on the Best Buy catalog data. The third optimization we present is on the finetuning front. We use query-to-query pairs in addition to query-to-product pairs and combining the above strategies for finetuning the model. We also demonstrate how merging the weights of these finetuned models improves the evaluation metrics. Finally, we provide a recipe for curating an evaluation dataset for continuous monitoring of model performance with human-in-the-loop evaluation. We found that adding this recall mechanism to our current term match-based recall improved conversion by 3% in an online A/B test.</description>
-   <guid>oai:arXiv.org:2505.01946v1</guid>
-   <category>cs.IR</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Akshay Kekuda, Yuyang Zhang, Arun Udayashankar</creator>
-  </item>
-  <item>
-   <title>Tevatron 2.0: Unified Document Retrieval Toolkit across Scale, Language, and Modality</title>
-   <link>https://arxiv.org/abs/2505.02466</link>
-   <description>Recent advancements in large language models (LLMs) have driven interest in billion-scale retrieval models with strong generalization across retrieval tasks and languages. Additionally, progress in large vision-language models has created new opportunities for multimodal retrieval. In response, we have updated the Tevatron toolkit, introducing a unified pipeline that enables researchers to explore retriever models at different scales, across multiple languages, and with various modalities. This demo paper highlights the toolkit's key features, bridging academia and industry by supporting efficient training, inference, and evaluation of neural retrievers. We showcase a unified dense retriever achieving strong multilingual and multimodal effectiveness, and conduct a cross-modality zero-shot study to demonstrate its research potential. Alongside, we release OmniEmbed, to the best of our knowledge, the first embedding model that unifies text, image document, video, and audio retrieval, serving as a baseline for future research.</description>
-   <guid>oai:arXiv.org:2505.02466v1</guid>
-   <category>cs.IR</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Xueguang Ma, Luyu Gao, Shengyao Zhuang, Jiaqi Samantha Zhan, Jamie Callan, Jimmy Lin</creator>
-  </item>
-  <item>
-   <title>LUSIFER: Language Universal Space Integration for Enhanced Multilingual Embeddings with Large Language Models</title>
-   <link>https://arxiv.org/abs/2501.00874</link>
-   <description>Recent advancements in large language models (LLMs) based embedding models have established new state-of-the-art benchmarks for text embedding tasks, particularly in dense vector-based retrieval. However, these models predominantly focus on English, leaving multilingual embedding capabilities largely unexplored. To address this limitation, we present LUSIFER, a novel zero-shot approach that adapts LLM-based embedding models for multilingual tasks without requiring multilingual supervision. LUSIFER's architecture combines a multilingual encoder, serving as a language-universal learner, with an LLM-based embedding model optimized for embedding-specific tasks. These components are seamlessly integrated through a minimal set of trainable parameters that act as a connector, effectively transferring the multilingual encoder's language understanding capabilities to the specialized embedding model. Additionally, to comprehensively evaluate multilingual embedding performance, we introduce a new benchmark encompassing 5 primary embedding tasks, 123 diverse datasets, and coverage across 14 languages. Extensive experimental results demonstrate that LUSIFER significantly enhances the multilingual performance across various embedding tasks, particularly for medium and low-resource languages, without requiring explicit multilingual training data.</description>
-   <guid>oai:arXiv.org:2501.00874v2</guid>
-   <category>cs.CL</category>
-   <category>cs.IR</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Hieu Man, Nghia Trung Ngo, Viet Dac Lai, Ryan A. Rossi, Franck Dernoncourt, Thien Huu Nguyen</creator>
-  </item>
-  <item>
-   <title>Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models</title>
-   <link>https://arxiv.org/abs/2505.01761</link>
-   <description>Accurately evaluating machine-translated text remains a long-standing challenge, particularly for long documents. Recent work has shown that large language models (LLMs) can serve as reliable and interpretable sentence-level translation evaluators via MQM error span annotations. With modern LLMs supporting larger context windows, a natural question arises: can we feed entire document translations into an LLM for quality assessment? Ideally, evaluation should be invariant to text length, producing consistent error spans regardless of input granularity. However, our analysis shows that text length significantly impacts evaluation: longer texts lead to fewer error spans and reduced system ranking accuracy. To address this limitation, we evaluate several strategies, including granularity-aligned prompting, Focus Sentence Prompting (FSP), and a fine-tuning approach to better align LLMs with the evaluation task. The latter two methods largely mitigate this length bias, making LLMs more reliable for long-form translation evaluation.</description>
-   <guid>oai:arXiv.org:2505.01761v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Tobias Domhan, Dawei Zhu</creator>
-  </item>
-  <item>
-   <title>Incentivizing Inclusive Contributions in Model Sharing Markets</title>
-   <link>https://arxiv.org/abs/2505.02462</link>
-   <description>While data plays a crucial role in training contemporary AI models, it is acknowledged that valuable public data will be exhausted in a few years, directing the world's attention towards the massive decentralized private data. However, the privacy-sensitive nature of raw data and lack of incentive mechanism prevent these valuable data from being fully exploited. Addressing these challenges, this paper proposes inclusive and incentivized personalized federated learning (iPFL), which incentivizes data holders with diverse purposes to collaboratively train personalized models without revealing raw data. iPFL constructs a model-sharing market by solving a graph-based training optimization and incorporates an incentive mechanism based on game theory principles. Theoretical analysis shows that iPFL adheres to two key incentive properties: individual rationality and truthfulness. Empirical studies on eleven AI tasks (e.g., large language models' instruction-following tasks) demonstrate that iPFL consistently achieves the highest economic utility, and better or comparable model performance compared to baseline methods. We anticipate that our iPFL can serve as a valuable technique for boosting future AI models on decentralized private data while making everyone satisfied.</description>
-   <guid>oai:arXiv.org:2505.02462v1</guid>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.GT</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Enpei Zhang, Jingyi Chai, Rui Ye, Yanfeng Wang, Siheng Chen</creator>
-  </item>
-  <item>
-   <title>LUSIFER: Language Universal Space Integration for Enhanced Multilingual Embeddings with Large Language Models</title>
-   <link>https://arxiv.org/abs/2501.00874</link>
-   <description>Recent advancements in large language models (LLMs) based embedding models have established new state-of-the-art benchmarks for text embedding tasks, particularly in dense vector-based retrieval. However, these models predominantly focus on English, leaving multilingual embedding capabilities largely unexplored. To address this limitation, we present LUSIFER, a novel zero-shot approach that adapts LLM-based embedding models for multilingual tasks without requiring multilingual supervision. LUSIFER's architecture combines a multilingual encoder, serving as a language-universal learner, with an LLM-based embedding model optimized for embedding-specific tasks. These components are seamlessly integrated through a minimal set of trainable parameters that act as a connector, effectively transferring the multilingual encoder's language understanding capabilities to the specialized embedding model. Additionally, to comprehensively evaluate multilingual embedding performance, we introduce a new benchmark encompassing 5 primary embedding tasks, 123 diverse datasets, and coverage across 14 languages. Extensive experimental results demonstrate that LUSIFER significantly enhances the multilingual performance across various embedding tasks, particularly for medium and low-resource languages, without requiring explicit multilingual training data.</description>
-   <guid>oai:arXiv.org:2501.00874v2</guid>
-   <category>cs.CL</category>
-   <category>cs.IR</category>
+   <title>From Pen to Prompt: How Creative Writers Integrate AI into their Writing Practice</title>
+   <link>https://arxiv.org/abs/2411.03137</link>
+   <description>Creative writing is a deeply human craft, yet AI systems using large language models (LLMs) offer the automation of significant parts of the writing process. So why do some creative writers choose to use AI? Through interviews and observed writing sessions with 18 creative writers who already use AI regularly in their writing practice, we find that creative writers are intentional about how they incorporate AI, making many deliberate decisions about when and how to engage AI based on their core values, such as authenticity and craftsmanship. We characterize the interplay between writers' values, their fluid relationships with AI, and specific integration strategies -- ultimately enabling writers to create new AI workflows without compromising their creative values. We provide insight for writing communities, AI developers and future researchers on the importance of supporting transparency of these emerging writing processes and rethinking what AI features can best serve writers.</description>
+   <guid>oai:arXiv.org:2411.03137v3</guid>
+   <category>cs.HC</category>
    <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Hieu Man, Nghia Trung Ngo, Viet Dac Lai, Ryan A. Rossi, Franck Dernoncourt, Thien Huu Nguyen</creator>
-  </item>
-  <item>
-   <title>Mitigating Group-Level Fairness Disparities in Federated Visual Language Models</title>
-   <link>https://arxiv.org/abs/2505.01851</link>
-   <description>Visual language models (VLMs) have shown remarkable capabilities in multimodal tasks but face challenges in maintaining fairness across demographic groups, particularly when deployed in federated learning (FL) environments. This paper addresses the critical issue of group fairness in federated VLMs by introducing FVL-FP, a novel framework that combines FL with fair prompt tuning techniques. We focus on mitigating demographic biases while preserving model performance through three innovative components: (1) Cross-Layer Demographic Fair Prompting (CDFP), which adjusts potentially biased embeddings through counterfactual regularization; (2) Demographic Subspace Orthogonal Projection (DSOP), which removes demographic bias in image representations by mapping fair prompt text to group subspaces; and (3) Fair-aware Prompt Fusion (FPF), which dynamically balances client contributions based on both performance and fairness metrics. Extensive evaluations across four benchmark datasets demonstrate that our approach reduces demographic disparity by an average of 45\% compared to standard FL approaches, while maintaining task performance within 6\% of state-of-the-art results. FVL-FP effectively addresses the challenges of non-IID data distributions in federated settings and introduces minimal computational overhead while providing significant fairness benefits. Our work presents a parameter-efficient solution to the critical challenge of ensuring equitable performance across demographic groups in privacy-preserving multimodal systems.</description>
-   <guid>oai:arXiv.org:2505.01851v1</guid>
-   <category>cs.CV</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Chaomeng Chen, Zitong Yu, Junhao Dong, Sen Su, Linlin Shen, Shutao Xia, Xiaochun Cao</creator>
-  </item>
-  <item>
-   <title>Geometric Knowledge-Guided Localized Global Distribution Alignment for Federated Learning</title>
-   <link>https://arxiv.org/abs/2503.06457</link>
-   <description>Data heterogeneity in federated learning, characterized by a significant misalignment between local and global distributions, leads to divergent local optimization directions and hinders global model training. Existing studies mainly focus on optimizing local updates or global aggregation, but these indirect approaches demonstrate instability when handling highly heterogeneous data distributions, especially in scenarios where label skew and domain skew coexist. To address this, we propose a geometry-guided data generation method that centers on simulating the global embedding distribution locally. We first introduce the concept of the geometric shape of an embedding distribution and then address the challenge of obtaining global geometric shapes under privacy constraints. Subsequently, we propose GGEUR, which leverages global geometric shapes to guide the generation of new samples, enabling a closer approximation to the ideal global distribution. In single-domain scenarios, we augment samples based on global geometric shapes to enhance model generalization; in multi-domain scenarios, we further employ class prototypes to simulate the global distribution across domains. Extensive experimental results demonstrate that our method significantly enhances the performance of existing approaches in handling highly heterogeneous data, including scenarios with label skew, domain skew, and their coexistence. Code published at: https://github.com/WeiDai-David/2025CVPR_GGEUR</description>
-   <guid>oai:arXiv.org:2503.06457v2</guid>
-   <category>cs.CV</category>
-   <category>cs.AI</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Yanbiao Ma, Wei Dai, Wenke Huang, Jiayi Chen</creator>
-  </item>
-  <item>
-   <title>FissionVAE: Federated Non-IID Image Generation with Latent Space and Decoder Decomposition</title>
-   <link>https://arxiv.org/abs/2408.17090</link>
-   <description>Federated learning is a machine learning paradigm that enables decentralized clients to collaboratively learn a shared model while keeping all the training data local. While considerable research has focused on federated image generation, particularly Generative Adversarial Networks, Variational Autoencoders have received less attention. In this paper, we address the challenges of non-IID (independently and identically distributed) data environments featuring multiple groups of images of different types. Non-IID data distributions can lead to difficulties in maintaining a consistent latent space and can also result in local generators with disparate texture features being blended during aggregation. We thereby introduce FissionVAE that decouples the latent space and constructs decoder branches tailored to individual client groups. This method allows for customized learning that aligns with the unique data distributions of each group. Additionally, we incorporate hierarchical VAEs and demonstrate the use of heterogeneous decoder architectures within FissionVAE. We also explore strategies for setting the latent prior distributions to enhance the decoupling process. To evaluate our approach, we assemble two composite datasets: the first combines MNIST and FashionMNIST; the second comprises RGB datasets of cartoon and human faces, wild animals, marine vessels, and remote sensing images. Our experiments demonstrate that FissionVAE greatly improves generation quality on these datasets compared to baseline federated VAE models.</description>
-   <guid>oai:arXiv.org:2408.17090v2</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Chen Hu, Hanchi Ren, Jingjing Deng, Xianghua Xie, Xiaoke Ma</creator>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Alicia Guo, Shreya Sathyanarayanan, Leijie Wang, Jeffrey Heer, Amy Zhang</creator>
   </item>
   <item>
    <title>Incentivizing Inclusive Contributions in Model Sharing Markets</title>
@@ -251,82 +156,6 @@
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Yanbiao Ma, Wei Dai, Wenke Huang, Jiayi Chen</creator>
-  </item>
-  <item>
-   <title>From Pen to Prompt: How Creative Writers Integrate AI into their Writing Practice</title>
-   <link>https://arxiv.org/abs/2411.03137</link>
-   <description>Creative writing is a deeply human craft, yet AI systems using large language models (LLMs) offer the automation of significant parts of the writing process. So why do some creative writers choose to use AI? Through interviews and observed writing sessions with 18 creative writers who already use AI regularly in their writing practice, we find that creative writers are intentional about how they incorporate AI, making many deliberate decisions about when and how to engage AI based on their core values, such as authenticity and craftsmanship. We characterize the interplay between writers' values, their fluid relationships with AI, and specific integration strategies -- ultimately enabling writers to create new AI workflows without compromising their creative values. We provide insight for writing communities, AI developers and future researchers on the importance of supporting transparency of these emerging writing processes and rethinking what AI features can best serve writers.</description>
-   <guid>oai:arXiv.org:2411.03137v3</guid>
-   <category>cs.HC</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Alicia Guo, Shreya Sathyanarayanan, Leijie Wang, Jeffrey Heer, Amy Zhang</creator>
-  </item>
-  <item>
-   <title>Privacy Preserving Machine Learning Model Personalization through Federated Personalized Learning</title>
-   <link>https://arxiv.org/abs/2505.01788</link>
-   <description>The widespread adoption of Artificial Intelligence (AI) has been driven by significant advances in intelligent system research. However, this progress has raised concerns about data privacy, leading to a growing awareness of the need for privacy-preserving AI. In response, there has been a seismic shift in interest towards the leading paradigm for training Machine Learning (ML) models on decentralized data silos while maintaining data privacy, Federated Learning (FL). This research paper presents a comprehensive performance analysis of a cutting-edge approach to personalize ML model while preserving privacy achieved through Privacy Preserving Machine Learning with the innovative framework of Federated Personalized Learning (PPMLFPL). Regarding the increasing concerns about data privacy, this study evaluates the effectiveness of PPMLFPL addressing the critical balance between personalized model refinement and maintaining the confidentiality of individual user data. According to our analysis, Adaptive Personalized Cross-Silo Federated Learning with Differential Privacy (APPLE+DP) offering efficient execution whereas overall, the use of the Adaptive Personalized Cross-Silo Federated Learning with Homomorphic Encryption (APPLE+HE) algorithm for privacy-preserving machine learning tasks in federated personalized learning settings is strongly suggested. The results offer valuable insights creating it a promising scope for future advancements in the field of privacy-conscious data-driven technologies.</description>
-   <guid>oai:arXiv.org:2505.01788v1</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Md. Tanzib Hosain, Asif Zaman, Md. Shahriar Sajid, Shadman Sakeeb Khan, Shanjida Akter</creator>
-  </item>
-  <item>
-   <title>Towards Trustworthy Federated Learning with Untrusted Participants</title>
-   <link>https://arxiv.org/abs/2505.01874</link>
-   <description>Resilience against malicious parties and data privacy are essential for trustworthy distributed learning, yet achieving both with good utility typically requires the strong assumption of a trusted central server. This paper shows that a significantly weaker assumption suffices: each pair of workers shares a randomness seed unknown to others. In a setting where malicious workers may collude with an untrusted server, we propose CafCor, an algorithm that integrates robust gradient aggregation with correlated noise injection, leveraging shared randomness between workers. We prove that CafCor achieves strong privacy-utility trade-offs, significantly outperforming local differential privacy (DP) methods, which do not make any trust assumption, while approaching central DP utility, where the server is fully trusted. Empirical results on standard benchmarks validate CafCor's practicality, showing that privacy and robustness can coexist in distributed systems without sacrificing utility or trusting the server.</description>
-   <guid>oai:arXiv.org:2505.01874v1</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Youssef Allouah, Rachid Guerraoui, John Stephan</creator>
-  </item>
-  <item>
-   <title>Towards One-shot Federated Learning: Advances, Challenges, and Future Directions</title>
-   <link>https://arxiv.org/abs/2505.02426</link>
-   <description>One-shot FL enables collaborative training in a single round, eliminating the need for iterative communication, making it particularly suitable for use in resource-constrained and privacy-sensitive applications. This survey offers a thorough examination of One-shot FL, highlighting its distinct operational framework compared to traditional federated approaches. One-shot FL supports resource-limited devices by enabling single-round model aggregation while maintaining data locality. The survey systematically categorizes existing methodologies, emphasizing advancements in client model initialization, aggregation techniques, and strategies for managing heterogeneous data distributions. Furthermore, we analyze the limitations of current approaches, particularly in terms of scalability and generalization in non-IID settings. By analyzing cutting-edge techniques and outlining open challenges, this survey aspires to provide a comprehensive reference for researchers and practitioners aiming to design and implement One-shot FL systems, advancing the development and adoption of One-shot FL solutions in a real-world, resource-constrained scenario.</description>
-   <guid>oai:arXiv.org:2505.02426v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Flora Amato, Lingyu Qiu, Mohammad Tanveer, Salvatore Cuomo, Fabio Giampaolo, Francesco Piccialli</creator>
-  </item>
-  <item>
-   <title>HSplitLoRA: A Heterogeneous Split Parameter-Efficient Fine-Tuning Framework for Large Language Models</title>
-   <link>https://arxiv.org/abs/2505.02795</link>
-   <description>Recently, large language models (LLMs) have achieved remarkable breakthroughs, revolutionizing the natural language processing domain and beyond. Due to immense parameter sizes, fine-tuning these models with private data for diverse downstream tasks has become mainstream. Though federated learning (FL) offers a promising solution for fine-tuning LLMs without sharing raw data, substantial computing costs hinder its democratization. Moreover, in real-world scenarios, private client devices often possess heterogeneous computing resources, further complicating LLM fine-tuning. To combat these challenges, we propose HSplitLoRA, a heterogeneous parameter-efficient fine-tuning (PEFT) framework built on split learning (SL) and low-rank adaptation (LoRA) fine-tuning, for efficiently fine-tuning LLMs on heterogeneous client devices. HSplitLoRA first identifies important weights based on their contributions to LLM training. It then dynamically configures the decomposition ranks of LoRA adapters for selected weights and determines the model split point according to varying computing budgets of client devices. Finally, a noise-free adapter aggregation mechanism is devised to support heterogeneous adapter aggregation without introducing noise. Extensive experiments demonstrate that HSplitLoRA outperforms state-of-the-art benchmarks in training accuracy and convergence speed.</description>
-   <guid>oai:arXiv.org:2505.02795v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zheng Lin, Yuxin Zhang, Zhe Chen, Zihan Fang, Xianhao Chen, Praneeth Vepakomma, Wei Ni, Jun Luo, Yue Gao</creator>
-  </item>
-  <item>
-   <title>When Foundation Model Meets Federated Learning: Motivations, Challenges, and Future Directions</title>
-   <link>https://arxiv.org/abs/2306.15546</link>
-   <description>The intersection of Foundation Model (FM) and Federated Learning (FL) presents a unique opportunity to unlock new possibilities for real-world applications. On the one hand, FL, as a collaborative learning paradigm, help address challenges in FM development by expanding data availability, enabling computation sharing, facilitating the collaborative development of FMs, tackling continuous data update, avoiding FM monopoly, response delay and FM service down. On the other hand, FM, equipped with pre-trained knowledge and exceptional performance, can serve as a robust starting point for FL. It can also generate synthetic data to enrich data diversity and enhance overall performance of FL. Meanwhile, FM unlocks new sharing paradigm and multi-task and multi-modality capabilities for FL. By examining the interplay between FL and FM, this paper presents the motivations, challenges, and future directions of empowering FL with FM and empowering FM with FL. We hope that this work provides a good foundation to inspire future research efforts to drive advancements in both fields.</description>
-   <guid>oai:arXiv.org:2306.15546v3</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Weiming Zhuang, Chen Chen, Jingtao Li, Chaochao Chen, Yaochu Jin, Lingjuan Lyu</creator>
   </item>
   <item>
    <title>Privacy Preserving Machine Learning Model Personalization through Federated Personalized Learning</title>
@@ -526,6 +355,177 @@
    <announce_type>replace</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Sujeong Im, Jungwoo Oh, Edward Choi</creator>
+  </item>
+  <item>
+   <title>Privacy Preserving Machine Learning Model Personalization through Federated Personalized Learning</title>
+   <link>https://arxiv.org/abs/2505.01788</link>
+   <description>The widespread adoption of Artificial Intelligence (AI) has been driven by significant advances in intelligent system research. However, this progress has raised concerns about data privacy, leading to a growing awareness of the need for privacy-preserving AI. In response, there has been a seismic shift in interest towards the leading paradigm for training Machine Learning (ML) models on decentralized data silos while maintaining data privacy, Federated Learning (FL). This research paper presents a comprehensive performance analysis of a cutting-edge approach to personalize ML model while preserving privacy achieved through Privacy Preserving Machine Learning with the innovative framework of Federated Personalized Learning (PPMLFPL). Regarding the increasing concerns about data privacy, this study evaluates the effectiveness of PPMLFPL addressing the critical balance between personalized model refinement and maintaining the confidentiality of individual user data. According to our analysis, Adaptive Personalized Cross-Silo Federated Learning with Differential Privacy (APPLE+DP) offering efficient execution whereas overall, the use of the Adaptive Personalized Cross-Silo Federated Learning with Homomorphic Encryption (APPLE+HE) algorithm for privacy-preserving machine learning tasks in federated personalized learning settings is strongly suggested. The results offer valuable insights creating it a promising scope for future advancements in the field of privacy-conscious data-driven technologies.</description>
+   <guid>oai:arXiv.org:2505.01788v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Md. Tanzib Hosain, Asif Zaman, Md. Shahriar Sajid, Shadman Sakeeb Khan, Shanjida Akter</creator>
+  </item>
+  <item>
+   <title>Towards Trustworthy Federated Learning with Untrusted Participants</title>
+   <link>https://arxiv.org/abs/2505.01874</link>
+   <description>Resilience against malicious parties and data privacy are essential for trustworthy distributed learning, yet achieving both with good utility typically requires the strong assumption of a trusted central server. This paper shows that a significantly weaker assumption suffices: each pair of workers shares a randomness seed unknown to others. In a setting where malicious workers may collude with an untrusted server, we propose CafCor, an algorithm that integrates robust gradient aggregation with correlated noise injection, leveraging shared randomness between workers. We prove that CafCor achieves strong privacy-utility trade-offs, significantly outperforming local differential privacy (DP) methods, which do not make any trust assumption, while approaching central DP utility, where the server is fully trusted. Empirical results on standard benchmarks validate CafCor's practicality, showing that privacy and robustness can coexist in distributed systems without sacrificing utility or trusting the server.</description>
+   <guid>oai:arXiv.org:2505.01874v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Youssef Allouah, Rachid Guerraoui, John Stephan</creator>
+  </item>
+  <item>
+   <title>Towards One-shot Federated Learning: Advances, Challenges, and Future Directions</title>
+   <link>https://arxiv.org/abs/2505.02426</link>
+   <description>One-shot FL enables collaborative training in a single round, eliminating the need for iterative communication, making it particularly suitable for use in resource-constrained and privacy-sensitive applications. This survey offers a thorough examination of One-shot FL, highlighting its distinct operational framework compared to traditional federated approaches. One-shot FL supports resource-limited devices by enabling single-round model aggregation while maintaining data locality. The survey systematically categorizes existing methodologies, emphasizing advancements in client model initialization, aggregation techniques, and strategies for managing heterogeneous data distributions. Furthermore, we analyze the limitations of current approaches, particularly in terms of scalability and generalization in non-IID settings. By analyzing cutting-edge techniques and outlining open challenges, this survey aspires to provide a comprehensive reference for researchers and practitioners aiming to design and implement One-shot FL systems, advancing the development and adoption of One-shot FL solutions in a real-world, resource-constrained scenario.</description>
+   <guid>oai:arXiv.org:2505.02426v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Flora Amato, Lingyu Qiu, Mohammad Tanveer, Salvatore Cuomo, Fabio Giampaolo, Francesco Piccialli</creator>
+  </item>
+  <item>
+   <title>HSplitLoRA: A Heterogeneous Split Parameter-Efficient Fine-Tuning Framework for Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.02795</link>
+   <description>Recently, large language models (LLMs) have achieved remarkable breakthroughs, revolutionizing the natural language processing domain and beyond. Due to immense parameter sizes, fine-tuning these models with private data for diverse downstream tasks has become mainstream. Though federated learning (FL) offers a promising solution for fine-tuning LLMs without sharing raw data, substantial computing costs hinder its democratization. Moreover, in real-world scenarios, private client devices often possess heterogeneous computing resources, further complicating LLM fine-tuning. To combat these challenges, we propose HSplitLoRA, a heterogeneous parameter-efficient fine-tuning (PEFT) framework built on split learning (SL) and low-rank adaptation (LoRA) fine-tuning, for efficiently fine-tuning LLMs on heterogeneous client devices. HSplitLoRA first identifies important weights based on their contributions to LLM training. It then dynamically configures the decomposition ranks of LoRA adapters for selected weights and determines the model split point according to varying computing budgets of client devices. Finally, a noise-free adapter aggregation mechanism is devised to support heterogeneous adapter aggregation without introducing noise. Extensive experiments demonstrate that HSplitLoRA outperforms state-of-the-art benchmarks in training accuracy and convergence speed.</description>
+   <guid>oai:arXiv.org:2505.02795v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zheng Lin, Yuxin Zhang, Zhe Chen, Zihan Fang, Xianhao Chen, Praneeth Vepakomma, Wei Ni, Jun Luo, Yue Gao</creator>
+  </item>
+  <item>
+   <title>When Foundation Model Meets Federated Learning: Motivations, Challenges, and Future Directions</title>
+   <link>https://arxiv.org/abs/2306.15546</link>
+   <description>The intersection of Foundation Model (FM) and Federated Learning (FL) presents a unique opportunity to unlock new possibilities for real-world applications. On the one hand, FL, as a collaborative learning paradigm, help address challenges in FM development by expanding data availability, enabling computation sharing, facilitating the collaborative development of FMs, tackling continuous data update, avoiding FM monopoly, response delay and FM service down. On the other hand, FM, equipped with pre-trained knowledge and exceptional performance, can serve as a robust starting point for FL. It can also generate synthetic data to enrich data diversity and enhance overall performance of FL. Meanwhile, FM unlocks new sharing paradigm and multi-task and multi-modality capabilities for FL. By examining the interplay between FL and FM, this paper presents the motivations, challenges, and future directions of empowering FL with FM and empowering FM with FL. We hope that this work provides a good foundation to inspire future research efforts to drive advancements in both fields.</description>
+   <guid>oai:arXiv.org:2306.15546v3</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Weiming Zhuang, Chen Chen, Jingtao Li, Chaochao Chen, Yaochu Jin, Lingjuan Lyu</creator>
+  </item>
+  <item>
+   <title>Embedding based retrieval for long tail search queries in ecommerce</title>
+   <link>https://arxiv.org/abs/2505.01946</link>
+   <description>In this abstract we present a series of optimizations we performed on the two-tower model architecture [14], training and evaluation datasets to implement semantic product search at Best Buy. Search queries on bestbuy.com follow the pareto distribution whereby a minority of them account for most searches. This leaves us with a long tail of search queries that have low frequency of issuance. The queries in the long tail suffer from very spare interaction signals. Our current work focuses on building a model to serve the long tail queries. We present a series of optimizations we have done to this model to maximize conversion for the purpose of retrieval from the catalog. The first optimization we present is using a large language model to improve the sparsity of conversion signals. The second optimization is pretraining an off-the-shelf transformer-based model on the Best Buy catalog data. The third optimization we present is on the finetuning front. We use query-to-query pairs in addition to query-to-product pairs and combining the above strategies for finetuning the model. We also demonstrate how merging the weights of these finetuned models improves the evaluation metrics. Finally, we provide a recipe for curating an evaluation dataset for continuous monitoring of model performance with human-in-the-loop evaluation. We found that adding this recall mechanism to our current term match-based recall improved conversion by 3% in an online A/B test.</description>
+   <guid>oai:arXiv.org:2505.01946v1</guid>
+   <category>cs.IR</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Akshay Kekuda, Yuyang Zhang, Arun Udayashankar</creator>
+  </item>
+  <item>
+   <title>Tevatron 2.0: Unified Document Retrieval Toolkit across Scale, Language, and Modality</title>
+   <link>https://arxiv.org/abs/2505.02466</link>
+   <description>Recent advancements in large language models (LLMs) have driven interest in billion-scale retrieval models with strong generalization across retrieval tasks and languages. Additionally, progress in large vision-language models has created new opportunities for multimodal retrieval. In response, we have updated the Tevatron toolkit, introducing a unified pipeline that enables researchers to explore retriever models at different scales, across multiple languages, and with various modalities. This demo paper highlights the toolkit's key features, bridging academia and industry by supporting efficient training, inference, and evaluation of neural retrievers. We showcase a unified dense retriever achieving strong multilingual and multimodal effectiveness, and conduct a cross-modality zero-shot study to demonstrate its research potential. Alongside, we release OmniEmbed, to the best of our knowledge, the first embedding model that unifies text, image document, video, and audio retrieval, serving as a baseline for future research.</description>
+   <guid>oai:arXiv.org:2505.02466v1</guid>
+   <category>cs.IR</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Xueguang Ma, Luyu Gao, Shengyao Zhuang, Jiaqi Samantha Zhan, Jamie Callan, Jimmy Lin</creator>
+  </item>
+  <item>
+   <title>LUSIFER: Language Universal Space Integration for Enhanced Multilingual Embeddings with Large Language Models</title>
+   <link>https://arxiv.org/abs/2501.00874</link>
+   <description>Recent advancements in large language models (LLMs) based embedding models have established new state-of-the-art benchmarks for text embedding tasks, particularly in dense vector-based retrieval. However, these models predominantly focus on English, leaving multilingual embedding capabilities largely unexplored. To address this limitation, we present LUSIFER, a novel zero-shot approach that adapts LLM-based embedding models for multilingual tasks without requiring multilingual supervision. LUSIFER's architecture combines a multilingual encoder, serving as a language-universal learner, with an LLM-based embedding model optimized for embedding-specific tasks. These components are seamlessly integrated through a minimal set of trainable parameters that act as a connector, effectively transferring the multilingual encoder's language understanding capabilities to the specialized embedding model. Additionally, to comprehensively evaluate multilingual embedding performance, we introduce a new benchmark encompassing 5 primary embedding tasks, 123 diverse datasets, and coverage across 14 languages. Extensive experimental results demonstrate that LUSIFER significantly enhances the multilingual performance across various embedding tasks, particularly for medium and low-resource languages, without requiring explicit multilingual training data.</description>
+   <guid>oai:arXiv.org:2501.00874v2</guid>
+   <category>cs.CL</category>
+   <category>cs.IR</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Hieu Man, Nghia Trung Ngo, Viet Dac Lai, Ryan A. Rossi, Franck Dernoncourt, Thien Huu Nguyen</creator>
+  </item>
+  <item>
+   <title>Same evaluation, more tokens: On the effect of input length for machine translation evaluation using Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.01761</link>
+   <description>Accurately evaluating machine-translated text remains a long-standing challenge, particularly for long documents. Recent work has shown that large language models (LLMs) can serve as reliable and interpretable sentence-level translation evaluators via MQM error span annotations. With modern LLMs supporting larger context windows, a natural question arises: can we feed entire document translations into an LLM for quality assessment? Ideally, evaluation should be invariant to text length, producing consistent error spans regardless of input granularity. However, our analysis shows that text length significantly impacts evaluation: longer texts lead to fewer error spans and reduced system ranking accuracy. To address this limitation, we evaluate several strategies, including granularity-aligned prompting, Focus Sentence Prompting (FSP), and a fine-tuning approach to better align LLMs with the evaluation task. The latter two methods largely mitigate this length bias, making LLMs more reliable for long-form translation evaluation.</description>
+   <guid>oai:arXiv.org:2505.01761v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tobias Domhan, Dawei Zhu</creator>
+  </item>
+  <item>
+   <title>Incentivizing Inclusive Contributions in Model Sharing Markets</title>
+   <link>https://arxiv.org/abs/2505.02462</link>
+   <description>While data plays a crucial role in training contemporary AI models, it is acknowledged that valuable public data will be exhausted in a few years, directing the world's attention towards the massive decentralized private data. However, the privacy-sensitive nature of raw data and lack of incentive mechanism prevent these valuable data from being fully exploited. Addressing these challenges, this paper proposes inclusive and incentivized personalized federated learning (iPFL), which incentivizes data holders with diverse purposes to collaboratively train personalized models without revealing raw data. iPFL constructs a model-sharing market by solving a graph-based training optimization and incorporates an incentive mechanism based on game theory principles. Theoretical analysis shows that iPFL adheres to two key incentive properties: individual rationality and truthfulness. Empirical studies on eleven AI tasks (e.g., large language models' instruction-following tasks) demonstrate that iPFL consistently achieves the highest economic utility, and better or comparable model performance compared to baseline methods. We anticipate that our iPFL can serve as a valuable technique for boosting future AI models on decentralized private data while making everyone satisfied.</description>
+   <guid>oai:arXiv.org:2505.02462v1</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.GT</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Enpei Zhang, Jingyi Chai, Rui Ye, Yanfeng Wang, Siheng Chen</creator>
+  </item>
+  <item>
+   <title>LUSIFER: Language Universal Space Integration for Enhanced Multilingual Embeddings with Large Language Models</title>
+   <link>https://arxiv.org/abs/2501.00874</link>
+   <description>Recent advancements in large language models (LLMs) based embedding models have established new state-of-the-art benchmarks for text embedding tasks, particularly in dense vector-based retrieval. However, these models predominantly focus on English, leaving multilingual embedding capabilities largely unexplored. To address this limitation, we present LUSIFER, a novel zero-shot approach that adapts LLM-based embedding models for multilingual tasks without requiring multilingual supervision. LUSIFER's architecture combines a multilingual encoder, serving as a language-universal learner, with an LLM-based embedding model optimized for embedding-specific tasks. These components are seamlessly integrated through a minimal set of trainable parameters that act as a connector, effectively transferring the multilingual encoder's language understanding capabilities to the specialized embedding model. Additionally, to comprehensively evaluate multilingual embedding performance, we introduce a new benchmark encompassing 5 primary embedding tasks, 123 diverse datasets, and coverage across 14 languages. Extensive experimental results demonstrate that LUSIFER significantly enhances the multilingual performance across various embedding tasks, particularly for medium and low-resource languages, without requiring explicit multilingual training data.</description>
+   <guid>oai:arXiv.org:2501.00874v2</guid>
+   <category>cs.CL</category>
+   <category>cs.IR</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Hieu Man, Nghia Trung Ngo, Viet Dac Lai, Ryan A. Rossi, Franck Dernoncourt, Thien Huu Nguyen</creator>
+  </item>
+  <item>
+   <title>Mitigating Group-Level Fairness Disparities in Federated Visual Language Models</title>
+   <link>https://arxiv.org/abs/2505.01851</link>
+   <description>Visual language models (VLMs) have shown remarkable capabilities in multimodal tasks but face challenges in maintaining fairness across demographic groups, particularly when deployed in federated learning (FL) environments. This paper addresses the critical issue of group fairness in federated VLMs by introducing FVL-FP, a novel framework that combines FL with fair prompt tuning techniques. We focus on mitigating demographic biases while preserving model performance through three innovative components: (1) Cross-Layer Demographic Fair Prompting (CDFP), which adjusts potentially biased embeddings through counterfactual regularization; (2) Demographic Subspace Orthogonal Projection (DSOP), which removes demographic bias in image representations by mapping fair prompt text to group subspaces; and (3) Fair-aware Prompt Fusion (FPF), which dynamically balances client contributions based on both performance and fairness metrics. Extensive evaluations across four benchmark datasets demonstrate that our approach reduces demographic disparity by an average of 45\% compared to standard FL approaches, while maintaining task performance within 6\% of state-of-the-art results. FVL-FP effectively addresses the challenges of non-IID data distributions in federated settings and introduces minimal computational overhead while providing significant fairness benefits. Our work presents a parameter-efficient solution to the critical challenge of ensuring equitable performance across demographic groups in privacy-preserving multimodal systems.</description>
+   <guid>oai:arXiv.org:2505.01851v1</guid>
+   <category>cs.CV</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Chaomeng Chen, Zitong Yu, Junhao Dong, Sen Su, Linlin Shen, Shutao Xia, Xiaochun Cao</creator>
+  </item>
+  <item>
+   <title>Geometric Knowledge-Guided Localized Global Distribution Alignment for Federated Learning</title>
+   <link>https://arxiv.org/abs/2503.06457</link>
+   <description>Data heterogeneity in federated learning, characterized by a significant misalignment between local and global distributions, leads to divergent local optimization directions and hinders global model training. Existing studies mainly focus on optimizing local updates or global aggregation, but these indirect approaches demonstrate instability when handling highly heterogeneous data distributions, especially in scenarios where label skew and domain skew coexist. To address this, we propose a geometry-guided data generation method that centers on simulating the global embedding distribution locally. We first introduce the concept of the geometric shape of an embedding distribution and then address the challenge of obtaining global geometric shapes under privacy constraints. Subsequently, we propose GGEUR, which leverages global geometric shapes to guide the generation of new samples, enabling a closer approximation to the ideal global distribution. In single-domain scenarios, we augment samples based on global geometric shapes to enhance model generalization; in multi-domain scenarios, we further employ class prototypes to simulate the global distribution across domains. Extensive experimental results demonstrate that our method significantly enhances the performance of existing approaches in handling highly heterogeneous data, including scenarios with label skew, domain skew, and their coexistence. Code published at: https://github.com/WeiDai-David/2025CVPR_GGEUR</description>
+   <guid>oai:arXiv.org:2503.06457v2</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yanbiao Ma, Wei Dai, Wenke Huang, Jiayi Chen</creator>
+  </item>
+  <item>
+   <title>FissionVAE: Federated Non-IID Image Generation with Latent Space and Decoder Decomposition</title>
+   <link>https://arxiv.org/abs/2408.17090</link>
+   <description>Federated learning is a machine learning paradigm that enables decentralized clients to collaboratively learn a shared model while keeping all the training data local. While considerable research has focused on federated image generation, particularly Generative Adversarial Networks, Variational Autoencoders have received less attention. In this paper, we address the challenges of non-IID (independently and identically distributed) data environments featuring multiple groups of images of different types. Non-IID data distributions can lead to difficulties in maintaining a consistent latent space and can also result in local generators with disparate texture features being blended during aggregation. We thereby introduce FissionVAE that decouples the latent space and constructs decoder branches tailored to individual client groups. This method allows for customized learning that aligns with the unique data distributions of each group. Additionally, we incorporate hierarchical VAEs and demonstrate the use of heterogeneous decoder architectures within FissionVAE. We also explore strategies for setting the latent prior distributions to enhance the decoupling process. To evaluate our approach, we assemble two composite datasets: the first combines MNIST and FashionMNIST; the second comprises RGB datasets of cartoon and human faces, wild animals, marine vessels, and remote sensing images. Our experiments demonstrate that FissionVAE greatly improves generation quality on these datasets compared to baseline federated VAE models.</description>
+   <guid>oai:arXiv.org:2408.17090v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CV</category>
+   <pubdate>Tue, 06 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Chen Hu, Hanchi Ren, Jingjing Deng, Xianghua Xie, Xiaoke Ma</creator>
   </item>
   <item>
    <title>Incentivizing Inclusive Contributions in Model Sharing Markets</title>
