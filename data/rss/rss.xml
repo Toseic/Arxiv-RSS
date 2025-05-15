@@ -6,474 +6,231 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Thu, 15 May 2025 03:06:05 </lastBuildDate>
+  <lastBuildDate>Thu, 15 May 2025 04:16:43 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Thu, 15 May 2025 03:06:05 </pubDate>
+  <pubDate>Thu, 15 May 2025 04:16:43 </pubDate>
   <item>
-   <title>Benchmarking AI scientists in omics data-driven biological research</title>
-   <link>https://arxiv.org/abs/2505.08341</link>
-   <description>The rise of large language models and multi-agent systems has sparked growing interest in AI scientists capable of autonomous biological research. However, existing benchmarks either focus on reasoning without data or on data analysis with predefined statistical answers, lacking realistic, data-driven evaluation settings. Here, we introduce the Biological AI Scientist Benchmark (BaisBench), a benchmark designed to assess AI scientists' ability to generate biological discoveries through data analysis and reasoning with external knowledge. BaisBench comprises two tasks: cell type annotation on 31 expert-labeled single-cell datasets, and scientific discovery through answering 198 multiple-choice questions derived from the biological insights of 41 recent single-cell studies. Systematic experiments on state-of-the-art AI scientists and LLM agents showed that while promising, current models still substantially underperform human experts on both tasks. We hope BaisBench will fill this gap and serve as a foundation for advancing and evaluating AI models for scientific discovery. The benchmark can be found at: https://github.com/EperLuo/BaisBench.</description>
-   <guid>oai:arXiv.org:2505.08341v1</guid>
-   <category>cs.AI</category>
-   <category>cs.MA</category>
-   <category>q-bio.GN</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Erpai Luo, Jinmeng Jia, Yifan Xiong, Xiangyu Li, Xiaobo Guo, Baoqi Yu, Lei Wei, Xuegong Zhang</creator>
-  </item>
-  <item>
-   <title>AI-Based Crypto Tokens: The Illusion of Decentralized AI?</title>
-   <link>https://arxiv.org/abs/2505.07828</link>
-   <description>The convergence of blockchain and artificial intelligence (AI) has led to the emergence of AI-based tokens, which are cryptographic assets designed to power decentralized AI platforms and services. This paper provides a comprehensive review of leading AI-token projects, examining their technical architectures, token utilities, consensus mechanisms, and underlying business models. We explore how these tokens operate across various blockchain ecosystems and assess the extent to which they offer value beyond traditional centralized AI services. Based on this assessment, our analysis identifies several core limitations. From a technical perspective, many platforms depend extensively on off-chain computation, exhibit limited capabilities for on-chain intelligence, and encounter significant scalability challenges. From a business perspective, many models appear to replicate centralized AI service structures, simply adding token-based payment and governance layers without delivering truly novel value. In light of these challenges, we also examine emerging developments that may shape the next phase of decentralized AI systems. These include approaches for on-chain verification of AI outputs, blockchain-enabled federated learning, and more robust incentive frameworks. Collectively, while emerging innovations offer pathways to strengthen decentralized AI ecosystems, significant gaps remain between the promises and the realities of current AI-token implementations. Our findings contribute to a growing body of research at the intersection of AI and blockchain, highlighting the need for critical evaluation and more grounded approaches as the field continues to evolve.</description>
-   <guid>oai:arXiv.org:2505.07828v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.CR</category>
-   <category>cs.DB</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Rischan Mafrur</creator>
-  </item>
-  <item>
-   <title>Patchwork: A Unified Framework for RAG Serving</title>
-   <link>https://arxiv.org/abs/2505.07833</link>
-   <description>Retrieval Augmented Generation (RAG) has emerged as a new paradigm for enhancing Large Language Model reliability through integration with external knowledge sources. However, efficient deployment of these systems presents significant technical challenges due to their inherently heterogeneous computational pipelines comprising LLMs, databases, and specialized processing components. We introduce Patchwork, a comprehensive end-to-end RAG serving framework designed to address these efficiency bottlenecks. Patchwork's architecture offers three key innovations: First, it provides a flexible specification interface enabling users to implement custom RAG pipelines. Secondly, it deploys these pipelines as distributed inference systems while optimizing for the unique scalability characteristics of individual RAG components. Third, Patchwork incorporates an online scheduling mechanism that continuously monitors request load and execution progress, dynamically minimizing SLO violations through strategic request prioritization and resource auto-scaling. Our experimental evaluation across four distinct RAG implementations demonstrates that Patchwork delivers substantial performance improvements over commercial alternatives, achieving throughput gains exceeding 48% while simultaneously reducing SLO violations by ~24%.</description>
-   <guid>oai:arXiv.org:2505.07833v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.MA</category>
-   <category>cs.OS</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Bodun Hu, Luis Pabon, Saurabh Agarwal, Aditya Akella</creator>
-  </item>
-  <item>
-   <title>FedRS-Bench: Realistic Federated Learning Datasets and Benchmarks in Remote Sensing</title>
-   <link>https://arxiv.org/abs/2505.08325</link>
-   <description>Remote sensing (RS) images are usually produced at an unprecedented scale, yet they are geographically and institutionally distributed, making centralized model training challenging due to data-sharing restrictions and privacy concerns. Federated learning (FL) offers a solution by enabling collaborative model training across decentralized RS data sources without exposing raw data. However, there lacks a realistic federated dataset and benchmark in RS. Prior works typically rely on manually partitioned single dataset, which fail to capture the heterogeneity and scale of real-world RS data, and often use inconsistent experimental setups, hindering fair comparison. To address this gap, we propose a realistic federated RS dataset, termed FedRS. FedRS consists of eight datasets that cover various sensors and resolutions and builds 135 clients, which is representative of realistic operational scenarios. Data for each client come from the same source, exhibiting authentic federated properties such as skewed label distributions, imbalanced client data volumes, and domain heterogeneity across clients. These characteristics reflect practical challenges in federated RS and support evaluation of FL methods at scale. Based on FedRS, we implement 10 baseline FL algorithms and evaluation metrics to construct the comprehensive FedRS-Bench. The experimental results demonstrate that FL can consistently improve model performance over training on isolated data silos, while revealing performance trade-offs of different methods under varying client heterogeneity and availability conditions. We hope FedRS-Bench will accelerate research on large-scale, realistic FL in RS by providing a standardized, rich testbed and facilitating fair comparisons across future works. The source codes and dataset are available at https://fedrs-bench.github.io/.</description>
-   <guid>oai:arXiv.org:2505.08325v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Haodong Zhao, Peng Peng, Chiyu Chen, Linqing Huang, Gongshen Liu</creator>
-  </item>
-  <item>
-   <title>Open-Source LLM-Driven Federated Transformer for Predictive IoV Management</title>
-   <link>https://arxiv.org/abs/2505.00651</link>
-   <description>The proliferation of connected vehicles within the Internet of Vehicles (IoV) ecosystem presents critical challenges in ensuring scalable, real-time, and privacy-preserving traffic management. Existing centralized IoV solutions often suffer from high latency, limited scalability, and reliance on proprietary Artificial Intelligence (AI) models, creating significant barriers to widespread deployment, particularly in dynamic and privacy-sensitive environments. Meanwhile, integrating Large Language Models (LLMs) in vehicular systems remains underexplored, especially concerning prompt optimization and effective utilization in federated contexts. To address these challenges, we propose the Federated Prompt-Optimized Traffic Transformer (FPoTT), a novel framework that leverages open-source LLMs for predictive IoV management. FPoTT introduces a dynamic prompt optimization mechanism that iteratively refines textual prompts to enhance trajectory prediction. The architecture employs a dual-layer federated learning paradigm, combining lightweight edge models for real-time inference with cloud-based LLMs to retain global intelligence. A Transformer-driven synthetic data generator is incorporated to augment training with diverse, high-fidelity traffic scenarios in the Next Generation Simulation (NGSIM) format. Extensive evaluations demonstrate that FPoTT, utilizing EleutherAI Pythia-1B, achieves 99.86% prediction accuracy on real-world data while maintaining high performance on synthetic datasets. These results underscore the potential of open-source LLMs in enabling secure, adaptive, and scalable IoV management, offering a promising alternative to proprietary solutions in smart mobility ecosystems.</description>
-   <guid>oai:arXiv.org:2505.00651v2</guid>
-   <category>cs.AI</category>
-   <category>cs.ET</category>
-   <category>cs.LG</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yazan Otoum, Arghavan Asad, Ishtiaq Ahmad</creator>
-  </item>
-  <item>
-   <title>Do You Trust Your Model? Emerging Malware Threats in the Deep Learning Ecosystem</title>
-   <link>https://arxiv.org/abs/2403.03593</link>
-   <description>Training high-quality deep learning models is a challenging task due to computational and technical requirements. A growing number of individuals, institutions, and companies increasingly rely on pre-trained, third-party models made available in public repositories. These models are often used directly or integrated in product pipelines with no particular precautions, since they are effectively just data in tensor form and considered safe. In this paper, we raise awareness of a new machine learning supply chain threat targeting neural networks. We introduce MaleficNet 2.0, a novel technique to embed self-extracting, self-executing malware in neural networks. MaleficNet 2.0 uses spread-spectrum channel coding combined with error correction techniques to inject malicious payloads in the parameters of deep neural networks. MaleficNet 2.0 injection technique is stealthy, does not degrade the performance of the model, and is robust against removal techniques. We design our approach to work both in traditional and distributed learning settings such as Federated Learning, and demonstrate that it is effective even when a reduced number of bits is used for the model parameters. Finally, we implement a proof-of-concept self-extracting neural network malware using MaleficNet 2.0, demonstrating the practicality of the attack against a widely adopted machine learning framework. Our aim with this work is to raise awareness against these new, dangerous attacks both in the research community and industry, and we hope to encourage further research in mitigation techniques against such threats.</description>
-   <guid>oai:arXiv.org:2403.03593v2</guid>
+   <title>Federated Large Language Models: Feasibility, Robustness, Security and Future Directions</title>
+   <link>https://arxiv.org/abs/2505.08830</link>
+   <description>The integration of Large Language Models (LLMs) and Federated Learning (FL) presents a promising solution for joint training on distributed data while preserving privacy and addressing data silo issues. However, this emerging field, known as Federated Large Language Models (FLLM), faces significant challenges, including communication and computation overheads, heterogeneity, privacy and security concerns. Current research has primarily focused on the feasibility of FLLM, but future trends are expected to emphasize enhancing system robustness and security. This paper provides a comprehensive review of the latest advancements in FLLM, examining challenges from four critical perspectives: feasibility, robustness, security, and future directions. We present an exhaustive survey of existing studies on FLLM feasibility, introduce methods to enhance robustness in the face of resource, data, and task heterogeneity, and analyze novel risks associated with this integration, including privacy threats and security challenges. We also review the latest developments in defense mechanisms and explore promising future research directions, such as few-shot learning, machine unlearning, and IP protection. This survey highlights the pressing need for further research to enhance system robustness and security while addressing the unique challenges posed by the integration of FL and LLM.</description>
+   <guid>oai:arXiv.org:2505.08830v1</guid>
    <category>cs.CR</category>
    <category>cs.AI</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Dorjan Hitaj, Giulio Pagnotta, Fabio De Gaspari, Sediola Ruko, Briland Hitaj, Luigi V. Mancini, Fernando Perez-Cruz</creator>
-  </item>
-  <item>
-   <title>LLMs meet Federated Learning for Scalable and Secure IoT Management</title>
-   <link>https://arxiv.org/abs/2504.16032</link>
-   <description>The rapid expansion of IoT ecosystems introduces severe challenges in scalability, security, and real-time decision-making. Traditional centralized architectures struggle with latency, privacy concerns, and excessive resource consumption, making them unsuitable for modern large-scale IoT deployments. This paper presents a novel Federated Learning-driven Large Language Model (FL-LLM) framework, designed to enhance IoT system intelligence while ensuring data privacy and computational efficiency. The framework integrates Generative IoT (GIoT) models with a Gradient Sensing Federated Strategy (GSFS), dynamically optimizing model updates based on real-time network conditions. By leveraging a hybrid edge-cloud processing architecture, our approach balances intelligence, scalability, and security in distributed IoT environments. Evaluations on the IoT-23 dataset demonstrate that our framework improves model accuracy, reduces response latency, and enhances energy efficiency, outperforming traditional FL techniques (i.e., FedAvg, FedOpt). These findings highlight the potential of integrating LLM-powered federated learning into large-scale IoT ecosystems, paving the way for more secure, scalable, and adaptive IoT management solutions.</description>
-   <guid>oai:arXiv.org:2504.16032v2</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.ET</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yazan Otoum, Arghavan Asad, Amiya Nayak</creator>
+   <creator>Wenhao Jiang, Yuchuan Luo, Guilin Deng, Silong Chen, Xu Yang, Shihong Wu, Xinwen Gao, Lin Liu, Shaojing Fu</creator>
   </item>
   <item>
-   <title>Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving</title>
-   <link>https://arxiv.org/abs/2505.04021</link>
-   <description>Serving large language models (LLMs) is expensive, especially for providers hosting many models, making cost reduction essential. The unique workload patterns of serving multiple LLMs (i.e., multi-LLM serving) create new opportunities and challenges for this task. The long-tail popularity of models and their long idle periods present opportunities to improve utilization through GPU sharing. However, existing GPU sharing systems lack the ability to adjust their resource allocation and sharing policies at runtime, making them ineffective at meeting latency service-level objectives (SLOs) under rapidly fluctuating workloads.
-  This paper presents Prism, a multi-LLM serving system that unleashes the full potential of GPU sharing to achieve both cost efficiency and SLO attainment. At its core, Prism tackles a key limitation of existing systems$\unicode{x2014}$the lack of $\textit{cross-model memory coordination}$, which is essential for flexibly sharing GPU memory across models under dynamic workloads. Prism achieves this with two key designs. First, it supports on-demand memory allocation by dynamically mapping physical to virtual memory pages, allowing flexible memory redistribution among models that space- and time-share a GPU. Second, it improves memory efficiency through a two-level scheduling policy that dynamically adjusts sharing strategies based on models' runtime demands. Evaluations on real-world traces show that Prism achieves more than $2\times$ cost savings and $3.3\times$ SLO attainment compared to state-of-the-art systems.</description>
-   <guid>oai:arXiv.org:2505.04021v2</guid>
-   <category>cs.DC</category>
+   <title>Tests as Prompt: A Test-Driven-Development Benchmark for LLM Code Generation</title>
+   <link>https://arxiv.org/abs/2505.09027</link>
+   <description>We introduce WebApp1K, a novel benchmark for evaluating large language models (LLMs) in test-driven development (TDD) tasks, where test cases serve as both prompt and verification for code generation. Unlike traditional approaches relying on natural language prompts, our benchmark emphasizes the ability of LLMs to interpret and implement functionality directly from test cases, reflecting real-world software development practices. Comprising 1000 diverse challenges across 20 application domains, the benchmark evaluates LLMs on their ability to generate compact, functional code under the constraints of context length and multi-feature complexity. Our findings highlight instruction following and in-context learning as critical capabilities for TDD success, surpassing the importance of general coding proficiency or pretraining knowledge. Through comprehensive evaluation of 19 frontier models, we reveal performance bottlenecks, such as instruction loss in long prompts, and provide a detailed error analysis spanning multiple root causes. This work underscores the practical value of TDD-specific benchmarks and lays the foundation for advancing LLM capabilities in rigorous, application-driven coding scenarios.</description>
+   <guid>oai:arXiv.org:2505.09027v1</guid>
+   <category>cs.SE</category>
    <category>cs.AI</category>
-   <category>cs.LG</category>
-   <category>cs.PF</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shan Yu, Jiarong Xing, Yifan Qiao, Mingyuan Ma, Yangmin Li, Yang Wang, Shuo Yang, Zhiqiang Xie, Shiyi Cao, Ke Bao, Ion Stoica, Harry Xu, Ying Sheng</creator>
-  </item>
-  <item>
-   <title>Demo: A Practical Testbed for Decentralized Federated Learning on Physical Edge Devices</title>
-   <link>https://arxiv.org/abs/2505.08033</link>
-   <description>Federated Learning (FL) enables collaborative model training without sharing raw data, preserving participant privacy. Decentralized FL (DFL) eliminates reliance on a central server, mitigating the single point of failure inherent in the traditional FL paradigm, while introducing deployment challenges on resource-constrained devices. To evaluate real-world applicability, this work designs and deploys a physical testbed using edge devices such as Raspberry Pi and Jetson Nano. The testbed is built upon a DFL training platform, NEBULA, and extends it with a power monitoring module to measure energy consumption during training. Experiments across multiple datasets show that model performance is influenced by the communication topology, with denser topologies leading to better outcomes in DFL settings.</description>
-   <guid>oai:arXiv.org:2505.08033v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Chao Feng, Nicolas Huber, Alberto Huertas Celdran, Gerome Bovet, Burkhard Stiller</creator>
-  </item>
-  <item>
-   <title>A Federated Random Forest Solution for Secure Distributed Machine Learning</title>
-   <link>https://arxiv.org/abs/2505.08085</link>
-   <description>Privacy and regulatory barriers often hinder centralized machine learning solutions, particularly in sectors like healthcare where data cannot be freely shared. Federated learning has emerged as a powerful paradigm to address these concerns; however, existing frameworks primarily support gradient-based models, leaving a gap for more interpretable, tree-based approaches. This paper introduces a federated learning framework for Random Forest classifiers that preserves data privacy and provides robust performance in distributed settings. By leveraging PySyft for secure, privacy-aware computation, our method enables multiple institutions to collaboratively train Random Forest models on locally stored data without exposing sensitive information. The framework supports weighted model averaging to account for varying data distributions, incremental learning to progressively refine models, and local evaluation to assess performance across heterogeneous datasets. Experiments on two real-world healthcare benchmarks demonstrate that the federated approach maintains competitive predictive accuracy - within a maximum 9\% margin of centralized methods - while satisfying stringent privacy requirements. These findings underscore the viability of tree-based federated learning for scenarios where data cannot be centralized due to regulatory, competitive, or technical constraints. The proposed solution addresses a notable gap in existing federated learning libraries, offering an adaptable tool for secure distributed machine learning tasks that demand both transparency and reliable performance. The tool is available at https://github.com/ieeta-pt/fed_rf.</description>
-   <guid>oai:arXiv.org:2505.08085v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Alexandre Cotorobai, Jorge Miguel Silva, Jose Luis Oliveira</creator>
-  </item>
-  <item>
-   <title>Multi-Layer Hierarchical Federated Learning with Quantization</title>
-   <link>https://arxiv.org/abs/2505.08145</link>
-   <description>Almost all existing hierarchical federated learning (FL) models are limited to two aggregation layers, restricting scalability and flexibility in complex, large-scale networks. In this work, we propose a Multi-Layer Hierarchical Federated Learning framework (QMLHFL), which appears to be the first study that generalizes hierarchical FL to arbitrary numbers of layers and network architectures through nested aggregation, while employing a layer-specific quantization scheme to meet communication constraints. We develop a comprehensive convergence analysis for QMLHFL and derive a general convergence condition and rate that reveal the effects of key factors, including quantization parameters, hierarchical architecture, and intra-layer iteration counts. Furthermore, we determine the optimal number of intra-layer iterations to maximize the convergence rate while meeting a deadline constraint that accounts for both communication and computation times. Our results show that QMLHFL consistently achieves high learning accuracy, even under high data heterogeneity, and delivers notably improved performance when optimized, compared to using randomly selected values.</description>
-   <guid>oai:arXiv.org:2505.08145v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <category>cs.IT</category>
-   <category>cs.NI</category>
-   <category>math.IT</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
-   <creator>Seyed Mohammad Azimi-Abarghouyi, Carlo Fischione</creator>
-  </item>
-  <item>
-   <title>FedRS-Bench: Realistic Federated Learning Datasets and Benchmarks in Remote Sensing</title>
-   <link>https://arxiv.org/abs/2505.08325</link>
-   <description>Remote sensing (RS) images are usually produced at an unprecedented scale, yet they are geographically and institutionally distributed, making centralized model training challenging due to data-sharing restrictions and privacy concerns. Federated learning (FL) offers a solution by enabling collaborative model training across decentralized RS data sources without exposing raw data. However, there lacks a realistic federated dataset and benchmark in RS. Prior works typically rely on manually partitioned single dataset, which fail to capture the heterogeneity and scale of real-world RS data, and often use inconsistent experimental setups, hindering fair comparison. To address this gap, we propose a realistic federated RS dataset, termed FedRS. FedRS consists of eight datasets that cover various sensors and resolutions and builds 135 clients, which is representative of realistic operational scenarios. Data for each client come from the same source, exhibiting authentic federated properties such as skewed label distributions, imbalanced client data volumes, and domain heterogeneity across clients. These characteristics reflect practical challenges in federated RS and support evaluation of FL methods at scale. Based on FedRS, we implement 10 baseline FL algorithms and evaluation metrics to construct the comprehensive FedRS-Bench. The experimental results demonstrate that FL can consistently improve model performance over training on isolated data silos, while revealing performance trade-offs of different methods under varying client heterogeneity and availability conditions. We hope FedRS-Bench will accelerate research on large-scale, realistic FL in RS by providing a standardized, rich testbed and facilitating fair comparisons across future works. The source codes and dataset are available at https://fedrs-bench.github.io/.</description>
-   <guid>oai:arXiv.org:2505.08325v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Haodong Zhao, Peng Peng, Chiyu Chen, Linqing Huang, Gongshen Liu</creator>
-  </item>
-  <item>
-   <title>Modular Federated Learning: A Meta-Framework Perspective</title>
-   <link>https://arxiv.org/abs/2505.08646</link>
-   <description>Federated Learning (FL) enables distributed machine learning training while preserving privacy, representing a paradigm shift for data-sensitive and decentralized environments. Despite its rapid advancements, FL remains a complex and multifaceted field, requiring a structured understanding of its methodologies, challenges, and applications. In this survey, we introduce a meta-framework perspective, conceptualising FL as a composition of modular components that systematically address core aspects such as communication, optimisation, security, and privacy. We provide a historical contextualisation of FL, tracing its evolution from distributed optimisation to modern distributed learning paradigms. Additionally, we propose a novel taxonomy distinguishing Aggregation from Alignment, introducing the concept of alignment as a fundamental operator alongside aggregation. To bridge theory with practice, we explore available FL frameworks in Python, facilitating real-world implementation. Finally, we systematise key challenges across FL sub-fields, providing insights into open research questions throughout the meta-framework modules. By structuring FL within a meta-framework of modular components and emphasising the dual role of Aggregation and Alignment, this survey provides a holistic and adaptable foundation for understanding and advancing FL research and deployment.</description>
-   <guid>oai:arXiv.org:2505.08646v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Frederico Vicente, Cl\'audia Soares, Du\v{s}an Jakoveti\'c</creator>
-  </item>
-  <item>
-   <title>Sharp Gaussian approximations for Decentralized Federated Learning</title>
-   <link>https://arxiv.org/abs/2505.08125</link>
-   <description>Federated Learning has gained traction in privacy-sensitive collaborative environments, with local SGD emerging as a key optimization method in decentralized settings. While its convergence properties are well-studied, asymptotic statistical guarantees beyond convergence remain limited. In this paper, we present two generalized Gaussian approximation results for local SGD and explore their implications. First, we prove a Berry-Esseen theorem for the final local SGD iterates, enabling valid multiplier bootstrap procedures. Second, motivated by robustness considerations, we introduce two distinct time-uniform Gaussian approximations for the entire trajectory of local SGD. The time-uniform approximations support Gaussian bootstrap-based tests for detecting adversarial attacks. Extensive simulations are provided to support our theoretical results.</description>
-   <guid>oai:arXiv.org:2505.08125v1</guid>
-   <category>stat.ML</category>
-   <category>cs.LG</category>
-   <category>math.ST</category>
-   <category>stat.TH</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Soham Bonnerjee, Sayar Karmakar, Wei Biao Wu</creator>
+   <creator>Yi Cui</creator>
   </item>
   <item>
-   <title>Privacy-Preserving Analytics for Smart Meter (AMI) Data: A Hybrid Approach to Comply with CPUC Privacy Regulations</title>
-   <link>https://arxiv.org/abs/2505.08237</link>
-   <description>Advanced Metering Infrastructure (AMI) data from smart electric and gas meters enables valuable insights for utilities and consumers, but also raises significant privacy concerns. In California, regulatory decisions (CPUC D.11-07-056 and D.11-08-045) mandate strict privacy protections for customer energy usage data, guided by the Fair Information Practice Principles (FIPPs). We comprehensively explore solutions drawn from data anonymization, privacy-preserving machine learning (differential privacy and federated learning), synthetic data generation, and cryptographic techniques (secure multiparty computation, homomorphic encryption). This allows advanced analytics, including machine learning models, statistical and econometric analysis on energy consumption data, to be performed without compromising individual privacy.
-  We evaluate each technique's theoretical foundations, effectiveness, and trade-offs in the context of utility data analytics, and we propose an integrated architecture that combines these methods to meet real-world needs. The proposed hybrid architecture is designed to ensure compliance with California's privacy rules and FIPPs while enabling useful analytics, from forecasting and personalized insights to academic research and econometrics, while strictly protecting individual privacy. Mathematical definitions and derivations are provided where appropriate to demonstrate privacy guarantees and utility implications rigorously. We include comparative evaluations of the techniques, an architecture diagram, and flowcharts to illustrate how they work together in practice. The result is a blueprint for utility data scientists and engineers to implement privacy-by-design in AMI data handling, supporting both data-driven innovation and strict regulatory compliance.</description>
-   <guid>oai:arXiv.org:2505.08237v1</guid>
-   <category>cs.CR</category>
+   <title>ELIS: Efficient LLM Iterative Scheduling System with Response Length Predictor</title>
+   <link>https://arxiv.org/abs/2505.09142</link>
+   <description>We propose ELIS, a serving system for Large Language Models (LLMs) featuring an Iterative Shortest Remaining Time First (ISRTF) scheduler designed to efficiently manage inference tasks with the shortest remaining tokens. Current LLM serving systems often employ a first-come-first-served scheduling strategy, which can lead to the &quot;head-of-line blocking&quot; problem. To overcome this limitation, it is necessary to predict LLM inference times and apply a shortest job first scheduling strategy. However, due to the auto-regressive nature of LLMs, predicting the inference latency is challenging. ELIS addresses this challenge by training a response length predictor for LLMs using the BGE model, an encoder-based state-of-the-art model. Additionally, we have devised the ISRTF scheduling strategy, an optimization of shortest remaining time first tailored to existing LLM iteration batching. To evaluate our work in an industrial setting, we simulate streams of requests based on our study of real-world user LLM serving trace records. Furthermore, we implemented ELIS as a cloud-native scheduler system on Kubernetes to evaluate its performance in production environments. Our experimental results demonstrate that ISRTF reduces the average job completion time by up to 19.6%.</description>
+   <guid>oai:arXiv.org:2505.09142v1</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
    <category>cs.LG</category>
-   <category>stat.ML</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Seungbeom Choi, Jeonghoe Goo, Eunjoo Jeon, Mingyu Yang, Minsung Jang</creator>
+  </item>
+  <item>
+   <title>Toward Fair Federated Learning under Demographic Disparities and Data Imbalance</title>
+   <link>https://arxiv.org/abs/2505.09295</link>
+   <description>Ensuring fairness is critical when applying artificial intelligence to high-stakes domains such as healthcare, where predictive models trained on imbalanced and demographically skewed data risk exacerbating existing disparities. Federated learning (FL) enables privacy-preserving collaboration across institutions, but remains vulnerable to both algorithmic bias and subgroup imbalance - particularly when multiple sensitive attributes intersect. We propose FedIDA (Fed erated Learning for Imbalance and D isparity A wareness), a framework-agnostic method that combines fairness-aware regularization with group-conditional oversampling. FedIDA supports multiple sensitive attributes and heterogeneous data distributions without altering the convergence behavior of the underlying FL algorithm. We provide theoretical analysis establishing fairness improvement bounds using Lipschitz continuity and concentration inequalities, and show that FedIDA reduces the variance of fairness metrics across test sets. Empirical results on both benchmark and real-world clinical datasets confirm that FedIDA consistently improves fairness while maintaining competitive predictive performance, demonstrating its effectiveness for equitable and privacy-preserving modeling in healthcare. The source code is available on GitHub.</description>
+   <guid>oai:arXiv.org:2505.09295v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Benjamin Westrich</creator>
+   <creator>Qiming Wu, Siqi Li, Doudou Zhou, Nan Liu</creator>
   </item>
   <item>
-   <title>LLMs meet Federated Learning for Scalable and Secure IoT Management</title>
-   <link>https://arxiv.org/abs/2504.16032</link>
-   <description>The rapid expansion of IoT ecosystems introduces severe challenges in scalability, security, and real-time decision-making. Traditional centralized architectures struggle with latency, privacy concerns, and excessive resource consumption, making them unsuitable for modern large-scale IoT deployments. This paper presents a novel Federated Learning-driven Large Language Model (FL-LLM) framework, designed to enhance IoT system intelligence while ensuring data privacy and computational efficiency. The framework integrates Generative IoT (GIoT) models with a Gradient Sensing Federated Strategy (GSFS), dynamically optimizing model updates based on real-time network conditions. By leveraging a hybrid edge-cloud processing architecture, our approach balances intelligence, scalability, and security in distributed IoT environments. Evaluations on the IoT-23 dataset demonstrate that our framework improves model accuracy, reduces response latency, and enhances energy efficiency, outperforming traditional FL techniques (i.e., FedAvg, FedOpt). These findings highlight the potential of integrating LLM-powered federated learning into large-scale IoT ecosystems, paving the way for more secure, scalable, and adaptive IoT management solutions.</description>
-   <guid>oai:arXiv.org:2504.16032v2</guid>
-   <category>cs.LG</category>
+   <title>Steerable Chatbots: Personalizing LLMs with Preference-Based Activation Steering</title>
+   <link>https://arxiv.org/abs/2505.04260</link>
+   <description>As large language models (LLMs) improve in their capacity to serve as personal AI assistants, their ability to output uniquely tailored, personalized responses that align with the soft preferences of their users is essential for enhancing user satisfaction and retention. However, untrained lay users have poor prompt specification abilities and often struggle with conveying their latent preferences to AI assistants. To address this, we leverage activation steering to guide LLMs to align with interpretable preference dimensions during inference. In contrast to memory-based personalization methods that require longer user history, steering is extremely lightweight and can be easily controlled by the user via an linear strength factor. We embed steering into three different interactive chatbot interfaces and conduct a within-subjects user study (n=14) to investigate how end users prefer to personalize their conversations. The results demonstrate the effectiveness of preference-based steering for aligning real-world conversations with hidden user preferences, and highlight further insights on how diverse values around control, usability, and transparency lead users to prefer different interfaces.</description>
+   <guid>oai:arXiv.org:2505.04260v2</guid>
+   <category>cs.HC</category>
    <category>cs.AI</category>
-   <category>cs.ET</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yazan Otoum, Arghavan Asad, Amiya Nayak</creator>
-  </item>
-  <item>
-   <title>A Generalized Meta Federated Learning Framework with Theoretical Convergence Guarantees</title>
-   <link>https://arxiv.org/abs/2504.21327</link>
-   <description>Meta federated learning (FL) is a personalized variant of FL, where multiple agents collaborate on training an initial shared model without exchanging raw data samples. The initial model should be trained in a way that current or new agents can easily adapt it to their local datasets after one or a few fine-tuning steps, thus improving the model personalization. Conventional meta FL approaches minimize the average loss of agents on the local models obtained after one step of fine-tuning. In practice, agents may need to apply several fine-tuning steps to adapt the global model to their local data, especially under highly heterogeneous data distributions across agents. To this end, we present a generalized framework for the meta FL by minimizing the average loss of agents on their local model after any arbitrary number $\nu$ of fine-tuning steps. For this generalized framework, we present a variant of the well-known federated averaging (FedAvg) algorithm and conduct a comprehensive theoretical convergence analysis to characterize the convergence speed as well as behavior of the meta loss functions in both the exact and approximated cases. Our experiments on real-world datasets demonstrate superior accuracy and faster convergence for the proposed scheme compared to conventional approaches.</description>
-   <guid>oai:arXiv.org:2504.21327v2</guid>
-   <category>cs.LG</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Mohammad Vahid Jamali, Hamid Saber, Jung Hyun Bae</creator>
-  </item>
-  <item>
-   <title>Open-Source LLM-Driven Federated Transformer for Predictive IoV Management</title>
-   <link>https://arxiv.org/abs/2505.00651</link>
-   <description>The proliferation of connected vehicles within the Internet of Vehicles (IoV) ecosystem presents critical challenges in ensuring scalable, real-time, and privacy-preserving traffic management. Existing centralized IoV solutions often suffer from high latency, limited scalability, and reliance on proprietary Artificial Intelligence (AI) models, creating significant barriers to widespread deployment, particularly in dynamic and privacy-sensitive environments. Meanwhile, integrating Large Language Models (LLMs) in vehicular systems remains underexplored, especially concerning prompt optimization and effective utilization in federated contexts. To address these challenges, we propose the Federated Prompt-Optimized Traffic Transformer (FPoTT), a novel framework that leverages open-source LLMs for predictive IoV management. FPoTT introduces a dynamic prompt optimization mechanism that iteratively refines textual prompts to enhance trajectory prediction. The architecture employs a dual-layer federated learning paradigm, combining lightweight edge models for real-time inference with cloud-based LLMs to retain global intelligence. A Transformer-driven synthetic data generator is incorporated to augment training with diverse, high-fidelity traffic scenarios in the Next Generation Simulation (NGSIM) format. Extensive evaluations demonstrate that FPoTT, utilizing EleutherAI Pythia-1B, achieves 99.86% prediction accuracy on real-world data while maintaining high performance on synthetic datasets. These results underscore the potential of open-source LLMs in enabling secure, adaptive, and scalable IoV management, offering a promising alternative to proprietary solutions in smart mobility ecosystems.</description>
-   <guid>oai:arXiv.org:2505.00651v2</guid>
-   <category>cs.AI</category>
-   <category>cs.ET</category>
-   <category>cs.LG</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yazan Otoum, Arghavan Asad, Ishtiaq Ahmad</creator>
-  </item>
-  <item>
-   <title>Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving</title>
-   <link>https://arxiv.org/abs/2505.04021</link>
-   <description>Serving large language models (LLMs) is expensive, especially for providers hosting many models, making cost reduction essential. The unique workload patterns of serving multiple LLMs (i.e., multi-LLM serving) create new opportunities and challenges for this task. The long-tail popularity of models and their long idle periods present opportunities to improve utilization through GPU sharing. However, existing GPU sharing systems lack the ability to adjust their resource allocation and sharing policies at runtime, making them ineffective at meeting latency service-level objectives (SLOs) under rapidly fluctuating workloads.
-  This paper presents Prism, a multi-LLM serving system that unleashes the full potential of GPU sharing to achieve both cost efficiency and SLO attainment. At its core, Prism tackles a key limitation of existing systems$\unicode{x2014}$the lack of $\textit{cross-model memory coordination}$, which is essential for flexibly sharing GPU memory across models under dynamic workloads. Prism achieves this with two key designs. First, it supports on-demand memory allocation by dynamically mapping physical to virtual memory pages, allowing flexible memory redistribution among models that space- and time-share a GPU. Second, it improves memory efficiency through a two-level scheduling policy that dynamically adjusts sharing strategies based on models' runtime demands. Evaluations on real-world traces show that Prism achieves more than $2\times$ cost savings and $3.3\times$ SLO attainment compared to state-of-the-art systems.</description>
-   <guid>oai:arXiv.org:2505.04021v2</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.LG</category>
-   <category>cs.PF</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shan Yu, Jiarong Xing, Yifan Qiao, Mingyuan Ma, Yangmin Li, Yang Wang, Shuo Yang, Zhiqiang Xie, Shiyi Cao, Ke Bao, Ion Stoica, Harry Xu, Ying Sheng</creator>
+   <creator>Jessica Y. Bo, Tianyu Xu, Ishan Chatterjee, Katrina Passarella-Ward, Achin Kulshrestha, D Shin</creator>
   </item>
   <item>
-   <title>Patchwork: A Unified Framework for RAG Serving</title>
-   <link>https://arxiv.org/abs/2505.07833</link>
-   <description>Retrieval Augmented Generation (RAG) has emerged as a new paradigm for enhancing Large Language Model reliability through integration with external knowledge sources. However, efficient deployment of these systems presents significant technical challenges due to their inherently heterogeneous computational pipelines comprising LLMs, databases, and specialized processing components. We introduce Patchwork, a comprehensive end-to-end RAG serving framework designed to address these efficiency bottlenecks. Patchwork's architecture offers three key innovations: First, it provides a flexible specification interface enabling users to implement custom RAG pipelines. Secondly, it deploys these pipelines as distributed inference systems while optimizing for the unique scalability characteristics of individual RAG components. Third, Patchwork incorporates an online scheduling mechanism that continuously monitors request load and execution progress, dynamically minimizing SLO violations through strategic request prioritization and resource auto-scaling. Our experimental evaluation across four distinct RAG implementations demonstrates that Patchwork delivers substantial performance improvements over commercial alternatives, achieving throughput gains exceeding 48% while simultaneously reducing SLO violations by ~24%.</description>
-   <guid>oai:arXiv.org:2505.07833v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.MA</category>
-   <category>cs.OS</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Bodun Hu, Luis Pabon, Saurabh Agarwal, Aditya Akella</creator>
-  </item>
-  <item>
-   <title>LLMs meet Federated Learning for Scalable and Secure IoT Management</title>
-   <link>https://arxiv.org/abs/2504.16032</link>
-   <description>The rapid expansion of IoT ecosystems introduces severe challenges in scalability, security, and real-time decision-making. Traditional centralized architectures struggle with latency, privacy concerns, and excessive resource consumption, making them unsuitable for modern large-scale IoT deployments. This paper presents a novel Federated Learning-driven Large Language Model (FL-LLM) framework, designed to enhance IoT system intelligence while ensuring data privacy and computational efficiency. The framework integrates Generative IoT (GIoT) models with a Gradient Sensing Federated Strategy (GSFS), dynamically optimizing model updates based on real-time network conditions. By leveraging a hybrid edge-cloud processing architecture, our approach balances intelligence, scalability, and security in distributed IoT environments. Evaluations on the IoT-23 dataset demonstrate that our framework improves model accuracy, reduces response latency, and enhances energy efficiency, outperforming traditional FL techniques (i.e., FedAvg, FedOpt). These findings highlight the potential of integrating LLM-powered federated learning into large-scale IoT ecosystems, paving the way for more secure, scalable, and adaptive IoT management solutions.</description>
-   <guid>oai:arXiv.org:2504.16032v2</guid>
+   <title>Ranking-Based At-Risk Student Prediction Using Federated Learning and Differential Features</title>
+   <link>https://arxiv.org/abs/2505.09287</link>
+   <description>Digital textbooks are widely used in various educational contexts, such as university courses and online lectures. Such textbooks yield learning log data that have been used in numerous educational data mining (EDM) studies for student behavior analysis and performance prediction. However, these studies have faced challenges in integrating confidential data, such as academic records and learning logs, across schools due to privacy concerns. Consequently, analyses are often conducted with data limited to a single school, which makes developing high-performing and generalizable models difficult. This study proposes a method that combines federated learning and differential features to address these issues. Federated learning enables model training without centralizing data, thereby preserving student privacy. Differential features, which utilize relative values instead of absolute values, enhance model performance and generalizability. To evaluate the proposed method, a model for predicting at-risk students was trained using data from 1,136 students across 12 courses conducted over 4 years, and validated on hold-out test data from 5 other courses. Experimental results demonstrated that the proposed method addresses privacy concerns while achieving performance comparable to that of models trained via centralized learning in terms of Top-n precision, nDCG, and PR-AUC. Furthermore, using differential features improved prediction performance across all evaluation datasets compared to non-differential approaches. The trained models were also applicable for early prediction, achieving high performance in detecting at-risk students in earlier stages of the semester within the validation datasets.</description>
+   <guid>oai:arXiv.org:2505.09287v1</guid>
    <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.ET</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yazan Otoum, Arghavan Asad, Amiya Nayak</creator>
-  </item>
-  <item>
-   <title>Open-Source LLM-Driven Federated Transformer for Predictive IoV Management</title>
-   <link>https://arxiv.org/abs/2505.00651</link>
-   <description>The proliferation of connected vehicles within the Internet of Vehicles (IoV) ecosystem presents critical challenges in ensuring scalable, real-time, and privacy-preserving traffic management. Existing centralized IoV solutions often suffer from high latency, limited scalability, and reliance on proprietary Artificial Intelligence (AI) models, creating significant barriers to widespread deployment, particularly in dynamic and privacy-sensitive environments. Meanwhile, integrating Large Language Models (LLMs) in vehicular systems remains underexplored, especially concerning prompt optimization and effective utilization in federated contexts. To address these challenges, we propose the Federated Prompt-Optimized Traffic Transformer (FPoTT), a novel framework that leverages open-source LLMs for predictive IoV management. FPoTT introduces a dynamic prompt optimization mechanism that iteratively refines textual prompts to enhance trajectory prediction. The architecture employs a dual-layer federated learning paradigm, combining lightweight edge models for real-time inference with cloud-based LLMs to retain global intelligence. A Transformer-driven synthetic data generator is incorporated to augment training with diverse, high-fidelity traffic scenarios in the Next Generation Simulation (NGSIM) format. Extensive evaluations demonstrate that FPoTT, utilizing EleutherAI Pythia-1B, achieves 99.86% prediction accuracy on real-world data while maintaining high performance on synthetic datasets. These results underscore the potential of open-source LLMs in enabling secure, adaptive, and scalable IoV management, offering a promising alternative to proprietary solutions in smart mobility ecosystems.</description>
-   <guid>oai:arXiv.org:2505.00651v2</guid>
-   <category>cs.AI</category>
-   <category>cs.ET</category>
-   <category>cs.LG</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yazan Otoum, Arghavan Asad, Ishtiaq Ahmad</creator>
-  </item>
-  <item>
-   <title>Multi-Layer Hierarchical Federated Learning with Quantization</title>
-   <link>https://arxiv.org/abs/2505.08145</link>
-   <description>Almost all existing hierarchical federated learning (FL) models are limited to two aggregation layers, restricting scalability and flexibility in complex, large-scale networks. In this work, we propose a Multi-Layer Hierarchical Federated Learning framework (QMLHFL), which appears to be the first study that generalizes hierarchical FL to arbitrary numbers of layers and network architectures through nested aggregation, while employing a layer-specific quantization scheme to meet communication constraints. We develop a comprehensive convergence analysis for QMLHFL and derive a general convergence condition and rate that reveal the effects of key factors, including quantization parameters, hierarchical architecture, and intra-layer iteration counts. Furthermore, we determine the optimal number of intra-layer iterations to maximize the convergence rate while meeting a deadline constraint that accounts for both communication and computation times. Our results show that QMLHFL consistently achieves high learning accuracy, even under high data heterogeneity, and delivers notably improved performance when optimized, compared to using randomly selected values.</description>
-   <guid>oai:arXiv.org:2505.08145v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <category>cs.IT</category>
-   <category>cs.NI</category>
-   <category>math.IT</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
-   <creator>Seyed Mohammad Azimi-Abarghouyi, Carlo Fischione</creator>
-  </item>
-  <item>
-   <title>Ask, Fail, Repeat: Meeseeks, an Iterative Feedback Benchmark for LLMs' Multi-turn Instruction-following Ability</title>
-   <link>https://arxiv.org/abs/2504.21625</link>
-   <description>The ability to follow instructions accurately is fundamental for Large Language Models (LLMs) to serve as reliable agents in real-world applications. For complex instructions, LLMs often struggle to fulfill all requirements in a single attempt. In practice, users typically provide iterative feedback until the LLM generates a response that meets all requirements. However, existing instruction-following benchmarks are either single-turn or introduce new requirements in each turn without allowing self-correction. To address this gap, we propose \textbf{Meeseeks} (named after Mr. Meeseeks from \textit{Rick and Morty}\footnote{Rick and Morty is an American adult animated science fiction sitcom created by Justin Roiland and Dan Harmon for Cartoon Network's nighttime programming block Adult Swim.}.) Meeseeks simulates realistic human-LLM interactions through an iterative feedback framework, which enables models to self-correct based on specific requirement failures in each turn, better reflecting real-world user-end usage patterns. Meanwhile, the benchmark implements a comprehensive evaluation system with 38 capability tags organized across three dimensions: Intent Recognition, Granular Content Validation, and Output Structure Validation. Through rigorous evaluation across LLMs, Meeseeks provides valuable insights into LLMs' instruction-following capabilities in multi-turn scenarios.</description>
-   <guid>oai:arXiv.org:2504.21625v2</guid>
-   <category>cs.CL</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jiaming Wang, Yunke Zhao, Peng Ding, Jun Kuang, Zongyu Wang, Xuezhi Cao, Xunliang Cai</creator>
-  </item>
-  <item>
-   <title>Patchwork: A Unified Framework for RAG Serving</title>
-   <link>https://arxiv.org/abs/2505.07833</link>
-   <description>Retrieval Augmented Generation (RAG) has emerged as a new paradigm for enhancing Large Language Model reliability through integration with external knowledge sources. However, efficient deployment of these systems presents significant technical challenges due to their inherently heterogeneous computational pipelines comprising LLMs, databases, and specialized processing components. We introduce Patchwork, a comprehensive end-to-end RAG serving framework designed to address these efficiency bottlenecks. Patchwork's architecture offers three key innovations: First, it provides a flexible specification interface enabling users to implement custom RAG pipelines. Secondly, it deploys these pipelines as distributed inference systems while optimizing for the unique scalability characteristics of individual RAG components. Third, Patchwork incorporates an online scheduling mechanism that continuously monitors request load and execution progress, dynamically minimizing SLO violations through strategic request prioritization and resource auto-scaling. Our experimental evaluation across four distinct RAG implementations demonstrates that Patchwork delivers substantial performance improvements over commercial alternatives, achieving throughput gains exceeding 48% while simultaneously reducing SLO violations by ~24%.</description>
-   <guid>oai:arXiv.org:2505.07833v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.MA</category>
-   <category>cs.OS</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Bodun Hu, Luis Pabon, Saurabh Agarwal, Aditya Akella</creator>
-  </item>
-  <item>
-   <title>Benchmarking AI scientists in omics data-driven biological research</title>
-   <link>https://arxiv.org/abs/2505.08341</link>
-   <description>The rise of large language models and multi-agent systems has sparked growing interest in AI scientists capable of autonomous biological research. However, existing benchmarks either focus on reasoning without data or on data analysis with predefined statistical answers, lacking realistic, data-driven evaluation settings. Here, we introduce the Biological AI Scientist Benchmark (BaisBench), a benchmark designed to assess AI scientists' ability to generate biological discoveries through data analysis and reasoning with external knowledge. BaisBench comprises two tasks: cell type annotation on 31 expert-labeled single-cell datasets, and scientific discovery through answering 198 multiple-choice questions derived from the biological insights of 41 recent single-cell studies. Systematic experiments on state-of-the-art AI scientists and LLM agents showed that while promising, current models still substantially underperform human experts on both tasks. We hope BaisBench will fill this gap and serve as a foundation for advancing and evaluating AI models for scientific discovery. The benchmark can be found at: https://github.com/EperLuo/BaisBench.</description>
-   <guid>oai:arXiv.org:2505.08341v1</guid>
-   <category>cs.AI</category>
-   <category>cs.MA</category>
-   <category>q-bio.GN</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Erpai Luo, Jinmeng Jia, Yifan Xiong, Xiangyu Li, Xiaobo Guo, Baoqi Yu, Lei Wei, Xuegong Zhang</creator>
-  </item>
-  <item>
-   <title>Revenue Optimization in Video Caching Networks with Privacy-Preserving Demand Predictions</title>
-   <link>https://arxiv.org/abs/2505.07872</link>
-   <description>Performance of video streaming, which accounts for most of the traffic in wireless communication, can be significantly improved by caching popular videos at the wireless edge. Determining the cache content that optimizes performance (defined via a revenue function) is thus an important task, and prediction of the future demands based on past history can make this process much more efficient. However, since practical video caching networks involve various parties (e.g., users, isp, and csp) that do not wish to reveal information such as past history to each other, privacy-preserving solutions are required. Motivated by this, we propose a proactive caching method based on users' privacy-preserving multi-slot future demand predictions -- obtained from a trained Transformer -- to optimize revenue. Specifically, we first use a privacy-preserving fl algorithm to train a Transformer to predict multi-slot future demands of the users. However, prediction accuracy is not perfect and decreases the farther into the future the prediction is done. We model the impact of prediction errors invoking the file popularities, based on which we formulate a long-term system revenue optimization to make the cache placement decisions. As the formulated problem is NP-hard, we use a greedy algorithm to efficiently obtain an approximate solution. Simulation results validate that (i) the fl solution achieves results close to the centralized (non-privacy-preserving) solution and (ii) optimization of revenue may provide different solutions than the classical chr criterion.</description>
-   <guid>oai:arXiv.org:2505.07872v1</guid>
-   <category>cs.NI</category>
-   <category>eess.SP</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yijing Zhang, Ferdous Pervej, Andreas F. Molisch</creator>
-  </item>
-  <item>
-   <title>Multi-Layer Hierarchical Federated Learning with Quantization</title>
-   <link>https://arxiv.org/abs/2505.08145</link>
-   <description>Almost all existing hierarchical federated learning (FL) models are limited to two aggregation layers, restricting scalability and flexibility in complex, large-scale networks. In this work, we propose a Multi-Layer Hierarchical Federated Learning framework (QMLHFL), which appears to be the first study that generalizes hierarchical FL to arbitrary numbers of layers and network architectures through nested aggregation, while employing a layer-specific quantization scheme to meet communication constraints. We develop a comprehensive convergence analysis for QMLHFL and derive a general convergence condition and rate that reveal the effects of key factors, including quantization parameters, hierarchical architecture, and intra-layer iteration counts. Furthermore, we determine the optimal number of intra-layer iterations to maximize the convergence rate while meeting a deadline constraint that accounts for both communication and computation times. Our results show that QMLHFL consistently achieves high learning accuracy, even under high data heterogeneity, and delivers notably improved performance when optimized, compared to using randomly selected values.</description>
-   <guid>oai:arXiv.org:2505.08145v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <category>cs.IT</category>
-   <category>cs.NI</category>
-   <category>math.IT</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
-   <creator>Seyed Mohammad Azimi-Abarghouyi, Carlo Fischione</creator>
-  </item>
-  <item>
-   <title>Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving</title>
-   <link>https://arxiv.org/abs/2505.04021</link>
-   <description>Serving large language models (LLMs) is expensive, especially for providers hosting many models, making cost reduction essential. The unique workload patterns of serving multiple LLMs (i.e., multi-LLM serving) create new opportunities and challenges for this task. The long-tail popularity of models and their long idle periods present opportunities to improve utilization through GPU sharing. However, existing GPU sharing systems lack the ability to adjust their resource allocation and sharing policies at runtime, making them ineffective at meeting latency service-level objectives (SLOs) under rapidly fluctuating workloads.
-  This paper presents Prism, a multi-LLM serving system that unleashes the full potential of GPU sharing to achieve both cost efficiency and SLO attainment. At its core, Prism tackles a key limitation of existing systems$\unicode{x2014}$the lack of $\textit{cross-model memory coordination}$, which is essential for flexibly sharing GPU memory across models under dynamic workloads. Prism achieves this with two key designs. First, it supports on-demand memory allocation by dynamically mapping physical to virtual memory pages, allowing flexible memory redistribution among models that space- and time-share a GPU. Second, it improves memory efficiency through a two-level scheduling policy that dynamically adjusts sharing strategies based on models' runtime demands. Evaluations on real-world traces show that Prism achieves more than $2\times$ cost savings and $3.3\times$ SLO attainment compared to state-of-the-art systems.</description>
-   <guid>oai:arXiv.org:2505.04021v2</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.LG</category>
-   <category>cs.PF</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shan Yu, Jiarong Xing, Yifan Qiao, Mingyuan Ma, Yangmin Li, Yang Wang, Shuo Yang, Zhiqiang Xie, Shiyi Cao, Ke Bao, Ion Stoica, Harry Xu, Ying Sheng</creator>
-  </item>
-  <item>
-   <title>AI-Based Crypto Tokens: The Illusion of Decentralized AI?</title>
-   <link>https://arxiv.org/abs/2505.07828</link>
-   <description>The convergence of blockchain and artificial intelligence (AI) has led to the emergence of AI-based tokens, which are cryptographic assets designed to power decentralized AI platforms and services. This paper provides a comprehensive review of leading AI-token projects, examining their technical architectures, token utilities, consensus mechanisms, and underlying business models. We explore how these tokens operate across various blockchain ecosystems and assess the extent to which they offer value beyond traditional centralized AI services. Based on this assessment, our analysis identifies several core limitations. From a technical perspective, many platforms depend extensively on off-chain computation, exhibit limited capabilities for on-chain intelligence, and encounter significant scalability challenges. From a business perspective, many models appear to replicate centralized AI service structures, simply adding token-based payment and governance layers without delivering truly novel value. In light of these challenges, we also examine emerging developments that may shape the next phase of decentralized AI systems. These include approaches for on-chain verification of AI outputs, blockchain-enabled federated learning, and more robust incentive frameworks. Collectively, while emerging innovations offer pathways to strengthen decentralized AI ecosystems, significant gaps remain between the promises and the realities of current AI-token implementations. Our findings contribute to a growing body of research at the intersection of AI and blockchain, highlighting the need for critical evaluation and more grounded approaches as the field continues to evolve.</description>
-   <guid>oai:arXiv.org:2505.07828v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.CR</category>
-   <category>cs.DB</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Rischan Mafrur</creator>
-  </item>
-  <item>
-   <title>AI-Based Crypto Tokens: The Illusion of Decentralized AI?</title>
-   <link>https://arxiv.org/abs/2505.07828</link>
-   <description>The convergence of blockchain and artificial intelligence (AI) has led to the emergence of AI-based tokens, which are cryptographic assets designed to power decentralized AI platforms and services. This paper provides a comprehensive review of leading AI-token projects, examining their technical architectures, token utilities, consensus mechanisms, and underlying business models. We explore how these tokens operate across various blockchain ecosystems and assess the extent to which they offer value beyond traditional centralized AI services. Based on this assessment, our analysis identifies several core limitations. From a technical perspective, many platforms depend extensively on off-chain computation, exhibit limited capabilities for on-chain intelligence, and encounter significant scalability challenges. From a business perspective, many models appear to replicate centralized AI service structures, simply adding token-based payment and governance layers without delivering truly novel value. In light of these challenges, we also examine emerging developments that may shape the next phase of decentralized AI systems. These include approaches for on-chain verification of AI outputs, blockchain-enabled federated learning, and more robust incentive frameworks. Collectively, while emerging innovations offer pathways to strengthen decentralized AI ecosystems, significant gaps remain between the promises and the realities of current AI-token implementations. Our findings contribute to a growing body of research at the intersection of AI and blockchain, highlighting the need for critical evaluation and more grounded approaches as the field continues to evolve.</description>
-   <guid>oai:arXiv.org:2505.07828v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.CR</category>
-   <category>cs.DB</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
+   <category>cs.CY</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Rischan Mafrur</creator>
+   <creator>Shunsuke Yoneda, Valdemar \v{S}v\'abensk\'y, Gen Li, Daisuke Deguchi, Atsushi Shimada</creator>
   </item>
   <item>
-   <title>Patchwork: A Unified Framework for RAG Serving</title>
-   <link>https://arxiv.org/abs/2505.07833</link>
-   <description>Retrieval Augmented Generation (RAG) has emerged as a new paradigm for enhancing Large Language Model reliability through integration with external knowledge sources. However, efficient deployment of these systems presents significant technical challenges due to their inherently heterogeneous computational pipelines comprising LLMs, databases, and specialized processing components. We introduce Patchwork, a comprehensive end-to-end RAG serving framework designed to address these efficiency bottlenecks. Patchwork's architecture offers three key innovations: First, it provides a flexible specification interface enabling users to implement custom RAG pipelines. Secondly, it deploys these pipelines as distributed inference systems while optimizing for the unique scalability characteristics of individual RAG components. Third, Patchwork incorporates an online scheduling mechanism that continuously monitors request load and execution progress, dynamically minimizing SLO violations through strategic request prioritization and resource auto-scaling. Our experimental evaluation across four distinct RAG implementations demonstrates that Patchwork delivers substantial performance improvements over commercial alternatives, achieving throughput gains exceeding 48% while simultaneously reducing SLO violations by ~24%.</description>
-   <guid>oai:arXiv.org:2505.07833v1</guid>
+   <title>Toward Malicious Clients Detection in Federated Learning</title>
+   <link>https://arxiv.org/abs/2505.09110</link>
+   <description>Federated learning (FL) enables multiple clients to collaboratively train a global machine learning model without sharing their raw data. However, the decentralized nature of FL introduces vulnerabilities, particularly to poisoning attacks, where malicious clients manipulate their local models to disrupt the training process. While Byzantine-robust aggregation rules have been developed to mitigate such attacks, they remain inadequate against more advanced threats. In response, recent advancements have focused on FL detection techniques to identify potentially malicious participants. Unfortunately, these methods often misclassify numerous benign clients as threats or rely on unrealistic assumptions about the server's capabilities. In this paper, we propose a novel algorithm, SafeFL, specifically designed to accurately identify malicious clients in FL. The SafeFL approach involves the server collecting a series of global models to generate a synthetic dataset, which is then used to distinguish between malicious and benign models based on their behavior. Extensive testing demonstrates that SafeFL outperforms existing methods, offering superior efficiency and accuracy in detecting malicious clients.</description>
+   <guid>oai:arXiv.org:2505.09110v1</guid>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zhihao Dou, Jiaqi Wang, Wei Sun, Zhuqing Liu, Minghong Fang</creator>
+  </item>
+  <item>
+   <title>ELIS: Efficient LLM Iterative Scheduling System with Response Length Predictor</title>
+   <link>https://arxiv.org/abs/2505.09142</link>
+   <description>We propose ELIS, a serving system for Large Language Models (LLMs) featuring an Iterative Shortest Remaining Time First (ISRTF) scheduler designed to efficiently manage inference tasks with the shortest remaining tokens. Current LLM serving systems often employ a first-come-first-served scheduling strategy, which can lead to the &quot;head-of-line blocking&quot; problem. To overcome this limitation, it is necessary to predict LLM inference times and apply a shortest job first scheduling strategy. However, due to the auto-regressive nature of LLMs, predicting the inference latency is challenging. ELIS addresses this challenge by training a response length predictor for LLMs using the BGE model, an encoder-based state-of-the-art model. Additionally, we have devised the ISRTF scheduling strategy, an optimization of shortest remaining time first tailored to existing LLM iteration batching. To evaluate our work in an industrial setting, we simulate streams of requests based on our study of real-world user LLM serving trace records. Furthermore, we implemented ELIS as a cloud-native scheduler system on Kubernetes to evaluate its performance in production environments. Our experimental results demonstrate that ISRTF reduces the average job completion time by up to 19.6%.</description>
+   <guid>oai:arXiv.org:2505.09142v1</guid>
    <category>cs.DC</category>
    <category>cs.AI</category>
-   <category>cs.MA</category>
-   <category>cs.OS</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
+   <category>cs.LG</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Seungbeom Choi, Jeonghoe Goo, Eunjoo Jeon, Mingyu Yang, Minsung Jang</creator>
+  </item>
+  <item>
+   <title>Toward Fair Federated Learning under Demographic Disparities and Data Imbalance</title>
+   <link>https://arxiv.org/abs/2505.09295</link>
+   <description>Ensuring fairness is critical when applying artificial intelligence to high-stakes domains such as healthcare, where predictive models trained on imbalanced and demographically skewed data risk exacerbating existing disparities. Federated learning (FL) enables privacy-preserving collaboration across institutions, but remains vulnerable to both algorithmic bias and subgroup imbalance - particularly when multiple sensitive attributes intersect. We propose FedIDA (Fed erated Learning for Imbalance and D isparity A wareness), a framework-agnostic method that combines fairness-aware regularization with group-conditional oversampling. FedIDA supports multiple sensitive attributes and heterogeneous data distributions without altering the convergence behavior of the underlying FL algorithm. We provide theoretical analysis establishing fairness improvement bounds using Lipschitz continuity and concentration inequalities, and show that FedIDA reduces the variance of fairness metrics across test sets. Empirical results on both benchmark and real-world clinical datasets confirm that FedIDA consistently improves fairness while maintaining competitive predictive performance, demonstrating its effectiveness for equitable and privacy-preserving modeling in healthcare. The source code is available on GitHub.</description>
+   <guid>oai:arXiv.org:2505.09295v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Bodun Hu, Luis Pabon, Saurabh Agarwal, Aditya Akella</creator>
+   <creator>Qiming Wu, Siqi Li, Doudou Zhou, Nan Liu</creator>
   </item>
   <item>
-   <title>Demo: A Practical Testbed for Decentralized Federated Learning on Physical Edge Devices</title>
-   <link>https://arxiv.org/abs/2505.08033</link>
-   <description>Federated Learning (FL) enables collaborative model training without sharing raw data, preserving participant privacy. Decentralized FL (DFL) eliminates reliance on a central server, mitigating the single point of failure inherent in the traditional FL paradigm, while introducing deployment challenges on resource-constrained devices. To evaluate real-world applicability, this work designs and deploys a physical testbed using edge devices such as Raspberry Pi and Jetson Nano. The testbed is built upon a DFL training platform, NEBULA, and extends it with a power monitoring module to measure energy consumption during training. Experiments across multiple datasets show that model performance is influenced by the communication topology, with denser topologies leading to better outcomes in DFL settings.</description>
-   <guid>oai:arXiv.org:2505.08033v1</guid>
+   <title>Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization</title>
+   <link>https://arxiv.org/abs/2503.18599</link>
+   <description>Modern Large Language Model serving system batches multiple requests to achieve high throughput, while batching attention operations is challenging, rendering memory bandwidth a critical bottleneck. The community relies on high-end GPUs with multiple high-bandwidth memory channels. Unfortunately, HBM's high bandwidth often comes at the expense of limited memory capacity, which reduces core utilization and increases costs. Recent advancements enabling longer contexts for LLMs have substantially increased the key-value cache size, further intensifying the pressures on memory capacity. The literature has explored KV cache quantization techniques, which commonly use low bitwidth for most values, selectively using higher bitwidth for outlier values. While this approach helps achieve high accuracy and low bitwidth simultaneously, it comes with the limitation that cost for online outlier detection is excessively high, negating the advantages. We propose Oaken, an acceleration solution that achieves high accuracy and high performance simultaneously through co-designing algorithm and hardware. To effectively find a sweet spot in the accuracy-performance trade-off space of KV cache quantization, Oaken employs an online-offline hybrid approach, setting outlier thresholds offline, which are then used to determine the quantization scale online. To translate the proposed algorithmic technique into tangible performance gains, Oaken also comes with custom quantization engines and memory management units that can be integrated with any LLM accelerators. We built an Oaken accelerator on top of an LLM accelerator, LPU, and conducted a comprehensive evaluation. Our experiments show that for a batch size of 256, Oaken achieves up to 1.58x throughput improvement over NVIDIA A100 GPU, incurring a minimal accuracy loss of only 0.54\% on average, compared to state-of-the-art KV cache quantization techniques.</description>
+   <guid>oai:arXiv.org:2503.18599v2</guid>
+   <category>cs.AR</category>
    <category>cs.LG</category>
-   <category>cs.DC</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Chao Feng, Nicolas Huber, Alberto Huertas Celdran, Gerome Bovet, Burkhard Stiller</creator>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Minsu Kim, Seongmin Hong, RyeoWook Ko, Soongyu Choi, Hunjong Lee, Junsoo Kim, Joo-Young Kim, Jongse Park</creator>
   </item>
   <item>
-   <title>Multi-Layer Hierarchical Federated Learning with Quantization</title>
-   <link>https://arxiv.org/abs/2505.08145</link>
-   <description>Almost all existing hierarchical federated learning (FL) models are limited to two aggregation layers, restricting scalability and flexibility in complex, large-scale networks. In this work, we propose a Multi-Layer Hierarchical Federated Learning framework (QMLHFL), which appears to be the first study that generalizes hierarchical FL to arbitrary numbers of layers and network architectures through nested aggregation, while employing a layer-specific quantization scheme to meet communication constraints. We develop a comprehensive convergence analysis for QMLHFL and derive a general convergence condition and rate that reveal the effects of key factors, including quantization parameters, hierarchical architecture, and intra-layer iteration counts. Furthermore, we determine the optimal number of intra-layer iterations to maximize the convergence rate while meeting a deadline constraint that accounts for both communication and computation times. Our results show that QMLHFL consistently achieves high learning accuracy, even under high data heterogeneity, and delivers notably improved performance when optimized, compared to using randomly selected values.</description>
-   <guid>oai:arXiv.org:2505.08145v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <category>cs.IT</category>
-   <category>cs.NI</category>
-   <category>math.IT</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
-   <creator>Seyed Mohammad Azimi-Abarghouyi, Carlo Fischione</creator>
-  </item>
-  <item>
-   <title>Prism: Unleashing GPU Sharing for Cost-Efficient Multi-LLM Serving</title>
-   <link>https://arxiv.org/abs/2505.04021</link>
-   <description>Serving large language models (LLMs) is expensive, especially for providers hosting many models, making cost reduction essential. The unique workload patterns of serving multiple LLMs (i.e., multi-LLM serving) create new opportunities and challenges for this task. The long-tail popularity of models and their long idle periods present opportunities to improve utilization through GPU sharing. However, existing GPU sharing systems lack the ability to adjust their resource allocation and sharing policies at runtime, making them ineffective at meeting latency service-level objectives (SLOs) under rapidly fluctuating workloads.
-  This paper presents Prism, a multi-LLM serving system that unleashes the full potential of GPU sharing to achieve both cost efficiency and SLO attainment. At its core, Prism tackles a key limitation of existing systems$\unicode{x2014}$the lack of $\textit{cross-model memory coordination}$, which is essential for flexibly sharing GPU memory across models under dynamic workloads. Prism achieves this with two key designs. First, it supports on-demand memory allocation by dynamically mapping physical to virtual memory pages, allowing flexible memory redistribution among models that space- and time-share a GPU. Second, it improves memory efficiency through a two-level scheduling policy that dynamically adjusts sharing strategies based on models' runtime demands. Evaluations on real-world traces show that Prism achieves more than $2\times$ cost savings and $3.3\times$ SLO attainment compared to state-of-the-art systems.</description>
-   <guid>oai:arXiv.org:2505.04021v2</guid>
-   <category>cs.DC</category>
+   <title>Steerable Chatbots: Personalizing LLMs with Preference-Based Activation Steering</title>
+   <link>https://arxiv.org/abs/2505.04260</link>
+   <description>As large language models (LLMs) improve in their capacity to serve as personal AI assistants, their ability to output uniquely tailored, personalized responses that align with the soft preferences of their users is essential for enhancing user satisfaction and retention. However, untrained lay users have poor prompt specification abilities and often struggle with conveying their latent preferences to AI assistants. To address this, we leverage activation steering to guide LLMs to align with interpretable preference dimensions during inference. In contrast to memory-based personalization methods that require longer user history, steering is extremely lightweight and can be easily controlled by the user via an linear strength factor. We embed steering into three different interactive chatbot interfaces and conduct a within-subjects user study (n=14) to investigate how end users prefer to personalize their conversations. The results demonstrate the effectiveness of preference-based steering for aligning real-world conversations with hidden user preferences, and highlight further insights on how diverse values around control, usability, and transparency lead users to prefer different interfaces.</description>
+   <guid>oai:arXiv.org:2505.04260v2</guid>
+   <category>cs.HC</category>
    <category>cs.AI</category>
-   <category>cs.LG</category>
-   <category>cs.PF</category>
-   <pubdate>Wed, 14 May 2025 00:00:00 -0400</pubdate>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shan Yu, Jiarong Xing, Yifan Qiao, Mingyuan Ma, Yangmin Li, Yang Wang, Shuo Yang, Zhiqiang Xie, Shiyi Cao, Ke Bao, Ion Stoica, Harry Xu, Ying Sheng</creator>
+   <creator>Jessica Y. Bo, Tianyu Xu, Ishan Chatterjee, Katrina Passarella-Ward, Achin Kulshrestha, D Shin</creator>
+  </item>
+  <item>
+   <title>Tests as Prompt: A Test-Driven-Development Benchmark for LLM Code Generation</title>
+   <link>https://arxiv.org/abs/2505.09027</link>
+   <description>We introduce WebApp1K, a novel benchmark for evaluating large language models (LLMs) in test-driven development (TDD) tasks, where test cases serve as both prompt and verification for code generation. Unlike traditional approaches relying on natural language prompts, our benchmark emphasizes the ability of LLMs to interpret and implement functionality directly from test cases, reflecting real-world software development practices. Comprising 1000 diverse challenges across 20 application domains, the benchmark evaluates LLMs on their ability to generate compact, functional code under the constraints of context length and multi-feature complexity. Our findings highlight instruction following and in-context learning as critical capabilities for TDD success, surpassing the importance of general coding proficiency or pretraining knowledge. Through comprehensive evaluation of 19 frontier models, we reveal performance bottlenecks, such as instruction loss in long prompts, and provide a detailed error analysis spanning multiple root causes. This work underscores the practical value of TDD-specific benchmarks and lays the foundation for advancing LLM capabilities in rigorous, application-driven coding scenarios.</description>
+   <guid>oai:arXiv.org:2505.09027v1</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yi Cui</creator>
+  </item>
+  <item>
+   <title>MIGRATION-BENCH: Repository-Level Code Migration Benchmark from Java 8</title>
+   <link>https://arxiv.org/abs/2505.09569</link>
+   <description>With the rapid advancement of powerful large language models (LLMs) in recent years, a wide range of software engineering tasks can now be addressed using LLMs, significantly enhancing productivity and scalability. Numerous benchmark datasets have been developed to evaluate the coding capabilities of these models, while they primarily focus on problem-solving and issue-resolution tasks. In contrast, we introduce a new coding benchmark MIGRATION-BENCH with a distinct focus: code migration. MIGRATION-BENCH aims to serve as a comprehensive benchmark for migration from Java 8 to the latest long-term support (LTS) versions (Java 17, 21), MIGRATION-BENCH includes a full dataset and its subset selected with $5,102$ and $300$ repositories respectively. Selected is a representative subset curated for complexity and difficulty, offering a versatile resource to support research in the field of code migration. Additionally, we provide a comprehensive evaluation framework to facilitate rigorous and standardized assessment of LLMs on this challenging task. We further propose SD-Feedback and demonstrate that LLMs can effectively tackle repository-level code migration to Java 17. For the selected subset with Claude-3.5-Sonnet-v2, SD-Feedback achieves 62.33% and 27.00% success rate (pass@1) for minimal and maximal migration respectively. The benchmark dataset and source code are available at: https://huggingface.co/collections/AmazonScience and https://github.com/amazon-science/self_debug respectively.</description>
+   <guid>oai:arXiv.org:2505.09569v1</guid>
+   <category>cs.SE</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Linbo Liu, Xinle Liu, Qiang Zhou, Lin Chen, Yihan Liu, Hoan Nguyen, Behrooz Omidvar-Tehrani, Xi Shen, Jun Huan, Omer Tripp, Anoop Deoras</creator>
+  </item>
+  <item>
+   <title>Oaken: Fast and Efficient LLM Serving with Online-Offline Hybrid KV Cache Quantization</title>
+   <link>https://arxiv.org/abs/2503.18599</link>
+   <description>Modern Large Language Model serving system batches multiple requests to achieve high throughput, while batching attention operations is challenging, rendering memory bandwidth a critical bottleneck. The community relies on high-end GPUs with multiple high-bandwidth memory channels. Unfortunately, HBM's high bandwidth often comes at the expense of limited memory capacity, which reduces core utilization and increases costs. Recent advancements enabling longer contexts for LLMs have substantially increased the key-value cache size, further intensifying the pressures on memory capacity. The literature has explored KV cache quantization techniques, which commonly use low bitwidth for most values, selectively using higher bitwidth for outlier values. While this approach helps achieve high accuracy and low bitwidth simultaneously, it comes with the limitation that cost for online outlier detection is excessively high, negating the advantages. We propose Oaken, an acceleration solution that achieves high accuracy and high performance simultaneously through co-designing algorithm and hardware. To effectively find a sweet spot in the accuracy-performance trade-off space of KV cache quantization, Oaken employs an online-offline hybrid approach, setting outlier thresholds offline, which are then used to determine the quantization scale online. To translate the proposed algorithmic technique into tangible performance gains, Oaken also comes with custom quantization engines and memory management units that can be integrated with any LLM accelerators. We built an Oaken accelerator on top of an LLM accelerator, LPU, and conducted a comprehensive evaluation. Our experiments show that for a batch size of 256, Oaken achieves up to 1.58x throughput improvement over NVIDIA A100 GPU, incurring a minimal accuracy loss of only 0.54\% on average, compared to state-of-the-art KV cache quantization techniques.</description>
+   <guid>oai:arXiv.org:2503.18599v2</guid>
+   <category>cs.AR</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Minsu Kim, Seongmin Hong, RyeoWook Ko, Soongyu Choi, Hunjong Lee, Junsoo Kim, Joo-Young Kim, Jongse Park</creator>
+  </item>
+  <item>
+   <title>ELIS: Efficient LLM Iterative Scheduling System with Response Length Predictor</title>
+   <link>https://arxiv.org/abs/2505.09142</link>
+   <description>We propose ELIS, a serving system for Large Language Models (LLMs) featuring an Iterative Shortest Remaining Time First (ISRTF) scheduler designed to efficiently manage inference tasks with the shortest remaining tokens. Current LLM serving systems often employ a first-come-first-served scheduling strategy, which can lead to the &quot;head-of-line blocking&quot; problem. To overcome this limitation, it is necessary to predict LLM inference times and apply a shortest job first scheduling strategy. However, due to the auto-regressive nature of LLMs, predicting the inference latency is challenging. ELIS addresses this challenge by training a response length predictor for LLMs using the BGE model, an encoder-based state-of-the-art model. Additionally, we have devised the ISRTF scheduling strategy, an optimization of shortest remaining time first tailored to existing LLM iteration batching. To evaluate our work in an industrial setting, we simulate streams of requests based on our study of real-world user LLM serving trace records. Furthermore, we implemented ELIS as a cloud-native scheduler system on Kubernetes to evaluate its performance in production environments. Our experimental results demonstrate that ISRTF reduces the average job completion time by up to 19.6%.</description>
+   <guid>oai:arXiv.org:2505.09142v1</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Seungbeom Choi, Jeonghoe Goo, Eunjoo Jeon, Mingyu Yang, Minsung Jang</creator>
+  </item>
+  <item>
+   <title>Toward Malicious Clients Detection in Federated Learning</title>
+   <link>https://arxiv.org/abs/2505.09110</link>
+   <description>Federated learning (FL) enables multiple clients to collaboratively train a global machine learning model without sharing their raw data. However, the decentralized nature of FL introduces vulnerabilities, particularly to poisoning attacks, where malicious clients manipulate their local models to disrupt the training process. While Byzantine-robust aggregation rules have been developed to mitigate such attacks, they remain inadequate against more advanced threats. In response, recent advancements have focused on FL detection techniques to identify potentially malicious participants. Unfortunately, these methods often misclassify numerous benign clients as threats or rely on unrealistic assumptions about the server's capabilities. In this paper, we propose a novel algorithm, SafeFL, specifically designed to accurately identify malicious clients in FL. The SafeFL approach involves the server collecting a series of global models to generate a synthetic dataset, which is then used to distinguish between malicious and benign models based on their behavior. Extensive testing demonstrates that SafeFL outperforms existing methods, offering superior efficiency and accuracy in detecting malicious clients.</description>
+   <guid>oai:arXiv.org:2505.09110v1</guid>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zhihao Dou, Jiaqi Wang, Wei Sun, Zhuqing Liu, Minghong Fang</creator>
+  </item>
+  <item>
+   <title>Toward Fair Federated Learning under Demographic Disparities and Data Imbalance</title>
+   <link>https://arxiv.org/abs/2505.09295</link>
+   <description>Ensuring fairness is critical when applying artificial intelligence to high-stakes domains such as healthcare, where predictive models trained on imbalanced and demographically skewed data risk exacerbating existing disparities. Federated learning (FL) enables privacy-preserving collaboration across institutions, but remains vulnerable to both algorithmic bias and subgroup imbalance - particularly when multiple sensitive attributes intersect. We propose FedIDA (Fed erated Learning for Imbalance and D isparity A wareness), a framework-agnostic method that combines fairness-aware regularization with group-conditional oversampling. FedIDA supports multiple sensitive attributes and heterogeneous data distributions without altering the convergence behavior of the underlying FL algorithm. We provide theoretical analysis establishing fairness improvement bounds using Lipschitz continuity and concentration inequalities, and show that FedIDA reduces the variance of fairness metrics across test sets. Empirical results on both benchmark and real-world clinical datasets confirm that FedIDA consistently improves fairness while maintaining competitive predictive performance, demonstrating its effectiveness for equitable and privacy-preserving modeling in healthcare. The source code is available on GitHub.</description>
+   <guid>oai:arXiv.org:2505.09295v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Qiming Wu, Siqi Li, Doudou Zhou, Nan Liu</creator>
+  </item>
+  <item>
+   <title>Ranking-Based At-Risk Student Prediction Using Federated Learning and Differential Features</title>
+   <link>https://arxiv.org/abs/2505.09287</link>
+   <description>Digital textbooks are widely used in various educational contexts, such as university courses and online lectures. Such textbooks yield learning log data that have been used in numerous educational data mining (EDM) studies for student behavior analysis and performance prediction. However, these studies have faced challenges in integrating confidential data, such as academic records and learning logs, across schools due to privacy concerns. Consequently, analyses are often conducted with data limited to a single school, which makes developing high-performing and generalizable models difficult. This study proposes a method that combines federated learning and differential features to address these issues. Federated learning enables model training without centralizing data, thereby preserving student privacy. Differential features, which utilize relative values instead of absolute values, enhance model performance and generalizability. To evaluate the proposed method, a model for predicting at-risk students was trained using data from 1,136 students across 12 courses conducted over 4 years, and validated on hold-out test data from 5 other courses. Experimental results demonstrated that the proposed method addresses privacy concerns while achieving performance comparable to that of models trained via centralized learning in terms of Top-n precision, nDCG, and PR-AUC. Furthermore, using differential features improved prediction performance across all evaluation datasets compared to non-differential approaches. The trained models were also applicable for early prediction, achieving high performance in detecting at-risk students in earlier stages of the semester within the validation datasets.</description>
+   <guid>oai:arXiv.org:2505.09287v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CY</category>
+   <pubdate>Thu, 15 May 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Shunsuke Yoneda, Valdemar \v{S}v\'abensk\'y, Gen Li, Daisuke Deguchi, Atsushi Shimada</creator>
   </item>
  </channel>
 </rss>
