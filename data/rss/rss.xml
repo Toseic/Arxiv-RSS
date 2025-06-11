@@ -6,9 +6,9 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Tue, 10 Jun 2025 04:22:16 </lastBuildDate>
+  <lastBuildDate>Wed, 11 Jun 2025 03:13:31 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Tue, 10 Jun 2025 04:22:16 </pubDate>
+  <pubDate>Wed, 11 Jun 2025 03:13:31 </pubDate>
   <item>
    <title>Play to Generalize: Learning to Reason Through Game Play</title>
    <link>https://arxiv.org/abs/2506.08011</link>
@@ -33,6 +33,20 @@
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Tong Xiao, Xin Xu, Zhenya Huang, Hongyu Gao, Quan Liu, Qi Liu, Enhong Chen</creator>
+  </item>
+  <item>
+   <title>Defending Against Diverse Attacks in Federated Learning Through Consensus-Based Bi-Level Optimization</title>
+   <link>https://arxiv.org/abs/2412.02535</link>
+   <description>Adversarial attacks pose significant challenges in many machine learning applications, particularly in the setting of distributed training and federated learning, where malicious agents seek to corrupt the training process with the goal of jeopardizing and compromising the performance and reliability of the final models. In this paper, we address the problem of robust federated learning in the presence of such attacks by formulating the training task as a bi-level optimization problem. We conduct a theoretical analysis of the resilience of consensus-based bi-level optimization (CB$^2$O), an interacting multi-particle metaheuristic optimization method, in adversarial settings. Specifically, we provide a global convergence analysis of CB$^2$O in mean-field law in the presence of malicious agents, demonstrating the robustness of CB$^2$O against a diverse range of attacks. Thereby, we offer insights into how specific hyperparameter choices enable to mitigate adversarial effects. On the practical side, we extend CB$^2$O to the clustered federated learning setting by proposing FedCB$^2$O, a novel interacting multi-particle system, and design a practical algorithm that addresses the demands of real-world applications. Extensive experiments demonstrate the robustness of the FedCB$^2$O algorithm against label-flipping attacks in decentralized clustered federated learning scenarios, showcasing its effectiveness in practical contexts.</description>
+   <guid>oai:arXiv.org:2412.02535v2</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.MA</category>
+   <category>math.AP</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Nicol\'as Garc\'ia Trillos, Aditya Kumar Akash, Sixu Li, Konstantin Riedl, Yuhua Zhu</creator>
   </item>
   <item>
    <title>pFedSOP : Accelerating Training Of Personalized Federated Learning Using Second-Order Optimization</title>
@@ -97,6 +111,316 @@
    <announce_type>replace-cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Jintao Yan, Tan Chen, Yuxuan Sun, Zhaojun Nan, Sheng Zhou, Zhisheng Niu</creator>
+  </item>
+  <item>
+   <title>Adapt Once, Thrive with Updates: Transferable Parameter-Efficient Fine-Tuning on Evolving Base Models</title>
+   <link>https://arxiv.org/abs/2506.06844</link>
+   <description>Parameter-efficient fine-tuning (PEFT) has become a common method for fine-tuning large language models, where a base model can serve multiple users through PEFT module switching. To enhance user experience, base models require periodic updates. However, once updated, PEFT modules fine-tuned on previous versions often suffer substantial performance degradation on newer versions. Re-tuning these numerous modules to restore performance would incur significant computational costs. Through a comprehensive analysis of the changes that occur during base model updates, we uncover an interesting phenomenon: continual training primarily affects task-specific knowledge stored in Feed-Forward Networks (FFN), while having less impact on the task-specific pattern in the Attention mechanism. Based on these findings, we introduce Trans-PEFT, a novel approach that enhances the PEFT module by focusing on the task-specific pattern while reducing its dependence on certain knowledge in the base model. Further theoretical analysis supports our approach. Extensive experiments across 7 base models and 12 datasets demonstrate that Trans-PEFT trained modules can maintain performance on updated base models without re-tuning, significantly reducing maintenance overhead in real-world applications.</description>
+   <guid>oai:arXiv.org:2506.06844v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Naibin Gu, Peng Fu, Xiyu Liu, Ke Ma, Zheng Lin, Weiping Wang</creator>
+  </item>
+  <item>
+   <title>Com$^2$: A Causal-Guided Benchmark for Exploring Complex Commonsense Reasoning in Large Language Models</title>
+   <link>https://arxiv.org/abs/2506.07064</link>
+   <description>Large language models (LLMs) have mastered abundant simple and explicit commonsense knowledge through pre-training, enabling them to achieve human-like performance in simple commonsense reasoning. Nevertheless, LLMs struggle to reason with complex and implicit commonsense knowledge that is derived from simple ones (such as understanding the long-term effects of certain events), an aspect humans tend to focus on more. Existing works focus on complex tasks like math and code, while complex commonsense reasoning remains underexplored due to its uncertainty and lack of structure. To fill this gap and align with real-world concerns, we propose a benchmark Com$^2$ focusing on complex commonsense reasoning. We first incorporate causal event graphs to serve as structured complex commonsense. Then we adopt causal theory~(e.g., intervention) to modify the causal event graphs and obtain different scenarios that meet human concerns. Finally, an LLM is employed to synthesize examples with slow thinking, which is guided by the logical relationships in the modified causal graphs. Furthermore, we use detective stories to construct a more challenging subset. Experiments show that LLMs struggle in reasoning depth and breadth, while post-training and slow thinking can alleviate this. The code and data are available at https://github.com/Waste-Wood/Com2.</description>
+   <guid>oai:arXiv.org:2506.07064v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Kai Xiong, Xiao Ding, Yixin Cao, Yuxiong Yan, Li Du, Yufei Zhang, Jinglong Gao, Jiaqian Liu, Bing Qin, Ting Liu</creator>
+  </item>
+  <item>
+   <title>Parsing the Switch: LLM-Based UD Annotation for Complex Code-Switched and Low-Resource Languages</title>
+   <link>https://arxiv.org/abs/2506.07274</link>
+   <description>Code-switching presents a complex challenge for syntactic analysis, especially in low-resource language settings where annotated data is scarce. While recent work has explored the use of large language models (LLMs) for sequence-level tagging, few approaches systematically investigate how well these models capture syntactic structure in code-switched contexts. Moreover, existing parsers trained on monolingual treebanks often fail to generalize to multilingual and mixed-language input. To address this gap, we introduce the BiLingua Parser, an LLM-based annotation pipeline designed to produce Universal Dependencies (UD) annotations for code-switched text. First, we develop a prompt-based framework for Spanish-English and Spanish-Guaran\'i data, combining few-shot LLM prompting with expert review. Second, we release two annotated datasets, including the first Spanish-Guaran\'i UD-parsed corpus. Third, we conduct a detailed syntactic analysis of switch points across language pairs and communicative contexts. Experimental results show that BiLingua Parser achieves up to 95.29% LAS after expert revision, significantly outperforming prior baselines and multilingual parsers. These results show that LLMs, when carefully guided, can serve as practical tools for bootstrapping syntactic resources in under-resourced, code-switched environments. Data and source code are available at https://github.com/N3mika/ParsingProject</description>
+   <guid>oai:arXiv.org:2506.07274v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Olga Kellert, Nemika Tyagi, Muhammad Imran, Nelvin Licona-Guevara, Carlos G\'omez-Rodr\'iguez</creator>
+  </item>
+  <item>
+   <title>LG-ANNA-Embedding technical report</title>
+   <link>https://arxiv.org/abs/2506.07438</link>
+   <description>This report presents a unified instruction-based framework for learning generalized text embeddings optimized for both information retrieval (IR) and non-IR tasks. Built upon a decoder-only large language model (Mistral-7B), our approach combines in-context learning, soft supervision, and adaptive hard-negative mining to generate context-aware embeddings without task-specific fine-tuning. Structured instructions and few-shot examples are used to guide the model across diverse tasks, enabling strong performance on classification, semantic similarity, clustering, and reranking benchmarks. To improve semantic discrimination, we employ a soft labeling framework where continuous relevance scores, distilled from a high-performance dense retriever and reranker, serve as fine-grained supervision signals. In addition, we introduce adaptive margin-based hard-negative mining, which filters out semantically ambiguous negatives based on their similarity to positive examples, thereby enhancing training stability and retrieval robustness. Our model is evaluated on the newly introduced MTEB (English, v2) benchmark, covering 41 tasks across seven categories. Results show that our method achieves strong generalization and ranks among the top-performing models by Borda score, outperforming several larger or fully fine-tuned baselines. These findings highlight the effectiveness of combining in-context prompting, soft supervision, and adaptive sampling for scalable, high-quality embedding generation.</description>
+   <guid>oai:arXiv.org:2506.07438v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
+   <creator>Jooyoung Choi, Hyun Kim, Hansol Jang, Changwook Jun, Kyunghoon Bae, Hyewon Choi, Stanley Jungkyu Choi, Honglak Lee, Chulmin Yun</creator>
+  </item>
+  <item>
+   <title>Beyond the Sentence: A Survey on Context-Aware Machine Translation with Large Language Models</title>
+   <link>https://arxiv.org/abs/2506.07583</link>
+   <description>Despite the popularity of the large language models (LLMs), their application to machine translation is relatively underexplored, especially in context-aware settings. This work presents a literature review of context-aware translation with LLMs. The existing works utilise prompting and fine-tuning approaches, with few focusing on automatic post-editing and creating translation agents for context-aware machine translation. We observed that the commercial LLMs (such as ChatGPT and Tower LLM) achieved better results than the open-source LLMs (such as Llama and Bloom LLMs), and prompt-based approaches serve as good baselines to assess the quality of translations. Finally, we present some interesting future directions to explore.</description>
+   <guid>oai:arXiv.org:2506.07583v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ramakrishna Appicharla, Baban Gain, Santanu Pal, Asif Ekbal</creator>
+  </item>
+  <item>
+   <title>Auditing Black-Box LLM APIs with a Rank-Based Uniformity Test</title>
+   <link>https://arxiv.org/abs/2506.06975</link>
+   <description>As API access becomes a primary interface to large language models (LLMs), users often interact with black-box systems that offer little transparency into the deployed model. To reduce costs or maliciously alter model behaviors, API providers may discreetly serve quantized or fine-tuned variants, which can degrade performance and compromise safety. Detecting such substitutions is difficult, as users lack access to model weights and, in most cases, even output logits. To tackle this problem, we propose a rank-based uniformity test that can verify the behavioral equality of a black-box LLM to a locally deployed authentic model. Our method is accurate, query-efficient, and avoids detectable query patterns, making it robust to adversarial providers that reroute or mix responses upon the detection of testing attempts. We evaluate the approach across diverse threat scenarios, including quantization, harmful fine-tuning, jailbreak prompts, and full model substitution, showing that it consistently achieves superior statistical power over prior methods under constrained query budgets.</description>
+   <guid>oai:arXiv.org:2506.06975v2</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Xiaoyuan Zhu, Yaowen Ye, Tianyi Qiu, Hanlin Zhu, Sijun Tan, Ajraf Mannan, Jonathan Michala, Raluca Ada Popa, Willie Neiswanger</creator>
+  </item>
+  <item>
+   <title>Play to Generalize: Learning to Reason Through Game Play</title>
+   <link>https://arxiv.org/abs/2506.08011</link>
+   <description>Developing generalizable reasoning capabilities in multimodal large language models (MLLMs) remains challenging. Motivated by cognitive science literature suggesting that gameplay promotes transferable cognitive skills, we propose a novel post-training paradigm, Visual Game Learning, or ViGaL, where MLLMs develop out-of-domain generalization of multimodal reasoning through playing arcade-like games. Specifically, we show that post-training a 7B-parameter MLLM via reinforcement learning (RL) on simple arcade-like games, e.g. Snake, significantly enhances its downstream performance on multimodal math benchmarks like MathVista, and on multi-discipline questions like MMMU, without seeing any worked solutions, equations, or diagrams during RL, suggesting the capture of transferable reasoning skills. Remarkably, our model outperforms specialist models tuned on multimodal reasoning data in multimodal reasoning benchmarks, while preserving the base model's performance on general visual benchmarks, a challenge where specialist models often fall short. Our findings suggest a new post-training paradigm: synthetic, rule-based games can serve as controllable and scalable pre-text tasks that unlock generalizable multimodal reasoning abilities in MLLMs.</description>
+   <guid>oai:arXiv.org:2506.08011v1</guid>
+   <category>cs.CV</category>
+   <category>cs.CL</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yunfei Xie, Yinsong Ma, Shiyi Lan, Alan Yuille, Junfei Xiao, Chen Wei</creator>
+  </item>
+  <item>
+   <title>MiniKV: Pushing the Limits of LLM Inference via 2-Bit Layer-Discriminative KV Cache</title>
+   <link>https://arxiv.org/abs/2411.18077</link>
+   <description>How to efficiently serve LLMs in practice has become exceptionally challenging due to their prohibitive memory and computation requirements. In this study, we investigate optimizing the KV cache, whose memory footprint poses a critical bottleneck in LLM inference, especially when dealing with long context tasks. To tackle the challenge, we introduce MiniKV, a KV cache optimization method that simultaneously preserves long context task accuracy while significantly reducing KV cache size via a novel 2-bit layer-discriminative KV cache. More importantly, we develop specialized CUDA kernels to make MiniKV compatible with FlashAttention. Experiments on a wide range of long context tasks show that MiniKV effectively achieves 86% KV cache compression ratio while recovering over 98.5% of accuracy, outperforming state-of-the-art methods while achieving excellent measured system performance improvements.</description>
+   <guid>oai:arXiv.org:2411.18077v3</guid>
+   <category>cs.CL</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Akshat Sharma, Hangliang Ding, Jianping Li, Neel Dani, Minjia Zhang</creator>
+  </item>
+  <item>
+   <title>BLEUBERI: BLEU is a surprisingly effective reward for instruction following</title>
+   <link>https://arxiv.org/abs/2505.11080</link>
+   <description>Reward models are central to aligning LLMs with human preferences, but they are costly to train, requiring large-scale human-labeled preference data and powerful pretrained LLM backbones. Meanwhile, the increasing availability of high-quality synthetic instruction-following datasets raises the question: can simpler, reference-based metrics serve as viable alternatives to reward models during RL-based alignment? In this paper, we show first that BLEU, a basic string-matching metric, surprisingly matches strong reward models in agreement with human preferences on general instruction-following datasets. Based on this insight, we develop BLEUBERI, a method that first identifies challenging instructions and then applies Group Relative Policy Optimization (GRPO) using BLEU directly as the reward function. We demonstrate that BLEUBERI-trained models are competitive with models trained via reward model-guided RL across four challenging instruction-following benchmarks and three different base language models. A human evaluation further supports that the quality of BLEUBERI model outputs is on par with those from reward model-aligned models. Moreover, BLEUBERI models generate outputs that are more factually grounded than competing methods. Overall, we show that given access to high-quality reference outputs (easily obtained via existing instruction-following datasets or synthetic data generation), string matching-based metrics are cheap yet effective proxies for reward models during alignment. We release our code and data at https://github.com/lilakk/BLEUBERI.</description>
+   <guid>oai:arXiv.org:2505.11080v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yapei Chang, Yekyung Kim, Michael Krumdick, Amir Zadeh, Chuan Li, Chris Tanner, Mohit Iyyer</creator>
+  </item>
+  <item>
+   <title>Toward Reliable Scientific Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.14599</link>
+   <description>Large language models (LLMs) have shown significant potential in scientific disciplines such as biomedicine, particularly in hypothesis generation, where they can analyze vast literature, identify patterns, and suggest research directions. However, a key challenge lies in evaluating the truthfulness of generated hypotheses, as verifying their accuracy often requires substantial time and resources. Additionally, the hallucination problem in LLMs can lead to the generation of hypotheses that appear plausible but are ultimately incorrect, undermining their reliability. To facilitate the systematic study of these challenges, we introduce TruthHypo, a benchmark for assessing the capabilities of LLMs in generating truthful scientific hypotheses, and KnowHD, a knowledge-based hallucination detector to evaluate how well hypotheses are grounded in existing knowledge. Our results show that LLMs struggle to generate truthful hypotheses. By analyzing hallucinations in reasoning steps, we demonstrate that the groundedness scores provided by KnowHD serve as an effective metric for filtering truthful hypotheses from the diverse outputs of LLMs. Human evaluations further validate the utility of KnowHD in identifying truthful hypotheses and accelerating scientific discovery. Our data and source code are available at https://github.com/Teddy-XiongGZ/TruthHypo.</description>
+   <guid>oai:arXiv.org:2505.14599v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Guangzhi Xiong, Eric Xie, Corey Williams, Myles Kim, Amir Hassan Shariatmadari, Sikun Guo, Stefan Bekiranov, Aidong Zhang</creator>
+  </item>
+  <item>
+   <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
+   <link>https://arxiv.org/abs/2506.06266</link>
+   <description>Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.</description>
+   <guid>oai:arXiv.org:2506.06266v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
+  </item>
+  <item>
+   <title>Dynamic Scheduling for Vehicle-to-Vehicle Communications Enhanced Federated Learning</title>
+   <link>https://arxiv.org/abs/2406.17470</link>
+   <description>Leveraging the computing and sensing capabilities of vehicles, vehicular federated learning (VFL) has been applied to edge training for connected vehicles. The dynamic and interconnected nature of vehicular networks presents unique opportunities to harness direct vehicle-to-vehicle (V2V) communications, enhancing VFL training efficiency. In this paper, we formulate a stochastic optimization problem to optimize the VFL training performance, considering the energy constraints and mobility of vehicles, and propose a V2V-enhanced dynamic scheduling (VEDS) algorithm to solve it. The model aggregation requirements of VFL and the limited transmission time due to mobility result in a stepwise objective function, which presents challenges in solving the problem. We thus propose a derivative-based drift-plus-penalty method to convert the long-term stochastic optimization problem to an online mixed integer nonlinear programming (MINLP) problem, and provide a theoretical analysis to bound the performance gap between the online solution and the offline optimal solution. Further analysis of the scheduling priority reduces the original problem into a set of convex optimization problems, which are efficiently solved using the interior-point method. Experimental results demonstrate that compared with the state-of-the-art benchmarks, the proposed algorithm enhances the image classification accuracy on the CIFAR-10 dataset by 4.20% and reduces the average displacement errors on the Argoverse trajectory prediction dataset by 9.82%.</description>
+   <guid>oai:arXiv.org:2406.17470v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.IT</category>
+   <category>math.IT</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jintao Yan, Tan Chen, Yuxuan Sun, Zhaojun Nan, Sheng Zhou, Zhisheng Niu</creator>
+  </item>
+  <item>
+   <title>Translating Federated Learning Algorithms in Python into CSP Processes Using ChatGPT</title>
+   <link>https://arxiv.org/abs/2506.07173</link>
+   <description>The Python Testbed for Federated Learning Algorithms is a simple Python FL framework that is easy to use by ML&amp;AI developers who do not need to be professional programmers and is also amenable to LLMs. In the previous research, generic federated learning algorithms provided by this framework were manually translated into the CSP processes and algorithms' safety and liveness properties were automatically verified by the model checker PAT. In this paper, a simple translation process is introduced wherein the ChatGPT is used to automate the translation of the mentioned federated learning algorithms in Python into the corresponding CSP processes. Within the process, the minimality of the used context is estimated based on the feedback from ChatGPT. The proposed translation process was experimentally validated by successful translation (verified by the model checker PAT) of both generic centralized and decentralized federated learning algorithms.</description>
+   <guid>oai:arXiv.org:2506.07173v1</guid>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Miroslav Popovic, Marko Popovic, Miodrag Djukic, Ilija Basicevic</creator>
+  </item>
+  <item>
+   <title>Exploring Effective Strategies for Building a Customised GPT Agent for Coding Classroom Dialogues</title>
+   <link>https://arxiv.org/abs/2506.07194</link>
+   <description>This study investigates effective strategies for developing a customised GPT agent to code classroom dialogue. While classroom dialogue is widely recognised as a crucial element of education, its analysis remains challenging due to the need for a nuanced understanding of dialogic functions and the labour-intensive nature of manual transcript coding. Recent advancements in large language models offer promising avenues for automating this process. However, existing studies predominantly focus on training large-scale models or evaluating pre-trained models with fixed codebooks, which are often not applicable or replicable for dialogue researchers working with small datasets or customised coding schemes. Using GPT-4's MyGPT agent as a case, this study evaluates its baseline performance in coding classroom dialogue with a human codebook and examines how performance varies with different example inputs through a variable control method. Through a design-based research approach, it identifies a set of practical strategies, based on MyGPT's unique features, for configuring effective agents with limited data. The findings suggest that, despite some limitations, a MyGPT agent developed with these strategies can serve as a useful coding assistant by generating coding suggestions.</description>
+   <guid>oai:arXiv.org:2506.07194v1</guid>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Luwei Bai, Dongkeun Han, Sara Hennessy</creator>
+  </item>
+  <item>
+   <title>Fuse and Federate: Enhancing EV Charging Station Security with Multimodal Fusion and Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.06730</link>
+   <description>The rapid global adoption of electric vehicles (EVs) has established electric vehicle supply equipment (EVSE) as a critical component of smart grid infrastructure. While essential for ensuring reliable energy delivery and accessibility, EVSE systems face significant cybersecurity challenges, including network reconnaissance, backdoor intrusions, and distributed denial-of-service (DDoS) attacks. These emerging threats, driven by the interconnected and autonomous nature of EVSE, require innovative and adaptive security mechanisms that go beyond traditional intrusion detection systems (IDS). Existing approaches, whether network-based or host-based, often fail to detect sophisticated and targeted attacks specifically crafted to exploit new vulnerabilities in EVSE infrastructure. This paper proposes a novel intrusion detection framework that leverages multimodal data sources, including network traffic and kernel events, to identify complex attack patterns. The framework employs a distributed learning approach, enabling collaborative intelligence across EVSE stations while preserving data privacy through federated learning. Experimental results demonstrate that the proposed framework outperforms existing solutions, achieving a detection rate above 98% and a precision rate exceeding 97% in decentralized environments. This solution addresses the evolving challenges of EVSE security, offering a scalable and privacypreserving response to advanced cyber threats</description>
+   <guid>oai:arXiv.org:2506.06730v1</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Rabah Rahal, Abdelaziz Amara Korba, Yacine Ghamri-Doudane</creator>
+  </item>
+  <item>
+   <title>Auditing Black-Box LLM APIs with a Rank-Based Uniformity Test</title>
+   <link>https://arxiv.org/abs/2506.06975</link>
+   <description>As API access becomes a primary interface to large language models (LLMs), users often interact with black-box systems that offer little transparency into the deployed model. To reduce costs or maliciously alter model behaviors, API providers may discreetly serve quantized or fine-tuned variants, which can degrade performance and compromise safety. Detecting such substitutions is difficult, as users lack access to model weights and, in most cases, even output logits. To tackle this problem, we propose a rank-based uniformity test that can verify the behavioral equality of a black-box LLM to a locally deployed authentic model. Our method is accurate, query-efficient, and avoids detectable query patterns, making it robust to adversarial providers that reroute or mix responses upon the detection of testing attempts. We evaluate the approach across diverse threat scenarios, including quantization, harmful fine-tuning, jailbreak prompts, and full model substitution, showing that it consistently achieves superior statistical power over prior methods under constrained query budgets.</description>
+   <guid>oai:arXiv.org:2506.06975v2</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Xiaoyuan Zhu, Yaowen Ye, Tianyi Qiu, Hanlin Zhu, Sijun Tan, Ajraf Mannan, Jonathan Michala, Raluca Ada Popa, Willie Neiswanger</creator>
+  </item>
+  <item>
+   <title>Com$^2$: A Causal-Guided Benchmark for Exploring Complex Commonsense Reasoning in Large Language Models</title>
+   <link>https://arxiv.org/abs/2506.07064</link>
+   <description>Large language models (LLMs) have mastered abundant simple and explicit commonsense knowledge through pre-training, enabling them to achieve human-like performance in simple commonsense reasoning. Nevertheless, LLMs struggle to reason with complex and implicit commonsense knowledge that is derived from simple ones (such as understanding the long-term effects of certain events), an aspect humans tend to focus on more. Existing works focus on complex tasks like math and code, while complex commonsense reasoning remains underexplored due to its uncertainty and lack of structure. To fill this gap and align with real-world concerns, we propose a benchmark Com$^2$ focusing on complex commonsense reasoning. We first incorporate causal event graphs to serve as structured complex commonsense. Then we adopt causal theory~(e.g., intervention) to modify the causal event graphs and obtain different scenarios that meet human concerns. Finally, an LLM is employed to synthesize examples with slow thinking, which is guided by the logical relationships in the modified causal graphs. Furthermore, we use detective stories to construct a more challenging subset. Experiments show that LLMs struggle in reasoning depth and breadth, while post-training and slow thinking can alleviate this. The code and data are available at https://github.com/Waste-Wood/Com2.</description>
+   <guid>oai:arXiv.org:2506.07064v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Kai Xiong, Xiao Ding, Yixin Cao, Yuxiong Yan, Li Du, Yufei Zhang, Jinglong Gao, Jiaqian Liu, Bing Qin, Ting Liu</creator>
+  </item>
+  <item>
+   <title>Advancing Multimodal Reasoning Capabilities of Multimodal Large Language Models via Visual Perception Reward</title>
+   <link>https://arxiv.org/abs/2506.07218</link>
+   <description>Enhancing the multimodal reasoning capabilities of Multimodal Large Language Models (MLLMs) is a challenging task that has attracted increasing attention in the community. Recently, several studies have applied Reinforcement Learning with Verifiable Rewards (RLVR) to the multimodal domain in order to enhance the reasoning abilities of MLLMs. However, these works largely overlook the enhancement of multimodal perception capabilities in MLLMs, which serve as a core prerequisite and foundational component of complex multimodal reasoning. Through McNemar's test, we find that existing RLVR method fails to effectively enhance the multimodal perception capabilities of MLLMs, thereby limiting their further improvement in multimodal reasoning. To address this limitation, we propose Perception-R1, which introduces a novel visual perception reward that explicitly encourages MLLMs to perceive the visual content accurately, thereby can effectively incentivizing both their multimodal perception and reasoning capabilities. Specifically, we first collect textual visual annotations from the CoT trajectories of multimodal problems, which will serve as visual references for reward assignment. During RLVR training, we employ a judging LLM to assess the consistency between the visual annotations and the responses generated by MLLM, and assign the visual perception reward based on these consistency judgments. Extensive experiments on several multimodal reasoning benchmarks demonstrate the effectiveness of our Perception-R1, which achieves state-of-the-art performance on most benchmarks using only 1,442 training data.</description>
+   <guid>oai:arXiv.org:2506.07218v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CV</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Tong Xiao, Xin Xu, Zhenya Huang, Hongyu Gao, Quan Liu, Qi Liu, Enhong Chen</creator>
+  </item>
+  <item>
+   <title>Parsing the Switch: LLM-Based UD Annotation for Complex Code-Switched and Low-Resource Languages</title>
+   <link>https://arxiv.org/abs/2506.07274</link>
+   <description>Code-switching presents a complex challenge for syntactic analysis, especially in low-resource language settings where annotated data is scarce. While recent work has explored the use of large language models (LLMs) for sequence-level tagging, few approaches systematically investigate how well these models capture syntactic structure in code-switched contexts. Moreover, existing parsers trained on monolingual treebanks often fail to generalize to multilingual and mixed-language input. To address this gap, we introduce the BiLingua Parser, an LLM-based annotation pipeline designed to produce Universal Dependencies (UD) annotations for code-switched text. First, we develop a prompt-based framework for Spanish-English and Spanish-Guaran\'i data, combining few-shot LLM prompting with expert review. Second, we release two annotated datasets, including the first Spanish-Guaran\'i UD-parsed corpus. Third, we conduct a detailed syntactic analysis of switch points across language pairs and communicative contexts. Experimental results show that BiLingua Parser achieves up to 95.29% LAS after expert revision, significantly outperforming prior baselines and multilingual parsers. These results show that LLMs, when carefully guided, can serve as practical tools for bootstrapping syntactic resources in under-resourced, code-switched environments. Data and source code are available at https://github.com/N3mika/ParsingProject</description>
+   <guid>oai:arXiv.org:2506.07274v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Olga Kellert, Nemika Tyagi, Muhammad Imran, Nelvin Licona-Guevara, Carlos G\'omez-Rodr\'iguez</creator>
+  </item>
+  <item>
+   <title>FedCGD: Collective Gradient Divergence Optimized Scheduling for Wireless Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.07581</link>
+   <description>Federated learning (FL) is a promising paradigm for multiple devices to cooperatively train a model. When applied in wireless networks, two issues consistently affect the performance of FL, i.e., data heterogeneity of devices and limited bandwidth. Many papers have investigated device scheduling strategies considering the two issues. However, most of them recognize data heterogeneity as a property of individual devices. In this paper, we prove that the convergence speed of FL is affected by the sum of device-level and sample-level collective gradient divergence (CGD). The device-level CGD refers to the gradient divergence of the scheduled device group, instead of the sum of the individual device divergence. The sample-level CGD is statistically upper bounded by sampling variance, which is inversely proportional to the total number of samples scheduled for local update. To derive a tractable form of the device-level CGD, we further consider a classification problem and transform it into the weighted earth moving distance (WEMD) between the group distribution and the global distribution. Then we propose FedCGD algorithm to minimize the sum of multi-level CGDs by balancing WEMD and sampling variance, within polynomial time. Simulation shows that the proposed strategy increases classification accuracy on the CIFAR-10 dataset by up to 4.2\% while scheduling 41.8\% fewer devices, and flexibly switches between reducing WEMD and reducing sampling variance.</description>
+   <guid>oai:arXiv.org:2506.07581v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tan Chen, Jintao Yan, Yuxuan Sun, Sheng Zhou, Zhisheng Niu</creator>
+  </item>
+  <item>
+   <title>Beyond the Sentence: A Survey on Context-Aware Machine Translation with Large Language Models</title>
+   <link>https://arxiv.org/abs/2506.07583</link>
+   <description>Despite the popularity of the large language models (LLMs), their application to machine translation is relatively underexplored, especially in context-aware settings. This work presents a literature review of context-aware translation with LLMs. The existing works utilise prompting and fine-tuning approaches, with few focusing on automatic post-editing and creating translation agents for context-aware machine translation. We observed that the commercial LLMs (such as ChatGPT and Tower LLM) achieved better results than the open-source LLMs (such as Llama and Bloom LLMs), and prompt-based approaches serve as good baselines to assess the quality of translations. Finally, we present some interesting future directions to explore.</description>
+   <guid>oai:arXiv.org:2506.07583v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ramakrishna Appicharla, Baban Gain, Santanu Pal, Asif Ekbal</creator>
+  </item>
+  <item>
+   <title>Dynamic Scheduling for Vehicle-to-Vehicle Communications Enhanced Federated Learning</title>
+   <link>https://arxiv.org/abs/2406.17470</link>
+   <description>Leveraging the computing and sensing capabilities of vehicles, vehicular federated learning (VFL) has been applied to edge training for connected vehicles. The dynamic and interconnected nature of vehicular networks presents unique opportunities to harness direct vehicle-to-vehicle (V2V) communications, enhancing VFL training efficiency. In this paper, we formulate a stochastic optimization problem to optimize the VFL training performance, considering the energy constraints and mobility of vehicles, and propose a V2V-enhanced dynamic scheduling (VEDS) algorithm to solve it. The model aggregation requirements of VFL and the limited transmission time due to mobility result in a stepwise objective function, which presents challenges in solving the problem. We thus propose a derivative-based drift-plus-penalty method to convert the long-term stochastic optimization problem to an online mixed integer nonlinear programming (MINLP) problem, and provide a theoretical analysis to bound the performance gap between the online solution and the offline optimal solution. Further analysis of the scheduling priority reduces the original problem into a set of convex optimization problems, which are efficiently solved using the interior-point method. Experimental results demonstrate that compared with the state-of-the-art benchmarks, the proposed algorithm enhances the image classification accuracy on the CIFAR-10 dataset by 4.20% and reduces the average displacement errors on the Argoverse trajectory prediction dataset by 9.82%.</description>
+   <guid>oai:arXiv.org:2406.17470v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.IT</category>
+   <category>math.IT</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jintao Yan, Tan Chen, Yuxuan Sun, Zhaojun Nan, Sheng Zhou, Zhisheng Niu</creator>
+  </item>
+  <item>
+   <title>BLEUBERI: BLEU is a surprisingly effective reward for instruction following</title>
+   <link>https://arxiv.org/abs/2505.11080</link>
+   <description>Reward models are central to aligning LLMs with human preferences, but they are costly to train, requiring large-scale human-labeled preference data and powerful pretrained LLM backbones. Meanwhile, the increasing availability of high-quality synthetic instruction-following datasets raises the question: can simpler, reference-based metrics serve as viable alternatives to reward models during RL-based alignment? In this paper, we show first that BLEU, a basic string-matching metric, surprisingly matches strong reward models in agreement with human preferences on general instruction-following datasets. Based on this insight, we develop BLEUBERI, a method that first identifies challenging instructions and then applies Group Relative Policy Optimization (GRPO) using BLEU directly as the reward function. We demonstrate that BLEUBERI-trained models are competitive with models trained via reward model-guided RL across four challenging instruction-following benchmarks and three different base language models. A human evaluation further supports that the quality of BLEUBERI model outputs is on par with those from reward model-aligned models. Moreover, BLEUBERI models generate outputs that are more factually grounded than competing methods. Overall, we show that given access to high-quality reference outputs (easily obtained via existing instruction-following datasets or synthetic data generation), string matching-based metrics are cheap yet effective proxies for reward models during alignment. We release our code and data at https://github.com/lilakk/BLEUBERI.</description>
+   <guid>oai:arXiv.org:2505.11080v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yapei Chang, Yekyung Kim, Michael Krumdick, Amir Zadeh, Chuan Li, Chris Tanner, Mohit Iyyer</creator>
+  </item>
+  <item>
+   <title>Toward Reliable Scientific Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.14599</link>
+   <description>Large language models (LLMs) have shown significant potential in scientific disciplines such as biomedicine, particularly in hypothesis generation, where they can analyze vast literature, identify patterns, and suggest research directions. However, a key challenge lies in evaluating the truthfulness of generated hypotheses, as verifying their accuracy often requires substantial time and resources. Additionally, the hallucination problem in LLMs can lead to the generation of hypotheses that appear plausible but are ultimately incorrect, undermining their reliability. To facilitate the systematic study of these challenges, we introduce TruthHypo, a benchmark for assessing the capabilities of LLMs in generating truthful scientific hypotheses, and KnowHD, a knowledge-based hallucination detector to evaluate how well hypotheses are grounded in existing knowledge. Our results show that LLMs struggle to generate truthful hypotheses. By analyzing hallucinations in reasoning steps, we demonstrate that the groundedness scores provided by KnowHD serve as an effective metric for filtering truthful hypotheses from the diverse outputs of LLMs. Human evaluations further validate the utility of KnowHD in identifying truthful hypotheses and accelerating scientific discovery. Our data and source code are available at https://github.com/Teddy-XiongGZ/TruthHypo.</description>
+   <guid>oai:arXiv.org:2505.14599v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Guangzhi Xiong, Eric Xie, Corey Williams, Myles Kim, Amir Hassan Shariatmadari, Sikun Guo, Stefan Bekiranov, Aidong Zhang</creator>
+  </item>
+  <item>
+   <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
+   <link>https://arxiv.org/abs/2506.06266</link>
+   <description>Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.</description>
+   <guid>oai:arXiv.org:2506.06266v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
   </item>
   <item>
    <title>Optimized Local Updates in Federated Learning via Reinforcement Learning</title>
@@ -317,330 +641,6 @@
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
-  </item>
-  <item>
-   <title>Dynamic Scheduling for Vehicle-to-Vehicle Communications Enhanced Federated Learning</title>
-   <link>https://arxiv.org/abs/2406.17470</link>
-   <description>Leveraging the computing and sensing capabilities of vehicles, vehicular federated learning (VFL) has been applied to edge training for connected vehicles. The dynamic and interconnected nature of vehicular networks presents unique opportunities to harness direct vehicle-to-vehicle (V2V) communications, enhancing VFL training efficiency. In this paper, we formulate a stochastic optimization problem to optimize the VFL training performance, considering the energy constraints and mobility of vehicles, and propose a V2V-enhanced dynamic scheduling (VEDS) algorithm to solve it. The model aggregation requirements of VFL and the limited transmission time due to mobility result in a stepwise objective function, which presents challenges in solving the problem. We thus propose a derivative-based drift-plus-penalty method to convert the long-term stochastic optimization problem to an online mixed integer nonlinear programming (MINLP) problem, and provide a theoretical analysis to bound the performance gap between the online solution and the offline optimal solution. Further analysis of the scheduling priority reduces the original problem into a set of convex optimization problems, which are efficiently solved using the interior-point method. Experimental results demonstrate that compared with the state-of-the-art benchmarks, the proposed algorithm enhances the image classification accuracy on the CIFAR-10 dataset by 4.20% and reduces the average displacement errors on the Argoverse trajectory prediction dataset by 9.82%.</description>
-   <guid>oai:arXiv.org:2406.17470v2</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <category>cs.IT</category>
-   <category>math.IT</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jintao Yan, Tan Chen, Yuxuan Sun, Zhaojun Nan, Sheng Zhou, Zhisheng Niu</creator>
-  </item>
-  <item>
-   <title>Adapt Once, Thrive with Updates: Transferable Parameter-Efficient Fine-Tuning on Evolving Base Models</title>
-   <link>https://arxiv.org/abs/2506.06844</link>
-   <description>Parameter-efficient fine-tuning (PEFT) has become a common method for fine-tuning large language models, where a base model can serve multiple users through PEFT module switching. To enhance user experience, base models require periodic updates. However, once updated, PEFT modules fine-tuned on previous versions often suffer substantial performance degradation on newer versions. Re-tuning these numerous modules to restore performance would incur significant computational costs. Through a comprehensive analysis of the changes that occur during base model updates, we uncover an interesting phenomenon: continual training primarily affects task-specific knowledge stored in Feed-Forward Networks (FFN), while having less impact on the task-specific pattern in the Attention mechanism. Based on these findings, we introduce Trans-PEFT, a novel approach that enhances the PEFT module by focusing on the task-specific pattern while reducing its dependence on certain knowledge in the base model. Further theoretical analysis supports our approach. Extensive experiments across 7 base models and 12 datasets demonstrate that Trans-PEFT trained modules can maintain performance on updated base models without re-tuning, significantly reducing maintenance overhead in real-world applications.</description>
-   <guid>oai:arXiv.org:2506.06844v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Naibin Gu, Peng Fu, Xiyu Liu, Ke Ma, Zheng Lin, Weiping Wang</creator>
-  </item>
-  <item>
-   <title>Com$^2$: A Causal-Guided Benchmark for Exploring Complex Commonsense Reasoning in Large Language Models</title>
-   <link>https://arxiv.org/abs/2506.07064</link>
-   <description>Large language models (LLMs) have mastered abundant simple and explicit commonsense knowledge through pre-training, enabling them to achieve human-like performance in simple commonsense reasoning. Nevertheless, LLMs struggle to reason with complex and implicit commonsense knowledge that is derived from simple ones (such as understanding the long-term effects of certain events), an aspect humans tend to focus on more. Existing works focus on complex tasks like math and code, while complex commonsense reasoning remains underexplored due to its uncertainty and lack of structure. To fill this gap and align with real-world concerns, we propose a benchmark Com$^2$ focusing on complex commonsense reasoning. We first incorporate causal event graphs to serve as structured complex commonsense. Then we adopt causal theory~(e.g., intervention) to modify the causal event graphs and obtain different scenarios that meet human concerns. Finally, an LLM is employed to synthesize examples with slow thinking, which is guided by the logical relationships in the modified causal graphs. Furthermore, we use detective stories to construct a more challenging subset. Experiments show that LLMs struggle in reasoning depth and breadth, while post-training and slow thinking can alleviate this. The code and data are available at https://github.com/Waste-Wood/Com2.</description>
-   <guid>oai:arXiv.org:2506.07064v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Kai Xiong, Xiao Ding, Yixin Cao, Yuxiong Yan, Li Du, Yufei Zhang, Jinglong Gao, Jiaqian Liu, Bing Qin, Ting Liu</creator>
-  </item>
-  <item>
-   <title>Parsing the Switch: LLM-Based UD Annotation for Complex Code-Switched and Low-Resource Languages</title>
-   <link>https://arxiv.org/abs/2506.07274</link>
-   <description>Code-switching presents a complex challenge for syntactic analysis, especially in low-resource language settings where annotated data is scarce. While recent work has explored the use of large language models (LLMs) for sequence-level tagging, few approaches systematically investigate how well these models capture syntactic structure in code-switched contexts. Moreover, existing parsers trained on monolingual treebanks often fail to generalize to multilingual and mixed-language input. To address this gap, we introduce the BiLingua Parser, an LLM-based annotation pipeline designed to produce Universal Dependencies (UD) annotations for code-switched text. First, we develop a prompt-based framework for Spanish-English and Spanish-Guaran\'i data, combining few-shot LLM prompting with expert review. Second, we release two annotated datasets, including the first Spanish-Guaran\'i UD-parsed corpus. Third, we conduct a detailed syntactic analysis of switch points across language pairs and communicative contexts. Experimental results show that BiLingua Parser achieves up to 95.29% LAS after expert revision, significantly outperforming prior baselines and multilingual parsers. These results show that LLMs, when carefully guided, can serve as practical tools for bootstrapping syntactic resources in under-resourced, code-switched environments. Data and source code are available at https://github.com/N3mika/ParsingProject</description>
-   <guid>oai:arXiv.org:2506.07274v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Olga Kellert, Nemika Tyagi, Muhammad Imran, Nelvin Licona-Guevara, Carlos G\'omez-Rodr\'iguez</creator>
-  </item>
-  <item>
-   <title>LG-ANNA-Embedding technical report</title>
-   <link>https://arxiv.org/abs/2506.07438</link>
-   <description>This report presents a unified instruction-based framework for learning generalized text embeddings optimized for both information retrieval (IR) and non-IR tasks. Built upon a decoder-only large language model (Mistral-7B), our approach combines in-context learning, soft supervision, and adaptive hard-negative mining to generate context-aware embeddings without task-specific fine-tuning. Structured instructions and few-shot examples are used to guide the model across diverse tasks, enabling strong performance on classification, semantic similarity, clustering, and reranking benchmarks. To improve semantic discrimination, we employ a soft labeling framework where continuous relevance scores, distilled from a high-performance dense retriever and reranker, serve as fine-grained supervision signals. In addition, we introduce adaptive margin-based hard-negative mining, which filters out semantically ambiguous negatives based on their similarity to positive examples, thereby enhancing training stability and retrieval robustness. Our model is evaluated on the newly introduced MTEB (English, v2) benchmark, covering 41 tasks across seven categories. Results show that our method achieves strong generalization and ranks among the top-performing models by Borda score, outperforming several larger or fully fine-tuned baselines. These findings highlight the effectiveness of combining in-context prompting, soft supervision, and adaptive sampling for scalable, high-quality embedding generation.</description>
-   <guid>oai:arXiv.org:2506.07438v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Jooyoung Choi, Hyun Kim, Hansol Jang, Changwook Jun, Kyunghoon Bae, Hyewon Choi, Stanley Jungkyu Choi, Honglak Lee, Chulmin Yun</creator>
-  </item>
-  <item>
-   <title>Beyond the Sentence: A Survey on Context-Aware Machine Translation with Large Language Models</title>
-   <link>https://arxiv.org/abs/2506.07583</link>
-   <description>Despite the popularity of the large language models (LLMs), their application to machine translation is relatively underexplored, especially in context-aware settings. This work presents a literature review of context-aware translation with LLMs. The existing works utilise prompting and fine-tuning approaches, with few focusing on automatic post-editing and creating translation agents for context-aware machine translation. We observed that the commercial LLMs (such as ChatGPT and Tower LLM) achieved better results than the open-source LLMs (such as Llama and Bloom LLMs), and prompt-based approaches serve as good baselines to assess the quality of translations. Finally, we present some interesting future directions to explore.</description>
-   <guid>oai:arXiv.org:2506.07583v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Ramakrishna Appicharla, Baban Gain, Santanu Pal, Asif Ekbal</creator>
-  </item>
-  <item>
-   <title>Auditing Black-Box LLM APIs with a Rank-Based Uniformity Test</title>
-   <link>https://arxiv.org/abs/2506.06975</link>
-   <description>As API access becomes a primary interface to large language models (LLMs), users often interact with black-box systems that offer little transparency into the deployed model. To reduce costs or maliciously alter model behaviors, API providers may discreetly serve quantized or fine-tuned variants, which can degrade performance and compromise safety. Detecting such substitutions is difficult, as users lack access to model weights and, in most cases, even output logits. To tackle this problem, we propose a rank-based uniformity test that can verify the behavioral equality of a black-box LLM to a locally deployed authentic model. Our method is accurate, query-efficient, and avoids detectable query patterns, making it robust to adversarial providers that reroute or mix responses upon the detection of testing attempts. We evaluate the approach across diverse threat scenarios, including quantization, harmful fine-tuning, jailbreak prompts, and full model substitution, showing that it consistently achieves superior statistical power over prior methods under constrained query budgets.</description>
-   <guid>oai:arXiv.org:2506.06975v1</guid>
-   <category>cs.CR</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Xiaoyuan Zhu, Yaowen Ye, Tianyi Qiu, Hanlin Zhu, Sijun Tan, Ajraf Mannan, Jonathan Michala, Raluca Ada Popa, Willie Neiswanger</creator>
-  </item>
-  <item>
-   <title>Play to Generalize: Learning to Reason Through Game Play</title>
-   <link>https://arxiv.org/abs/2506.08011</link>
-   <description>Developing generalizable reasoning capabilities in multimodal large language models (MLLMs) remains challenging. Motivated by cognitive science literature suggesting that gameplay promotes transferable cognitive skills, we propose a novel post-training paradigm, Visual Game Learning, or ViGaL, where MLLMs develop out-of-domain generalization of multimodal reasoning through playing arcade-like games. Specifically, we show that post-training a 7B-parameter MLLM via reinforcement learning (RL) on simple arcade-like games, e.g. Snake, significantly enhances its downstream performance on multimodal math benchmarks like MathVista, and on multi-discipline questions like MMMU, without seeing any worked solutions, equations, or diagrams during RL, suggesting the capture of transferable reasoning skills. Remarkably, our model outperforms specialist models tuned on multimodal reasoning data in multimodal reasoning benchmarks, while preserving the base model's performance on general visual benchmarks, a challenge where specialist models often fall short. Our findings suggest a new post-training paradigm: synthetic, rule-based games can serve as controllable and scalable pre-text tasks that unlock generalizable multimodal reasoning abilities in MLLMs.</description>
-   <guid>oai:arXiv.org:2506.08011v1</guid>
-   <category>cs.CV</category>
-   <category>cs.CL</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yunfei Xie, Yinsong Ma, Shiyi Lan, Alan Yuille, Junfei Xiao, Chen Wei</creator>
-  </item>
-  <item>
-   <title>MiniKV: Pushing the Limits of LLM Inference via 2-Bit Layer-Discriminative KV Cache</title>
-   <link>https://arxiv.org/abs/2411.18077</link>
-   <description>How to efficiently serve LLMs in practice has become exceptionally challenging due to their prohibitive memory and computation requirements. In this study, we investigate optimizing the KV cache, whose memory footprint poses a critical bottleneck in LLM inference, especially when dealing with long context tasks. To tackle the challenge, we introduce MiniKV, a KV cache optimization method that simultaneously preserves long context task accuracy while significantly reducing KV cache size via a novel 2-bit layer-discriminative KV cache. More importantly, we develop specialized CUDA kernels to make MiniKV compatible with FlashAttention. Experiments on a wide range of long context tasks show that MiniKV effectively achieves 86% KV cache compression ratio while recovering over 98.5% of accuracy, outperforming state-of-the-art methods while achieving excellent measured system performance improvements.</description>
-   <guid>oai:arXiv.org:2411.18077v3</guid>
-   <category>cs.CL</category>
-   <category>cs.LG</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Akshat Sharma, Hangliang Ding, Jianping Li, Neel Dani, Minjia Zhang</creator>
-  </item>
-  <item>
-   <title>BLEUBERI: BLEU is a surprisingly effective reward for instruction following</title>
-   <link>https://arxiv.org/abs/2505.11080</link>
-   <description>Reward models are central to aligning LLMs with human preferences, but they are costly to train, requiring large-scale human-labeled preference data and powerful pretrained LLM backbones. Meanwhile, the increasing availability of high-quality synthetic instruction-following datasets raises the question: can simpler, reference-based metrics serve as viable alternatives to reward models during RL-based alignment? In this paper, we show first that BLEU, a basic string-matching metric, surprisingly matches strong reward models in agreement with human preferences on general instruction-following datasets. Based on this insight, we develop BLEUBERI, a method that first identifies challenging instructions and then applies Group Relative Policy Optimization (GRPO) using BLEU directly as the reward function. We demonstrate that BLEUBERI-trained models are competitive with models trained via reward model-guided RL across four challenging instruction-following benchmarks and three different base language models. A human evaluation further supports that the quality of BLEUBERI model outputs is on par with those from reward model-aligned models. Moreover, BLEUBERI models generate outputs that are more factually grounded than competing methods. Overall, we show that given access to high-quality reference outputs (easily obtained via existing instruction-following datasets or synthetic data generation), string matching-based metrics are cheap yet effective proxies for reward models during alignment. We release our code and data at https://github.com/lilakk/BLEUBERI.</description>
-   <guid>oai:arXiv.org:2505.11080v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <category>cs.LG</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yapei Chang, Yekyung Kim, Michael Krumdick, Amir Zadeh, Chuan Li, Chris Tanner, Mohit Iyyer</creator>
-  </item>
-  <item>
-   <title>Toward Reliable Scientific Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models</title>
-   <link>https://arxiv.org/abs/2505.14599</link>
-   <description>Large language models (LLMs) have shown significant potential in scientific disciplines such as biomedicine, particularly in hypothesis generation, where they can analyze vast literature, identify patterns, and suggest research directions. However, a key challenge lies in evaluating the truthfulness of generated hypotheses, as verifying their accuracy often requires substantial time and resources. Additionally, the hallucination problem in LLMs can lead to the generation of hypotheses that appear plausible but are ultimately incorrect, undermining their reliability. To facilitate the systematic study of these challenges, we introduce TruthHypo, a benchmark for assessing the capabilities of LLMs in generating truthful scientific hypotheses, and KnowHD, a knowledge-based hallucination detector to evaluate how well hypotheses are grounded in existing knowledge. Our results show that LLMs struggle to generate truthful hypotheses. By analyzing hallucinations in reasoning steps, we demonstrate that the groundedness scores provided by KnowHD serve as an effective metric for filtering truthful hypotheses from the diverse outputs of LLMs. Human evaluations further validate the utility of KnowHD in identifying truthful hypotheses and accelerating scientific discovery. Our data and source code are available at https://github.com/Teddy-XiongGZ/TruthHypo.</description>
-   <guid>oai:arXiv.org:2505.14599v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Guangzhi Xiong, Eric Xie, Corey Williams, Myles Kim, Amir Hassan Shariatmadari, Sikun Guo, Stefan Bekiranov, Aidong Zhang</creator>
-  </item>
-  <item>
-   <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
-   <link>https://arxiv.org/abs/2506.06266</link>
-   <description>Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.</description>
-   <guid>oai:arXiv.org:2506.06266v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <category>cs.LG</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
-  </item>
-  <item>
-   <title>Translating Federated Learning Algorithms in Python into CSP Processes Using ChatGPT</title>
-   <link>https://arxiv.org/abs/2506.07173</link>
-   <description>The Python Testbed for Federated Learning Algorithms is a simple Python FL framework that is easy to use by ML&amp;AI developers who do not need to be professional programmers and is also amenable to LLMs. In the previous research, generic federated learning algorithms provided by this framework were manually translated into the CSP processes and algorithms' safety and liveness properties were automatically verified by the model checker PAT. In this paper, a simple translation process is introduced wherein the ChatGPT is used to automate the translation of the mentioned federated learning algorithms in Python into the corresponding CSP processes. Within the process, the minimality of the used context is estimated based on the feedback from ChatGPT. The proposed translation process was experimentally validated by successful translation (verified by the model checker PAT) of both generic centralized and decentralized federated learning algorithms.</description>
-   <guid>oai:arXiv.org:2506.07173v1</guid>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Miroslav Popovic, Marko Popovic, Miodrag Djukic, Ilija Basicevic</creator>
-  </item>
-  <item>
-   <title>Exploring Effective Strategies for Building a Customised GPT Agent for Coding Classroom Dialogues</title>
-   <link>https://arxiv.org/abs/2506.07194</link>
-   <description>This study investigates effective strategies for developing a customised GPT agent to code classroom dialogue. While classroom dialogue is widely recognised as a crucial element of education, its analysis remains challenging due to the need for a nuanced understanding of dialogic functions and the labour-intensive nature of manual transcript coding. Recent advancements in large language models offer promising avenues for automating this process. However, existing studies predominantly focus on training large-scale models or evaluating pre-trained models with fixed codebooks, which are often not applicable or replicable for dialogue researchers working with small datasets or customised coding schemes. Using GPT-4's MyGPT agent as a case, this study evaluates its baseline performance in coding classroom dialogue with a human codebook and examines how performance varies with different example inputs through a variable control method. Through a design-based research approach, it identifies a set of practical strategies, based on MyGPT's unique features, for configuring effective agents with limited data. The findings suggest that, despite some limitations, a MyGPT agent developed with these strategies can serve as a useful coding assistant by generating coding suggestions.</description>
-   <guid>oai:arXiv.org:2506.07194v1</guid>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Luwei Bai, Dongkeun Han, Sara Hennessy</creator>
-  </item>
-  <item>
-   <title>Fuse and Federate: Enhancing EV Charging Station Security with Multimodal Fusion and Federated Learning</title>
-   <link>https://arxiv.org/abs/2506.06730</link>
-   <description>The rapid global adoption of electric vehicles (EVs) has established electric vehicle supply equipment (EVSE) as a critical component of smart grid infrastructure. While essential for ensuring reliable energy delivery and accessibility, EVSE systems face significant cybersecurity challenges, including network reconnaissance, backdoor intrusions, and distributed denial-of-service (DDoS) attacks. These emerging threats, driven by the interconnected and autonomous nature of EVSE, require innovative and adaptive security mechanisms that go beyond traditional intrusion detection systems (IDS). Existing approaches, whether network-based or host-based, often fail to detect sophisticated and targeted attacks specifically crafted to exploit new vulnerabilities in EVSE infrastructure. This paper proposes a novel intrusion detection framework that leverages multimodal data sources, including network traffic and kernel events, to identify complex attack patterns. The framework employs a distributed learning approach, enabling collaborative intelligence across EVSE stations while preserving data privacy through federated learning. Experimental results demonstrate that the proposed framework outperforms existing solutions, achieving a detection rate above 98% and a precision rate exceeding 97% in decentralized environments. This solution addresses the evolving challenges of EVSE security, offering a scalable and privacypreserving response to advanced cyber threats</description>
-   <guid>oai:arXiv.org:2506.06730v1</guid>
-   <category>cs.CR</category>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Rabah Rahal, Abdelaziz Amara Korba, Yacine Ghamri-Doudane</creator>
-  </item>
-  <item>
-   <title>Auditing Black-Box LLM APIs with a Rank-Based Uniformity Test</title>
-   <link>https://arxiv.org/abs/2506.06975</link>
-   <description>As API access becomes a primary interface to large language models (LLMs), users often interact with black-box systems that offer little transparency into the deployed model. To reduce costs or maliciously alter model behaviors, API providers may discreetly serve quantized or fine-tuned variants, which can degrade performance and compromise safety. Detecting such substitutions is difficult, as users lack access to model weights and, in most cases, even output logits. To tackle this problem, we propose a rank-based uniformity test that can verify the behavioral equality of a black-box LLM to a locally deployed authentic model. Our method is accurate, query-efficient, and avoids detectable query patterns, making it robust to adversarial providers that reroute or mix responses upon the detection of testing attempts. We evaluate the approach across diverse threat scenarios, including quantization, harmful fine-tuning, jailbreak prompts, and full model substitution, showing that it consistently achieves superior statistical power over prior methods under constrained query budgets.</description>
-   <guid>oai:arXiv.org:2506.06975v1</guid>
-   <category>cs.CR</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Xiaoyuan Zhu, Yaowen Ye, Tianyi Qiu, Hanlin Zhu, Sijun Tan, Ajraf Mannan, Jonathan Michala, Raluca Ada Popa, Willie Neiswanger</creator>
-  </item>
-  <item>
-   <title>Com$^2$: A Causal-Guided Benchmark for Exploring Complex Commonsense Reasoning in Large Language Models</title>
-   <link>https://arxiv.org/abs/2506.07064</link>
-   <description>Large language models (LLMs) have mastered abundant simple and explicit commonsense knowledge through pre-training, enabling them to achieve human-like performance in simple commonsense reasoning. Nevertheless, LLMs struggle to reason with complex and implicit commonsense knowledge that is derived from simple ones (such as understanding the long-term effects of certain events), an aspect humans tend to focus on more. Existing works focus on complex tasks like math and code, while complex commonsense reasoning remains underexplored due to its uncertainty and lack of structure. To fill this gap and align with real-world concerns, we propose a benchmark Com$^2$ focusing on complex commonsense reasoning. We first incorporate causal event graphs to serve as structured complex commonsense. Then we adopt causal theory~(e.g., intervention) to modify the causal event graphs and obtain different scenarios that meet human concerns. Finally, an LLM is employed to synthesize examples with slow thinking, which is guided by the logical relationships in the modified causal graphs. Furthermore, we use detective stories to construct a more challenging subset. Experiments show that LLMs struggle in reasoning depth and breadth, while post-training and slow thinking can alleviate this. The code and data are available at https://github.com/Waste-Wood/Com2.</description>
-   <guid>oai:arXiv.org:2506.07064v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Kai Xiong, Xiao Ding, Yixin Cao, Yuxiong Yan, Li Du, Yufei Zhang, Jinglong Gao, Jiaqian Liu, Bing Qin, Ting Liu</creator>
-  </item>
-  <item>
-   <title>Advancing Multimodal Reasoning Capabilities of Multimodal Large Language Models via Visual Perception Reward</title>
-   <link>https://arxiv.org/abs/2506.07218</link>
-   <description>Enhancing the multimodal reasoning capabilities of Multimodal Large Language Models (MLLMs) is a challenging task that has attracted increasing attention in the community. Recently, several studies have applied Reinforcement Learning with Verifiable Rewards (RLVR) to the multimodal domain in order to enhance the reasoning abilities of MLLMs. However, these works largely overlook the enhancement of multimodal perception capabilities in MLLMs, which serve as a core prerequisite and foundational component of complex multimodal reasoning. Through McNemar's test, we find that existing RLVR method fails to effectively enhance the multimodal perception capabilities of MLLMs, thereby limiting their further improvement in multimodal reasoning. To address this limitation, we propose Perception-R1, which introduces a novel visual perception reward that explicitly encourages MLLMs to perceive the visual content accurately, thereby can effectively incentivizing both their multimodal perception and reasoning capabilities. Specifically, we first collect textual visual annotations from the CoT trajectories of multimodal problems, which will serve as visual references for reward assignment. During RLVR training, we employ a judging LLM to assess the consistency between the visual annotations and the responses generated by MLLM, and assign the visual perception reward based on these consistency judgments. Extensive experiments on several multimodal reasoning benchmarks demonstrate the effectiveness of our Perception-R1, which achieves state-of-the-art performance on most benchmarks using only 1,442 training data.</description>
-   <guid>oai:arXiv.org:2506.07218v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Tong Xiao, Xin Xu, Zhenya Huang, Hongyu Gao, Quan Liu, Qi Liu, Enhong Chen</creator>
-  </item>
-  <item>
-   <title>Parsing the Switch: LLM-Based UD Annotation for Complex Code-Switched and Low-Resource Languages</title>
-   <link>https://arxiv.org/abs/2506.07274</link>
-   <description>Code-switching presents a complex challenge for syntactic analysis, especially in low-resource language settings where annotated data is scarce. While recent work has explored the use of large language models (LLMs) for sequence-level tagging, few approaches systematically investigate how well these models capture syntactic structure in code-switched contexts. Moreover, existing parsers trained on monolingual treebanks often fail to generalize to multilingual and mixed-language input. To address this gap, we introduce the BiLingua Parser, an LLM-based annotation pipeline designed to produce Universal Dependencies (UD) annotations for code-switched text. First, we develop a prompt-based framework for Spanish-English and Spanish-Guaran\'i data, combining few-shot LLM prompting with expert review. Second, we release two annotated datasets, including the first Spanish-Guaran\'i UD-parsed corpus. Third, we conduct a detailed syntactic analysis of switch points across language pairs and communicative contexts. Experimental results show that BiLingua Parser achieves up to 95.29% LAS after expert revision, significantly outperforming prior baselines and multilingual parsers. These results show that LLMs, when carefully guided, can serve as practical tools for bootstrapping syntactic resources in under-resourced, code-switched environments. Data and source code are available at https://github.com/N3mika/ParsingProject</description>
-   <guid>oai:arXiv.org:2506.07274v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Olga Kellert, Nemika Tyagi, Muhammad Imran, Nelvin Licona-Guevara, Carlos G\'omez-Rodr\'iguez</creator>
-  </item>
-  <item>
-   <title>FedCGD: Collective Gradient Divergence Optimized Scheduling for Wireless Federated Learning</title>
-   <link>https://arxiv.org/abs/2506.07581</link>
-   <description>Federated learning (FL) is a promising paradigm for multiple devices to cooperatively train a model. When applied in wireless networks, two issues consistently affect the performance of FL, i.e., data heterogeneity of devices and limited bandwidth. Many papers have investigated device scheduling strategies considering the two issues. However, most of them recognize data heterogeneity as a property of individual devices. In this paper, we prove that the convergence speed of FL is affected by the sum of device-level and sample-level collective gradient divergence (CGD). The device-level CGD refers to the gradient divergence of the scheduled device group, instead of the sum of the individual device divergence. The sample-level CGD is statistically upper bounded by sampling variance, which is inversely proportional to the total number of samples scheduled for local update. To derive a tractable form of the device-level CGD, we further consider a classification problem and transform it into the weighted earth moving distance (WEMD) between the group distribution and the global distribution. Then we propose FedCGD algorithm to minimize the sum of multi-level CGDs by balancing WEMD and sampling variance, within polynomial time. Simulation shows that the proposed strategy increases classification accuracy on the CIFAR-10 dataset by up to 4.2\% while scheduling 41.8\% fewer devices, and flexibly switches between reducing WEMD and reducing sampling variance.</description>
-   <guid>oai:arXiv.org:2506.07581v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Tan Chen, Jintao Yan, Yuxuan Sun, Sheng Zhou, Zhisheng Niu</creator>
-  </item>
-  <item>
-   <title>Beyond the Sentence: A Survey on Context-Aware Machine Translation with Large Language Models</title>
-   <link>https://arxiv.org/abs/2506.07583</link>
-   <description>Despite the popularity of the large language models (LLMs), their application to machine translation is relatively underexplored, especially in context-aware settings. This work presents a literature review of context-aware translation with LLMs. The existing works utilise prompting and fine-tuning approaches, with few focusing on automatic post-editing and creating translation agents for context-aware machine translation. We observed that the commercial LLMs (such as ChatGPT and Tower LLM) achieved better results than the open-source LLMs (such as Llama and Bloom LLMs), and prompt-based approaches serve as good baselines to assess the quality of translations. Finally, we present some interesting future directions to explore.</description>
-   <guid>oai:arXiv.org:2506.07583v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Ramakrishna Appicharla, Baban Gain, Santanu Pal, Asif Ekbal</creator>
-  </item>
-  <item>
-   <title>Dynamic Scheduling for Vehicle-to-Vehicle Communications Enhanced Federated Learning</title>
-   <link>https://arxiv.org/abs/2406.17470</link>
-   <description>Leveraging the computing and sensing capabilities of vehicles, vehicular federated learning (VFL) has been applied to edge training for connected vehicles. The dynamic and interconnected nature of vehicular networks presents unique opportunities to harness direct vehicle-to-vehicle (V2V) communications, enhancing VFL training efficiency. In this paper, we formulate a stochastic optimization problem to optimize the VFL training performance, considering the energy constraints and mobility of vehicles, and propose a V2V-enhanced dynamic scheduling (VEDS) algorithm to solve it. The model aggregation requirements of VFL and the limited transmission time due to mobility result in a stepwise objective function, which presents challenges in solving the problem. We thus propose a derivative-based drift-plus-penalty method to convert the long-term stochastic optimization problem to an online mixed integer nonlinear programming (MINLP) problem, and provide a theoretical analysis to bound the performance gap between the online solution and the offline optimal solution. Further analysis of the scheduling priority reduces the original problem into a set of convex optimization problems, which are efficiently solved using the interior-point method. Experimental results demonstrate that compared with the state-of-the-art benchmarks, the proposed algorithm enhances the image classification accuracy on the CIFAR-10 dataset by 4.20% and reduces the average displacement errors on the Argoverse trajectory prediction dataset by 9.82%.</description>
-   <guid>oai:arXiv.org:2406.17470v2</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <category>cs.IT</category>
-   <category>math.IT</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jintao Yan, Tan Chen, Yuxuan Sun, Zhaojun Nan, Sheng Zhou, Zhisheng Niu</creator>
-  </item>
-  <item>
-   <title>BLEUBERI: BLEU is a surprisingly effective reward for instruction following</title>
-   <link>https://arxiv.org/abs/2505.11080</link>
-   <description>Reward models are central to aligning LLMs with human preferences, but they are costly to train, requiring large-scale human-labeled preference data and powerful pretrained LLM backbones. Meanwhile, the increasing availability of high-quality synthetic instruction-following datasets raises the question: can simpler, reference-based metrics serve as viable alternatives to reward models during RL-based alignment? In this paper, we show first that BLEU, a basic string-matching metric, surprisingly matches strong reward models in agreement with human preferences on general instruction-following datasets. Based on this insight, we develop BLEUBERI, a method that first identifies challenging instructions and then applies Group Relative Policy Optimization (GRPO) using BLEU directly as the reward function. We demonstrate that BLEUBERI-trained models are competitive with models trained via reward model-guided RL across four challenging instruction-following benchmarks and three different base language models. A human evaluation further supports that the quality of BLEUBERI model outputs is on par with those from reward model-aligned models. Moreover, BLEUBERI models generate outputs that are more factually grounded than competing methods. Overall, we show that given access to high-quality reference outputs (easily obtained via existing instruction-following datasets or synthetic data generation), string matching-based metrics are cheap yet effective proxies for reward models during alignment. We release our code and data at https://github.com/lilakk/BLEUBERI.</description>
-   <guid>oai:arXiv.org:2505.11080v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <category>cs.LG</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yapei Chang, Yekyung Kim, Michael Krumdick, Amir Zadeh, Chuan Li, Chris Tanner, Mohit Iyyer</creator>
-  </item>
-  <item>
-   <title>Toward Reliable Scientific Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models</title>
-   <link>https://arxiv.org/abs/2505.14599</link>
-   <description>Large language models (LLMs) have shown significant potential in scientific disciplines such as biomedicine, particularly in hypothesis generation, where they can analyze vast literature, identify patterns, and suggest research directions. However, a key challenge lies in evaluating the truthfulness of generated hypotheses, as verifying their accuracy often requires substantial time and resources. Additionally, the hallucination problem in LLMs can lead to the generation of hypotheses that appear plausible but are ultimately incorrect, undermining their reliability. To facilitate the systematic study of these challenges, we introduce TruthHypo, a benchmark for assessing the capabilities of LLMs in generating truthful scientific hypotheses, and KnowHD, a knowledge-based hallucination detector to evaluate how well hypotheses are grounded in existing knowledge. Our results show that LLMs struggle to generate truthful hypotheses. By analyzing hallucinations in reasoning steps, we demonstrate that the groundedness scores provided by KnowHD serve as an effective metric for filtering truthful hypotheses from the diverse outputs of LLMs. Human evaluations further validate the utility of KnowHD in identifying truthful hypotheses and accelerating scientific discovery. Our data and source code are available at https://github.com/Teddy-XiongGZ/TruthHypo.</description>
-   <guid>oai:arXiv.org:2505.14599v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Guangzhi Xiong, Eric Xie, Corey Williams, Myles Kim, Amir Hassan Shariatmadari, Sikun Guo, Stefan Bekiranov, Aidong Zhang</creator>
-  </item>
-  <item>
-   <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
-   <link>https://arxiv.org/abs/2506.06266</link>
-   <description>Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.</description>
-   <guid>oai:arXiv.org:2506.06266v2</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <category>cs.LG</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
-  </item>
-  <item>
-   <title>Defending Against Diverse Attacks in Federated Learning Through Consensus-Based Bi-Level Optimization</title>
-   <link>https://arxiv.org/abs/2412.02535</link>
-   <description>Adversarial attacks pose significant challenges in many machine learning applications, particularly in the setting of distributed training and federated learning, where malicious agents seek to corrupt the training process with the goal of jeopardizing and compromising the performance and reliability of the final models. In this paper, we address the problem of robust federated learning in the presence of such attacks by formulating the training task as a bi-level optimization problem. We conduct a theoretical analysis of the resilience of consensus-based bi-level optimization (CB$^2$O), an interacting multi-particle metaheuristic optimization method, in adversarial settings. Specifically, we provide a global convergence analysis of CB$^2$O in mean-field law in the presence of malicious agents, demonstrating the robustness of CB$^2$O against a diverse range of attacks. Thereby, we offer insights into how specific hyperparameter choices enable to mitigate adversarial effects. On the practical side, we extend CB$^2$O to the clustered federated learning setting by proposing FedCB$^2$O, a novel interacting multi-particle system, and design a practical algorithm that addresses the demands of real-world applications. Extensive experiments demonstrate the robustness of the FedCB$^2$O algorithm against label-flipping attacks in decentralized clustered federated learning scenarios, showcasing its effectiveness in practical contexts.</description>
-   <guid>oai:arXiv.org:2412.02535v2</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
-   <category>cs.MA</category>
-   <category>math.AP</category>
-   <pubdate>Tue, 10 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Nicol\'as Garc\'ia Trillos, Aditya Kumar Akash, Sixu Li, Konstantin Riedl, Yuhua Zhu</creator>
   </item>
  </channel>
 </rss>
