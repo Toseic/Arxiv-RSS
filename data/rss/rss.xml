@@ -6,8 +6,455 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 16 Jun 2025 03:17:34 </lastBuildDate>
+  <lastBuildDate>Mon, 16 Jun 2025 04:26:19 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 16 Jun 2025 03:17:34 </pubDate>
+  <pubDate>Mon, 16 Jun 2025 04:26:19 </pubDate>
+  <item>
+   <title>How Visual Representations Map to Language Feature Space in Multimodal LLMs</title>
+   <link>https://arxiv.org/abs/2506.11976</link>
+   <description>Effective multimodal reasoning depends on the alignment of visual and linguistic representations, yet the mechanisms by which vision-language models (VLMs) achieve this alignment remain poorly understood. We introduce a methodological framework that deliberately maintains a frozen large language model (LLM) and a frozen vision transformer (ViT), connected solely by training a linear adapter during visual instruction tuning. This design is fundamental to our approach: by keeping the language model frozen, we ensure it maintains its original language representations without adaptation to visual data. Consequently, the linear adapter must map visual features directly into the LLM's existing representational space rather than allowing the language model to develop specialized visual understanding through fine-tuning. Our experimental design uniquely enables the use of pre-trained sparse autoencoders (SAEs) of the LLM as analytical probes. These SAEs remain perfectly aligned with the unchanged language model and serve as a snapshot of the learned language feature-representations. Through systematic analysis of SAE reconstruction error, sparsity patterns, and feature SAE descriptions, we reveal the layer-wise progression through which visual representations gradually align with language feature representations, converging in middle-to-later layers. This suggests a fundamental misalignment between ViT outputs and early LLM layers, raising important questions about whether current adapter-based architectures optimally facilitate cross-modal representation learning.</description>
+   <guid>oai:arXiv.org:2506.11976v1</guid>
+   <category>cs.CV</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Constantin Venhoff, Ashkan Khakzar, Sonia Joseph, Philip Torr, Neel Nanda</creator>
+  </item>
+  <item>
+   <title>Regularized Federated Learning for Privacy-Preserving Dysarthric and Elderly Speech Recognition</title>
+   <link>https://arxiv.org/abs/2506.11069</link>
+   <description>Accurate recognition of dysarthric and elderly speech remains challenging to date. While privacy concerns have driven a shift from centralized approaches to federated learning (FL) to ensure data confidentiality, this further exacerbates the challenges of data scarcity, imbalanced data distribution and speaker heterogeneity. To this end, this paper conducts a systematic investigation of regularized FL techniques for privacy-preserving dysarthric and elderly speech recognition, addressing different levels of the FL process by 1) parameter-based, 2) embedding-based and 3) novel loss-based regularization. Experiments on the benchmark UASpeech dysarthric and DementiaBank Pitt elderly speech corpora suggest that regularized FL systems consistently outperform the baseline FedAvg system by statistically significant WER reductions of up to 0.55\% absolute (2.13\% relative). Further increasing communication frequency to one exchange per batch approaches centralized training performance.</description>
+   <guid>oai:arXiv.org:2506.11069v1</guid>
+   <category>eess.AS</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.SD</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tao Zhong, Mengzhe Geng, Shujie Hu, Guinan Li, Xunying Liu</creator>
+  </item>
+  <item>
+   <title>Customizing Speech Recognition Model with Large Language Model Feedback</title>
+   <link>https://arxiv.org/abs/2506.11091</link>
+   <description>Automatic speech recognition (ASR) systems have achieved strong performance on general transcription tasks. However, they continue to struggle with recognizing rare named entities and adapting to domain mismatches. In contrast, large language models (LLMs), trained on massive internet-scale datasets, are often more effective across a wide range of domains. In this work, we propose a reinforcement learning based approach for unsupervised domain adaptation, leveraging unlabeled data to enhance transcription quality, particularly the named entities affected by domain mismatch, through feedback from a LLM. Given contextual information, our framework employs a LLM as the reward model to score the hypotheses from the ASR model. These scores serve as reward signals to fine-tune the ASR model via reinforcement learning. Our method achieves a 21\% improvement on entity word error rate over conventional self-training methods.</description>
+   <guid>oai:arXiv.org:2506.11091v1</guid>
+   <category>cs.CL</category>
+   <category>cs.SD</category>
+   <category>eess.AS</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Shaoshi Ling, Guoli Ye</creator>
+  </item>
+  <item>
+   <title>SwiftSpec: Ultra-Low Latency LLM Decoding by Scaling Asynchronous Speculative Decoding</title>
+   <link>https://arxiv.org/abs/2506.11309</link>
+   <description>Low-latency decoding for large language models (LLMs) is crucial for applications like chatbots and code assistants, yet generating long outputs remains slow in single-query settings. Prior work on speculative decoding (which combines a small draft model with a larger target model) and tensor parallelism has each accelerated decoding. However, conventional approaches fail to apply both simultaneously due to imbalanced compute requirements (between draft and target models), KV-cache inconsistencies, and communication overheads under small-batch tensor-parallelism. This paper introduces SwiftSpec, a system that targets ultra-low latency for LLM decoding. SwiftSpec redesigns the speculative decoding pipeline in an asynchronous and disaggregated manner, so that each component can be scaled flexibly and remove draft overhead from the critical path. To realize this design, SwiftSpec proposes parallel tree generation, tree-aware KV cache management, and fused, latency-optimized kernels to overcome the challenges listed above. Across 5 model families and 6 datasets, SwiftSpec achieves an average of 1.75x speedup over state-of-the-art speculative decoding systems and, as a highlight, serves Llama3-70B at 348 tokens/s on 8 Nvidia Hopper GPUs, making it the fastest known system for low-latency LLM serving at this scale.</description>
+   <guid>oai:arXiv.org:2506.11309v1</guid>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ziyi Zhang, Ziheng Jiang, Chengquan Jiang, Menghan Yu, Size Zheng, Haibin Lin, Henry Hoffmann, Xin Liu</creator>
+  </item>
+  <item>
+   <title>Not All Clients Are Equal: Personalized Federated Learning on Heterogeneous Multi-Modal Clients</title>
+   <link>https://arxiv.org/abs/2506.11024</link>
+   <description>Foundation models have shown remarkable capabilities across diverse multi-modal tasks, but their centralized training raises privacy concerns and induces high transmission costs. In contrast, federated learning (FL) offers a distributed alternative without the need to share data. Recently, for the growing demand for personalizing AI models for different user purposes, personalized federated learning (PFL) has emerged. PFL allows each client to leverage the knowledge of other clients for further adaptation to individual user preferences, again without the need to share data. Despite its potential, most PFL studies remain confined to simulated environments, overlooking the data and model heterogeneity that arise in real-world scenarios. In contrast, we first consider large data heterogeneity, evaluating on a new benchmark for multi-modal PFL, spanning 40 distinct tasks with realistic data distribution shifts. We then consider model heterogeneity in that we do not assume that all clients share similar model architectures. To address data heterogeneity, we propose a task-similarity-aware model aggregation method that provides customized global models to each client. For model heterogeneity, we propose a dimension-invariant module that enables knowledge sharing across heterogeneous models. Empirical validations demonstrate that the proposed approach outperforms the state-of-the-art, excelling in both personalization and generalization capabilities.</description>
+   <guid>oai:arXiv.org:2506.11024v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Minhyuk Seo, Taeheon Kim, Hankook Lee, Jonghyun Choi, Tinne Tuytelaars</creator>
+  </item>
+  <item>
+   <title>Advancing Hybrid Defense for Byzantine Attacks in Federated Learning</title>
+   <link>https://arxiv.org/abs/2409.06474</link>
+   <description>Federated learning (FL) enables multiple clients to collaboratively train a global model without sharing their local data. Recent studies have highlighted the vulnerability of FL to Byzantine attacks, where malicious clients send poisoned updates to degrade model performance. In particular, many attacks have been developed targeting specific aggregation rules, whereas various defense mechanisms have been designed for dedicated threat models. This paper studies the resilience of attack-agnostic FL scenarios, where the server lacks prior knowledge of both the attackers' strategies and the number of malicious clients involved. We first introduce hybrid defenses against state-of-the-art attacks. Our goal is to identify a general-purpose aggregation rule that performs well on average while also avoiding worst-case vulnerabilities. By adaptively selecting from available defenses, we demonstrate that the server remains robust even when confronted with a substantial proportion of poisoned updates. We also emphasize that existing FL defenses should not automatically be regarded as secure, as demonstrated by the newly proposed Trapsetter attack. The proposed attack outperforms other state-of-the-art attacks by further increasing the impact of the attack by 5-15%. Our findings highlight the ongoing need for the development of Byzantine-resilient aggregation algorithms in FL.</description>
+   <guid>oai:arXiv.org:2409.06474v3</guid>
+   <category>cs.DC</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Kai Yue, Richeng Jin, Chau-Wai Wong, Huaiyu Dai</creator>
+  </item>
+  <item>
+   <title>Byzantine-Resilient Secure Aggregation for Federated Learning Without Privacy Compromises</title>
+   <link>https://arxiv.org/abs/2405.08698</link>
+   <description>Federated learning (FL) shows great promise in large scale machine learning, but brings new risks in terms of privacy and security. We propose ByITFL, a novel scheme for FL that provides resilience against Byzantine users while keeping the users' data private from the federator and private from other users. The scheme builds on the preexisting non-private FLTrust scheme, which tolerates malicious users through trust scores (TS) that attenuate or amplify the users' gradients. The trust scores are based on the ReLU function, which we approximate by a polynomial. The distributed and privacy-preserving computation in ByITFL is designed using a combination of Lagrange coded computing, verifiable secret sharing and re-randomization steps. ByITFL is the first Byzantine resilient scheme for FL with full information-theoretic privacy.</description>
+   <guid>oai:arXiv.org:2405.08698v3</guid>
+   <category>cs.IT</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yue Xia, Christoph Hofmeister, Maximilian Egger, Rawad Bitar</creator>
+  </item>
+  <item>
+   <title>LoByITFL: Low Communication Secure and Private Federated Learning</title>
+   <link>https://arxiv.org/abs/2405.19217</link>
+   <description>Privacy of the clients' data and security against Byzantine clients are key challenges in Federated Learning (FL). Existing solutions to joint privacy and security incur sacrifices on the privacy guarantee. We introduce LoByITFL, the first communication-efficient information-theoretically private and secure FL scheme that makes no sacrifices on the privacy guarantees while ensuring security against Byzantine adversaries. The key components are a small and representative dataset available to the federator, a careful modification of the FLTrust algorithm, and the one-time use of a trusted third party during an initialization period. We provide theoretical guarantees on the privacy and Byzantine resilience, as well as experimental results showing the convergence of LoByITFL.</description>
+   <guid>oai:arXiv.org:2405.19217v2</guid>
+   <category>cs.IT</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yue Xia, Maximilian Egger, Christoph Hofmeister, Rawad Bitar</creator>
+  </item>
+  <item>
+   <title>Customizing Speech Recognition Model with Large Language Model Feedback</title>
+   <link>https://arxiv.org/abs/2506.11091</link>
+   <description>Automatic speech recognition (ASR) systems have achieved strong performance on general transcription tasks. However, they continue to struggle with recognizing rare named entities and adapting to domain mismatches. In contrast, large language models (LLMs), trained on massive internet-scale datasets, are often more effective across a wide range of domains. In this work, we propose a reinforcement learning based approach for unsupervised domain adaptation, leveraging unlabeled data to enhance transcription quality, particularly the named entities affected by domain mismatch, through feedback from a LLM. Given contextual information, our framework employs a LLM as the reward model to score the hypotheses from the ASR model. These scores serve as reward signals to fine-tune the ASR model via reinforcement learning. Our method achieves a 21\% improvement on entity word error rate over conventional self-training methods.</description>
+   <guid>oai:arXiv.org:2506.11091v1</guid>
+   <category>cs.CL</category>
+   <category>cs.SD</category>
+   <category>eess.AS</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Shaoshi Ling, Guoli Ye</creator>
+  </item>
+  <item>
+   <title>From Replication to Redesign: Exploring Pairwise Comparisons for LLM-Based Peer Review</title>
+   <link>https://arxiv.org/abs/2506.11343</link>
+   <description>The advent of large language models (LLMs) offers unprecedented opportunities to reimagine peer review beyond the constraints of traditional workflows. Despite these opportunities, prior efforts have largely focused on replicating traditional review workflows with LLMs serving as direct substitutes for human reviewers, while limited attention has been given to exploring new paradigms that fundamentally rethink how LLMs can participate in the academic review process. In this paper, we introduce and explore a novel mechanism that employs LLM agents to perform pairwise comparisons among manuscripts instead of individual scoring. By aggregating outcomes from substantial pairwise evaluations, this approach enables a more accurate and robust measure of relative manuscript quality. Our experiments demonstrate that this comparative approach significantly outperforms traditional rating-based methods in identifying high-impact papers. However, our analysis also reveals emergent biases in the selection process, notably a reduced novelty in research topics and an increased institutional imbalance. These findings highlight both the transformative potential of rethinking peer review with LLMs and critical challenges that future systems must address to ensure equity and diversity.</description>
+   <guid>oai:arXiv.org:2506.11343v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yaohui Zhang, Haijing Zhang, Wenlong Ji, Tianyu Hua, Nick Haber, Hancheng Cao, Weixin Liang</creator>
+  </item>
+  <item>
+   <title>DART: Distilling Autoregressive Reasoning to Silent Thought</title>
+   <link>https://arxiv.org/abs/2506.11752</link>
+   <description>Chain-of-Thought (CoT) reasoning has significantly advanced Large Language Models (LLMs) in solving complex tasks. However, its autoregressive paradigm leads to significant computational overhead, hindering its deployment in latency-sensitive applications. To address this, we propose \textbf{DART} (\textbf{D}istilling \textbf{A}utoregressive \textbf{R}easoning to Silent \textbf{T}hought), a self-distillation framework that enables LLMs to replace autoregressive CoT with non-autoregressive Silent Thought (ST). Specifically, DART introduces two training pathways: the CoT pathway for traditional reasoning and the ST pathway for generating answers directly from a few ST tokens. The ST pathway utilizes a lightweight Reasoning Evolvement Module (REM) to align its hidden states with the CoT pathway, enabling the ST tokens to evolve into informative embeddings. During inference, only the ST pathway is activated, leveraging evolving ST tokens to deliver the answer directly. Extensive experimental results demonstrate that DART achieves comparable reasoning performance to existing baselines while offering significant efficiency gains, serving as a feasible alternative for efficient reasoning.</description>
+   <guid>oai:arXiv.org:2506.11752v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Nan Jiang, Ziming Wu, De-Chuan Zhan, Fuming Lai, Shaobing Lian</creator>
+  </item>
+  <item>
+   <title>A Survey of Task-Oriented Knowledge Graph Reasoning: Status, Applications, and Prospects</title>
+   <link>https://arxiv.org/abs/2506.11012</link>
+   <description>Knowledge graphs (KGs) have emerged as a powerful paradigm for structuring and leveraging diverse real-world knowledge, which serve as a fundamental technology for enabling cognitive intelligence systems with advanced understanding and reasoning capabilities. Knowledge graph reasoning (KGR) aims to infer new knowledge based on existing facts in KGs, playing a crucial role in applications such as public security intelligence, intelligent healthcare, and financial risk assessment. From a task-centric perspective, existing KGR approaches can be broadly classified into static single-step KGR, static multi-step KGR, dynamic KGR, multi-modal KGR, few-shot KGR, and inductive KGR. While existing surveys have covered these six types of KGR tasks, a comprehensive review that systematically summarizes all KGR tasks particularly including downstream applications and more challenging reasoning paradigms remains lacking. In contrast to previous works, this survey provides a more comprehensive perspective on the research of KGR by categorizing approaches based on primary reasoning tasks, downstream application tasks, and potential challenging reasoning tasks. Besides, we explore advanced techniques, such as large language models (LLMs), and their impact on KGR. This work aims to highlight key research trends and outline promising future directions in the field of KGR.</description>
+   <guid>oai:arXiv.org:2506.11012v1</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Guanglin Niu, Bo Li, Yangguang Lin</creator>
+  </item>
+  <item>
+   <title>Regularized Federated Learning for Privacy-Preserving Dysarthric and Elderly Speech Recognition</title>
+   <link>https://arxiv.org/abs/2506.11069</link>
+   <description>Accurate recognition of dysarthric and elderly speech remains challenging to date. While privacy concerns have driven a shift from centralized approaches to federated learning (FL) to ensure data confidentiality, this further exacerbates the challenges of data scarcity, imbalanced data distribution and speaker heterogeneity. To this end, this paper conducts a systematic investigation of regularized FL techniques for privacy-preserving dysarthric and elderly speech recognition, addressing different levels of the FL process by 1) parameter-based, 2) embedding-based and 3) novel loss-based regularization. Experiments on the benchmark UASpeech dysarthric and DementiaBank Pitt elderly speech corpora suggest that regularized FL systems consistently outperform the baseline FedAvg system by statistically significant WER reductions of up to 0.55\% absolute (2.13\% relative). Further increasing communication frequency to one exchange per batch approaches centralized training performance.</description>
+   <guid>oai:arXiv.org:2506.11069v1</guid>
+   <category>eess.AS</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.SD</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tao Zhong, Mengzhe Geng, Shujie Hu, Guinan Li, Xunying Liu</creator>
+  </item>
+  <item>
+   <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
+   <link>https://arxiv.org/abs/2506.06266</link>
+   <description>Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.</description>
+   <guid>oai:arXiv.org:2506.06266v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
+  </item>
+  <item>
+   <title>Enhancing multimodal analogical reasoning with Logic Augmented Generation</title>
+   <link>https://arxiv.org/abs/2504.11190</link>
+   <description>Recent advances in Large Language Models have demonstrated their capabilities across a variety of tasks. However, automatically extracting implicit knowledge from natural language remains a significant challenge, as machines lack active experience with the physical world. Given this scenario, semantic knowledge graphs can serve as conceptual spaces that guide the automated text generation reasoning process to achieve more efficient and explainable results. In this paper, we apply a logic-augmented generation (LAG) framework that leverages the explicit representation of a text through a semantic knowledge graph and applies it in combination with prompt heuristics to elicit implicit analogical connections. This method generates extended knowledge graph triples representing implicit meaning, enabling systems to reason on unlabeled multimodal data regardless of the domain. We validate our work through three metaphor detection and understanding tasks across four datasets, as they require deep analogical reasoning capabilities. The results show that this integrated approach surpasses current baselines, performs better than humans in understanding visual metaphors, and enables more explainable reasoning processes, though still has inherent limitations in metaphor understanding, especially for domain-specific metaphors. Furthermore, we propose a thorough error analysis, discussing issues with metaphorical annotations and current evaluation methods.</description>
+   <guid>oai:arXiv.org:2504.11190v2</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Anna Sofia Lippolis, Andrea Giovanni Nuzzolese, Aldo Gangemi</creator>
+  </item>
+  <item>
+   <title>Byzantine-Resilient Secure Aggregation for Federated Learning Without Privacy Compromises</title>
+   <link>https://arxiv.org/abs/2405.08698</link>
+   <description>Federated learning (FL) shows great promise in large scale machine learning, but brings new risks in terms of privacy and security. We propose ByITFL, a novel scheme for FL that provides resilience against Byzantine users while keeping the users' data private from the federator and private from other users. The scheme builds on the preexisting non-private FLTrust scheme, which tolerates malicious users through trust scores (TS) that attenuate or amplify the users' gradients. The trust scores are based on the ReLU function, which we approximate by a polynomial. The distributed and privacy-preserving computation in ByITFL is designed using a combination of Lagrange coded computing, verifiable secret sharing and re-randomization steps. ByITFL is the first Byzantine resilient scheme for FL with full information-theoretic privacy.</description>
+   <guid>oai:arXiv.org:2405.08698v3</guid>
+   <category>cs.IT</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yue Xia, Christoph Hofmeister, Maximilian Egger, Rawad Bitar</creator>
+  </item>
+  <item>
+   <title>LoByITFL: Low Communication Secure and Private Federated Learning</title>
+   <link>https://arxiv.org/abs/2405.19217</link>
+   <description>Privacy of the clients' data and security against Byzantine clients are key challenges in Federated Learning (FL). Existing solutions to joint privacy and security incur sacrifices on the privacy guarantee. We introduce LoByITFL, the first communication-efficient information-theoretically private and secure FL scheme that makes no sacrifices on the privacy guarantees while ensuring security against Byzantine adversaries. The key components are a small and representative dataset available to the federator, a careful modification of the FLTrust algorithm, and the one-time use of a trusted third party during an initialization period. We provide theoretical guarantees on the privacy and Byzantine resilience, as well as experimental results showing the convergence of LoByITFL.</description>
+   <guid>oai:arXiv.org:2405.19217v2</guid>
+   <category>cs.IT</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yue Xia, Maximilian Egger, Christoph Hofmeister, Rawad Bitar</creator>
+  </item>
+  <item>
+   <title>A Survey of Task-Oriented Knowledge Graph Reasoning: Status, Applications, and Prospects</title>
+   <link>https://arxiv.org/abs/2506.11012</link>
+   <description>Knowledge graphs (KGs) have emerged as a powerful paradigm for structuring and leveraging diverse real-world knowledge, which serve as a fundamental technology for enabling cognitive intelligence systems with advanced understanding and reasoning capabilities. Knowledge graph reasoning (KGR) aims to infer new knowledge based on existing facts in KGs, playing a crucial role in applications such as public security intelligence, intelligent healthcare, and financial risk assessment. From a task-centric perspective, existing KGR approaches can be broadly classified into static single-step KGR, static multi-step KGR, dynamic KGR, multi-modal KGR, few-shot KGR, and inductive KGR. While existing surveys have covered these six types of KGR tasks, a comprehensive review that systematically summarizes all KGR tasks particularly including downstream applications and more challenging reasoning paradigms remains lacking. In contrast to previous works, this survey provides a more comprehensive perspective on the research of KGR by categorizing approaches based on primary reasoning tasks, downstream application tasks, and potential challenging reasoning tasks. Besides, we explore advanced techniques, such as large language models (LLMs), and their impact on KGR. This work aims to highlight key research trends and outline promising future directions in the field of KGR.</description>
+   <guid>oai:arXiv.org:2506.11012v1</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Guanglin Niu, Bo Li, Yangguang Lin</creator>
+  </item>
+  <item>
+   <title>Not All Clients Are Equal: Personalized Federated Learning on Heterogeneous Multi-Modal Clients</title>
+   <link>https://arxiv.org/abs/2506.11024</link>
+   <description>Foundation models have shown remarkable capabilities across diverse multi-modal tasks, but their centralized training raises privacy concerns and induces high transmission costs. In contrast, federated learning (FL) offers a distributed alternative without the need to share data. Recently, for the growing demand for personalizing AI models for different user purposes, personalized federated learning (PFL) has emerged. PFL allows each client to leverage the knowledge of other clients for further adaptation to individual user preferences, again without the need to share data. Despite its potential, most PFL studies remain confined to simulated environments, overlooking the data and model heterogeneity that arise in real-world scenarios. In contrast, we first consider large data heterogeneity, evaluating on a new benchmark for multi-modal PFL, spanning 40 distinct tasks with realistic data distribution shifts. We then consider model heterogeneity in that we do not assume that all clients share similar model architectures. To address data heterogeneity, we propose a task-similarity-aware model aggregation method that provides customized global models to each client. For model heterogeneity, we propose a dimension-invariant module that enables knowledge sharing across heterogeneous models. Empirical validations demonstrate that the proposed approach outperforms the state-of-the-art, excelling in both personalization and generalization capabilities.</description>
+   <guid>oai:arXiv.org:2506.11024v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Minhyuk Seo, Taeheon Kim, Hankook Lee, Jonghyun Choi, Tinne Tuytelaars</creator>
+  </item>
+  <item>
+   <title>Regularized Federated Learning for Privacy-Preserving Dysarthric and Elderly Speech Recognition</title>
+   <link>https://arxiv.org/abs/2506.11069</link>
+   <description>Accurate recognition of dysarthric and elderly speech remains challenging to date. While privacy concerns have driven a shift from centralized approaches to federated learning (FL) to ensure data confidentiality, this further exacerbates the challenges of data scarcity, imbalanced data distribution and speaker heterogeneity. To this end, this paper conducts a systematic investigation of regularized FL techniques for privacy-preserving dysarthric and elderly speech recognition, addressing different levels of the FL process by 1) parameter-based, 2) embedding-based and 3) novel loss-based regularization. Experiments on the benchmark UASpeech dysarthric and DementiaBank Pitt elderly speech corpora suggest that regularized FL systems consistently outperform the baseline FedAvg system by statistically significant WER reductions of up to 0.55\% absolute (2.13\% relative). Further increasing communication frequency to one exchange per batch approaches centralized training performance.</description>
+   <guid>oai:arXiv.org:2506.11069v1</guid>
+   <category>eess.AS</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.SD</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Tao Zhong, Mengzhe Geng, Shujie Hu, Guinan Li, Xunying Liu</creator>
+  </item>
+  <item>
+   <title>Enhancing multimodal analogical reasoning with Logic Augmented Generation</title>
+   <link>https://arxiv.org/abs/2504.11190</link>
+   <description>Recent advances in Large Language Models have demonstrated their capabilities across a variety of tasks. However, automatically extracting implicit knowledge from natural language remains a significant challenge, as machines lack active experience with the physical world. Given this scenario, semantic knowledge graphs can serve as conceptual spaces that guide the automated text generation reasoning process to achieve more efficient and explainable results. In this paper, we apply a logic-augmented generation (LAG) framework that leverages the explicit representation of a text through a semantic knowledge graph and applies it in combination with prompt heuristics to elicit implicit analogical connections. This method generates extended knowledge graph triples representing implicit meaning, enabling systems to reason on unlabeled multimodal data regardless of the domain. We validate our work through three metaphor detection and understanding tasks across four datasets, as they require deep analogical reasoning capabilities. The results show that this integrated approach surpasses current baselines, performs better than humans in understanding visual metaphors, and enables more explainable reasoning processes, though still has inherent limitations in metaphor understanding, especially for domain-specific metaphors. Furthermore, we propose a thorough error analysis, discussing issues with metaphorical annotations and current evaluation methods.</description>
+   <guid>oai:arXiv.org:2504.11190v2</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Anna Sofia Lippolis, Andrea Giovanni Nuzzolese, Aldo Gangemi</creator>
+  </item>
+  <item>
+   <title>How Well Do Large Language Models Serve as End-to-End Secure Code Agents for Python?</title>
+   <link>https://arxiv.org/abs/2408.10495</link>
+   <description>The rapid advancement of large language models (LLMs) such as GPT-4 has revolutionized the landscape of software engineering, positioning these models at the core of modern development practices. As we anticipate these models to evolve into the primary and trustworthy tools used in software development, ensuring the security of the code they produce becomes paramount. How well can LLMs serve as end-to-end secure code producers? This paper presents a systematic investigation into LLMs' inherent potential to generate code with fewer vulnerabilities. Specifically, We studied GPT-3.5 and GPT-4's capability to identify and repair vulnerabilities in the code generated by four popular LLMs including themselves (GPT-3.5, GPT-4, Code Llama, and CodeGeeX2). By manually or automatically reviewing 4,900 pieces of code, our study reveals that: (1) large language models lack awareness of scenario-relevant security risks, which leads to the generation of over 75% vulnerable code on the SecurityEval benchmark; (2) LLMs such as GPT-3.5 and GPT-4 are unable to precisely identify vulnerabilities in the code they generated; (3) GPT-3.5 and GPT-4 can achieve 33.2%~59.6% success rates in repairing the insecure code produced by the 4 LLMs, but they both perform poorly when repairing self-produced code, indicating self-repair &quot;blind spots&quot;. To address the limitation of a single round of repair, we developed a lightweight tool that prompts LLMs to construct safer source code through an iterative repair procedure based on the insights gained from our study. Experiments show that assisted by semantic analysis engines, our tool significantly improves the success rates of repair to 65.9%~85.5%.</description>
+   <guid>oai:arXiv.org:2408.10495v2</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jianian Gong, Nachuan Duan, Ziheng Tao, Zhaohui Gong, Yuan Yuan, Minlie Huang</creator>
+  </item>
+  <item>
+   <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
+   <link>https://arxiv.org/abs/2506.06266</link>
+   <description>Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.</description>
+   <guid>oai:arXiv.org:2506.06266v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
+  </item>
+  <item>
+   <title>How Well Do Large Language Models Serve as End-to-End Secure Code Agents for Python?</title>
+   <link>https://arxiv.org/abs/2408.10495</link>
+   <description>The rapid advancement of large language models (LLMs) such as GPT-4 has revolutionized the landscape of software engineering, positioning these models at the core of modern development practices. As we anticipate these models to evolve into the primary and trustworthy tools used in software development, ensuring the security of the code they produce becomes paramount. How well can LLMs serve as end-to-end secure code producers? This paper presents a systematic investigation into LLMs' inherent potential to generate code with fewer vulnerabilities. Specifically, We studied GPT-3.5 and GPT-4's capability to identify and repair vulnerabilities in the code generated by four popular LLMs including themselves (GPT-3.5, GPT-4, Code Llama, and CodeGeeX2). By manually or automatically reviewing 4,900 pieces of code, our study reveals that: (1) large language models lack awareness of scenario-relevant security risks, which leads to the generation of over 75% vulnerable code on the SecurityEval benchmark; (2) LLMs such as GPT-3.5 and GPT-4 are unable to precisely identify vulnerabilities in the code they generated; (3) GPT-3.5 and GPT-4 can achieve 33.2%~59.6% success rates in repairing the insecure code produced by the 4 LLMs, but they both perform poorly when repairing self-produced code, indicating self-repair &quot;blind spots&quot;. To address the limitation of a single round of repair, we developed a lightweight tool that prompts LLMs to construct safer source code through an iterative repair procedure based on the insights gained from our study. Experiments show that assisted by semantic analysis engines, our tool significantly improves the success rates of repair to 65.9%~85.5%.</description>
+   <guid>oai:arXiv.org:2408.10495v2</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jianian Gong, Nachuan Duan, Ziheng Tao, Zhaohui Gong, Yuan Yuan, Minlie Huang</creator>
+  </item>
+  <item>
+   <title>Not All Clients Are Equal: Personalized Federated Learning on Heterogeneous Multi-Modal Clients</title>
+   <link>https://arxiv.org/abs/2506.11024</link>
+   <description>Foundation models have shown remarkable capabilities across diverse multi-modal tasks, but their centralized training raises privacy concerns and induces high transmission costs. In contrast, federated learning (FL) offers a distributed alternative without the need to share data. Recently, for the growing demand for personalizing AI models for different user purposes, personalized federated learning (PFL) has emerged. PFL allows each client to leverage the knowledge of other clients for further adaptation to individual user preferences, again without the need to share data. Despite its potential, most PFL studies remain confined to simulated environments, overlooking the data and model heterogeneity that arise in real-world scenarios. In contrast, we first consider large data heterogeneity, evaluating on a new benchmark for multi-modal PFL, spanning 40 distinct tasks with realistic data distribution shifts. We then consider model heterogeneity in that we do not assume that all clients share similar model architectures. To address data heterogeneity, we propose a task-similarity-aware model aggregation method that provides customized global models to each client. For model heterogeneity, we propose a dimension-invariant module that enables knowledge sharing across heterogeneous models. Empirical validations demonstrate that the proposed approach outperforms the state-of-the-art, excelling in both personalization and generalization capabilities.</description>
+   <guid>oai:arXiv.org:2506.11024v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Minhyuk Seo, Taeheon Kim, Hankook Lee, Jonghyun Choi, Tinne Tuytelaars</creator>
+  </item>
+  <item>
+   <title>Byzantine Outside, Curious Inside: Reconstructing Data Through Malicious Updates</title>
+   <link>https://arxiv.org/abs/2506.11413</link>
+   <description>Federated learning (FL) enables decentralized machine learning without sharing raw data, allowing multiple clients to collaboratively learn a global model. However, studies reveal that privacy leakage is possible under commonly adopted FL protocols. In particular, a server with access to client gradients can synthesize data resembling the clients' training data. In this paper, we introduce a novel threat model in FL, named the maliciously curious client, where a client manipulates its own gradients with the goal of inferring private data from peers. This attacker uniquely exploits the strength of a Byzantine adversary, traditionally aimed at undermining model robustness, and repurposes it to facilitate data reconstruction attack. We begin by formally defining this novel client-side threat model and providing a theoretical analysis that demonstrates its ability to achieve significant reconstruction success during FL training. To demonstrate its practical impact, we further develop a reconstruction algorithm that combines gradient inversion with malicious update strategies. Our analysis and experimental results reveal a critical blind spot in FL defenses: both server-side robust aggregation and client-side privacy mechanisms may fail against our proposed attack. Surprisingly, standard server- and client-side defenses designed to enhance robustness or privacy may unintentionally amplify data leakage. Compared to the baseline approach, a mistakenly used defense may instead improve the reconstructed image quality by 10-15%.</description>
+   <guid>oai:arXiv.org:2506.11413v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Kai Yue, Richeng Jin, Chau-Wai Wong, Huaiyu Dai</creator>
+  </item>
+  <item>
+   <title>SwiftSpec: Ultra-Low Latency LLM Decoding by Scaling Asynchronous Speculative Decoding</title>
+   <link>https://arxiv.org/abs/2506.11309</link>
+   <description>Low-latency decoding for large language models (LLMs) is crucial for applications like chatbots and code assistants, yet generating long outputs remains slow in single-query settings. Prior work on speculative decoding (which combines a small draft model with a larger target model) and tensor parallelism has each accelerated decoding. However, conventional approaches fail to apply both simultaneously due to imbalanced compute requirements (between draft and target models), KV-cache inconsistencies, and communication overheads under small-batch tensor-parallelism. This paper introduces SwiftSpec, a system that targets ultra-low latency for LLM decoding. SwiftSpec redesigns the speculative decoding pipeline in an asynchronous and disaggregated manner, so that each component can be scaled flexibly and remove draft overhead from the critical path. To realize this design, SwiftSpec proposes parallel tree generation, tree-aware KV cache management, and fused, latency-optimized kernels to overcome the challenges listed above. Across 5 model families and 6 datasets, SwiftSpec achieves an average of 1.75x speedup over state-of-the-art speculative decoding systems and, as a highlight, serves Llama3-70B at 348 tokens/s on 8 Nvidia Hopper GPUs, making it the fastest known system for low-latency LLM serving at this scale.</description>
+   <guid>oai:arXiv.org:2506.11309v1</guid>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ziyi Zhang, Ziheng Jiang, Chengquan Jiang, Menghan Yu, Size Zheng, Haibin Lin, Henry Hoffmann, Xin Liu</creator>
+  </item>
+  <item>
+   <title>How Visual Representations Map to Language Feature Space in Multimodal LLMs</title>
+   <link>https://arxiv.org/abs/2506.11976</link>
+   <description>Effective multimodal reasoning depends on the alignment of visual and linguistic representations, yet the mechanisms by which vision-language models (VLMs) achieve this alignment remain poorly understood. We introduce a methodological framework that deliberately maintains a frozen large language model (LLM) and a frozen vision transformer (ViT), connected solely by training a linear adapter during visual instruction tuning. This design is fundamental to our approach: by keeping the language model frozen, we ensure it maintains its original language representations without adaptation to visual data. Consequently, the linear adapter must map visual features directly into the LLM's existing representational space rather than allowing the language model to develop specialized visual understanding through fine-tuning. Our experimental design uniquely enables the use of pre-trained sparse autoencoders (SAEs) of the LLM as analytical probes. These SAEs remain perfectly aligned with the unchanged language model and serve as a snapshot of the learned language feature-representations. Through systematic analysis of SAE reconstruction error, sparsity patterns, and feature SAE descriptions, we reveal the layer-wise progression through which visual representations gradually align with language feature representations, converging in middle-to-later layers. This suggests a fundamental misalignment between ViT outputs and early LLM layers, raising important questions about whether current adapter-based architectures optimally facilitate cross-modal representation learning.</description>
+   <guid>oai:arXiv.org:2506.11976v1</guid>
+   <category>cs.CV</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Constantin Venhoff, Ashkan Khakzar, Sonia Joseph, Philip Torr, Neel Nanda</creator>
+  </item>
+  <item>
+   <title>Banded Square Root Matrix Factorization for Differentially Private Model Training</title>
+   <link>https://arxiv.org/abs/2405.13763</link>
+   <description>Current state-of-the-art methods for differentially private model training are based on matrix factorization techniques. However, these methods suffer from high computational overhead because they require numerically solving a demanding optimization problem to determine an approximately optimal factorization prior to the actual model training. In this work, we present a new matrix factorization approach, BSR, which overcomes this computational bottleneck. By exploiting properties of the standard matrix square root, BSR allows to efficiently handle also large-scale problems. For the key scenario of stochastic gradient descent with momentum and weight decay, we even derive analytical expressions for BSR that render the computational overhead negligible. We prove bounds on the approximation quality that hold both in the centralized and in the federated learning setting. Our numerical experiments demonstrate that models trained using BSR perform on par with the best existing methods, while completely avoiding their computational overhead.</description>
+   <guid>oai:arXiv.org:2405.13763v3</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Nikita P. Kalinin, Christoph Lampert</creator>
+  </item>
+  <item>
+   <title>NTK-DFL: Enhancing Decentralized Federated Learning in Heterogeneous Settings via Neural Tangent Kernel</title>
+   <link>https://arxiv.org/abs/2410.01922</link>
+   <description>Decentralized federated learning (DFL) is a collaborative machine learning framework for training a model across participants without a central server or raw data exchange. DFL faces challenges due to statistical heterogeneity, as participants often possess data of different distributions reflecting local environments and user behaviors. Recent work has shown that the neural tangent kernel (NTK) approach, when applied to federated learning in a centralized framework, can lead to improved performance. We propose an approach leveraging the NTK to train client models in the decentralized setting, while introducing a synergy between NTK-based evolution and model averaging. This synergy exploits inter-client model deviation and improves both accuracy and convergence in heterogeneous settings. Empirical results demonstrate that our approach consistently achieves higher accuracy than baselines in highly heterogeneous settings, where other approaches often underperform. Additionally, it reaches target performance in 4.6 times fewer communication rounds. We validate our approach across multiple datasets, network topologies, and heterogeneity settings to ensure robustness and generalization.</description>
+   <guid>oai:arXiv.org:2410.01922v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Gabriel Thompson, Kai Yue, Chau-Wai Wong, Huaiyu Dai</creator>
+  </item>
+  <item>
+   <title>Federated Learning Nodes Can Reconstruct Peers' Image Data</title>
+   <link>https://arxiv.org/abs/2410.04661</link>
+   <description>Federated learning (FL) is a privacy-preserving machine learning framework that enables multiple nodes to train models on their local data and periodically average weight updates to benefit from other nodes' training. Each node's goal is to collaborate with other nodes to improve the model's performance while keeping its training data private. However, this framework does not guarantee data privacy. Prior work has shown that the gradient-sharing steps in FL can be vulnerable to data reconstruction attacks from an honest-but-curious central server. In this work, we show that an honest-but-curious node/client can also launch attacks to reconstruct peers' image data through gradient inversion, presenting a severe privacy risk. We demonstrate that a single client can silently reconstruct other clients' private images using diluted information available within consecutive updates. We leverage state-of-the-art diffusion models to enhance the perceptual quality and recognizability of the reconstructed images, further demonstrating the risk of information leakage at a semantic level. This highlights the need for more robust privacy-preserving mechanisms that protect against silent client-side attacks during federated training.</description>
+   <guid>oai:arXiv.org:2410.04661v2</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Ethan Wilson, Kai Yue, Chau-Wai Wong, Huaiyu Dai</creator>
+  </item>
+  <item>
+   <title>Detecting High-Stakes Interactions with Activation Probes</title>
+   <link>https://arxiv.org/abs/2506.10805</link>
+   <description>Monitoring is an important aspect of safely deploying Large Language Models (LLMs). This paper examines activation probes for detecting &quot;high-stakes&quot; interactions -- where the text indicates that the interaction might lead to significant harm -- as a critical, yet underexplored, target for such monitoring. We evaluate several probe architectures trained on synthetic data, and find them to exhibit robust generalization to diverse, out-of-distribution, real-world data. Probes' performance is comparable to that of prompted or finetuned medium-sized LLM monitors, while offering computational savings of six orders-of-magnitude. Our experiments also highlight the potential of building resource-aware hierarchical monitoring systems, where probes serve as an efficient initial filter and flag cases for more expensive downstream analysis. We release our novel synthetic dataset and codebase to encourage further study.</description>
+   <guid>oai:arXiv.org:2506.10805v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Alex McKenzie, Urja Pawar, Phil Blandfort, William Bankes, David Krueger, Ekdeep Singh Lubana, Dmitrii Krasheninnikov</creator>
+  </item>
+  <item>
+   <title>Byzantine-Resilient Secure Aggregation for Federated Learning Without Privacy Compromises</title>
+   <link>https://arxiv.org/abs/2405.08698</link>
+   <description>Federated learning (FL) shows great promise in large scale machine learning, but brings new risks in terms of privacy and security. We propose ByITFL, a novel scheme for FL that provides resilience against Byzantine users while keeping the users' data private from the federator and private from other users. The scheme builds on the preexisting non-private FLTrust scheme, which tolerates malicious users through trust scores (TS) that attenuate or amplify the users' gradients. The trust scores are based on the ReLU function, which we approximate by a polynomial. The distributed and privacy-preserving computation in ByITFL is designed using a combination of Lagrange coded computing, verifiable secret sharing and re-randomization steps. ByITFL is the first Byzantine resilient scheme for FL with full information-theoretic privacy.</description>
+   <guid>oai:arXiv.org:2405.08698v3</guid>
+   <category>cs.IT</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yue Xia, Christoph Hofmeister, Maximilian Egger, Rawad Bitar</creator>
+  </item>
+  <item>
+   <title>LoByITFL: Low Communication Secure and Private Federated Learning</title>
+   <link>https://arxiv.org/abs/2405.19217</link>
+   <description>Privacy of the clients' data and security against Byzantine clients are key challenges in Federated Learning (FL). Existing solutions to joint privacy and security incur sacrifices on the privacy guarantee. We introduce LoByITFL, the first communication-efficient information-theoretically private and secure FL scheme that makes no sacrifices on the privacy guarantees while ensuring security against Byzantine adversaries. The key components are a small and representative dataset available to the federator, a careful modification of the FLTrust algorithm, and the one-time use of a trusted third party during an initialization period. We provide theoretical guarantees on the privacy and Byzantine resilience, as well as experimental results showing the convergence of LoByITFL.</description>
+   <guid>oai:arXiv.org:2405.19217v2</guid>
+   <category>cs.IT</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yue Xia, Maximilian Egger, Christoph Hofmeister, Rawad Bitar</creator>
+  </item>
+  <item>
+   <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
+   <link>https://arxiv.org/abs/2506.06266</link>
+   <description>Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.</description>
+   <guid>oai:arXiv.org:2506.06266v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
+  </item>
  </channel>
 </rss>
