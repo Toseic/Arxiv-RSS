@@ -6,455 +6,732 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Tue, 17 Jun 2025 03:13:50 </lastBuildDate>
+  <lastBuildDate>Tue, 17 Jun 2025 04:22:24 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Tue, 17 Jun 2025 03:13:50 </pubDate>
+  <pubDate>Tue, 17 Jun 2025 04:22:24 </pubDate>
   <item>
-   <title>How Visual Representations Map to Language Feature Space in Multimodal LLMs</title>
-   <link>https://arxiv.org/abs/2506.11976</link>
-   <description>Effective multimodal reasoning depends on the alignment of visual and linguistic representations, yet the mechanisms by which vision-language models (VLMs) achieve this alignment remain poorly understood. We introduce a methodological framework that deliberately maintains a frozen large language model (LLM) and a frozen vision transformer (ViT), connected solely by training a linear adapter during visual instruction tuning. This design is fundamental to our approach: by keeping the language model frozen, we ensure it maintains its original language representations without adaptation to visual data. Consequently, the linear adapter must map visual features directly into the LLM's existing representational space rather than allowing the language model to develop specialized visual understanding through fine-tuning. Our experimental design uniquely enables the use of pre-trained sparse autoencoders (SAEs) of the LLM as analytical probes. These SAEs remain perfectly aligned with the unchanged language model and serve as a snapshot of the learned language feature-representations. Through systematic analysis of SAE reconstruction error, sparsity patterns, and feature SAE descriptions, we reveal the layer-wise progression through which visual representations gradually align with language feature representations, converging in middle-to-later layers. This suggests a fundamental misalignment between ViT outputs and early LLM layers, raising important questions about whether current adapter-based architectures optimally facilitate cross-modal representation learning.</description>
-   <guid>oai:arXiv.org:2506.11976v1</guid>
+   <title>Leveraging MIMIC Datasets for Better Digital Health: A Review on Open Problems, Progress Highlights, and Future Promises</title>
+   <link>https://arxiv.org/abs/2506.12808</link>
+   <description>The Medical Information Mart for Intensive Care (MIMIC) datasets have become the Kernel of Digital Health Research by providing freely accessible, deidentified records from tens of thousands of critical care admissions, enabling a broad spectrum of applications in clinical decision support, outcome prediction, and healthcare analytics. Although numerous studies and surveys have explored the predictive power and clinical utility of MIMIC based models, critical challenges in data integration, representation, and interoperability remain underexplored. This paper presents a comprehensive survey that focuses uniquely on open problems. We identify persistent issues such as data granularity, cardinality limitations, heterogeneous coding schemes, and ethical constraints that hinder the generalizability and real-time implementation of machine learning models. We highlight key progress in dimensionality reduction, temporal modelling, causal inference, and privacy preserving analytics, while also outlining promising directions including hybrid modelling, federated learning, and standardized preprocessing pipelines. By critically examining these structural limitations and their implications, this survey offers actionable insights to guide the next generation of MIMIC powered digital health innovations.</description>
+   <guid>oai:arXiv.org:2506.12808v1</guid>
    <category>cs.CV</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Constantin Venhoff, Ashkan Khakzar, Sonia Joseph, Philip Torr, Neel Nanda</creator>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Afifa Khaled, Mohammed Sabir, Rizwan Qureshi, Camillo Maria Caruso, Valerio Guarrasi, Suncheng Xiang, S Kevin Zhou</creator>
   </item>
   <item>
-   <title>Regularized Federated Learning for Privacy-Preserving Dysarthric and Elderly Speech Recognition</title>
-   <link>https://arxiv.org/abs/2506.11069</link>
-   <description>Accurate recognition of dysarthric and elderly speech remains challenging to date. While privacy concerns have driven a shift from centralized approaches to federated learning (FL) to ensure data confidentiality, this further exacerbates the challenges of data scarcity, imbalanced data distribution and speaker heterogeneity. To this end, this paper conducts a systematic investigation of regularized FL techniques for privacy-preserving dysarthric and elderly speech recognition, addressing different levels of the FL process by 1) parameter-based, 2) embedding-based and 3) novel loss-based regularization. Experiments on the benchmark UASpeech dysarthric and DementiaBank Pitt elderly speech corpora suggest that regularized FL systems consistently outperform the baseline FedAvg system by statistically significant WER reductions of up to 0.55\% absolute (2.13\% relative). Further increasing communication frequency to one exchange per batch approaches centralized training performance.</description>
-   <guid>oai:arXiv.org:2506.11069v1</guid>
-   <category>eess.AS</category>
+   <title>Serving Large Language Models on Huawei CloudMatrix384</title>
+   <link>https://arxiv.org/abs/2506.12708</link>
+   <description>The rapid evolution of large language models (LLMs), driven by growing parameter scales, adoption of mixture-of-experts (MoE) architectures, and expanding context lengths, imposes unprecedented demands on AI infrastructure. Traditional AI clusters face limitations in compute intensity, memory bandwidth, inter-chip communication, and latency, compounded by variable workloads and strict service-level objectives. Addressing these issues requires fundamentally redesigned hardware-software integration. This paper introduces Huawei CloudMatrix, a next-generation AI datacenter architecture, realized in the production-grade CloudMatrix384 supernode. It integrates 384 Ascend 910C NPUs and 192 Kunpeng CPUs interconnected via an ultra-high-bandwidth Unified Bus (UB) network, enabling direct all-to-all communication and dynamic pooling of resources. These features optimize performance for communication-intensive operations, such as large-scale MoE expert parallelism and distributed key-value cache access. To fully leverage CloudMatrix384, we propose CloudMatrix-Infer, an advanced LLM serving solution incorporating three core innovations: a peer-to-peer serving architecture that independently scales prefill, decode, and caching; a large-scale expert parallelism strategy supporting EP320 via efficient UB-based token dispatch; and hardware-aware optimizations including specialized operators, microbatch-based pipelining, and INT8 quantization. Evaluation with the DeepSeek-R1 model shows CloudMatrix-Infer achieves state-of-the-art efficiency: prefill throughput of 6,688 tokens/s per NPU and decode throughput of 1,943 tokens/s per NPU (&lt;50 ms TPOT). It effectively balances throughput and latency, sustaining 538 tokens/s even under stringent 15 ms latency constraints, while INT8 quantization maintains model accuracy across benchmarks.</description>
+   <guid>oai:arXiv.org:2506.12708v1</guid>
+   <category>cs.DC</category>
    <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.SD</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Tao Zhong, Mengzhe Geng, Shujie Hu, Guinan Li, Xunying Liu</creator>
-  </item>
-  <item>
-   <title>Customizing Speech Recognition Model with Large Language Model Feedback</title>
-   <link>https://arxiv.org/abs/2506.11091</link>
-   <description>Automatic speech recognition (ASR) systems have achieved strong performance on general transcription tasks. However, they continue to struggle with recognizing rare named entities and adapting to domain mismatches. In contrast, large language models (LLMs), trained on massive internet-scale datasets, are often more effective across a wide range of domains. In this work, we propose a reinforcement learning based approach for unsupervised domain adaptation, leveraging unlabeled data to enhance transcription quality, particularly the named entities affected by domain mismatch, through feedback from a LLM. Given contextual information, our framework employs a LLM as the reward model to score the hypotheses from the ASR model. These scores serve as reward signals to fine-tune the ASR model via reinforcement learning. Our method achieves a 21\% improvement on entity word error rate over conventional self-training methods.</description>
-   <guid>oai:arXiv.org:2506.11091v1</guid>
-   <category>cs.CL</category>
-   <category>cs.SD</category>
-   <category>eess.AS</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <category>cs.AR</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shaoshi Ling, Guoli Ye</creator>
+   <creator>Pengfei Zuo, Huimin Lin, Junbo Deng, Nan Zou, Xingkun Yang, Yingyu Diao, Weifeng Gao, Ke Xu, Zhangyu Chen, Shirui Lu, Zhao Qiu, Peiyang Li, Xianyu Chang, Zhengzhong Yu, Fangzheng Miao, Jia Zheng, Ying Li, Yuan Feng, Bei Wang, Zaijian Zong, Mosong Zhou, Wenli Zhou, Houjiang Chen, Xingyu Liao, Yipeng Li, Wenxiao Zhang, Ping Zhu, Yinggang Wang, Chuanjie Xiao, Depeng Liang, Dong Cao, Juncheng Liu, Yongqiang Yang, Xiaolong Bai, Yi Li, Huaguo Xie, Huatao Wu, Zhibin Yu, Lv Chen, Hu Liu, Yujun Ding, Haipei Zhu, Jing Xia, Yi Xiong, Zhou Yu, Heng Liao</creator>
   </item>
   <item>
-   <title>SwiftSpec: Ultra-Low Latency LLM Decoding by Scaling Asynchronous Speculative Decoding</title>
-   <link>https://arxiv.org/abs/2506.11309</link>
-   <description>Low-latency decoding for large language models (LLMs) is crucial for applications like chatbots and code assistants, yet generating long outputs remains slow in single-query settings. Prior work on speculative decoding (which combines a small draft model with a larger target model) and tensor parallelism has each accelerated decoding. However, conventional approaches fail to apply both simultaneously due to imbalanced compute requirements (between draft and target models), KV-cache inconsistencies, and communication overheads under small-batch tensor-parallelism. This paper introduces SwiftSpec, a system that targets ultra-low latency for LLM decoding. SwiftSpec redesigns the speculative decoding pipeline in an asynchronous and disaggregated manner, so that each component can be scaled flexibly and remove draft overhead from the critical path. To realize this design, SwiftSpec proposes parallel tree generation, tree-aware KV cache management, and fused, latency-optimized kernels to overcome the challenges listed above. Across 5 model families and 6 datasets, SwiftSpec achieves an average of 1.75x speedup over state-of-the-art speculative decoding systems and, as a highlight, serves Llama3-70B at 348 tokens/s on 8 Nvidia Hopper GPUs, making it the fastest known system for low-latency LLM serving at this scale.</description>
-   <guid>oai:arXiv.org:2506.11309v1</guid>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Ziyi Zhang, Ziheng Jiang, Chengquan Jiang, Menghan Yu, Size Zheng, Haibin Lin, Henry Hoffmann, Xin Liu</creator>
+   <title>Toward Reasonable Parrots: Why Large Language Models Should Argue with Us by Design</title>
+   <link>https://arxiv.org/abs/2505.05298</link>
+   <description>In this position paper, we advocate for the development of conversational technology that is inherently designed to support and facilitate argumentative processes. We argue that, at present, large language models (LLMs) are inadequate for this purpose, and we propose an ideal technology design aimed at enhancing argumentative skills. This involves re-framing LLMs as tools to exercise our critical thinking skills rather than replacing them. We introduce the concept of \textit{reasonable parrots} that embody the fundamental principles of relevance, responsibility, and freedom, and that interact through argumentative dialogical moves. These principles and moves arise out of millennia of work in argumentation theory and should serve as the starting point for LLM-based technology that incorporates basic principles of argumentation.</description>
+   <guid>oai:arXiv.org:2505.05298v2</guid>
+   <category>cs.CL</category>
+   <category>cs.MA</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Elena Musi, Nadin Kokciyan, Khalid Al-Khatib, Davide Ceolin, Emmanuelle Dietz, Klara Gutekunst, Annette Hautli-Janisz, Cristian Manuel Santiba\~nez Ya\~nez, Jodi Schneider, Jonas Scholz, Cor Steging, Jacky Visser, Henning Wachsmuth</creator>
   </item>
   <item>
-   <title>Not All Clients Are Equal: Personalized Federated Learning on Heterogeneous Multi-Modal Clients</title>
-   <link>https://arxiv.org/abs/2506.11024</link>
-   <description>Foundation models have shown remarkable capabilities across diverse multi-modal tasks, but their centralized training raises privacy concerns and induces high transmission costs. In contrast, federated learning (FL) offers a distributed alternative without the need to share data. Recently, for the growing demand for personalizing AI models for different user purposes, personalized federated learning (PFL) has emerged. PFL allows each client to leverage the knowledge of other clients for further adaptation to individual user preferences, again without the need to share data. Despite its potential, most PFL studies remain confined to simulated environments, overlooking the data and model heterogeneity that arise in real-world scenarios. In contrast, we first consider large data heterogeneity, evaluating on a new benchmark for multi-modal PFL, spanning 40 distinct tasks with realistic data distribution shifts. We then consider model heterogeneity in that we do not assume that all clients share similar model architectures. To address data heterogeneity, we propose a task-similarity-aware model aggregation method that provides customized global models to each client. For model heterogeneity, we propose a dimension-invariant module that enables knowledge sharing across heterogeneous models. Empirical validations demonstrate that the proposed approach outperforms the state-of-the-art, excelling in both personalization and generalization capabilities.</description>
-   <guid>oai:arXiv.org:2506.11024v1</guid>
-   <category>cs.LG</category>
+   <title>Latency Optimization for Wireless Federated Learning in Multihop Networks</title>
+   <link>https://arxiv.org/abs/2506.12081</link>
+   <description>In this paper, we study a novel latency minimization problem in wireless federated learning (FL) across multi-hop networks. The system comprises multiple routes, each integrating leaf and relay nodes for FL model training. We explore a personalized learning and adaptive aggregation-aware FL (PAFL) framework that effectively addresses data heterogeneity across participating nodes by harmonizing individual and collective learning objectives. We formulate an optimization problem aimed at minimizing system latency through the joint optimization of leaf and relay nodes, as well as relay routing indicator. We also incorporate an additional energy harvesting scheme for the relay nodes to help with their relay tasks. This formulation presents a computationally demanding challenge, and thus we develop a simple yet efficient algorithm based on block coordinate descent and successive convex approximation (SCA) techniques. Simulation results illustrate the efficacy of our proposed joint optimization approach for leaf and relay nodes with relay routing indicator. We observe significant latency savings in the wireless multi-hop PAFL system, with reductions of up to 69.37% compared to schemes optimizing only one node type, traditional greedy algorithm, and scheme without relay routing indicator.</description>
+   <guid>oai:arXiv.org:2506.12081v1</guid>
+   <category>cs.NI</category>
    <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Minhyuk Seo, Taeheon Kim, Hankook Lee, Jonghyun Choi, Tinne Tuytelaars</creator>
+   <category>cs.IT</category>
+   <category>math.IT</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Shaba Shaon, Van-Dinh Nguyen, Dinh C. Nguyen</creator>
   </item>
   <item>
-   <title>Advancing Hybrid Defense for Byzantine Attacks in Federated Learning</title>
-   <link>https://arxiv.org/abs/2409.06474</link>
-   <description>Federated learning (FL) enables multiple clients to collaboratively train a global model without sharing their local data. Recent studies have highlighted the vulnerability of FL to Byzantine attacks, where malicious clients send poisoned updates to degrade model performance. In particular, many attacks have been developed targeting specific aggregation rules, whereas various defense mechanisms have been designed for dedicated threat models. This paper studies the resilience of attack-agnostic FL scenarios, where the server lacks prior knowledge of both the attackers' strategies and the number of malicious clients involved. We first introduce hybrid defenses against state-of-the-art attacks. Our goal is to identify a general-purpose aggregation rule that performs well on average while also avoiding worst-case vulnerabilities. By adaptively selecting from available defenses, we demonstrate that the server remains robust even when confronted with a substantial proportion of poisoned updates. We also emphasize that existing FL defenses should not automatically be regarded as secure, as demonstrated by the newly proposed Trapsetter attack. The proposed attack outperforms other state-of-the-art attacks by further increasing the impact of the attack by 5-15%. Our findings highlight the ongoing need for the development of Byzantine-resilient aggregation algorithms in FL.</description>
-   <guid>oai:arXiv.org:2409.06474v3</guid>
-   <category>cs.DC</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <title>Federated Learning Assisted Edge Caching Scheme Based on Lightweight Architecture DDPM</title>
+   <link>https://arxiv.org/abs/2506.04593</link>
+   <description>Edge caching is an emerging technology that empowers caching units at edge nodes, allowing users to fetch contents of interest that have been pre-cached at the edge nodes. The key to pre-caching is to maximize the cache hit percentage for cached content without compromising users' privacy. In this letter, we propose a federated learning (FL) assisted edge caching scheme based on lightweight architecture denoising diffusion probabilistic model (LDPM). Our simulation results verify that our proposed scheme achieves a higher cache hit percentage compared to existing FL-based methods and baseline methods.</description>
+   <guid>oai:arXiv.org:2506.04593v3</guid>
+   <category>cs.NI</category>
+   <category>eess.SP</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Kai Yue, Richeng Jin, Chau-Wai Wong, Huaiyu Dai</creator>
+   <creator>Xun Li, Qiong Wu, Pingyi Fan, Kezhi Wang, Nan Cheng, Khaled B. Letaief</creator>
   </item>
   <item>
-   <title>Byzantine-Resilient Secure Aggregation for Federated Learning Without Privacy Compromises</title>
-   <link>https://arxiv.org/abs/2405.08698</link>
-   <description>Federated learning (FL) shows great promise in large scale machine learning, but brings new risks in terms of privacy and security. We propose ByITFL, a novel scheme for FL that provides resilience against Byzantine users while keeping the users' data private from the federator and private from other users. The scheme builds on the preexisting non-private FLTrust scheme, which tolerates malicious users through trust scores (TS) that attenuate or amplify the users' gradients. The trust scores are based on the ReLU function, which we approximate by a polynomial. The distributed and privacy-preserving computation in ByITFL is designed using a combination of Lagrange coded computing, verifiable secret sharing and re-randomization steps. ByITFL is the first Byzantine resilient scheme for FL with full information-theoretic privacy.</description>
-   <guid>oai:arXiv.org:2405.08698v3</guid>
-   <category>cs.IT</category>
-   <category>cs.CR</category>
+   <title>Optimizing Federated Learning using Remote Embeddings for Graph Neural Networks</title>
+   <link>https://arxiv.org/abs/2506.12425</link>
+   <description>Graph Neural Networks (GNNs) have experienced rapid advancements in recent years due to their ability to learn meaningful representations from graph data structures. Federated Learning (FL) has emerged as a viable machine learning approach for training a shared model on decentralized data, addressing privacy concerns while leveraging parallelism. Existing methods that address the unique requirements of federated GNN training using remote embeddings to enhance convergence accuracy are limited by their diminished performance due to large communication costs with a shared embedding server. In this paper, we present OpES, an optimized federated GNN training framework that uses remote neighbourhood pruning, and overlaps pushing of embeddings to the server with local training to reduce the network costs and training time. The modest drop in per-round accuracy due to pre-emptive push of embeddings is out-stripped by the reduction in per-round training time for large and dense graphs like Reddit and Products, converging up to $\approx2\times$ faster than the state-of-the-art technique using an embedding server and giving up to $20\%$ better accuracy than vanilla federated GNN learning.</description>
+   <guid>oai:arXiv.org:2506.12425v1</guid>
    <category>cs.DC</category>
    <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Pranjal Naman, Yogesh Simmhan</creator>
+  </item>
+  <item>
+   <title>Serving Large Language Models on Huawei CloudMatrix384</title>
+   <link>https://arxiv.org/abs/2506.12708</link>
+   <description>The rapid evolution of large language models (LLMs), driven by growing parameter scales, adoption of mixture-of-experts (MoE) architectures, and expanding context lengths, imposes unprecedented demands on AI infrastructure. Traditional AI clusters face limitations in compute intensity, memory bandwidth, inter-chip communication, and latency, compounded by variable workloads and strict service-level objectives. Addressing these issues requires fundamentally redesigned hardware-software integration. This paper introduces Huawei CloudMatrix, a next-generation AI datacenter architecture, realized in the production-grade CloudMatrix384 supernode. It integrates 384 Ascend 910C NPUs and 192 Kunpeng CPUs interconnected via an ultra-high-bandwidth Unified Bus (UB) network, enabling direct all-to-all communication and dynamic pooling of resources. These features optimize performance for communication-intensive operations, such as large-scale MoE expert parallelism and distributed key-value cache access. To fully leverage CloudMatrix384, we propose CloudMatrix-Infer, an advanced LLM serving solution incorporating three core innovations: a peer-to-peer serving architecture that independently scales prefill, decode, and caching; a large-scale expert parallelism strategy supporting EP320 via efficient UB-based token dispatch; and hardware-aware optimizations including specialized operators, microbatch-based pipelining, and INT8 quantization. Evaluation with the DeepSeek-R1 model shows CloudMatrix-Infer achieves state-of-the-art efficiency: prefill throughput of 6,688 tokens/s per NPU and decode throughput of 1,943 tokens/s per NPU (&lt;50 ms TPOT). It effectively balances throughput and latency, sustaining 538 tokens/s even under stringent 15 ms latency constraints, while INT8 quantization maintains model accuracy across benchmarks.</description>
+   <guid>oai:arXiv.org:2506.12708v1</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.AR</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Pengfei Zuo, Huimin Lin, Junbo Deng, Nan Zou, Xingkun Yang, Yingyu Diao, Weifeng Gao, Ke Xu, Zhangyu Chen, Shirui Lu, Zhao Qiu, Peiyang Li, Xianyu Chang, Zhengzhong Yu, Fangzheng Miao, Jia Zheng, Ying Li, Yuan Feng, Bei Wang, Zaijian Zong, Mosong Zhou, Wenli Zhou, Houjiang Chen, Xingyu Liao, Yipeng Li, Wenxiao Zhang, Ping Zhu, Yinggang Wang, Chuanjie Xiao, Depeng Liang, Dong Cao, Juncheng Liu, Yongqiang Yang, Xiaolong Bai, Yi Li, Huaguo Xie, Huatao Wu, Zhibin Yu, Lv Chen, Hu Liu, Yujun Ding, Haipei Zhu, Jing Xia, Yi Xiong, Zhou Yu, Heng Liao</creator>
+  </item>
+  <item>
+   <title>Fed-HeLLo: Efficient Federated Foundation Model Fine-Tuning with Heterogeneous LoRA Allocation</title>
+   <link>https://arxiv.org/abs/2506.12213</link>
+   <description>Federated Learning has recently been utilized to collaboratively fine-tune foundation models across multiple clients. Notably, federated low-rank adaptation LoRA-based fine-tuning methods have recently gained attention, which allows clients to fine-tune FMs with a small portion of trainable parameters locally. However, most existing methods do not account for the heterogeneous resources of clients or lack an effective local training strategy to maximize global fine-tuning performance under limited resources. In this work, we propose Fed-HeLLo, a novel federated LoRA-based fine-tuning framework that enables clients to collaboratively fine-tune an FM with different local trainable LoRA layers. To ensure its effectiveness, we develop several heterogeneous LoRA allocation (HLA) strategies that adaptively allocate local trainable LoRA layers based on clients' resource capabilities and the layer importance. Specifically, based on the dynamic layer importance, we design a Fisher Information Matrix score-based HLA that leverages dynamic gradient norm information. To better stabilize the training process, we consider the intrinsic importance of LoRA layers and design a Geometrically-Defined HLA strategy. It shapes the collective distribution of trainable LoRA layers into specific geometric patterns, such as Triangle, Inverted Triangle, Bottleneck, and Uniform. Moreover, we extend GD-HLA into a randomized version, named Randomized Geometrically-Defined HLA, for enhanced model accuracy with randomness. By co-designing the proposed HLA strategies, we incorporate both the dynamic and intrinsic layer importance into the design of our HLA strategy. We evaluate our approach on five datasets under diverse federated LoRA fine-tuning settings, covering three levels of data distribution from IID to extreme Non-IID. Results show that Fed-HeLLo with HLA strategies is both effective and efficient.</description>
+   <guid>oai:arXiv.org:2506.12213v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zikai Zhang, Ping Liu, Jiahao Xu, Rui Hu</creator>
+  </item>
+  <item>
+   <title>Perfect Privacy for Discriminator-Based Byzantine-Resilient Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.13561</link>
+   <description>Federated learning (FL) shows great promise in large-scale machine learning but introduces new privacy and security challenges. We propose ByITFL and LoByITFL, two novel FL schemes that enhance resilience against Byzantine users while keeping the users' data private from eavesdroppers. To ensure privacy and Byzantine resilience, our schemes build on having a small representative dataset available to the federator and crafting a discriminator function allowing the mitigation of corrupt users' contributions. ByITFL employs Lagrange coded computing and re-randomization, making it the first Byzantine-resilient FL scheme with perfect Information-Theoretic (IT) privacy, though at the cost of a significant communication overhead. LoByITFL, on the other hand, achieves Byzantine resilience and IT privacy at a significantly reduced communication cost, but requires a Trusted Third Party, used only in a one-time initialization phase before training. We provide theoretical guarantees on privacy and Byzantine resilience, along with convergence guarantees and experimental results validating our findings.</description>
+   <guid>oai:arXiv.org:2506.13561v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <category>cs.IT</category>
    <category>math.IT</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Yue Xia, Christoph Hofmeister, Maximilian Egger, Rawad Bitar</creator>
   </item>
   <item>
-   <title>LoByITFL: Low Communication Secure and Private Federated Learning</title>
-   <link>https://arxiv.org/abs/2405.19217</link>
-   <description>Privacy of the clients' data and security against Byzantine clients are key challenges in Federated Learning (FL). Existing solutions to joint privacy and security incur sacrifices on the privacy guarantee. We introduce LoByITFL, the first communication-efficient information-theoretically private and secure FL scheme that makes no sacrifices on the privacy guarantees while ensuring security against Byzantine adversaries. The key components are a small and representative dataset available to the federator, a careful modification of the FLTrust algorithm, and the one-time use of a trusted third party during an initialization period. We provide theoretical guarantees on the privacy and Byzantine resilience, as well as experimental results showing the convergence of LoByITFL.</description>
-   <guid>oai:arXiv.org:2405.19217v2</guid>
-   <category>cs.IT</category>
+   <title>EBS-CFL: Efficient and Byzantine-robust Secure Clustered Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.13612</link>
+   <description>Despite federated learning (FL)'s potential in collaborative learning, its performance has deteriorated due to the data heterogeneity of distributed users. Recently, clustered federated learning (CFL) has emerged to address this challenge by partitioning users into clusters according to their similarity. However, CFL faces difficulties in training when users are unwilling to share their cluster identities due to privacy concerns. To address these issues, we present an innovative Efficient and Robust Secure Aggregation scheme for CFL, dubbed EBS-CFL. The proposed EBS-CFL supports effectively training CFL while maintaining users' cluster identity confidentially. Moreover, it detects potential poisonous attacks without compromising individual client gradients by discarding negatively correlated gradients and aggregating positively correlated ones using a weighted approach. The server also authenticates correct gradient encoding by clients. EBS-CFL has high efficiency with client-side overhead O(ml + m^2) for communication and O(m^2l) for computation, where m is the number of cluster identities, and l is the gradient size. When m = 1, EBS-CFL's computational efficiency of client is at least O(log n) times better than comparison schemes, where n is the number of clients.In addition, we validate the scheme through extensive experiments. Finally, we theoretically prove the scheme's security.</description>
+   <guid>oai:arXiv.org:2506.13612v1</guid>
    <category>cs.CR</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
-   <category>math.IT</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yue Xia, Maximilian Egger, Christoph Hofmeister, Rawad Bitar</creator>
-  </item>
-  <item>
-   <title>Customizing Speech Recognition Model with Large Language Model Feedback</title>
-   <link>https://arxiv.org/abs/2506.11091</link>
-   <description>Automatic speech recognition (ASR) systems have achieved strong performance on general transcription tasks. However, they continue to struggle with recognizing rare named entities and adapting to domain mismatches. In contrast, large language models (LLMs), trained on massive internet-scale datasets, are often more effective across a wide range of domains. In this work, we propose a reinforcement learning based approach for unsupervised domain adaptation, leveraging unlabeled data to enhance transcription quality, particularly the named entities affected by domain mismatch, through feedback from a LLM. Given contextual information, our framework employs a LLM as the reward model to score the hypotheses from the ASR model. These scores serve as reward signals to fine-tune the ASR model via reinforcement learning. Our method achieves a 21\% improvement on entity word error rate over conventional self-training methods.</description>
-   <guid>oai:arXiv.org:2506.11091v1</guid>
-   <category>cs.CL</category>
-   <category>cs.SD</category>
-   <category>eess.AS</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Shaoshi Ling, Guoli Ye</creator>
-  </item>
-  <item>
-   <title>From Replication to Redesign: Exploring Pairwise Comparisons for LLM-Based Peer Review</title>
-   <link>https://arxiv.org/abs/2506.11343</link>
-   <description>The advent of large language models (LLMs) offers unprecedented opportunities to reimagine peer review beyond the constraints of traditional workflows. Despite these opportunities, prior efforts have largely focused on replicating traditional review workflows with LLMs serving as direct substitutes for human reviewers, while limited attention has been given to exploring new paradigms that fundamentally rethink how LLMs can participate in the academic review process. In this paper, we introduce and explore a novel mechanism that employs LLM agents to perform pairwise comparisons among manuscripts instead of individual scoring. By aggregating outcomes from substantial pairwise evaluations, this approach enables a more accurate and robust measure of relative manuscript quality. Our experiments demonstrate that this comparative approach significantly outperforms traditional rating-based methods in identifying high-impact papers. However, our analysis also reveals emergent biases in the selection process, notably a reduced novelty in research topics and an increased institutional imbalance. These findings highlight both the transformative potential of rethinking peer review with LLMs and critical challenges that future systems must address to ensure equity and diversity.</description>
-   <guid>oai:arXiv.org:2506.11343v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yaohui Zhang, Haijing Zhang, Wenlong Ji, Tianyu Hua, Nick Haber, Hancheng Cao, Weixin Liang</creator>
-  </item>
-  <item>
-   <title>DART: Distilling Autoregressive Reasoning to Silent Thought</title>
-   <link>https://arxiv.org/abs/2506.11752</link>
-   <description>Chain-of-Thought (CoT) reasoning has significantly advanced Large Language Models (LLMs) in solving complex tasks. However, its autoregressive paradigm leads to significant computational overhead, hindering its deployment in latency-sensitive applications. To address this, we propose \textbf{DART} (\textbf{D}istilling \textbf{A}utoregressive \textbf{R}easoning to Silent \textbf{T}hought), a self-distillation framework that enables LLMs to replace autoregressive CoT with non-autoregressive Silent Thought (ST). Specifically, DART introduces two training pathways: the CoT pathway for traditional reasoning and the ST pathway for generating answers directly from a few ST tokens. The ST pathway utilizes a lightweight Reasoning Evolvement Module (REM) to align its hidden states with the CoT pathway, enabling the ST tokens to evolve into informative embeddings. During inference, only the ST pathway is activated, leveraging evolving ST tokens to deliver the answer directly. Extensive experimental results demonstrate that DART achieves comparable reasoning performance to existing baselines while offering significant efficiency gains, serving as a feasible alternative for efficient reasoning.</description>
-   <guid>oai:arXiv.org:2506.11752v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Nan Jiang, Ziming Wu, De-Chuan Zhan, Fuming Lai, Shaobing Lian</creator>
-  </item>
-  <item>
-   <title>A Survey of Task-Oriented Knowledge Graph Reasoning: Status, Applications, and Prospects</title>
-   <link>https://arxiv.org/abs/2506.11012</link>
-   <description>Knowledge graphs (KGs) have emerged as a powerful paradigm for structuring and leveraging diverse real-world knowledge, which serve as a fundamental technology for enabling cognitive intelligence systems with advanced understanding and reasoning capabilities. Knowledge graph reasoning (KGR) aims to infer new knowledge based on existing facts in KGs, playing a crucial role in applications such as public security intelligence, intelligent healthcare, and financial risk assessment. From a task-centric perspective, existing KGR approaches can be broadly classified into static single-step KGR, static multi-step KGR, dynamic KGR, multi-modal KGR, few-shot KGR, and inductive KGR. While existing surveys have covered these six types of KGR tasks, a comprehensive review that systematically summarizes all KGR tasks particularly including downstream applications and more challenging reasoning paradigms remains lacking. In contrast to previous works, this survey provides a more comprehensive perspective on the research of KGR by categorizing approaches based on primary reasoning tasks, downstream application tasks, and potential challenging reasoning tasks. Besides, we explore advanced techniques, such as large language models (LLMs), and their impact on KGR. This work aims to highlight key research trends and outline promising future directions in the field of KGR.</description>
-   <guid>oai:arXiv.org:2506.11012v1</guid>
    <category>cs.AI</category>
-   <category>cs.CL</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <category>cs.DC</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Guanglin Niu, Bo Li, Yangguang Lin</creator>
+   <creator>Zhiqiang Li, Haiyong Bao, Menghong Guan, Hao Pan, Cheng Huang, Hong-Ning Dai</creator>
   </item>
   <item>
-   <title>Regularized Federated Learning for Privacy-Preserving Dysarthric and Elderly Speech Recognition</title>
-   <link>https://arxiv.org/abs/2506.11069</link>
-   <description>Accurate recognition of dysarthric and elderly speech remains challenging to date. While privacy concerns have driven a shift from centralized approaches to federated learning (FL) to ensure data confidentiality, this further exacerbates the challenges of data scarcity, imbalanced data distribution and speaker heterogeneity. To this end, this paper conducts a systematic investigation of regularized FL techniques for privacy-preserving dysarthric and elderly speech recognition, addressing different levels of the FL process by 1) parameter-based, 2) embedding-based and 3) novel loss-based regularization. Experiments on the benchmark UASpeech dysarthric and DementiaBank Pitt elderly speech corpora suggest that regularized FL systems consistently outperform the baseline FedAvg system by statistically significant WER reductions of up to 0.55\% absolute (2.13\% relative). Further increasing communication frequency to one exchange per batch approaches centralized training performance.</description>
-   <guid>oai:arXiv.org:2506.11069v1</guid>
-   <category>eess.AS</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.SD</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Tao Zhong, Mengzhe Geng, Shujie Hu, Guinan Li, Xunying Liu</creator>
-  </item>
-  <item>
-   <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
-   <link>https://arxiv.org/abs/2506.06266</link>
-   <description>Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.</description>
-   <guid>oai:arXiv.org:2506.06266v3</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <title>DFPL: Decentralized Federated Prototype Learning Across Heterogeneous Data Distributions</title>
+   <link>https://arxiv.org/abs/2505.04947</link>
+   <description>Federated learning is a distributed machine learning paradigm through centralized model aggregation. However, standard federated learning relies on a centralized server, making it vulnerable to server failures. While existing solutions utilize blockchain technology to implement Decentralized Federated Learning (DFL), the statistical heterogeneity of data distributions among clients severely degrades the performance of DFL. Driven by this issue, this paper proposes a decentralized federated prototype learning framework, named DFPL, which significantly improves the performance of DFL across heterogeneous data distributions. Specifically, DFPL introduces prototype learning into DFL to mitigate the impact of statistical heterogeneity and reduces the amount of parameters exchanged between clients. Additionally, blockchain is embedded into our framework, enabling the training and mining processes to be implemented locally on each client. From a theoretical perspective, we analyze the convergence of DFPL by modeling the required computational resources during both training and mining processes. The experiment results highlight the superiority of our DFPL in model performance and communication efficiency across four benchmark datasets with heterogeneous data distributions.</description>
+   <guid>oai:arXiv.org:2505.04947v3</guid>
+   <category>cs.DC</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
+   <creator>Hongliang Zhang, Fenghua Xu, Zhongyuan Yu, Shanchen Pang, Chunqiang Hu, Jiguo Yu</creator>
   </item>
   <item>
-   <title>Enhancing multimodal analogical reasoning with Logic Augmented Generation</title>
-   <link>https://arxiv.org/abs/2504.11190</link>
-   <description>Recent advances in Large Language Models have demonstrated their capabilities across a variety of tasks. However, automatically extracting implicit knowledge from natural language remains a significant challenge, as machines lack active experience with the physical world. Given this scenario, semantic knowledge graphs can serve as conceptual spaces that guide the automated text generation reasoning process to achieve more efficient and explainable results. In this paper, we apply a logic-augmented generation (LAG) framework that leverages the explicit representation of a text through a semantic knowledge graph and applies it in combination with prompt heuristics to elicit implicit analogical connections. This method generates extended knowledge graph triples representing implicit meaning, enabling systems to reason on unlabeled multimodal data regardless of the domain. We validate our work through three metaphor detection and understanding tasks across four datasets, as they require deep analogical reasoning capabilities. The results show that this integrated approach surpasses current baselines, performs better than humans in understanding visual metaphors, and enables more explainable reasoning processes, though still has inherent limitations in metaphor understanding, especially for domain-specific metaphors. Furthermore, we propose a thorough error analysis, discussing issues with metaphorical annotations and current evaluation methods.</description>
-   <guid>oai:arXiv.org:2504.11190v2</guid>
+   <title>KVCache Cache in the Wild: Characterizing and Optimizing KVCache Cache at a Large Cloud Provider</title>
+   <link>https://arxiv.org/abs/2506.02634</link>
+   <description>Serving large language models (LLMs) is important for cloud providers, and caching intermediate results (KV\$) after processing each request substantially improves serving throughput and latency. However, there is limited understanding of how LLM serving benefits from KV\$ caching, where system design decisions like cache eviction policies are highly workload-dependent. In this paper, we present the first systematic characterization of the KV\$ workload patterns from one of the leading LLM service providers. We draw observations that were not covered by previous studies focusing on synthetic workloads, including: KV\$ reuses are skewed across requests, where reuses between single-turn requests are equally important as multi-turn requests; the reuse time and probability are diverse considering all requests, but for a specific request category, the pattern tends to be predictable; and the overall cache size required for an ideal cache hit ratio is moderate. Based on the characterization, we further propose a workload-aware cache eviction policy that improves the serving performance under real-world traces, especially with limited cache capacity.</description>
+   <guid>oai:arXiv.org:2506.02634v2</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jiahao Wang, Jinbo Han, Xingda Wei, Sijie Shen, Dingyan Zhang, Chenguang Fang, Rong Chen, Wenyuan Yu, Haibo Chen</creator>
+  </item>
+  <item>
+   <title>Boosting Resource-Constrained Federated Learning Systems with Guessed Updates</title>
+   <link>https://arxiv.org/abs/2110.11486</link>
+   <description>Federated learning (FL) enables a set of client devices to collaboratively train a model without sharing raw data. This process, though, operates under the constrained computation and communication resources of edge devices. These constraints combined with systems heterogeneity force some participating clients to perform fewer local updates than expected by the server, thus slowing down convergence. Exhaustive tuning of hyperparameters in FL, furthermore, can be resource-intensive, without which the convergence is adversely affected. In this work, we propose GEL, the guess and learn algorithm. GEL enables constrained edge devices to perform additional learning through guessed updates on top of gradient-based steps. These guesses are gradientless, i.e., participating clients leverage them for free. Our generic guessing algorithm (i) can be flexibly combined with several state-of-the-art algorithms including FEDPROX, FEDNOVA, FEDYOGI or SCALEFL; and (ii) achieves significantly improved performance when the learning rates are not best tuned. We conduct extensive experiments and show that GEL can boost empirical convergence by up to 40% in resource constrained networks while relieving the need for exhaustive learning rate tuning.</description>
+   <guid>oai:arXiv.org:2110.11486v3</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mohamed Yassine Boukhari, Akash Dhasade, Anne-Marie Kermarrec, Rafael Pires, Othmane Safsafi, Rishi Sharma</creator>
+  </item>
+  <item>
+   <title>Reliable Vertical Federated Learning in 5G Core Network Architecture</title>
+   <link>https://arxiv.org/abs/2505.15244</link>
+   <description>This work proposes a new algorithm to mitigate model generalization loss in Vertical Federated Learning (VFL) operating under client reliability constraints within 5G Core Networks (CNs). Recently studied and endorsed by 3GPP, VFL enables collaborative and load-balanced model training and inference across the CN. However, the performance of VFL significantly degrades when the Network Data Analytics Functions (NWDAFs) - which serve as primary clients for VFL model training and inference - experience reliability issues stemming from resource constraints and operational overhead. Unlike edge environments, CN environments adopt fundamentally different data management strategies, characterized by more centralized data orchestration capabilities. This presents opportunities to implement better distributed solutions that take full advantage of the CN data handling flexibility. Leveraging this flexibility, we propose a method that optimizes the vertical feature split among clients while centrally defining their local models based on reliability metrics. Our empirical evaluation demonstrates the effectiveness of our proposed algorithm, showing improved performance over traditional baseline methods.</description>
+   <guid>oai:arXiv.org:2505.15244v2</guid>
+   <category>cs.LG</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mohamad Mestoukirdi, Mourad Khanfouci</creator>
+  </item>
+  <item>
+   <title>Between Predictability and Randomness: Seeking Artistic Inspiration from AI Generative Models</title>
+   <link>https://arxiv.org/abs/2506.12634</link>
+   <description>Artistic inspiration often emerges from language that is open to interpretation. This paper explores the use of AI-generated poetic lines as stimuli for creativity. Through analysis of two generative AI approaches--lines generated by Long Short-Term Memory Variational Autoencoders (LSTM-VAE) and complete poems by Large Language Models (LLMs)--I demonstrate that LSTM-VAE lines achieve their evocative impact through a combination of resonant imagery and productive indeterminacy. While LLMs produce technically accomplished poetry with conventional patterns, LSTM-VAE lines can engage the artist through semantic openness, unconventional combinations, and fragments that resist closure. Through the composition of an original poem, where narrative emerged organically through engagement with LSTM-VAE generated lines rather than following a predetermined structure, I demonstrate how these characteristics can serve as evocative starting points for authentic artistic expression.</description>
+   <guid>oai:arXiv.org:2506.12634v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Olga Vechtomova</creator>
+  </item>
+  <item>
+   <title>Transforming Chatbot Text: A Sequence-to-Sequence Approach</title>
+   <link>https://arxiv.org/abs/2506.12843</link>
+   <description>Due to advances in Large Language Models (LLMs) such as ChatGPT, the boundary between human-written text and AI-generated text has become blurred. Nevertheless, recent work has demonstrated that it is possible to reliably detect GPT-generated text. In this paper, we adopt a novel strategy to adversarially transform GPT-generated text using sequence-to-sequence (Seq2Seq) models, with the goal of making the text more human-like. We experiment with the Seq2Seq models T5-small and BART which serve to modify GPT-generated sentences to include linguistic, structural, and semantic components that may be more typical of human-authored text. Experiments show that classification models trained to distinguish GPT-generated text are significantly less accurate when tested on text that has been modified by these Seq2Seq models. However, after retraining classification models on data generated by our Seq2Seq technique, the models are able to distinguish the transformed GPT-generated text from human-generated text with high accuracy. This work adds to the accumulating knowledge of text transformation as a tool for both attack -- in the sense of defeating classification models -- and defense -- in the sense of improved classifiers -- thereby advancing our understanding of AI-generated text.</description>
+   <guid>oai:arXiv.org:2506.12843v1</guid>
+   <category>cs.CL</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Natesh Reddy, Mark Stamp</creator>
+  </item>
+  <item>
+   <title>BOW: Bottlenecked Next Word Exploration</title>
+   <link>https://arxiv.org/abs/2506.13502</link>
+   <description>Large language models (LLMs) are typically trained via next-word prediction (NWP), which provides strong surface-level fluency but often lacks support for robust reasoning. We propose BOttlenecked next Word exploration (BOW), a novel RL framework that rethinks NWP by introducing a reasoning bottleneck where a policy model first generates a reasoning path rather than predicting the next token directly, after which a frozen judge model predicts the next token distribution based solely on this reasoning path. We train the policy model using GRPO with rewards that quantify how effectively the reasoning path facilitates next-word recovery. Compared with other continual pretraining baselines, we show that BOW improves both the general and next-word reasoning capabilities of the base model, evaluated on various benchmarks. Our findings show that BOW can serve as an effective and scalable alternative to vanilla NWP.</description>
+   <guid>oai:arXiv.org:2506.13502v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ming Shen, Zhikun Xu, Xiao Ye, Jacob Dineen, Ben Zhou</creator>
+  </item>
+  <item>
+   <title>Improving Clinical Note Generation from Complex Doctor-Patient Conversation</title>
+   <link>https://arxiv.org/abs/2408.14568</link>
+   <description>Writing clinical notes and documenting medical exams is a critical task for healthcare professionals, serving as a vital component of patient care documentation. However, manually writing these notes is time-consuming and can impact the amount of time clinicians can spend on direct patient interaction and other tasks. Consequently, the development of automated clinical note generation systems has emerged as a clinically meaningful area of research within AI for health. In this paper, we present three key contributions to the field of clinical note generation using large language models (LLMs). First, we introduce CliniKnote, a comprehensive dataset consisting of 1,200 complex doctor-patient conversations paired with their full clinical notes. This dataset, created and curated by medical experts with the help of modern neural networks, provides a valuable resource for training and evaluating models in clinical note generation tasks. Second, we propose the K-SOAP (Keyword, Subjective, Objective, Assessment, and Plan) note format, which enhances traditional SOAP~\cite{podder2023soap} (Subjective, Objective, Assessment, and Plan) notes by adding a keyword section at the top, allowing for quick identification of essential information. Third, we develop an automatic pipeline to generate K-SOAP notes from doctor-patient conversations and benchmark various modern LLMs using various metrics. Our results demonstrate significant improvements in efficiency and performance compared to standard LLM finetuning methods.</description>
+   <guid>oai:arXiv.org:2408.14568v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yizhan Li, Sifan Wu, Christopher Smith, Thomas Lo, Bang Liu</creator>
+  </item>
+  <item>
+   <title>An Investigation into Value Misalignment in LLM-Generated Texts for Cultural Heritage</title>
+   <link>https://arxiv.org/abs/2501.02039</link>
+   <description>As Large Language Models (LLMs) become increasingly prevalent in tasks related to cultural heritage, such as generating descriptions of historical monuments, translating ancient texts, preserving oral traditions, and creating educational content, their ability to produce accurate and culturally aligned texts is being increasingly relied upon by users and researchers. However, cultural value misalignments may exist in generated texts, such as the misrepresentation of historical facts, the erosion of cultural identity, and the oversimplification of complex cultural narratives, which may lead to severe consequences. Therefore, investigating value misalignment in the context of LLM for cultural heritage is crucial for mitigating these risks, yet there has been a significant lack of systematic and comprehensive study and investigation in this area. To fill this gap, we systematically assess the reliability of LLMs in generating culturally aligned texts for cultural heritage-related tasks. We conduct a comprehensive evaluation by compiling an extensive set of 1066 query tasks covering 5 widely recognized categories with 17 aspects within the knowledge framework of cultural heritage across 5 open-source LLMs, and examine both the type and rate of cultural value misalignments in the generated texts. Using both automated and manual approaches, we effectively detect and analyze the cultural value misalignments in LLM-generated texts. Our findings are concerning: over 65% of the generated texts exhibit notable cultural misalignments, with certain tasks demonstrating almost complete misalignment with key cultural values. Beyond these findings, this paper introduces a benchmark dataset and a comprehensive evaluation workflow that can serve as a valuable resource for future research aimed at enhancing the cultural sensitivity and reliability of LLMs.</description>
+   <guid>oai:arXiv.org:2501.02039v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Fan Bu, Zheng Wang, Siyi Wang, Ziyao Liu</creator>
+  </item>
+  <item>
+   <title>Foundations of Large Language Models</title>
+   <link>https://arxiv.org/abs/2501.09223</link>
+   <description>This is a book about large language models. As indicated by the title, it primarily focuses on foundational concepts rather than comprehensive coverage of all cutting-edge technologies. The book is structured into five main chapters, each exploring a key area: pre-training, generative models, prompting, alignment, and inference. It is intended for college students, professionals, and practitioners in natural language processing and related fields, and can serve as a reference for anyone interested in large language models.</description>
+   <guid>oai:arXiv.org:2501.09223v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Tong Xiao, Jingbo Zhu</creator>
+  </item>
+  <item>
+   <title>ProMedTS: A Self-Supervised, Prompt-Guided Multimodal Approach for Integrating Medical Text and Time Series</title>
+   <link>https://arxiv.org/abs/2502.13509</link>
+   <description>Large language models (LLMs) have shown remarkable performance in vision-language tasks, but their application in the medical field remains underexplored, particularly for integrating structured time series data with unstructured clinical notes. In clinical practice, dynamic time series data, such as lab test results, capture critical temporal patterns, while clinical notes provide rich semantic context. Merging these modalities is challenging due to the inherent differences between continuous signals and discrete text. To bridge this gap, we introduce ProMedTS, a novel self-supervised multimodal framework that employs prompt-guided learning to unify these heterogeneous data types. Our approach leverages lightweight anomaly detection to generate anomaly captions that serve as prompts, guiding the encoding of raw time series data into informative prompt embeddings. These prompt embeddings are aligned with textual representations in a shared latent space, preserving fine-grained temporal nuances alongside semantic insights. Furthermore, our framework incorporates tailored self-supervised objectives to enhance both intra- and inter-modal alignment. We evaluate ProMedTS on disease diagnosis tasks using real-world datasets, and the results demonstrate that our method consistently outperforms state-of-the-art approaches.</description>
+   <guid>oai:arXiv.org:2502.13509v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Shuai Niu, Jing Ma, Hongzhan Lin, Liang Bai, Zhihua Wang, Wei Bi, Yida Xu, Guo Li, Xian Yang</creator>
+  </item>
+  <item>
+   <title>Toward Reasonable Parrots: Why Large Language Models Should Argue with Us by Design</title>
+   <link>https://arxiv.org/abs/2505.05298</link>
+   <description>In this position paper, we advocate for the development of conversational technology that is inherently designed to support and facilitate argumentative processes. We argue that, at present, large language models (LLMs) are inadequate for this purpose, and we propose an ideal technology design aimed at enhancing argumentative skills. This involves re-framing LLMs as tools to exercise our critical thinking skills rather than replacing them. We introduce the concept of \textit{reasonable parrots} that embody the fundamental principles of relevance, responsibility, and freedom, and that interact through argumentative dialogical moves. These principles and moves arise out of millennia of work in argumentation theory and should serve as the starting point for LLM-based technology that incorporates basic principles of argumentation.</description>
+   <guid>oai:arXiv.org:2505.05298v2</guid>
+   <category>cs.CL</category>
+   <category>cs.MA</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Elena Musi, Nadin Kokciyan, Khalid Al-Khatib, Davide Ceolin, Emmanuelle Dietz, Klara Gutekunst, Annette Hautli-Janisz, Cristian Manuel Santiba\~nez Ya\~nez, Jodi Schneider, Jonas Scholz, Cor Steging, Jacky Visser, Henning Wachsmuth</creator>
+  </item>
+  <item>
+   <title>Personalized Wireless Federated Learning for Large Language Models</title>
+   <link>https://arxiv.org/abs/2404.13238</link>
+   <description>Large language models (LLMs) have driven profound transformations in wireless networks. However, within wireless environments, the training of LLMs faces significant challenges related to security and privacy. Federated Learning (FL), with its decentralized architecture, offers enhanced data privacy protection. Nevertheless, when integrated with LLMs, FL still struggles with several critical limitations, including large-scale and heterogeneous data, resource-intensive training, and substantial communication overhead. To address these challenges, this paper first presents a systematic analysis of the distinct training stages of LLMs in wireless networks, including pre-training, instruction tuning, and alignment tuning. Building upon this foundation, we propose a Personalized Wireless Federated Fine-tuning (PWFF) framework. Initially, we utilize the adapter and Low-Rank Adaptation (LoRA) techniques to decrease energy consumption, while employing global partial aggregation to reduce communication delay. Subsequently, we develop two reward models and design a personalized loss function to fulfill the goal of personalized learning. Furthermore, we implement a local multi-objective alignment to ensure the stability and effectiveness of the FL process. Finally, we conduct a series of simulations to validate the performance of the proposed PWFF method and provide an in-depth discussion of the open issues.</description>
+   <guid>oai:arXiv.org:2404.13238v2</guid>
+   <category>cs.LG</category>
    <category>cs.AI</category>
    <category>cs.CL</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Anna Sofia Lippolis, Andrea Giovanni Nuzzolese, Aldo Gangemi</creator>
+   <creator>Feibo Jiang, Li Dong, Siwei Tu, Yubo Peng, Kezhi Wang, Kun Yang, Cunhua Pan, Dusit Niyato</creator>
   </item>
   <item>
-   <title>Byzantine-Resilient Secure Aggregation for Federated Learning Without Privacy Compromises</title>
-   <link>https://arxiv.org/abs/2405.08698</link>
-   <description>Federated learning (FL) shows great promise in large scale machine learning, but brings new risks in terms of privacy and security. We propose ByITFL, a novel scheme for FL that provides resilience against Byzantine users while keeping the users' data private from the federator and private from other users. The scheme builds on the preexisting non-private FLTrust scheme, which tolerates malicious users through trust scores (TS) that attenuate or amplify the users' gradients. The trust scores are based on the ReLU function, which we approximate by a polynomial. The distributed and privacy-preserving computation in ByITFL is designed using a combination of Lagrange coded computing, verifiable secret sharing and re-randomization steps. ByITFL is the first Byzantine resilient scheme for FL with full information-theoretic privacy.</description>
-   <guid>oai:arXiv.org:2405.08698v3</guid>
+   <title>Latency Optimization for Wireless Federated Learning in Multihop Networks</title>
+   <link>https://arxiv.org/abs/2506.12081</link>
+   <description>In this paper, we study a novel latency minimization problem in wireless federated learning (FL) across multi-hop networks. The system comprises multiple routes, each integrating leaf and relay nodes for FL model training. We explore a personalized learning and adaptive aggregation-aware FL (PAFL) framework that effectively addresses data heterogeneity across participating nodes by harmonizing individual and collective learning objectives. We formulate an optimization problem aimed at minimizing system latency through the joint optimization of leaf and relay nodes, as well as relay routing indicator. We also incorporate an additional energy harvesting scheme for the relay nodes to help with their relay tasks. This formulation presents a computationally demanding challenge, and thus we develop a simple yet efficient algorithm based on block coordinate descent and successive convex approximation (SCA) techniques. Simulation results illustrate the efficacy of our proposed joint optimization approach for leaf and relay nodes with relay routing indicator. We observe significant latency savings in the wireless multi-hop PAFL system, with reductions of up to 69.37% compared to schemes optimizing only one node type, traditional greedy algorithm, and scheme without relay routing indicator.</description>
+   <guid>oai:arXiv.org:2506.12081v1</guid>
+   <category>cs.NI</category>
+   <category>cs.AI</category>
    <category>cs.IT</category>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
    <category>math.IT</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Shaba Shaon, Van-Dinh Nguyen, Dinh C. Nguyen</creator>
+  </item>
+  <item>
+   <title>Perfect Privacy for Discriminator-Based Byzantine-Resilient Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.13561</link>
+   <description>Federated learning (FL) shows great promise in large-scale machine learning but introduces new privacy and security challenges. We propose ByITFL and LoByITFL, two novel FL schemes that enhance resilience against Byzantine users while keeping the users' data private from eavesdroppers. To ensure privacy and Byzantine resilience, our schemes build on having a small representative dataset available to the federator and crafting a discriminator function allowing the mitigation of corrupt users' contributions. ByITFL employs Lagrange coded computing and re-randomization, making it the first Byzantine-resilient FL scheme with perfect Information-Theoretic (IT) privacy, though at the cost of a significant communication overhead. LoByITFL, on the other hand, achieves Byzantine resilience and IT privacy at a significantly reduced communication cost, but requires a Trusted Third Party, used only in a one-time initialization phase before training. We provide theoretical guarantees on privacy and Byzantine resilience, along with convergence guarantees and experimental results validating our findings.</description>
+   <guid>oai:arXiv.org:2506.13561v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <category>cs.IT</category>
+   <category>math.IT</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Yue Xia, Christoph Hofmeister, Maximilian Egger, Rawad Bitar</creator>
   </item>
   <item>
-   <title>LoByITFL: Low Communication Secure and Private Federated Learning</title>
-   <link>https://arxiv.org/abs/2405.19217</link>
-   <description>Privacy of the clients' data and security against Byzantine clients are key challenges in Federated Learning (FL). Existing solutions to joint privacy and security incur sacrifices on the privacy guarantee. We introduce LoByITFL, the first communication-efficient information-theoretically private and secure FL scheme that makes no sacrifices on the privacy guarantees while ensuring security against Byzantine adversaries. The key components are a small and representative dataset available to the federator, a careful modification of the FLTrust algorithm, and the one-time use of a trusted third party during an initialization period. We provide theoretical guarantees on the privacy and Byzantine resilience, as well as experimental results showing the convergence of LoByITFL.</description>
-   <guid>oai:arXiv.org:2405.19217v2</guid>
+   <title>Latency Optimization for Wireless Federated Learning in Multihop Networks</title>
+   <link>https://arxiv.org/abs/2506.12081</link>
+   <description>In this paper, we study a novel latency minimization problem in wireless federated learning (FL) across multi-hop networks. The system comprises multiple routes, each integrating leaf and relay nodes for FL model training. We explore a personalized learning and adaptive aggregation-aware FL (PAFL) framework that effectively addresses data heterogeneity across participating nodes by harmonizing individual and collective learning objectives. We formulate an optimization problem aimed at minimizing system latency through the joint optimization of leaf and relay nodes, as well as relay routing indicator. We also incorporate an additional energy harvesting scheme for the relay nodes to help with their relay tasks. This formulation presents a computationally demanding challenge, and thus we develop a simple yet efficient algorithm based on block coordinate descent and successive convex approximation (SCA) techniques. Simulation results illustrate the efficacy of our proposed joint optimization approach for leaf and relay nodes with relay routing indicator. We observe significant latency savings in the wireless multi-hop PAFL system, with reductions of up to 69.37% compared to schemes optimizing only one node type, traditional greedy algorithm, and scheme without relay routing indicator.</description>
+   <guid>oai:arXiv.org:2506.12081v1</guid>
+   <category>cs.NI</category>
+   <category>cs.AI</category>
    <category>cs.IT</category>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
    <category>math.IT</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yue Xia, Maximilian Egger, Christoph Hofmeister, Rawad Bitar</creator>
-  </item>
-  <item>
-   <title>A Survey of Task-Oriented Knowledge Graph Reasoning: Status, Applications, and Prospects</title>
-   <link>https://arxiv.org/abs/2506.11012</link>
-   <description>Knowledge graphs (KGs) have emerged as a powerful paradigm for structuring and leveraging diverse real-world knowledge, which serve as a fundamental technology for enabling cognitive intelligence systems with advanced understanding and reasoning capabilities. Knowledge graph reasoning (KGR) aims to infer new knowledge based on existing facts in KGs, playing a crucial role in applications such as public security intelligence, intelligent healthcare, and financial risk assessment. From a task-centric perspective, existing KGR approaches can be broadly classified into static single-step KGR, static multi-step KGR, dynamic KGR, multi-modal KGR, few-shot KGR, and inductive KGR. While existing surveys have covered these six types of KGR tasks, a comprehensive review that systematically summarizes all KGR tasks particularly including downstream applications and more challenging reasoning paradigms remains lacking. In contrast to previous works, this survey provides a more comprehensive perspective on the research of KGR by categorizing approaches based on primary reasoning tasks, downstream application tasks, and potential challenging reasoning tasks. Besides, we explore advanced techniques, such as large language models (LLMs), and their impact on KGR. This work aims to highlight key research trends and outline promising future directions in the field of KGR.</description>
-   <guid>oai:arXiv.org:2506.11012v1</guid>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Guanglin Niu, Bo Li, Yangguang Lin</creator>
-  </item>
-  <item>
-   <title>Not All Clients Are Equal: Personalized Federated Learning on Heterogeneous Multi-Modal Clients</title>
-   <link>https://arxiv.org/abs/2506.11024</link>
-   <description>Foundation models have shown remarkable capabilities across diverse multi-modal tasks, but their centralized training raises privacy concerns and induces high transmission costs. In contrast, federated learning (FL) offers a distributed alternative without the need to share data. Recently, for the growing demand for personalizing AI models for different user purposes, personalized federated learning (PFL) has emerged. PFL allows each client to leverage the knowledge of other clients for further adaptation to individual user preferences, again without the need to share data. Despite its potential, most PFL studies remain confined to simulated environments, overlooking the data and model heterogeneity that arise in real-world scenarios. In contrast, we first consider large data heterogeneity, evaluating on a new benchmark for multi-modal PFL, spanning 40 distinct tasks with realistic data distribution shifts. We then consider model heterogeneity in that we do not assume that all clients share similar model architectures. To address data heterogeneity, we propose a task-similarity-aware model aggregation method that provides customized global models to each client. For model heterogeneity, we propose a dimension-invariant module that enables knowledge sharing across heterogeneous models. Empirical validations demonstrate that the proposed approach outperforms the state-of-the-art, excelling in both personalization and generalization capabilities.</description>
-   <guid>oai:arXiv.org:2506.11024v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Minhyuk Seo, Taeheon Kim, Hankook Lee, Jonghyun Choi, Tinne Tuytelaars</creator>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Shaba Shaon, Van-Dinh Nguyen, Dinh C. Nguyen</creator>
   </item>
   <item>
-   <title>Regularized Federated Learning for Privacy-Preserving Dysarthric and Elderly Speech Recognition</title>
-   <link>https://arxiv.org/abs/2506.11069</link>
-   <description>Accurate recognition of dysarthric and elderly speech remains challenging to date. While privacy concerns have driven a shift from centralized approaches to federated learning (FL) to ensure data confidentiality, this further exacerbates the challenges of data scarcity, imbalanced data distribution and speaker heterogeneity. To this end, this paper conducts a systematic investigation of regularized FL techniques for privacy-preserving dysarthric and elderly speech recognition, addressing different levels of the FL process by 1) parameter-based, 2) embedding-based and 3) novel loss-based regularization. Experiments on the benchmark UASpeech dysarthric and DementiaBank Pitt elderly speech corpora suggest that regularized FL systems consistently outperform the baseline FedAvg system by statistically significant WER reductions of up to 0.55\% absolute (2.13\% relative). Further increasing communication frequency to one exchange per batch approaches centralized training performance.</description>
-   <guid>oai:arXiv.org:2506.11069v1</guid>
-   <category>eess.AS</category>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.SD</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Tao Zhong, Mengzhe Geng, Shujie Hu, Guinan Li, Xunying Liu</creator>
-  </item>
-  <item>
-   <title>Enhancing multimodal analogical reasoning with Logic Augmented Generation</title>
-   <link>https://arxiv.org/abs/2504.11190</link>
-   <description>Recent advances in Large Language Models have demonstrated their capabilities across a variety of tasks. However, automatically extracting implicit knowledge from natural language remains a significant challenge, as machines lack active experience with the physical world. Given this scenario, semantic knowledge graphs can serve as conceptual spaces that guide the automated text generation reasoning process to achieve more efficient and explainable results. In this paper, we apply a logic-augmented generation (LAG) framework that leverages the explicit representation of a text through a semantic knowledge graph and applies it in combination with prompt heuristics to elicit implicit analogical connections. This method generates extended knowledge graph triples representing implicit meaning, enabling systems to reason on unlabeled multimodal data regardless of the domain. We validate our work through three metaphor detection and understanding tasks across four datasets, as they require deep analogical reasoning capabilities. The results show that this integrated approach surpasses current baselines, performs better than humans in understanding visual metaphors, and enables more explainable reasoning processes, though still has inherent limitations in metaphor understanding, especially for domain-specific metaphors. Furthermore, we propose a thorough error analysis, discussing issues with metaphorical annotations and current evaluation methods.</description>
-   <guid>oai:arXiv.org:2504.11190v2</guid>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Anna Sofia Lippolis, Andrea Giovanni Nuzzolese, Aldo Gangemi</creator>
-  </item>
-  <item>
-   <title>How Well Do Large Language Models Serve as End-to-End Secure Code Agents for Python?</title>
-   <link>https://arxiv.org/abs/2408.10495</link>
-   <description>The rapid advancement of large language models (LLMs) such as GPT-4 has revolutionized the landscape of software engineering, positioning these models at the core of modern development practices. As we anticipate these models to evolve into the primary and trustworthy tools used in software development, ensuring the security of the code they produce becomes paramount. How well can LLMs serve as end-to-end secure code producers? This paper presents a systematic investigation into LLMs' inherent potential to generate code with fewer vulnerabilities. Specifically, We studied GPT-3.5 and GPT-4's capability to identify and repair vulnerabilities in the code generated by four popular LLMs including themselves (GPT-3.5, GPT-4, Code Llama, and CodeGeeX2). By manually or automatically reviewing 4,900 pieces of code, our study reveals that: (1) large language models lack awareness of scenario-relevant security risks, which leads to the generation of over 75% vulnerable code on the SecurityEval benchmark; (2) LLMs such as GPT-3.5 and GPT-4 are unable to precisely identify vulnerabilities in the code they generated; (3) GPT-3.5 and GPT-4 can achieve 33.2%~59.6% success rates in repairing the insecure code produced by the 4 LLMs, but they both perform poorly when repairing self-produced code, indicating self-repair &quot;blind spots&quot;. To address the limitation of a single round of repair, we developed a lightweight tool that prompts LLMs to construct safer source code through an iterative repair procedure based on the insights gained from our study. Experiments show that assisted by semantic analysis engines, our tool significantly improves the success rates of repair to 65.9%~85.5%.</description>
-   <guid>oai:arXiv.org:2408.10495v2</guid>
+   <title>The Foundation Cracks: A Comprehensive Study on Bugs and Testing Practices in LLM Libraries</title>
+   <link>https://arxiv.org/abs/2506.12320</link>
+   <description>Large Language Model (LLM) libraries have emerged as the foundational infrastructure powering today's AI revolution, serving as the backbone for LLM deployment, inference optimization, fine-tuning, and production serving across diverse applications. Despite their critical role in the LLM ecosystem, these libraries face frequent quality issues and bugs that threaten the reliability of AI systems built upon them. To address this knowledge gap, we present the first comprehensive empirical investigation into bug characteristics and testing practices in modern LLM libraries. We examine 313 bug-fixing commits extracted across two widely-adopted LLM libraries: HuggingFace Transformers and vLLM.Through rigorous manual analysis, we establish comprehensive taxonomies categorizing bug symptoms into 5 types and root causes into 14 distinct categories.Our primary discovery shows that API misuse has emerged as the predominant root cause (32.17%-48.19%), representing a notable transition from algorithm-focused defects in conventional deep learning frameworks toward interface-oriented problems. Additionally, we examine 7,748 test functions to identify 7 distinct test oracle categories employed in current testing approaches, with predefined expected outputs (such as specific tensors and text strings) being the most common strategy. Our assessment of existing testing effectiveness demonstrates that the majority of bugs escape detection due to inadequate test cases (41.73%), lack of test drivers (32.37%), and weak test oracles (25.90%). Drawing from these findings, we offer some recommendations for enhancing LLM library quality assurance.</description>
+   <guid>oai:arXiv.org:2506.12320v1</guid>
    <category>cs.SE</category>
    <category>cs.AI</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jianian Gong, Nachuan Duan, Ziheng Tao, Zhaohui Gong, Yuan Yuan, Minlie Huang</creator>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Weipeng Jiang, Xiaoyu Zhang, Xiaofei Xie, Jiongchi Yu, Yuhan Zhi, Shiqing Ma, Chao Shen</creator>
   </item>
   <item>
-   <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
-   <link>https://arxiv.org/abs/2506.06266</link>
-   <description>Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.</description>
-   <guid>oai:arXiv.org:2506.06266v3</guid>
+   <title>Serving Large Language Models on Huawei CloudMatrix384</title>
+   <link>https://arxiv.org/abs/2506.12708</link>
+   <description>The rapid evolution of large language models (LLMs), driven by growing parameter scales, adoption of mixture-of-experts (MoE) architectures, and expanding context lengths, imposes unprecedented demands on AI infrastructure. Traditional AI clusters face limitations in compute intensity, memory bandwidth, inter-chip communication, and latency, compounded by variable workloads and strict service-level objectives. Addressing these issues requires fundamentally redesigned hardware-software integration. This paper introduces Huawei CloudMatrix, a next-generation AI datacenter architecture, realized in the production-grade CloudMatrix384 supernode. It integrates 384 Ascend 910C NPUs and 192 Kunpeng CPUs interconnected via an ultra-high-bandwidth Unified Bus (UB) network, enabling direct all-to-all communication and dynamic pooling of resources. These features optimize performance for communication-intensive operations, such as large-scale MoE expert parallelism and distributed key-value cache access. To fully leverage CloudMatrix384, we propose CloudMatrix-Infer, an advanced LLM serving solution incorporating three core innovations: a peer-to-peer serving architecture that independently scales prefill, decode, and caching; a large-scale expert parallelism strategy supporting EP320 via efficient UB-based token dispatch; and hardware-aware optimizations including specialized operators, microbatch-based pipelining, and INT8 quantization. Evaluation with the DeepSeek-R1 model shows CloudMatrix-Infer achieves state-of-the-art efficiency: prefill throughput of 6,688 tokens/s per NPU and decode throughput of 1,943 tokens/s per NPU (&lt;50 ms TPOT). It effectively balances throughput and latency, sustaining 538 tokens/s even under stringent 15 ms latency constraints, while INT8 quantization maintains model accuracy across benchmarks.</description>
+   <guid>oai:arXiv.org:2506.12708v1</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.AR</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Pengfei Zuo, Huimin Lin, Junbo Deng, Nan Zou, Xingkun Yang, Yingyu Diao, Weifeng Gao, Ke Xu, Zhangyu Chen, Shirui Lu, Zhao Qiu, Peiyang Li, Xianyu Chang, Zhengzhong Yu, Fangzheng Miao, Jia Zheng, Ying Li, Yuan Feng, Bei Wang, Zaijian Zong, Mosong Zhou, Wenli Zhou, Houjiang Chen, Xingyu Liao, Yipeng Li, Wenxiao Zhang, Ping Zhu, Yinggang Wang, Chuanjie Xiao, Depeng Liang, Dong Cao, Juncheng Liu, Yongqiang Yang, Xiaolong Bai, Yi Li, Huaguo Xie, Huatao Wu, Zhibin Yu, Lv Chen, Hu Liu, Yujun Ding, Haipei Zhu, Jing Xia, Yi Xiong, Zhou Yu, Heng Liao</creator>
+  </item>
+  <item>
+   <title>AFBS:Buffer Gradient Selection in Semi-asynchronous Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.12754</link>
+   <description>Asynchronous federated learning (AFL) accelerates training by eliminating the need to wait for stragglers, but its asynchronous nature introduces gradient staleness, where outdated gradients degrade performance. Existing solutions address this issue with gradient buffers, forming a semi-asynchronous framework. However, this approach struggles when buffers accumulate numerous stale gradients, as blindly aggregating all gradients can harm training. To address this, we propose AFBS (Asynchronous FL Buffer Selection), the first algorithm to perform gradient selection within buffers while ensuring privacy protection. Specifically, the client sends the random projection encrypted label distribution matrix before training, and the server performs client clustering based on it. During training, server scores and selects gradients within each cluster based on their informational value, discarding low-value gradients to enhance semi-asynchronous federated learning. Extensive experiments in highly heterogeneous system and data environments demonstrate AFBS's superior performance compared to state-of-the-art methods. Notably, on the most challenging task, CIFAR-100, AFBS improves accuracy by up to 4.8% over the previous best algorithm and reduces the time to reach target accuracy by 75%.</description>
+   <guid>oai:arXiv.org:2506.12754v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Chaoyi Lu, Yiding Sun, Jinqian Chen, Zhichuan Yang, Jiangming Pan, Jihua Zhu</creator>
+  </item>
+  <item>
+   <title>Privacy-Preserving Federated Learning against Malicious Clients Based on Verifiable Functional Encryption</title>
+   <link>https://arxiv.org/abs/2506.12846</link>
+   <description>Federated learning is a promising distributed learning paradigm that enables collaborative model training without exposing local client data, thereby protect data privacy. However, it also brings new threats and challenges. The advancement of model inversion attacks has rendered the plaintext transmission of local models insecure, while the distributed nature of federated learning makes it particularly vulnerable to attacks raised by malicious clients. To protect data privacy and prevent malicious client attacks, this paper proposes a privacy-preserving federated learning framework based on verifiable functional encryption, without a non-colluding dual-server setup or additional trusted third-party. Specifically, we propose a novel decentralized verifiable functional encryption (DVFE) scheme that enables the verification of specific relationships over multi-dimensional ciphertexts. This scheme is formally treated, in terms of definition, security model and security proof. Furthermore, based on the proposed DVFE scheme, we design a privacy-preserving federated learning framework VFEFL that incorporates a novel robust aggregation rule to detect malicious clients, enabling the effective training of high-accuracy models under adversarial settings. Finally, we provide formal analysis and empirical evaluation of the proposed schemes. The results demonstrate that our approach achieves the desired privacy protection, robustness, verifiability and fidelity, while eliminating the reliance on non-colluding dual-server settings or trusted third parties required by existing methods.</description>
+   <guid>oai:arXiv.org:2506.12846v1</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Nina Cai, Jinguang Han</creator>
+  </item>
+  <item>
+   <title>EBS-CFL: Efficient and Byzantine-robust Secure Clustered Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.13612</link>
+   <description>Despite federated learning (FL)'s potential in collaborative learning, its performance has deteriorated due to the data heterogeneity of distributed users. Recently, clustered federated learning (CFL) has emerged to address this challenge by partitioning users into clusters according to their similarity. However, CFL faces difficulties in training when users are unwilling to share their cluster identities due to privacy concerns. To address these issues, we present an innovative Efficient and Robust Secure Aggregation scheme for CFL, dubbed EBS-CFL. The proposed EBS-CFL supports effectively training CFL while maintaining users' cluster identity confidentially. Moreover, it detects potential poisonous attacks without compromising individual client gradients by discarding negatively correlated gradients and aggregating positively correlated ones using a weighted approach. The server also authenticates correct gradient encoding by clients. EBS-CFL has high efficiency with client-side overhead O(ml + m^2) for communication and O(m^2l) for computation, where m is the number of cluster identities, and l is the gradient size. When m = 1, EBS-CFL's computational efficiency of client is at least O(log n) times better than comparison schemes, where n is the number of clients.In addition, we validate the scheme through extensive experiments. Finally, we theoretically prove the scheme's security.</description>
+   <guid>oai:arXiv.org:2506.13612v1</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zhiqiang Li, Haiyong Bao, Menghong Guan, Hao Pan, Cheng Huang, Hong-Ning Dai</creator>
+  </item>
+  <item>
+   <title>From System 1 to System 2: A Survey of Reasoning Large Language Models</title>
+   <link>https://arxiv.org/abs/2502.17419</link>
+   <description>Achieving human-level intelligence requires refining the transition from the fast, intuitive System 1 to the slower, more deliberate System 2 reasoning. While System 1 excels in quick, heuristic decisions, System 2 relies on logical reasoning for more accurate judgments and reduced biases. Foundational Large Language Models (LLMs) excel at fast decision-making but lack the depth for complex reasoning, as they have not yet fully embraced the step-by-step analysis characteristic of true System 2 thinking. Recently, reasoning LLMs like OpenAI's o1/o3 and DeepSeek's R1 have demonstrated expert-level performance in fields such as mathematics and coding, closely mimicking the deliberate reasoning of System 2 and showcasing human-like cognitive abilities. This survey begins with a brief overview of the progress in foundational LLMs and the early development of System 2 technologies, exploring how their combination has paved the way for reasoning LLMs. Next, we discuss how to construct reasoning LLMs, analyzing their features, the core methods enabling advanced reasoning, and the evolution of various reasoning LLMs. Additionally, we provide an overview of reasoning benchmarks, offering an in-depth comparison of the performance of representative reasoning LLMs. Finally, we explore promising directions for advancing reasoning LLMs and maintain a real-time \href{https://github.com/zzli2022/Awesome-Slow-Reason-System}{GitHub Repository} to track the latest developments. We hope this survey will serve as a valuable resource to inspire innovation and drive progress in this rapidly evolving field.</description>
+   <guid>oai:arXiv.org:2502.17419v5</guid>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhong-Zhi Li, Duzhen Zhang, Ming-Liang Zhang, Jiaxin Zhang, Zengyan Liu, Yuxuan Yao, Haotian Xu, Junhao Zheng, Pei-Jie Wang, Xiuyi Chen, Yingying Zhang, Fei Yin, Jiahua Dong, Zhiwei Li, Bao-Long Bi, Ling-Rui Mei, Junfeng Fang, Xiao Liang, Zhijiang Guo, Le Song, Cheng-Lin Liu</creator>
+  </item>
+  <item>
+   <title>Multi-RAG: A Multimodal Retrieval-Augmented Generation System for Adaptive Video Understanding</title>
+   <link>https://arxiv.org/abs/2505.23990</link>
+   <description>To effectively engage in human society, the ability to adapt, filter information, and make informed decisions in ever-changing situations is critical. As robots and intelligent agents become more integrated into human life, there is a growing opportunity-and need-to offload the cognitive burden on humans to these systems, particularly in dynamic, information-rich scenarios.
+  To fill this critical need, we present Multi-RAG, a multimodal retrieval-augmented generation system designed to provide adaptive assistance to humans in information-intensive circumstances. Our system aims to improve situational understanding and reduce cognitive load by integrating and reasoning over multi-source information streams, including video, audio, and text. As an enabling step toward long-term human-robot partnerships, Multi-RAG explores how multimodal information understanding can serve as a foundation for adaptive robotic assistance in dynamic, human-centered situations. To evaluate its capability in a realistic human-assistance proxy task, we benchmarked Multi-RAG on the MMBench-Video dataset, a challenging multimodal video understanding benchmark. Our system achieves superior performance compared to existing open-source video large language models (Video-LLMs) and large vision-language models (LVLMs), while utilizing fewer resources and less input data. The results demonstrate Multi- RAG's potential as a practical and efficient foundation for future human-robot adaptive assistance systems in dynamic, real-world contexts.</description>
+   <guid>oai:arXiv.org:2505.23990v2</guid>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Mingyang Mao, Mariela M. Perez-Cabarcas, Utteja Kallakuri, Nicholas R. Waytowich, Xiaomin Lin, Tinoosh Mohsenin</creator>
+  </item>
+  <item>
+   <title>A Comprehensive Survey on Vector Database: Storage and Retrieval Technique, Challenge</title>
+   <link>https://arxiv.org/abs/2310.11703</link>
+   <description>Vector databases (VDBs) have emerged to manage high-dimensional data that exceed the capabilities of traditional database management systems, and are now tightly integrated with large language models as well as widely applied in modern artificial intelligence systems. Although relatively few studies describe existing or introduce new vector database architectures, the core technologies underlying VDBs, such as approximate nearest neighbor search, have been extensively studied and are well documented in the literature. In this work, we present a comprehensive review of the relevant algorithms to provide a general understanding of this booming research area. Specifically, we first provide a review of storage and retrieval techniques in VDBs, with detailed design principles and technological evolution. Then, we conduct an in-depth comparison of several advanced VDB solutions with their strengths, limitations, and typical application scenarios. Finally, we also outline emerging opportunities for coupling VDBs with large language models, including open research problems and trends, such as novel indexing strategies. This survey aims to serve as a practical resource, enabling readers to quickly gain an overall understanding of the current knowledge landscape in this rapidly developing area.</description>
+   <guid>oai:arXiv.org:2310.11703v2</guid>
+   <category>cs.DB</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Le Ma, Ran Zhang, Yikun Han, Shirui Yu, Zaitian Wang, Zhiyuan Ning, Jinghan Zhang, Ping Xu, Pengjiang Li, Wei Ju, Chong Chen, Dongjie Wang, Kunpeng Liu, Pengyang Wang, Pengfei Wang, Yanjie Fu, Chunjiang Liu, Yuanchun Zhou, Chang-Tien Lu</creator>
+  </item>
+  <item>
+   <title>Personalized Wireless Federated Learning for Large Language Models</title>
+   <link>https://arxiv.org/abs/2404.13238</link>
+   <description>Large language models (LLMs) have driven profound transformations in wireless networks. However, within wireless environments, the training of LLMs faces significant challenges related to security and privacy. Federated Learning (FL), with its decentralized architecture, offers enhanced data privacy protection. Nevertheless, when integrated with LLMs, FL still struggles with several critical limitations, including large-scale and heterogeneous data, resource-intensive training, and substantial communication overhead. To address these challenges, this paper first presents a systematic analysis of the distinct training stages of LLMs in wireless networks, including pre-training, instruction tuning, and alignment tuning. Building upon this foundation, we propose a Personalized Wireless Federated Fine-tuning (PWFF) framework. Initially, we utilize the adapter and Low-Rank Adaptation (LoRA) techniques to decrease energy consumption, while employing global partial aggregation to reduce communication delay. Subsequently, we develop two reward models and design a personalized loss function to fulfill the goal of personalized learning. Furthermore, we implement a local multi-objective alignment to ensure the stability and effectiveness of the FL process. Finally, we conduct a series of simulations to validate the performance of the proposed PWFF method and provide an in-depth discussion of the open issues.</description>
+   <guid>oai:arXiv.org:2404.13238v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Feibo Jiang, Li Dong, Siwei Tu, Yubo Peng, Kezhi Wang, Kun Yang, Cunhua Pan, Dusit Niyato</creator>
+  </item>
+  <item>
+   <title>Improving Clinical Note Generation from Complex Doctor-Patient Conversation</title>
+   <link>https://arxiv.org/abs/2408.14568</link>
+   <description>Writing clinical notes and documenting medical exams is a critical task for healthcare professionals, serving as a vital component of patient care documentation. However, manually writing these notes is time-consuming and can impact the amount of time clinicians can spend on direct patient interaction and other tasks. Consequently, the development of automated clinical note generation systems has emerged as a clinically meaningful area of research within AI for health. In this paper, we present three key contributions to the field of clinical note generation using large language models (LLMs). First, we introduce CliniKnote, a comprehensive dataset consisting of 1,200 complex doctor-patient conversations paired with their full clinical notes. This dataset, created and curated by medical experts with the help of modern neural networks, provides a valuable resource for training and evaluating models in clinical note generation tasks. Second, we propose the K-SOAP (Keyword, Subjective, Objective, Assessment, and Plan) note format, which enhances traditional SOAP~\cite{podder2023soap} (Subjective, Objective, Assessment, and Plan) notes by adding a keyword section at the top, allowing for quick identification of essential information. Third, we develop an automatic pipeline to generate K-SOAP notes from doctor-patient conversations and benchmark various modern LLMs using various metrics. Our results demonstrate significant improvements in efficiency and performance compared to standard LLM finetuning methods.</description>
+   <guid>oai:arXiv.org:2408.14568v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yizhan Li, Sifan Wu, Christopher Smith, Thomas Lo, Bang Liu</creator>
+  </item>
+  <item>
+   <title>On the Feasibility of Fully AI-automated Vishing Attacks</title>
+   <link>https://arxiv.org/abs/2409.13793</link>
+   <description>A vishing attack is a form of social engineering where attackers use phone calls to deceive individuals into disclosing sensitive information, such as personal data, financial information, or security credentials. Attackers exploit the perceived urgency and authenticity of voice communication to manipulate victims, often posing as legitimate entities like banks or tech support. Vishing is a particularly serious threat as it bypasses security controls designed to protect information. In this work, we study the potential for vishing attacks to escalate with the advent of AI. In theory, AI-powered software bots may have the ability to automate these attacks by initiating conversations with potential victims via phone calls and deceiving them into disclosing sensitive information. To validate this thesis, we introduce ViKing, an AI-powered vishing system developed using publicly available AI technology. It relies on a Large Language Model (LLM) as its core cognitive processor to steer conversations with victims, complemented by a pipeline of speech-to-text and text-to-speech modules that facilitate audio-text conversion in phone calls. Through a controlled social experiment involving 240 participants, we discovered that ViKing has successfully persuaded many participants to reveal sensitive information, even those who had been explicitly warned about the risk of vishing campaigns. Interactions with ViKing's bots were generally considered realistic. From these findings, we conclude that tools like ViKing may already be accessible to potential malicious actors, while also serving as an invaluable resource for cyber awareness programs.</description>
+   <guid>oai:arXiv.org:2409.13793v2</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>eess.AS</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jo\~ao Figueiredo, Afonso Carvalho, Daniel Castro, Daniel Gon\c{c}alves, Nuno Santos</creator>
+  </item>
+  <item>
+   <title>An Investigation into Value Misalignment in LLM-Generated Texts for Cultural Heritage</title>
+   <link>https://arxiv.org/abs/2501.02039</link>
+   <description>As Large Language Models (LLMs) become increasingly prevalent in tasks related to cultural heritage, such as generating descriptions of historical monuments, translating ancient texts, preserving oral traditions, and creating educational content, their ability to produce accurate and culturally aligned texts is being increasingly relied upon by users and researchers. However, cultural value misalignments may exist in generated texts, such as the misrepresentation of historical facts, the erosion of cultural identity, and the oversimplification of complex cultural narratives, which may lead to severe consequences. Therefore, investigating value misalignment in the context of LLM for cultural heritage is crucial for mitigating these risks, yet there has been a significant lack of systematic and comprehensive study and investigation in this area. To fill this gap, we systematically assess the reliability of LLMs in generating culturally aligned texts for cultural heritage-related tasks. We conduct a comprehensive evaluation by compiling an extensive set of 1066 query tasks covering 5 widely recognized categories with 17 aspects within the knowledge framework of cultural heritage across 5 open-source LLMs, and examine both the type and rate of cultural value misalignments in the generated texts. Using both automated and manual approaches, we effectively detect and analyze the cultural value misalignments in LLM-generated texts. Our findings are concerning: over 65% of the generated texts exhibit notable cultural misalignments, with certain tasks demonstrating almost complete misalignment with key cultural values. Beyond these findings, this paper introduces a benchmark dataset and a comprehensive evaluation workflow that can serve as a valuable resource for future research aimed at enhancing the cultural sensitivity and reliability of LLMs.</description>
+   <guid>oai:arXiv.org:2501.02039v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Fan Bu, Zheng Wang, Siyi Wang, Ziyao Liu</creator>
+  </item>
+  <item>
+   <title>Foundations of Large Language Models</title>
+   <link>https://arxiv.org/abs/2501.09223</link>
+   <description>This is a book about large language models. As indicated by the title, it primarily focuses on foundational concepts rather than comprehensive coverage of all cutting-edge technologies. The book is structured into five main chapters, each exploring a key area: pre-training, generative models, prompting, alignment, and inference. It is intended for college students, professionals, and practitioners in natural language processing and related fields, and can serve as a reference for anyone interested in large language models.</description>
+   <guid>oai:arXiv.org:2501.09223v2</guid>
    <category>cs.CL</category>
    <category>cs.AI</category>
    <category>cs.LG</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
+   <creator>Tong Xiao, Jingbo Zhu</creator>
   </item>
   <item>
-   <title>How Well Do Large Language Models Serve as End-to-End Secure Code Agents for Python?</title>
-   <link>https://arxiv.org/abs/2408.10495</link>
-   <description>The rapid advancement of large language models (LLMs) such as GPT-4 has revolutionized the landscape of software engineering, positioning these models at the core of modern development practices. As we anticipate these models to evolve into the primary and trustworthy tools used in software development, ensuring the security of the code they produce becomes paramount. How well can LLMs serve as end-to-end secure code producers? This paper presents a systematic investigation into LLMs' inherent potential to generate code with fewer vulnerabilities. Specifically, We studied GPT-3.5 and GPT-4's capability to identify and repair vulnerabilities in the code generated by four popular LLMs including themselves (GPT-3.5, GPT-4, Code Llama, and CodeGeeX2). By manually or automatically reviewing 4,900 pieces of code, our study reveals that: (1) large language models lack awareness of scenario-relevant security risks, which leads to the generation of over 75% vulnerable code on the SecurityEval benchmark; (2) LLMs such as GPT-3.5 and GPT-4 are unable to precisely identify vulnerabilities in the code they generated; (3) GPT-3.5 and GPT-4 can achieve 33.2%~59.6% success rates in repairing the insecure code produced by the 4 LLMs, but they both perform poorly when repairing self-produced code, indicating self-repair &quot;blind spots&quot;. To address the limitation of a single round of repair, we developed a lightweight tool that prompts LLMs to construct safer source code through an iterative repair procedure based on the insights gained from our study. Experiments show that assisted by semantic analysis engines, our tool significantly improves the success rates of repair to 65.9%~85.5%.</description>
-   <guid>oai:arXiv.org:2408.10495v2</guid>
+   <title>The Other Side of the Coin: Unveiling the Downsides of Model Aggregation in Federated Learning from a Layer-peeled Perspective</title>
+   <link>https://arxiv.org/abs/2502.03231</link>
+   <description>It is often observed that the aggregated model in FL underperforms on local data until after several rounds of local training. This temporary performance drop can potentially slow down the convergence of the FL model. Prior work regards this performance drop as an inherent cost of knowledge sharing among clients and does not give it special attention. While some studies directly focus on designing techniques to alleviate the issue, its root causes remain poorly understood. To bridge this gap, we construct a framework that enables layer-peeled analysis of how feature representations evolve during model aggregation in FL. It focuses on two key aspects: (1) the intrinsic quality of extracted features, and (2) the alignment between features and their subsequent parameters -- both of which are critical to downstream performance. Using this framework, we first investigate how model aggregation affects internal feature extraction process. Our analysis reveals that aggregation degrades feature quality and weakens the coupling between intermediate features and subsequent layers, both of which are well shaped during local training. More importantly, this degradation is not confined to specific layers but progressively accumulates with network depth -- a phenomenon we term Cumulative Feature Degradation (CFD). CFD significantly impairs the quality of penultimate-layer features and weakens their coupling with the classifier, ultimately degrading model performance. We further revisit several widely adopted solutions through the lens of layer-peeled feature extraction to understand why they are effective in addressing aggregation-induced performance drop. Our results show that their effectiveness lies in mitigating the feature degradation described above, which is well aligned with our observations.</description>
+   <guid>oai:arXiv.org:2502.03231v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Guogang Zhu, Xuefeng Liu, Jianwei Niu, Shaojie Tang, Xinghao Wu</creator>
+  </item>
+  <item>
+   <title>ProMedTS: A Self-Supervised, Prompt-Guided Multimodal Approach for Integrating Medical Text and Time Series</title>
+   <link>https://arxiv.org/abs/2502.13509</link>
+   <description>Large language models (LLMs) have shown remarkable performance in vision-language tasks, but their application in the medical field remains underexplored, particularly for integrating structured time series data with unstructured clinical notes. In clinical practice, dynamic time series data, such as lab test results, capture critical temporal patterns, while clinical notes provide rich semantic context. Merging these modalities is challenging due to the inherent differences between continuous signals and discrete text. To bridge this gap, we introduce ProMedTS, a novel self-supervised multimodal framework that employs prompt-guided learning to unify these heterogeneous data types. Our approach leverages lightweight anomaly detection to generate anomaly captions that serve as prompts, guiding the encoding of raw time series data into informative prompt embeddings. These prompt embeddings are aligned with textual representations in a shared latent space, preserving fine-grained temporal nuances alongside semantic insights. Furthermore, our framework incorporates tailored self-supervised objectives to enhance both intra- and inter-modal alignment. We evaluate ProMedTS on disease diagnosis tasks using real-world datasets, and the results demonstrate that our method consistently outperforms state-of-the-art approaches.</description>
+   <guid>oai:arXiv.org:2502.13509v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Shuai Niu, Jing Ma, Hongzhan Lin, Liang Bai, Zhihua Wang, Wei Bi, Yida Xu, Guo Li, Xian Yang</creator>
+  </item>
+  <item>
+   <title>KVCache Cache in the Wild: Characterizing and Optimizing KVCache Cache at a Large Cloud Provider</title>
+   <link>https://arxiv.org/abs/2506.02634</link>
+   <description>Serving large language models (LLMs) is important for cloud providers, and caching intermediate results (KV\$) after processing each request substantially improves serving throughput and latency. However, there is limited understanding of how LLM serving benefits from KV\$ caching, where system design decisions like cache eviction policies are highly workload-dependent. In this paper, we present the first systematic characterization of the KV\$ workload patterns from one of the leading LLM service providers. We draw observations that were not covered by previous studies focusing on synthetic workloads, including: KV\$ reuses are skewed across requests, where reuses between single-turn requests are equally important as multi-turn requests; the reuse time and probability are diverse considering all requests, but for a specific request category, the pattern tends to be predictable; and the overall cache size required for an ideal cache hit ratio is moderate. Based on the characterization, we further propose a workload-aware cache eviction policy that improves the serving performance under real-world traces, especially with limited cache capacity.</description>
+   <guid>oai:arXiv.org:2506.02634v2</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jiahao Wang, Jinbo Han, Xingda Wei, Sijie Shen, Dingyan Zhang, Chenguang Fang, Rong Chen, Wenyuan Yu, Haibo Chen</creator>
+  </item>
+  <item>
+   <title>The Foundation Cracks: A Comprehensive Study on Bugs and Testing Practices in LLM Libraries</title>
+   <link>https://arxiv.org/abs/2506.12320</link>
+   <description>Large Language Model (LLM) libraries have emerged as the foundational infrastructure powering today's AI revolution, serving as the backbone for LLM deployment, inference optimization, fine-tuning, and production serving across diverse applications. Despite their critical role in the LLM ecosystem, these libraries face frequent quality issues and bugs that threaten the reliability of AI systems built upon them. To address this knowledge gap, we present the first comprehensive empirical investigation into bug characteristics and testing practices in modern LLM libraries. We examine 313 bug-fixing commits extracted across two widely-adopted LLM libraries: HuggingFace Transformers and vLLM.Through rigorous manual analysis, we establish comprehensive taxonomies categorizing bug symptoms into 5 types and root causes into 14 distinct categories.Our primary discovery shows that API misuse has emerged as the predominant root cause (32.17%-48.19%), representing a notable transition from algorithm-focused defects in conventional deep learning frameworks toward interface-oriented problems. Additionally, we examine 7,748 test functions to identify 7 distinct test oracle categories employed in current testing approaches, with predefined expected outputs (such as specific tensors and text strings) being the most common strategy. Our assessment of existing testing effectiveness demonstrates that the majority of bugs escape detection due to inadequate test cases (41.73%), lack of test drivers (32.37%), and weak test oracles (25.90%). Drawing from these findings, we offer some recommendations for enhancing LLM library quality assurance.</description>
+   <guid>oai:arXiv.org:2506.12320v1</guid>
    <category>cs.SE</category>
    <category>cs.AI</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jianian Gong, Nachuan Duan, Ziheng Tao, Zhaohui Gong, Yuan Yuan, Minlie Huang</creator>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Weipeng Jiang, Xiaoyu Zhang, Xiaofei Xie, Jiongchi Yu, Yuhan Zhi, Shiqing Ma, Chao Shen</creator>
   </item>
   <item>
-   <title>Not All Clients Are Equal: Personalized Federated Learning on Heterogeneous Multi-Modal Clients</title>
-   <link>https://arxiv.org/abs/2506.11024</link>
-   <description>Foundation models have shown remarkable capabilities across diverse multi-modal tasks, but their centralized training raises privacy concerns and induces high transmission costs. In contrast, federated learning (FL) offers a distributed alternative without the need to share data. Recently, for the growing demand for personalizing AI models for different user purposes, personalized federated learning (PFL) has emerged. PFL allows each client to leverage the knowledge of other clients for further adaptation to individual user preferences, again without the need to share data. Despite its potential, most PFL studies remain confined to simulated environments, overlooking the data and model heterogeneity that arise in real-world scenarios. In contrast, we first consider large data heterogeneity, evaluating on a new benchmark for multi-modal PFL, spanning 40 distinct tasks with realistic data distribution shifts. We then consider model heterogeneity in that we do not assume that all clients share similar model architectures. To address data heterogeneity, we propose a task-similarity-aware model aggregation method that provides customized global models to each client. For model heterogeneity, we propose a dimension-invariant module that enables knowledge sharing across heterogeneous models. Empirical validations demonstrate that the proposed approach outperforms the state-of-the-art, excelling in both personalization and generalization capabilities.</description>
-   <guid>oai:arXiv.org:2506.11024v1</guid>
+   <title>Fed-HeLLo: Efficient Federated Foundation Model Fine-Tuning with Heterogeneous LoRA Allocation</title>
+   <link>https://arxiv.org/abs/2506.12213</link>
+   <description>Federated Learning has recently been utilized to collaboratively fine-tune foundation models across multiple clients. Notably, federated low-rank adaptation LoRA-based fine-tuning methods have recently gained attention, which allows clients to fine-tune FMs with a small portion of trainable parameters locally. However, most existing methods do not account for the heterogeneous resources of clients or lack an effective local training strategy to maximize global fine-tuning performance under limited resources. In this work, we propose Fed-HeLLo, a novel federated LoRA-based fine-tuning framework that enables clients to collaboratively fine-tune an FM with different local trainable LoRA layers. To ensure its effectiveness, we develop several heterogeneous LoRA allocation (HLA) strategies that adaptively allocate local trainable LoRA layers based on clients' resource capabilities and the layer importance. Specifically, based on the dynamic layer importance, we design a Fisher Information Matrix score-based HLA that leverages dynamic gradient norm information. To better stabilize the training process, we consider the intrinsic importance of LoRA layers and design a Geometrically-Defined HLA strategy. It shapes the collective distribution of trainable LoRA layers into specific geometric patterns, such as Triangle, Inverted Triangle, Bottleneck, and Uniform. Moreover, we extend GD-HLA into a randomized version, named Randomized Geometrically-Defined HLA, for enhanced model accuracy with randomness. By co-designing the proposed HLA strategies, we incorporate both the dynamic and intrinsic layer importance into the design of our HLA strategy. We evaluate our approach on five datasets under diverse federated LoRA fine-tuning settings, covering three levels of data distribution from IID to extreme Non-IID. Results show that Fed-HeLLo with HLA strategies is both effective and efficient.</description>
+   <guid>oai:arXiv.org:2506.12213v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zikai Zhang, Ping Liu, Jiahao Xu, Rui Hu</creator>
+  </item>
+  <item>
+   <title>SPIRE: Conditional Personalization for Federated Diffusion Generative Models</title>
+   <link>https://arxiv.org/abs/2506.12303</link>
+   <description>Recent advances in diffusion models have revolutionized generative AI, but their sheer size makes on device personalization, and thus effective federated learning (FL), infeasible. We propose Shared Backbone Personal Identity Representation Embeddings (SPIRE), a framework that casts per client diffusion based generation as conditional generation in FL. SPIRE factorizes the network into (i) a high capacity global backbone that learns a population level score function and (ii) lightweight, learnable client embeddings that encode local data statistics. This separation enables parameter efficient finetuning that touches $\leq 0.01\%$ of weights. We provide the first theoretical bridge between conditional diffusion training and maximum likelihood estimation in Gaussian mixture models. For a two component mixture we prove that gradient descent on the DDPM with respect to mixing weights loss recovers the optimal mixing weights and enjoys dimension free error bounds. Our analysis also hints at how client embeddings act as biases that steer a shared score network toward personalized distributions. Empirically, SPIRE matches or surpasses strong baselines during collaborative pretraining, and vastly outperforms them when adapting to unseen clients, reducing Kernel Inception Distance while updating only hundreds of parameters. SPIRE further mitigates catastrophic forgetting and remains robust across finetuning learning rate and epoch choices.</description>
+   <guid>oai:arXiv.org:2506.12303v1</guid>
+   <category>cs.LG</category>
+   <category>stat.ML</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Kaan Ozkara, Ruida Zhou, Suhas Diggavi</creator>
+  </item>
+  <item>
+   <title>Free Privacy Protection for Wireless Federated Learning: Enjoy It or Suffer from It?</title>
+   <link>https://arxiv.org/abs/2506.12749</link>
+   <description>Inherent communication noises have the potential to preserve privacy for wireless federated learning (WFL) but have been overlooked in digital communication systems predominantly using floating-point number standards, e.g., IEEE 754, for data storage and transmission. This is due to the potentially catastrophic consequences of bit errors in floating-point numbers, e.g., on the sign or exponent bits. This paper presents a novel channel-native bit-flipping differential privacy (DP) mechanism tailored for WFL, where transmit bits are randomly flipped and communication noises are leveraged, to collectively preserve the privacy of WFL in digital communication systems. The key idea is to interpret the bit perturbation at the transmitter and bit errors caused by communication noises as a bit-flipping DP process. This is achieved by designing a new floating-point-to-fixed-point conversion method that only transmits the bits in the fraction part of model parameters, hence eliminating the need for transmitting the sign and exponent bits and preventing the catastrophic consequence of bit errors. We analyze a new metric to measure the bit-level distance of the model parameters and prove that the proposed mechanism satisfies (\lambda,\epsilon)-R\'enyi DP and does not violate the WFL convergence. Experiments validate privacy and convergence analysis of the proposed mechanism and demonstrate its superiority to the state-of-the-art Gaussian mechanisms that are channel-agnostic and add Gaussian noise for privacy protection.</description>
+   <guid>oai:arXiv.org:2506.12749v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
+   <creator>Weicai Li, Tiejun Lv, Xiyu Zhao, Xin Yuan, Wei Ni</creator>
+  </item>
+  <item>
+   <title>AFBS:Buffer Gradient Selection in Semi-asynchronous Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.12754</link>
+   <description>Asynchronous federated learning (AFL) accelerates training by eliminating the need to wait for stragglers, but its asynchronous nature introduces gradient staleness, where outdated gradients degrade performance. Existing solutions address this issue with gradient buffers, forming a semi-asynchronous framework. However, this approach struggles when buffers accumulate numerous stale gradients, as blindly aggregating all gradients can harm training. To address this, we propose AFBS (Asynchronous FL Buffer Selection), the first algorithm to perform gradient selection within buffers while ensuring privacy protection. Specifically, the client sends the random projection encrypted label distribution matrix before training, and the server performs client clustering based on it. During training, server scores and selects gradients within each cluster based on their informational value, discarding low-value gradients to enhance semi-asynchronous federated learning. Extensive experiments in highly heterogeneous system and data environments demonstrate AFBS's superior performance compared to state-of-the-art methods. Notably, on the most challenging task, CIFAR-100, AFBS improves accuracy by up to 4.8% over the previous best algorithm and reduces the time to reach target accuracy by 75%.</description>
+   <guid>oai:arXiv.org:2506.12754v1</guid>
    <category>cs.LG</category>
    <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Minhyuk Seo, Taeheon Kim, Hankook Lee, Jonghyun Choi, Tinne Tuytelaars</creator>
-  </item>
-  <item>
-   <title>Byzantine Outside, Curious Inside: Reconstructing Data Through Malicious Updates</title>
-   <link>https://arxiv.org/abs/2506.11413</link>
-   <description>Federated learning (FL) enables decentralized machine learning without sharing raw data, allowing multiple clients to collaboratively learn a global model. However, studies reveal that privacy leakage is possible under commonly adopted FL protocols. In particular, a server with access to client gradients can synthesize data resembling the clients' training data. In this paper, we introduce a novel threat model in FL, named the maliciously curious client, where a client manipulates its own gradients with the goal of inferring private data from peers. This attacker uniquely exploits the strength of a Byzantine adversary, traditionally aimed at undermining model robustness, and repurposes it to facilitate data reconstruction attack. We begin by formally defining this novel client-side threat model and providing a theoretical analysis that demonstrates its ability to achieve significant reconstruction success during FL training. To demonstrate its practical impact, we further develop a reconstruction algorithm that combines gradient inversion with malicious update strategies. Our analysis and experimental results reveal a critical blind spot in FL defenses: both server-side robust aggregation and client-side privacy mechanisms may fail against our proposed attack. Surprisingly, standard server- and client-side defenses designed to enhance robustness or privacy may unintentionally amplify data leakage. Compared to the baseline approach, a mistakenly used defense may instead improve the reconstructed image quality by 10-15%.</description>
-   <guid>oai:arXiv.org:2506.11413v1</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Kai Yue, Richeng Jin, Chau-Wai Wong, Huaiyu Dai</creator>
+   <creator>Chaoyi Lu, Yiding Sun, Jinqian Chen, Zhichuan Yang, Jiangming Pan, Jihua Zhu</creator>
   </item>
   <item>
-   <title>SwiftSpec: Ultra-Low Latency LLM Decoding by Scaling Asynchronous Speculative Decoding</title>
-   <link>https://arxiv.org/abs/2506.11309</link>
-   <description>Low-latency decoding for large language models (LLMs) is crucial for applications like chatbots and code assistants, yet generating long outputs remains slow in single-query settings. Prior work on speculative decoding (which combines a small draft model with a larger target model) and tensor parallelism has each accelerated decoding. However, conventional approaches fail to apply both simultaneously due to imbalanced compute requirements (between draft and target models), KV-cache inconsistencies, and communication overheads under small-batch tensor-parallelism. This paper introduces SwiftSpec, a system that targets ultra-low latency for LLM decoding. SwiftSpec redesigns the speculative decoding pipeline in an asynchronous and disaggregated manner, so that each component can be scaled flexibly and remove draft overhead from the critical path. To realize this design, SwiftSpec proposes parallel tree generation, tree-aware KV cache management, and fused, latency-optimized kernels to overcome the challenges listed above. Across 5 model families and 6 datasets, SwiftSpec achieves an average of 1.75x speedup over state-of-the-art speculative decoding systems and, as a highlight, serves Llama3-70B at 348 tokens/s on 8 Nvidia Hopper GPUs, making it the fastest known system for low-latency LLM serving at this scale.</description>
-   <guid>oai:arXiv.org:2506.11309v1</guid>
+   <title>Perfect Privacy for Discriminator-Based Byzantine-Resilient Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.13561</link>
+   <description>Federated learning (FL) shows great promise in large-scale machine learning but introduces new privacy and security challenges. We propose ByITFL and LoByITFL, two novel FL schemes that enhance resilience against Byzantine users while keeping the users' data private from eavesdroppers. To ensure privacy and Byzantine resilience, our schemes build on having a small representative dataset available to the federator and crafting a discriminator function allowing the mitigation of corrupt users' contributions. ByITFL employs Lagrange coded computing and re-randomization, making it the first Byzantine-resilient FL scheme with perfect Information-Theoretic (IT) privacy, though at the cost of a significant communication overhead. LoByITFL, on the other hand, achieves Byzantine resilience and IT privacy at a significantly reduced communication cost, but requires a Trusted Third Party, used only in a one-time initialization phase before training. We provide theoretical guarantees on privacy and Byzantine resilience, along with convergence guarantees and experimental results validating our findings.</description>
+   <guid>oai:arXiv.org:2506.13561v1</guid>
+   <category>cs.LG</category>
    <category>cs.DC</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Ziyi Zhang, Ziheng Jiang, Chengquan Jiang, Menghan Yu, Size Zheng, Haibin Lin, Henry Hoffmann, Xin Liu</creator>
-  </item>
-  <item>
-   <title>How Visual Representations Map to Language Feature Space in Multimodal LLMs</title>
-   <link>https://arxiv.org/abs/2506.11976</link>
-   <description>Effective multimodal reasoning depends on the alignment of visual and linguistic representations, yet the mechanisms by which vision-language models (VLMs) achieve this alignment remain poorly understood. We introduce a methodological framework that deliberately maintains a frozen large language model (LLM) and a frozen vision transformer (ViT), connected solely by training a linear adapter during visual instruction tuning. This design is fundamental to our approach: by keeping the language model frozen, we ensure it maintains its original language representations without adaptation to visual data. Consequently, the linear adapter must map visual features directly into the LLM's existing representational space rather than allowing the language model to develop specialized visual understanding through fine-tuning. Our experimental design uniquely enables the use of pre-trained sparse autoencoders (SAEs) of the LLM as analytical probes. These SAEs remain perfectly aligned with the unchanged language model and serve as a snapshot of the learned language feature-representations. Through systematic analysis of SAE reconstruction error, sparsity patterns, and feature SAE descriptions, we reveal the layer-wise progression through which visual representations gradually align with language feature representations, converging in middle-to-later layers. This suggests a fundamental misalignment between ViT outputs and early LLM layers, raising important questions about whether current adapter-based architectures optimally facilitate cross-modal representation learning.</description>
-   <guid>oai:arXiv.org:2506.11976v1</guid>
-   <category>cs.CV</category>
-   <category>cs.LG</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Constantin Venhoff, Ashkan Khakzar, Sonia Joseph, Philip Torr, Neel Nanda</creator>
-  </item>
-  <item>
-   <title>Banded Square Root Matrix Factorization for Differentially Private Model Training</title>
-   <link>https://arxiv.org/abs/2405.13763</link>
-   <description>Current state-of-the-art methods for differentially private model training are based on matrix factorization techniques. However, these methods suffer from high computational overhead because they require numerically solving a demanding optimization problem to determine an approximately optimal factorization prior to the actual model training. In this work, we present a new matrix factorization approach, BSR, which overcomes this computational bottleneck. By exploiting properties of the standard matrix square root, BSR allows to efficiently handle also large-scale problems. For the key scenario of stochastic gradient descent with momentum and weight decay, we even derive analytical expressions for BSR that render the computational overhead negligible. We prove bounds on the approximation quality that hold both in the centralized and in the federated learning setting. Our numerical experiments demonstrate that models trained using BSR perform on par with the best existing methods, while completely avoiding their computational overhead.</description>
-   <guid>oai:arXiv.org:2405.13763v3</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Nikita P. Kalinin, Christoph Lampert</creator>
-  </item>
-  <item>
-   <title>NTK-DFL: Enhancing Decentralized Federated Learning in Heterogeneous Settings via Neural Tangent Kernel</title>
-   <link>https://arxiv.org/abs/2410.01922</link>
-   <description>Decentralized federated learning (DFL) is a collaborative machine learning framework for training a model across participants without a central server or raw data exchange. DFL faces challenges due to statistical heterogeneity, as participants often possess data of different distributions reflecting local environments and user behaviors. Recent work has shown that the neural tangent kernel (NTK) approach, when applied to federated learning in a centralized framework, can lead to improved performance. We propose an approach leveraging the NTK to train client models in the decentralized setting, while introducing a synergy between NTK-based evolution and model averaging. This synergy exploits inter-client model deviation and improves both accuracy and convergence in heterogeneous settings. Empirical results demonstrate that our approach consistently achieves higher accuracy than baselines in highly heterogeneous settings, where other approaches often underperform. Additionally, it reaches target performance in 4.6 times fewer communication rounds. We validate our approach across multiple datasets, network topologies, and heterogeneity settings to ensure robustness and generalization.</description>
-   <guid>oai:arXiv.org:2410.01922v2</guid>
-   <category>cs.LG</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Gabriel Thompson, Kai Yue, Chau-Wai Wong, Huaiyu Dai</creator>
-  </item>
-  <item>
-   <title>Federated Learning Nodes Can Reconstruct Peers' Image Data</title>
-   <link>https://arxiv.org/abs/2410.04661</link>
-   <description>Federated learning (FL) is a privacy-preserving machine learning framework that enables multiple nodes to train models on their local data and periodically average weight updates to benefit from other nodes' training. Each node's goal is to collaborate with other nodes to improve the model's performance while keeping its training data private. However, this framework does not guarantee data privacy. Prior work has shown that the gradient-sharing steps in FL can be vulnerable to data reconstruction attacks from an honest-but-curious central server. In this work, we show that an honest-but-curious node/client can also launch attacks to reconstruct peers' image data through gradient inversion, presenting a severe privacy risk. We demonstrate that a single client can silently reconstruct other clients' private images using diluted information available within consecutive updates. We leverage state-of-the-art diffusion models to enhance the perceptual quality and recognizability of the reconstructed images, further demonstrating the risk of information leakage at a semantic level. This highlights the need for more robust privacy-preserving mechanisms that protect against silent client-side attacks during federated training.</description>
-   <guid>oai:arXiv.org:2410.04661v2</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
-   <creator>Ethan Wilson, Kai Yue, Chau-Wai Wong, Huaiyu Dai</creator>
-  </item>
-  <item>
-   <title>Detecting High-Stakes Interactions with Activation Probes</title>
-   <link>https://arxiv.org/abs/2506.10805</link>
-   <description>Monitoring is an important aspect of safely deploying Large Language Models (LLMs). This paper examines activation probes for detecting &quot;high-stakes&quot; interactions -- where the text indicates that the interaction might lead to significant harm -- as a critical, yet underexplored, target for such monitoring. We evaluate several probe architectures trained on synthetic data, and find them to exhibit robust generalization to diverse, out-of-distribution, real-world data. Probes' performance is comparable to that of prompted or finetuned medium-sized LLM monitors, while offering computational savings of six orders-of-magnitude. Our experiments also highlight the potential of building resource-aware hierarchical monitoring systems, where probes serve as an efficient initial filter and flag cases for more expensive downstream analysis. We release our novel synthetic dataset and codebase to encourage further study.</description>
-   <guid>oai:arXiv.org:2506.10805v2</guid>
-   <category>cs.LG</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Alex McKenzie, Urja Pawar, Phil Blandfort, William Bankes, David Krueger, Ekdeep Singh Lubana, Dmitrii Krasheninnikov</creator>
-  </item>
-  <item>
-   <title>Byzantine-Resilient Secure Aggregation for Federated Learning Without Privacy Compromises</title>
-   <link>https://arxiv.org/abs/2405.08698</link>
-   <description>Federated learning (FL) shows great promise in large scale machine learning, but brings new risks in terms of privacy and security. We propose ByITFL, a novel scheme for FL that provides resilience against Byzantine users while keeping the users' data private from the federator and private from other users. The scheme builds on the preexisting non-private FLTrust scheme, which tolerates malicious users through trust scores (TS) that attenuate or amplify the users' gradients. The trust scores are based on the ReLU function, which we approximate by a polynomial. The distributed and privacy-preserving computation in ByITFL is designed using a combination of Lagrange coded computing, verifiable secret sharing and re-randomization steps. ByITFL is the first Byzantine resilient scheme for FL with full information-theoretic privacy.</description>
-   <guid>oai:arXiv.org:2405.08698v3</guid>
    <category>cs.IT</category>
-   <category>cs.CR</category>
-   <category>cs.DC</category>
-   <category>cs.LG</category>
    <category>math.IT</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
    <creator>Yue Xia, Christoph Hofmeister, Maximilian Egger, Rawad Bitar</creator>
   </item>
   <item>
-   <title>LoByITFL: Low Communication Secure and Private Federated Learning</title>
-   <link>https://arxiv.org/abs/2405.19217</link>
-   <description>Privacy of the clients' data and security against Byzantine clients are key challenges in Federated Learning (FL). Existing solutions to joint privacy and security incur sacrifices on the privacy guarantee. We introduce LoByITFL, the first communication-efficient information-theoretically private and secure FL scheme that makes no sacrifices on the privacy guarantees while ensuring security against Byzantine adversaries. The key components are a small and representative dataset available to the federator, a careful modification of the FLTrust algorithm, and the one-time use of a trusted third party during an initialization period. We provide theoretical guarantees on the privacy and Byzantine resilience, as well as experimental results showing the convergence of LoByITFL.</description>
-   <guid>oai:arXiv.org:2405.19217v2</guid>
-   <category>cs.IT</category>
-   <category>cs.CR</category>
+   <title>Optimizing Federated Learning using Remote Embeddings for Graph Neural Networks</title>
+   <link>https://arxiv.org/abs/2506.12425</link>
+   <description>Graph Neural Networks (GNNs) have experienced rapid advancements in recent years due to their ability to learn meaningful representations from graph data structures. Federated Learning (FL) has emerged as a viable machine learning approach for training a shared model on decentralized data, addressing privacy concerns while leveraging parallelism. Existing methods that address the unique requirements of federated GNN training using remote embeddings to enhance convergence accuracy are limited by their diminished performance due to large communication costs with a shared embedding server. In this paper, we present OpES, an optimized federated GNN training framework that uses remote neighbourhood pruning, and overlaps pushing of embeddings to the server with local training to reduce the network costs and training time. The modest drop in per-round accuracy due to pre-emptive push of embeddings is out-stripped by the reduction in per-round training time for large and dense graphs like Reddit and Products, converging up to $\approx2\times$ faster than the state-of-the-art technique using an embedding server and giving up to $20\%$ better accuracy than vanilla federated GNN learning.</description>
+   <guid>oai:arXiv.org:2506.12425v1</guid>
    <category>cs.DC</category>
    <category>cs.LG</category>
-   <category>math.IT</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yue Xia, Maximilian Egger, Christoph Hofmeister, Rawad Bitar</creator>
+   <creator>Pranjal Naman, Yogesh Simmhan</creator>
   </item>
   <item>
-   <title>Cartridges: Lightweight and general-purpose long context representations via self-study</title>
-   <link>https://arxiv.org/abs/2506.06266</link>
-   <description>Large language models are often used to answer queries grounded in large text corpora (e.g. codebases, legal documents, or chat histories) by placing the entire corpus in the context window and leveraging in-context learning (ICL). Although current models support contexts of 100K-1M tokens, this setup is costly to serve because the memory consumption of the KV cache scales with input length. We explore an alternative: training a smaller KV cache offline on each corpus. At inference time, we load this trained KV cache, which we call a Cartridge, and decode a response. Critically, the cost of training a Cartridge can be amortized across all the queries referencing the same corpus. However, we find that the naive approach of training the Cartridge with next-token prediction on the corpus is not competitive with ICL. Instead, we propose self-study, a training recipe in which we generate synthetic conversations about the corpus and train the Cartridge with a context-distillation objective. We find that Cartridges trained with self-study replicate the functionality of ICL, while being significantly cheaper to serve. On challenging long-context benchmarks, Cartridges trained with self-study match ICL performance while using 38.6x less memory and enabling 26.4x higher throughput. Self-study also extends the model's effective context length (e.g. from 128k to 484k tokens on MTOB) and surprisingly, leads to Cartridges that can be composed at inference time without retraining.</description>
-   <guid>oai:arXiv.org:2506.06266v3</guid>
+   <title>Serving Large Language Models on Huawei CloudMatrix384</title>
+   <link>https://arxiv.org/abs/2506.12708</link>
+   <description>The rapid evolution of large language models (LLMs), driven by growing parameter scales, adoption of mixture-of-experts (MoE) architectures, and expanding context lengths, imposes unprecedented demands on AI infrastructure. Traditional AI clusters face limitations in compute intensity, memory bandwidth, inter-chip communication, and latency, compounded by variable workloads and strict service-level objectives. Addressing these issues requires fundamentally redesigned hardware-software integration. This paper introduces Huawei CloudMatrix, a next-generation AI datacenter architecture, realized in the production-grade CloudMatrix384 supernode. It integrates 384 Ascend 910C NPUs and 192 Kunpeng CPUs interconnected via an ultra-high-bandwidth Unified Bus (UB) network, enabling direct all-to-all communication and dynamic pooling of resources. These features optimize performance for communication-intensive operations, such as large-scale MoE expert parallelism and distributed key-value cache access. To fully leverage CloudMatrix384, we propose CloudMatrix-Infer, an advanced LLM serving solution incorporating three core innovations: a peer-to-peer serving architecture that independently scales prefill, decode, and caching; a large-scale expert parallelism strategy supporting EP320 via efficient UB-based token dispatch; and hardware-aware optimizations including specialized operators, microbatch-based pipelining, and INT8 quantization. Evaluation with the DeepSeek-R1 model shows CloudMatrix-Infer achieves state-of-the-art efficiency: prefill throughput of 6,688 tokens/s per NPU and decode throughput of 1,943 tokens/s per NPU (&lt;50 ms TPOT). It effectively balances throughput and latency, sustaining 538 tokens/s even under stringent 15 ms latency constraints, while INT8 quantization maintains model accuracy across benchmarks.</description>
+   <guid>oai:arXiv.org:2506.12708v1</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.AR</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Pengfei Zuo, Huimin Lin, Junbo Deng, Nan Zou, Xingkun Yang, Yingyu Diao, Weifeng Gao, Ke Xu, Zhangyu Chen, Shirui Lu, Zhao Qiu, Peiyang Li, Xianyu Chang, Zhengzhong Yu, Fangzheng Miao, Jia Zheng, Ying Li, Yuan Feng, Bei Wang, Zaijian Zong, Mosong Zhou, Wenli Zhou, Houjiang Chen, Xingyu Liao, Yipeng Li, Wenxiao Zhang, Ping Zhu, Yinggang Wang, Chuanjie Xiao, Depeng Liang, Dong Cao, Juncheng Liu, Yongqiang Yang, Xiaolong Bai, Yi Li, Huaguo Xie, Huatao Wu, Zhibin Yu, Lv Chen, Hu Liu, Yujun Ding, Haipei Zhu, Jing Xia, Yi Xiong, Zhou Yu, Heng Liao</creator>
+  </item>
+  <item>
+   <title>Transforming Chatbot Text: A Sequence-to-Sequence Approach</title>
+   <link>https://arxiv.org/abs/2506.12843</link>
+   <description>Due to advances in Large Language Models (LLMs) such as ChatGPT, the boundary between human-written text and AI-generated text has become blurred. Nevertheless, recent work has demonstrated that it is possible to reliably detect GPT-generated text. In this paper, we adopt a novel strategy to adversarially transform GPT-generated text using sequence-to-sequence (Seq2Seq) models, with the goal of making the text more human-like. We experiment with the Seq2Seq models T5-small and BART which serve to modify GPT-generated sentences to include linguistic, structural, and semantic components that may be more typical of human-authored text. Experiments show that classification models trained to distinguish GPT-generated text are significantly less accurate when tested on text that has been modified by these Seq2Seq models. However, after retraining classification models on data generated by our Seq2Seq technique, the models are able to distinguish the transformed GPT-generated text from human-generated text with high accuracy. This work adds to the accumulating knowledge of text transformation as a tool for both attack -- in the sense of defeating classification models -- and defense -- in the sense of improved classifiers -- thereby advancing our understanding of AI-generated text.</description>
+   <guid>oai:arXiv.org:2506.12843v1</guid>
+   <category>cs.CL</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Natesh Reddy, Mark Stamp</creator>
+  </item>
+  <item>
+   <title>Boosting Resource-Constrained Federated Learning Systems with Guessed Updates</title>
+   <link>https://arxiv.org/abs/2110.11486</link>
+   <description>Federated learning (FL) enables a set of client devices to collaboratively train a model without sharing raw data. This process, though, operates under the constrained computation and communication resources of edge devices. These constraints combined with systems heterogeneity force some participating clients to perform fewer local updates than expected by the server, thus slowing down convergence. Exhaustive tuning of hyperparameters in FL, furthermore, can be resource-intensive, without which the convergence is adversely affected. In this work, we propose GEL, the guess and learn algorithm. GEL enables constrained edge devices to perform additional learning through guessed updates on top of gradient-based steps. These guesses are gradientless, i.e., participating clients leverage them for free. Our generic guessing algorithm (i) can be flexibly combined with several state-of-the-art algorithms including FEDPROX, FEDNOVA, FEDYOGI or SCALEFL; and (ii) achieves significantly improved performance when the learning rates are not best tuned. We conduct extensive experiments and show that GEL can boost empirical convergence by up to 40% in resource constrained networks while relieving the need for exhaustive learning rate tuning.</description>
+   <guid>oai:arXiv.org:2110.11486v3</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mohamed Yassine Boukhari, Akash Dhasade, Anne-Marie Kermarrec, Rafael Pires, Othmane Safsafi, Rishi Sharma</creator>
+  </item>
+  <item>
+   <title>Personalized Wireless Federated Learning for Large Language Models</title>
+   <link>https://arxiv.org/abs/2404.13238</link>
+   <description>Large language models (LLMs) have driven profound transformations in wireless networks. However, within wireless environments, the training of LLMs faces significant challenges related to security and privacy. Federated Learning (FL), with its decentralized architecture, offers enhanced data privacy protection. Nevertheless, when integrated with LLMs, FL still struggles with several critical limitations, including large-scale and heterogeneous data, resource-intensive training, and substantial communication overhead. To address these challenges, this paper first presents a systematic analysis of the distinct training stages of LLMs in wireless networks, including pre-training, instruction tuning, and alignment tuning. Building upon this foundation, we propose a Personalized Wireless Federated Fine-tuning (PWFF) framework. Initially, we utilize the adapter and Low-Rank Adaptation (LoRA) techniques to decrease energy consumption, while employing global partial aggregation to reduce communication delay. Subsequently, we develop two reward models and design a personalized loss function to fulfill the goal of personalized learning. Furthermore, we implement a local multi-objective alignment to ensure the stability and effectiveness of the FL process. Finally, we conduct a series of simulations to validate the performance of the proposed PWFF method and provide an in-depth discussion of the open issues.</description>
+   <guid>oai:arXiv.org:2404.13238v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Feibo Jiang, Li Dong, Siwei Tu, Yubo Peng, Kezhi Wang, Kun Yang, Cunhua Pan, Dusit Niyato</creator>
+  </item>
+  <item>
+   <title>The Other Side of the Coin: Unveiling the Downsides of Model Aggregation in Federated Learning from a Layer-peeled Perspective</title>
+   <link>https://arxiv.org/abs/2502.03231</link>
+   <description>It is often observed that the aggregated model in FL underperforms on local data until after several rounds of local training. This temporary performance drop can potentially slow down the convergence of the FL model. Prior work regards this performance drop as an inherent cost of knowledge sharing among clients and does not give it special attention. While some studies directly focus on designing techniques to alleviate the issue, its root causes remain poorly understood. To bridge this gap, we construct a framework that enables layer-peeled analysis of how feature representations evolve during model aggregation in FL. It focuses on two key aspects: (1) the intrinsic quality of extracted features, and (2) the alignment between features and their subsequent parameters -- both of which are critical to downstream performance. Using this framework, we first investigate how model aggregation affects internal feature extraction process. Our analysis reveals that aggregation degrades feature quality and weakens the coupling between intermediate features and subsequent layers, both of which are well shaped during local training. More importantly, this degradation is not confined to specific layers but progressively accumulates with network depth -- a phenomenon we term Cumulative Feature Degradation (CFD). CFD significantly impairs the quality of penultimate-layer features and weakens their coupling with the classifier, ultimately degrading model performance. We further revisit several widely adopted solutions through the lens of layer-peeled feature extraction to understand why they are effective in addressing aggregation-induced performance drop. Our results show that their effectiveness lies in mitigating the feature degradation described above, which is well aligned with our observations.</description>
+   <guid>oai:arXiv.org:2502.03231v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Guogang Zhu, Xuefeng Liu, Jianwei Niu, Shaojie Tang, Xinghao Wu</creator>
+  </item>
+  <item>
+   <title>Reliable Vertical Federated Learning in 5G Core Network Architecture</title>
+   <link>https://arxiv.org/abs/2505.15244</link>
+   <description>This work proposes a new algorithm to mitigate model generalization loss in Vertical Federated Learning (VFL) operating under client reliability constraints within 5G Core Networks (CNs). Recently studied and endorsed by 3GPP, VFL enables collaborative and load-balanced model training and inference across the CN. However, the performance of VFL significantly degrades when the Network Data Analytics Functions (NWDAFs) - which serve as primary clients for VFL model training and inference - experience reliability issues stemming from resource constraints and operational overhead. Unlike edge environments, CN environments adopt fundamentally different data management strategies, characterized by more centralized data orchestration capabilities. This presents opportunities to implement better distributed solutions that take full advantage of the CN data handling flexibility. Leveraging this flexibility, we propose a method that optimizes the vertical feature split among clients while centrally defining their local models based on reliability metrics. Our empirical evaluation demonstrates the effectiveness of our proposed algorithm, showing improved performance over traditional baseline methods.</description>
+   <guid>oai:arXiv.org:2505.15244v2</guid>
+   <category>cs.LG</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mohamad Mestoukirdi, Mourad Khanfouci</creator>
+  </item>
+  <item>
+   <title>Foundations of Large Language Models</title>
+   <link>https://arxiv.org/abs/2501.09223</link>
+   <description>This is a book about large language models. As indicated by the title, it primarily focuses on foundational concepts rather than comprehensive coverage of all cutting-edge technologies. The book is structured into five main chapters, each exploring a key area: pre-training, generative models, prompting, alignment, and inference. It is intended for college students, professionals, and practitioners in natural language processing and related fields, and can serve as a reference for anyone interested in large language models.</description>
+   <guid>oai:arXiv.org:2501.09223v2</guid>
    <category>cs.CL</category>
    <category>cs.AI</category>
    <category>cs.LG</category>
-   <pubdate>Mon, 16 Jun 2025 00:00:00 -0400</pubdate>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Sabri Eyuboglu, Ryan Ehrlich, Simran Arora, Neel Guha, Dylan Zinsley, Emily Liu, Will Tennien, Atri Rudra, James Zou, Azalia Mirhoseini, Christopher Re</creator>
+   <creator>Tong Xiao, Jingbo Zhu</creator>
+  </item>
+  <item>
+   <title>ProMedTS: A Self-Supervised, Prompt-Guided Multimodal Approach for Integrating Medical Text and Time Series</title>
+   <link>https://arxiv.org/abs/2502.13509</link>
+   <description>Large language models (LLMs) have shown remarkable performance in vision-language tasks, but their application in the medical field remains underexplored, particularly for integrating structured time series data with unstructured clinical notes. In clinical practice, dynamic time series data, such as lab test results, capture critical temporal patterns, while clinical notes provide rich semantic context. Merging these modalities is challenging due to the inherent differences between continuous signals and discrete text. To bridge this gap, we introduce ProMedTS, a novel self-supervised multimodal framework that employs prompt-guided learning to unify these heterogeneous data types. Our approach leverages lightweight anomaly detection to generate anomaly captions that serve as prompts, guiding the encoding of raw time series data into informative prompt embeddings. These prompt embeddings are aligned with textual representations in a shared latent space, preserving fine-grained temporal nuances alongside semantic insights. Furthermore, our framework incorporates tailored self-supervised objectives to enhance both intra- and inter-modal alignment. We evaluate ProMedTS on disease diagnosis tasks using real-world datasets, and the results demonstrate that our method consistently outperforms state-of-the-art approaches.</description>
+   <guid>oai:arXiv.org:2502.13509v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Shuai Niu, Jing Ma, Hongzhan Lin, Liang Bai, Zhihua Wang, Wei Bi, Yida Xu, Guo Li, Xian Yang</creator>
+  </item>
+  <item>
+   <title>A Comprehensive Survey on Vector Database: Storage and Retrieval Technique, Challenge</title>
+   <link>https://arxiv.org/abs/2310.11703</link>
+   <description>Vector databases (VDBs) have emerged to manage high-dimensional data that exceed the capabilities of traditional database management systems, and are now tightly integrated with large language models as well as widely applied in modern artificial intelligence systems. Although relatively few studies describe existing or introduce new vector database architectures, the core technologies underlying VDBs, such as approximate nearest neighbor search, have been extensively studied and are well documented in the literature. In this work, we present a comprehensive review of the relevant algorithms to provide a general understanding of this booming research area. Specifically, we first provide a review of storage and retrieval techniques in VDBs, with detailed design principles and technological evolution. Then, we conduct an in-depth comparison of several advanced VDB solutions with their strengths, limitations, and typical application scenarios. Finally, we also outline emerging opportunities for coupling VDBs with large language models, including open research problems and trends, such as novel indexing strategies. This survey aims to serve as a practical resource, enabling readers to quickly gain an overall understanding of the current knowledge landscape in this rapidly developing area.</description>
+   <guid>oai:arXiv.org:2310.11703v2</guid>
+   <category>cs.DB</category>
+   <category>cs.AI</category>
+   <pubdate>Tue, 17 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Le Ma, Ran Zhang, Yikun Han, Shirui Yu, Zaitian Wang, Zhiyuan Ning, Jinghan Zhang, Ping Xu, Pengjiang Li, Wei Ju, Chong Chen, Dongjie Wang, Kunpeng Liu, Pengyang Wang, Pengfei Wang, Yanjie Fu, Chunjiang Liu, Yuanchun Zhou, Chang-Tien Lu</creator>
   </item>
  </channel>
 </rss>
