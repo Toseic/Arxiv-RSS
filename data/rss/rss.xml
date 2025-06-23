@@ -6,8 +6,748 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 23 Jun 2025 03:21:48 </lastBuildDate>
+  <lastBuildDate>Mon, 23 Jun 2025 04:28:51 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 23 Jun 2025 03:21:48 </pubDate>
+  <pubDate>Mon, 23 Jun 2025 04:28:51 </pubDate>
+  <item>
+   <title>From Prompts to Constructs: A Dual-Validity Framework for LLM Research in Psychology</title>
+   <link>https://arxiv.org/abs/2506.16697</link>
+   <description>Large language models (LLMs) are rapidly being adopted across psychology, serving as research tools, experimental subjects, human simulators, and computational models of cognition. However, the application of human measurement tools to these systems can produce contradictory results, raising concerns that many findings are measurement phantoms--statistical artifacts rather than genuine psychological phenomena. In this Perspective, we argue that building a robust science of AI psychology requires integrating two of our field's foundational pillars: the principles of reliable measurement and the standards for sound causal inference. We present a dual-validity framework to guide this integration, which clarifies how the evidence needed to support a claim scales with its scientific ambition. Using an LLM to classify text may require only basic accuracy checks, whereas claiming it can simulate anxiety demands a far more rigorous validation process. Current practice systematically fails to meet these requirements, often treating statistical pattern matching as evidence of psychological phenomena. The same model output--endorsing &quot;I am anxious&quot;--requires different validation strategies depending on whether researchers claim to measure, characterize, simulate, or model psychological constructs. Moving forward requires developing computational analogues of psychological constructs and establishing clear, scalable standards of evidence rather than the uncritical application of human measurement tools.</description>
+   <guid>oai:arXiv.org:2506.16697v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhicheng Lin</creator>
+  </item>
+  <item>
+   <title>Large Language Models as Psychological Simulators: A Methodological Guide</title>
+   <link>https://arxiv.org/abs/2506.16702</link>
+   <description>Large language models (LLMs) offer emerging opportunities for psychological and behavioral research, but methodological guidance is lacking. This article provides a framework for using LLMs as psychological simulators across two primary applications: simulating roles and personas to explore diverse contexts, and serving as computational models to investigate cognitive processes. For simulation, we present methods for developing psychologically grounded personas that move beyond demographic categories, with strategies for validation against human data and use cases ranging from studying inaccessible populations to prototyping research instruments. For cognitive modeling, we synthesize emerging approaches for probing internal representations, methodological advances in causal interventions, and strategies for relating model behavior to human cognition. We address overarching challenges including prompt sensitivity, temporal limitations from training data cutoffs, and ethical considerations that extend beyond traditional human subjects review. Throughout, we emphasize the need for transparency about model capabilities and constraints. Together, this framework integrates emerging empirical evidence about LLM performance--including systematic biases, cultural limitations, and prompt brittleness--to help researchers wrangle these challenges and leverage the unique capabilities of LLMs in psychological research.</description>
+   <guid>oai:arXiv.org:2506.16702v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhicheng Lin</creator>
+  </item>
+  <item>
+   <title>Shadow defense against gradient inversion attack in federated learning</title>
+   <link>https://arxiv.org/abs/2506.15711</link>
+   <description>Federated learning (FL) has emerged as a transformative framework for privacy-preserving distributed training, allowing clients to collaboratively train a global model without sharing their local data. This is especially crucial in sensitive fields like healthcare, where protecting patient data is paramount. However, privacy leakage remains a critical challenge, as the communication of model updates can be exploited by potential adversaries. Gradient inversion attacks (GIAs), for instance, allow adversaries to approximate the gradients used for training and reconstruct training images, thus stealing patient privacy. Existing defense mechanisms obscure gradients, yet lack a nuanced understanding of which gradients or types of image information are most vulnerable to such attacks. These indiscriminate calibrated perturbations result in either excessive privacy protection degrading model accuracy, or insufficient one failing to safeguard sensitive information. Therefore, we introduce a framework that addresses these challenges by leveraging a shadow model with interpretability for identifying sensitive areas. This enables a more targeted and sample-specific noise injection. Specially, our defensive strategy achieves discrepancies of 3.73 in PSNR and 0.2 in SSIM compared to the circumstance without defense on the ChestXRay dataset, and 2.78 in PSNR and 0.166 in the EyePACS dataset. Moreover, it minimizes adverse effects on model performance, with less than 1\% F1 reduction compared to SOTA methods. Our extensive experiments, conducted across diverse types of medical images, validate the generalization of the proposed framework. The stable defense improvements for FedAvg are consistently over 1.5\% times in LPIPS and SSIM. It also offers a universal defense against various GIA types, especially for these sensitive areas in images.</description>
+   <guid>oai:arXiv.org:2506.15711v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Le Jiang, Liyan Ma, Guang Yang</creator>
+  </item>
+  <item>
+   <title>Boosting multi-demographic federated learning for chest radiograph analysis using general-purpose self-supervised representations</title>
+   <link>https://arxiv.org/abs/2504.08584</link>
+   <description>Reliable artificial intelligence (AI) models for medical image analysis often depend on large and diverse labeled datasets. Federated learning (FL) offers a decentralized and privacy-preserving approach to training but struggles in highly non-independent and identically distributed (non-IID) settings, where institutions with more representative data may experience degraded performance. Moreover, existing large-scale FL studies have been limited to adult datasets, neglecting the unique challenges posed by pediatric data, which introduces additional non-IID variability. To address these limitations, we analyzed n=398,523 adult chest radiographs from diverse institutions across multiple countries and n=9,125 pediatric images, leveraging transfer learning from general-purpose self-supervised image representations to classify pneumonia and cases with no abnormality. Using state-of-the-art vision transformers, we found that FL improved performance only for smaller adult datasets (P&lt;0.001) but degraded performance for larger datasets (P&lt;0.064) and pediatric cases (P=0.242). However, equipping FL with self-supervised weights significantly enhanced outcomes across pediatric cases (P=0.031) and most adult datasets (P&lt;0.008), except the largest dataset (P=0.052). These findings underscore the potential of easily deployable general-purpose self-supervised image representations to address non-IID challenges in clinical FL applications and highlight their promise for enhancing patient outcomes and advancing pediatric healthcare, where data scarcity and variability remain persistent obstacles.</description>
+   <guid>oai:arXiv.org:2504.08584v2</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mahshad Lotfinia, Arash Tayebiarasteh, Samaneh Samiei, Mehdi Joodaki, Soroosh Tayebi Arasteh</creator>
+  </item>
+  <item>
+   <title>Serving Large Language Models on Huawei CloudMatrix384</title>
+   <link>https://arxiv.org/abs/2506.12708</link>
+   <description>The rapid evolution of large language models (LLMs), driven by growing parameter scales, adoption of mixture-of-experts (MoE) architectures, and expanding context lengths, imposes unprecedented demands on AI infrastructure. Traditional AI clusters face limitations in compute intensity, memory bandwidth, inter-chip communication, and latency, compounded by variable workloads and strict service-level objectives. Addressing these issues requires fundamentally redesigned hardware-software integration. This paper introduces Huawei CloudMatrix, a next-generation AI datacenter architecture, realized in the production-grade CloudMatrix384 supernode. It integrates 384 Ascend 910 NPUs and 192 Kunpeng CPUs interconnected via an ultra-high-bandwidth Unified Bus (UB) network, enabling direct all-to-all communication and dynamic pooling of resources. These features optimize performance for communication-intensive operations, such as large-scale MoE expert parallelism and distributed key-value cache access. To fully leverage CloudMatrix384, we propose CloudMatrix-Infer, an advanced LLM serving solution incorporating three core innovations: a peer-to-peer serving architecture that independently scales prefill, decode, and caching; a large-scale expert parallelism strategy supporting EP320 via efficient UB-based token dispatch; and hardware-aware optimizations including specialized operators, microbatch-based pipelining, and INT8 quantization. Evaluation with the DeepSeek-R1 model shows CloudMatrix-Infer achieves state-of-the-art efficiency: prefill throughput of 6,688 tokens/s per NPU and decode throughput of 1,943 tokens/s per NPU (&lt;50 ms TPOT). It effectively balances throughput and latency, sustaining 538 tokens/s per NPU even under stringent 15 ms latency constraints, while INT8 quantization maintains model accuracy across benchmarks.</description>
+   <guid>oai:arXiv.org:2506.12708v3</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.AR</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Pengfei Zuo, Huimin Lin, Junbo Deng, Nan Zou, Xingkun Yang, Yingyu Diao, Weifeng Gao, Ke Xu, Zhangyu Chen, Shirui Lu, Zhao Qiu, Peiyang Li, Xianyu Chang, Zhengzhong Yu, Fangzheng Miao, Jia Zheng, Ying Li, Yuan Feng, Bei Wang, Zaijian Zong, Mosong Zhou, Wenli Zhou, Houjiang Chen, Xingyu Liao, Yipeng Li, Wenxiao Zhang, Ping Zhu, Yinggang Wang, Chuanjie Xiao, Depeng Liang, Dong Cao, Juncheng Liu, Yongqiang Yang, Xiaolong Bai, Yi Li, Huaguo Xie, Huatao Wu, Zhibin Yu, Lv Chen, Hu Liu, Yujun Ding, Haipei Zhu, Jing Xia, Yi Xiong, Zhou Yu, Heng Liao</creator>
+  </item>
+  <item>
+   <title>DrunkAgent: Stealthy Memory Corruption in LLM-Powered Recommender Agents</title>
+   <link>https://arxiv.org/abs/2503.23804</link>
+   <description>Large language model (LLM)-powered agents are increasingly used in recommender systems (RSs) to achieve personalized behavior modeling, where the memory mechanism plays a pivotal role in enabling the agents to autonomously explore, learn and self-evolve from real-world interactions. However, this very mechanism, serving as a contextual repository, inherently exposes an attack surface for potential adversarial manipulations. Despite its central role, the robustness of agentic RSs in the face of such threats remains largely underexplored. Previous works suffer from semantic mismatches or rely on static embeddings or pre-defined prompts, all of which hinder their applicability to systems with dynamic memory states. This challenge is exacerbated by the black-box nature of commercial RSs.
+  To tackle the above problems, in this paper, we present the first systematic investigation of memory-based vulnerabilities in LLM-powered recommender agents, revealing their security limitations and guiding efforts to strengthen system resilience and trustworthiness. Specifically, we propose a novel black-box attack framework named DrunkAgent. DrunkAgent crafts semantically meaningful adversarial textual triggers for target item promotions and introduces a series of strategies to maximize the trigger effect by corrupting the memory updates during the interactions. The triggers and strategies are optimized on a surrogate model, enabling DrunkAgent transferable and stealthy. Extensive experiments on real-world datasets across diverse agentic RSs, including collaborative filtering, retrieval augmentation and sequential recommendations, demonstrate the generalizability, transferability and stealthiness of DrunkAgent.</description>
+   <guid>oai:arXiv.org:2503.23804v2</guid>
+   <category>cs.CR</category>
+   <category>cs.CL</category>
+   <category>cs.IR</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Shiyi Yang, Zhibo Hu, Xinshu Li, Chen Wang, Tong Yu, Xiwei Xu, Liming Zhu, Lina Yao</creator>
+  </item>
+  <item>
+   <title>Incentivize Contribution and Learn Parameters Too: Federated Learning with Strategic Data Owners</title>
+   <link>https://arxiv.org/abs/2505.12010</link>
+   <description>Classical federated learning (FL) assumes that the clients have a limited amount of noisy data with which they voluntarily participate and contribute towards learning a global, more accurate model in a principled manner. The learning happens in a distributed fashion without sharing the data with the center. However, these methods do not consider the incentive of an agent for participating and contributing to the process, given that data collection and running a distributed algorithm is costly for the clients. The question of rationality of contribution has been asked recently in the literature and some results exist that consider this problem. This paper addresses the question of simultaneous parameter learning and incentivizing contribution, which distinguishes it from the extant literature. Our first mechanism incentivizes each client to contribute to the FL process at a Nash equilibrium and simultaneously learn the model parameters. However, this equilibrium outcome can be away from the optimal, where clients contribute with their full data and the algorithm learns the optimal parameters. We propose a second mechanism with monetary transfers that is budget balanced and enables the full data contribution along with optimal parameter learning. Large scale experiments with real (federated) datasets (CIFAR-10, FeMNIST, and Twitter) show that these algorithms converge quite fast in practice, yield good welfare guarantees, and better model performance for all agents.</description>
+   <guid>oai:arXiv.org:2505.12010v2</guid>
+   <category>cs.GT</category>
+   <category>cs.LG</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Drashthi Doshi, Aditya Vema Reddy Kesari, Swaprava Nath, Avishek Ghosh, Suhas S Kowshik</creator>
+  </item>
+  <item>
+   <title>Client Selection Strategies for Federated Semantic Communications in Heterogeneous IoT Networks</title>
+   <link>https://arxiv.org/abs/2506.17063</link>
+   <description>The exponential growth of IoT devices presents critical challenges in bandwidth-constrained wireless networks, particularly regarding efficient data transmission and privacy preservation. This paper presents a novel federated semantic communication (SC) framework that enables collaborative training of bandwidth-efficient models for image reconstruction across heterogeneous IoT devices. By leveraging SC principles to transmit only semantic features, our approach dramatically reduces communication overhead while preserving reconstruction quality. We address the fundamental challenge of client selection in federated learning environments where devices exhibit significant disparities in dataset sizes and data distributions. Our framework implements three distinct client selection strategies that explore different trade-offs between system performance and fairness in resource allocation. The system employs an end-to-end SC architecture with semantic bottlenecks, coupled with a loss-based aggregation mechanism that naturally adapts to client heterogeneity. Experimental evaluation on image data demonstrates that while Utilitarian selection achieves the highest reconstruction quality, Proportional Fairness maintains competitive performance while significantly reducing participation inequality and improving computational efficiency. These results establish that federated SC can successfully balance reconstruction quality, resource efficiency, and fairness in heterogeneous IoT deployments, paving the way for sustainable and privacy-preserving edge intelligence applications.</description>
+   <guid>oai:arXiv.org:2506.17063v1</guid>
+   <category>cs.NI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Samer Lahoud, Kinda Khawam</creator>
+  </item>
+  <item>
+   <title>Mobility-Aware Federated Self-supervised Learning in Vehicular Network</title>
+   <link>https://arxiv.org/abs/2408.00256</link>
+   <description>Federated Learning (FL) is an advanced distributed machine learning approach, that protects the privacy of each vehicle by allowing the model to be trained on multiple devices simultaneously without the need to upload all data to a road side unit (RSU). This enables FL to handle scenarios with sensitive or widely distributed data. However, in these fields, it is well known that the labeling costs can be a significant expense, and models relying on labels are not suitable for these rapidly evolving fields especially in vehicular networks, or mobile internet of things (MIoT), where new data emerges constantly. To handle this issue, the self-supervised learning paves the way for training without labels. Additionally, for vehicles with high velocity, owing to blurred images, simple aggregation not only impacts the accuracy of the aggregated model but also reduces the convergence speed of FL. This paper proposes a FL algorithm based on image blur level to aggregation, called FLSimCo, which does not require labels and serves as a pre-training stage for self-supervised learning in the vehicular environment. Simulation results demonstrate that the proposed algorithm exhibits fast and stable convergence.</description>
+   <guid>oai:arXiv.org:2408.00256v2</guid>
+   <category>cs.LG</category>
+   <category>cs.NI</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xueying Gu, Qiong Wu, Pingyi Fan, Qiang Fan</creator>
+  </item>
+  <item>
+   <title>PNCS:Power-Norm Cosine Similarity for Diverse Client Selection in Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.15923</link>
+   <description>Federated Learning (FL) has emerged as a powerful paradigm for leveraging diverse datasets from multiple sources while preserving data privacy by avoiding centralized storage. However, many existing approaches fail to account for the intricate gradient correlations between remote clients, a limitation that becomes especially problematic in data heterogeneity scenarios. In this work, we propose a novel FL framework utilizing Power-Norm Cosine Similarity (PNCS) to improve client selection for model aggregation. By capturing higher-order gradient moments, PNCS addresses non-IID data challenges, enhancing convergence speed and accuracy. Additionally, we introduce a simple algorithm ensuring diverse client selection through a selection history queue. Experiments with a VGG16 model across varied data partitions demonstrate consistent improvements over state-of-the-art methods.</description>
+   <guid>oai:arXiv.org:2506.15923v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Liangyan Li, Yangyi Liu, Yimo Ning, Stefano Rini, Jun Chen</creator>
+  </item>
+  <item>
+   <title>Incentivizing High-quality Participation From Federated Learning Agents</title>
+   <link>https://arxiv.org/abs/2506.16731</link>
+   <description>Federated learning (FL) provides a promising paradigm for facilitating collaboration between multiple clients that jointly learn a global model without directly sharing their local data. However, existing research suffers from two caveats: 1) From the perspective of agents, voluntary and unselfish participation is often assumed. But self-interested agents may opt out of the system or provide low-quality contributions without proper incentives; 2) From the mechanism designer's perspective, the aggregated models can be unsatisfactory as the existing game-theoretical federated learning approach for data collection ignores the potential heterogeneous effort caused by contributed data. To alleviate above challenges, we propose an incentive-aware framework for agent participation that considers data heterogeneity to accelerate the convergence process. Specifically, we first introduce the notion of Wasserstein distance to explicitly illustrate the heterogeneous effort and reformulate the existing upper bound of convergence. To induce truthful reporting from agents, we analyze and measure the generalization error gap of any two agents by leveraging the peer prediction mechanism to develop score functions. We further present a two-stage Stackelberg game model that formalizes the process and examines the existence of equilibrium. Extensive experiments on real-world datasets demonstrate the effectiveness of our proposed mechanism.</description>
+   <guid>oai:arXiv.org:2506.16731v1</guid>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jinlong Pang, Jiaheng Wei, Yifan Hua, Chen Qian, Yang Liu</creator>
+  </item>
+  <item>
+   <title>KVCache Cache in the Wild: Characterizing and Optimizing KVCache Cache at a Large Cloud Provider</title>
+   <link>https://arxiv.org/abs/2506.02634</link>
+   <description>Serving large language models (LLMs) is important for cloud providers, and caching intermediate results (KV\$) after processing each request substantially improves serving throughput and latency. However, there is limited understanding of how LLM serving benefits from KV\$ caching, where system design decisions like cache eviction policies are highly workload-dependent. In this paper, we present the first systematic characterization of the KV\$ workload patterns from one of the leading LLM service providers. We draw observations that were not covered by previous studies focusing on synthetic workloads, including: KV\$ reuses are skewed across requests, where reuses between single-turn requests are equally important as multi-turn requests; the reuse time and probability are diverse considering all requests, but for a specific request category, the pattern tends to be predictable; and the overall cache size required for an ideal cache hit ratio is moderate. Based on the characterization, we further propose a workload-aware cache eviction policy that improves the serving performance under real-world traces, especially with limited cache capacity.</description>
+   <guid>oai:arXiv.org:2506.02634v3</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jiahao Wang, Jinbo Han, Xingda Wei, Sijie Shen, Dingyan Zhang, Chenguang Fang, Rong Chen, Wenyuan Yu, Haibo Chen</creator>
+  </item>
+  <item>
+   <title>Serving Large Language Models on Huawei CloudMatrix384</title>
+   <link>https://arxiv.org/abs/2506.12708</link>
+   <description>The rapid evolution of large language models (LLMs), driven by growing parameter scales, adoption of mixture-of-experts (MoE) architectures, and expanding context lengths, imposes unprecedented demands on AI infrastructure. Traditional AI clusters face limitations in compute intensity, memory bandwidth, inter-chip communication, and latency, compounded by variable workloads and strict service-level objectives. Addressing these issues requires fundamentally redesigned hardware-software integration. This paper introduces Huawei CloudMatrix, a next-generation AI datacenter architecture, realized in the production-grade CloudMatrix384 supernode. It integrates 384 Ascend 910 NPUs and 192 Kunpeng CPUs interconnected via an ultra-high-bandwidth Unified Bus (UB) network, enabling direct all-to-all communication and dynamic pooling of resources. These features optimize performance for communication-intensive operations, such as large-scale MoE expert parallelism and distributed key-value cache access. To fully leverage CloudMatrix384, we propose CloudMatrix-Infer, an advanced LLM serving solution incorporating three core innovations: a peer-to-peer serving architecture that independently scales prefill, decode, and caching; a large-scale expert parallelism strategy supporting EP320 via efficient UB-based token dispatch; and hardware-aware optimizations including specialized operators, microbatch-based pipelining, and INT8 quantization. Evaluation with the DeepSeek-R1 model shows CloudMatrix-Infer achieves state-of-the-art efficiency: prefill throughput of 6,688 tokens/s per NPU and decode throughput of 1,943 tokens/s per NPU (&lt;50 ms TPOT). It effectively balances throughput and latency, sustaining 538 tokens/s per NPU even under stringent 15 ms latency constraints, while INT8 quantization maintains model accuracy across benchmarks.</description>
+   <guid>oai:arXiv.org:2506.12708v3</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.AR</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Pengfei Zuo, Huimin Lin, Junbo Deng, Nan Zou, Xingkun Yang, Yingyu Diao, Weifeng Gao, Ke Xu, Zhangyu Chen, Shirui Lu, Zhao Qiu, Peiyang Li, Xianyu Chang, Zhengzhong Yu, Fangzheng Miao, Jia Zheng, Ying Li, Yuan Feng, Bei Wang, Zaijian Zong, Mosong Zhou, Wenli Zhou, Houjiang Chen, Xingyu Liao, Yipeng Li, Wenxiao Zhang, Ping Zhu, Yinggang Wang, Chuanjie Xiao, Depeng Liang, Dong Cao, Juncheng Liu, Yongqiang Yang, Xiaolong Bai, Yi Li, Huaguo Xie, Huatao Wu, Zhibin Yu, Lv Chen, Hu Liu, Yujun Ding, Haipei Zhu, Jing Xia, Yi Xiong, Zhou Yu, Heng Liao</creator>
+  </item>
+  <item>
+   <title>Medha: Efficiently Serving Multi-Million Context Length LLM Inference Requests Without Approximations</title>
+   <link>https://arxiv.org/abs/2409.17264</link>
+   <description>As large language models (LLMs) handle increasingly longer contexts, serving long inference requests of millions of tokens presents unique challenges. We show that existing work for long context inference is largely based on techniques from long context training, and does not handle the high variability in input lengths during inference. This leads to inefficient resource utilization, server fragmentation, and head-of-line (HOL) blocking.
+  We present Medha, an end-to-end system for efficient long-context LLM inference that addresses these challenges through fine-grained time sharing. Medha introduces three key innovations: (1) the mechanism of adaptive prefill chunking to help mitigate HOL blocking with preemption; (2) two new parallelism strategies: Sequence Pipeline Parallelism (SPP) to reduce time-to-first-token by pipelining prefill chunks, and KV-Cache Parallelism (KVP) to lower time-peroutput-token by distributing decoding across servers; and (3) a novel input-length aware least remaining slack scheduling to meet Service Level Objectives (SLOs).
+  Medha enables exact inference scaling beyond 10 million tokens, maintaining high throughput and low latency across mixed-length workloads. Compared to state-of-the-art systems, Medha reduces server fragmentation, cuts median latency by up to 30x, and improves throughput by over 5x, delivering production-scale long-context inference without compromising performance on shorter requests.</description>
+   <guid>oai:arXiv.org:2409.17264v4</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Amey Agrawal, Haoran Qiu, Junda Chen, \'I\~nigo Goiri, Chaojie Zhang, Rayyan Shahid, Ramachandran Ramjee, Alexey Tumanov, Esha Choukse</creator>
+  </item>
+  <item>
+   <title>Federated Learning for MRI-based BrainAGE: a multicenter study on post-stroke functional outcome prediction</title>
+   <link>https://arxiv.org/abs/2506.15626</link>
+   <description>$\textbf{Objective:}$ Brain-predicted age difference (BrainAGE) is a neuroimaging biomarker reflecting brain health. However, training robust BrainAGE models requires large datasets, often restricted by privacy concerns. This study evaluates the performance of federated learning (FL) for BrainAGE estimation in ischemic stroke patients treated with mechanical thrombectomy, and investigates its association with clinical phenotypes and functional outcomes.
+  $\textbf{Methods:}$ We used FLAIR brain images from 1674 stroke patients across 16 hospital centers. We implemented standard machine learning and deep learning models for BrainAGE estimates under three data management strategies: centralized learning (pooled data), FL (local training at each site), and single-site learning. We reported prediction errors and examined associations between BrainAGE and vascular risk factors (e.g., diabetes mellitus, hypertension, smoking), as well as functional outcomes at three months post-stroke. Logistic regression evaluated BrainAGE's predictive value for these outcomes, adjusting for age, sex, vascular risk factors, stroke severity, time between MRI and arterial puncture, prior intravenous thrombolysis, and recanalisation outcome.
+  $\textbf{Results:}$ While centralized learning yielded the most accurate predictions, FL consistently outperformed single-site models. BrainAGE was significantly higher in patients with diabetes mellitus across all models. Comparisons between patients with good and poor functional outcomes, and multivariate predictions of these outcomes showed the significance of the association between BrainAGE and post-stroke recovery.
+  $\textbf{Conclusion:}$ FL enables accurate age predictions without data centralization. The strong association between BrainAGE, vascular risk factors, and post-stroke recovery highlights its potential for prognostic modeling in stroke care.</description>
+   <guid>oai:arXiv.org:2506.15626v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Vincent Roca, Marc Tommasi, Paul Andrey, Aur\'elien Bellet, Markus D. Schirmer, Hilde Henon, Laurent Puy, Julien Ramon, Gr\'egory Kuchcinski, Martin Bretzner, Renaud Lopes</creator>
+  </item>
+  <item>
+   <title>From RAG to Agentic: Validating Islamic-Medicine Responses with LLM Agents</title>
+   <link>https://arxiv.org/abs/2506.15911</link>
+   <description>Centuries-old Islamic medical texts like Avicenna's Canon of Medicine and the Prophetic Tibb-e-Nabawi encode a wealth of preventive care, nutrition, and holistic therapies, yet remain inaccessible to many and underutilized in modern AI systems. Existing language-model benchmarks focus narrowly on factual recall or user preference, leaving a gap in validating culturally grounded medical guidance at scale. We propose a unified evaluation pipeline, Tibbe-AG, that aligns 30 carefully curated Prophetic-medicine questions with human-verified remedies and compares three LLMs (LLaMA-3, Mistral-7B, Qwen2-7B) under three configurations: direct generation, retrieval-augmented generation, and a scientific self-critique filter. Each answer is then assessed by a secondary LLM serving as an agentic judge, yielding a single 3C3H quality score. Retrieval improves factual accuracy by 13%, while the agentic prompt adds another 10% improvement through deeper mechanistic insight and safety considerations. Our results demonstrate that blending classical Islamic texts with retrieval and self-evaluation enables reliable, culturally sensitive medical question-answering.</description>
+   <guid>oai:arXiv.org:2506.15911v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mohammad Amaan Sayeed, Mohammed Talha Alam, Raza Imam, Shahab Saquib Sohail, Amir Hussain</creator>
+  </item>
+  <item>
+   <title>Probing the Robustness of Large Language Models Safety to Latent Perturbations</title>
+   <link>https://arxiv.org/abs/2506.16078</link>
+   <description>Safety alignment is a key requirement for building reliable Artificial General Intelligence. Despite significant advances in safety alignment, we observe that minor latent shifts can still trigger unsafe responses in aligned models. We argue that this stems from the shallow nature of existing alignment methods, which focus on surface-level refusal behaviors without sufficiently altering internal representations. Consequently, small shifts in hidden activations can re-trigger harmful behaviors embedded in the latent space. To explore the robustness of safety alignment to latent perturbations, we introduce a probing method that measures the Negative Log-Likelihood of the original response generated by the model. This probe quantifies local sensitivity in the latent space, serving as a diagnostic tool for identifying vulnerable directions. Based on this signal, we construct effective jailbreak trajectories, giving rise to the Activation Steering Attack (ASA). More importantly, these insights offer a principled foundation for improving alignment robustness. To this end, we introduce Layer-wise Adversarial Patch Training~(LAPT), a fine-tuning strategy that inject controlled perturbations into hidden representations during training. Experimental results highlight that LAPT strengthen alignment robustness without compromising general capabilities. Our findings reveal fundamental flaws in current alignment paradigms and call for representation-level training strategies that move beyond surface-level behavior supervision. Codes and results are available at https://github.com/Carol-gutianle/LatentSafety.</description>
+   <guid>oai:arXiv.org:2506.16078v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Tianle Gu, Kexin Huang, Zongqi Wang, Yixu Wang, Jie Li, Yuanqi Yao, Yang Yao, Yujiu Yang, Yan Teng, Yingchun Wang</creator>
+  </item>
+  <item>
+   <title>From Prompts to Constructs: A Dual-Validity Framework for LLM Research in Psychology</title>
+   <link>https://arxiv.org/abs/2506.16697</link>
+   <description>Large language models (LLMs) are rapidly being adopted across psychology, serving as research tools, experimental subjects, human simulators, and computational models of cognition. However, the application of human measurement tools to these systems can produce contradictory results, raising concerns that many findings are measurement phantoms--statistical artifacts rather than genuine psychological phenomena. In this Perspective, we argue that building a robust science of AI psychology requires integrating two of our field's foundational pillars: the principles of reliable measurement and the standards for sound causal inference. We present a dual-validity framework to guide this integration, which clarifies how the evidence needed to support a claim scales with its scientific ambition. Using an LLM to classify text may require only basic accuracy checks, whereas claiming it can simulate anxiety demands a far more rigorous validation process. Current practice systematically fails to meet these requirements, often treating statistical pattern matching as evidence of psychological phenomena. The same model output--endorsing &quot;I am anxious&quot;--requires different validation strategies depending on whether researchers claim to measure, characterize, simulate, or model psychological constructs. Moving forward requires developing computational analogues of psychological constructs and establishing clear, scalable standards of evidence rather than the uncritical application of human measurement tools.</description>
+   <guid>oai:arXiv.org:2506.16697v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhicheng Lin</creator>
+  </item>
+  <item>
+   <title>Large Language Models as Psychological Simulators: A Methodological Guide</title>
+   <link>https://arxiv.org/abs/2506.16702</link>
+   <description>Large language models (LLMs) offer emerging opportunities for psychological and behavioral research, but methodological guidance is lacking. This article provides a framework for using LLMs as psychological simulators across two primary applications: simulating roles and personas to explore diverse contexts, and serving as computational models to investigate cognitive processes. For simulation, we present methods for developing psychologically grounded personas that move beyond demographic categories, with strategies for validation against human data and use cases ranging from studying inaccessible populations to prototyping research instruments. For cognitive modeling, we synthesize emerging approaches for probing internal representations, methodological advances in causal interventions, and strategies for relating model behavior to human cognition. We address overarching challenges including prompt sensitivity, temporal limitations from training data cutoffs, and ethical considerations that extend beyond traditional human subjects review. Throughout, we emphasize the need for transparency about model capabilities and constraints. Together, this framework integrates emerging empirical evidence about LLM performance--including systematic biases, cultural limitations, and prompt brittleness--to help researchers wrangle these challenges and leverage the unique capabilities of LLMs in psychological research.</description>
+   <guid>oai:arXiv.org:2506.16702v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhicheng Lin</creator>
+  </item>
+  <item>
+   <title>Ask, Fail, Repeat: Meeseeks, an Iterative Feedback Benchmark for LLMs' Multi-turn Instruction-Following Ability</title>
+   <link>https://arxiv.org/abs/2504.21625</link>
+   <description>The ability to follow instructions accurately is fundamental for Large Language Models (LLMs) to serve as reliable agents in real-world applications. For complex instructions, LLMs often struggle to fulfill all requirements in a single attempt. In practice, users typically provide iterative feedback until the LLM generates a response that meets all requirements. However, existing instruction-following benchmarks are either single-turn or introduce new requirements in each turn without allowing self-correction. To address this gap, we propose Meeseeks. Meeseeks simulates realistic human-LLM interactions through an iterative feedback framework, which enables models to self-correct based on specific requirement failures in each turn, better reflecting real-world user-end usage patterns. Meanwhile, the benchmark implements a comprehensive evaluation system with 38 capability tags organized across three dimensions: Intent Recognition, Granular Content Validation, and Output Structure Validation. Through rigorous evaluation across LLMs, Meeseeks provides valuable insights into LLMs' instruction-following capabilities in multi-turn scenarios.</description>
+   <guid>oai:arXiv.org:2504.21625v4</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jiaming Wang, Yunke Zhao, Peng Ding, Jun Kuang, Zongyu Wang, Xuezhi Cao, Xunliang Cai</creator>
+  </item>
+  <item>
+   <title>DrunkAgent: Stealthy Memory Corruption in LLM-Powered Recommender Agents</title>
+   <link>https://arxiv.org/abs/2503.23804</link>
+   <description>Large language model (LLM)-powered agents are increasingly used in recommender systems (RSs) to achieve personalized behavior modeling, where the memory mechanism plays a pivotal role in enabling the agents to autonomously explore, learn and self-evolve from real-world interactions. However, this very mechanism, serving as a contextual repository, inherently exposes an attack surface for potential adversarial manipulations. Despite its central role, the robustness of agentic RSs in the face of such threats remains largely underexplored. Previous works suffer from semantic mismatches or rely on static embeddings or pre-defined prompts, all of which hinder their applicability to systems with dynamic memory states. This challenge is exacerbated by the black-box nature of commercial RSs.
+  To tackle the above problems, in this paper, we present the first systematic investigation of memory-based vulnerabilities in LLM-powered recommender agents, revealing their security limitations and guiding efforts to strengthen system resilience and trustworthiness. Specifically, we propose a novel black-box attack framework named DrunkAgent. DrunkAgent crafts semantically meaningful adversarial textual triggers for target item promotions and introduces a series of strategies to maximize the trigger effect by corrupting the memory updates during the interactions. The triggers and strategies are optimized on a surrogate model, enabling DrunkAgent transferable and stealthy. Extensive experiments on real-world datasets across diverse agentic RSs, including collaborative filtering, retrieval augmentation and sequential recommendations, demonstrate the generalizability, transferability and stealthiness of DrunkAgent.</description>
+   <guid>oai:arXiv.org:2503.23804v2</guid>
+   <category>cs.CR</category>
+   <category>cs.CL</category>
+   <category>cs.IR</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Shiyi Yang, Zhibo Hu, Xinshu Li, Chen Wang, Tong Yu, Xiwei Xu, Liming Zhu, Lina Yao</creator>
+  </item>
+  <item>
+   <title>From Prompts to Constructs: A Dual-Validity Framework for LLM Research in Psychology</title>
+   <link>https://arxiv.org/abs/2506.16697</link>
+   <description>Large language models (LLMs) are rapidly being adopted across psychology, serving as research tools, experimental subjects, human simulators, and computational models of cognition. However, the application of human measurement tools to these systems can produce contradictory results, raising concerns that many findings are measurement phantoms--statistical artifacts rather than genuine psychological phenomena. In this Perspective, we argue that building a robust science of AI psychology requires integrating two of our field's foundational pillars: the principles of reliable measurement and the standards for sound causal inference. We present a dual-validity framework to guide this integration, which clarifies how the evidence needed to support a claim scales with its scientific ambition. Using an LLM to classify text may require only basic accuracy checks, whereas claiming it can simulate anxiety demands a far more rigorous validation process. Current practice systematically fails to meet these requirements, often treating statistical pattern matching as evidence of psychological phenomena. The same model output--endorsing &quot;I am anxious&quot;--requires different validation strategies depending on whether researchers claim to measure, characterize, simulate, or model psychological constructs. Moving forward requires developing computational analogues of psychological constructs and establishing clear, scalable standards of evidence rather than the uncritical application of human measurement tools.</description>
+   <guid>oai:arXiv.org:2506.16697v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhicheng Lin</creator>
+  </item>
+  <item>
+   <title>Large Language Models as Psychological Simulators: A Methodological Guide</title>
+   <link>https://arxiv.org/abs/2506.16702</link>
+   <description>Large language models (LLMs) offer emerging opportunities for psychological and behavioral research, but methodological guidance is lacking. This article provides a framework for using LLMs as psychological simulators across two primary applications: simulating roles and personas to explore diverse contexts, and serving as computational models to investigate cognitive processes. For simulation, we present methods for developing psychologically grounded personas that move beyond demographic categories, with strategies for validation against human data and use cases ranging from studying inaccessible populations to prototyping research instruments. For cognitive modeling, we synthesize emerging approaches for probing internal representations, methodological advances in causal interventions, and strategies for relating model behavior to human cognition. We address overarching challenges including prompt sensitivity, temporal limitations from training data cutoffs, and ethical considerations that extend beyond traditional human subjects review. Throughout, we emphasize the need for transparency about model capabilities and constraints. Together, this framework integrates emerging empirical evidence about LLM performance--including systematic biases, cultural limitations, and prompt brittleness--to help researchers wrangle these challenges and leverage the unique capabilities of LLMs in psychological research.</description>
+   <guid>oai:arXiv.org:2506.16702v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhicheng Lin</creator>
+  </item>
+  <item>
+   <title>Web Archives Metadata Generation with GPT-4o: Challenges and Insights</title>
+   <link>https://arxiv.org/abs/2411.05409</link>
+   <description>Current metadata creation for web archives is time consuming and costly due to reliance on human effort. This paper explores the use of gpt-4o for metadata generation within the Web Archive Singapore, focusing on scalability, efficiency, and cost effectiveness. We processed 112 Web ARChive (WARC) files using data reduction techniques, achieving a notable 99.9% reduction in metadata generation costs. By prompt engineering, we generated titles and abstracts, which were evaluated both intrinsically using Levenshtein Distance and BERTScore, and extrinsically with human cataloguers using McNemar's test. Results indicate that while our method offers significant cost savings and efficiency gains, human curated metadata maintains an edge in quality. The study identifies key challenges including content inaccuracies, hallucinations, and translation issues, suggesting that Large Language Models (LLMs) should serve as complements rather than replacements for human cataloguers. Future work will focus on refining prompts, improving content filtering, and addressing privacy concerns through experimentation with smaller models. This research advances the integration of LLMs in web archiving, offering valuable insights into their current capabilities and outlining directions for future enhancements. The code is available at https://github.com/masamune-prog/warc2summary for further development and use by institutions facing similar challenges.</description>
+   <guid>oai:arXiv.org:2411.05409v3</guid>
+   <category>cs.DL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ashwin Nair, Zhen Rong Goh, Tianrui Liu, Abigail Yongping Huang</creator>
+  </item>
+  <item>
+   <title>DrunkAgent: Stealthy Memory Corruption in LLM-Powered Recommender Agents</title>
+   <link>https://arxiv.org/abs/2503.23804</link>
+   <description>Large language model (LLM)-powered agents are increasingly used in recommender systems (RSs) to achieve personalized behavior modeling, where the memory mechanism plays a pivotal role in enabling the agents to autonomously explore, learn and self-evolve from real-world interactions. However, this very mechanism, serving as a contextual repository, inherently exposes an attack surface for potential adversarial manipulations. Despite its central role, the robustness of agentic RSs in the face of such threats remains largely underexplored. Previous works suffer from semantic mismatches or rely on static embeddings or pre-defined prompts, all of which hinder their applicability to systems with dynamic memory states. This challenge is exacerbated by the black-box nature of commercial RSs.
+  To tackle the above problems, in this paper, we present the first systematic investigation of memory-based vulnerabilities in LLM-powered recommender agents, revealing their security limitations and guiding efforts to strengthen system resilience and trustworthiness. Specifically, we propose a novel black-box attack framework named DrunkAgent. DrunkAgent crafts semantically meaningful adversarial textual triggers for target item promotions and introduces a series of strategies to maximize the trigger effect by corrupting the memory updates during the interactions. The triggers and strategies are optimized on a surrogate model, enabling DrunkAgent transferable and stealthy. Extensive experiments on real-world datasets across diverse agentic RSs, including collaborative filtering, retrieval augmentation and sequential recommendations, demonstrate the generalizability, transferability and stealthiness of DrunkAgent.</description>
+   <guid>oai:arXiv.org:2503.23804v2</guid>
+   <category>cs.CR</category>
+   <category>cs.CL</category>
+   <category>cs.IR</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Shiyi Yang, Zhibo Hu, Xinshu Li, Chen Wang, Tong Yu, Xiwei Xu, Liming Zhu, Lina Yao</creator>
+  </item>
+  <item>
+   <title>Incentivize Contribution and Learn Parameters Too: Federated Learning with Strategic Data Owners</title>
+   <link>https://arxiv.org/abs/2505.12010</link>
+   <description>Classical federated learning (FL) assumes that the clients have a limited amount of noisy data with which they voluntarily participate and contribute towards learning a global, more accurate model in a principled manner. The learning happens in a distributed fashion without sharing the data with the center. However, these methods do not consider the incentive of an agent for participating and contributing to the process, given that data collection and running a distributed algorithm is costly for the clients. The question of rationality of contribution has been asked recently in the literature and some results exist that consider this problem. This paper addresses the question of simultaneous parameter learning and incentivizing contribution, which distinguishes it from the extant literature. Our first mechanism incentivizes each client to contribute to the FL process at a Nash equilibrium and simultaneously learn the model parameters. However, this equilibrium outcome can be away from the optimal, where clients contribute with their full data and the algorithm learns the optimal parameters. We propose a second mechanism with monetary transfers that is budget balanced and enables the full data contribution along with optimal parameter learning. Large scale experiments with real (federated) datasets (CIFAR-10, FeMNIST, and Twitter) show that these algorithms converge quite fast in practice, yield good welfare guarantees, and better model performance for all agents.</description>
+   <guid>oai:arXiv.org:2505.12010v2</guid>
+   <category>cs.GT</category>
+   <category>cs.LG</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Drashthi Doshi, Aditya Vema Reddy Kesari, Swaprava Nath, Avishek Ghosh, Suhas S Kowshik</creator>
+  </item>
+  <item>
+   <title>Incentivizing High-quality Participation From Federated Learning Agents</title>
+   <link>https://arxiv.org/abs/2506.16731</link>
+   <description>Federated learning (FL) provides a promising paradigm for facilitating collaboration between multiple clients that jointly learn a global model without directly sharing their local data. However, existing research suffers from two caveats: 1) From the perspective of agents, voluntary and unselfish participation is often assumed. But self-interested agents may opt out of the system or provide low-quality contributions without proper incentives; 2) From the mechanism designer's perspective, the aggregated models can be unsatisfactory as the existing game-theoretical federated learning approach for data collection ignores the potential heterogeneous effort caused by contributed data. To alleviate above challenges, we propose an incentive-aware framework for agent participation that considers data heterogeneity to accelerate the convergence process. Specifically, we first introduce the notion of Wasserstein distance to explicitly illustrate the heterogeneous effort and reformulate the existing upper bound of convergence. To induce truthful reporting from agents, we analyze and measure the generalization error gap of any two agents by leveraging the peer prediction mechanism to develop score functions. We further present a two-stage Stackelberg game model that formalizes the process and examines the existence of equilibrium. Extensive experiments on real-world datasets demonstrate the effectiveness of our proposed mechanism.</description>
+   <guid>oai:arXiv.org:2506.16731v1</guid>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jinlong Pang, Jiaheng Wei, Yifan Hua, Chen Qian, Yang Liu</creator>
+  </item>
+  <item>
+   <title>Shadow defense against gradient inversion attack in federated learning</title>
+   <link>https://arxiv.org/abs/2506.15711</link>
+   <description>Federated learning (FL) has emerged as a transformative framework for privacy-preserving distributed training, allowing clients to collaboratively train a global model without sharing their local data. This is especially crucial in sensitive fields like healthcare, where protecting patient data is paramount. However, privacy leakage remains a critical challenge, as the communication of model updates can be exploited by potential adversaries. Gradient inversion attacks (GIAs), for instance, allow adversaries to approximate the gradients used for training and reconstruct training images, thus stealing patient privacy. Existing defense mechanisms obscure gradients, yet lack a nuanced understanding of which gradients or types of image information are most vulnerable to such attacks. These indiscriminate calibrated perturbations result in either excessive privacy protection degrading model accuracy, or insufficient one failing to safeguard sensitive information. Therefore, we introduce a framework that addresses these challenges by leveraging a shadow model with interpretability for identifying sensitive areas. This enables a more targeted and sample-specific noise injection. Specially, our defensive strategy achieves discrepancies of 3.73 in PSNR and 0.2 in SSIM compared to the circumstance without defense on the ChestXRay dataset, and 2.78 in PSNR and 0.166 in the EyePACS dataset. Moreover, it minimizes adverse effects on model performance, with less than 1\% F1 reduction compared to SOTA methods. Our extensive experiments, conducted across diverse types of medical images, validate the generalization of the proposed framework. The stable defense improvements for FedAvg are consistently over 1.5\% times in LPIPS and SSIM. It also offers a universal defense against various GIA types, especially for these sensitive areas in images.</description>
+   <guid>oai:arXiv.org:2506.15711v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Le Jiang, Liyan Ma, Guang Yang</creator>
+  </item>
+  <item>
+   <title>PNCS:Power-Norm Cosine Similarity for Diverse Client Selection in Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.15923</link>
+   <description>Federated Learning (FL) has emerged as a powerful paradigm for leveraging diverse datasets from multiple sources while preserving data privacy by avoiding centralized storage. However, many existing approaches fail to account for the intricate gradient correlations between remote clients, a limitation that becomes especially problematic in data heterogeneity scenarios. In this work, we propose a novel FL framework utilizing Power-Norm Cosine Similarity (PNCS) to improve client selection for model aggregation. By capturing higher-order gradient moments, PNCS addresses non-IID data challenges, enhancing convergence speed and accuracy. Additionally, we introduce a simple algorithm ensuring diverse client selection through a selection history queue. Experiments with a VGG16 model across varied data partitions demonstrate consistent improvements over state-of-the-art methods.</description>
+   <guid>oai:arXiv.org:2506.15923v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Liangyan Li, Yangyi Liu, Yimo Ning, Stefano Rini, Jun Chen</creator>
+  </item>
+  <item>
+   <title>Probing the Robustness of Large Language Models Safety to Latent Perturbations</title>
+   <link>https://arxiv.org/abs/2506.16078</link>
+   <description>Safety alignment is a key requirement for building reliable Artificial General Intelligence. Despite significant advances in safety alignment, we observe that minor latent shifts can still trigger unsafe responses in aligned models. We argue that this stems from the shallow nature of existing alignment methods, which focus on surface-level refusal behaviors without sufficiently altering internal representations. Consequently, small shifts in hidden activations can re-trigger harmful behaviors embedded in the latent space. To explore the robustness of safety alignment to latent perturbations, we introduce a probing method that measures the Negative Log-Likelihood of the original response generated by the model. This probe quantifies local sensitivity in the latent space, serving as a diagnostic tool for identifying vulnerable directions. Based on this signal, we construct effective jailbreak trajectories, giving rise to the Activation Steering Attack (ASA). More importantly, these insights offer a principled foundation for improving alignment robustness. To this end, we introduce Layer-wise Adversarial Patch Training~(LAPT), a fine-tuning strategy that inject controlled perturbations into hidden representations during training. Experimental results highlight that LAPT strengthen alignment robustness without compromising general capabilities. Our findings reveal fundamental flaws in current alignment paradigms and call for representation-level training strategies that move beyond surface-level behavior supervision. Codes and results are available at https://github.com/Carol-gutianle/LatentSafety.</description>
+   <guid>oai:arXiv.org:2506.16078v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Tianle Gu, Kexin Huang, Zongqi Wang, Yixu Wang, Jie Li, Yuanqi Yao, Yang Yao, Yujiu Yang, Yan Teng, Yingchun Wang</creator>
+  </item>
+  <item>
+   <title>FLAME: Towards Federated Fine-Tuning Large Language Models Through Adaptive SMoE</title>
+   <link>https://arxiv.org/abs/2506.16600</link>
+   <description>Existing resource-adaptive LoRA federated fine-tuning methods enable clients to fine-tune models using compressed versions of global LoRA matrices, in order to accommodate various compute resources across clients. This compression requirement will lead to suboptimal performance due to information loss. To address this, we propose FLAME, a novel federated learning framework based on the Sparse Mixture-of-Experts (SMoE) architecture. Unlike prior approaches, FLAME retains full (uncompressed) global LoRA matrices and achieves client-side adaptability by varying the number of activated experts per client. However, incorporating SMoE into federated learning introduces unique challenges, specifically, the mismatch in output magnitude from partial expert activation and the imbalance in expert training quality across clients. FLAME tackles these challenges through a lightweight rescaling mechanism and an activation-aware aggregation scheme. Empirical results across diverse computational settings demonstrate that FLAME consistently outperforms existing methods, providing a robust and effective solution for resource-adaptive federated learning.</description>
+   <guid>oai:arXiv.org:2506.16600v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Khiem Le, Tuan Tran, Ting Hua, Nitesh V. Chawla</creator>
+  </item>
+  <item>
+   <title>From Prompts to Constructs: A Dual-Validity Framework for LLM Research in Psychology</title>
+   <link>https://arxiv.org/abs/2506.16697</link>
+   <description>Large language models (LLMs) are rapidly being adopted across psychology, serving as research tools, experimental subjects, human simulators, and computational models of cognition. However, the application of human measurement tools to these systems can produce contradictory results, raising concerns that many findings are measurement phantoms--statistical artifacts rather than genuine psychological phenomena. In this Perspective, we argue that building a robust science of AI psychology requires integrating two of our field's foundational pillars: the principles of reliable measurement and the standards for sound causal inference. We present a dual-validity framework to guide this integration, which clarifies how the evidence needed to support a claim scales with its scientific ambition. Using an LLM to classify text may require only basic accuracy checks, whereas claiming it can simulate anxiety demands a far more rigorous validation process. Current practice systematically fails to meet these requirements, often treating statistical pattern matching as evidence of psychological phenomena. The same model output--endorsing &quot;I am anxious&quot;--requires different validation strategies depending on whether researchers claim to measure, characterize, simulate, or model psychological constructs. Moving forward requires developing computational analogues of psychological constructs and establishing clear, scalable standards of evidence rather than the uncritical application of human measurement tools.</description>
+   <guid>oai:arXiv.org:2506.16697v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhicheng Lin</creator>
+  </item>
+  <item>
+   <title>Large Language Models as Psychological Simulators: A Methodological Guide</title>
+   <link>https://arxiv.org/abs/2506.16702</link>
+   <description>Large language models (LLMs) offer emerging opportunities for psychological and behavioral research, but methodological guidance is lacking. This article provides a framework for using LLMs as psychological simulators across two primary applications: simulating roles and personas to explore diverse contexts, and serving as computational models to investigate cognitive processes. For simulation, we present methods for developing psychologically grounded personas that move beyond demographic categories, with strategies for validation against human data and use cases ranging from studying inaccessible populations to prototyping research instruments. For cognitive modeling, we synthesize emerging approaches for probing internal representations, methodological advances in causal interventions, and strategies for relating model behavior to human cognition. We address overarching challenges including prompt sensitivity, temporal limitations from training data cutoffs, and ethical considerations that extend beyond traditional human subjects review. Throughout, we emphasize the need for transparency about model capabilities and constraints. Together, this framework integrates emerging empirical evidence about LLM performance--including systematic biases, cultural limitations, and prompt brittleness--to help researchers wrangle these challenges and leverage the unique capabilities of LLMs in psychological research.</description>
+   <guid>oai:arXiv.org:2506.16702v1</guid>
+   <category>cs.CY</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhicheng Lin</creator>
+  </item>
+  <item>
+   <title>TriCon-SF: A Triple-Shuffle and Contribution-Aware Serial Federated Learning Framework for Heterogeneous Healthcare Data</title>
+   <link>https://arxiv.org/abs/2506.16723</link>
+   <description>Serial pipeline training is an efficient paradigm for handling data heterogeneity in cross-silo federated learning with low communication overhead. However, even without centralized aggregation, direct transfer of models between clients can violate privacy regulations and remain susceptible to gradient leakage and linkage attacks. Additionally, ensuring resilience against semi-honest or malicious clients who may manipulate or misuse received models remains a grand challenge, particularly in privacy-sensitive domains such as healthcare. To address these challenges, we propose TriCon-SF, a novel serial federated learning framework that integrates triple shuffling and contribution awareness. TriCon-SF introduces three levels of randomization by shuffling model layers, data segments, and training sequences to break deterministic learning patterns and disrupt potential attack vectors, thereby enhancing privacy and robustness. In parallel, it leverages Shapley value methods to dynamically evaluate client contributions during training, enabling the detection of dishonest behavior and enhancing system accountability. Extensive experiments on non-IID healthcare datasets demonstrate that TriCon-SF outperforms standard serial and parallel federated learning in both accuracy and communication efficiency. Security analysis further supports its resilience against client-side privacy attacks.</description>
+   <guid>oai:arXiv.org:2506.16723v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuping Yan, Yizhi Wang, Yuanshuai Li, Yaochu Jin</creator>
+  </item>
+  <item>
+   <title>Web Archives Metadata Generation with GPT-4o: Challenges and Insights</title>
+   <link>https://arxiv.org/abs/2411.05409</link>
+   <description>Current metadata creation for web archives is time consuming and costly due to reliance on human effort. This paper explores the use of gpt-4o for metadata generation within the Web Archive Singapore, focusing on scalability, efficiency, and cost effectiveness. We processed 112 Web ARChive (WARC) files using data reduction techniques, achieving a notable 99.9% reduction in metadata generation costs. By prompt engineering, we generated titles and abstracts, which were evaluated both intrinsically using Levenshtein Distance and BERTScore, and extrinsically with human cataloguers using McNemar's test. Results indicate that while our method offers significant cost savings and efficiency gains, human curated metadata maintains an edge in quality. The study identifies key challenges including content inaccuracies, hallucinations, and translation issues, suggesting that Large Language Models (LLMs) should serve as complements rather than replacements for human cataloguers. Future work will focus on refining prompts, improving content filtering, and addressing privacy concerns through experimentation with smaller models. This research advances the integration of LLMs in web archiving, offering valuable insights into their current capabilities and outlining directions for future enhancements. The code is available at https://github.com/masamune-prog/warc2summary for further development and use by institutions facing similar challenges.</description>
+   <guid>oai:arXiv.org:2411.05409v3</guid>
+   <category>cs.DL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ashwin Nair, Zhen Rong Goh, Tianrui Liu, Abigail Yongping Huang</creator>
+  </item>
+  <item>
+   <title>Boosting multi-demographic federated learning for chest radiograph analysis using general-purpose self-supervised representations</title>
+   <link>https://arxiv.org/abs/2504.08584</link>
+   <description>Reliable artificial intelligence (AI) models for medical image analysis often depend on large and diverse labeled datasets. Federated learning (FL) offers a decentralized and privacy-preserving approach to training but struggles in highly non-independent and identically distributed (non-IID) settings, where institutions with more representative data may experience degraded performance. Moreover, existing large-scale FL studies have been limited to adult datasets, neglecting the unique challenges posed by pediatric data, which introduces additional non-IID variability. To address these limitations, we analyzed n=398,523 adult chest radiographs from diverse institutions across multiple countries and n=9,125 pediatric images, leveraging transfer learning from general-purpose self-supervised image representations to classify pneumonia and cases with no abnormality. Using state-of-the-art vision transformers, we found that FL improved performance only for smaller adult datasets (P&lt;0.001) but degraded performance for larger datasets (P&lt;0.064) and pediatric cases (P=0.242). However, equipping FL with self-supervised weights significantly enhanced outcomes across pediatric cases (P=0.031) and most adult datasets (P&lt;0.008), except the largest dataset (P=0.052). These findings underscore the potential of easily deployable general-purpose self-supervised image representations to address non-IID challenges in clinical FL applications and highlight their promise for enhancing patient outcomes and advancing pediatric healthcare, where data scarcity and variability remain persistent obstacles.</description>
+   <guid>oai:arXiv.org:2504.08584v2</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mahshad Lotfinia, Arash Tayebiarasteh, Samaneh Samiei, Mehdi Joodaki, Soroosh Tayebi Arasteh</creator>
+  </item>
+  <item>
+   <title>KVCache Cache in the Wild: Characterizing and Optimizing KVCache Cache at a Large Cloud Provider</title>
+   <link>https://arxiv.org/abs/2506.02634</link>
+   <description>Serving large language models (LLMs) is important for cloud providers, and caching intermediate results (KV\$) after processing each request substantially improves serving throughput and latency. However, there is limited understanding of how LLM serving benefits from KV\$ caching, where system design decisions like cache eviction policies are highly workload-dependent. In this paper, we present the first systematic characterization of the KV\$ workload patterns from one of the leading LLM service providers. We draw observations that were not covered by previous studies focusing on synthetic workloads, including: KV\$ reuses are skewed across requests, where reuses between single-turn requests are equally important as multi-turn requests; the reuse time and probability are diverse considering all requests, but for a specific request category, the pattern tends to be predictable; and the overall cache size required for an ideal cache hit ratio is moderate. Based on the characterization, we further propose a workload-aware cache eviction policy that improves the serving performance under real-world traces, especially with limited cache capacity.</description>
+   <guid>oai:arXiv.org:2506.02634v3</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Jiahao Wang, Jinbo Han, Xingda Wei, Sijie Shen, Dingyan Zhang, Chenguang Fang, Rong Chen, Wenyuan Yu, Haibo Chen</creator>
+  </item>
+  <item>
+   <title>Serving Large Language Models on Huawei CloudMatrix384</title>
+   <link>https://arxiv.org/abs/2506.12708</link>
+   <description>The rapid evolution of large language models (LLMs), driven by growing parameter scales, adoption of mixture-of-experts (MoE) architectures, and expanding context lengths, imposes unprecedented demands on AI infrastructure. Traditional AI clusters face limitations in compute intensity, memory bandwidth, inter-chip communication, and latency, compounded by variable workloads and strict service-level objectives. Addressing these issues requires fundamentally redesigned hardware-software integration. This paper introduces Huawei CloudMatrix, a next-generation AI datacenter architecture, realized in the production-grade CloudMatrix384 supernode. It integrates 384 Ascend 910 NPUs and 192 Kunpeng CPUs interconnected via an ultra-high-bandwidth Unified Bus (UB) network, enabling direct all-to-all communication and dynamic pooling of resources. These features optimize performance for communication-intensive operations, such as large-scale MoE expert parallelism and distributed key-value cache access. To fully leverage CloudMatrix384, we propose CloudMatrix-Infer, an advanced LLM serving solution incorporating three core innovations: a peer-to-peer serving architecture that independently scales prefill, decode, and caching; a large-scale expert parallelism strategy supporting EP320 via efficient UB-based token dispatch; and hardware-aware optimizations including specialized operators, microbatch-based pipelining, and INT8 quantization. Evaluation with the DeepSeek-R1 model shows CloudMatrix-Infer achieves state-of-the-art efficiency: prefill throughput of 6,688 tokens/s per NPU and decode throughput of 1,943 tokens/s per NPU (&lt;50 ms TPOT). It effectively balances throughput and latency, sustaining 538 tokens/s per NPU even under stringent 15 ms latency constraints, while INT8 quantization maintains model accuracy across benchmarks.</description>
+   <guid>oai:arXiv.org:2506.12708v3</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.AR</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Pengfei Zuo, Huimin Lin, Junbo Deng, Nan Zou, Xingkun Yang, Yingyu Diao, Weifeng Gao, Ke Xu, Zhangyu Chen, Shirui Lu, Zhao Qiu, Peiyang Li, Xianyu Chang, Zhengzhong Yu, Fangzheng Miao, Jia Zheng, Ying Li, Yuan Feng, Bei Wang, Zaijian Zong, Mosong Zhou, Wenli Zhou, Houjiang Chen, Xingyu Liao, Yipeng Li, Wenxiao Zhang, Ping Zhu, Yinggang Wang, Chuanjie Xiao, Depeng Liang, Dong Cao, Juncheng Liu, Yongqiang Yang, Xiaolong Bai, Yi Li, Huaguo Xie, Huatao Wu, Zhibin Yu, Lv Chen, Hu Liu, Yujun Ding, Haipei Zhu, Jing Xia, Yi Xiong, Zhou Yu, Heng Liao</creator>
+  </item>
+  <item>
+   <title>Federated Learning for MRI-based BrainAGE: a multicenter study on post-stroke functional outcome prediction</title>
+   <link>https://arxiv.org/abs/2506.15626</link>
+   <description>$\textbf{Objective:}$ Brain-predicted age difference (BrainAGE) is a neuroimaging biomarker reflecting brain health. However, training robust BrainAGE models requires large datasets, often restricted by privacy concerns. This study evaluates the performance of federated learning (FL) for BrainAGE estimation in ischemic stroke patients treated with mechanical thrombectomy, and investigates its association with clinical phenotypes and functional outcomes.
+  $\textbf{Methods:}$ We used FLAIR brain images from 1674 stroke patients across 16 hospital centers. We implemented standard machine learning and deep learning models for BrainAGE estimates under three data management strategies: centralized learning (pooled data), FL (local training at each site), and single-site learning. We reported prediction errors and examined associations between BrainAGE and vascular risk factors (e.g., diabetes mellitus, hypertension, smoking), as well as functional outcomes at three months post-stroke. Logistic regression evaluated BrainAGE's predictive value for these outcomes, adjusting for age, sex, vascular risk factors, stroke severity, time between MRI and arterial puncture, prior intravenous thrombolysis, and recanalisation outcome.
+  $\textbf{Results:}$ While centralized learning yielded the most accurate predictions, FL consistently outperformed single-site models. BrainAGE was significantly higher in patients with diabetes mellitus across all models. Comparisons between patients with good and poor functional outcomes, and multivariate predictions of these outcomes showed the significance of the association between BrainAGE and post-stroke recovery.
+  $\textbf{Conclusion:}$ FL enables accurate age predictions without data centralization. The strong association between BrainAGE, vascular risk factors, and post-stroke recovery highlights its potential for prognostic modeling in stroke care.</description>
+   <guid>oai:arXiv.org:2506.15626v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Vincent Roca, Marc Tommasi, Paul Andrey, Aur\'elien Bellet, Markus D. Schirmer, Hilde Henon, Laurent Puy, Julien Ramon, Gr\'egory Kuchcinski, Martin Bretzner, Renaud Lopes</creator>
+  </item>
+  <item>
+   <title>Shadow defense against gradient inversion attack in federated learning</title>
+   <link>https://arxiv.org/abs/2506.15711</link>
+   <description>Federated learning (FL) has emerged as a transformative framework for privacy-preserving distributed training, allowing clients to collaboratively train a global model without sharing their local data. This is especially crucial in sensitive fields like healthcare, where protecting patient data is paramount. However, privacy leakage remains a critical challenge, as the communication of model updates can be exploited by potential adversaries. Gradient inversion attacks (GIAs), for instance, allow adversaries to approximate the gradients used for training and reconstruct training images, thus stealing patient privacy. Existing defense mechanisms obscure gradients, yet lack a nuanced understanding of which gradients or types of image information are most vulnerable to such attacks. These indiscriminate calibrated perturbations result in either excessive privacy protection degrading model accuracy, or insufficient one failing to safeguard sensitive information. Therefore, we introduce a framework that addresses these challenges by leveraging a shadow model with interpretability for identifying sensitive areas. This enables a more targeted and sample-specific noise injection. Specially, our defensive strategy achieves discrepancies of 3.73 in PSNR and 0.2 in SSIM compared to the circumstance without defense on the ChestXRay dataset, and 2.78 in PSNR and 0.166 in the EyePACS dataset. Moreover, it minimizes adverse effects on model performance, with less than 1\% F1 reduction compared to SOTA methods. Our extensive experiments, conducted across diverse types of medical images, validate the generalization of the proposed framework. The stable defense improvements for FedAvg are consistently over 1.5\% times in LPIPS and SSIM. It also offers a universal defense against various GIA types, especially for these sensitive areas in images.</description>
+   <guid>oai:arXiv.org:2506.15711v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Le Jiang, Liyan Ma, Guang Yang</creator>
+  </item>
+  <item>
+   <title>PNCS:Power-Norm Cosine Similarity for Diverse Client Selection in Federated Learning</title>
+   <link>https://arxiv.org/abs/2506.15923</link>
+   <description>Federated Learning (FL) has emerged as a powerful paradigm for leveraging diverse datasets from multiple sources while preserving data privacy by avoiding centralized storage. However, many existing approaches fail to account for the intricate gradient correlations between remote clients, a limitation that becomes especially problematic in data heterogeneity scenarios. In this work, we propose a novel FL framework utilizing Power-Norm Cosine Similarity (PNCS) to improve client selection for model aggregation. By capturing higher-order gradient moments, PNCS addresses non-IID data challenges, enhancing convergence speed and accuracy. Additionally, we introduce a simple algorithm ensuring diverse client selection through a selection history queue. Experiments with a VGG16 model across varied data partitions demonstrate consistent improvements over state-of-the-art methods.</description>
+   <guid>oai:arXiv.org:2506.15923v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Liangyan Li, Yangyi Liu, Yimo Ning, Stefano Rini, Jun Chen</creator>
+  </item>
+  <item>
+   <title>Probing the Robustness of Large Language Models Safety to Latent Perturbations</title>
+   <link>https://arxiv.org/abs/2506.16078</link>
+   <description>Safety alignment is a key requirement for building reliable Artificial General Intelligence. Despite significant advances in safety alignment, we observe that minor latent shifts can still trigger unsafe responses in aligned models. We argue that this stems from the shallow nature of existing alignment methods, which focus on surface-level refusal behaviors without sufficiently altering internal representations. Consequently, small shifts in hidden activations can re-trigger harmful behaviors embedded in the latent space. To explore the robustness of safety alignment to latent perturbations, we introduce a probing method that measures the Negative Log-Likelihood of the original response generated by the model. This probe quantifies local sensitivity in the latent space, serving as a diagnostic tool for identifying vulnerable directions. Based on this signal, we construct effective jailbreak trajectories, giving rise to the Activation Steering Attack (ASA). More importantly, these insights offer a principled foundation for improving alignment robustness. To this end, we introduce Layer-wise Adversarial Patch Training~(LAPT), a fine-tuning strategy that inject controlled perturbations into hidden representations during training. Experimental results highlight that LAPT strengthen alignment robustness without compromising general capabilities. Our findings reveal fundamental flaws in current alignment paradigms and call for representation-level training strategies that move beyond surface-level behavior supervision. Codes and results are available at https://github.com/Carol-gutianle/LatentSafety.</description>
+   <guid>oai:arXiv.org:2506.16078v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Tianle Gu, Kexin Huang, Zongqi Wang, Yixu Wang, Jie Li, Yuanqi Yao, Yang Yao, Yujiu Yang, Yan Teng, Yingchun Wang</creator>
+  </item>
+  <item>
+   <title>FLAME: Towards Federated Fine-Tuning Large Language Models Through Adaptive SMoE</title>
+   <link>https://arxiv.org/abs/2506.16600</link>
+   <description>Existing resource-adaptive LoRA federated fine-tuning methods enable clients to fine-tune models using compressed versions of global LoRA matrices, in order to accommodate various compute resources across clients. This compression requirement will lead to suboptimal performance due to information loss. To address this, we propose FLAME, a novel federated learning framework based on the Sparse Mixture-of-Experts (SMoE) architecture. Unlike prior approaches, FLAME retains full (uncompressed) global LoRA matrices and achieves client-side adaptability by varying the number of activated experts per client. However, incorporating SMoE into federated learning introduces unique challenges, specifically, the mismatch in output magnitude from partial expert activation and the imbalance in expert training quality across clients. FLAME tackles these challenges through a lightweight rescaling mechanism and an activation-aware aggregation scheme. Empirical results across diverse computational settings demonstrate that FLAME consistently outperforms existing methods, providing a robust and effective solution for resource-adaptive federated learning.</description>
+   <guid>oai:arXiv.org:2506.16600v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Khiem Le, Tuan Tran, Ting Hua, Nitesh V. Chawla</creator>
+  </item>
+  <item>
+   <title>TriCon-SF: A Triple-Shuffle and Contribution-Aware Serial Federated Learning Framework for Heterogeneous Healthcare Data</title>
+   <link>https://arxiv.org/abs/2506.16723</link>
+   <description>Serial pipeline training is an efficient paradigm for handling data heterogeneity in cross-silo federated learning with low communication overhead. However, even without centralized aggregation, direct transfer of models between clients can violate privacy regulations and remain susceptible to gradient leakage and linkage attacks. Additionally, ensuring resilience against semi-honest or malicious clients who may manipulate or misuse received models remains a grand challenge, particularly in privacy-sensitive domains such as healthcare. To address these challenges, we propose TriCon-SF, a novel serial federated learning framework that integrates triple shuffling and contribution awareness. TriCon-SF introduces three levels of randomization by shuffling model layers, data segments, and training sequences to break deterministic learning patterns and disrupt potential attack vectors, thereby enhancing privacy and robustness. In parallel, it leverages Shapley value methods to dynamically evaluate client contributions during training, enabling the detection of dishonest behavior and enhancing system accountability. Extensive experiments on non-IID healthcare datasets demonstrate that TriCon-SF outperforms standard serial and parallel federated learning in both accuracy and communication efficiency. Security analysis further supports its resilience against client-side privacy attacks.</description>
+   <guid>oai:arXiv.org:2506.16723v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuping Yan, Yizhi Wang, Yuanshuai Li, Yaochu Jin</creator>
+  </item>
+  <item>
+   <title>FedFitTech: A Baseline in Federated Learning for Fitness Tracking</title>
+   <link>https://arxiv.org/abs/2506.16840</link>
+   <description>Rapid evolution of sensors and resource-efficient machine learning models have spurred the widespread adoption of wearable fitness tracking devices. Equipped with inertial sensors, such devices can continuously capture physical movements for fitness technology (FitTech), enabling applications from sports optimization to preventive healthcare. Traditional centralized learning approaches to detect fitness activities struggle with privacy concerns, regulatory constraints, and communication inefficiencies. In contrast, Federated Learning (FL) enables a decentralized model training by communicating model updates rather than private wearable sensor data. Applying FL to FitTech presents unique challenges, such as data imbalance, lack of labelled data, heterogeneous user activity patterns, and trade-offs between personalization and generalization. To simplify research on FitTech in FL, we present the FedFitTech baseline, under the Flower framework, which is publicly available and widely used by both industry and academic researchers. Additionally, to illustrate its usage, this paper presents a case study that implements a system based on the FedFitTech baseline, incorporating a client-side early stopping strategy and comparing the results. For instance, this system allows wearable devices to optimize the trade-off between capturing common fitness activity patterns and preserving individuals' nuances, thereby enhancing both the scalability and efficiency of privacy-aware fitness tracking applications. Results show that this reduces overall redundant communications by 13 percent, while maintaining the overall recognition performance at a negligible recognition cost by 1 percent. Thus, FedFitTech baseline creates a foundation for a wide range of new research and development opportunities in FitTech, and it is available as open-source at: https://github.com/adap/flower/tree/main/baselines/fedfittech</description>
+   <guid>oai:arXiv.org:2506.16840v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Zeyneddin Oz, Shreyas Korde, Marius Bock, Kristof Van Laerhoven</creator>
+  </item>
+  <item>
+   <title>Incentivizing High-quality Participation From Federated Learning Agents</title>
+   <link>https://arxiv.org/abs/2506.16731</link>
+   <description>Federated learning (FL) provides a promising paradigm for facilitating collaboration between multiple clients that jointly learn a global model without directly sharing their local data. However, existing research suffers from two caveats: 1) From the perspective of agents, voluntary and unselfish participation is often assumed. But self-interested agents may opt out of the system or provide low-quality contributions without proper incentives; 2) From the mechanism designer's perspective, the aggregated models can be unsatisfactory as the existing game-theoretical federated learning approach for data collection ignores the potential heterogeneous effort caused by contributed data. To alleviate above challenges, we propose an incentive-aware framework for agent participation that considers data heterogeneity to accelerate the convergence process. Specifically, we first introduce the notion of Wasserstein distance to explicitly illustrate the heterogeneous effort and reformulate the existing upper bound of convergence. To induce truthful reporting from agents, we analyze and measure the generalization error gap of any two agents by leveraging the peer prediction mechanism to develop score functions. We further present a two-stage Stackelberg game model that formalizes the process and examines the existence of equilibrium. Extensive experiments on real-world datasets demonstrate the effectiveness of our proposed mechanism.</description>
+   <guid>oai:arXiv.org:2506.16731v1</guid>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jinlong Pang, Jiaheng Wei, Yifan Hua, Chen Qian, Yang Liu</creator>
+  </item>
+  <item>
+   <title>Client Selection Strategies for Federated Semantic Communications in Heterogeneous IoT Networks</title>
+   <link>https://arxiv.org/abs/2506.17063</link>
+   <description>The exponential growth of IoT devices presents critical challenges in bandwidth-constrained wireless networks, particularly regarding efficient data transmission and privacy preservation. This paper presents a novel federated semantic communication (SC) framework that enables collaborative training of bandwidth-efficient models for image reconstruction across heterogeneous IoT devices. By leveraging SC principles to transmit only semantic features, our approach dramatically reduces communication overhead while preserving reconstruction quality. We address the fundamental challenge of client selection in federated learning environments where devices exhibit significant disparities in dataset sizes and data distributions. Our framework implements three distinct client selection strategies that explore different trade-offs between system performance and fairness in resource allocation. The system employs an end-to-end SC architecture with semantic bottlenecks, coupled with a loss-based aggregation mechanism that naturally adapts to client heterogeneity. Experimental evaluation on image data demonstrates that while Utilitarian selection achieves the highest reconstruction quality, Proportional Fairness maintains competitive performance while significantly reducing participation inequality and improving computational efficiency. These results establish that federated SC can successfully balance reconstruction quality, resource efficiency, and fairness in heterogeneous IoT deployments, paving the way for sustainable and privacy-preserving edge intelligence applications.</description>
+   <guid>oai:arXiv.org:2506.17063v1</guid>
+   <category>cs.NI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Samer Lahoud, Kinda Khawam</creator>
+  </item>
+  <item>
+   <title>Client-Centered Federated Learning for Heterogeneous EHRs: Use Fewer Participants to Achieve the Same Performance</title>
+   <link>https://arxiv.org/abs/2404.13318</link>
+   <description>The increasing volume of electronic health records (EHRs) presents the opportunity to improve the accuracy and robustness of models in clinical prediction tasks. Unlike traditional centralized approaches, federated learning enables training on data from multiple institutions while preserving patient privacy and complying with regulatory constraints. In practice, healthcare institutions (i.e., hosts) often need to build predictive models tailored to their specific needs using federated learning. In this scenario, two key challenges arise: (1) ensuring compatibility across heterogeneous EHR systems, and (2) managing federated learning costs within budget constraints. To address these challenges, we propose EHRFL, a federated learning framework designed for building a cost-effective, host-specific predictive model using patient EHR data. EHRFL consists of two components: (1) text-based EHR modeling, which facilitates cross-institution compatibility without costly data standardization, and (2) a participant selection strategy based on averaged patient embedding similarity to reduce the number of participants without degrading performance. Experiments on multiple open-source EHR datasets demonstrate the effectiveness of both components. We believe our framework offers a practical solution for enabling healthcare institutions to build institution-specific predictive models under budgetary constraints.</description>
+   <guid>oai:arXiv.org:2404.13318v4</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jiyoun Kim, Junu Kim, Kyunghoon Hur, Edward Choi</creator>
+  </item>
+  <item>
+   <title>Mobility-Aware Federated Self-supervised Learning in Vehicular Network</title>
+   <link>https://arxiv.org/abs/2408.00256</link>
+   <description>Federated Learning (FL) is an advanced distributed machine learning approach, that protects the privacy of each vehicle by allowing the model to be trained on multiple devices simultaneously without the need to upload all data to a road side unit (RSU). This enables FL to handle scenarios with sensitive or widely distributed data. However, in these fields, it is well known that the labeling costs can be a significant expense, and models relying on labels are not suitable for these rapidly evolving fields especially in vehicular networks, or mobile internet of things (MIoT), where new data emerges constantly. To handle this issue, the self-supervised learning paves the way for training without labels. Additionally, for vehicles with high velocity, owing to blurred images, simple aggregation not only impacts the accuracy of the aggregated model but also reduces the convergence speed of FL. This paper proposes a FL algorithm based on image blur level to aggregation, called FLSimCo, which does not require labels and serves as a pre-training stage for self-supervised learning in the vehicular environment. Simulation results demonstrate that the proposed algorithm exhibits fast and stable convergence.</description>
+   <guid>oai:arXiv.org:2408.00256v2</guid>
+   <category>cs.LG</category>
+   <category>cs.NI</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xueying Gu, Qiong Wu, Pingyi Fan, Qiang Fan</creator>
+  </item>
+  <item>
+   <title>Medha: Efficiently Serving Multi-Million Context Length LLM Inference Requests Without Approximations</title>
+   <link>https://arxiv.org/abs/2409.17264</link>
+   <description>As large language models (LLMs) handle increasingly longer contexts, serving long inference requests of millions of tokens presents unique challenges. We show that existing work for long context inference is largely based on techniques from long context training, and does not handle the high variability in input lengths during inference. This leads to inefficient resource utilization, server fragmentation, and head-of-line (HOL) blocking.
+  We present Medha, an end-to-end system for efficient long-context LLM inference that addresses these challenges through fine-grained time sharing. Medha introduces three key innovations: (1) the mechanism of adaptive prefill chunking to help mitigate HOL blocking with preemption; (2) two new parallelism strategies: Sequence Pipeline Parallelism (SPP) to reduce time-to-first-token by pipelining prefill chunks, and KV-Cache Parallelism (KVP) to lower time-peroutput-token by distributing decoding across servers; and (3) a novel input-length aware least remaining slack scheduling to meet Service Level Objectives (SLOs).
+  Medha enables exact inference scaling beyond 10 million tokens, maintaining high throughput and low latency across mixed-length workloads. Compared to state-of-the-art systems, Medha reduces server fragmentation, cuts median latency by up to 30x, and improves throughput by over 5x, delivering production-scale long-context inference without compromising performance on shorter requests.</description>
+   <guid>oai:arXiv.org:2409.17264v4</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Amey Agrawal, Haoran Qiu, Junda Chen, \'I\~nigo Goiri, Chaojie Zhang, Rayyan Shahid, Ramachandran Ramjee, Alexey Tumanov, Esha Choukse</creator>
+  </item>
+  <item>
+   <title>LabTOP: A Unified Model for Lab Test Outcome Prediction on Electronic Health Records</title>
+   <link>https://arxiv.org/abs/2502.14259</link>
+   <description>Lab tests are fundamental for diagnosing diseases and monitoring patient conditions. However, frequent testing can be burdensome for patients, and test results may not always be immediately available. To address these challenges, we propose LabTOP, a unified model that predicts lab test outcomes by leveraging a language modeling approach on EHR data. Unlike conventional methods that estimate only a subset of lab tests or classify discrete value ranges, LabTOP performs continuous numerical predictions for a diverse range of lab items. We evaluate LabTOP on three publicly available EHR datasets and demonstrate that it outperforms existing methods, including traditional machine learning models and state-of-the-art large language models. We also conduct extensive ablation studies to confirm the effectiveness of our design choices. We believe that LabTOP will serve as an accurate and generalizable framework for lab test outcome prediction, with potential applications in clinical decision support and early detection of critical conditions.</description>
+   <guid>oai:arXiv.org:2502.14259v4</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sujeong Im, Jungwoo Oh, Edward Choi</creator>
+  </item>
+  <item>
+   <title>Noise Resilient Over-The-Air Federated Learning In Heterogeneous Wireless Networks</title>
+   <link>https://arxiv.org/abs/2503.19549</link>
+   <description>In 6G wireless networks, Artificial Intelligence (AI)-driven applications demand the adoption of Federated Learning (FL) to enable efficient and privacy-preserving model training across distributed devices. Over-The-Air Federated Learning (OTA-FL) exploits the superposition property of multiple access channels, allowing edge users in 6G networks to efficiently share spectral resources and perform low-latency global model aggregation. However, these advantages come with challenges, as traditional OTA-FL techniques suffer due to the joint effects of Additive White Gaussian Noise (AWGN) at the server, fading, and both data and system heterogeneity at the participating edge devices. In this work, we propose the novel Noise Resilient Over-the-Air Federated Learning (NoROTA-FL) framework to jointly tackle these challenges in federated wireless networks. In NoROTA-FL, the local optimization problems find controlled inexact solutions, which manifests as an additional proximal constraint at the clients. This approach provides robustness against straggler-induced partial work, heterogeneity, noise, and fading. From a theoretical perspective, we leverage the zeroth- and first-order inexactness and establish convergence guarantees for non-convex optimization problems in the presence of heterogeneous data and varying system capabilities. Experimentally, we validate NoROTA-FL on real-world datasets, including FEMNIST, CIFAR10, and CIFAR100, demonstrating its robustness in noisy and heterogeneous environments. Compared to state-of-the-art baselines such as COTAF and FedProx, NoROTA-FL achieves significantly more stable convergence and higher accuracy, particularly in the presence of stragglers.</description>
+   <guid>oai:arXiv.org:2503.19549v2</guid>
+   <category>cs.LG</category>
+   <category>eess.SP</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zubair Shaban, Nazreen Shah, Ranjitha Prasad</creator>
+  </item>
+  <item>
+   <title>Federated Learning for MRI-based BrainAGE: a multicenter study on post-stroke functional outcome prediction</title>
+   <link>https://arxiv.org/abs/2506.15626</link>
+   <description>$\textbf{Objective:}$ Brain-predicted age difference (BrainAGE) is a neuroimaging biomarker reflecting brain health. However, training robust BrainAGE models requires large datasets, often restricted by privacy concerns. This study evaluates the performance of federated learning (FL) for BrainAGE estimation in ischemic stroke patients treated with mechanical thrombectomy, and investigates its association with clinical phenotypes and functional outcomes.
+  $\textbf{Methods:}$ We used FLAIR brain images from 1674 stroke patients across 16 hospital centers. We implemented standard machine learning and deep learning models for BrainAGE estimates under three data management strategies: centralized learning (pooled data), FL (local training at each site), and single-site learning. We reported prediction errors and examined associations between BrainAGE and vascular risk factors (e.g., diabetes mellitus, hypertension, smoking), as well as functional outcomes at three months post-stroke. Logistic regression evaluated BrainAGE's predictive value for these outcomes, adjusting for age, sex, vascular risk factors, stroke severity, time between MRI and arterial puncture, prior intravenous thrombolysis, and recanalisation outcome.
+  $\textbf{Results:}$ While centralized learning yielded the most accurate predictions, FL consistently outperformed single-site models. BrainAGE was significantly higher in patients with diabetes mellitus across all models. Comparisons between patients with good and poor functional outcomes, and multivariate predictions of these outcomes showed the significance of the association between BrainAGE and post-stroke recovery.
+  $\textbf{Conclusion:}$ FL enables accurate age predictions without data centralization. The strong association between BrainAGE, vascular risk factors, and post-stroke recovery highlights its potential for prognostic modeling in stroke care.</description>
+   <guid>oai:arXiv.org:2506.15626v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Vincent Roca, Marc Tommasi, Paul Andrey, Aur\'elien Bellet, Markus D. Schirmer, Hilde Henon, Laurent Puy, Julien Ramon, Gr\'egory Kuchcinski, Martin Bretzner, Renaud Lopes</creator>
+  </item>
+  <item>
+   <title>Boosting multi-demographic federated learning for chest radiograph analysis using general-purpose self-supervised representations</title>
+   <link>https://arxiv.org/abs/2504.08584</link>
+   <description>Reliable artificial intelligence (AI) models for medical image analysis often depend on large and diverse labeled datasets. Federated learning (FL) offers a decentralized and privacy-preserving approach to training but struggles in highly non-independent and identically distributed (non-IID) settings, where institutions with more representative data may experience degraded performance. Moreover, existing large-scale FL studies have been limited to adult datasets, neglecting the unique challenges posed by pediatric data, which introduces additional non-IID variability. To address these limitations, we analyzed n=398,523 adult chest radiographs from diverse institutions across multiple countries and n=9,125 pediatric images, leveraging transfer learning from general-purpose self-supervised image representations to classify pneumonia and cases with no abnormality. Using state-of-the-art vision transformers, we found that FL improved performance only for smaller adult datasets (P&lt;0.001) but degraded performance for larger datasets (P&lt;0.064) and pediatric cases (P=0.242). However, equipping FL with self-supervised weights significantly enhanced outcomes across pediatric cases (P=0.031) and most adult datasets (P&lt;0.008), except the largest dataset (P=0.052). These findings underscore the potential of easily deployable general-purpose self-supervised image representations to address non-IID challenges in clinical FL applications and highlight their promise for enhancing patient outcomes and advancing pediatric healthcare, where data scarcity and variability remain persistent obstacles.</description>
+   <guid>oai:arXiv.org:2504.08584v2</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mahshad Lotfinia, Arash Tayebiarasteh, Samaneh Samiei, Mehdi Joodaki, Soroosh Tayebi Arasteh</creator>
+  </item>
+  <item>
+   <title>Incentivize Contribution and Learn Parameters Too: Federated Learning with Strategic Data Owners</title>
+   <link>https://arxiv.org/abs/2505.12010</link>
+   <description>Classical federated learning (FL) assumes that the clients have a limited amount of noisy data with which they voluntarily participate and contribute towards learning a global, more accurate model in a principled manner. The learning happens in a distributed fashion without sharing the data with the center. However, these methods do not consider the incentive of an agent for participating and contributing to the process, given that data collection and running a distributed algorithm is costly for the clients. The question of rationality of contribution has been asked recently in the literature and some results exist that consider this problem. This paper addresses the question of simultaneous parameter learning and incentivizing contribution, which distinguishes it from the extant literature. Our first mechanism incentivizes each client to contribute to the FL process at a Nash equilibrium and simultaneously learn the model parameters. However, this equilibrium outcome can be away from the optimal, where clients contribute with their full data and the algorithm learns the optimal parameters. We propose a second mechanism with monetary transfers that is budget balanced and enables the full data contribution along with optimal parameter learning. Large scale experiments with real (federated) datasets (CIFAR-10, FeMNIST, and Twitter) show that these algorithms converge quite fast in practice, yield good welfare guarantees, and better model performance for all agents.</description>
+   <guid>oai:arXiv.org:2505.12010v2</guid>
+   <category>cs.GT</category>
+   <category>cs.LG</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Drashthi Doshi, Aditya Vema Reddy Kesari, Swaprava Nath, Avishek Ghosh, Suhas S Kowshik</creator>
+  </item>
+  <item>
+   <title>Serving Large Language Models on Huawei CloudMatrix384</title>
+   <link>https://arxiv.org/abs/2506.12708</link>
+   <description>The rapid evolution of large language models (LLMs), driven by growing parameter scales, adoption of mixture-of-experts (MoE) architectures, and expanding context lengths, imposes unprecedented demands on AI infrastructure. Traditional AI clusters face limitations in compute intensity, memory bandwidth, inter-chip communication, and latency, compounded by variable workloads and strict service-level objectives. Addressing these issues requires fundamentally redesigned hardware-software integration. This paper introduces Huawei CloudMatrix, a next-generation AI datacenter architecture, realized in the production-grade CloudMatrix384 supernode. It integrates 384 Ascend 910 NPUs and 192 Kunpeng CPUs interconnected via an ultra-high-bandwidth Unified Bus (UB) network, enabling direct all-to-all communication and dynamic pooling of resources. These features optimize performance for communication-intensive operations, such as large-scale MoE expert parallelism and distributed key-value cache access. To fully leverage CloudMatrix384, we propose CloudMatrix-Infer, an advanced LLM serving solution incorporating three core innovations: a peer-to-peer serving architecture that independently scales prefill, decode, and caching; a large-scale expert parallelism strategy supporting EP320 via efficient UB-based token dispatch; and hardware-aware optimizations including specialized operators, microbatch-based pipelining, and INT8 quantization. Evaluation with the DeepSeek-R1 model shows CloudMatrix-Infer achieves state-of-the-art efficiency: prefill throughput of 6,688 tokens/s per NPU and decode throughput of 1,943 tokens/s per NPU (&lt;50 ms TPOT). It effectively balances throughput and latency, sustaining 538 tokens/s per NPU even under stringent 15 ms latency constraints, while INT8 quantization maintains model accuracy across benchmarks.</description>
+   <guid>oai:arXiv.org:2506.12708v3</guid>
+   <category>cs.DC</category>
+   <category>cs.AI</category>
+   <category>cs.AR</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 23 Jun 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Pengfei Zuo, Huimin Lin, Junbo Deng, Nan Zou, Xingkun Yang, Yingyu Diao, Weifeng Gao, Ke Xu, Zhangyu Chen, Shirui Lu, Zhao Qiu, Peiyang Li, Xianyu Chang, Zhengzhong Yu, Fangzheng Miao, Jia Zheng, Ying Li, Yuan Feng, Bei Wang, Zaijian Zong, Mosong Zhou, Wenli Zhou, Houjiang Chen, Xingyu Liao, Yipeng Li, Wenxiao Zhang, Ping Zhu, Yinggang Wang, Chuanjie Xiao, Depeng Liang, Dong Cao, Juncheng Liu, Yongqiang Yang, Xiaolong Bai, Yi Li, Huaguo Xie, Huatao Wu, Zhibin Yu, Lv Chen, Hu Liu, Yujun Ding, Haipei Zhu, Jing Xia, Yi Xiong, Zhou Yu, Heng Liao</creator>
+  </item>
  </channel>
 </rss>
