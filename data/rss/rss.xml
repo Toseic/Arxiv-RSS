@@ -6,255 +6,275 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Fri, 04 Jul 2025 03:14:14 </lastBuildDate>
+  <lastBuildDate>Fri, 04 Jul 2025 04:24:07 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Fri, 04 Jul 2025 03:14:14 </pubDate>
+  <pubDate>Fri, 04 Jul 2025 04:24:07 </pubDate>
   <item>
-   <title>Semantic Equitable Clustering: A Simple and Effective Strategy for Clustering Vision Tokens</title>
-   <link>https://arxiv.org/abs/2405.13337</link>
-   <description>The Vision Transformer (ViT) has gained prominence for its superior relational modeling prowess. However, its global attention mechanism's quadratic complexity poses substantial computational burdens. A common remedy spatially groups tokens for self-attention, reducing computational requirements. Nonetheless, this strategy neglects semantic information in tokens, possibly scattering semantically-linked tokens across distinct groups, thus compromising the efficacy of self-attention intended for modeling inter-token dependencies. Motivated by these insights, we introduce a fast and balanced clustering method, named Semantic Equitable Clustering (SEC). SEC clusters tokens based on their global semantic relevance in an efficient, straightforward manner. In contrast to traditional clustering methods requiring multiple iterations, our method achieves token clustering in a single pass. Additionally, SEC regulates the number of tokens per cluster, ensuring a balanced distribution for effective parallel processing on current computational platforms without necessitating further optimization. Capitalizing on SEC, we propose a versatile vision backbone, SECViT. Comprehensive experiments in image classification, object detection, instance segmentation, and semantic segmentation validate the effectiveness of SECViT. Moreover, SEC can be conveniently and swiftly applied to multimodal large language models (MLLM), such as LLaVA, to serve as a vision language connector, effectively accelerating the model's efficiency while maintaining unchanged or better performance.</description>
-   <guid>oai:arXiv.org:2405.13337v3</guid>
-   <category>cs.CV</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Qihang Fan, Huaibo Huang, Mingrui Chen, Ran He</creator>
-  </item>
-  <item>
-   <title>Efficient Split Federated Learning for Large Language Models over Communication Networks</title>
-   <link>https://arxiv.org/abs/2504.14667</link>
-   <description>Fine-tuning pre-trained large language models (LLMs) in a distributed manner poses significant challenges on resource-constrained edge networks. To address this challenge, we propose SflLLM, a novel framework that integrates split federated learning with parameter-efficient fine-tuning techniques. By leveraging model splitting and low-rank adaptation (LoRA), SflLLM reduces the computational burden on edge devices. Furthermore, the introduction of a federated server facilitates parallel training and enhances data privacy. To accommodate heterogeneous communication conditions and diverse computational capabilities of edge devices, as well as the impact of LoRA rank selection on model convergence and training cost, we formulate a joint optimization problem of both communication and computation resource. The formulated problem jointly optimizes subchannel allocation, power control, model splitting point selection, and LoRA rank configuration, aimed at minimizing total training delay. An iterative optimization algorithm is proposed to solve this problem efficiently. Specifically, a greedy heuristic is employed for subchannel allocation, the power control subproblem is reformulated as a convex optimization problem using auxiliary variables, and an exhaustive search is adopted for optimal split position and rank selection. Simulation results demonstrate that the proposed SflLLM framework achieves comparable model accuracy while significantly reducing client-side computational requirements. Furthermore, the proposed resource allocation scheme and adaptive LoRA rank selection strategy notably reduce the training latency compared to conventional approaches.</description>
-   <guid>oai:arXiv.org:2504.14667v2</guid>
-   <category>cs.LG</category>
-   <category>cs.NI</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Kai Zhao, Zhaohui Yang, Ye Hu, Mingzhe Chen, Chen Zhu, Zhaoyang Zhang</creator>
-  </item>
-  <item>
-   <title>EdgeLoRA: An Efficient Multi-Tenant LLM Serving System on Edge Devices</title>
-   <link>https://arxiv.org/abs/2507.01438</link>
-   <description>Large Language Models (LLMs) have gained significant attention due to their versatility across a wide array of applications. Fine-tuning LLMs with parameter-efficient adapters, such as Low-Rank Adaptation (LoRA), enables these models to efficiently adapt to downstream tasks without extensive retraining. Deploying fine-tuned LLMs on multi-tenant edge devices offers substantial benefits, such as reduced latency, enhanced privacy, and personalized responses. However, serving LLMs efficiently on resource-constrained edge devices presents critical challenges, including the complexity of adapter selection for different tasks and memory overhead from frequent adapter swapping. Moreover, given the multiple requests in multi-tenant settings, processing requests sequentially results in underutilization of computational resources and increased latency. This paper introduces EdgeLoRA, an efficient system for serving LLMs on edge devices in multi-tenant environments. EdgeLoRA incorporates three key innovations: (1) an adaptive adapter selection mechanism to streamline the adapter configuration process; (2) heterogeneous memory management, leveraging intelligent adapter caching and pooling to mitigate memory operation overhead; and (3) batch LoRA inference, enabling efficient batch processing to significantly reduce computational latency. Comprehensive evaluations using the Llama3.1-8B model demonstrate that EdgeLoRA significantly outperforms the status quo (i.e., llama.cpp) in terms of both latency and throughput. The results demonstrate that EdgeLoRA can achieve up to a 4 times boost in throughput. Even more impressively, it can serve several orders of magnitude more adapters simultaneously. These results highlight EdgeLoRA's potential to transform edge deployment of LLMs in multi-tenant scenarios, offering a scalable and efficient solution for resource-constrained environments.</description>
-   <guid>oai:arXiv.org:2507.01438v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Zheyu Shen, Yexiao He, Ziyao Wang, Yuning Zhang, Guoheng Sun, Wanghao Ye, Ang Li</creator>
-  </item>
-  <item>
-   <title>Far From Sight, Far From Mind: Inverse Distance Weighting for Graph Federated Recommendation</title>
-   <link>https://arxiv.org/abs/2507.01285</link>
-   <description>Graph federated recommendation systems offer a privacy-preserving alternative to traditional centralized recommendation architectures, which often raise concerns about data security. While federated learning enables personalized recommendations without exposing raw user data, existing aggregation methods overlook the unique properties of user embeddings in this setting. Indeed, traditional aggregation methods fail to account for their complexity and the critical role of user similarity in recommendation effectiveness. Moreover, evolving user interactions require adaptive aggregation while preserving the influence of high-relevance anchor users (the primary users before expansion in graph-based frameworks). To address these limitations, we introduce Dist-FedAvg, a novel distance-based aggregation method designed to enhance personalization and aggregation efficiency in graph federated learning. Our method assigns higher aggregation weights to users with similar embeddings, while ensuring that anchor users retain significant influence in local updates. Empirical evaluations on multiple datasets demonstrate that Dist-FedAvg consistently outperforms baseline aggregation techniques, improving recommendation accuracy while maintaining seamless integration into existing federated learning frameworks.</description>
-   <guid>oai:arXiv.org:2507.01285v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <category>cs.IR</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Aymen Rayane Khouas, Mohamed Reda Bouadjenek, Hakim Hacid, Sunil Aryal</creator>
-  </item>
-  <item>
-   <title>Research on Low-Latency Inference and Training Efficiency Optimization for Graph Neural Network and Large Language Model-Based Recommendation Systems</title>
-   <link>https://arxiv.org/abs/2507.01035</link>
-   <description>The incessant advent of online services demands high speed and efficient recommender systems (ReS) that can maintain real-time performance along with processing very complex user-item interactions. The present study, therefore, considers computational bottlenecks involved in hybrid Graph Neural Network (GNN) and Large Language Model (LLM)-based ReS with the aim optimizing their inference latency and training efficiency. An extensive methodology was used: hybrid GNN-LLM integrated architecture-optimization strategies(quantization, LoRA, distillation)-hardware acceleration (FPGA, DeepSpeed)-all under R 4.4.2. Experimental improvements were significant, with the optimal Hybrid + FPGA + DeepSpeed configuration reaching 13.6% more accuracy (NDCG@10: 0.75) at 40-60ms of latency, while LoRA brought down training time by 66% (3.8 hours) in comparison to the non-optimized baseline. Irrespective of domain, such as accuracy or efficiency, it can be established that hardware-software co-design and parameter-efficient tuning permit hybrid models to outperform GNN or LLM approaches implemented independently. It recommends the use of FPGA as well as LoRA for real-time deployment. Future work should involve federated learning along with advanced fusion architectures for better scalability and privacy preservation. Thus, this research marks the fundamental groundwork concerning next-generation ReS balancing low-latency response with cutting-edge personalization.</description>
-   <guid>oai:arXiv.org:2507.01035v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.PF</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yushang Zhao, Haotian Lyu, Yike Peng, Aijia Sun, Feng Jiang, Xinyue Han</creator>
-  </item>
-  <item>
-   <title>Far From Sight, Far From Mind: Inverse Distance Weighting for Graph Federated Recommendation</title>
-   <link>https://arxiv.org/abs/2507.01285</link>
-   <description>Graph federated recommendation systems offer a privacy-preserving alternative to traditional centralized recommendation architectures, which often raise concerns about data security. While federated learning enables personalized recommendations without exposing raw user data, existing aggregation methods overlook the unique properties of user embeddings in this setting. Indeed, traditional aggregation methods fail to account for their complexity and the critical role of user similarity in recommendation effectiveness. Moreover, evolving user interactions require adaptive aggregation while preserving the influence of high-relevance anchor users (the primary users before expansion in graph-based frameworks). To address these limitations, we introduce Dist-FedAvg, a novel distance-based aggregation method designed to enhance personalization and aggregation efficiency in graph federated learning. Our method assigns higher aggregation weights to users with similar embeddings, while ensuring that anchor users retain significant influence in local updates. Empirical evaluations on multiple datasets demonstrate that Dist-FedAvg consistently outperforms baseline aggregation techniques, improving recommendation accuracy while maintaining seamless integration into existing federated learning frameworks.</description>
-   <guid>oai:arXiv.org:2507.01285v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <category>cs.IR</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Aymen Rayane Khouas, Mohamed Reda Bouadjenek, Hakim Hacid, Sunil Aryal</creator>
-  </item>
-  <item>
-   <title>Towards Efficient Educational Chatbots: Benchmarking RAG Frameworks</title>
-   <link>https://arxiv.org/abs/2503.00781</link>
-   <description>Large Language Models (LLMs) have proven immensely beneficial in education by capturing vast amounts of literature-based information, allowing them to generate context without relying on external sources. In this paper, we propose a generative AI-powered GATE question-answering framework (GATE stands for Graduate Aptitude Test in Engineering) that leverages LLMs to explain GATE solutions and support students in their exam preparation. We conducted extensive benchmarking to select the optimal embedding model and LLM, evaluating our framework based on criteria such as latency, faithfulness, and relevance, with additional validation through human evaluation. Our chatbot integrates state-of-the-art embedding models and LLMs to deliver accurate, context-aware responses. Through rigorous experimentation, we identified configurations that balance performance and computational efficiency, ensuring a reliable chatbot to serve students' needs. Additionally, we discuss the challenges faced in data processing and modeling and implemented solutions. Our work explores the application of Retrieval-Augmented Generation (RAG) for GATE Q/A explanation tasks, and our findings demonstrate significant improvements in retrieval accuracy and response quality. This research offers practical insights for developing effective AI-driven educational tools while highlighting areas for future enhancement in usability and scalability.</description>
-   <guid>oai:arXiv.org:2503.00781v2</guid>
-   <category>cs.IR</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Umar Ali Khan, Ekram Khan, Fiza Khan, Athar Ali Moinuddin</creator>
-  </item>
-  <item>
-   <title>Research on Low-Latency Inference and Training Efficiency Optimization for Graph Neural Network and Large Language Model-Based Recommendation Systems</title>
-   <link>https://arxiv.org/abs/2507.01035</link>
-   <description>The incessant advent of online services demands high speed and efficient recommender systems (ReS) that can maintain real-time performance along with processing very complex user-item interactions. The present study, therefore, considers computational bottlenecks involved in hybrid Graph Neural Network (GNN) and Large Language Model (LLM)-based ReS with the aim optimizing their inference latency and training efficiency. An extensive methodology was used: hybrid GNN-LLM integrated architecture-optimization strategies(quantization, LoRA, distillation)-hardware acceleration (FPGA, DeepSpeed)-all under R 4.4.2. Experimental improvements were significant, with the optimal Hybrid + FPGA + DeepSpeed configuration reaching 13.6% more accuracy (NDCG@10: 0.75) at 40-60ms of latency, while LoRA brought down training time by 66% (3.8 hours) in comparison to the non-optimized baseline. Irrespective of domain, such as accuracy or efficiency, it can be established that hardware-software co-design and parameter-efficient tuning permit hybrid models to outperform GNN or LLM approaches implemented independently. It recommends the use of FPGA as well as LoRA for real-time deployment. Future work should involve federated learning along with advanced fusion architectures for better scalability and privacy preservation. Thus, this research marks the fundamental groundwork concerning next-generation ReS balancing low-latency response with cutting-edge personalization.</description>
-   <guid>oai:arXiv.org:2507.01035v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.PF</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yushang Zhao, Haotian Lyu, Yike Peng, Aijia Sun, Feng Jiang, Xinyue Han</creator>
-  </item>
-  <item>
-   <title>EdgeLoRA: An Efficient Multi-Tenant LLM Serving System on Edge Devices</title>
-   <link>https://arxiv.org/abs/2507.01438</link>
-   <description>Large Language Models (LLMs) have gained significant attention due to their versatility across a wide array of applications. Fine-tuning LLMs with parameter-efficient adapters, such as Low-Rank Adaptation (LoRA), enables these models to efficiently adapt to downstream tasks without extensive retraining. Deploying fine-tuned LLMs on multi-tenant edge devices offers substantial benefits, such as reduced latency, enhanced privacy, and personalized responses. However, serving LLMs efficiently on resource-constrained edge devices presents critical challenges, including the complexity of adapter selection for different tasks and memory overhead from frequent adapter swapping. Moreover, given the multiple requests in multi-tenant settings, processing requests sequentially results in underutilization of computational resources and increased latency. This paper introduces EdgeLoRA, an efficient system for serving LLMs on edge devices in multi-tenant environments. EdgeLoRA incorporates three key innovations: (1) an adaptive adapter selection mechanism to streamline the adapter configuration process; (2) heterogeneous memory management, leveraging intelligent adapter caching and pooling to mitigate memory operation overhead; and (3) batch LoRA inference, enabling efficient batch processing to significantly reduce computational latency. Comprehensive evaluations using the Llama3.1-8B model demonstrate that EdgeLoRA significantly outperforms the status quo (i.e., llama.cpp) in terms of both latency and throughput. The results demonstrate that EdgeLoRA can achieve up to a 4 times boost in throughput. Even more impressively, it can serve several orders of magnitude more adapters simultaneously. These results highlight EdgeLoRA's potential to transform edge deployment of LLMs in multi-tenant scenarios, offering a scalable and efficient solution for resource-constrained environments.</description>
-   <guid>oai:arXiv.org:2507.01438v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Zheyu Shen, Yexiao He, Ziyao Wang, Yuning Zhang, Guoheng Sun, Wanghao Ye, Ang Li</creator>
-  </item>
-  <item>
-   <title>Towards Efficient Educational Chatbots: Benchmarking RAG Frameworks</title>
-   <link>https://arxiv.org/abs/2503.00781</link>
-   <description>Large Language Models (LLMs) have proven immensely beneficial in education by capturing vast amounts of literature-based information, allowing them to generate context without relying on external sources. In this paper, we propose a generative AI-powered GATE question-answering framework (GATE stands for Graduate Aptitude Test in Engineering) that leverages LLMs to explain GATE solutions and support students in their exam preparation. We conducted extensive benchmarking to select the optimal embedding model and LLM, evaluating our framework based on criteria such as latency, faithfulness, and relevance, with additional validation through human evaluation. Our chatbot integrates state-of-the-art embedding models and LLMs to deliver accurate, context-aware responses. Through rigorous experimentation, we identified configurations that balance performance and computational efficiency, ensuring a reliable chatbot to serve students' needs. Additionally, we discuss the challenges faced in data processing and modeling and implemented solutions. Our work explores the application of Retrieval-Augmented Generation (RAG) for GATE Q/A explanation tasks, and our findings demonstrate significant improvements in retrieval accuracy and response quality. This research offers practical insights for developing effective AI-driven educational tools while highlighting areas for future enhancement in usability and scalability.</description>
-   <guid>oai:arXiv.org:2503.00781v2</guid>
-   <category>cs.IR</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Umar Ali Khan, Ekram Khan, Fiza Khan, Athar Ali Moinuddin</creator>
-  </item>
-  <item>
-   <title>Enhancing Robustness to Missing Modalities through Clustered Federated Learning</title>
-   <link>https://arxiv.org/abs/2505.06911</link>
-   <description>In the era of big data, data mining has become indispensable for uncovering hidden patterns and insights from vast and complex datasets. The integration of multimodal data sources further enhances its potential. Multimodal Federated Learning (MFL) is a distributed approach that enhances the efficiency and quality of multimodal learning, ensuring collaborative work and privacy protection. However, missing modalities pose a significant challenge in MFL, often due to data quality issues or privacy policies across the clients. In this work, we present MMiC, a framework for Mitigating Modality incompleteness in MFL within the Clusters. MMiC replaces partial parameters within client models inside clusters to mitigate the impact of missing modalities. Furthermore, it leverages the Banzhaf Power Index to optimize client selection under these conditions. Finally, MMiC employs an innovative approach to dynamically control global aggregation by utilizing Markovitz Portfolio Optimization. Extensive experiments demonstrate that MMiC consistently outperforms existing federated learning architectures in both global and personalized performance on multimodal datasets with missing modalities, confirming the effectiveness of our proposed solution.</description>
-   <guid>oai:arXiv.org:2505.06911v2</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Lishan Yang, Wei Emma Zhang, Quan Z. Sheng, Weitong Chen, Lina Yao, Weitong Chen, Ali Shakeri</creator>
-  </item>
-  <item>
-   <title>Automated Synthesis of Formally Verified Multi-Abstraction Function Summaries</title>
-   <link>https://arxiv.org/abs/2506.09550</link>
-   <description>Function summaries, which characterize the behavior of code segments (typically functions) through preconditions and postconditions, are essential for understanding, reusing, and verifying software, particularly in safety-critical domains like aerospace embedded systems. However, these mission-critical legacy code serving as a valuable reused asset often lacks formal specifications. It is challenging to automatically generate function summaries for C programs, due to the existence of complex features such as loops, nested function calls, pointer aliasing, and so on. Moreover, function summaries should support multiple abstraction levels to meet diverse requirements, e.g. precise summaries capturing full functionality for formal verification and intuitive summaries for human understanding.
-  To address these challenges, we first propose a novel framework that combines symbolic execution, large language models (LLMs), and formal verification to generate Relatively Strongest Postconditions (RSPs) and build function summaries that fully capture program behavior. Our approach leverages VST-A's symbolic execution to precisely track program execution paths and state transitions, employs LLMs to infer loop invariants based on predefined templates, and uses Frama-C to guarantee soundness of generated summaries in an iterative refinement loop. Furthermore, from generated RSPs, we automatically synthesize strongest non-redundant postconditions expressed within given domain specific language. We compare our approach with existing work through extensive experiments.</description>
-   <guid>oai:arXiv.org:2506.09550v2</guid>
-   <category>cs.SE</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Fanpeng Yang, Xu Ma, Shuling Wang, Xiong Xu, Qinxiang Cao, Naijun Zhan, Xiaofeng Li, Bin Gu</creator>
-  </item>
-  <item>
-   <title>Research on Low-Latency Inference and Training Efficiency Optimization for Graph Neural Network and Large Language Model-Based Recommendation Systems</title>
-   <link>https://arxiv.org/abs/2507.01035</link>
-   <description>The incessant advent of online services demands high speed and efficient recommender systems (ReS) that can maintain real-time performance along with processing very complex user-item interactions. The present study, therefore, considers computational bottlenecks involved in hybrid Graph Neural Network (GNN) and Large Language Model (LLM)-based ReS with the aim optimizing their inference latency and training efficiency. An extensive methodology was used: hybrid GNN-LLM integrated architecture-optimization strategies(quantization, LoRA, distillation)-hardware acceleration (FPGA, DeepSpeed)-all under R 4.4.2. Experimental improvements were significant, with the optimal Hybrid + FPGA + DeepSpeed configuration reaching 13.6% more accuracy (NDCG@10: 0.75) at 40-60ms of latency, while LoRA brought down training time by 66% (3.8 hours) in comparison to the non-optimized baseline. Irrespective of domain, such as accuracy or efficiency, it can be established that hardware-software co-design and parameter-efficient tuning permit hybrid models to outperform GNN or LLM approaches implemented independently. It recommends the use of FPGA as well as LoRA for real-time deployment. Future work should involve federated learning along with advanced fusion architectures for better scalability and privacy preservation. Thus, this research marks the fundamental groundwork concerning next-generation ReS balancing low-latency response with cutting-edge personalization.</description>
-   <guid>oai:arXiv.org:2507.01035v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.PF</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yushang Zhao, Haotian Lyu, Yike Peng, Aijia Sun, Feng Jiang, Xinyue Han</creator>
-  </item>
-  <item>
-   <title>Prediction of Freezing of Gait in Parkinsons Disease using Explainable AI and Federated Deep Learning for Wearable Sensors</title>
-   <link>https://arxiv.org/abs/2507.01068</link>
-   <description>This study leverages an Inertial Measurement Unit (IMU) dataset to develop explainable AI methods for the early detection and prediction of Freezing of Gait (FOG), a common symptom in Parkinson's disease. Machine learning models, including CatBoost, XGBoost, and Extra Trees classifiers, are employed to accurately categorize FOG episodes based on relevant clinical features. A Stacking Ensemble model achieves superior performance, surpassing a hybrid bidirectional GRU model and reaching nearly 99% classification accuracy. SHAP interpretability analysis reveals that time (seconds) is the most influential factor in distinguishing gait patterns. Additionally, the proposed FOG prediction framework incorporates federated learning, where models are trained locally on individual devices and aggregated on a central server using a federated averaging approach, utilizing a hybrid Conv1D + LSTM architecture for enhanced predictive capability.</description>
-   <guid>oai:arXiv.org:2507.01068v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Biplov Paneru</creator>
-  </item>
-  <item>
-   <title>Far From Sight, Far From Mind: Inverse Distance Weighting for Graph Federated Recommendation</title>
-   <link>https://arxiv.org/abs/2507.01285</link>
-   <description>Graph federated recommendation systems offer a privacy-preserving alternative to traditional centralized recommendation architectures, which often raise concerns about data security. While federated learning enables personalized recommendations without exposing raw user data, existing aggregation methods overlook the unique properties of user embeddings in this setting. Indeed, traditional aggregation methods fail to account for their complexity and the critical role of user similarity in recommendation effectiveness. Moreover, evolving user interactions require adaptive aggregation while preserving the influence of high-relevance anchor users (the primary users before expansion in graph-based frameworks). To address these limitations, we introduce Dist-FedAvg, a novel distance-based aggregation method designed to enhance personalization and aggregation efficiency in graph federated learning. Our method assigns higher aggregation weights to users with similar embeddings, while ensuring that anchor users retain significant influence in local updates. Empirical evaluations on multiple datasets demonstrate that Dist-FedAvg consistently outperforms baseline aggregation techniques, improving recommendation accuracy while maintaining seamless integration into existing federated learning frameworks.</description>
-   <guid>oai:arXiv.org:2507.01285v1</guid>
-   <category>cs.LG</category>
-   <category>cs.DC</category>
-   <category>cs.IR</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Aymen Rayane Khouas, Mohamed Reda Bouadjenek, Hakim Hacid, Sunil Aryal</creator>
-  </item>
-  <item>
-   <title>A Privacy-Preserving Indoor Localization System based on Hierarchical Federated Learning</title>
-   <link>https://arxiv.org/abs/2507.01581</link>
-   <description>Location information serves as the fundamental element for numerous Internet of Things (IoT) applications. Traditional indoor localization techniques often produce significant errors and raise privacy concerns due to centralized data collection. In response, Machine Learning (ML) techniques offer promising solutions by capturing indoor environment variations. However, they typically require central data aggregation, leading to privacy, bandwidth, and server reliability issues. To overcome these challenges, in this paper, we propose a Federated Learning (FL)-based approach for dynamic indoor localization using a Deep Neural Network (DNN) model. Experimental results show that FL has the nearby performance to Centralized Model (CL) while keeping the data privacy, bandwidth efficiency and server reliability. This research demonstrates that our proposed FL approach provides a viable solution for privacy-enhanced indoor localization, paving the way for advancements in secure and efficient indoor localization systems.</description>
-   <guid>oai:arXiv.org:2507.01581v1</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
+   <title>Learning From Crowdsourced Noisy Labels: A Signal Processing Perspective</title>
+   <link>https://arxiv.org/abs/2407.06902</link>
+   <description>One of the primary catalysts fueling advances in artificial intelligence (AI) and machine learning (ML) is the availability of massive, curated datasets. A commonly used technique to curate such massive datasets is crowdsourcing, where data are dispatched to multiple annotators. The annotator-produced labels are then fused to serve downstream learning and inference tasks. This annotation process often creates noisy labels due to various reasons, such as the limited expertise, or unreliability of annotators, among others. Therefore, a core objective in crowdsourcing is to develop methods that effectively mitigate the negative impact of such label noise on learning tasks. This feature article introduces advances in learning from noisy crowdsourced labels. The focus is on key crowdsourcing models and their methodological treatments, from classical statistical models to recent deep learning-based approaches, emphasizing analytical insights and algorithmic developments. In particular, this article reviews the connections between signal processing (SP) theory and methods, such as identifiability of tensor and nonnegative matrix factorization, and novel, principled solutions of longstanding challenges in crowdsourcing -- showing how SP perspectives drive the advancements of this field. Furthermore, this article touches upon emerging topics that are critical for developing cutting-edge AI/ML systems, such as crowdsourcing in reinforcement learning with human feedback (RLHF) and direct preference optimization (DPO) that are key techniques for fine-tuning large language models (LLMs).</description>
+   <guid>oai:arXiv.org:2407.06902v2</guid>
    <category>eess.SP</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Masood Jan, Wafa Njima, Xun Zhang</creator>
+   <creator>Shahana Ibrahim, Panagiotis A. Traganitis, Xiao Fu, Georgios B. Giannakis</creator>
   </item>
   <item>
-   <title>EdgeLoRA: An Efficient Multi-Tenant LLM Serving System on Edge Devices</title>
-   <link>https://arxiv.org/abs/2507.01438</link>
-   <description>Large Language Models (LLMs) have gained significant attention due to their versatility across a wide array of applications. Fine-tuning LLMs with parameter-efficient adapters, such as Low-Rank Adaptation (LoRA), enables these models to efficiently adapt to downstream tasks without extensive retraining. Deploying fine-tuned LLMs on multi-tenant edge devices offers substantial benefits, such as reduced latency, enhanced privacy, and personalized responses. However, serving LLMs efficiently on resource-constrained edge devices presents critical challenges, including the complexity of adapter selection for different tasks and memory overhead from frequent adapter swapping. Moreover, given the multiple requests in multi-tenant settings, processing requests sequentially results in underutilization of computational resources and increased latency. This paper introduces EdgeLoRA, an efficient system for serving LLMs on edge devices in multi-tenant environments. EdgeLoRA incorporates three key innovations: (1) an adaptive adapter selection mechanism to streamline the adapter configuration process; (2) heterogeneous memory management, leveraging intelligent adapter caching and pooling to mitigate memory operation overhead; and (3) batch LoRA inference, enabling efficient batch processing to significantly reduce computational latency. Comprehensive evaluations using the Llama3.1-8B model demonstrate that EdgeLoRA significantly outperforms the status quo (i.e., llama.cpp) in terms of both latency and throughput. The results demonstrate that EdgeLoRA can achieve up to a 4 times boost in throughput. Even more impressively, it can serve several orders of magnitude more adapters simultaneously. These results highlight EdgeLoRA's potential to transform edge deployment of LLMs in multi-tenant scenarios, offering a scalable and efficient solution for resource-constrained environments.</description>
-   <guid>oai:arXiv.org:2507.01438v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
+   <title>Embedding-Based Federated Data Sharing via Differentially Private Conditional VAEs</title>
+   <link>https://arxiv.org/abs/2507.02671</link>
+   <description>Deep Learning (DL) has revolutionized medical imaging, yet its adoption is constrained by data scarcity and privacy regulations, limiting access to diverse datasets. Federated Learning (FL) enables decentralized training but suffers from high communication costs and is often restricted to a single downstream task, reducing flexibility. We propose a data-sharing method via Differentially Private (DP) generative models. By adopting foundation models, we extract compact, informative embeddings, reducing redundancy and lowering computational overhead. Clients collaboratively train a Differentially Private Conditional Variational Autoencoder (DP-CVAE) to model a global, privacy-aware data distribution, supporting diverse downstream tasks. Our approach, validated across multiple feature extractors, enhances privacy, scalability, and efficiency, outperforming traditional FL classifiers while ensuring differential privacy. Additionally, DP-CVAE produces higher-fidelity embeddings than DP-CGAN while requiring $5{\times}$ fewer parameters.</description>
+   <guid>oai:arXiv.org:2507.02671v1</guid>
    <category>cs.LG</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
+   <category>cs.CV</category>
+   <category>eess.IV</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Zheyu Shen, Yexiao He, Ziyao Wang, Yuning Zhang, Guoheng Sun, Wanghao Ye, Ang Li</creator>
+   <creator>Francesco Di Salvo, Hanh Huyen My Nguyen, Christian Ledig</creator>
   </item>
   <item>
-   <title>Efficient Split Federated Learning for Large Language Models over Communication Networks</title>
-   <link>https://arxiv.org/abs/2504.14667</link>
-   <description>Fine-tuning pre-trained large language models (LLMs) in a distributed manner poses significant challenges on resource-constrained edge networks. To address this challenge, we propose SflLLM, a novel framework that integrates split federated learning with parameter-efficient fine-tuning techniques. By leveraging model splitting and low-rank adaptation (LoRA), SflLLM reduces the computational burden on edge devices. Furthermore, the introduction of a federated server facilitates parallel training and enhances data privacy. To accommodate heterogeneous communication conditions and diverse computational capabilities of edge devices, as well as the impact of LoRA rank selection on model convergence and training cost, we formulate a joint optimization problem of both communication and computation resource. The formulated problem jointly optimizes subchannel allocation, power control, model splitting point selection, and LoRA rank configuration, aimed at minimizing total training delay. An iterative optimization algorithm is proposed to solve this problem efficiently. Specifically, a greedy heuristic is employed for subchannel allocation, the power control subproblem is reformulated as a convex optimization problem using auxiliary variables, and an exhaustive search is adopted for optimal split position and rank selection. Simulation results demonstrate that the proposed SflLLM framework achieves comparable model accuracy while significantly reducing client-side computational requirements. Furthermore, the proposed resource allocation scheme and adaptive LoRA rank selection strategy notably reduce the training latency compared to conventional approaches.</description>
-   <guid>oai:arXiv.org:2504.14667v2</guid>
-   <category>cs.LG</category>
+   <title>CAD-Editor: A Locate-then-Infill Framework with Automated Training Data Synthesis for Text-Based CAD Editing</title>
+   <link>https://arxiv.org/abs/2502.03997</link>
+   <description>Computer Aided Design (CAD) is indispensable across various industries. \emph{Text-based CAD editing}, which automates the modification of CAD models based on textual instructions, holds great potential but remains underexplored. Existing methods primarily focus on design variation generation or text-based CAD generation, either lacking support for text-based control or neglecting existing CAD models as constraints. We introduce \emph{CAD-Editor}, the first framework for text-based CAD editing. To address the challenge of demanding triplet data with accurate correspondence for training, we propose an automated data synthesis pipeline. This pipeline utilizes design variation models to generate pairs of original and edited CAD models and employs Large Vision-Language Models (LVLMs) to summarize their differences into editing instructions. To tackle the composite nature of text-based CAD editing, we propose a locate-then-infill framework that decomposes the task into two focused sub-tasks: locating regions requiring modification and infilling these regions with appropriate edits. Large Language Models (LLMs) serve as the backbone for both sub-tasks, leveraging their capabilities in natural language understanding and CAD knowledge. Experiments show that CAD-Editor achieves superior performance both quantitatively and qualitatively. The code is available at \url {https://github.com/microsoft/CAD-Editor}.</description>
+   <guid>oai:arXiv.org:2502.03997v2</guid>
+   <category>cs.CV</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Yu Yuan, Shizhao Sun, Qi Liu, Jiang Bian</creator>
+  </item>
+  <item>
+   <title>REDUS: Adaptive Resampling for Efficient Deep Learning in Centralized and Federated IoT Networks</title>
+   <link>https://arxiv.org/abs/2507.02021</link>
+   <description>With the rise of Software-Defined Networking (SDN) for managing traffic and ensuring seamless operations across interconnected devices, challenges arise when SDN controllers share infrastructure with deep learning (DL) workloads. Resource contention between DL training and SDN operations, especially in latency-sensitive IoT environments, can degrade SDN's responsiveness and compromise network performance. Federated Learning (FL) helps address some of these concerns by decentralizing DL training to edge devices, thus reducing data transmission costs and enhancing privacy. Yet, the computational demands of DL training can still interfere with SDN's performance, especially under the continuous data streams characteristic of IoT systems. To mitigate this issue, we propose REDUS (Resampling for Efficient Data Utilization in Smart-Networks), a resampling technique that optimizes DL training by prioritizing misclassified samples and excluding redundant data, inspired by AdaBoost. REDUS reduces the number of training samples per epoch, thereby conserving computational resources, reducing energy consumption, and accelerating convergence without significantly impacting accuracy. Applied within an FL setup, REDUS enhances the efficiency of model training on resource-limited edge devices while maintaining network performance. In this paper, REDUS is evaluated on the CICIoT2023 dataset for IoT attack detection, showing a training time reduction of up to 72.6% with a minimal accuracy loss of only 1.62%, offering a scalable and practical solution for intelligent networks.</description>
+   <guid>oai:arXiv.org:2507.02021v1</guid>
    <category>cs.NI</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Eyad Gad, Gad Gad, Mostafa M. Fouda, Mohamed I. Ibrahem, Muhammad Ismail, Zubair Md Fadlullah</creator>
+  </item>
+  <item>
+   <title>Flotilla: A scalable, modular and resilient federated learning framework for heterogeneous resources</title>
+   <link>https://arxiv.org/abs/2507.02295</link>
+   <description>With the recent improvements in mobile and edge computing and rising concerns of data privacy, Federated Learning(FL) has rapidly gained popularity as a privacy-preserving, distributed machine learning methodology. Several FL frameworks have been built for testing novel FL strategies. However, most focus on validating the learning aspects of FL through pseudo-distributed simulation but not for deploying on real edge hardware in a distributed manner to meaningfully evaluate the federated aspects from a systems perspective. Current frameworks are also inherently not designed to support asynchronous aggregation, which is gaining popularity, and have limited resilience to client and server failures. We introduce Flotilla, a scalable and lightweight FL framework. It adopts a ``user-first'' modular design to help rapidly compose various synchronous and asynchronous FL strategies while being agnostic to the DNN architecture. It uses stateless clients and a server design that separates out the session state, which are periodically or incrementally checkpointed. We demonstrate the modularity of Flotilla by evaluating five different FL strategies for training five DNN models. We also evaluate the client and server-side fault tolerance on 200+ clients, and showcase its ability to rapidly failover within seconds. Finally, we show that Flotilla's resource usage on Raspberry Pis and Nvidia Jetson edge accelerators are comparable to or better than three state-of-the-art FL frameworks, Flower, OpenFL and FedML. It also scales significantly better compared to Flower for 1000+ clients. This positions Flotilla as a competitive candidate to build novel FL strategies on, compare them uniformly, rapidly deploy them, and perform systems research and optimizations.</description>
+   <guid>oai:arXiv.org:2507.02295v1</guid>
+   <category>cs.DC</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Roopkatha Banerjee, Prince Modi, Jinal Vyas, Chunduru Sri Abhijit, Tejus Chandrashekar, Harsha Varun Marisetty, Manik Gupta, Yogesh Simmhan</creator>
+  </item>
+  <item>
+   <title>VeFIA: An Efficient Inference Auditing Framework for Vertical Federated Collaborative Software</title>
+   <link>https://arxiv.org/abs/2507.02376</link>
+   <description>Vertical Federated Learning (VFL) is a distributed AI software deployment mechanism for cross-silo collaboration without accessing participants' data. However, existing VFL work lacks a mechanism to audit the execution correctness of the inference software of the data party. To address this problem, we design a Vertical Federated Inference Auditing (VeFIA) framework. VeFIA helps the task party to audit whether the data party's inference software is executed as expected during large-scale inference without leaking the data privacy of the data party or introducing additional latency to the inference system. The core of VeFIA is that the task party can use the inference results from a framework with Trusted Execution Environments (TEE) and the coordinator to validate the correctness of the data party's computation results. VeFIA guarantees that, as long as the abnormal inference exceeds 5.4%, the task party can detect execution anomalies in the inference software with a probability of 99.99%, without incurring any additional online inference latency. VeFIA's random sampling validation achieves 100% positive predictive value, negative predictive value, and true positive rate in detecting abnormal inference. To the best of our knowledge, this is the first paper to discuss the correctness of inference software execution in VFL.</description>
+   <guid>oai:arXiv.org:2507.02376v1</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Chung-ju Huang, Ziqi Zhang, Yinggui Wang, Binghui Wang, Tao Wei, Leye Wang</creator>
+  </item>
+  <item>
+   <title>Fundamental Limits of Hierarchical Secure Aggregation with Cyclic User Association</title>
+   <link>https://arxiv.org/abs/2503.04564</link>
+   <description>Secure aggregation is motivated by federated learning (FL) where a cloud server aims to compute an averaged model (i.e., weights of deep neural networks) of the locally-trained models of numerous clients, while adhering to data security requirements. Hierarchical secure aggregation (HSA) extends this concept to a three-layer hierarchical network, where clustered users communicate with the server through an intermediate layer of relays. In HSA, beyond conventional server security, relay security is also enforced to ensure that the relays remain oblivious to the users' inputs (an abstraction of the local models in FL). Existing study on HSA assumes that each user is associated with only one relay, limiting opportunities for coding across inter-cluster users to achieve efficient communication and key generation. In this paper, we consider HSA with a cyclic association pattern where each user is connected to $B$ consecutive relays in a wrap-around manner. We propose an efficient aggregation scheme which includes a message design for the inputs inspired by gradient coding-a well-known technique for efficient communication in distributed computing-along with a highly non-trivial security key design. We also derive novel converse bounds on the minimum achievable communication and key rates using information-theoretic arguments.</description>
+   <guid>oai:arXiv.org:2503.04564v4</guid>
+   <category>cs.IT</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>math.IT</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xiang Zhang, Zhou Li, Kai Wan, Hua Sun, Mingyue Ji, Giuseppe Caire</creator>
+  </item>
+  <item>
+   <title>Fundamental Limits of Hierarchical Secure Aggregation with Cyclic User Association</title>
+   <link>https://arxiv.org/abs/2503.04564</link>
+   <description>Secure aggregation is motivated by federated learning (FL) where a cloud server aims to compute an averaged model (i.e., weights of deep neural networks) of the locally-trained models of numerous clients, while adhering to data security requirements. Hierarchical secure aggregation (HSA) extends this concept to a three-layer hierarchical network, where clustered users communicate with the server through an intermediate layer of relays. In HSA, beyond conventional server security, relay security is also enforced to ensure that the relays remain oblivious to the users' inputs (an abstraction of the local models in FL). Existing study on HSA assumes that each user is associated with only one relay, limiting opportunities for coding across inter-cluster users to achieve efficient communication and key generation. In this paper, we consider HSA with a cyclic association pattern where each user is connected to $B$ consecutive relays in a wrap-around manner. We propose an efficient aggregation scheme which includes a message design for the inputs inspired by gradient coding-a well-known technique for efficient communication in distributed computing-along with a highly non-trivial security key design. We also derive novel converse bounds on the minimum achievable communication and key rates using information-theoretic arguments.</description>
+   <guid>oai:arXiv.org:2503.04564v4</guid>
+   <category>cs.IT</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>math.IT</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Kai Zhao, Zhaohui Yang, Ye Hu, Mingzhe Chen, Chen Zhu, Zhaoyang Zhang</creator>
+   <creator>Xiang Zhang, Zhou Li, Kai Wan, Hua Sun, Mingyue Ji, Giuseppe Caire</creator>
   </item>
   <item>
-   <title>Enhancing Robustness to Missing Modalities through Clustered Federated Learning</title>
-   <link>https://arxiv.org/abs/2505.06911</link>
-   <description>In the era of big data, data mining has become indispensable for uncovering hidden patterns and insights from vast and complex datasets. The integration of multimodal data sources further enhances its potential. Multimodal Federated Learning (MFL) is a distributed approach that enhances the efficiency and quality of multimodal learning, ensuring collaborative work and privacy protection. However, missing modalities pose a significant challenge in MFL, often due to data quality issues or privacy policies across the clients. In this work, we present MMiC, a framework for Mitigating Modality incompleteness in MFL within the Clusters. MMiC replaces partial parameters within client models inside clusters to mitigate the impact of missing modalities. Furthermore, it leverages the Banzhaf Power Index to optimize client selection under these conditions. Finally, MMiC employs an innovative approach to dynamically control global aggregation by utilizing Markovitz Portfolio Optimization. Extensive experiments demonstrate that MMiC consistently outperforms existing federated learning architectures in both global and personalized performance on multimodal datasets with missing modalities, confirming the effectiveness of our proposed solution.</description>
-   <guid>oai:arXiv.org:2505.06911v2</guid>
+   <title>VeFIA: An Efficient Inference Auditing Framework for Vertical Federated Collaborative Software</title>
+   <link>https://arxiv.org/abs/2507.02376</link>
+   <description>Vertical Federated Learning (VFL) is a distributed AI software deployment mechanism for cross-silo collaboration without accessing participants' data. However, existing VFL work lacks a mechanism to audit the execution correctness of the inference software of the data party. To address this problem, we design a Vertical Federated Inference Auditing (VeFIA) framework. VeFIA helps the task party to audit whether the data party's inference software is executed as expected during large-scale inference without leaking the data privacy of the data party or introducing additional latency to the inference system. The core of VeFIA is that the task party can use the inference results from a framework with Trusted Execution Environments (TEE) and the coordinator to validate the correctness of the data party's computation results. VeFIA guarantees that, as long as the abnormal inference exceeds 5.4%, the task party can detect execution anomalies in the inference software with a probability of 99.99%, without incurring any additional online inference latency. VeFIA's random sampling validation achieves 100% positive predictive value, negative predictive value, and true positive rate in detecting abnormal inference. To the best of our knowledge, this is the first paper to discuss the correctness of inference software execution in VFL.</description>
+   <guid>oai:arXiv.org:2507.02376v1</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Chung-ju Huang, Ziqi Zhang, Yinggui Wang, Binghui Wang, Tao Wei, Leye Wang</creator>
+  </item>
+  <item>
+   <title>S2FGL: Spatial Spectral Federated Graph Learning</title>
+   <link>https://arxiv.org/abs/2507.02409</link>
+   <description>Federated Graph Learning (FGL) combines the privacy-preserving capabilities of federated learning (FL) with the strong graph modeling capability of Graph Neural Networks (GNNs). Current research addresses subgraph-FL only from the structural perspective, neglecting the propagation of graph signals on spatial and spectral domains of the structure. From a spatial perspective, subgraph-FL introduces edge disconnections between clients, leading to disruptions in label signals and a degradation in the class knowledge of the global GNN. From a spectral perspective, spectral heterogeneity causes inconsistencies in signal frequencies across subgraphs, which makes local GNNs overfit the local signal propagation schemes. As a result, spectral client drifts occur, undermining global generalizability. To tackle the challenges, we propose a global knowledge repository to mitigate label signal disruption and a frequency alignment to address spectral client drifts. The combination of spatial and spectral strategies forms our framework S2FGL. Extensive experiments on multiple datasets demonstrate the superiority of S2FGL. The code is available at https://github.com/Wonder7racer/S2FGL.git.</description>
+   <guid>oai:arXiv.org:2507.02409v1</guid>
    <category>cs.LG</category>
    <category>cs.AI</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Lishan Yang, Wei Emma Zhang, Quan Z. Sheng, Weitong Chen, Lina Yao, Weitong Chen, Ali Shakeri</creator>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zihan Tan, Suyuan Huang, Guancheng Wan, Wenke Huang, He Li, Mang Ye</creator>
   </item>
   <item>
-   <title>Who Should I Listen To? Adaptive Collaboration in Personalized Federated Learning</title>
-   <link>https://arxiv.org/abs/2507.00259</link>
-   <description>Data heterogeneity is a central challenge in federated learning, and personalized federated learning (PFL) aims to address it by tailoring models to each client's distribution. Yet many PFL methods fail to outperform local or centralized baselines, suggesting a mismatch between the collaboration they enforce and the structure of the data. We propose an approach based on adaptive collaboration, where clients decide adaptively not only how much to rely on others, but also whom to trust at the level of individual examples. We instantiate this principle in FEDMOSAIC, a federated co-training method in which clients exchange predictions over a shared unlabeled dataset. This enables fine-grained trust decisions that are difficult to achieve with parameter sharing alone. Each client adjusts its loss weighting based on the agreement between private and public data, and contributes to global pseudo-labels in proportion to its estimated per-example confidence. Empirically, FEDMOSAIC improves upon state-of-the-art PFL methods across diverse non-IID settings, and we provide convergence guarantees under standard assumptions. Our results demonstrate the potential of data-aware collaboration for robust and effective personalization.</description>
-   <guid>oai:arXiv.org:2507.00259v2</guid>
+   <title>Learning From Crowdsourced Noisy Labels: A Signal Processing Perspective</title>
+   <link>https://arxiv.org/abs/2407.06902</link>
+   <description>One of the primary catalysts fueling advances in artificial intelligence (AI) and machine learning (ML) is the availability of massive, curated datasets. A commonly used technique to curate such massive datasets is crowdsourcing, where data are dispatched to multiple annotators. The annotator-produced labels are then fused to serve downstream learning and inference tasks. This annotation process often creates noisy labels due to various reasons, such as the limited expertise, or unreliability of annotators, among others. Therefore, a core objective in crowdsourcing is to develop methods that effectively mitigate the negative impact of such label noise on learning tasks. This feature article introduces advances in learning from noisy crowdsourced labels. The focus is on key crowdsourcing models and their methodological treatments, from classical statistical models to recent deep learning-based approaches, emphasizing analytical insights and algorithmic developments. In particular, this article reviews the connections between signal processing (SP) theory and methods, such as identifiability of tensor and nonnegative matrix factorization, and novel, principled solutions of longstanding challenges in crowdsourcing -- showing how SP perspectives drive the advancements of this field. Furthermore, this article touches upon emerging topics that are critical for developing cutting-edge AI/ML systems, such as crowdsourcing in reinforcement learning with human feedback (RLHF) and direct preference optimization (DPO) that are key techniques for fine-tuning large language models (LLMs).</description>
+   <guid>oai:arXiv.org:2407.06902v2</guid>
+   <category>eess.SP</category>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
    <category>cs.LG</category>
-   <pubdate>Thu, 03 Jul 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Amr Abourayya, Jens Kleesiek, Bharat Rao, Michael Kamp</creator>
+   <creator>Shahana Ibrahim, Panagiotis A. Traganitis, Xiao Fu, Georgios B. Giannakis</creator>
+  </item>
+  <item>
+   <title>Fundamental Limits of Hierarchical Secure Aggregation with Cyclic User Association</title>
+   <link>https://arxiv.org/abs/2503.04564</link>
+   <description>Secure aggregation is motivated by federated learning (FL) where a cloud server aims to compute an averaged model (i.e., weights of deep neural networks) of the locally-trained models of numerous clients, while adhering to data security requirements. Hierarchical secure aggregation (HSA) extends this concept to a three-layer hierarchical network, where clustered users communicate with the server through an intermediate layer of relays. In HSA, beyond conventional server security, relay security is also enforced to ensure that the relays remain oblivious to the users' inputs (an abstraction of the local models in FL). Existing study on HSA assumes that each user is associated with only one relay, limiting opportunities for coding across inter-cluster users to achieve efficient communication and key generation. In this paper, we consider HSA with a cyclic association pattern where each user is connected to $B$ consecutive relays in a wrap-around manner. We propose an efficient aggregation scheme which includes a message design for the inputs inspired by gradient coding-a well-known technique for efficient communication in distributed computing-along with a highly non-trivial security key design. We also derive novel converse bounds on the minimum achievable communication and key rates using information-theoretic arguments.</description>
+   <guid>oai:arXiv.org:2503.04564v4</guid>
+   <category>cs.IT</category>
+   <category>cs.AI</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>math.IT</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xiang Zhang, Zhou Li, Kai Wan, Hua Sun, Mingyue Ji, Giuseppe Caire</creator>
+  </item>
+  <item>
+   <title>How Good LLM-Generated Password Policies Are?</title>
+   <link>https://arxiv.org/abs/2506.08320</link>
+   <description>Generative AI technologies, particularly Large Language Models (LLMs), are rapidly being adopted across industry, academia, and government sectors, owing to their remarkable capabilities in natural language processing. However, despite their strengths, the inconsistency and unpredictability of LLM outputs present substantial challenges, especially in security-critical domains such as access control. One critical issue that emerges prominently is the consistency of LLM-generated responses, which is paramount for ensuring secure and reliable operations.
+  In this paper, we study the application of LLMs within the context of Cybersecurity Access Control Systems. Specifically, we investigate the consistency and accuracy of LLM-generated password policies, translating natural language prompts into executable pwquality.conf configuration files. Our experimental methodology adopts two distinct approaches: firstly, we utilize pre-trained LLMs to generate configuration files purely from natural language prompts without additional guidance. Secondly, we provide these models with official pwquality.conf documentation to serve as an informative baseline. We systematically assess the soundness, accuracy, and consistency of these AI-generated configurations. Our findings underscore significant challenges in the current generation of LLMs and contribute valuable insights into refining the deployment of LLMs in Access Control Systems.</description>
+   <guid>oai:arXiv.org:2506.08320v2</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Vivek Vaidya, Aditya Patwardhan, Ashish Kundu</creator>
+  </item>
+  <item>
+   <title>VeFIA: An Efficient Inference Auditing Framework for Vertical Federated Collaborative Software</title>
+   <link>https://arxiv.org/abs/2507.02376</link>
+   <description>Vertical Federated Learning (VFL) is a distributed AI software deployment mechanism for cross-silo collaboration without accessing participants' data. However, existing VFL work lacks a mechanism to audit the execution correctness of the inference software of the data party. To address this problem, we design a Vertical Federated Inference Auditing (VeFIA) framework. VeFIA helps the task party to audit whether the data party's inference software is executed as expected during large-scale inference without leaking the data privacy of the data party or introducing additional latency to the inference system. The core of VeFIA is that the task party can use the inference results from a framework with Trusted Execution Environments (TEE) and the coordinator to validate the correctness of the data party's computation results. VeFIA guarantees that, as long as the abnormal inference exceeds 5.4%, the task party can detect execution anomalies in the inference software with a probability of 99.99%, without incurring any additional online inference latency. VeFIA's random sampling validation achieves 100% positive predictive value, negative predictive value, and true positive rate in detecting abnormal inference. To the best of our knowledge, this is the first paper to discuss the correctness of inference software execution in VFL.</description>
+   <guid>oai:arXiv.org:2507.02376v1</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Chung-ju Huang, Ziqi Zhang, Yinggui Wang, Binghui Wang, Tao Wei, Leye Wang</creator>
+  </item>
+  <item>
+   <title>DSCodeBench: A Realistic Benchmark for Data Science Code Generation</title>
+   <link>https://arxiv.org/abs/2505.15621</link>
+   <description>We introduce DSCodeBench, a new benchmark designed to evaluate large language models (LLMs) on complicated and realistic data science code generation tasks. DSCodeBench consists of 1,000 carefully constructed problems sourced from realistic problems from GitHub across ten widely used Python data science libraries. Compared to the current state-of-the-art benchmark DS-1000, DSCodeBench offers a more challenging and representative testbed, longer code solutions, more comprehensive data science libraries, clearer and better structured problem descriptions, and stronger test suites. To construct the DSCodeBench, we develop a robust pipeline that combines task scope selection, code construction, test case generation, and problem description synthesis. The process is paired with rigorous manual editing to ensure alignment and enhance evaluation reliability. Experimental result shows that DSCodeBench exhibits robust scaling behavior, where larger models systematically outperform smaller ones, validating its ability to distinguish model capabilities. The best LLM we test, GPT-4o, has a pass@1 of 0.202, indicating that LLMs still have a large room to improve for realistic data science code generation tasks. We believe DSCodeBench will serve as a rigorous and trustworthy foundation for advancing LLM-based data science programming.</description>
+   <guid>oai:arXiv.org:2505.15621v2</guid>
+   <category>cs.SE</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
+   <creator>Shuyin Ouyang, Dong Huang, Jingwen Guo, Zeyu Sun, Qihao Zhu, Jie M. Zhang</creator>
+  </item>
+  <item>
+   <title>S2FGL: Spatial Spectral Federated Graph Learning</title>
+   <link>https://arxiv.org/abs/2507.02409</link>
+   <description>Federated Graph Learning (FGL) combines the privacy-preserving capabilities of federated learning (FL) with the strong graph modeling capability of Graph Neural Networks (GNNs). Current research addresses subgraph-FL only from the structural perspective, neglecting the propagation of graph signals on spatial and spectral domains of the structure. From a spatial perspective, subgraph-FL introduces edge disconnections between clients, leading to disruptions in label signals and a degradation in the class knowledge of the global GNN. From a spectral perspective, spectral heterogeneity causes inconsistencies in signal frequencies across subgraphs, which makes local GNNs overfit the local signal propagation schemes. As a result, spectral client drifts occur, undermining global generalizability. To tackle the challenges, we propose a global knowledge repository to mitigate label signal disruption and a frequency alignment to address spectral client drifts. The combination of spatial and spectral strategies forms our framework S2FGL. Extensive experiments on multiple datasets demonstrate the superiority of S2FGL. The code is available at https://github.com/Wonder7racer/S2FGL.git.</description>
+   <guid>oai:arXiv.org:2507.02409v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zihan Tan, Suyuan Huang, Guancheng Wan, Wenke Huang, He Li, Mang Ye</creator>
+  </item>
+  <item>
+   <title>Embedding-Based Federated Data Sharing via Differentially Private Conditional VAEs</title>
+   <link>https://arxiv.org/abs/2507.02671</link>
+   <description>Deep Learning (DL) has revolutionized medical imaging, yet its adoption is constrained by data scarcity and privacy regulations, limiting access to diverse datasets. Federated Learning (FL) enables decentralized training but suffers from high communication costs and is often restricted to a single downstream task, reducing flexibility. We propose a data-sharing method via Differentially Private (DP) generative models. By adopting foundation models, we extract compact, informative embeddings, reducing redundancy and lowering computational overhead. Clients collaboratively train a Differentially Private Conditional Variational Autoencoder (DP-CVAE) to model a global, privacy-aware data distribution, supporting diverse downstream tasks. Our approach, validated across multiple feature extractors, enhances privacy, scalability, and efficiency, outperforming traditional FL classifiers while ensuring differential privacy. Additionally, DP-CVAE produces higher-fidelity embeddings than DP-CGAN while requiring $5{\times}$ fewer parameters.</description>
+   <guid>oai:arXiv.org:2507.02671v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <category>eess.IV</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Francesco Di Salvo, Hanh Huyen My Nguyen, Christian Ledig</creator>
+  </item>
+  <item>
+   <title>Fluid Democracy in Federated Data Aggregation</title>
+   <link>https://arxiv.org/abs/2507.02710</link>
+   <description>Federated learning (FL) mechanisms typically require each client to transfer their weights to a central server, irrespective of how useful they are. In order to avoid wasteful data transfer costs from clients to the central server, we propose the use of consensus based protocols to identify a subset of clients with most useful model weights at each data transfer step. First, we explore the application of existing fluid democracy protocols to FL from a performance standpoint, comparing them with traditional one-person-one-vote (also known as 1p1v or FedAvg). We propose a new fluid democracy protocol named viscous-retained democracy that always does better than 1p1v under the same assumptions as existing fluid democracy protocols while also not allowing for influence accumulation. Secondly, we identify weaknesses of fluid democracy protocols from an adversarial lens in terms of their dependence on topology and/ or number of adversaries required to negatively impact the global model weights. To this effect, we propose an algorithm (FedVRD) that dynamically limits the effect of adversaries while minimizing cost by leveraging the delegation topology.</description>
+   <guid>oai:arXiv.org:2507.02710v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Aditya Vema Reddy Kesari, Krishna Reddy Kesari</creator>
+  </item>
+  <item>
+   <title>Hardware and Software Platform Inference</title>
+   <link>https://arxiv.org/abs/2411.05197</link>
+   <description>It is now a common business practice to buy access to large language model (LLM) inference rather than self-host, because of significant upfront hardware infrastructure and energy costs. However, as a buyer, there is no mechanism to verify the authenticity of the advertised service including the serving hardware platform, e.g. that it is actually being served using an NVIDIA H100. Furthermore, there are reports suggesting that model providers may deliver models that differ slightly from the advertised ones, often to make them run on less expensive hardware. That way, a client pays premium for a capable model access on more expensive hardware, yet ends up being served by a (potentially less capable) cheaper model on cheaper hardware. In this paper we introduce hardware and software platform inference (HSPI) -- a method for identifying the underlying GPU architecture and software stack of a (black-box) machine learning model solely based on its input-output behavior. Our method leverages the inherent differences of various GPU architectures and compilers to distinguish between different GPU types and software stacks. By analyzing the numerical patterns in the model's outputs, we propose a classification framework capable of accurately identifying the GPU used for model inference as well as the underlying software configuration. Our findings demonstrate the feasibility of inferring GPU type from black-box models. We evaluate HSPI against models served on different real hardware and find that in a white-box setting we can distinguish between different GPUs with between $83.9\%$ and $100\%$ accuracy. Even in a black-box setting we achieve results that are up to 3x higher than random guess accuracy. Our code is available at https://github.com/ChengZhang-98/HSPI.</description>
+   <guid>oai:arXiv.org:2411.05197v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Cheng Zhang, Hanna Foerster, Robert D. Mullins, Yiren Zhao, Ilia Shumailov</creator>
+  </item>
+  <item>
+   <title>Privacy-Preserving Quantized Federated Learning with Diverse Precision</title>
+   <link>https://arxiv.org/abs/2507.00920</link>
+   <description>Federated learning (FL) has emerged as a promising paradigm for distributed machine learning, enabling collaborative training of a global model across multiple local devices without requiring them to share raw data. Despite its advancements, FL is limited by factors such as: (i) privacy risks arising from the unprotected transmission of local model updates to the fusion center (FC) and (ii) decreased learning utility caused by heterogeneity in model quantization resolution across participating devices. Prior work typically addresses only one of these challenges because maintaining learning utility under both privacy risks and quantization heterogeneity is a non-trivial task. In this paper, our aim is therefore to improve the learning utility of a privacy-preserving FL that allows clusters of devices with different quantization resolutions to participate in each FL round. Specifically, we introduce a novel stochastic quantizer (SQ) that is designed to simultaneously achieve differential privacy (DP) and minimum quantization error. Notably, the proposed SQ guarantees bounded distortion, unlike other DP approaches. To address quantization heterogeneity, we introduce a cluster size optimization technique combined with a linear fusion approach to enhance model aggregation accuracy. Numerical simulations validate the benefits of our approach in terms of privacy protection and learning utility compared to the conventional LaplaceSQ-FL algorithm.</description>
+   <guid>oai:arXiv.org:2507.00920v2</guid>
+   <category>cs.LG</category>
+   <category>eess.SP</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Dang Qua Nguyen, Morteza Hashemi, Erik Perrins, Sergiy A. Vorobyov, David J. Love, Taejoon Kim</creator>
+  </item>
+  <item>
+   <title>Learning From Crowdsourced Noisy Labels: A Signal Processing Perspective</title>
+   <link>https://arxiv.org/abs/2407.06902</link>
+   <description>One of the primary catalysts fueling advances in artificial intelligence (AI) and machine learning (ML) is the availability of massive, curated datasets. A commonly used technique to curate such massive datasets is crowdsourcing, where data are dispatched to multiple annotators. The annotator-produced labels are then fused to serve downstream learning and inference tasks. This annotation process often creates noisy labels due to various reasons, such as the limited expertise, or unreliability of annotators, among others. Therefore, a core objective in crowdsourcing is to develop methods that effectively mitigate the negative impact of such label noise on learning tasks. This feature article introduces advances in learning from noisy crowdsourced labels. The focus is on key crowdsourcing models and their methodological treatments, from classical statistical models to recent deep learning-based approaches, emphasizing analytical insights and algorithmic developments. In particular, this article reviews the connections between signal processing (SP) theory and methods, such as identifiability of tensor and nonnegative matrix factorization, and novel, principled solutions of longstanding challenges in crowdsourcing -- showing how SP perspectives drive the advancements of this field. Furthermore, this article touches upon emerging topics that are critical for developing cutting-edge AI/ML systems, such as crowdsourcing in reinforcement learning with human feedback (RLHF) and direct preference optimization (DPO) that are key techniques for fine-tuning large language models (LLMs).</description>
+   <guid>oai:arXiv.org:2407.06902v2</guid>
+   <category>eess.SP</category>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 04 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Shahana Ibrahim, Panagiotis A. Traganitis, Xiao Fu, Georgios B. Giannakis</creator>
   </item>
  </channel>
 </rss>
