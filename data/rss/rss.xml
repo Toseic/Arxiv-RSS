@@ -6,9 +6,9 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Thu, 10 Jul 2025 04:26:26 </lastBuildDate>
+  <lastBuildDate>Fri, 11 Jul 2025 03:22:59 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Thu, 10 Jul 2025 04:26:26 </pubDate>
+  <pubDate>Fri, 11 Jul 2025 03:22:59 </pubDate>
   <item>
    <title>Towards Multimodal Understanding via Stable Diffusion as a Task-Aware Feature Extractor</title>
    <link>https://arxiv.org/abs/2507.07106</link>
@@ -119,13 +119,13 @@
    <description>Current prefill-decode (PD) disaggregation is typically deployed at the level of entire serving engines, assigning separate GPUs to handle prefill and decode phases. While effective at reducing latency, this approach demands more hardware. To improve GPU utilization, Chunked Prefill mixes prefill and decode requests within the same batch, but introduces phase interference between prefill and decode.
   While existing PD disaggregation solutions separate the phases across GPUs, we ask: can the same decoupling be achieved within a single serving engine? The key challenge lies in managing the conflicting resource requirements of prefill and decode when they share the same hardware. In this paper, we first show that chunked prefill requests cause interference with decode requests due to their distinct requirements for GPU resources. Second, we find that GPU resources exhibit diminishing returns. Beyond a saturation point, increasing GPU allocation yields negligible latency improvements. This insight enables us to split a single GPU's resources and dynamically allocate them to prefill and decode on the fly, effectively disaggregating the two phases within the same GPU.
   Across a range of models and workloads, our system Nexus achieves up to 2.2x higher throughput, 20x lower TTFT, and 2.5x lower TBT than vLLM. It also outperforms SGLang with up to 2x higher throughput, 2x lower TTFT, and 1.7x lower TBT, and achieves 1.4x higher throughput than vLLM-disaggregation using only half the number of GPUs.</description>
-   <guid>oai:arXiv.org:2507.06608v1</guid>
+   <guid>oai:arXiv.org:2507.06608v2</guid>
    <category>cs.DC</category>
    <category>cs.LG</category>
    <pubdate>Thu, 10 Jul 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Xiaoxiang Shi, Colin Cai, Junjia Du, Zhanda Zhu, Xingda Wei, Zhihao Jia</creator>
+   <creator>Xiaoxiang Shi, Colin Cai, Junjia Du, Zhanda Zhu, Zhihao Jia</creator>
   </item>
   <item>
    <title>FedPhD: Federated Pruning with Hierarchical Learning of Diffusion Models</title>
@@ -331,13 +331,13 @@
    <description>Current prefill-decode (PD) disaggregation is typically deployed at the level of entire serving engines, assigning separate GPUs to handle prefill and decode phases. While effective at reducing latency, this approach demands more hardware. To improve GPU utilization, Chunked Prefill mixes prefill and decode requests within the same batch, but introduces phase interference between prefill and decode.
   While existing PD disaggregation solutions separate the phases across GPUs, we ask: can the same decoupling be achieved within a single serving engine? The key challenge lies in managing the conflicting resource requirements of prefill and decode when they share the same hardware. In this paper, we first show that chunked prefill requests cause interference with decode requests due to their distinct requirements for GPU resources. Second, we find that GPU resources exhibit diminishing returns. Beyond a saturation point, increasing GPU allocation yields negligible latency improvements. This insight enables us to split a single GPU's resources and dynamically allocate them to prefill and decode on the fly, effectively disaggregating the two phases within the same GPU.
   Across a range of models and workloads, our system Nexus achieves up to 2.2x higher throughput, 20x lower TTFT, and 2.5x lower TBT than vLLM. It also outperforms SGLang with up to 2x higher throughput, 2x lower TTFT, and 1.7x lower TBT, and achieves 1.4x higher throughput than vLLM-disaggregation using only half the number of GPUs.</description>
-   <guid>oai:arXiv.org:2507.06608v1</guid>
+   <guid>oai:arXiv.org:2507.06608v2</guid>
    <category>cs.DC</category>
    <category>cs.LG</category>
    <pubdate>Thu, 10 Jul 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Xiaoxiang Shi, Colin Cai, Junjia Du, Zhanda Zhu, Xingda Wei, Zhihao Jia</creator>
+   <creator>Xiaoxiang Shi, Colin Cai, Junjia Du, Zhanda Zhu, Zhihao Jia</creator>
   </item>
   <item>
    <title>Federated Learning-based MARL for Strengthening Physical-Layer Security in B5G Networks</title>
