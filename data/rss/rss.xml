@@ -6,8 +6,236 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 14 Jul 2025 03:27:27 </lastBuildDate>
+  <lastBuildDate>Mon, 14 Jul 2025 04:35:21 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 14 Jul 2025 03:27:27 </pubDate>
+  <pubDate>Mon, 14 Jul 2025 04:35:21 </pubDate>
+  <item>
+   <title>Understanding Driving Risks using Large Language Models: Toward Elderly Driver Assessment</title>
+   <link>https://arxiv.org/abs/2507.08367</link>
+   <description>This study investigates the potential of a multimodal large language model (LLM), specifically ChatGPT-4o, to perform human-like interpretations of traffic scenes using static dashcam images. Herein, we focus on three judgment tasks relevant to elderly driver assessments: evaluating traffic density, assessing intersection visibility, and recognizing stop signs recognition. These tasks require contextual reasoning rather than simple object detection. Using zero-shot, few-shot, and multi-shot prompting strategies, we evaluated the performance of the model with human annotations serving as the reference standard. Evaluation metrics included precision, recall, and F1-score. Results indicate that prompt design considerably affects performance, with recall for intersection visibility increasing from 21.7% (zero-shot) to 57.0% (multi-shot). For traffic density, agreement increased from 53.5% to 67.6%. In stop-sign detection, the model demonstrated high precision (up to 86.3%) but a lower recall (approximately 76.7%), indicating a conservative response tendency. Output stability analysis revealed that humans and the model faced difficulties interpreting structurally ambiguous scenes. However, the model's explanatory texts corresponded with its predictions, enhancing interpretability. These findings suggest that, with well-designed prompts, LLMs hold promise as supportive tools for scene-level driving risk assessments. Future studies should explore scalability using larger datasets, diverse annotators, and next-generation model architectures for elderly driver assessments.</description>
+   <guid>oai:arXiv.org:2507.08367v1</guid>
+   <category>cs.CV</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuki Yoshihara, Linjing Jiang, Nihan Karatas, Hitoshi Kanamori, Asuka Harada, Takahiro Tanaka</creator>
+  </item>
+  <item>
+   <title>Geo-ORBIT: A Federated Digital Twin Framework for Scene-Adaptive Lane Geometry Detection</title>
+   <link>https://arxiv.org/abs/2507.08743</link>
+   <description>Digital Twins (DT) have the potential to transform traffic management and operations by creating dynamic, virtual representations of transportation systems that sense conditions, analyze operations, and support decision-making. A key component for DT of the transportation system is dynamic roadway geometry sensing. However, existing approaches often rely on static maps or costly sensors, limiting scalability and adaptability. Additionally, large-scale DTs that collect and analyze data from multiple sources face challenges in privacy, communication, and computational efficiency. To address these challenges, we introduce Geo-ORBIT (Geometrical Operational Roadway Blueprint with Integrated Twin), a unified framework that combines real-time lane detection, DT synchronization, and federated meta-learning. At the core of Geo-ORBIT is GeoLane, a lightweight lane detection model that learns lane geometries from vehicle trajectory data using roadside cameras. We extend this model through Meta-GeoLane, which learns to personalize detection parameters for local entities, and FedMeta-GeoLane, a federated learning strategy that ensures scalable and privacy-preserving adaptation across roadside deployments. Our system is integrated with CARLA and SUMO to create a high-fidelity DT that renders highway scenarios and captures traffic flows in real-time. Extensive experiments across diverse urban scenes show that FedMeta-GeoLane consistently outperforms baseline and meta-learning approaches, achieving lower geometric error and stronger generalization to unseen locations while drastically reducing communication overhead. This work lays the foundation for flexible, context-aware infrastructure modeling in DTs. The framework is publicly available at https://github.com/raynbowy23/FedMeta-GeoLane.git.</description>
+   <guid>oai:arXiv.org:2507.08743v1</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Rei Tamaru, Pei Li, Bin Ran</creator>
+  </item>
+  <item>
+   <title>Lightweight Safety Guardrails via Synthetic Data and RL-guided Adversarial Training</title>
+   <link>https://arxiv.org/abs/2507.08284</link>
+   <description>We introduce a lightweight yet highly effective safety guardrail framework for language models, demonstrating that small-scale language models can achieve, and even surpass, the performance of larger counterparts in content moderation tasks. This is accomplished through high-fidelity synthetic data generation and adversarial training. The synthetic data generation process begins with human-curated seed data, which undergoes query augmentation and paraphrasing to create diverse and contextually rich examples. This augmented data is then subjected to multiple rounds of curation, ensuring high fidelity and relevance. Inspired by recent advances in the Generative Adversarial Network (GAN) architecture, our adversarial training employs reinforcement learning to guide a generator that produces challenging synthetic examples. These examples are used to fine-tune the safety classifier, enhancing its ability to detect and mitigate harmful content. Additionally, we incorporate strategies from recent research on efficient LLM training, leveraging the capabilities of smaller models to improve the performance of larger generative models. With iterative adversarial training and the generation of diverse, high-quality synthetic data, our framework enables small language models (SLMs) to serve as robust safety guardrails. This approach not only reduces computational overhead but also enhances resilience against adversarial attacks, offering a scalable and efficient solution for content moderation in AI systems.</description>
+   <guid>oai:arXiv.org:2507.08284v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Aleksei Ilin, Gor Matevosyan, Xueying Ma, Vladimir Eremin, Suhaa Dada, Muqun Li, Riyaaz Shaik, Haluk Noyan Tokgozoglu</creator>
+  </item>
+  <item>
+   <title>SFedKD: Sequential Federated Learning with Discrepancy-Aware Multi-Teacher Knowledge Distillation</title>
+   <link>https://arxiv.org/abs/2507.08508</link>
+   <description>Federated Learning (FL) is a distributed machine learning paradigm which coordinates multiple clients to collaboratively train a global model via a central server. Sequential Federated Learning (SFL) is a newly-emerging FL training framework where the global model is trained in a sequential manner across clients. Since SFL can provide strong convergence guarantees under data heterogeneity, it has attracted significant research attention in recent years. However, experiments show that SFL suffers from severe catastrophic forgetting in heterogeneous environments, meaning that the model tends to forget knowledge learned from previous clients. To address this issue, we propose an SFL framework with discrepancy-aware multi-teacher knowledge distillation, called SFedKD, which selects multiple models from the previous round to guide the current round of training. In SFedKD, we extend the single-teacher Decoupled Knowledge Distillation approach to our multi-teacher setting and assign distinct weights to teachers' target-class and non-target-class knowledge based on the class distributional discrepancy between teacher and student data. Through this fine-grained weighting strategy, SFedKD can enhance model training efficacy while mitigating catastrophic forgetting. Additionally, to prevent knowledge dilution, we eliminate redundant teachers for the knowledge distillation and formalize it as a variant of the maximum coverage problem. Based on the greedy strategy, we design a complementary-based teacher selection mechanism to ensure that the selected teachers achieve comprehensive knowledge space coverage while reducing communication and computational costs. Extensive experiments show that SFedKD effectively overcomes catastrophic forgetting in SFL and outperforms state-of-the-art FL methods.</description>
+   <guid>oai:arXiv.org:2507.08508v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Haotian Xu, Jinrui Zhou, Xichong Zhang, Mingjun Xiao, He Sun, Yin Xu</creator>
+  </item>
+  <item>
+   <title>Towards Collaborative Fairness in Federated Learning Under Imbalanced Covariate Shift</title>
+   <link>https://arxiv.org/abs/2507.08617</link>
+   <description>Collaborative fairness is a crucial challenge in federated learning. However, existing approaches often overlook a practical yet complex form of heterogeneity: imbalanced covariate shift. We provide a theoretical analysis of this setting, which motivates the design of FedAKD (Federated Asynchronous Knowledge Distillation)- simple yet effective approach that balances accurate prediction with collaborative fairness. FedAKD consists of client and server updates. In the client update, we introduce a novel asynchronous knowledge distillation strategy based on our preliminary analysis, which reveals that while correctly predicted samples exhibit similar feature distributions across clients, incorrectly predicted samples show significant variability. This suggests that imbalanced covariate shift primarily arises from misclassified samples. Leveraging this insight, our approach first applies traditional knowledge distillation to update client models while keeping the global model fixed. Next, we select correctly predicted high-confidence samples and update the global model using these samples while keeping client models fixed. The server update simply aggregates all client models. We further provide a theoretical proof of FedAKD's convergence. Experimental results on public datasets (FashionMNIST and CIFAR10) and a real-world Electronic Health Records (EHR) dataset demonstrate that FedAKD significantly improves collaborative fairness, enhances predictive accuracy, and fosters client participation even under highly heterogeneous data distributions.</description>
+   <guid>oai:arXiv.org:2507.08617v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Tianrun Yu, Jiaqi Wang, Haoyu Wang, Mingquan Lin, Han Liu, Nelson S. Yee, Fenglong Ma</creator>
+  </item>
+  <item>
+   <title>Task Arithmetic Through The Lens Of One-Shot Federated Learning</title>
+   <link>https://arxiv.org/abs/2411.18607</link>
+   <description>Task Arithmetic is a model merging technique that enables the combination of multiple models' capabilities into a single model through simple arithmetic in the weight space, without the need for additional fine-tuning or access to the original training data. However, the factors that determine the success of Task Arithmetic remain unclear. In this paper, we examine Task Arithmetic for multi-task learning by framing it as a one-shot Federated Learning problem. We demonstrate that Task Arithmetic is mathematically equivalent to the commonly used algorithm in Federated Learning, called Federated Averaging (FedAvg). By leveraging well-established theoretical results from FedAvg, we identify two key factors that impact the performance of Task Arithmetic: data heterogeneity and training heterogeneity. To mitigate these challenges, we adapt several algorithms from Federated Learning to improve the effectiveness of Task Arithmetic. Our experiments demonstrate that applying these algorithms can often significantly boost performance of the merged model compared to the original Task Arithmetic approach. This work bridges Task Arithmetic and Federated Learning, offering new theoretical perspectives on Task Arithmetic and improved practical methodologies for model merging.</description>
+   <guid>oai:arXiv.org:2411.18607v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zhixu Silvia Tao, Ian Mason, Sanjeev Kulkarni, Xavier Boix</creator>
+  </item>
+  <item>
+   <title>Mind the Memory Gap: Unveiling GPU Bottlenecks in Large-Batch LLM Inference</title>
+   <link>https://arxiv.org/abs/2503.08311</link>
+   <description>Large language models have been widely adopted across different tasks, but their auto-regressive generation nature often leads to inefficient resource utilization during inference. While batching is commonly used to increase throughput, performance gains plateau beyond a certain batch size, especially with smaller models, a phenomenon that existing literature typically explains as a shift to the compute-bound regime. In this paper, through an in-depth GPU-level analysis, we reveal that large-batch inference remains memory-bound, with most GPU compute capabilities underutilized due to DRAM bandwidth saturation as the primary bottleneck. To address this, we propose a Batching Configuration Advisor (BCA) that optimizes memory allocation, reducing GPU memory requirements with minimal impact on throughput. The freed memory and underutilized GPU compute capabilities can then be leveraged by concurrent workloads. Specifically, we use model replication to improve serving throughput and GPU utilization. Our findings challenge conventional assumptions about LLM inference, offering new insights and practical strategies for improving resource utilization, particularly for smaller language models. The code is publicly available at https://github.com/FerranAgulloLopez/vLLMBatchingMemoryGap.</description>
+   <guid>oai:arXiv.org:2503.08311v2</guid>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Pol G. Recasens, Ferran Agullo, Yue Zhu, Chen Wang, Eun Kyung Lee, Olivier Tardieu, Jordi Torres, Josep Ll. Berral</creator>
+  </item>
+  <item>
+   <title>Understanding Driving Risks using Large Language Models: Toward Elderly Driver Assessment</title>
+   <link>https://arxiv.org/abs/2507.08367</link>
+   <description>This study investigates the potential of a multimodal large language model (LLM), specifically ChatGPT-4o, to perform human-like interpretations of traffic scenes using static dashcam images. Herein, we focus on three judgment tasks relevant to elderly driver assessments: evaluating traffic density, assessing intersection visibility, and recognizing stop signs recognition. These tasks require contextual reasoning rather than simple object detection. Using zero-shot, few-shot, and multi-shot prompting strategies, we evaluated the performance of the model with human annotations serving as the reference standard. Evaluation metrics included precision, recall, and F1-score. Results indicate that prompt design considerably affects performance, with recall for intersection visibility increasing from 21.7% (zero-shot) to 57.0% (multi-shot). For traffic density, agreement increased from 53.5% to 67.6%. In stop-sign detection, the model demonstrated high precision (up to 86.3%) but a lower recall (approximately 76.7%), indicating a conservative response tendency. Output stability analysis revealed that humans and the model faced difficulties interpreting structurally ambiguous scenes. However, the model's explanatory texts corresponded with its predictions, enhancing interpretability. These findings suggest that, with well-designed prompts, LLMs hold promise as supportive tools for scene-level driving risk assessments. Future studies should explore scalability using larger datasets, diverse annotators, and next-generation model architectures for elderly driver assessments.</description>
+   <guid>oai:arXiv.org:2507.08367v1</guid>
+   <category>cs.CV</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuki Yoshihara, Linjing Jiang, Nihan Karatas, Hitoshi Kanamori, Asuka Harada, Takahiro Tanaka</creator>
+  </item>
+  <item>
+   <title>Mind the Memory Gap: Unveiling GPU Bottlenecks in Large-Batch LLM Inference</title>
+   <link>https://arxiv.org/abs/2503.08311</link>
+   <description>Large language models have been widely adopted across different tasks, but their auto-regressive generation nature often leads to inefficient resource utilization during inference. While batching is commonly used to increase throughput, performance gains plateau beyond a certain batch size, especially with smaller models, a phenomenon that existing literature typically explains as a shift to the compute-bound regime. In this paper, through an in-depth GPU-level analysis, we reveal that large-batch inference remains memory-bound, with most GPU compute capabilities underutilized due to DRAM bandwidth saturation as the primary bottleneck. To address this, we propose a Batching Configuration Advisor (BCA) that optimizes memory allocation, reducing GPU memory requirements with minimal impact on throughput. The freed memory and underutilized GPU compute capabilities can then be leveraged by concurrent workloads. Specifically, we use model replication to improve serving throughput and GPU utilization. Our findings challenge conventional assumptions about LLM inference, offering new insights and practical strategies for improving resource utilization, particularly for smaller language models. The code is publicly available at https://github.com/FerranAgulloLopez/vLLMBatchingMemoryGap.</description>
+   <guid>oai:arXiv.org:2503.08311v2</guid>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Pol G. Recasens, Ferran Agullo, Yue Zhu, Chen Wang, Eun Kyung Lee, Olivier Tardieu, Jordi Torres, Josep Ll. Berral</creator>
+  </item>
+  <item>
+   <title>Quantum Federated Learning for Multimodal Data: A Modality-Agnostic Approach</title>
+   <link>https://arxiv.org/abs/2507.08217</link>
+   <description>Quantum federated learning (QFL) has been recently introduced to enable a distributed privacy-preserving quantum machine learning (QML) model training across quantum processors (clients). Despite recent research efforts, existing QFL frameworks predominantly focus on unimodal systems, limiting their applicability to real-world tasks that often naturally involve multiple modalities. To fill this significant gap, we present for the first time a novel multimodal approach specifically tailored for the QFL setting with the intermediate fusion using quantum entanglement. Furthermore, to address a major bottleneck in multimodal QFL, where the absence of certain modalities during training can degrade model performance, we introduce a Missing Modality Agnostic (MMA) mechanism that isolates untrained quantum circuits, ensuring stable training without corrupted states. Simulation results demonstrate that the proposed multimodal QFL method with MMA yields an improvement in accuracy of 6.84% in independent and identically distributed (IID) and 7.25% in non-IID data distributions compared to the state-of-the-art methods.</description>
+   <guid>oai:arXiv.org:2507.08217v1</guid>
+   <category>cs.AI</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Atit Pokharel, Ratun Rahman, Thomas Morris, Dinh C. Nguyen</creator>
+  </item>
+  <item>
+   <title>Compactor: Calibrated Query-Agnostic KV Cache Compression with Approximate Leverage Scores</title>
+   <link>https://arxiv.org/abs/2507.08143</link>
+   <description>Modern Large Language Models (LLMs) are increasingly trained to support very large context windows. Unfortunately the ability to use long contexts in generation is complicated by the large memory requirement of the KV cache, which scales linearly with the context length. This memory footprint is often the dominant resource bottleneck in real-world deployments, limiting throughput and increasing serving cost. One way to address this is by compressing the KV cache, which can be done either with knowledge of the question being asked (query-aware) or without knowledge of the query (query-agnostic). We present Compactor, a parameter-free, query-agnostic KV compression strategy that uses approximate leverage scores to determine token importance. We show that Compactor can achieve the same performance as competing methods while retaining 1/2 the tokens in both synthetic and real-world context tasks, with minimal computational overhead. We further introduce a procedure for context-calibrated compression, which allows one to infer the maximum compression ratio a given context can support. Using context-calibrated compression, we show that Compactor achieves full KV performance on Longbench while reducing the KV memory burden by 63%, on average. To demonstrate the efficacy and generalizability of our approach, we apply Compactor to 27 synthetic and real-world tasks from RULER and Longbench, with models from both the Qwen 2.5 and Llama 3.1 families.</description>
+   <guid>oai:arXiv.org:2507.08143v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Vivek Chari, Benjamin Van Durme</creator>
+  </item>
+  <item>
+   <title>Lightweight Safety Guardrails via Synthetic Data and RL-guided Adversarial Training</title>
+   <link>https://arxiv.org/abs/2507.08284</link>
+   <description>We introduce a lightweight yet highly effective safety guardrail framework for language models, demonstrating that small-scale language models can achieve, and even surpass, the performance of larger counterparts in content moderation tasks. This is accomplished through high-fidelity synthetic data generation and adversarial training. The synthetic data generation process begins with human-curated seed data, which undergoes query augmentation and paraphrasing to create diverse and contextually rich examples. This augmented data is then subjected to multiple rounds of curation, ensuring high fidelity and relevance. Inspired by recent advances in the Generative Adversarial Network (GAN) architecture, our adversarial training employs reinforcement learning to guide a generator that produces challenging synthetic examples. These examples are used to fine-tune the safety classifier, enhancing its ability to detect and mitigate harmful content. Additionally, we incorporate strategies from recent research on efficient LLM training, leveraging the capabilities of smaller models to improve the performance of larger generative models. With iterative adversarial training and the generation of diverse, high-quality synthetic data, our framework enables small language models (SLMs) to serve as robust safety guardrails. This approach not only reduces computational overhead but also enhances resilience against adversarial attacks, offering a scalable and efficient solution for content moderation in AI systems.</description>
+   <guid>oai:arXiv.org:2507.08284v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Aleksei Ilin, Gor Matevosyan, Xueying Ma, Vladimir Eremin, Suhaa Dada, Muqun Li, Riyaaz Shaik, Haluk Noyan Tokgozoglu</creator>
+  </item>
+  <item>
+   <title>Towards Collaborative Fairness in Federated Learning Under Imbalanced Covariate Shift</title>
+   <link>https://arxiv.org/abs/2507.08617</link>
+   <description>Collaborative fairness is a crucial challenge in federated learning. However, existing approaches often overlook a practical yet complex form of heterogeneity: imbalanced covariate shift. We provide a theoretical analysis of this setting, which motivates the design of FedAKD (Federated Asynchronous Knowledge Distillation)- simple yet effective approach that balances accurate prediction with collaborative fairness. FedAKD consists of client and server updates. In the client update, we introduce a novel asynchronous knowledge distillation strategy based on our preliminary analysis, which reveals that while correctly predicted samples exhibit similar feature distributions across clients, incorrectly predicted samples show significant variability. This suggests that imbalanced covariate shift primarily arises from misclassified samples. Leveraging this insight, our approach first applies traditional knowledge distillation to update client models while keeping the global model fixed. Next, we select correctly predicted high-confidence samples and update the global model using these samples while keeping client models fixed. The server update simply aggregates all client models. We further provide a theoretical proof of FedAKD's convergence. Experimental results on public datasets (FashionMNIST and CIFAR10) and a real-world Electronic Health Records (EHR) dataset demonstrate that FedAKD significantly improves collaborative fairness, enhances predictive accuracy, and fosters client participation even under highly heterogeneous data distributions.</description>
+   <guid>oai:arXiv.org:2507.08617v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Tianrun Yu, Jiaqi Wang, Haoyu Wang, Mingquan Lin, Han Liu, Nelson S. Yee, Fenglong Ma</creator>
+  </item>
+  <item>
+   <title>Geo-ORBIT: A Federated Digital Twin Framework for Scene-Adaptive Lane Geometry Detection</title>
+   <link>https://arxiv.org/abs/2507.08743</link>
+   <description>Digital Twins (DT) have the potential to transform traffic management and operations by creating dynamic, virtual representations of transportation systems that sense conditions, analyze operations, and support decision-making. A key component for DT of the transportation system is dynamic roadway geometry sensing. However, existing approaches often rely on static maps or costly sensors, limiting scalability and adaptability. Additionally, large-scale DTs that collect and analyze data from multiple sources face challenges in privacy, communication, and computational efficiency. To address these challenges, we introduce Geo-ORBIT (Geometrical Operational Roadway Blueprint with Integrated Twin), a unified framework that combines real-time lane detection, DT synchronization, and federated meta-learning. At the core of Geo-ORBIT is GeoLane, a lightweight lane detection model that learns lane geometries from vehicle trajectory data using roadside cameras. We extend this model through Meta-GeoLane, which learns to personalize detection parameters for local entities, and FedMeta-GeoLane, a federated learning strategy that ensures scalable and privacy-preserving adaptation across roadside deployments. Our system is integrated with CARLA and SUMO to create a high-fidelity DT that renders highway scenarios and captures traffic flows in real-time. Extensive experiments across diverse urban scenes show that FedMeta-GeoLane consistently outperforms baseline and meta-learning approaches, achieving lower geometric error and stronger generalization to unseen locations while drastically reducing communication overhead. This work lays the foundation for flexible, context-aware infrastructure modeling in DTs. The framework is publicly available at https://github.com/raynbowy23/FedMeta-GeoLane.git.</description>
+   <guid>oai:arXiv.org:2507.08743v1</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Rei Tamaru, Pei Li, Bin Ran</creator>
+  </item>
+  <item>
+   <title>InferLog: Accelerating LLM Inference for Online Log Parsing via ICL-oriented Prefix Caching</title>
+   <link>https://arxiv.org/abs/2507.08523</link>
+   <description>Modern software systems generate massive volumes of runtime logs, necessitating efficient and accurate log parsing to enable critical downstream tasks such as anomaly detection and root cause analysis. Recently, large language models (LLMs) have achieved advanced accuracy on log parsing, but their deployment in production environments faces two major limitations: (1) the privacy risks associated with commercial LLMs, driving the adoption of local deployment, and (2) the stringent latency and throughput requirements imposed by high-volume log streams, which existing LLM-based parsers fail to meet. Although recent efforts have reduced the number of LLM queries, they overlook the high latency of the LLM invocations, where concurrent log parsing requests can cause serve performance degradation of LLM inference system.
+  In this study, we present InferLog, the first LLM inference optimization method for online log parsing. Our key insight is that the inference efficiency emerges as the vital bottleneck in LLM-based online log parsing, rather than parsing accuracy. InferLog accelerates inference by designing (1) A Prefix-aware ICL Refinement policy to refine the examples and permutation of in-context learning to improve the prefix caching efficiency. (2) A rapid and task-specific configuration tuning pipeline based on meta-learning to find the optimal LLM scheduling-related configuration for dynamic log parsing workloads. The experimental results based on Loghub dataset and vLLM demonstrate that InferLog significantly outperforms existing inference optimization methods and markedly accelerates the state-of-the-art LLM-based log parser without compromising parsing accuracy.</description>
+   <guid>oai:arXiv.org:2507.08523v1</guid>
+   <category>cs.SE</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yilun Wang, Pengfei Chen, Haiyu Huang, Zilong He, Gou Tan, Chuanfu Zhang, Jingkai He, Zibin Zheng</creator>
+  </item>
+  <item>
+   <title>Compactor: Calibrated Query-Agnostic KV Cache Compression with Approximate Leverage Scores</title>
+   <link>https://arxiv.org/abs/2507.08143</link>
+   <description>Modern Large Language Models (LLMs) are increasingly trained to support very large context windows. Unfortunately the ability to use long contexts in generation is complicated by the large memory requirement of the KV cache, which scales linearly with the context length. This memory footprint is often the dominant resource bottleneck in real-world deployments, limiting throughput and increasing serving cost. One way to address this is by compressing the KV cache, which can be done either with knowledge of the question being asked (query-aware) or without knowledge of the query (query-agnostic). We present Compactor, a parameter-free, query-agnostic KV compression strategy that uses approximate leverage scores to determine token importance. We show that Compactor can achieve the same performance as competing methods while retaining 1/2 the tokens in both synthetic and real-world context tasks, with minimal computational overhead. We further introduce a procedure for context-calibrated compression, which allows one to infer the maximum compression ratio a given context can support. Using context-calibrated compression, we show that Compactor achieves full KV performance on Longbench while reducing the KV memory burden by 63%, on average. To demonstrate the efficacy and generalizability of our approach, we apply Compactor to 27 synthetic and real-world tasks from RULER and Longbench, with models from both the Qwen 2.5 and Llama 3.1 families.</description>
+   <guid>oai:arXiv.org:2507.08143v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Vivek Chari, Benjamin Van Durme</creator>
+  </item>
+  <item>
+   <title>What Factors Affect LLMs and RLLMs in Financial Question Answering?</title>
+   <link>https://arxiv.org/abs/2507.08339</link>
+   <description>Recently, the development of large language models (LLMs) and reasoning large language models (RLLMs) have gained considerable attention from many researchers. RLLMs enhance the reasoning capabilities of LLMs through Long Chain-of-Thought (Long CoT) processes, significantly improving the performance of LLMs in addressing complex problems. However, there are few works that systematically explore what methods can fully unlock the performance of LLMs and RLLMs within the financial domain. To investigate the impact of various methods on LLMs and RLLMs, we utilize five LLMs and three RLLMs to assess the effects of prompting methods, agentic frameworks, and multilingual alignment methods on financial question-answering tasks. Our research findings indicate: (1) Current prompting methods and agent frameworks enhance the performance of LLMs in financial question answering by simulating Long CoT; (2) RLLMs possess inherent Long CoT capabilities, which limits the effectiveness of conventional methods in further enhancing their performance; (3) Current advanced multilingual alignment methods primarily improve the multilingual performance of LLMs by extending the reasoning length, which yields minimal benefits for RLLMs. We hope that this study can serve as an important reference for LLMs and RLLMs in the field of financial question answering.</description>
+   <guid>oai:arXiv.org:2507.08339v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Peng Wang, Xuesi Hu, Jiageng Wu, Yuntao Zou, Qiancheng Zhang, Dagang Li</creator>
+  </item>
+  <item>
+   <title>A Survey of Large Language Models in Discipline-specific Research: Challenges, Methods and Opportunities</title>
+   <link>https://arxiv.org/abs/2507.08425</link>
+   <description>Large Language Models (LLMs) have demonstrated their transformative potential across numerous disciplinary studies, reshaping the existing research methodologies and fostering interdisciplinary collaboration. However, a systematic understanding of their integration into diverse disciplines remains underexplored. This survey paper provides a comprehensive overview of the application of LLMs in interdisciplinary studies, categorising research efforts from both a technical perspective and with regard to their applicability. From a technical standpoint, key methodologies such as supervised fine-tuning, retrieval-augmented generation, agent-based approaches, and tool-use integration are examined, which enhance the adaptability and effectiveness of LLMs in discipline-specific contexts. From the perspective of their applicability, this paper explores how LLMs are contributing to various disciplines including mathematics, physics, chemistry, biology, and the humanities and social sciences, demonstrating their role in discipline-specific tasks. The prevailing challenges are critically examined and the promising research directions are highlighted alongside the recent advances in LLMs. By providing a comprehensive overview of the technical developments and applications in this field, this survey aims to serve as an invaluable resource for the researchers who are navigating the complex landscape of LLMs in the context of interdisciplinary studies.</description>
+   <guid>oai:arXiv.org:2507.08425v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Lu Xiang, Yang Zhao, Yaping Zhang, Chengqing Zong</creator>
+  </item>
+  <item>
+   <title>Lightweight Safety Guardrails via Synthetic Data and RL-guided Adversarial Training</title>
+   <link>https://arxiv.org/abs/2507.08284</link>
+   <description>We introduce a lightweight yet highly effective safety guardrail framework for language models, demonstrating that small-scale language models can achieve, and even surpass, the performance of larger counterparts in content moderation tasks. This is accomplished through high-fidelity synthetic data generation and adversarial training. The synthetic data generation process begins with human-curated seed data, which undergoes query augmentation and paraphrasing to create diverse and contextually rich examples. This augmented data is then subjected to multiple rounds of curation, ensuring high fidelity and relevance. Inspired by recent advances in the Generative Adversarial Network (GAN) architecture, our adversarial training employs reinforcement learning to guide a generator that produces challenging synthetic examples. These examples are used to fine-tune the safety classifier, enhancing its ability to detect and mitigate harmful content. Additionally, we incorporate strategies from recent research on efficient LLM training, leveraging the capabilities of smaller models to improve the performance of larger generative models. With iterative adversarial training and the generation of diverse, high-quality synthetic data, our framework enables small language models (SLMs) to serve as robust safety guardrails. This approach not only reduces computational overhead but also enhances resilience against adversarial attacks, offering a scalable and efficient solution for content moderation in AI systems.</description>
+   <guid>oai:arXiv.org:2507.08284v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <pubdate>Mon, 14 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Aleksei Ilin, Gor Matevosyan, Xueying Ma, Vladimir Eremin, Suhaa Dada, Muqun Li, Riyaaz Shaik, Haluk Noyan Tokgozoglu</creator>
+  </item>
  </channel>
 </rss>
