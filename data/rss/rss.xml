@@ -6,8 +6,172 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 28 Jul 2025 03:41:16 </lastBuildDate>
+  <lastBuildDate>Mon, 28 Jul 2025 04:39:53 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 28 Jul 2025 03:41:16 </pubDate>
+  <pubDate>Mon, 28 Jul 2025 04:39:53 </pubDate>
+  <item>
+   <title>VGS-ATD: Robust Distributed Learning for Multi-Label Medical Image Classification Under Heterogeneous and Imbalanced Conditions</title>
+   <link>https://arxiv.org/abs/2507.18657</link>
+   <description>In recent years, advanced deep learning architectures have shown strong performance in medical imaging tasks. However, the traditional centralized learning paradigm poses serious privacy risks as all data is collected and trained on a single server. To mitigate this challenge, decentralized approaches such as federated learning and swarm learning have emerged, allowing model training on local nodes while sharing only model weights. While these methods enhance privacy, they struggle with heterogeneous and imbalanced data and suffer from inefficiencies due to frequent communication and the aggregation of weights. More critically, the dynamic and complex nature of clinical environments demands scalable AI systems capable of continuously learning from diverse modalities and multilabels. Yet, both centralized and decentralized models are prone to catastrophic forgetting during system expansion, often requiring full model retraining to incorporate new data. To address these limitations, we propose VGS-ATD, a novel distributed learning framework. To validate VGS-ATD, we evaluate it in experiments spanning 30 datasets and 80 independent labels across distributed nodes, VGS-ATD achieved an overall accuracy of 92.7%, outperforming centralized learning (84.9%) and swarm learning (72.99%), while federated learning failed under these conditions due to high requirements on computational resources. VGS-ATD also demonstrated strong scalability, with only a 1% drop in accuracy on existing nodes after expansion, compared to a 20% drop in centralized learning, highlighting its resilience to catastrophic forgetting. Additionally, it reduced computational costs by up to 50% relative to both centralized and swarm learning, confirming its superior efficiency and scalability.</description>
+   <guid>oai:arXiv.org:2507.18657v1</guid>
+   <category>cs.CV</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Zehui Zhao, Laith Alzubaidi, Haider A. Alwzwazy, Jinglan Zhang, Yuantong Gu</creator>
+  </item>
+  <item>
+   <title>A Survey of Multimodal Hallucination Evaluation and Detection</title>
+   <link>https://arxiv.org/abs/2507.19024</link>
+   <description>Multi-modal Large Language Models (MLLMs) have emerged as a powerful paradigm for integrating visual and textual information, supporting a wide range of multi-modal tasks. However, these models often suffer from hallucination, producing content that appears plausible but contradicts the input content or established world knowledge. This survey offers an in-depth review of hallucination evaluation benchmarks and detection methods across Image-to-Text (I2T) and Text-to-image (T2I) generation tasks. Specifically, we first propose a taxonomy of hallucination based on faithfulness and factuality, incorporating the common types of hallucinations observed in practice. Then we provide an overview of existing hallucination evaluation benchmarks for both T2I and I2T tasks, highlighting their construction process, evaluation objectives, and employed metrics. Furthermore, we summarize recent advances in hallucination detection methods, which aims to identify hallucinated content at the instance level and serve as a practical complement of benchmark-based evaluation. Finally, we highlight key limitations in current benchmarks and detection methods, and outline potential directions for future research.</description>
+   <guid>oai:arXiv.org:2507.19024v1</guid>
+   <category>cs.CV</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zhiyuan Chen (State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences, University of Chinese Academy of Sciences), Yuecong Min (State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences, University of Chinese Academy of Sciences), Jie Zhang (State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences, University of Chinese Academy of Sciences), Bei Yan (State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences, University of Chinese Academy of Sciences), Jiahao Wang (Trustworthy Technology and Engineering Laboratory, Huawei), Xiaozhen Wang (Trustworthy Technology and Engineering Laboratory, Huawei), Shiguang Shan (State Key Laboratory of AI Safety, Institute of Computing Technology, Chinese Academy of Sciences, University of Chinese Academy of Sciences)</creator>
+  </item>
+  <item>
+   <title>A New One-Shot Federated Learning Framework for Medical Imaging Classification with Feature-Guided Rectified Flow and Knowledge Distillation</title>
+   <link>https://arxiv.org/abs/2507.19045</link>
+   <description>In multi-center scenarios, One-Shot Federated Learning (OSFL) has attracted increasing attention due to its low communication overhead, requiring only a single round of transmission. However, existing generative model-based OSFL methods suffer from low training efficiency and potential privacy leakage in the healthcare domain. Additionally, achieving convergence within a single round of model aggregation is challenging under non-Independent and Identically Distributed (non-IID) data. To address these challenges, in this paper a modified OSFL framework is proposed, in which a new Feature-Guided Rectified Flow Model (FG-RF) and Dual-Layer Knowledge Distillation (DLKD) aggregation method are developed. FG-RF on the client side accelerates generative modeling in medical imaging scenarios while preserving privacy by synthesizing feature-level images rather than pixel-level images. To handle non-IID distributions, DLKD enables the global student model to simultaneously mimic the output logits and align the intermediate-layer features of client-side teacher models during aggregation. Experimental results on three non-IID medical imaging datasets show that our new framework and method outperform multi-round federated learning approaches, achieving up to 21.73% improvement, and exceeds the baseline FedISCA by an average of 21.75%. Furthermore, our experiments demonstrate that feature-level synthetic images significantly reduce privacy leakage risks compared to pixel-level synthetic images.</description>
+   <guid>oai:arXiv.org:2507.19045v1</guid>
+   <category>cs.CV</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yufei Ma, Hanwen Zhang, Qiya Yang, Guibo Luo, Yuesheng Zhu</creator>
+  </item>
+  <item>
+   <title>FedVSR: Towards Model-Agnostic Federated Learning in Video Super-Resolution</title>
+   <link>https://arxiv.org/abs/2503.13745</link>
+   <description>Video super-resolution aims to enhance low-resolution videos by leveraging both spatial and temporal information. While deep learning has led to impressive progress, it typically requires centralized data, which raises privacy concerns. Federated learning offers a privacy-friendly solution, but general FL frameworks often struggle with low-level vision tasks, resulting in blurry, low-quality outputs. To address this, we introduce FedVSR, the first FL framework specifically designed for VSR. It is model-agnostic and stateless, and introduces a lightweight loss function based on the DWT to better preserve high-frequency details during local training. Additionally, a loss-aware aggregation strategy combines both DWT-based and task-specific losses to guide global updates effectively. Extensive experiments across multiple VSR models and datasets demonstrate that FedVSR consistently outperforms existing FL methods, achieving up to 0.82 dB higher PSNR, 0.0327 higher SSIM, and 0.0251 lower LPIPS. These results underscore FedVSR's ability to bridge the gap between privacy and performance, setting a new benchmark for federated learning in low-level vision tasks. The code is available at: https://github.com/alimd94/FedVSR</description>
+   <guid>oai:arXiv.org:2503.13745v2</guid>
+   <category>cs.CV</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ali Mollaahmadi Dehaghi, Hossein KhademSohi, Reza Razavi, Steve Drew, Mohammad Moshirpour</creator>
+  </item>
+  <item>
+   <title>Adapting to Fragmented and Evolving Data: A Fisher Information Perspective</title>
+   <link>https://arxiv.org/abs/2507.18996</link>
+   <description>Modern machine learning systems operating in dynamic environments often face \textit{sequential covariate shift} (SCS), where input distributions evolve over time while the conditional distribution remains stable. We introduce FADE (Fisher-based Adaptation to Dynamic Environments), a lightweight and theoretically grounded framework for robust learning under SCS. FADE employs a shift-aware regularization mechanism anchored in Fisher information geometry, guiding adaptation by modulating parameter updates based on sensitivity and stability. To detect significant distribution changes, we propose a Cramer-Rao-informed shift signal that integrates KL divergence with temporal Fisher dynamics. Unlike prior methods requiring task boundaries, target supervision, or experience replay, FADE operates online with fixed memory and no access to target labels. Evaluated on seven benchmarks spanning vision, language, and tabular data, FADE achieves up to 19\% higher accuracy under severe shifts, outperforming methods such as TENT and DIW. FADE also generalizes naturally to federated learning by treating heterogeneous clients as temporally fragmented environments, enabling scalable and stable adaptation in decentralized settings. Theoretical analysis guarantees bounded regret and parameter consistency, while empirical results demonstrate FADE's robustness across modalities and shift intensities.</description>
+   <guid>oai:arXiv.org:2507.18996v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Behraj Khan, Tahir Qasim Syed, Nouman Muhammad Durrani</creator>
+  </item>
+  <item>
+   <title>Toward Super Agent System with Hybrid AI Routers</title>
+   <link>https://arxiv.org/abs/2504.10519</link>
+   <description>AI Agents powered by Large Language Models are transforming the world through enormous applications. A super agent has the potential to fulfill diverse user needs, such as summarization, coding, and research, by accurately understanding user intent and leveraging the appropriate tools to solve tasks. However, to make such an agent viable for real-world deployment and accessible at scale, significant optimizations are required to ensure high efficiency and low cost. This position paper presents a design of the Super Agent System powered by the hybrid AI routers. Upon receiving a user prompt, the system first detects the intent of the user, then routes the request to specialized task agents with the necessary tools or automatically generates agentic workflows. In practice, most applications directly serve as AI assistants on edge devices such as phones and robots. As different language models vary in capability and cloud-based models often entail high computational costs, latency, and privacy concerns, we then explore the hybrid mode where the router dynamically selects between local and cloud models based on task complexity. Finally, we introduce the blueprint of an on-device super agent enhanced with cloud. With advances in multi-modality models and edge hardware, we envision that most computations can be handled locally, with cloud collaboration only as needed. Such architecture paves the way for super agents to be seamlessly integrated into everyday life in the near future.</description>
+   <guid>oai:arXiv.org:2504.10519v2</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.LG</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuhang Yao, Haixin Wang, Yibo Chen, Jiawen Wang, Min Chang Jordan Ren, Bosheng Ding, Salman Avestimehr, Chaoyang He</creator>
+  </item>
+  <item>
+   <title>Voice-based AI Agents: Filling the Economic Gaps in Digital Health Delivery</title>
+   <link>https://arxiv.org/abs/2507.16229</link>
+   <description>The integration of voice-based AI agents in healthcare presents a transformative opportunity to bridge economic and accessibility gaps in digital health delivery. This paper explores the role of large language model (LLM)-powered voice assistants in enhancing preventive care and continuous patient monitoring, particularly in underserved populations. Drawing insights from the development and pilot study of Agent PULSE (Patient Understanding and Liaison Support Engine) -- a collaborative initiative between IBM Research, Cleveland Clinic Foundation, and Morehouse School of Medicine -- we present an economic model demonstrating how AI agents can provide cost-effective healthcare services where human intervention is economically unfeasible. Our pilot study with 33 inflammatory bowel disease patients revealed that 70\% expressed acceptance of AI-driven monitoring, with 37\% preferring it over traditional modalities. Technical challenges, including real-time conversational AI processing, integration with healthcare systems, and privacy compliance, are analyzed alongside policy considerations surrounding regulation, bias mitigation, and patient autonomy. Our findings suggest that AI-driven voice agents not only enhance healthcare scalability and efficiency but also improve patient engagement and accessibility. For healthcare executives, our cost-utility analysis demonstrates huge potential savings for routine monitoring tasks, while technologists can leverage our framework to prioritize improvements yielding the highest patient impact. By addressing current limitations and aligning AI development with ethical and regulatory frameworks, voice-based AI agents can serve as a critical entry point for equitable, sustainable digital healthcare solutions.</description>
+   <guid>oai:arXiv.org:2507.16229v1</guid>
+   <category>cs.AI</category>
+   <category>cs.CY</category>
+   <category>cs.ET</category>
+   <category>cs.HC</category>
+   <category>cs.SE</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Bo Wen, Chen Wang, Qiwei Han, Raquel Norel, Julia Liu, Thaddeus Stappenbeck, Jeffrey L. Rogers</creator>
+  </item>
+  <item>
+   <title>A New One-Shot Federated Learning Framework for Medical Imaging Classification with Feature-Guided Rectified Flow and Knowledge Distillation</title>
+   <link>https://arxiv.org/abs/2507.19045</link>
+   <description>In multi-center scenarios, One-Shot Federated Learning (OSFL) has attracted increasing attention due to its low communication overhead, requiring only a single round of transmission. However, existing generative model-based OSFL methods suffer from low training efficiency and potential privacy leakage in the healthcare domain. Additionally, achieving convergence within a single round of model aggregation is challenging under non-Independent and Identically Distributed (non-IID) data. To address these challenges, in this paper a modified OSFL framework is proposed, in which a new Feature-Guided Rectified Flow Model (FG-RF) and Dual-Layer Knowledge Distillation (DLKD) aggregation method are developed. FG-RF on the client side accelerates generative modeling in medical imaging scenarios while preserving privacy by synthesizing feature-level images rather than pixel-level images. To handle non-IID distributions, DLKD enables the global student model to simultaneously mimic the output logits and align the intermediate-layer features of client-side teacher models during aggregation. Experimental results on three non-IID medical imaging datasets show that our new framework and method outperform multi-round federated learning approaches, achieving up to 21.73% improvement, and exceeds the baseline FedISCA by an average of 21.75%. Furthermore, our experiments demonstrate that feature-level synthetic images significantly reduce privacy leakage risks compared to pixel-level synthetic images.</description>
+   <guid>oai:arXiv.org:2507.19045v1</guid>
+   <category>cs.CV</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yufei Ma, Hanwen Zhang, Qiya Yang, Guibo Luo, Yuesheng Zhu</creator>
+  </item>
+  <item>
+   <title>FedVSR: Towards Model-Agnostic Federated Learning in Video Super-Resolution</title>
+   <link>https://arxiv.org/abs/2503.13745</link>
+   <description>Video super-resolution aims to enhance low-resolution videos by leveraging both spatial and temporal information. While deep learning has led to impressive progress, it typically requires centralized data, which raises privacy concerns. Federated learning offers a privacy-friendly solution, but general FL frameworks often struggle with low-level vision tasks, resulting in blurry, low-quality outputs. To address this, we introduce FedVSR, the first FL framework specifically designed for VSR. It is model-agnostic and stateless, and introduces a lightweight loss function based on the DWT to better preserve high-frequency details during local training. Additionally, a loss-aware aggregation strategy combines both DWT-based and task-specific losses to guide global updates effectively. Extensive experiments across multiple VSR models and datasets demonstrate that FedVSR consistently outperforms existing FL methods, achieving up to 0.82 dB higher PSNR, 0.0327 higher SSIM, and 0.0251 lower LPIPS. These results underscore FedVSR's ability to bridge the gap between privacy and performance, setting a new benchmark for federated learning in low-level vision tasks. The code is available at: https://github.com/alimd94/FedVSR</description>
+   <guid>oai:arXiv.org:2503.13745v2</guid>
+   <category>cs.CV</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ali Mollaahmadi Dehaghi, Hossein KhademSohi, Reza Razavi, Steve Drew, Mohammad Moshirpour</creator>
+  </item>
+  <item>
+   <title>Toward Super Agent System with Hybrid AI Routers</title>
+   <link>https://arxiv.org/abs/2504.10519</link>
+   <description>AI Agents powered by Large Language Models are transforming the world through enormous applications. A super agent has the potential to fulfill diverse user needs, such as summarization, coding, and research, by accurately understanding user intent and leveraging the appropriate tools to solve tasks. However, to make such an agent viable for real-world deployment and accessible at scale, significant optimizations are required to ensure high efficiency and low cost. This position paper presents a design of the Super Agent System powered by the hybrid AI routers. Upon receiving a user prompt, the system first detects the intent of the user, then routes the request to specialized task agents with the necessary tools or automatically generates agentic workflows. In practice, most applications directly serve as AI assistants on edge devices such as phones and robots. As different language models vary in capability and cloud-based models often entail high computational costs, latency, and privacy concerns, we then explore the hybrid mode where the router dynamically selects between local and cloud models based on task complexity. Finally, we introduce the blueprint of an on-device super agent enhanced with cloud. With advances in multi-modality models and edge hardware, we envision that most computations can be handled locally, with cloud collaboration only as needed. Such architecture paves the way for super agents to be seamlessly integrated into everyday life in the near future.</description>
+   <guid>oai:arXiv.org:2504.10519v2</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.LG</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuhang Yao, Haixin Wang, Yibo Chen, Jiawen Wang, Min Chang Jordan Ren, Bosheng Ding, Salman Avestimehr, Chaoyang He</creator>
+  </item>
+  <item>
+   <title>A3D-MoE: Acceleration of Large Language Models with Mixture of Experts via 3D Heterogeneous Integration</title>
+   <link>https://arxiv.org/abs/2507.19142</link>
+   <description>Conventional large language models (LLMs) are equipped with dozens of GB to TB of model parameters, making inference highly energy-intensive and costly as all the weights need to be loaded to onboard processing elements during computation. Recently, the Mixture-of-Experts (MoE) architecture has emerged as an efficient alternative, promising efficient inference with less activated weights per token. Nevertheless, fine-grained MoE-based LLMs face several challenges: 1) Variable workloads during runtime create arbitrary GEMV-GEMM ratios that reduce hardware utilization, 2) Traditional MoE-based scheduling for LLM serving cannot fuse attention operations with MoE operations, leading to increased latency and decreased hardware utilization, and 3) Despite being more efficient than conventional LLMs, loading experts from DRAM still consumes significant energy and requires substantial DRAM bandwidth. Addressing these challenges, we propose: 1) A3D-MoE, a 3D Heterogeneous Integration system that employs state-of-the-art vertical integration technology to significantly enhance memory bandwidth while reducing Network-on-Chip (NoC) overhead and energy consumption. 2) A 3D-Adaptive GEMV-GEMM-ratio systolic array with V-Cache efficient data reuse and a novel unified 3D dataflow to solve the problem of reduced hardware utilization caused by arbitrary GEMV-GEMM ratios from different workloads, 3) A Hardware resource-aware operation fusion scheduler that fuses attention operations with MoE operations to enhance hardware performance, and 4) MoE Score-Aware HBM access reduction with even-odd expert placement that reduces DRAM access and bandwidth requirements. Our evaluation results indicate that A3D-MoE delivers significant performance enhancements, reducing latency by a factor of 1.8x to 2x and energy consumption by 2x to 4x, while improving throughput by 1.44x to 1.8x compared to the state-of-the-art.</description>
+   <guid>oai:arXiv.org:2507.19142v1</guid>
+   <category>cs.AR</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Wei-Hsing Huang (Celine), Janak Sharda (Celine), Cheng-Jhih Shih (Celine), Yuyao Kong (Celine), Faaiq Waqar (Celine), Pin-Jun Chen (Celine),  Yingyan (Celine),  Lin, Shimeng Yu</creator>
+  </item>
+  <item>
+   <title>Toward Super Agent System with Hybrid AI Routers</title>
+   <link>https://arxiv.org/abs/2504.10519</link>
+   <description>AI Agents powered by Large Language Models are transforming the world through enormous applications. A super agent has the potential to fulfill diverse user needs, such as summarization, coding, and research, by accurately understanding user intent and leveraging the appropriate tools to solve tasks. However, to make such an agent viable for real-world deployment and accessible at scale, significant optimizations are required to ensure high efficiency and low cost. This position paper presents a design of the Super Agent System powered by the hybrid AI routers. Upon receiving a user prompt, the system first detects the intent of the user, then routes the request to specialized task agents with the necessary tools or automatically generates agentic workflows. In practice, most applications directly serve as AI assistants on edge devices such as phones and robots. As different language models vary in capability and cloud-based models often entail high computational costs, latency, and privacy concerns, we then explore the hybrid mode where the router dynamically selects between local and cloud models based on task complexity. Finally, we introduce the blueprint of an on-device super agent enhanced with cloud. With advances in multi-modality models and edge hardware, we envision that most computations can be handled locally, with cloud collaboration only as needed. Such architecture paves the way for super agents to be seamlessly integrated into everyday life in the near future.</description>
+   <guid>oai:arXiv.org:2504.10519v2</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.LG</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuhang Yao, Haixin Wang, Yibo Chen, Jiawen Wang, Min Chang Jordan Ren, Bosheng Ding, Salman Avestimehr, Chaoyang He</creator>
+  </item>
+  <item>
+   <title>Toward Super Agent System with Hybrid AI Routers</title>
+   <link>https://arxiv.org/abs/2504.10519</link>
+   <description>AI Agents powered by Large Language Models are transforming the world through enormous applications. A super agent has the potential to fulfill diverse user needs, such as summarization, coding, and research, by accurately understanding user intent and leveraging the appropriate tools to solve tasks. However, to make such an agent viable for real-world deployment and accessible at scale, significant optimizations are required to ensure high efficiency and low cost. This position paper presents a design of the Super Agent System powered by the hybrid AI routers. Upon receiving a user prompt, the system first detects the intent of the user, then routes the request to specialized task agents with the necessary tools or automatically generates agentic workflows. In practice, most applications directly serve as AI assistants on edge devices such as phones and robots. As different language models vary in capability and cloud-based models often entail high computational costs, latency, and privacy concerns, we then explore the hybrid mode where the router dynamically selects between local and cloud models based on task complexity. Finally, we introduce the blueprint of an on-device super agent enhanced with cloud. With advances in multi-modality models and edge hardware, we envision that most computations can be handled locally, with cloud collaboration only as needed. Such architecture paves the way for super agents to be seamlessly integrated into everyday life in the near future.</description>
+   <guid>oai:arXiv.org:2504.10519v2</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.LG</category>
+   <category>cs.MA</category>
+   <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuhang Yao, Haixin Wang, Yibo Chen, Jiawen Wang, Min Chang Jordan Ren, Bosheng Ding, Salman Avestimehr, Chaoyang He</creator>
+  </item>
  </channel>
 </rss>
