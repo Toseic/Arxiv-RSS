@@ -6,14 +6,14 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 28 Jul 2025 04:39:53 </lastBuildDate>
+  <lastBuildDate>Tue, 29 Jul 2025 03:44:32 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 28 Jul 2025 04:39:53 </pubDate>
+  <pubDate>Tue, 29 Jul 2025 03:44:32 </pubDate>
   <item>
    <title>VGS-ATD: Robust Distributed Learning for Multi-Label Medical Image Classification Under Heterogeneous and Imbalanced Conditions</title>
    <link>https://arxiv.org/abs/2507.18657</link>
    <description>In recent years, advanced deep learning architectures have shown strong performance in medical imaging tasks. However, the traditional centralized learning paradigm poses serious privacy risks as all data is collected and trained on a single server. To mitigate this challenge, decentralized approaches such as federated learning and swarm learning have emerged, allowing model training on local nodes while sharing only model weights. While these methods enhance privacy, they struggle with heterogeneous and imbalanced data and suffer from inefficiencies due to frequent communication and the aggregation of weights. More critically, the dynamic and complex nature of clinical environments demands scalable AI systems capable of continuously learning from diverse modalities and multilabels. Yet, both centralized and decentralized models are prone to catastrophic forgetting during system expansion, often requiring full model retraining to incorporate new data. To address these limitations, we propose VGS-ATD, a novel distributed learning framework. To validate VGS-ATD, we evaluate it in experiments spanning 30 datasets and 80 independent labels across distributed nodes, VGS-ATD achieved an overall accuracy of 92.7%, outperforming centralized learning (84.9%) and swarm learning (72.99%), while federated learning failed under these conditions due to high requirements on computational resources. VGS-ATD also demonstrated strong scalability, with only a 1% drop in accuracy on existing nodes after expansion, compared to a 20% drop in centralized learning, highlighting its resilience to catastrophic forgetting. Additionally, it reduced computational costs by up to 50% relative to both centralized and swarm learning, confirming its superior efficiency and scalability.</description>
-   <guid>oai:arXiv.org:2507.18657v1</guid>
+   <guid>oai:arXiv.org:2507.18657v2</guid>
    <category>cs.CV</category>
    <category>cs.CR</category>
    <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
@@ -62,6 +62,7 @@
    <description>Modern machine learning systems operating in dynamic environments often face \textit{sequential covariate shift} (SCS), where input distributions evolve over time while the conditional distribution remains stable. We introduce FADE (Fisher-based Adaptation to Dynamic Environments), a lightweight and theoretically grounded framework for robust learning under SCS. FADE employs a shift-aware regularization mechanism anchored in Fisher information geometry, guiding adaptation by modulating parameter updates based on sensitivity and stability. To detect significant distribution changes, we propose a Cramer-Rao-informed shift signal that integrates KL divergence with temporal Fisher dynamics. Unlike prior methods requiring task boundaries, target supervision, or experience replay, FADE operates online with fixed memory and no access to target labels. Evaluated on seven benchmarks spanning vision, language, and tabular data, FADE achieves up to 19\% higher accuracy under severe shifts, outperforming methods such as TENT and DIW. FADE also generalizes naturally to federated learning by treating heterogeneous clients as temporally fragmented environments, enabling scalable and stable adaptation in decentralized settings. Theoretical analysis guarantees bounded regret and parameter consistency, while empirical results demonstrate FADE's robustness across modalities and shift intensities.</description>
    <guid>oai:arXiv.org:2507.18996v1</guid>
    <category>cs.LG</category>
+   <category>stat.ML</category>
    <pubdate>Mon, 28 Jul 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
