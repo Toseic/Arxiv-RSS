@@ -6,8 +6,406 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 04 Aug 2025 03:50:52 </lastBuildDate>
+  <lastBuildDate>Mon, 04 Aug 2025 04:51:45 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 04 Aug 2025 03:50:52 </pubDate>
+  <pubDate>Mon, 04 Aug 2025 04:51:45 </pubDate>
+  <item>
+   <title>Instruction-Grounded Visual Projectors for Continual Learning of Generative Vision-Language Models</title>
+   <link>https://arxiv.org/abs/2508.00260</link>
+   <description>Continual learning enables pre-trained generative vision-language models (VLMs) to incorporate knowledge from new tasks without retraining data from previous ones. Recent methods update a visual projector to translate visual information for new tasks, connecting pre-trained vision encoders with large language models. However, such adjustments may cause the models to prioritize visual inputs over language instructions, particularly learning tasks with repetitive types of textual instructions. To address the neglect of language instructions, we propose a novel framework that grounds the translation of visual information on instructions for language models. We introduce a mixture of visual projectors, each serving as a specialized visual-to-language translation expert based on the given instruction context to adapt to new tasks. To avoid using experts for irrelevant instruction contexts, we propose an expert recommendation strategy that reuses experts for tasks similar to those previously learned. Additionally, we introduce expert pruning to alleviate interference from the use of experts that cumulatively activated in previous tasks. Extensive experiments on diverse vision-language tasks demonstrate that our method outperforms existing continual learning approaches by generating instruction-following responses.</description>
+   <guid>oai:arXiv.org:2508.00260v1</guid>
+   <category>cs.CV</category>
+   <category>cs.MM</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Hyundong Jin, Hyung Jin Chang, Eunwoo Kim</creator>
+  </item>
+  <item>
+   <title>Session-Based Recommendation with Validated and Enriched LLM Intents</title>
+   <link>https://arxiv.org/abs/2508.00570</link>
+   <description>Session-based recommendation (SBR) aims to predict the next item for an anonymous user in a timely manner. However, SBR suffers from data sparsity due to the short and anonymous nature of sessions. Recently, an emerging line of work has explored inferring the underlying user intents of a session using large language models (LLMs), with the generated intents serving as auxiliary training signals to enhance SBR models. Despite its promise, this approach faces three key challenges: validating intent quality, incorporating session-level multi-intents, and complementing inevitable LLM failure cases. In this paper, we propose VELI4SBR, a two-stage framework that leverages Validated and Enriched LLM-generated Intents for SBR. In the first stage, we generate high-quality intents using a predict-and-correct loop that validates the informativeness of LLM-generated intents with a global intent pool to constrain the LLM's output space and reduce hallucination. In the second stage, we enhance the SBR model using the generated intents through a lightweight multi-intent prediction and fusion mechanism. Furthermore, we introduce a training strategy that compensates for LLM failures by inferring intents from inter-session behavioral similarities. Extensive experiments show that VELI4SBR outperforms state-of-the-art baselines while improving explainability.</description>
+   <guid>oai:arXiv.org:2508.00570v1</guid>
+   <category>cs.IR</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Gyuseok Lee, Yaokun Liu, Yifan Liu, Susik Yoon, Dong Wang, SeongKu Kang</creator>
+  </item>
+  <item>
+   <title>Instruction-Grounded Visual Projectors for Continual Learning of Generative Vision-Language Models</title>
+   <link>https://arxiv.org/abs/2508.00260</link>
+   <description>Continual learning enables pre-trained generative vision-language models (VLMs) to incorporate knowledge from new tasks without retraining data from previous ones. Recent methods update a visual projector to translate visual information for new tasks, connecting pre-trained vision encoders with large language models. However, such adjustments may cause the models to prioritize visual inputs over language instructions, particularly learning tasks with repetitive types of textual instructions. To address the neglect of language instructions, we propose a novel framework that grounds the translation of visual information on instructions for language models. We introduce a mixture of visual projectors, each serving as a specialized visual-to-language translation expert based on the given instruction context to adapt to new tasks. To avoid using experts for irrelevant instruction contexts, we propose an expert recommendation strategy that reuses experts for tasks similar to those previously learned. Additionally, we introduce expert pruning to alleviate interference from the use of experts that cumulatively activated in previous tasks. Extensive experiments on diverse vision-language tasks demonstrate that our method outperforms existing continual learning approaches by generating instruction-following responses.</description>
+   <guid>oai:arXiv.org:2508.00260v1</guid>
+   <category>cs.CV</category>
+   <category>cs.MM</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Hyundong Jin, Hyung Jin Chang, Eunwoo Kim</creator>
+  </item>
+  <item>
+   <title>Privacy-Preserving Driver Drowsiness Detection with Spatial Self-Attention and Federated Learning</title>
+   <link>https://arxiv.org/abs/2508.00287</link>
+   <description>Driver drowsiness is one of the main causes of road accidents and is recognized as a leading contributor to traffic-related fatalities. However, detecting drowsiness accurately remains a challenging task, especially in real-world settings where facial data from different individuals is decentralized and highly diverse. In this paper, we propose a novel framework for drowsiness detection that is designed to work effectively with heterogeneous and decentralized data. Our approach develops a new Spatial Self-Attention (SSA) mechanism integrated with a Long Short-Term Memory (LSTM) network to better extract key facial features and improve detection performance. To support federated learning, we employ a Gradient Similarity Comparison (GSC) that selects the most relevant trained models from different operators before aggregation. This improves the accuracy and robustness of the global model while preserving user privacy. We also develop a customized tool that automatically processes video data by extracting frames, detecting and cropping faces, and applying data augmentation techniques such as rotation, flipping, brightness adjustment, and zooming. Experimental results show that our framework achieves a detection accuracy of 89.9% in the federated learning settings, outperforming existing methods under various deployment scenarios. The results demonstrate the effectiveness of our approach in handling real-world data variability and highlight its potential for deployment in intelligent transportation systems to enhance road safety through early and reliable drowsiness detection.</description>
+   <guid>oai:arXiv.org:2508.00287v1</guid>
+   <category>cs.CV</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Tran Viet Khoa, Do Hai Son, Mohammad Abu Alsheikh, Yibeltal F Alem, Dinh Thai Hoang</creator>
+  </item>
+  <item>
+   <title>Gradient Leakage Defense with Key-Lock Module for Federated Learning</title>
+   <link>https://arxiv.org/abs/2305.04095</link>
+   <description>Federated Learning (FL) is a widely adopted privacy-preserving machine learning approach where private data remains local, enabling secure computations and the exchange of local model gradients between local clients and third-party parameter servers. However, recent findings reveal that privacy may be compromised and sensitive information potentially recovered from shared gradients. In this study, we offer detailed analysis and a novel perspective on understanding the gradient leakage problem. These theoretical works lead to a new gradient leakage defense technique that secures arbitrary model architectures using a private key-lock module. Only the locked gradient is transmitted to the parameter server for global model aggregation. Our proposed learning method is resistant to gradient leakage attacks, and the key-lock module is designed and trained to ensure that, without the private information of the key-lock module: a) reconstructing private training data from the shared gradient is infeasible; and b) the global model's inference performance is significantly compromised. We discuss the theoretical underpinnings of why gradients can leak private information and provide theoretical proof of our method's effectiveness. We conducted extensive empirical evaluations with many models on several popular benchmarks, demonstrating the robustness of our proposed approach in both maintaining model performance and defending against gradient leakage attacks.</description>
+   <guid>oai:arXiv.org:2305.04095v3</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Hanchi Ren, Jingjing Deng, Xianghua Xie</creator>
+  </item>
+  <item>
+   <title>Navigating Distribution Shifts in Medical Image Analysis: A Survey</title>
+   <link>https://arxiv.org/abs/2411.05824</link>
+   <description>Medical Image Analysis (MedIA) has become indispensable in modern healthcare, enhancing clinical diagnostics and personalized treatment. Despite the remarkable advancements supported by deep learning (DL) technologies, their practical deployment faces challenges due to distribution shifts, where models trained on specific datasets underperform across others from varying hospitals, regions, or patient populations. To navigate this issue, researchers have been actively developing strategies to increase the adaptability and robustness of DL models, enabling their effective use in unfamiliar and diverse environments. This paper systematically reviews approaches that apply DL techniques to MedIA systems affected by distribution shifts. Unlike traditional categorizations based on technical specifications, our approach is grounded in the real-world operational constraints faced by healthcare institutions. Specifically, we categorize the existing body of work into Joint Training, Federated Learning, Fine-tuning, and Domain Generalization, with each method tailored to distinct scenarios caused by Data Accessibility, Privacy Concerns, and Collaborative Protocols. This perspective equips researchers with a nuanced understanding of how DL can be strategically deployed to address distribution shifts in MedIA, ensuring diverse and robust medical applications. By delving deeper into these topics, we highlight potential pathways for future research that not only address existing limitations but also push the boundaries of deployable MedIA technologies.</description>
+   <guid>oai:arXiv.org:2411.05824v2</guid>
+   <category>eess.IV</category>
+   <category>cs.CV</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zixian Su, Jingwei Guo, Xi Yang, Qiufeng Wang, Frans Coenen, Kaizhu Huang</creator>
+  </item>
+  <item>
+   <title>Information-Theoretic Decentralized Secure Aggregation with Collusion Resilience</title>
+   <link>https://arxiv.org/abs/2508.00596</link>
+   <description>In decentralized federated learning (FL), multiple clients collaboratively learn a shared machine learning (ML) model by leveraging their privately held datasets distributed across the network, through interactive exchange of the intermediate model updates. To ensure data security, cryptographic techniques are commonly employed to protect model updates during aggregation. Despite growing interest in secure aggregation, existing works predominantly focus on protocol design and computational guarantees, with limited understanding of the fundamental information-theoretic limits of such systems. Moreover, optimal bounds on communication and key usage remain unknown in decentralized settings, where no central aggregator is available. Motivated by these gaps, we study the problem of decentralized secure aggregation (DSA) from an information-theoretic perspective. Specifically, we consider a network of $K$ fully-connected users, each holding a private input -- an abstraction of local training data -- who aim to securely compute the sum of all inputs. The security constraint requires that no user learns anything beyond the input sum, even when colluding with up to $T$ other users. We characterize the optimal rate region, which specifies the minimum achievable communication and secret key rates for DSA. In particular, we show that to securely compute one symbol of the desired input sum, each user must (i) transmit at least one symbol to others, (ii) hold at least one symbol of secret key, and (iii) all users must collectively hold no fewer than $K - 1$ independent key symbols. Our results establish the fundamental performance limits of DSA, providing insights for the design of provably secure and communication-efficient protocols in distributed learning systems.</description>
+   <guid>oai:arXiv.org:2508.00596v1</guid>
+   <category>cs.IT</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xiang Zhang, Zhou Li, Shuangyang Li, Kai Wan, Derrick Wing Kwan Ng, Giuseppe Caire</creator>
+  </item>
+  <item>
+   <title>Gradient Leakage Defense with Key-Lock Module for Federated Learning</title>
+   <link>https://arxiv.org/abs/2305.04095</link>
+   <description>Federated Learning (FL) is a widely adopted privacy-preserving machine learning approach where private data remains local, enabling secure computations and the exchange of local model gradients between local clients and third-party parameter servers. However, recent findings reveal that privacy may be compromised and sensitive information potentially recovered from shared gradients. In this study, we offer detailed analysis and a novel perspective on understanding the gradient leakage problem. These theoretical works lead to a new gradient leakage defense technique that secures arbitrary model architectures using a private key-lock module. Only the locked gradient is transmitted to the parameter server for global model aggregation. Our proposed learning method is resistant to gradient leakage attacks, and the key-lock module is designed and trained to ensure that, without the private information of the key-lock module: a) reconstructing private training data from the shared gradient is infeasible; and b) the global model's inference performance is significantly compromised. We discuss the theoretical underpinnings of why gradients can leak private information and provide theoretical proof of our method's effectiveness. We conducted extensive empirical evaluations with many models on several popular benchmarks, demonstrating the robustness of our proposed approach in both maintaining model performance and defending against gradient leakage attacks.</description>
+   <guid>oai:arXiv.org:2305.04095v3</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Hanchi Ren, Jingjing Deng, Xianghua Xie</creator>
+  </item>
+  <item>
+   <title>Federated Time Series Generation on Feature and Temporally Misaligned Data</title>
+   <link>https://arxiv.org/abs/2410.21072</link>
+   <description>Distributed time series data presents a challenge for federated learning, as clients often possess different feature sets and have misaligned time steps. Existing federated time series models are limited by the assumption of perfect temporal or feature alignment across clients. In this paper, we propose FedTDD, a novel federated time series diffusion model that jointly learns a synthesizer across clients. At the core of FedTDD is a novel data distillation and aggregation framework that reconciles the differences between clients by imputing the misaligned timesteps and features. In contrast to traditional federated learning, FedTDD learns the correlation across clients' time series through the exchange of local synthetic outputs instead of model parameters. A coordinator iteratively improves a global distiller network by leveraging shared knowledge from clients through the exchange of synthetic data. As the distiller becomes more refined over time, it subsequently enhances the quality of the clients' local feature estimates, allowing each client to then improve its local imputations for missing data using the latest, more accurate distiller. Experimental results on five datasets demonstrate FedTDD's effectiveness compared to centralized training, and the effectiveness of sharing synthetic outputs to transfer knowledge of local time series. Notably, FedTDD achieves 79.4% and 62.8% improvement over local training in Context-FID and Correlational scores.</description>
+   <guid>oai:arXiv.org:2410.21072v2</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhi Wen Soi, Chenrui Fan, Aditya Shankar, Abele M\u{a}lan, Lydia Y. Chen</creator>
+  </item>
+  <item>
+   <title>How to Evaluate Participant Contributions in Decentralized Federated Learning</title>
+   <link>https://arxiv.org/abs/2505.23246</link>
+   <description>Federated learning (FL) enables multiple clients to collaboratively train machine learning models without sharing local data. In particular, decentralized FL (DFL), where clients exchange models without a central server, has gained attention for mitigating communication bottlenecks. Evaluating participant contributions is crucial in DFL to incentivize active participation and enhance transparency. However, existing contribution evaluation methods for FL assume centralized settings and cannot be applied directly to DFL due to two challenges: the inaccessibility of each client to non-neighboring clients' models, and the necessity to trace how contributions propagate in conjunction with peer-to-peer model exchanges over time. To address these challenges, we propose TRIP-Shapley, a novel contribution evaluation method for DFL. TRIP-Shapley formulates the clients' overall contributions by tracing the propagation of the round-wise local contributions. In this way, TRIP-Shapley accurately reflects the delayed and gradual influence propagation, as well as allowing a lightweight coordinator node to estimate the overall contributions without collecting models, but based solely on locally observable contributions reported by each client. Experiments demonstrate that TRIP-Shapley is sufficiently close to the ground-truth Shapley value, is scalable to large-scale scenarios, and remains robust in the presence of dishonest clients.</description>
+   <guid>oai:arXiv.org:2505.23246v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Honoka Anada, Tatsuya Kaneko, Shinya Takamaeda-Yamazaki</creator>
+  </item>
+  <item>
+   <title>Efficient Federated Learning with Encrypted Data Sharing for Data-Heterogeneous Edge Devices</title>
+   <link>https://arxiv.org/abs/2506.20644</link>
+   <description>As privacy protection gains increasing importance, more models are being trained on edge devices and subsequently merged into the central server through Federated Learning (FL). However, current research overlooks the impact of network topology, physical distance, and data heterogeneity on edge devices, leading to issues such as increased latency and degraded model performance. To address these issues, we propose a new federated learning scheme on edge devices that called Federated Learning with Encrypted Data Sharing(FedEDS). FedEDS uses the client model and the model's stochastic layer to train the data encryptor. The data encryptor generates encrypted data and shares it with other clients. The client uses the corresponding client's stochastic layer and encrypted data to train and adjust the local model. FedEDS uses the client's local private data and encrypted shared data from other clients to train the model. This approach accelerates the convergence speed of federated learning training and mitigates the negative impact of data heterogeneity, making it suitable for application services deployed on edge devices requiring rapid convergence. Experiments results show the efficacy of FedEDS in promoting model performance.</description>
+   <guid>oai:arXiv.org:2506.20644v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Hangyu Li, Hongyue Wu, Guodong Fan, Zhen Zhang, Shizhan Chen, Zhiyong Feng</creator>
+  </item>
+  <item>
+   <title>Navigating Distribution Shifts in Medical Image Analysis: A Survey</title>
+   <link>https://arxiv.org/abs/2411.05824</link>
+   <description>Medical Image Analysis (MedIA) has become indispensable in modern healthcare, enhancing clinical diagnostics and personalized treatment. Despite the remarkable advancements supported by deep learning (DL) technologies, their practical deployment faces challenges due to distribution shifts, where models trained on specific datasets underperform across others from varying hospitals, regions, or patient populations. To navigate this issue, researchers have been actively developing strategies to increase the adaptability and robustness of DL models, enabling their effective use in unfamiliar and diverse environments. This paper systematically reviews approaches that apply DL techniques to MedIA systems affected by distribution shifts. Unlike traditional categorizations based on technical specifications, our approach is grounded in the real-world operational constraints faced by healthcare institutions. Specifically, we categorize the existing body of work into Joint Training, Federated Learning, Fine-tuning, and Domain Generalization, with each method tailored to distinct scenarios caused by Data Accessibility, Privacy Concerns, and Collaborative Protocols. This perspective equips researchers with a nuanced understanding of how DL can be strategically deployed to address distribution shifts in MedIA, ensuring diverse and robust medical applications. By delving deeper into these topics, we highlight potential pathways for future research that not only address existing limitations but also push the boundaries of deployable MedIA technologies.</description>
+   <guid>oai:arXiv.org:2411.05824v2</guid>
+   <category>eess.IV</category>
+   <category>cs.CV</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zixian Su, Jingwei Guo, Xi Yang, Qiufeng Wang, Frans Coenen, Kaizhu Huang</creator>
+  </item>
+  <item>
+   <title>ExclaveFL: Providing Transparency to Federated Learning using Exclaves</title>
+   <link>https://arxiv.org/abs/2412.10537</link>
+   <description>In federated learning (FL), data providers jointly train a model without disclosing their training data. Despite its inherent privacy benefits, a malicious data provider can simply deviate from the correct training protocol without being detected, potentially compromising the trained model. While current solutions have explored the use of trusted execution environments (TEEs) to combat such attacks, they usually assume side-channel attacks against the TEEs are out of scope. However, such side-channel attacks can undermine the security properties of TEE-based FL frameworks, not by extracting the FL data, but by leaking keys that allow the adversary to impersonate as the TEE whilst deviating arbitrarily from the correct training protocol.
+  We describe ExclaveFL, an FL platform that provides end-to-end integrity and transparency, even in the presence of side-channel attacks on TEEs. We propose a new paradigm in which existing TEEs are used as exclaves -- integrity-protected execution environments that do not contain any secrets, making them immune to side-channel attacks. Whereas previous approaches attest the TEE itself and bind this attestation to a key held by the TEE, ExclaveFL attests individual data transformations at runtime. These runtime attestations form an attested dataflow graph, which can be checked to ensure the FL training job satisfies claims, such as deviations from the correct computation. We implement ExclaveFL by extending the popular NVFlare FL framework to use exclaves, and show experimentally that ExclaveFL introduces less than 10% overhead compared to the same FL framework without TEEs, whilst providing stronger security guarantees.</description>
+   <guid>oai:arXiv.org:2412.10537v2</guid>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jinnan Guo, Kapil Vaswani, Andrew Paverd, Peter Pietzuch</creator>
+  </item>
+  <item>
+   <title>Are Sparse Autoencoders Useful for Java Function Bug Detection?</title>
+   <link>https://arxiv.org/abs/2505.10375</link>
+   <description>Software vulnerabilities such as buffer overflows and SQL injections are a major source of security breaches. Traditional methods for vulnerability detection remain essential but are limited by high false positive rates, scalability issues, and reliance on manual effort. These constraints have driven interest in AI-based approaches to automated vulnerability detection and secure code generation. While Large Language Models (LLMs) have opened new avenues for classification tasks, their complexity and opacity pose challenges for interpretability and deployment. Sparse Autoencoder offer a promising solution to this problem. We explore whether SAEs can serve as a lightweight, interpretable alternative for bug detection in Java functions. We evaluate the effectiveness of SAEs when applied to representations from GPT-2 Small and Gemma 2B, examining their capacity to highlight buggy behaviour without fine-tuning the underlying LLMs. We found that SAE-derived features enable bug detection with an F1 score of up to 89%, consistently outperforming fine-tuned transformer encoder baselines. Our work provides the first empirical evidence that SAEs can be used to detect software bugs directly from the internal representations of pretrained LLMs, without any fine-tuning or task-specific supervision. Code available at https://github.com/rufimelo99/SAE-Java-Bug-Detection</description>
+   <guid>oai:arXiv.org:2505.10375v3</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Rui Melo, Claudia Mamede, Andre Catarino, Rui Abreu, Henrique Lopes Cardoso</creator>
+  </item>
+  <item>
+   <title>Integrated user scheduling and beam steering in over-the-air federated learning for mobile IoT</title>
+   <link>https://arxiv.org/abs/2508.00341</link>
+   <description>The rising popularity of Internet of things (IoT) has spurred technological advancements in mobile internet and interconnected systems. While offering flexible connectivity and intelligent applications across various domains, IoT service providers must gather vast amounts of sensitive data from users, which nonetheless concomitantly raises concerns about privacy breaches. Federated learning (FL) has emerged as a promising decentralized training paradigm to tackle this challenge. This work focuses on enhancing the aggregation efficiency of distributed local models by introducing over-the-air computation into the FL framework. Due to radio resource scarcity in large-scale networks, only a subset of users can participate in each training round. This highlights the need for effective user scheduling and model transmission strategies to optimize communication efficiency and inference accuracy. To address this, we propose an integrated approach to user scheduling and receive beam steering, subject to constraints on the number of selected users and transmit power. Leveraging the difference-of-convex technique, we decompose the primal non-convex optimization problem into two sub-problems, yielding an iterative solution. While effective, the computational load of the iterative method hampers its practical implementation. To overcome this, we further propose a low-complexity user scheduling policy based on characteristic analysis of the wireless channel to directly determine the user subset without iteration. Extensive experiments validate the superiority of the proposed method in terms of aggregation error and learning performance over existing approaches.</description>
+   <guid>oai:arXiv.org:2508.00341v1</guid>
+   <category>cs.DC</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Shengheng Liu, Ningning Fu, Zhonghao Zhang, Yongming Huang, Tony Q. S. Quek</creator>
+  </item>
+  <item>
+   <title>Information-Theoretic Decentralized Secure Aggregation with Collusion Resilience</title>
+   <link>https://arxiv.org/abs/2508.00596</link>
+   <description>In decentralized federated learning (FL), multiple clients collaboratively learn a shared machine learning (ML) model by leveraging their privately held datasets distributed across the network, through interactive exchange of the intermediate model updates. To ensure data security, cryptographic techniques are commonly employed to protect model updates during aggregation. Despite growing interest in secure aggregation, existing works predominantly focus on protocol design and computational guarantees, with limited understanding of the fundamental information-theoretic limits of such systems. Moreover, optimal bounds on communication and key usage remain unknown in decentralized settings, where no central aggregator is available. Motivated by these gaps, we study the problem of decentralized secure aggregation (DSA) from an information-theoretic perspective. Specifically, we consider a network of $K$ fully-connected users, each holding a private input -- an abstraction of local training data -- who aim to securely compute the sum of all inputs. The security constraint requires that no user learns anything beyond the input sum, even when colluding with up to $T$ other users. We characterize the optimal rate region, which specifies the minimum achievable communication and secret key rates for DSA. In particular, we show that to securely compute one symbol of the desired input sum, each user must (i) transmit at least one symbol to others, (ii) hold at least one symbol of secret key, and (iii) all users must collectively hold no fewer than $K - 1$ independent key symbols. Our results establish the fundamental performance limits of DSA, providing insights for the design of provably secure and communication-efficient protocols in distributed learning systems.</description>
+   <guid>oai:arXiv.org:2508.00596v1</guid>
+   <category>cs.IT</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xiang Zhang, Zhou Li, Shuangyang Li, Kai Wan, Derrick Wing Kwan Ng, Giuseppe Caire</creator>
+  </item>
+  <item>
+   <title>FedGuard: A Diverse-Byzantine-Robust Mechanism for Federated Learning with Major Malicious Clients</title>
+   <link>https://arxiv.org/abs/2508.00636</link>
+   <description>Federated learning is a distributed training framework vulnerable to Byzantine attacks, particularly when over 50% of clients are malicious or when datasets are highly non-independent and identically distributed (non-IID). Additionally, most existing defense mechanisms are designed for specific attack types (e.g., gradient similarity-based schemes can only defend against outlier model poisoning), limiting their effectiveness. In response, we propose FedGuard, a novel federated learning mechanism. FedGuard cleverly addresses the aforementioned issues by leveraging the high sensitivity of membership inference to model bias. By requiring clients to include an additional mini-batch of server-specified data in their training, FedGuard can identify and exclude poisoned models, as their confidence in the mini-batch will drop significantly. Our comprehensive evaluation unequivocally shows that, under three highly non-IID datasets, with 90% of clients being Byzantine and seven different types of Byzantine attacks occurring in each round, FedGuard significantly outperforms existing robust federated learning schemes in mitigating various types of Byzantine attacks.</description>
+   <guid>oai:arXiv.org:2508.00636v1</guid>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Haocheng Jiang, Hua Shen, Jixin Zhang, Willy Susilo, Mingwu Zhang</creator>
+  </item>
+  <item>
+   <title>Federated Time Series Generation on Feature and Temporally Misaligned Data</title>
+   <link>https://arxiv.org/abs/2410.21072</link>
+   <description>Distributed time series data presents a challenge for federated learning, as clients often possess different feature sets and have misaligned time steps. Existing federated time series models are limited by the assumption of perfect temporal or feature alignment across clients. In this paper, we propose FedTDD, a novel federated time series diffusion model that jointly learns a synthesizer across clients. At the core of FedTDD is a novel data distillation and aggregation framework that reconciles the differences between clients by imputing the misaligned timesteps and features. In contrast to traditional federated learning, FedTDD learns the correlation across clients' time series through the exchange of local synthetic outputs instead of model parameters. A coordinator iteratively improves a global distiller network by leveraging shared knowledge from clients through the exchange of synthetic data. As the distiller becomes more refined over time, it subsequently enhances the quality of the clients' local feature estimates, allowing each client to then improve its local imputations for missing data using the latest, more accurate distiller. Experimental results on five datasets demonstrate FedTDD's effectiveness compared to centralized training, and the effectiveness of sharing synthetic outputs to transfer knowledge of local time series. Notably, FedTDD achieves 79.4% and 62.8% improvement over local training in Context-FID and Correlational scores.</description>
+   <guid>oai:arXiv.org:2410.21072v2</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhi Wen Soi, Chenrui Fan, Aditya Shankar, Abele M\u{a}lan, Lydia Y. Chen</creator>
+  </item>
+  <item>
+   <title>ExclaveFL: Providing Transparency to Federated Learning using Exclaves</title>
+   <link>https://arxiv.org/abs/2412.10537</link>
+   <description>In federated learning (FL), data providers jointly train a model without disclosing their training data. Despite its inherent privacy benefits, a malicious data provider can simply deviate from the correct training protocol without being detected, potentially compromising the trained model. While current solutions have explored the use of trusted execution environments (TEEs) to combat such attacks, they usually assume side-channel attacks against the TEEs are out of scope. However, such side-channel attacks can undermine the security properties of TEE-based FL frameworks, not by extracting the FL data, but by leaking keys that allow the adversary to impersonate as the TEE whilst deviating arbitrarily from the correct training protocol.
+  We describe ExclaveFL, an FL platform that provides end-to-end integrity and transparency, even in the presence of side-channel attacks on TEEs. We propose a new paradigm in which existing TEEs are used as exclaves -- integrity-protected execution environments that do not contain any secrets, making them immune to side-channel attacks. Whereas previous approaches attest the TEE itself and bind this attestation to a key held by the TEE, ExclaveFL attests individual data transformations at runtime. These runtime attestations form an attested dataflow graph, which can be checked to ensure the FL training job satisfies claims, such as deviations from the correct computation. We implement ExclaveFL by extending the popular NVFlare FL framework to use exclaves, and show experimentally that ExclaveFL introduces less than 10% overhead compared to the same FL framework without TEEs, whilst providing stronger security guarantees.</description>
+   <guid>oai:arXiv.org:2412.10537v2</guid>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jinnan Guo, Kapil Vaswani, Andrew Paverd, Peter Pietzuch</creator>
+  </item>
+  <item>
+   <title>SynAdapt: Learning Adaptive Reasoning in Large Language Models via Synthetic Continuous Chain-of-Thought</title>
+   <link>https://arxiv.org/abs/2508.00574</link>
+   <description>While Chain-of-Thought (CoT) reasoning improves model performance, it incurs significant time costs due to the generation of discrete CoT tokens (DCoT). Continuous CoT (CCoT) offers a more efficient alternative, but existing CCoT methods are hampered by indirect fine-tuning, limited alignment, or inconsistent targets. To overcome these limitations, we propose \textit{SynAdapt}, an innovative efficient reasoning framework. Specifically, \textit{SynAdapt} generates the synthetic CCoT to serve as a precise and effective alignment target for LLMs. This synthetic CCoT explicitly guides the LLM to learn CCoT and derive accurate answers directly. Furthermore, relying solely on CCoT is insufficient for solving hard questions. To address this, \textit{SynAdapt} integrates a difficulty classifier that leverages both question context and CCoT to identify hard questions. CCoT can effectively help identify hard questions after some brief reasoning. We then adaptively prompt the LLM to re-think these hard questions for improved performance. Extensive experimental results across various benchmarks from different difficulty levels strongly demonstrate the effectiveness of our method, achieving the best accuracy-efficiency trade-off.</description>
+   <guid>oai:arXiv.org:2508.00574v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jianwei Wang, Ziming Wu, Fuming Lai, Shaobing Lian, Ziqian Zeng</creator>
+  </item>
+  <item>
+   <title>Federated Cross-Training Learners for Robust Generalization under Data Heterogeneity</title>
+   <link>https://arxiv.org/abs/2405.20046</link>
+   <description>Federated learning benefits from cross-training strategies, which enables models to train on data from distinct sources to improve generalization capability. However, due to inherent differences in data distributions, the optimization goals of local models remain misaligned, and this mismatch continues to manifest as feature space heterogeneity even after cross-training. We argue that knowledge distillation from the personalized view preserves client-specific characteristics and expands the local knowledge base, while distillation from the global view provides consistent semantic anchors that facilitate feature alignment across clients. To achieve this goal, this paper presents a cross-training scheme, termed FedCT, includes three main modules, where the consistency-aware knowledge broadcasting module aims to optimize model assignment strategies, which enhances collaborative advantages between clients and achieves an efficient federated learning process. The multi-view knowledge-guided representation learning module leverages fused prototypical knowledge from both global and local views to enhance the preservation of local knowledge before and after model exchange, as well as to ensure consistency between local and global knowledge. The mixup-based feature augmentation module aggregates rich information to further increase the diversity of feature spaces, which enables the model to better discriminate complex samples. Extensive experiments were conducted on four datasets in terms of performance comparison, ablation study, in-depth analysis and case study. The results demonstrated that FedCT alleviates knowledge forgetting from both local and global views, which enables it outperform state-of-the-art methods.</description>
+   <guid>oai:arXiv.org:2405.20046v2</guid>
+   <category>cs.AI</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zhuang Qi, Lei Meng, Ruohan Zhang, Yu Wang, Xin Qi, Xiangxu Meng, Han Yu, Qiang Yang</creator>
+  </item>
+  <item>
+   <title>Gradient Leakage Defense with Key-Lock Module for Federated Learning</title>
+   <link>https://arxiv.org/abs/2305.04095</link>
+   <description>Federated Learning (FL) is a widely adopted privacy-preserving machine learning approach where private data remains local, enabling secure computations and the exchange of local model gradients between local clients and third-party parameter servers. However, recent findings reveal that privacy may be compromised and sensitive information potentially recovered from shared gradients. In this study, we offer detailed analysis and a novel perspective on understanding the gradient leakage problem. These theoretical works lead to a new gradient leakage defense technique that secures arbitrary model architectures using a private key-lock module. Only the locked gradient is transmitted to the parameter server for global model aggregation. Our proposed learning method is resistant to gradient leakage attacks, and the key-lock module is designed and trained to ensure that, without the private information of the key-lock module: a) reconstructing private training data from the shared gradient is infeasible; and b) the global model's inference performance is significantly compromised. We discuss the theoretical underpinnings of why gradients can leak private information and provide theoretical proof of our method's effectiveness. We conducted extensive empirical evaluations with many models on several popular benchmarks, demonstrating the robustness of our proposed approach in both maintaining model performance and defending against gradient leakage attacks.</description>
+   <guid>oai:arXiv.org:2305.04095v3</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Hanchi Ren, Jingjing Deng, Xianghua Xie</creator>
+  </item>
+  <item>
+   <title>An Investigation into Value Misalignment in LLM-Generated Texts for Cultural Heritage</title>
+   <link>https://arxiv.org/abs/2501.02039</link>
+   <description>As Large Language Models (LLMs) become increasingly prevalent in tasks related to cultural heritage, such as generating descriptions of historical monuments, translating ancient texts, preserving oral traditions, and creating educational content, their ability to produce accurate and culturally aligned texts is being increasingly relied upon by users and researchers. However, cultural value misalignments may exist in generated texts, such as the misrepresentation of historical facts, the erosion of cultural identity, and the oversimplification of complex cultural narratives, which may lead to severe consequences. Therefore, investigating value misalignment in the context of LLM for cultural heritage is crucial for mitigating these risks, yet there has been a significant lack of systematic and comprehensive study and investigation in this area. To fill this gap, we systematically assess the reliability of LLMs in generating culturally aligned texts for cultural heritage-related tasks. We conduct a comprehensive evaluation by compiling an extensive set of 1066 query tasks covering 5 widely recognized categories with 17 aspects within the knowledge framework of cultural heritage across 5 open-source LLMs, and examine both the type and rate of cultural value misalignments in the generated texts. Using both automated and manual approaches, we effectively detect and analyze the cultural value misalignments in LLM-generated texts. Our findings are concerning: over 65% of the generated texts exhibit notable cultural misalignments, with certain tasks demonstrating almost complete misalignment with key cultural values. Beyond these findings, this paper introduces a benchmark dataset and a comprehensive evaluation workflow that can serve as a valuable resource for future research aimed at enhancing the cultural sensitivity and reliability of LLMs.</description>
+   <guid>oai:arXiv.org:2501.02039v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Fan Bu, Zheng Wang, Siyi Wang, Ziyao Liu</creator>
+  </item>
+  <item>
+   <title>Are Sparse Autoencoders Useful for Java Function Bug Detection?</title>
+   <link>https://arxiv.org/abs/2505.10375</link>
+   <description>Software vulnerabilities such as buffer overflows and SQL injections are a major source of security breaches. Traditional methods for vulnerability detection remain essential but are limited by high false positive rates, scalability issues, and reliance on manual effort. These constraints have driven interest in AI-based approaches to automated vulnerability detection and secure code generation. While Large Language Models (LLMs) have opened new avenues for classification tasks, their complexity and opacity pose challenges for interpretability and deployment. Sparse Autoencoder offer a promising solution to this problem. We explore whether SAEs can serve as a lightweight, interpretable alternative for bug detection in Java functions. We evaluate the effectiveness of SAEs when applied to representations from GPT-2 Small and Gemma 2B, examining their capacity to highlight buggy behaviour without fine-tuning the underlying LLMs. We found that SAE-derived features enable bug detection with an F1 score of up to 89%, consistently outperforming fine-tuned transformer encoder baselines. Our work provides the first empirical evidence that SAEs can be used to detect software bugs directly from the internal representations of pretrained LLMs, without any fine-tuning or task-specific supervision. Code available at https://github.com/rufimelo99/SAE-Java-Bug-Detection</description>
+   <guid>oai:arXiv.org:2505.10375v3</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Rui Melo, Claudia Mamede, Andre Catarino, Rui Abreu, Henrique Lopes Cardoso</creator>
+  </item>
+  <item>
+   <title>Theoretically Unmasking Inference Attacks Against LDP-Protected Clients in Federated Vision Models</title>
+   <link>https://arxiv.org/abs/2506.17292</link>
+   <description>Federated Learning enables collaborative learning among clients via a coordinating server while avoiding direct data sharing, offering a perceived solution to preserve privacy. However, recent studies on Membership Inference Attacks (MIAs) have challenged this notion, showing high success rates against unprotected training data. While local differential privacy (LDP) is widely regarded as a gold standard for privacy protection in data analysis, most studies on MIAs either neglect LDP or fail to provide theoretical guarantees for attack success rates against LDP-protected data. To address this gap, we derive theoretical lower bounds for the success rates of low-polynomial time MIAs that exploit vulnerabilities in fully connected or self-attention layers. We establish that even when data are protected by LDP, privacy risks persist, depending on the privacy budget. Practical evaluations on federated vision models confirm considerable privacy risks, revealing that the noise required to mitigate these attacks significantly degrades models' utility.</description>
+   <guid>oai:arXiv.org:2506.17292v2</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
+   <creator>Quan Nguyen, Minh N. Vu, Truc Nguyen, My T. Thai</creator>
+  </item>
+  <item>
+   <title>Emergent Semantics Beyond Token Embeddings: Transformer LMs with Frozen Visual Unicode Representations</title>
+   <link>https://arxiv.org/abs/2507.04886</link>
+   <description>Understanding the locus of semantic representation in large language models (LLMs) is crucial for interpretability and architectural innovation. The dominant paradigm posits that trainable input embeddings serve as foundational &quot;meaning vectors.&quot; This paper challenges that view. We construct Transformer models where the embedding layer is entirely frozen, with vectors derived not from data, but from the visual structure of Unicode glyphs. These non-semantic, precomputed visual embeddings are fixed throughout training. Our method is compatible with any tokenizer, including a novel Unicode-centric tokenizer we introduce to ensure universal text coverage. Despite the absence of trainable, semantically initialized embeddings, our models converge, generate coherent text, and, critically, outperform architecturally identical models with trainable embeddings on the MMLU reasoning benchmark. We attribute this to &quot;representational interference&quot; in conventional models, where the embedding layer is burdened with learning both structural and semantic features. Our results indicate that high-level semantics are not inherent to input embeddings but are an emergent property of the Transformer's compositional architecture and data scale. This reframes the role of embeddings from meaning containers to structural primitives. We release all code and models to foster further research.</description>
+   <guid>oai:arXiv.org:2507.04886v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>A. Bochkov</creator>
+  </item>
+  <item>
+   <title>Are Sparse Autoencoders Useful for Java Function Bug Detection?</title>
+   <link>https://arxiv.org/abs/2505.10375</link>
+   <description>Software vulnerabilities such as buffer overflows and SQL injections are a major source of security breaches. Traditional methods for vulnerability detection remain essential but are limited by high false positive rates, scalability issues, and reliance on manual effort. These constraints have driven interest in AI-based approaches to automated vulnerability detection and secure code generation. While Large Language Models (LLMs) have opened new avenues for classification tasks, their complexity and opacity pose challenges for interpretability and deployment. Sparse Autoencoder offer a promising solution to this problem. We explore whether SAEs can serve as a lightweight, interpretable alternative for bug detection in Java functions. We evaluate the effectiveness of SAEs when applied to representations from GPT-2 Small and Gemma 2B, examining their capacity to highlight buggy behaviour without fine-tuning the underlying LLMs. We found that SAE-derived features enable bug detection with an F1 score of up to 89%, consistently outperforming fine-tuned transformer encoder baselines. Our work provides the first empirical evidence that SAEs can be used to detect software bugs directly from the internal representations of pretrained LLMs, without any fine-tuning or task-specific supervision. Code available at https://github.com/rufimelo99/SAE-Java-Bug-Detection</description>
+   <guid>oai:arXiv.org:2505.10375v3</guid>
+   <category>cs.SE</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Rui Melo, Claudia Mamede, Andre Catarino, Rui Abreu, Henrique Lopes Cardoso</creator>
+  </item>
+  <item>
+   <title>Learning an Efficient Multi-Turn Dialogue Evaluator from Multiple Judges</title>
+   <link>https://arxiv.org/abs/2508.00454</link>
+   <description>Evaluating the conversational abilities of large language models (LLMs) remains a challenging task. Current mainstream approaches primarily rely on the ``LLM-as-a-judge&quot; paradigm, where an LLM is prompted to serve as an evaluator to assess dialogue quality. However, such methods often suffer from various biases, which undermine the reliability and consistency of the evaluation results. To mitigate these biases, recent methods employ multiple LLMs as judges and aggregate their judgments to select the optimal assessment. Although effective, this multi-judge approach incurs significant computational overhead during inference. In this paper, we propose an efficient multi-turn dialogue evaluator that captures the collective wisdom of multiple LLM judges by aggregating their preference knowledge into a single model. Our approach preserves the advantages of diverse multi-judge feedback while drastically reducing the evaluation cost, enabling fast and flexible dialogue quality assessment. Extensive experiments on seven single rating and pairwise comparison dialogue evaluation benchmarks demonstrate that our method outperforms existing baselines across diverse scenarios, showcasing its efficiency and robustness.</description>
+   <guid>oai:arXiv.org:2508.00454v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yuqi Tang, Kehua Feng, Yunfeng Wang, Zhiwen Chen, Chengfei Lv, Gang Yu, Qiang Zhang, Keyan Ding</creator>
+  </item>
+  <item>
+   <title>SynAdapt: Learning Adaptive Reasoning in Large Language Models via Synthetic Continuous Chain-of-Thought</title>
+   <link>https://arxiv.org/abs/2508.00574</link>
+   <description>While Chain-of-Thought (CoT) reasoning improves model performance, it incurs significant time costs due to the generation of discrete CoT tokens (DCoT). Continuous CoT (CCoT) offers a more efficient alternative, but existing CCoT methods are hampered by indirect fine-tuning, limited alignment, or inconsistent targets. To overcome these limitations, we propose \textit{SynAdapt}, an innovative efficient reasoning framework. Specifically, \textit{SynAdapt} generates the synthetic CCoT to serve as a precise and effective alignment target for LLMs. This synthetic CCoT explicitly guides the LLM to learn CCoT and derive accurate answers directly. Furthermore, relying solely on CCoT is insufficient for solving hard questions. To address this, \textit{SynAdapt} integrates a difficulty classifier that leverages both question context and CCoT to identify hard questions. CCoT can effectively help identify hard questions after some brief reasoning. We then adaptively prompt the LLM to re-think these hard questions for improved performance. Extensive experimental results across various benchmarks from different difficulty levels strongly demonstrate the effectiveness of our method, achieving the best accuracy-efficiency trade-off.</description>
+   <guid>oai:arXiv.org:2508.00574v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Jianwei Wang, Ziming Wu, Fuming Lai, Shaobing Lian, Ziqian Zeng</creator>
+  </item>
+  <item>
+   <title>An Investigation into Value Misalignment in LLM-Generated Texts for Cultural Heritage</title>
+   <link>https://arxiv.org/abs/2501.02039</link>
+   <description>As Large Language Models (LLMs) become increasingly prevalent in tasks related to cultural heritage, such as generating descriptions of historical monuments, translating ancient texts, preserving oral traditions, and creating educational content, their ability to produce accurate and culturally aligned texts is being increasingly relied upon by users and researchers. However, cultural value misalignments may exist in generated texts, such as the misrepresentation of historical facts, the erosion of cultural identity, and the oversimplification of complex cultural narratives, which may lead to severe consequences. Therefore, investigating value misalignment in the context of LLM for cultural heritage is crucial for mitigating these risks, yet there has been a significant lack of systematic and comprehensive study and investigation in this area. To fill this gap, we systematically assess the reliability of LLMs in generating culturally aligned texts for cultural heritage-related tasks. We conduct a comprehensive evaluation by compiling an extensive set of 1066 query tasks covering 5 widely recognized categories with 17 aspects within the knowledge framework of cultural heritage across 5 open-source LLMs, and examine both the type and rate of cultural value misalignments in the generated texts. Using both automated and manual approaches, we effectively detect and analyze the cultural value misalignments in LLM-generated texts. Our findings are concerning: over 65% of the generated texts exhibit notable cultural misalignments, with certain tasks demonstrating almost complete misalignment with key cultural values. Beyond these findings, this paper introduces a benchmark dataset and a comprehensive evaluation workflow that can serve as a valuable resource for future research aimed at enhancing the cultural sensitivity and reliability of LLMs.</description>
+   <guid>oai:arXiv.org:2501.02039v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Fan Bu, Zheng Wang, Siyi Wang, Ziyao Liu</creator>
+  </item>
+  <item>
+   <title>Emergent Semantics Beyond Token Embeddings: Transformer LMs with Frozen Visual Unicode Representations</title>
+   <link>https://arxiv.org/abs/2507.04886</link>
+   <description>Understanding the locus of semantic representation in large language models (LLMs) is crucial for interpretability and architectural innovation. The dominant paradigm posits that trainable input embeddings serve as foundational &quot;meaning vectors.&quot; This paper challenges that view. We construct Transformer models where the embedding layer is entirely frozen, with vectors derived not from data, but from the visual structure of Unicode glyphs. These non-semantic, precomputed visual embeddings are fixed throughout training. Our method is compatible with any tokenizer, including a novel Unicode-centric tokenizer we introduce to ensure universal text coverage. Despite the absence of trainable, semantically initialized embeddings, our models converge, generate coherent text, and, critically, outperform architecturally identical models with trainable embeddings on the MMLU reasoning benchmark. We attribute this to &quot;representational interference&quot; in conventional models, where the embedding layer is burdened with learning both structural and semantic features. Our results indicate that high-level semantics are not inherent to input embeddings but are an emergent property of the Transformer's compositional architecture and data scale. This reframes the role of embeddings from meaning containers to structural primitives. We release all code and models to foster further research.</description>
+   <guid>oai:arXiv.org:2507.04886v3</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>A. Bochkov</creator>
+  </item>
+  <item>
+   <title>Information-Theoretic Decentralized Secure Aggregation with Collusion Resilience</title>
+   <link>https://arxiv.org/abs/2508.00596</link>
+   <description>In decentralized federated learning (FL), multiple clients collaboratively learn a shared machine learning (ML) model by leveraging their privately held datasets distributed across the network, through interactive exchange of the intermediate model updates. To ensure data security, cryptographic techniques are commonly employed to protect model updates during aggregation. Despite growing interest in secure aggregation, existing works predominantly focus on protocol design and computational guarantees, with limited understanding of the fundamental information-theoretic limits of such systems. Moreover, optimal bounds on communication and key usage remain unknown in decentralized settings, where no central aggregator is available. Motivated by these gaps, we study the problem of decentralized secure aggregation (DSA) from an information-theoretic perspective. Specifically, we consider a network of $K$ fully-connected users, each holding a private input -- an abstraction of local training data -- who aim to securely compute the sum of all inputs. The security constraint requires that no user learns anything beyond the input sum, even when colluding with up to $T$ other users. We characterize the optimal rate region, which specifies the minimum achievable communication and secret key rates for DSA. In particular, we show that to securely compute one symbol of the desired input sum, each user must (i) transmit at least one symbol to others, (ii) hold at least one symbol of secret key, and (iii) all users must collectively hold no fewer than $K - 1$ independent key symbols. Our results establish the fundamental performance limits of DSA, providing insights for the design of provably secure and communication-efficient protocols in distributed learning systems.</description>
+   <guid>oai:arXiv.org:2508.00596v1</guid>
+   <category>cs.IT</category>
+   <category>cs.CR</category>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <category>math.IT</category>
+   <pubdate>Mon, 04 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xiang Zhang, Zhou Li, Shuangyang Li, Kai Wan, Derrick Wing Kwan Ng, Giuseppe Caire</creator>
+  </item>
  </channel>
 </rss>
