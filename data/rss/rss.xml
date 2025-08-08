@@ -6,206 +6,242 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Fri, 08 Aug 2025 03:30:11 </lastBuildDate>
+  <lastBuildDate>Fri, 08 Aug 2025 04:38:07 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Fri, 08 Aug 2025 03:30:11 </pubDate>
+  <pubDate>Fri, 08 Aug 2025 04:38:07 </pubDate>
   <item>
-   <title>Multi-Modal Multi-Task Federated Foundation Models for Next-Generation Extended Reality Systems: Towards Privacy-Preserving Distributed Intelligence in AR/VR/MR</title>
-   <link>https://arxiv.org/abs/2506.05683</link>
-   <description>Extended reality (XR) systems, which consist of virtual reality (VR), augmented reality (AR), and mixed reality (XR), offer a transformative interface for immersive, multi-modal, and embodied human-computer interaction. In this paper, we envision that multi-modal multi-task (M3T) federated foundation models (FedFMs) can offer transformative capabilities for XR systems through integrating the representational strength of M3T foundation models (FMs) with the privacy-preserving model training principles of federated learning (FL). We present a modular architecture for FedFMs, which entails different coordination paradigms for model training and aggregations. Central to our vision is the codification of XR challenges that affect the implementation of FedFMs under the SHIFT dimensions: (1) Sensor and modality diversity, (2) Hardware heterogeneity and system-level constraints, (3) Interactivity and embodied personalization, (4) Functional/task variability, and (5) Temporality and environmental variability. We illustrate the manifestation of these dimensions across a set of emerging and anticipated applications of XR systems. Finally, we propose evaluation metrics, dataset requirements, and design tradeoffs necessary for the development of resource-aware FedFMs in XR. This perspective aims to chart the technical and conceptual foundations for context-aware privacy-preserving intelligence in the next generation of XR systems.</description>
-   <guid>oai:arXiv.org:2506.05683v4</guid>
+   <title>Federated Continual Recommendation</title>
+   <link>https://arxiv.org/abs/2508.04792</link>
+   <description>The increasing emphasis on privacy in recommendation systems has led to the adoption of Federated Learning (FL) as a privacy-preserving solution, enabling collaborative training without sharing user data. While Federated Recommendation (FedRec) effectively protects privacy, existing methods struggle with non-stationary data streams, failing to maintain consistent recommendation quality over time. On the other hand, Continual Learning Recommendation (CLRec) methods address evolving user preferences but typically assume centralized data access, making them incompatible with FL constraints. To bridge this gap, we introduce Federated Continual Recommendation (FCRec), a novel task that integrates FedRec and CLRec, requiring models to learn from streaming data while preserving privacy. As a solution, we propose F3CRec, a framework designed to balance knowledge retention and adaptation under the strict constraints of FCRec. F3CRec introduces two key components: Adaptive Replay Memory on the client side, which selectively retains past preferences based on user-specific shifts, and Item-wise Temporal Mean on the server side, which integrates new knowledge while preserving prior information. Extensive experiments demonstrate that F3CRec outperforms existing approaches in maintaining recommendation quality over time in a federated environment.</description>
+   <guid>oai:arXiv.org:2508.04792v1</guid>
    <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CR</category>
-   <category>cs.MM</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Fardis Nadimi, Payam Abdisarabshali, Kasra Borazjani, Jacob Chakareski, Seyyedali Hosseinalipour</creator>
-  </item>
-  <item>
-   <title>TURA: Tool-Augmented Unified Retrieval Agent for AI Search</title>
-   <link>https://arxiv.org/abs/2508.04604</link>
-   <description>The advent of Large Language Models (LLMs) is transforming search engines into conversational AI search products, primarily using Retrieval-Augmented Generation (RAG) on web corpora. However, this paradigm has significant industrial limitations. Traditional RAG approaches struggle with real-time needs and structured queries that require accessing dynamically generated content like ticket availability or inventory. Limited to indexing static pages, search engines cannot perform the interactive queries needed for such time-sensitive data. Academic research has focused on optimizing RAG for static content, overlooking complex intents and the need for dynamic sources like databases and real-time APIs. To bridge this gap, we introduce TURA (Tool-Augmented Unified Retrieval Agent for AI Search), a novel three-stage framework that combines RAG with agentic tool-use to access both static content and dynamic, real-time information. TURA has three key components: an Intent-Aware Retrieval module to decompose queries and retrieve information sources encapsulated as Model Context Protocol (MCP) Servers, a DAG-based Task Planner that models task dependencies as a Directed Acyclic Graph (DAG) for optimal parallel execution, and a lightweight Distilled Agent Executor for efficient tool calling. TURA is the first architecture to systematically bridge the gap between static RAG and dynamic information sources for a world-class AI search product. Serving tens of millions of users, it leverages an agentic framework to deliver robust, real-time answers while meeting the low-latency demands of a large-scale industrial system.</description>
-   <guid>oai:arXiv.org:2508.04604v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
    <category>cs.IR</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhejun Zhao, Yuehu Dong, Alley Liu, Lixue Zheng, Pingsheng Liu, Dongdong Shen, Long Xia, Jiashu Zhao, Dawei Yin</creator>
-  </item>
-  <item>
-   <title>FLAT: Latent-Driven Arbitrary-Target Backdoor Attacks in Federated Learning</title>
-   <link>https://arxiv.org/abs/2508.04064</link>
-   <description>Federated learning (FL) is vulnerable to backdoor attacks, yet most existing methods are limited by fixed-pattern or single-target triggers, making them inflexible and easier to detect. We propose FLAT (FL Arbitrary-Target Attack), a novel backdoor attack that leverages a latent-driven conditional autoencoder to generate diverse, target-specific triggers as needed. By introducing a latent code, FLAT enables the creation of visually adaptive and highly variable triggers, allowing attackers to select arbitrary targets without retraining and to evade conventional detection mechanisms. Our approach unifies attack success, stealth, and diversity within a single framework, introducing a new level of flexibility and sophistication to backdoor attacks in FL. Extensive experiments show that FLAT achieves high attack success and remains robust against advanced FL defenses. These results highlight the urgent need for new defense strategies to address latent-driven, multi-target backdoor threats in federated settings.</description>
-   <guid>oai:arXiv.org:2508.04064v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Tuan Nguyen, Khoa D Doan, Kok-Seng Wong</creator>
+   <creator>Jaehyung Lim, Wonbin Kweon, Woojoo Kim, Junyoung Kim, Seongjin Choi, Dongha Kim, Hwanjo Yu</creator>
   </item>
   <item>
-   <title>Decoupled Contrastive Learning for Federated Learning</title>
-   <link>https://arxiv.org/abs/2508.04005</link>
-   <description>Federated learning is a distributed machine learning paradigm that allows multiple participants to train a shared model by exchanging model updates instead of their raw data. However, its performance is degraded compared to centralized approaches due to data heterogeneity across clients. While contrastive learning has emerged as a promising approach to mitigate this, our theoretical analysis reveals a fundamental conflict: its asymptotic assumptions of an infinite number of negative samples are violated in finite-sample regime of federated learning. To address this issue, we introduce Decoupled Contrastive Learning for Federated Learning (DCFL), a novel framework that decouples the existing contrastive loss into two objectives. Decoupling the loss into its alignment and uniformity components enables the independent calibration of the attraction and repulsion forces without relying on the asymptotic assumptions. This strategy provides a contrastive learning method suitable for federated learning environments where each client has a small amount of data. Our experimental results show that DCFL achieves stronger alignment between positive samples and greater uniformity between negative samples compared to existing contrastive learning methods. Furthermore, experimental results on standard benchmarks, including CIFAR-10, CIFAR-100, and Tiny-ImageNet, demonstrate that DCFL consistently outperforms state-of-the-art federated learning methods.</description>
-   <guid>oai:arXiv.org:2508.04005v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Hyungbin Kim, Incheol Baek, Yon Dohn Chung</creator>
-  </item>
-  <item>
-   <title>FeDaL: Federated Dataset Learning for Time Series Foundation Models</title>
-   <link>https://arxiv.org/abs/2508.04045</link>
-   <description>Dataset-wise heterogeneity introduces significant domain biases that fundamentally degrade generalization on Time Series Foundation Models (TSFMs), yet this challenge remains underexplored. This paper rethink the development of TSFMs using the paradigm of federated learning. We propose a novel Federated Dataset Learning (FeDaL) approach to tackle heterogeneous time series by learning dataset-agnostic temporal representations. Specifically, the distributed architecture of federated learning is a nature solution to decompose heterogeneous TS datasets into shared generalized knowledge and preserved personalized knowledge. Moreover, based on the TSFM architecture, FeDaL explicitly mitigates both local and global biases by adding two complementary mechanisms: Domain Bias Elimination (DBE) and Global Bias Elimination (GBE). FeDaL`s cross-dataset generalization has been extensively evaluated in real-world datasets spanning eight tasks, including both representation learning and downstream time series analysis, against 54 baselines. We further analyze federated scaling behavior, showing how data volume, client count, and join rate affect model performance under decentralization.</description>
-   <guid>oai:arXiv.org:2508.04045v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Shengchao Chen, Guodong Long, Jing Jiang</creator>
-  </item>
-  <item>
-   <title>FLAT: Latent-Driven Arbitrary-Target Backdoor Attacks in Federated Learning</title>
-   <link>https://arxiv.org/abs/2508.04064</link>
-   <description>Federated learning (FL) is vulnerable to backdoor attacks, yet most existing methods are limited by fixed-pattern or single-target triggers, making them inflexible and easier to detect. We propose FLAT (FL Arbitrary-Target Attack), a novel backdoor attack that leverages a latent-driven conditional autoencoder to generate diverse, target-specific triggers as needed. By introducing a latent code, FLAT enables the creation of visually adaptive and highly variable triggers, allowing attackers to select arbitrary targets without retraining and to evade conventional detection mechanisms. Our approach unifies attack success, stealth, and diversity within a single framework, introducing a new level of flexibility and sophistication to backdoor attacks in FL. Extensive experiments show that FLAT achieves high attack success and remains robust against advanced FL defenses. These results highlight the urgent need for new defense strategies to address latent-driven, multi-target backdoor threats in federated settings.</description>
-   <guid>oai:arXiv.org:2508.04064v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
+   <title>FedGIN: Federated Learning with Dynamic Global Intensity Non-linear Augmentation for Organ Segmentation using Multi-modal Images</title>
+   <link>https://arxiv.org/abs/2508.05137</link>
+   <description>Medical image segmentation plays a crucial role in AI-assisted diagnostics, surgical planning, and treatment monitoring. Accurate and robust segmentation models are essential for enabling reliable, data-driven clinical decision making across diverse imaging modalities. Given the inherent variability in image characteristics across modalities, developing a unified model capable of generalizing effectively to multiple modalities would be highly beneficial. This model could streamline clinical workflows and reduce the need for modality-specific training. However, real-world deployment faces major challenges, including data scarcity, domain shift between modalities (e.g., CT vs. MRI), and privacy restrictions that prevent data sharing. To address these issues, we propose FedGIN, a Federated Learning (FL) framework that enables multimodal organ segmentation without sharing raw patient data. Our method integrates a lightweight Global Intensity Non-linear (GIN) augmentation module that harmonizes modality-specific intensity distributions during local training. We evaluated FedGIN using two types of datasets: an imputed dataset and a complete dataset. In the limited dataset scenario, the model was initially trained using only MRI data, and CT data was added to assess its performance improvements. In the complete dataset scenario, both MRI and CT data were fully utilized for training on all clients. In the limited-data scenario, FedGIN achieved a 12 to 18% improvement in 3D Dice scores on MRI test cases compared to FL without GIN and consistently outperformed local baselines. In the complete dataset scenario, FedGIN demonstrated near-centralized performance, with a 30% Dice score improvement over the MRI-only baseline and a 10% improvement over the CT-only baseline, highlighting its strong cross-modality generalization under privacy constraints.</description>
+   <guid>oai:arXiv.org:2508.05137v1</guid>
    <category>cs.CV</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
+   <category>cs.AI</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Tuan Nguyen, Khoa D Doan, Kok-Seng Wong</creator>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sachin Dudda Nagaraju, Ashkan Moradi, Bendik Skarre Abrahamsen, Mattijs Elschot</creator>
   </item>
   <item>
-   <title>FlexQ: Efficient Post-training INT6 Quantization for LLM Serving via Algorithm-System Co-Design</title>
-   <link>https://arxiv.org/abs/2508.04405</link>
-   <description>Large Language Models (LLMs) demonstrate exceptional performance but entail significant memory and computational costs, restricting their practical deployment. While existing INT4/INT8 quantization reduces these costs, they often degrade accuracy or lack optimal efficiency. INT6 quantization offers a superior trade-off between model accuracy and inference efficiency, but lacks hardware support in modern GPUs, forcing emulation via higher-precision arithmetic units that limit acceleration.
-  In this paper, we propose FlexQ, a novel post-training INT6 quantization framework combining algorithmic innovation with system-level optimizations. FlexQ employs uniform 6-bit weight quantization across all layers, with adaptive retention of 8-bit activations in layers identified through layer-wise sensitivity analysis. To maximize hardware efficiency, we develop a specialized high-performance GPU kernel supporting matrix multiplication for W6A6 and W6A8 representations via Binary Tensor Core (BTC) equivalents, effectively bypassing the lack of native INT6 tensor cores. Evaluations on LLaMA models show FlexQ maintains near-FP16 accuracy, with perplexity increases of no more than 0.05. The proposed kernel achieves an average 1.39$\times$ speedup over ABQ-LLM on LLaMA-2-70B linear layers. End-to-end, FlexQ delivers 1.33$\times$ inference acceleration and 1.21$\times$ memory savings over SmoothQuant. Code is released at https://github.com/FlyFoxPlayer/FlexQ.</description>
-   <guid>oai:arXiv.org:2508.04405v1</guid>
-   <category>cs.LG</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
+   <title>MELLA: Bridging Linguistic Capability and Cultural Groundedness for Low-Resource Language MLLMs</title>
+   <link>https://arxiv.org/abs/2508.05502</link>
+   <description>Multimodal Large Language Models (MLLMs) have shown remarkable performance in high-resource languages. However, their effectiveness diminishes significantly in the contexts of low-resource languages. Current multilingual enhancement methods are often limited to text modality or rely solely on machine translation. While such approaches help models acquire basic linguistic capabilities and produce &quot;thin descriptions&quot;, they neglect the importance of multimodal informativeness and cultural groundedness, both of which are crucial for serving low-resource language users effectively. To bridge this gap, in this study, we identify two significant objectives for a truly effective MLLM in low-resource language settings, namely 1) linguistic capability and 2) cultural groundedness, placing special emphasis on cultural awareness. To achieve these dual objectives, we propose a dual-source strategy that guides the collection of data tailored to each goal, sourcing native web alt-text for culture and MLLM-generated captions for linguistics. As a concrete implementation, we introduce MELLA, a multimodal, multilingual dataset. Experiment results show that after fine-tuning on MELLA, there is a general performance improvement for the eight languages on various MLLM backbones, with models producing &quot;thick descriptions&quot;. We verify that the performance gains are from both cultural knowledge enhancement and linguistic capability enhancement. Our dataset can be found at https://opendatalab.com/applyMultilingualCorpus.</description>
+   <guid>oai:arXiv.org:2508.05502v1</guid>
+   <category>cs.CV</category>
+   <category>cs.CL</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Hao Zhang, Aining Jia, Weifeng Bu, Yushu Cai, Kai Sheng, Hao Chen, Xin He</creator>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yufei Gao, Jiaying Fei, Nuo Chen, Ruirui Chen, Guohang Yan, Yunshi Lan, Botian Shi</creator>
   </item>
   <item>
-   <title>FedHiP: Heterogeneity-Invariant Personalized Federated Learning Through Closed-Form Solutions</title>
-   <link>https://arxiv.org/abs/2508.04470</link>
-   <description>Lately, Personalized Federated Learning (PFL) has emerged as a prevalent paradigm to deliver personalized models by collaboratively training while simultaneously adapting to each client's local applications. Existing PFL methods typically face a significant challenge due to the ubiquitous data heterogeneity (i.e., non-IID data) across clients, which severely hinders convergence and degrades performance. We identify that the root issue lies in the long-standing reliance on gradient-based updates, which are inherently sensitive to non-IID data. To fundamentally address this issue and bridge the research gap, in this paper, we propose a Heterogeneity-invariant Personalized Federated learning scheme, named FedHiP, through analytical (i.e., closed-form) solutions to avoid gradient-based updates. Specifically, we exploit the trend of self-supervised pre-training, leveraging a foundation model as a frozen backbone for gradient-free feature extraction. Following the feature extractor, we further develop an analytic classifier for gradient-free training. To support both collective generalization and individual personalization, our FedHiP scheme incorporates three phases: analytic local training, analytic global aggregation, and analytic local personalization. The closed-form solutions of our FedHiP scheme enable its ideal property of heterogeneity invariance, meaning that each personalized model remains identical regardless of how non-IID the data are distributed across all other clients. Extensive experiments on benchmark datasets validate the superiority of our FedHiP scheme, outperforming the state-of-the-art baselines by at least 5.79%-20.97% in accuracy.</description>
-   <guid>oai:arXiv.org:2508.04470v1</guid>
+   <title>Don't Reach for the Stars: Rethinking Topology for Resilient Federated Learning</title>
+   <link>https://arxiv.org/abs/2508.05224</link>
+   <description>Federated learning (FL) enables collaborative model training across distributed clients while preserving data privacy by keeping data local. Traditional FL approaches rely on a centralized, star-shaped topology, where a central server aggregates model updates from clients. However, this architecture introduces several limitations, including a single point of failure, limited personalization, and poor robustness to distribution shifts or vulnerability to malfunctioning clients. Moreover, update selection in centralized FL often relies on low-level parameter differences, which can be unreliable when client data is not independent and identically distributed, and offer clients little control. In this work, we propose a decentralized, peer-to-peer (P2P) FL framework. It leverages the flexibility of the P2P topology to enable each client to identify and aggregate a personalized set of trustworthy and beneficial updates.This framework is the Local Inference Guided Aggregation for Heterogeneous Training Environments to Yield Enhancement Through Agreement and Regularization (LIGHTYEAR). Central to our method is an agreement score, computed on a local validation set, which quantifies the semantic alignment of incoming updates in the function space with respect to the clients reference model. Each client uses this score to select a tailored subset of updates and performs aggregation with a regularization term that further stabilizes the training. Our empirical evaluation across two datasets shows that the proposed approach consistently outperforms both centralized baselines and existing P2P methods in terms of client-level performance, particularly under adversarial and heterogeneous conditions.</description>
+   <guid>oai:arXiv.org:2508.05224v1</guid>
    <category>cs.LG</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jianheng Tang, Zhirui Yang, Jingchao Wang, Kejia Fan, Jinfeng Xu, Huiping Zhuang, Anfeng Liu, Houbing Herbert Song, Leye Wang, Yunhuai Liu</creator>
+   <category>cs.CV</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mirko Konstantin, Anirban Mukhopadhyay</creator>
   </item>
   <item>
-   <title>Channel-Independent Federated Traffic Prediction</title>
-   <link>https://arxiv.org/abs/2508.04517</link>
-   <description>In recent years, traffic prediction has achieved remarkable success and has become an integral component of intelligent transportation systems. However, traffic data is typically distributed among multiple data owners, and privacy constraints prevent the direct utilization of these isolated datasets for traffic prediction. Most existing federated traffic prediction methods focus on designing communication mechanisms that allow models to leverage information from other clients in order to improve prediction accuracy. Unfortunately, such approaches often incur substantial communication overhead, and the resulting transmission delays significantly slow down the training process. As the volume of traffic data continues to grow, this issue becomes increasingly critical, making the resource consumption of current methods unsustainable. To address this challenge, we propose a novel variable relationship modeling paradigm for federated traffic prediction, termed the Channel-Independent Paradigm(CIP). Unlike traditional approaches, CIP eliminates the need for inter-client communication by enabling each node to perform efficient and accurate predictions using only local information. Based on the CIP, we further develop Fed-CI, an efficient federated learning framework, allowing each client to process its own data independently while effectively mitigating the information loss caused by the lack of direct data sharing among clients. Fed-CI significantly reduces communication overhead, accelerates the training process, and achieves state-of-the-art performance while complying with privacy regulations. Extensive experiments on multiple real-world datasets demonstrate that Fed-CI consistently outperforms existing methods across all datasets and federated settings. It achieves improvements of 8%, 14%, and 16% in RMSE, MAE, and MAPE, respectively, while also substantially reducing communication costs.</description>
-   <guid>oai:arXiv.org:2508.04517v1</guid>
+   <title>X-VFL: A New Vertical Federated Learning Framework with Cross Completion and Decision Subspace Alignment</title>
+   <link>https://arxiv.org/abs/2508.05568</link>
+   <description>Vertical Federated Learning (VFL) enables collaborative learning by integrating disjoint feature subsets from multiple clients/parties. However, VFL typically faces two key challenges: i) the requirement for perfectly aligned data samples across all clients (missing features are not allowed); ii) the requirement for joint collaborative inference/prediction involving all clients (it does not support locally independent inference on a single client). To address these challenges, we propose X-VFL, a new VFL framework designed to deal with the non-aligned data samples with (partially) missing features and to support locally independent inference of new data samples for each client. In particular, we design two novel modules in X-VFL: Cross Completion (XCom) and Decision Subspace Alignment (DS-Align). XCom can complete/reconstruct missing features for non-aligned data samples by leveraging information from other clients. DS-Align aligns local features with completed and global features across all clients within the decision subspace, thus enabling locally independent inference at each client. Moreover, we provide convergence theorems for different algorithms used in training X-VFL, showing an $O(1/\sqrt{T})$ convergence rate for SGD-type algorithms and an $O(1/T)$ rate for PAGE-type algorithms, where $T$ denotes the number of training update steps. Extensive experiments on real-world datasets demonstrate that X-VFL significantly outperforms existing methods, e.g., achieving a 15% improvement in accuracy on the image CIFAR-10 dataset and a 43% improvement on the medical MIMIC-III dataset. These results validate the practical effectiveness and superiority of X-VFL, particularly in scenarios involving partially missing features and locally independent inference.</description>
+   <guid>oai:arXiv.org:2508.05568v1</guid>
    <category>cs.LG</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Mo Zhang, Xiaoyu Li, Bin Xu, Meng Chen, Yongshun Gong</creator>
-  </item>
-  <item>
-   <title>Evaluating Selective Encryption Against Gradient Inversion Attacks</title>
-   <link>https://arxiv.org/abs/2508.04155</link>
-   <description>Gradient inversion attacks pose significant privacy threats to distributed training frameworks such as federated learning, enabling malicious parties to reconstruct sensitive local training data from gradient communications between clients and an aggregation server during the aggregation process. While traditional encryption-based defenses, such as homomorphic encryption, offer strong privacy guarantees without compromising model utility, they often incur prohibitive computational overheads. To mitigate this, selective encryption has emerged as a promising approach, encrypting only a subset of gradient data based on the data's significance under a certain metric. However, there have been few systematic studies on how to specify this metric in practice. This paper systematically evaluates selective encryption methods with different significance metrics against state-of-the-art attacks. Our findings demonstrate the feasibility of selective encryption in reducing computational overhead while maintaining resilience against attacks. We propose a distance-based significance analysis framework that provides theoretical foundations for selecting critical gradient elements for encryption. Through extensive experiments on different model architectures (LeNet, CNN, BERT, GPT-2) and attack types, we identify gradient magnitude as a generally effective metric for protection against optimization-based gradient inversions. However, we also observe that no single selective encryption strategy is universally optimal across all attack scenarios, and we provide guidelines for choosing appropriate strategies for different model architectures and privacy requirements.</description>
-   <guid>oai:arXiv.org:2508.04155v1</guid>
-   <category>cs.CR</category>
-   <category>cs.LG</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
+   <category>cs.CV</category>
+   <category>cs.DC</category>
+   <category>math.OC</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Jiajun Gu, Yuhang Yao, Shuaiqi Wang, Carlee Joe-Wong</creator>
+   <creator>Qinghua Yao, Xiangrui Xu, Zhize Li</creator>
   </item>
   <item>
-   <title>Multi-Modal Multi-Task Federated Foundation Models for Next-Generation Extended Reality Systems: Towards Privacy-Preserving Distributed Intelligence in AR/VR/MR</title>
-   <link>https://arxiv.org/abs/2506.05683</link>
-   <description>Extended reality (XR) systems, which consist of virtual reality (VR), augmented reality (AR), and mixed reality (XR), offer a transformative interface for immersive, multi-modal, and embodied human-computer interaction. In this paper, we envision that multi-modal multi-task (M3T) federated foundation models (FedFMs) can offer transformative capabilities for XR systems through integrating the representational strength of M3T foundation models (FMs) with the privacy-preserving model training principles of federated learning (FL). We present a modular architecture for FedFMs, which entails different coordination paradigms for model training and aggregations. Central to our vision is the codification of XR challenges that affect the implementation of FedFMs under the SHIFT dimensions: (1) Sensor and modality diversity, (2) Hardware heterogeneity and system-level constraints, (3) Interactivity and embodied personalization, (4) Functional/task variability, and (5) Temporality and environmental variability. We illustrate the manifestation of these dimensions across a set of emerging and anticipated applications of XR systems. Finally, we propose evaluation metrics, dataset requirements, and design tradeoffs necessary for the development of resource-aware FedFMs in XR. This perspective aims to chart the technical and conceptual foundations for context-aware privacy-preserving intelligence in the next generation of XR systems.</description>
-   <guid>oai:arXiv.org:2506.05683v4</guid>
+   <title>Edge-Assisted Collaborative Fine-Tuning for Multi-User Personalized Artificial Intelligence Generated Content (AIGC)</title>
+   <link>https://arxiv.org/abs/2508.04745</link>
+   <description>Diffusion models (DMs) have emerged as powerful tools for high-quality content generation, yet their intensive computational requirements for inference pose challenges for resource-constrained edge devices. Cloud-based solutions aid in computation but often fall short in addressing privacy risks, personalization efficiency, and communication costs in multi-user edge-AIGC scenarios. To bridge this gap, we first analyze existing edge-AIGC applications in personalized content synthesis, revealing their limitations in efficiency and scalability. We then propose a novel cluster-aware hierarchical federated aggregation framework. Based on parameter-efficient local fine-tuning via Low-Rank Adaptation (LoRA), the framework first clusters clients based on the similarity of their uploaded task requirements, followed by an intra-cluster aggregation for enhanced personalization at the server-side. Subsequently, an inter-cluster knowledge interaction paradigm is implemented to enable hybrid-style content generation across diverse clusters.Building upon federated learning (FL) collaboration, our framework simultaneously trains personalized models for individual users at the devices and a shared global model enhanced with multiple LoRA adapters on the server,enabling efficient edge inference; meanwhile, all prompts for clustering and inference are encoded prior to transmission, thereby further mitigating the risk of plaintext leakage. Our evaluations demonstrate that the framework achieves accelerated convergence while maintaining practical viability for scalable multi-user personalized AIGC services under edge constraints.</description>
+   <guid>oai:arXiv.org:2508.04745v1</guid>
    <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CR</category>
-   <category>cs.MM</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Fardis Nadimi, Payam Abdisarabshali, Kasra Borazjani, Jacob Chakareski, Seyyedali Hosseinalipour</creator>
+   <creator>Nan Li, Wanting Yang, Marie Siew, Zehui Xiong, Binbin Chen, Shiwen Mao, Kwok-Yan Lam</creator>
   </item>
   <item>
-   <title>Heterogeneity-Oblivious Robust Federated Learning</title>
-   <link>https://arxiv.org/abs/2508.03579</link>
-   <description>Federated Learning (FL) remains highly vulnerable to poisoning attacks, especially under real-world hyper-heterogeneity, where clients differ significantly in data distributions, communication capabilities, and model architectures. Such heterogeneity not only undermines the effectiveness of aggregation strategies but also makes attacks more difficult to detect. Furthermore, high-dimensional models expand the attack surface. To address these challenges, we propose Horus, a heterogeneity-oblivious robust FL framework centered on low-rank adaptations (LoRAs). Rather than aggregating full model parameters, Horus inserts LoRAs into empirically stable layers and aggregates only LoRAs to reduce the attack uncover a key empirical observation that the input projection (LoRA-A) is markedly more stable than the output projection (LoRA-B) under heterogeneity and poisoning. Leveraging this, we design a Heterogeneity-Oblivious Poisoning Score using the features from LoRA-A to filter poisoned clients. For the remaining benign clients, we propose projection-aware aggregation mechanism to preserve collaborative signals while suppressing drifts, which reweights client updates by consistency with the global directions. Extensive experiments across diverse datasets, model architectures, and attacks demonstrate that Horus consistently outperforms state-of-the-art baselines in both robustness and accuracy.</description>
-   <guid>oai:arXiv.org:2508.03579v2</guid>
+   <title>Federated Continual Recommendation</title>
+   <link>https://arxiv.org/abs/2508.04792</link>
+   <description>The increasing emphasis on privacy in recommendation systems has led to the adoption of Federated Learning (FL) as a privacy-preserving solution, enabling collaborative training without sharing user data. While Federated Recommendation (FedRec) effectively protects privacy, existing methods struggle with non-stationary data streams, failing to maintain consistent recommendation quality over time. On the other hand, Continual Learning Recommendation (CLRec) methods address evolving user preferences but typically assume centralized data access, making them incompatible with FL constraints. To bridge this gap, we introduce Federated Continual Recommendation (FCRec), a novel task that integrates FedRec and CLRec, requiring models to learn from streaming data while preserving privacy. As a solution, we propose F3CRec, a framework designed to balance knowledge retention and adaptation under the strict constraints of FCRec. F3CRec introduces two key components: Adaptive Replay Memory on the client side, which selectively retains past preferences based on user-specific shifts, and Item-wise Temporal Mean on the server side, which integrates new knowledge while preserving prior information. Extensive experiments demonstrate that F3CRec outperforms existing approaches in maintaining recommendation quality over time in a federated environment.</description>
+   <guid>oai:arXiv.org:2508.04792v1</guid>
    <category>cs.LG</category>
-   <category>cs.NI</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace</announce_type>
+   <category>cs.IR</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Jaehyung Lim, Wonbin Kweon, Woojoo Kim, Junyoung Kim, Seongjin Choi, Dongha Kim, Hwanjo Yu</creator>
+  </item>
+  <item>
+   <title>HFedATM: Hierarchical Federated Domain Generalization via Optimal Transport and Regularized Mean Aggregation</title>
+   <link>https://arxiv.org/abs/2508.05135</link>
+   <description>Federated Learning (FL) is a decentralized approach where multiple clients collaboratively train a shared global model without sharing their raw data. Despite its effectiveness, conventional FL faces scalability challenges due to excessive computational and communication demands placed on a single central server as the number of participating devices grows. Hierarchical Federated Learning (HFL) addresses these issues by distributing model aggregation tasks across intermediate nodes (stations), thereby enhancing system scalability and robustness against single points of failure. However, HFL still suffers from a critical yet often overlooked limitation: domain shift, where data distributions vary significantly across different clients and stations, reducing model performance on unseen target domains. While Federated Domain Generalization (FedDG) methods have emerged to improve robustness to domain shifts, their integration into HFL frameworks remains largely unexplored. In this paper, we formally introduce Hierarchical Federated Domain Generalization (HFedDG), a novel scenario designed to investigate domain shift within hierarchical architectures. Specifically, we propose HFedATM, a hierarchical aggregation method that first aligns the convolutional filters of models from different stations through Filter-wise Optimal Transport Alignment and subsequently merges aligned models using a Shrinkage-aware Regularized Mean Aggregation. Our extensive experimental evaluations demonstrate that HFedATM significantly boosts the performance of existing FedDG baselines across multiple datasets and maintains computational and communication efficiency. Moreover, theoretical analyses indicate that HFedATM achieves tighter generalization error bounds compared to standard hierarchical averaging, resulting in faster convergence and stable training behavior.</description>
+   <guid>oai:arXiv.org:2508.05135v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Thinh Nguyen, Trung Phan, Binh T. Nguyen, Khoa D Doan, Kok-Seng Wong</creator>
+  </item>
+  <item>
+   <title>pFedDSH: Enabling Knowledge Transfer in Personalized Federated Learning through Data-free Sub-Hypernetwork</title>
+   <link>https://arxiv.org/abs/2508.05157</link>
+   <description>Federated Learning (FL) enables collaborative model training across distributed clients without sharing raw data, offering a significant privacy benefit. However, most existing Personalized Federated Learning (pFL) methods assume a static client participation, which does not reflect real-world scenarios where new clients may continuously join the federated system (i.e., dynamic client onboarding). In this paper, we explore a practical scenario in which a new batch of clients is introduced incrementally while the learning task remains unchanged. This dynamic environment poses various challenges, including preserving performance for existing clients without retraining and enabling efficient knowledge transfer between client batches. To address these issues, we propose Personalized Federated Data-Free Sub-Hypernetwork (pFedDSH), a novel framework based on a central hypernetwork that generates personalized models for each client via embedding vectors. To maintain knowledge stability for existing clients, pFedDSH incorporates batch-specific masks, which activate subsets of neurons to preserve knowledge. Furthermore, we introduce a data-free replay strategy motivated by DeepInversion to facilitate backward transfer, enhancing existing clients' performance without compromising privacy. Extensive experiments conducted on CIFAR-10, CIFAR-100, and Tiny-ImageNet demonstrate that pFedDSH outperforms the state-of-the-art pFL and Federated Continual Learning baselines in our investigation scenario. Our approach achieves robust performance stability for existing clients, as well as adaptation for new clients and efficient utilization of neural resources.</description>
+   <guid>oai:arXiv.org:2508.05157v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Thinh Nguyen, Le Huy Khiem, Van-Tuan Tran, Khoa D Doan, Nitesh V Chawla, Kok-Seng Wong</creator>
+  </item>
+  <item>
+   <title>Don't Reach for the Stars: Rethinking Topology for Resilient Federated Learning</title>
+   <link>https://arxiv.org/abs/2508.05224</link>
+   <description>Federated learning (FL) enables collaborative model training across distributed clients while preserving data privacy by keeping data local. Traditional FL approaches rely on a centralized, star-shaped topology, where a central server aggregates model updates from clients. However, this architecture introduces several limitations, including a single point of failure, limited personalization, and poor robustness to distribution shifts or vulnerability to malfunctioning clients. Moreover, update selection in centralized FL often relies on low-level parameter differences, which can be unreliable when client data is not independent and identically distributed, and offer clients little control. In this work, we propose a decentralized, peer-to-peer (P2P) FL framework. It leverages the flexibility of the P2P topology to enable each client to identify and aggregate a personalized set of trustworthy and beneficial updates.This framework is the Local Inference Guided Aggregation for Heterogeneous Training Environments to Yield Enhancement Through Agreement and Regularization (LIGHTYEAR). Central to our method is an agreement score, computed on a local validation set, which quantifies the semantic alignment of incoming updates in the function space with respect to the clients reference model. Each client uses this score to select a tailored subset of updates and performs aggregation with a regularization term that further stabilizes the training. Our empirical evaluation across two datasets shows that the proposed approach consistently outperforms both centralized baselines and existing P2P methods in terms of client-level performance, particularly under adversarial and heterogeneous conditions.</description>
+   <guid>oai:arXiv.org:2508.05224v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Mirko Konstantin, Anirban Mukhopadhyay</creator>
+  </item>
+  <item>
+   <title>Federated Multi-Objective Learning with Controlled Pareto Frontiers</title>
+   <link>https://arxiv.org/abs/2508.05424</link>
+   <description>Federated learning (FL) is a widely adopted paradigm for privacy-preserving model training, but FedAvg optimise for the majority while under-serving minority clients. Existing methods such as federated multi-objective learning (FMOL) attempts to import multi-objective optimisation (MOO) into FL. However, it merely delivers task-wise Pareto-stationary points, leaving client fairness to chance. In this paper, we introduce Conically-Regularised FMOL (CR-FMOL), the first federated MOO framework that enforces client-wise Pareto optimality through a novel preference-cone constraint. After local federated multi-gradient descent averaging (FMGDA) / federated stochastic multi-gradient descent averaging (FSMGDA) steps, each client transmits its aggregated task-loss vector as an implicit preference; the server then solves a cone-constrained Pareto-MTL sub-problem centred at the uniform vector, producing a descent direction that is Pareto-stationary for every client within its cone. Experiments on non-IID benchmarks show that CR-FMOL enhances client fairness, and although the early-stage performance is slightly inferior to FedAvg, it is expected to achieve comparable accuracy given sufficient training rounds.</description>
+   <guid>oai:arXiv.org:2508.05424v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Weiyao Zhang, Jinyang Li, Qi Song, Miao Wang, Chungang Lin, Haitong Luo, Xuying Meng, Yujun Zhang</creator>
+   <creator>Jiansheng Rao, Jiayi Li, Zhizhi Gong, Soummya Kar, Haoxuan Li</creator>
   </item>
   <item>
-   <title>Adaptive Coded Federated Learning: Privacy Preservation and Straggler Mitigation</title>
-   <link>https://arxiv.org/abs/2403.14905</link>
-   <description>In this article, we address the problem of federated learning in the presence of stragglers. For this problem, a coded federated learning framework has been proposed, where the central server aggregates gradients received from the non-stragglers and gradient computed from a privacy-preservation global coded dataset to mitigate the negative impact of the stragglers. However, when aggregating these gradients, fixed weights are consistently applied across iterations, neglecting the generation process of the global coded dataset and the dynamic nature of the trained model over iterations. This oversight may result in diminished learning performance. To overcome this drawback, we propose a new method named adaptive coded federated learning (ACFL). In ACFL, before the training, each device uploads a coded local dataset with additive noise to the central server to generate a global coded dataset under privacy preservation requirements. During each iteration of the training, the central server aggregates the gradients received from the non-stragglers and the gradient computed from the global coded dataset, where an adaptive policy for varying the aggregation weights is designed. Under this policy, we optimize the performance in terms of privacy and learning, where the learning performance is analyzed through convergence analysis and the privacy performance is characterized via mutual information differential privacy. Finally, we perform simulations to demonstrate the superiority of ACFL compared with the non-adaptive methods.</description>
-   <guid>oai:arXiv.org:2403.14905v2</guid>
-   <category>eess.SP</category>
-   <category>cs.CR</category>
+   <title>X-VFL: A New Vertical Federated Learning Framework with Cross Completion and Decision Subspace Alignment</title>
+   <link>https://arxiv.org/abs/2508.05568</link>
+   <description>Vertical Federated Learning (VFL) enables collaborative learning by integrating disjoint feature subsets from multiple clients/parties. However, VFL typically faces two key challenges: i) the requirement for perfectly aligned data samples across all clients (missing features are not allowed); ii) the requirement for joint collaborative inference/prediction involving all clients (it does not support locally independent inference on a single client). To address these challenges, we propose X-VFL, a new VFL framework designed to deal with the non-aligned data samples with (partially) missing features and to support locally independent inference of new data samples for each client. In particular, we design two novel modules in X-VFL: Cross Completion (XCom) and Decision Subspace Alignment (DS-Align). XCom can complete/reconstruct missing features for non-aligned data samples by leveraging information from other clients. DS-Align aligns local features with completed and global features across all clients within the decision subspace, thus enabling locally independent inference at each client. Moreover, we provide convergence theorems for different algorithms used in training X-VFL, showing an $O(1/\sqrt{T})$ convergence rate for SGD-type algorithms and an $O(1/T)$ rate for PAGE-type algorithms, where $T$ denotes the number of training update steps. Extensive experiments on real-world datasets demonstrate that X-VFL significantly outperforms existing methods, e.g., achieving a 15% improvement in accuracy on the image CIFAR-10 dataset and a 43% improvement on the medical MIMIC-III dataset. These results validate the practical effectiveness and superiority of X-VFL, particularly in scenarios involving partially missing features and locally independent inference.</description>
+   <guid>oai:arXiv.org:2508.05568v1</guid>
    <category>cs.LG</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
+   <category>cs.CV</category>
+   <category>cs.DC</category>
+   <category>math.OC</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Qinghua Yao, Xiangrui Xu, Zhize Li</creator>
+  </item>
+  <item>
+   <title>LLM-TabLogic: Preserving Inter-Column Logical Relationships in Synthetic Tabular Data via Prompt-Guided Latent Diffusion</title>
+   <link>https://arxiv.org/abs/2503.02161</link>
+   <description>Synthetic tabular data are increasingly being used to replace real data, serving as an effective solution that simultaneously protects privacy and addresses data scarcity. However, in addition to preserving global statistical properties, synthetic datasets must also maintain domain-specific logical consistency**-**especially in complex systems like supply chains, where fields such as shipment dates, locations, and product categories must remain logically consistent for real-world usability. Existing generative models often overlook these inter-column relationships, leading to unreliable synthetic tabular data in real-world applications. To address these challenges, we propose LLM-TabLogic, a novel approach that leverages Large Language Model reasoning to capture and compress the complex logical relationships among tabular columns, while these conditional constraints are passed into a Score-based Diffusion model for data generation in latent space. Through extensive experiments on real-world industrial datasets, we evaluate LLM-TabLogic for column reasoning and data generation, comparing it with five baselines including SMOTE and state-of-the-art generative models. Our results show that LLM-TabLogic demonstrates strong generalization in logical inference, achieving over 90% accuracy on unseen tables. Furthermore, our method outperforms all baselines in data generation by fully preserving inter-column relationships while maintaining the best balance between data fidelity, utility, and privacy. This study presents the first method to effectively preserve inter-column relationships in synthetic tabular data generation without requiring domain knowledge, offering new insights for creating logically consistent real-world tabular data.</description>
+   <guid>oai:arXiv.org:2503.02161v2</guid>
+   <category>cs.LG</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yunbo Long, Liming Xu, Alexandra Brintrup</creator>
+  </item>
+  <item>
+   <title>Label Leakage in Federated Inertial-based Human Activity Recognition</title>
+   <link>https://arxiv.org/abs/2505.20924</link>
+   <description>While prior work has shown that Federated Learning updates can leak sensitive information, label reconstruction attacks, which aim to recover input labels from shared gradients, have not yet been examined in the context of Human Activity Recognition (HAR). Given the sensitive nature of activity labels, this study evaluates the effectiveness of state-of-the-art gradient-based label leakage attacks on HAR benchmark datasets. Our findings show that the number of activity classes, sampling strategy, and class imbalance are critical factors influencing the extent of label leakage, with reconstruction accuracies reaching well-above 90% on two benchmark datasets, even for trained models. Moreover, we find that Local Differential Privacy techniques such as gradient noise and clipping offer only limited protection, as certain attacks still reliably infer both majority and minority class labels. We conclude by offering practical recommendations for the privacy-aware deployment of federated HAR systems and identify open challenges for future research. Code to reproduce our experiments is publicly available via github.com/mariusbock/leakage_har.</description>
+   <guid>oai:arXiv.org:2505.20924v2</guid>
+   <category>cs.LG</category>
+   <category>cs.HC</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Marius Bock, Maximilian Hopp, Kristof Van Laerhoven, Michael Moeller</creator>
+  </item>
+  <item>
+   <title>Nexus:Proactive Intra-GPU Disaggregation of Prefill and Decode in LLM Serving</title>
+   <link>https://arxiv.org/abs/2507.06608</link>
+   <description>Monolithic serving with chunked prefill improves GPU utilization by batching prefill and decode together, but suffers from fine-grained phase interference. Engine-level prefill-decode (PD) disaggregation avoids interference but incurs higher hardware and coordination overhead. Prior intra-GPU disaggregation approaches multiplex prefill and decode within a single GPU, using SLO-based tuning guided by heuristics from offline profiling or reactive feedback loops. However, these methods respond reactively to performance issues rather than anticipating them, limiting adaptability under dynamic workloads.
+  We ask: can we achieve proactive intra-GPU disaggregation that adapts effectively to dynamic workloads? The key challenge lies in managing the conflicting resource demands of prefill and decode under varying conditions. We first show that GPU resources exhibit diminishing returns -- beyond a saturation point, more allocation yields minimal latency benefit. Second, we observe that memory bandwidth contention becomes a critical bottleneck. These insights motivate a design that dynamically partitions GPU resources across prefill and decode phases, while jointly considering compute capacity, memory footprint, and bandwidth contention.
+  Evaluated on diverse LLMs and workloads, our system Nexus achieves up to 2.2x higher throughput, 20x lower TTFT, and 2.5x lower TBT than vLLM; outperforms SGLang by up to 2x; and matches or exceeds disaggregated vLLM.</description>
+   <guid>oai:arXiv.org:2507.06608v5</guid>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Chengxi Li, Ming Xiao, Mikael Skoglund</creator>
+   <creator>Xiaoxiang Shi, Colin Cai, Junjia Du, Zhihao Jia</creator>
   </item>
   <item>
-   <title>Traceable Black-box Watermarks for Federated Learning</title>
-   <link>https://arxiv.org/abs/2505.13651</link>
-   <description>Due to the distributed nature of Federated Learning (FL) systems, each local client has access to the global model, posing a critical risk of model leakage. Existing works have explored injecting watermarks into local models to enable intellectual property protection. However, these methods either focus on non-traceable watermarks or traceable but white-box watermarks. We identify a gap in the literature regarding the formal definition of traceable black-box watermarking and the formulation of the problem of injecting such watermarks into FL systems. In this work, we first formalize the problem of injecting traceable black-box watermarks into FL. Based on the problem, we propose a novel server-side watermarking method, $\mathbf{TraMark}$, which creates a traceable watermarked model for each client, enabling verification of model leakage in black-box settings. To achieve this, $\mathbf{TraMark}$ partitions the model parameter space into two distinct regions: the main task region and the watermarking region. Subsequently, a personalized global model is constructed for each client by aggregating only the main task region while preserving the watermarking region. Each model then learns a unique watermark exclusively within the watermarking region using a distinct watermark dataset before being sent back to the local client. Extensive results across various FL systems demonstrate that $\mathbf{TraMark}$ ensures the traceability of all watermarked models while preserving their main task performance.</description>
-   <guid>oai:arXiv.org:2505.13651v2</guid>
+   <title>A Privacy-Centric Approach: Scalable and Secure Federated Learning Enabled by Hybrid Homomorphic Encryption</title>
+   <link>https://arxiv.org/abs/2507.14853</link>
+   <description>Federated Learning (FL) enables collaborative model training without sharing raw data, making it a promising approach for privacy-sensitive domains. Despite its potential, FL faces significant challenges, particularly in terms of communication overhead and data privacy. Privacy-preserving Techniques (PPTs) such as Homomorphic Encryption (HE) have been used to mitigate these concerns. However, these techniques introduce substantial computational and communication costs, limiting their practical deployment. In this work, we explore how Hybrid Homomorphic Encryption (HHE), a cryptographic protocol that combines symmetric encryption with HE, can be effectively integrated with FL to address both communication and privacy challenges, paving the way for scalable and secure decentralized learning system.</description>
+   <guid>oai:arXiv.org:2507.14853v2</guid>
    <category>cs.CR</category>
    <category>cs.LG</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
    <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Jiahao Xu, Rui Hu, Olivera Kotevska, Zikai Zhang</creator>
+   <creator>Khoa Nguyen, Tanveer Khan, Hossein Abdinasibfar, Antonis Michalas</creator>
   </item>
   <item>
-   <title>SelectiveShield: Lightweight Hybrid Defense Against Gradient Leakage in Federated Learning</title>
-   <link>https://arxiv.org/abs/2508.04265</link>
-   <description>Federated Learning (FL) enables collaborative model training on decentralized data but remains vulnerable to gradient leakage attacks that can reconstruct sensitive user information. Existing defense mechanisms, such as differential privacy (DP) and homomorphic encryption (HE), often introduce a trade-off between privacy, model utility, and system overhead, a challenge that is exacerbated in heterogeneous environments with non-IID data and varying client capabilities. To address these limitations, we propose SelectiveShield, a lightweight hybrid defense framework that adaptively integrates selective homomorphic encryption and differential privacy. SelectiveShield leverages Fisher information to quantify parameter sensitivity, allowing clients to identify critical parameters locally. Through a collaborative negotiation protocol, clients agree on a shared set of the most sensitive parameters for protection via homomorphic encryption. Parameters that are uniquely important to individual clients are retained locally, fostering personalization, while non-critical parameters are protected with adaptive differential privacy noise. Extensive experiments demonstrate that SelectiveShield maintains strong model utility while significantly mitigating gradient leakage risks, offering a practical and scalable defense mechanism for real-world federated learning deployments.</description>
-   <guid>oai:arXiv.org:2508.04265v1</guid>
+   <title>HFedATM: Hierarchical Federated Domain Generalization via Optimal Transport and Regularized Mean Aggregation</title>
+   <link>https://arxiv.org/abs/2508.05135</link>
+   <description>Federated Learning (FL) is a decentralized approach where multiple clients collaboratively train a shared global model without sharing their raw data. Despite its effectiveness, conventional FL faces scalability challenges due to excessive computational and communication demands placed on a single central server as the number of participating devices grows. Hierarchical Federated Learning (HFL) addresses these issues by distributing model aggregation tasks across intermediate nodes (stations), thereby enhancing system scalability and robustness against single points of failure. However, HFL still suffers from a critical yet often overlooked limitation: domain shift, where data distributions vary significantly across different clients and stations, reducing model performance on unseen target domains. While Federated Domain Generalization (FedDG) methods have emerged to improve robustness to domain shifts, their integration into HFL frameworks remains largely unexplored. In this paper, we formally introduce Hierarchical Federated Domain Generalization (HFedDG), a novel scenario designed to investigate domain shift within hierarchical architectures. Specifically, we propose HFedATM, a hierarchical aggregation method that first aligns the convolutional filters of models from different stations through Filter-wise Optimal Transport Alignment and subsequently merges aligned models using a Shrinkage-aware Regularized Mean Aggregation. Our extensive experimental evaluations demonstrate that HFedATM significantly boosts the performance of existing FedDG baselines across multiple datasets and maintains computational and communication efficiency. Moreover, theoretical analyses indicate that HFedATM achieves tighter generalization error bounds compared to standard hierarchical averaging, resulting in faster convergence and stable training behavior.</description>
+   <guid>oai:arXiv.org:2508.05135v1</guid>
+   <category>cs.LG</category>
    <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.CR</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Borui Li, Li Yan, Jianmin Liu</creator>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Thinh Nguyen, Trung Phan, Binh T. Nguyen, Khoa D Doan, Kok-Seng Wong</creator>
   </item>
   <item>
-   <title>SenseCrypt: Sensitivity-guided Selective Homomorphic Encryption for Joint Federated Learning in Cross-Device Scenarios</title>
-   <link>https://arxiv.org/abs/2508.04100</link>
-   <description>Homomorphic Encryption (HE) prevails in securing Federated Learning (FL), but suffers from high overhead and adaptation cost. Selective HE methods, which partially encrypt model parameters by a global mask, are expected to protect privacy with reduced overhead and easy adaptation. However, in cross-device scenarios with heterogeneous data and system capabilities, traditional Selective HE methods deteriorate client straggling, and suffer from degraded HE overhead reduction performance. Accordingly, we propose SenseCrypt, a Sensitivity-guided selective Homomorphic EnCryption framework, to adaptively balance security and HE overhead per cross-device FL client. Given the observation that model parameter sensitivity is effective for measuring clients' data distribution similarity, we first design a privacy-preserving method to respectively cluster the clients with similar data distributions. Then, we develop a scoring mechanism to deduce the straggler-free ratio of model parameters that can be encrypted by each client per cluster. Finally, for each client, we formulate and solve a multi-objective model parameter selection optimization problem, which minimizes HE overhead while maximizing model security without causing straggling. Experiments demonstrate that SenseCrypt ensures security against the state-of-the-art inversion attacks, while achieving normal model accuracy as on IID data, and reducing training time by 58.4%-88.7% as compared to traditional HE methods.</description>
-   <guid>oai:arXiv.org:2508.04100v1</guid>
-   <category>cs.CR</category>
-   <category>cs.AI</category>
+   <title>X-VFL: A New Vertical Federated Learning Framework with Cross Completion and Decision Subspace Alignment</title>
+   <link>https://arxiv.org/abs/2508.05568</link>
+   <description>Vertical Federated Learning (VFL) enables collaborative learning by integrating disjoint feature subsets from multiple clients/parties. However, VFL typically faces two key challenges: i) the requirement for perfectly aligned data samples across all clients (missing features are not allowed); ii) the requirement for joint collaborative inference/prediction involving all clients (it does not support locally independent inference on a single client). To address these challenges, we propose X-VFL, a new VFL framework designed to deal with the non-aligned data samples with (partially) missing features and to support locally independent inference of new data samples for each client. In particular, we design two novel modules in X-VFL: Cross Completion (XCom) and Decision Subspace Alignment (DS-Align). XCom can complete/reconstruct missing features for non-aligned data samples by leveraging information from other clients. DS-Align aligns local features with completed and global features across all clients within the decision subspace, thus enabling locally independent inference at each client. Moreover, we provide convergence theorems for different algorithms used in training X-VFL, showing an $O(1/\sqrt{T})$ convergence rate for SGD-type algorithms and an $O(1/T)$ rate for PAGE-type algorithms, where $T$ denotes the number of training update steps. Extensive experiments on real-world datasets demonstrate that X-VFL significantly outperforms existing methods, e.g., achieving a 15% improvement in accuracy on the image CIFAR-10 dataset and a 43% improvement on the medical MIMIC-III dataset. These results validate the practical effectiveness and superiority of X-VFL, particularly in scenarios involving partially missing features and locally independent inference.</description>
+   <guid>oai:arXiv.org:2508.05568v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
    <category>cs.DC</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
+   <category>math.OC</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Borui Li, Li Yan, Junhao Han, Jianmin Liu, Lei Yu</creator>
+   <creator>Qinghua Yao, Xiangrui Xu, Zhize Li</creator>
+  </item>
+  <item>
+   <title>Nexus:Proactive Intra-GPU Disaggregation of Prefill and Decode in LLM Serving</title>
+   <link>https://arxiv.org/abs/2507.06608</link>
+   <description>Monolithic serving with chunked prefill improves GPU utilization by batching prefill and decode together, but suffers from fine-grained phase interference. Engine-level prefill-decode (PD) disaggregation avoids interference but incurs higher hardware and coordination overhead. Prior intra-GPU disaggregation approaches multiplex prefill and decode within a single GPU, using SLO-based tuning guided by heuristics from offline profiling or reactive feedback loops. However, these methods respond reactively to performance issues rather than anticipating them, limiting adaptability under dynamic workloads.
+  We ask: can we achieve proactive intra-GPU disaggregation that adapts effectively to dynamic workloads? The key challenge lies in managing the conflicting resource demands of prefill and decode under varying conditions. We first show that GPU resources exhibit diminishing returns -- beyond a saturation point, more allocation yields minimal latency benefit. Second, we observe that memory bandwidth contention becomes a critical bottleneck. These insights motivate a design that dynamically partitions GPU resources across prefill and decode phases, while jointly considering compute capacity, memory footprint, and bandwidth contention.
+  Evaluated on diverse LLMs and workloads, our system Nexus achieves up to 2.2x higher throughput, 20x lower TTFT, and 2.5x lower TBT than vLLM; outperforms SGLang by up to 2x; and matches or exceeds disaggregated vLLM.</description>
+   <guid>oai:arXiv.org:2507.06608v5</guid>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Xiaoxiang Shi, Colin Cai, Junjia Du, Zhihao Jia</creator>
   </item>
   <item>
    <title>xDeepServe: Model-as-a-Service on Huawei CloudMatrix384</title>
@@ -213,101 +249,186 @@
    <description>The rise of scaled-out LLMs and scaled-up SuperPods signals a new era in large-scale AI infrastructure. LLMs continue to scale out via MoE, as seen in recent models like DeepSeek, Kimi, and Qwen. In parallel, AI hardware is scaling up, with Huawei's CloudMatrix384 SuperPod offering hundreds of GB/s high-speed interconnects. Running large MoE models on SuperPod-scale hardware brings new challenges. It requires new execution models, scalable scheduling, efficient expert load balancing, and elimination of single points of failure. This paper presents xDeepServe, Huawei Cloud's LLM serving system designed for SuperPod-scale infrastructure. At its core is Transformerless, a disaggregated architecture that decomposes transformer models into modular units--attention, feedforward, and MoE--executed independently on NPUs connected via high-speed fabric. We implement this design in two forms: disaggregated prefill-decode and disaggregated MoE-attention. This fully disaggregated setup enables independent scaling of compute and memory without sacrificing performance. To support this architecture, we propose XCCL, a communication library that leverages CloudMatrix384's global shared memory to implement efficient point-to-point and all-to-all primitives. We also extend our serving engine FlowServe with system-level techniques, enabling scalable inference across hundreds of NPUs.</description>
    <guid>oai:arXiv.org:2508.02520v4</guid>
    <category>cs.DC</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
    <announce_type>replace</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Ao Xiao, Bangzheng He, Baoquan Zhang, Baoxing Huai, Bingji Wang, Bo Wang, Bo Xu, Boyi Hou, Chan Yang, Changhong Liu, Cheng Cui, Chenyu Zhu, Cong Feng, Daohui Wang, Dayun Lin, Duo Zhao, Fengshao Zou, Fu Wang, Gangqiang Zhang, Gengyuan Dan, Guanjie Chen, Guodong Guan, Guodong Yang, Haifeng Li, Haipei Zhu, Hao Feng, Hao Huang, Hao Xu, Hengrui Ma, Hengtao Fan, Hui Liu, Jia Li, Jiang Liu, Jiang Xu, Jie Meng, Jinhan Xin, Junhao Hu, Juwei Chen, Lan Yu, Lanxin Miao, Liang Liu, Linan Jing, Lu Zhou, Meina Han, Mingkun Deng, Mingyu Deng, Naitian Deng, Nizhong Lin, Peihan Zhao, Peng Pan, Pengfei Shen, Ping Li, Qi Zhang, Qin Zhang, Qingrong Xia, Qingyi Zhang, Qunchao Fu, Ren Guo, Ruimin Gao, Shaochun Li, Sheng Long, Shentian Li, Shining Wan, Shuai Shen, Shuangfu Zeng, Shuming Jing, Siqi Yang, Song Zhang, Tao Xu, Tianlin Du, Ting Chen, Wanxu Wu, Wei Jiang, Weinan Tong, Weiwei Chen, Wen Peng, Wenli Zhou, Wenquan Yang, Wenxin Liang, Xiang Liu, Xiaoli Zhou, Xin Jin, Xinyu Duan, Xu Li, Xu Zhang, Xusheng Chen, Yalong Shan, Yang Gan, Yao Lu, Yi Deng, Yi Zheng, Yingfei Zheng, Yiyun Zheng, Yizhou Shan, Yong Gao, Yongqiang Yang, Yuanjin Gong, Yue Yu, Yuetao Chen, Yukun Zhu, Yulong He, Yusu Zhao, Yuyan Wu, Zenan Zhang, Zhaojin Zhuo, Zhaoyang Ji, Zhefeng Wang, Zheng Wang, Zhenhua Yang, Zhenli Sheng, Zhibin Yu, Zhigang Ji, Zhihao Ren, Zhipeng Bian, Zhixia Liu, Zhiyu Dong, Zhonghua Li, Zhou Yu, Zhuoming Shen, Zhuwei Peng, Zi Ye, Zihao Xiang, Zimin Fu, Zixuan Zhang</creator>
   </item>
   <item>
-   <title>FLAT: Latent-Driven Arbitrary-Target Backdoor Attacks in Federated Learning</title>
-   <link>https://arxiv.org/abs/2508.04064</link>
-   <description>Federated learning (FL) is vulnerable to backdoor attacks, yet most existing methods are limited by fixed-pattern or single-target triggers, making them inflexible and easier to detect. We propose FLAT (FL Arbitrary-Target Attack), a novel backdoor attack that leverages a latent-driven conditional autoencoder to generate diverse, target-specific triggers as needed. By introducing a latent code, FLAT enables the creation of visually adaptive and highly variable triggers, allowing attackers to select arbitrary targets without retraining and to evade conventional detection mechanisms. Our approach unifies attack success, stealth, and diversity within a single framework, introducing a new level of flexibility and sophistication to backdoor attacks in FL. Extensive experiments show that FLAT achieves high attack success and remains robust against advanced FL defenses. These results highlight the urgent need for new defense strategies to address latent-driven, multi-target backdoor threats in federated settings.</description>
-   <guid>oai:arXiv.org:2508.04064v1</guid>
-   <category>cs.LG</category>
+   <title>Beyond Automation: Socratic AI, Epistemic Agency, and the Implications of the Emergence of Orchestrated Multi-Agent Learning Architectures</title>
+   <link>https://arxiv.org/abs/2508.05116</link>
+   <description>Generative AI is no longer a peripheral tool in higher education. It is rapidly evolving into a general-purpose infrastructure that reshapes how knowledge is generated, mediated, and validated. This paper presents findings from a controlled experiment evaluating a Socratic AI Tutor, a large language model designed to scaffold student research question development through structured dialogue grounded in constructivist theory. Conducted with 65 pre-service teacher students in Germany, the study compares interaction with the Socratic Tutor to engagement with an uninstructed AI chatbot. Students using the Socratic Tutor reported significantly greater support for critical, independent, and reflective thinking, suggesting that dialogic AI can stimulate metacognitive engagement and challenging recent narratives of de-skilling due to generative AI usage. These findings serve as a proof of concept for a broader pedagogical shift: the use of multi-agent systems (MAS) composed of specialised AI agents. To conceptualise this, we introduce the notion of orchestrated MAS, modular, pedagogically aligned agent constellations, curated by educators, that support diverse learning trajectories through differentiated roles and coordinated interaction. To anchor this shift, we propose an adapted offer-and-use model, in which students appropriate instructional offers from these agents. Beyond technical feasibility, we examine system-level implications for higher education institutions and students, including funding necessities, changes to faculty roles, curriculars, competencies and assessment practices. We conclude with a comparative cost-effectiveness analysis highlighting the scalability of such systems. In sum, this study contributes both empirical evidence and a conceptual roadmap for hybrid learning ecosystems that embed human-AI co-agency and pedagogical alignment.</description>
+   <guid>oai:arXiv.org:2508.05116v1</guid>
    <category>cs.AI</category>
-   <category>cs.CV</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
+   <category>cs.MA</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
    <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Tuan Nguyen, Khoa D Doan, Kok-Seng Wong</creator>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Peer-Benedikt Degen, Igor Asanov</creator>
   </item>
   <item>
-   <title>SenseCrypt: Sensitivity-guided Selective Homomorphic Encryption for Joint Federated Learning in Cross-Device Scenarios</title>
-   <link>https://arxiv.org/abs/2508.04100</link>
-   <description>Homomorphic Encryption (HE) prevails in securing Federated Learning (FL), but suffers from high overhead and adaptation cost. Selective HE methods, which partially encrypt model parameters by a global mask, are expected to protect privacy with reduced overhead and easy adaptation. However, in cross-device scenarios with heterogeneous data and system capabilities, traditional Selective HE methods deteriorate client straggling, and suffer from degraded HE overhead reduction performance. Accordingly, we propose SenseCrypt, a Sensitivity-guided selective Homomorphic EnCryption framework, to adaptively balance security and HE overhead per cross-device FL client. Given the observation that model parameter sensitivity is effective for measuring clients' data distribution similarity, we first design a privacy-preserving method to respectively cluster the clients with similar data distributions. Then, we develop a scoring mechanism to deduce the straggler-free ratio of model parameters that can be encrypted by each client per cluster. Finally, for each client, we formulate and solve a multi-objective model parameter selection optimization problem, which minimizes HE overhead while maximizing model security without causing straggling. Experiments demonstrate that SenseCrypt ensures security against the state-of-the-art inversion attacks, while achieving normal model accuracy as on IID data, and reducing training time by 58.4%-88.7% as compared to traditional HE methods.</description>
-   <guid>oai:arXiv.org:2508.04100v1</guid>
-   <category>cs.CR</category>
+   <title>MedMKEB: A Comprehensive Knowledge Editing Benchmark for Medical Multimodal Large Language Models</title>
+   <link>https://arxiv.org/abs/2508.05083</link>
+   <description>Recent advances in multimodal large language models (MLLMs) have significantly improved medical AI, enabling it to unify the understanding of visual and textual information. However, as medical knowledge continues to evolve, it is critical to allow these models to efficiently update outdated or incorrect information without retraining from scratch. Although textual knowledge editing has been widely studied, there is still a lack of systematic benchmarks for multimodal medical knowledge editing involving image and text modalities. To fill this gap, we present MedMKEB, the first comprehensive benchmark designed to evaluate the reliability, generality, locality, portability, and robustness of knowledge editing in medical multimodal large language models. MedMKEB is built on a high-quality medical visual question-answering dataset and enriched with carefully constructed editing tasks, including counterfactual correction, semantic generalization, knowledge transfer, and adversarial robustness. We incorporate human expert validation to ensure the accuracy and reliability of the benchmark. Extensive single editing and sequential editing experiments on state-of-the-art general and medical MLLMs demonstrate the limitations of existing knowledge-based editing approaches in medicine, highlighting the need to develop specialized editing strategies. MedMKEB will serve as a standard benchmark to promote the development of trustworthy and efficient medical knowledge editing algorithms.</description>
+   <guid>oai:arXiv.org:2508.05083v1</guid>
    <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Borui Li, Li Yan, Junhao Han, Jianmin Liu, Lei Yu</creator>
-  </item>
-  <item>
-   <title>SelectiveShield: Lightweight Hybrid Defense Against Gradient Leakage in Federated Learning</title>
-   <link>https://arxiv.org/abs/2508.04265</link>
-   <description>Federated Learning (FL) enables collaborative model training on decentralized data but remains vulnerable to gradient leakage attacks that can reconstruct sensitive user information. Existing defense mechanisms, such as differential privacy (DP) and homomorphic encryption (HE), often introduce a trade-off between privacy, model utility, and system overhead, a challenge that is exacerbated in heterogeneous environments with non-IID data and varying client capabilities. To address these limitations, we propose SelectiveShield, a lightweight hybrid defense framework that adaptively integrates selective homomorphic encryption and differential privacy. SelectiveShield leverages Fisher information to quantify parameter sensitivity, allowing clients to identify critical parameters locally. Through a collaborative negotiation protocol, clients agree on a shared set of the most sensitive parameters for protection via homomorphic encryption. Parameters that are uniquely important to individual clients are retained locally, fostering personalization, while non-critical parameters are protected with adaptive differential privacy noise. Extensive experiments demonstrate that SelectiveShield maintains strong model utility while significantly mitigating gradient leakage risks, offering a practical and scalable defense mechanism for real-world federated learning deployments.</description>
-   <guid>oai:arXiv.org:2508.04265v1</guid>
-   <category>cs.DC</category>
-   <category>cs.AI</category>
-   <category>cs.CR</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Borui Li, Li Yan, Jianmin Liu</creator>
-  </item>
-  <item>
-   <title>TURA: Tool-Augmented Unified Retrieval Agent for AI Search</title>
-   <link>https://arxiv.org/abs/2508.04604</link>
-   <description>The advent of Large Language Models (LLMs) is transforming search engines into conversational AI search products, primarily using Retrieval-Augmented Generation (RAG) on web corpora. However, this paradigm has significant industrial limitations. Traditional RAG approaches struggle with real-time needs and structured queries that require accessing dynamically generated content like ticket availability or inventory. Limited to indexing static pages, search engines cannot perform the interactive queries needed for such time-sensitive data. Academic research has focused on optimizing RAG for static content, overlooking complex intents and the need for dynamic sources like databases and real-time APIs. To bridge this gap, we introduce TURA (Tool-Augmented Unified Retrieval Agent for AI Search), a novel three-stage framework that combines RAG with agentic tool-use to access both static content and dynamic, real-time information. TURA has three key components: an Intent-Aware Retrieval module to decompose queries and retrieve information sources encapsulated as Model Context Protocol (MCP) Servers, a DAG-based Task Planner that models task dependencies as a Directed Acyclic Graph (DAG) for optimal parallel execution, and a lightweight Distilled Agent Executor for efficient tool calling. TURA is the first architecture to systematically bridge the gap between static RAG and dynamic information sources for a world-class AI search product. Serving tens of millions of users, it leverages an agentic framework to deliver robust, real-time answers while meeting the low-latency demands of a large-scale industrial system.</description>
-   <guid>oai:arXiv.org:2508.04604v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <category>cs.IR</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhejun Zhao, Yuehu Dong, Alley Liu, Lixue Zheng, Pingsheng Liu, Dongdong Shen, Long Xia, Jiashu Zhao, Dawei Yin</creator>
-  </item>
-  <item>
-   <title>Multi-Modal Multi-Task Federated Foundation Models for Next-Generation Extended Reality Systems: Towards Privacy-Preserving Distributed Intelligence in AR/VR/MR</title>
-   <link>https://arxiv.org/abs/2506.05683</link>
-   <description>Extended reality (XR) systems, which consist of virtual reality (VR), augmented reality (AR), and mixed reality (XR), offer a transformative interface for immersive, multi-modal, and embodied human-computer interaction. In this paper, we envision that multi-modal multi-task (M3T) federated foundation models (FedFMs) can offer transformative capabilities for XR systems through integrating the representational strength of M3T foundation models (FMs) with the privacy-preserving model training principles of federated learning (FL). We present a modular architecture for FedFMs, which entails different coordination paradigms for model training and aggregations. Central to our vision is the codification of XR challenges that affect the implementation of FedFMs under the SHIFT dimensions: (1) Sensor and modality diversity, (2) Hardware heterogeneity and system-level constraints, (3) Interactivity and embodied personalization, (4) Functional/task variability, and (5) Temporality and environmental variability. We illustrate the manifestation of these dimensions across a set of emerging and anticipated applications of XR systems. Finally, we propose evaluation metrics, dataset requirements, and design tradeoffs necessary for the development of resource-aware FedFMs in XR. This perspective aims to chart the technical and conceptual foundations for context-aware privacy-preserving intelligence in the next generation of XR systems.</description>
-   <guid>oai:arXiv.org:2506.05683v4</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CR</category>
-   <category>cs.MM</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Fardis Nadimi, Payam Abdisarabshali, Kasra Borazjani, Jacob Chakareski, Seyyedali Hosseinalipour</creator>
-  </item>
-  <item>
-   <title>Heterogeneity-Oblivious Robust Federated Learning</title>
-   <link>https://arxiv.org/abs/2508.03579</link>
-   <description>Federated Learning (FL) remains highly vulnerable to poisoning attacks, especially under real-world hyper-heterogeneity, where clients differ significantly in data distributions, communication capabilities, and model architectures. Such heterogeneity not only undermines the effectiveness of aggregation strategies but also makes attacks more difficult to detect. Furthermore, high-dimensional models expand the attack surface. To address these challenges, we propose Horus, a heterogeneity-oblivious robust FL framework centered on low-rank adaptations (LoRAs). Rather than aggregating full model parameters, Horus inserts LoRAs into empirically stable layers and aggregates only LoRAs to reduce the attack uncover a key empirical observation that the input projection (LoRA-A) is markedly more stable than the output projection (LoRA-B) under heterogeneity and poisoning. Leveraging this, we design a Heterogeneity-Oblivious Poisoning Score using the features from LoRA-A to filter poisoned clients. For the remaining benign clients, we propose projection-aware aggregation mechanism to preserve collaborative signals while suppressing drifts, which reweights client updates by consistency with the global directions. Extensive experiments across diverse datasets, model architectures, and attacks demonstrate that Horus consistently outperforms state-of-the-art baselines in both robustness and accuracy.</description>
-   <guid>oai:arXiv.org:2508.03579v2</guid>
-   <category>cs.LG</category>
-   <category>cs.NI</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Weiyao Zhang, Jinyang Li, Qi Song, Miao Wang, Chungang Lin, Haitong Luo, Xuying Meng, Yujun Zhang</creator>
-  </item>
-  <item>
-   <title>TURA: Tool-Augmented Unified Retrieval Agent for AI Search</title>
-   <link>https://arxiv.org/abs/2508.04604</link>
-   <description>The advent of Large Language Models (LLMs) is transforming search engines into conversational AI search products, primarily using Retrieval-Augmented Generation (RAG) on web corpora. However, this paradigm has significant industrial limitations. Traditional RAG approaches struggle with real-time needs and structured queries that require accessing dynamically generated content like ticket availability or inventory. Limited to indexing static pages, search engines cannot perform the interactive queries needed for such time-sensitive data. Academic research has focused on optimizing RAG for static content, overlooking complex intents and the need for dynamic sources like databases and real-time APIs. To bridge this gap, we introduce TURA (Tool-Augmented Unified Retrieval Agent for AI Search), a novel three-stage framework that combines RAG with agentic tool-use to access both static content and dynamic, real-time information. TURA has three key components: an Intent-Aware Retrieval module to decompose queries and retrieve information sources encapsulated as Model Context Protocol (MCP) Servers, a DAG-based Task Planner that models task dependencies as a Directed Acyclic Graph (DAG) for optimal parallel execution, and a lightweight Distilled Agent Executor for efficient tool calling. TURA is the first architecture to systematically bridge the gap between static RAG and dynamic information sources for a world-class AI search product. Serving tens of millions of users, it leverages an agentic framework to deliver robust, real-time answers while meeting the low-latency demands of a large-scale industrial system.</description>
-   <guid>oai:arXiv.org:2508.04604v1</guid>
-   <category>cs.CL</category>
-   <category>cs.AI</category>
-   <category>cs.IR</category>
-   <pubdate>Thu, 07 Aug 2025 00:00:00 -0400</pubdate>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Zhejun Zhao, Yuehu Dong, Alley Liu, Lixue Zheng, Pingsheng Liu, Dongdong Shen, Long Xia, Jiashu Zhao, Dawei Yin</creator>
+   <creator>Dexuan Xu, Jieyi Wang, Zhongyan Chai, Yongzhi Cao, Hanpin Wang, Huamin Zhang, Yu Huang</creator>
+  </item>
+  <item>
+   <title>Beyond Automation: Socratic AI, Epistemic Agency, and the Implications of the Emergence of Orchestrated Multi-Agent Learning Architectures</title>
+   <link>https://arxiv.org/abs/2508.05116</link>
+   <description>Generative AI is no longer a peripheral tool in higher education. It is rapidly evolving into a general-purpose infrastructure that reshapes how knowledge is generated, mediated, and validated. This paper presents findings from a controlled experiment evaluating a Socratic AI Tutor, a large language model designed to scaffold student research question development through structured dialogue grounded in constructivist theory. Conducted with 65 pre-service teacher students in Germany, the study compares interaction with the Socratic Tutor to engagement with an uninstructed AI chatbot. Students using the Socratic Tutor reported significantly greater support for critical, independent, and reflective thinking, suggesting that dialogic AI can stimulate metacognitive engagement and challenging recent narratives of de-skilling due to generative AI usage. These findings serve as a proof of concept for a broader pedagogical shift: the use of multi-agent systems (MAS) composed of specialised AI agents. To conceptualise this, we introduce the notion of orchestrated MAS, modular, pedagogically aligned agent constellations, curated by educators, that support diverse learning trajectories through differentiated roles and coordinated interaction. To anchor this shift, we propose an adapted offer-and-use model, in which students appropriate instructional offers from these agents. Beyond technical feasibility, we examine system-level implications for higher education institutions and students, including funding necessities, changes to faculty roles, curriculars, competencies and assessment practices. We conclude with a comparative cost-effectiveness analysis highlighting the scalability of such systems. In sum, this study contributes both empirical evidence and a conceptual roadmap for hybrid learning ecosystems that embed human-AI co-agency and pedagogical alignment.</description>
+   <guid>oai:arXiv.org:2508.05116v1</guid>
+   <category>cs.AI</category>
+   <category>cs.MA</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Peer-Benedikt Degen, Igor Asanov</creator>
+  </item>
+  <item>
+   <title>Large Language Models Transform Organic Synthesis From Reaction Prediction to Automation</title>
+   <link>https://arxiv.org/abs/2508.05427</link>
+   <description>Large language models (LLMs) are beginning to reshape how chemists plan and run reactions in organic synthesis. Trained on millions of reported transformations, these text-based models can propose synthetic routes, forecast reaction outcomes and even instruct robots that execute experiments without human supervision. Here we survey the milestones that turned LLMs from speculative tools into practical lab partners. We show how coupling LLMs with graph neural networks, quantum calculations and real-time spectroscopy shrinks discovery cycles and supports greener, data-driven chemistry. We discuss limitations, including biased datasets, opaque reasoning and the need for safety gates that prevent unintentional hazards. Finally, we outline community initiatives open benchmarks, federated learning and explainable interfaces that aim to democratize access while keeping humans firmly in control. These advances chart a path towards rapid, reliable and inclusive molecular innovation powered by artificial intelligence and automation.</description>
+   <guid>oai:arXiv.org:2508.05427v1</guid>
+   <category>cs.AI</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Kartar Kumar Lohana Tharwani, Rajesh Kumar,  Sumita, Numan Ahmed, Yong Tang</creator>
+  </item>
+  <item>
+   <title>FedGIN: Federated Learning with Dynamic Global Intensity Non-linear Augmentation for Organ Segmentation using Multi-modal Images</title>
+   <link>https://arxiv.org/abs/2508.05137</link>
+   <description>Medical image segmentation plays a crucial role in AI-assisted diagnostics, surgical planning, and treatment monitoring. Accurate and robust segmentation models are essential for enabling reliable, data-driven clinical decision making across diverse imaging modalities. Given the inherent variability in image characteristics across modalities, developing a unified model capable of generalizing effectively to multiple modalities would be highly beneficial. This model could streamline clinical workflows and reduce the need for modality-specific training. However, real-world deployment faces major challenges, including data scarcity, domain shift between modalities (e.g., CT vs. MRI), and privacy restrictions that prevent data sharing. To address these issues, we propose FedGIN, a Federated Learning (FL) framework that enables multimodal organ segmentation without sharing raw patient data. Our method integrates a lightweight Global Intensity Non-linear (GIN) augmentation module that harmonizes modality-specific intensity distributions during local training. We evaluated FedGIN using two types of datasets: an imputed dataset and a complete dataset. In the limited dataset scenario, the model was initially trained using only MRI data, and CT data was added to assess its performance improvements. In the complete dataset scenario, both MRI and CT data were fully utilized for training on all clients. In the limited-data scenario, FedGIN achieved a 12 to 18% improvement in 3D Dice scores on MRI test cases compared to FL without GIN and consistently outperformed local baselines. In the complete dataset scenario, FedGIN demonstrated near-centralized performance, with a 30% Dice score improvement over the MRI-only baseline and a 10% improvement over the CT-only baseline, highlighting its strong cross-modality generalization under privacy constraints.</description>
+   <guid>oai:arXiv.org:2508.05137v1</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sachin Dudda Nagaraju, Ashkan Moradi, Bendik Skarre Abrahamsen, Mattijs Elschot</creator>
+  </item>
+  <item>
+   <title>Conformal Sets in Multiple-Choice Question Answering under Black-Box Settings with Provable Coverage Guarantees</title>
+   <link>https://arxiv.org/abs/2508.05544</link>
+   <description>Large Language Models (LLMs) have shown remarkable progress in multiple-choice question answering (MCQA), but their inherent unreliability, such as hallucination and overconfidence, limits their application in high-risk domains. To address this, we propose a frequency-based uncertainty quantification method under black-box settings, leveraging conformal prediction (CP) to ensure provable coverage guarantees. Our approach involves multiple independent samplings of the model's output distribution for each input, with the most frequent sample serving as a reference to calculate predictive entropy (PE). Experimental evaluations across six LLMs and four datasets (MedMCQA, MedQA, MMLU, MMLU-Pro) demonstrate that frequency-based PE outperforms logit-based PE in distinguishing between correct and incorrect predictions, as measured by AUROC. Furthermore, the method effectively controls the empirical miscoverage rate under user-specified risk levels, validating that sampling frequency can serve as a viable substitute for logit-based probabilities in black-box scenarios. This work provides a distribution-free model-agnostic framework for reliable uncertainty quantification in MCQA with guaranteed coverage, enhancing the trustworthiness of LLMs in practical applications.</description>
+   <guid>oai:arXiv.org:2508.05544v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Guang Yang, Xinyang Liu</creator>
+  </item>
+  <item>
+   <title>Efficient Attention Mechanisms for Large Language Models: A Survey</title>
+   <link>https://arxiv.org/abs/2507.19595</link>
+   <description>Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear complexity through kernel approximations, recurrent formulations, or fastweight dynamics, thereby enabling scalable inference with reduced computational overhead. Sparse attention techniques, in contrast, limit attention computation to selected subsets of tokens based on fixed patterns, block-wise routing, or clustering strategies, enhancing efficiency while preserving contextual coverage. This survey provides a systematic and comprehensive overview of these developments, integrating both algorithmic innovations and hardware-level considerations. In addition, we analyze the incorporation of efficient attention into largescale pre-trained language models, including both architectures built entirely on efficient attention and hybrid designs that combine local and global components. By aligning theoretical foundations with practical deployment strategies, this work aims to serve as a foundational reference for advancing the design of scalable and efficient language models.</description>
+   <guid>oai:arXiv.org:2507.19595v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yutao Sun, Zhenyu Li, Yike Zhang, Tengyu Pan, Bowen Dong, Yuyi Guo, Jianyong Wang</creator>
+  </item>
+  <item>
+   <title>Enhancing Code LLMs with Reinforcement Learning in Code Generation: A Survey</title>
+   <link>https://arxiv.org/abs/2412.20367</link>
+   <description>With the rapid evolution of large language models (LLM), reinforcement learning (RL) has emerged as a pivotal technique for code generation and optimization in various domains. This paper presents a systematic survey of the application of RL in code optimization and generation, highlighting its role in enhancing compiler optimization, resource allocation, and the development of frameworks and tools. Subsequent sections first delve into the intricate processes of compiler optimization, where RL algorithms are leveraged to improve efficiency and resource utilization. The discussion then progresses to the function of RL in resource allocation, emphasizing register allocation and system optimization. We also explore the burgeoning role of frameworks and tools in code generation, examining how RL can be integrated to bolster their capabilities. This survey aims to serve as a comprehensive resource for researchers and practitioners interested in harnessing the power of RL to advance code generation and optimization techniques.</description>
+   <guid>oai:arXiv.org:2412.20367v5</guid>
+   <category>cs.SE</category>
+   <category>cs.CL</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Junqiao Wang, Zeng Zhang, Yangfan He, Zihao Zhang, Xinyuan Song, Yuyang Song, Tianyu Shi, Yuchen Li, Hengyuan Xu, Kunyu Wu, Xin Yi, Zhongwei Wan, Xinhang Yuan, Zijun Wang, Kuan Lu, Menghao Huo, Tang Jingqun, Guangwu Qian, Keqin Li, Qiuwu Chen, Lewei He</creator>
+  </item>
+  <item>
+   <title>Label Leakage in Federated Inertial-based Human Activity Recognition</title>
+   <link>https://arxiv.org/abs/2505.20924</link>
+   <description>While prior work has shown that Federated Learning updates can leak sensitive information, label reconstruction attacks, which aim to recover input labels from shared gradients, have not yet been examined in the context of Human Activity Recognition (HAR). Given the sensitive nature of activity labels, this study evaluates the effectiveness of state-of-the-art gradient-based label leakage attacks on HAR benchmark datasets. Our findings show that the number of activity classes, sampling strategy, and class imbalance are critical factors influencing the extent of label leakage, with reconstruction accuracies reaching well-above 90% on two benchmark datasets, even for trained models. Moreover, we find that Local Differential Privacy techniques such as gradient noise and clipping offer only limited protection, as certain attacks still reliably infer both majority and minority class labels. We conclude by offering practical recommendations for the privacy-aware deployment of federated HAR systems and identify open challenges for future research. Code to reproduce our experiments is publicly available via github.com/mariusbock/leakage_har.</description>
+   <guid>oai:arXiv.org:2505.20924v2</guid>
+   <category>cs.LG</category>
+   <category>cs.HC</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Marius Bock, Maximilian Hopp, Kristof Van Laerhoven, Michael Moeller</creator>
+  </item>
+  <item>
+   <title>Decision-Making with Deliberation: Meta-reviewing as a Document-grounded Dialogue</title>
+   <link>https://arxiv.org/abs/2508.05283</link>
+   <description>Meta-reviewing is a pivotal stage in the peer-review process, serving as the final step in determining whether a paper is recommended for acceptance. Prior research on meta-reviewing has treated this as a summarization problem over review reports. However, complementary to this perspective, meta-reviewing is a decision-making process that requires weighing reviewer arguments and placing them within a broader context. Prior research has demonstrated that decision-makers can be effectively assisted in such scenarios via dialogue agents. In line with this framing, we explore the practical challenges for realizing dialog agents that can effectively assist meta-reviewers. Concretely, we first address the issue of data scarcity for training dialogue agents by generating synthetic data using Large Language Models (LLMs) based on a self-refinement strategy to improve the relevance of these dialogues to expert domains. Our experiments demonstrate that this method produces higher-quality synthetic data and can serve as a valuable resource towards training meta-reviewing assistants. Subsequently, we utilize this data to train dialogue agents tailored for meta-reviewing and find that these agents outperform \emph{off-the-shelf} LLM-based assistants for this task. Finally, we apply our agents in real-world meta-reviewing scenarios and confirm their effectiveness in enhancing the efficiency of meta-reviewing.\footnote{Code and Data: https://github.com/UKPLab/arxiv2025-meta-review-as-dialog</description>
+   <guid>oai:arXiv.org:2508.05283v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
+   <creator>Sukannya Purkayastha, Nils Dycke, Anne Lauscher, Iryna Gurevych</creator>
+  </item>
+  <item>
+   <title>Can Language Models Critique Themselves? Investigating Self-Feedback for Retrieval Augmented Generation at BioASQ 2025</title>
+   <link>https://arxiv.org/abs/2508.05366</link>
+   <description>Agentic Retrieval Augmented Generation (RAG) and 'deep research' systems aim to enable autonomous search processes where Large Language Models (LLMs) iteratively refine outputs. However, applying these systems to domain-specific professional search, such as biomedical research, presents challenges, as automated systems may reduce user involvement and misalign with expert information needs. Professional search tasks often demand high levels of user expertise and transparency. The BioASQ CLEF 2025 challenge, using expert-formulated questions, can serve as a platform to study these issues. We explored the performance of current reasoning and nonreasoning LLMs like Gemini-Flash 2.0, o3-mini, o4-mini and DeepSeek-R1. A key aspect of our methodology was a self-feedback mechanism where LLMs generated, evaluated, and then refined their outputs for query expansion and for multiple answer types (yes/no, factoid, list, ideal). We investigated whether this iterative self-correction improves performance and if reasoning models are more capable of generating useful feedback. Preliminary results indicate varied performance for the self-feedback strategy across models and tasks. This work offers insights into LLM self-correction and informs future work on comparing the effectiveness of LLM-generated feedback with direct human expert input in these search systems.</description>
+   <guid>oai:arXiv.org:2508.05366v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Samy Ateia, Udo Kruschwitz</creator>
+  </item>
+  <item>
+   <title>Conformal Sets in Multiple-Choice Question Answering under Black-Box Settings with Provable Coverage Guarantees</title>
+   <link>https://arxiv.org/abs/2508.05544</link>
+   <description>Large Language Models (LLMs) have shown remarkable progress in multiple-choice question answering (MCQA), but their inherent unreliability, such as hallucination and overconfidence, limits their application in high-risk domains. To address this, we propose a frequency-based uncertainty quantification method under black-box settings, leveraging conformal prediction (CP) to ensure provable coverage guarantees. Our approach involves multiple independent samplings of the model's output distribution for each input, with the most frequent sample serving as a reference to calculate predictive entropy (PE). Experimental evaluations across six LLMs and four datasets (MedMCQA, MedQA, MMLU, MMLU-Pro) demonstrate that frequency-based PE outperforms logit-based PE in distinguishing between correct and incorrect predictions, as measured by AUROC. Furthermore, the method effectively controls the empirical miscoverage rate under user-specified risk levels, validating that sampling frequency can serve as a viable substitute for logit-based probabilities in black-box scenarios. This work provides a distribution-free model-agnostic framework for reliable uncertainty quantification in MCQA with guaranteed coverage, enhancing the trustworthiness of LLMs in practical applications.</description>
+   <guid>oai:arXiv.org:2508.05544v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Guang Yang, Xinyang Liu</creator>
+  </item>
+  <item>
+   <title>MELLA: Bridging Linguistic Capability and Cultural Groundedness for Low-Resource Language MLLMs</title>
+   <link>https://arxiv.org/abs/2508.05502</link>
+   <description>Multimodal Large Language Models (MLLMs) have shown remarkable performance in high-resource languages. However, their effectiveness diminishes significantly in the contexts of low-resource languages. Current multilingual enhancement methods are often limited to text modality or rely solely on machine translation. While such approaches help models acquire basic linguistic capabilities and produce &quot;thin descriptions&quot;, they neglect the importance of multimodal informativeness and cultural groundedness, both of which are crucial for serving low-resource language users effectively. To bridge this gap, in this study, we identify two significant objectives for a truly effective MLLM in low-resource language settings, namely 1) linguistic capability and 2) cultural groundedness, placing special emphasis on cultural awareness. To achieve these dual objectives, we propose a dual-source strategy that guides the collection of data tailored to each goal, sourcing native web alt-text for culture and MLLM-generated captions for linguistics. As a concrete implementation, we introduce MELLA, a multimodal, multilingual dataset. Experiment results show that after fine-tuning on MELLA, there is a general performance improvement for the eight languages on various MLLM backbones, with models producing &quot;thick descriptions&quot;. We verify that the performance gains are from both cultural knowledge enhancement and linguistic capability enhancement. Our dataset can be found at https://opendatalab.com/applyMultilingualCorpus.</description>
+   <guid>oai:arXiv.org:2508.05502v1</guid>
+   <category>cs.CV</category>
+   <category>cs.CL</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Yufei Gao, Jiaying Fei, Nuo Chen, Ruirui Chen, Guohang Yan, Yunshi Lan, Botian Shi</creator>
+  </item>
+  <item>
+   <title>Efficient Attention Mechanisms for Large Language Models: A Survey</title>
+   <link>https://arxiv.org/abs/2507.19595</link>
+   <description>Transformer-based architectures have become the prevailing backbone of large language models. However, the quadratic time and memory complexity of self-attention remains a fundamental obstacle to efficient long-context modeling. To address this limitation, recent research has introduced two principal categories of efficient attention mechanisms. Linear attention methods achieve linear complexity through kernel approximations, recurrent formulations, or fastweight dynamics, thereby enabling scalable inference with reduced computational overhead. Sparse attention techniques, in contrast, limit attention computation to selected subsets of tokens based on fixed patterns, block-wise routing, or clustering strategies, enhancing efficiency while preserving contextual coverage. This survey provides a systematic and comprehensive overview of these developments, integrating both algorithmic innovations and hardware-level considerations. In addition, we analyze the incorporation of efficient attention into largescale pre-trained language models, including both architectures built entirely on efficient attention and hybrid designs that combine local and global components. By aligning theoretical foundations with practical deployment strategies, this work aims to serve as a foundational reference for advancing the design of scalable and efficient language models.</description>
+   <guid>oai:arXiv.org:2507.19595v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yutao Sun, Zhenyu Li, Yike Zhang, Tengyu Pan, Bowen Dong, Yuyi Guo, Jianyong Wang</creator>
+  </item>
+  <item>
+   <title>Enhancing Code LLMs with Reinforcement Learning in Code Generation: A Survey</title>
+   <link>https://arxiv.org/abs/2412.20367</link>
+   <description>With the rapid evolution of large language models (LLM), reinforcement learning (RL) has emerged as a pivotal technique for code generation and optimization in various domains. This paper presents a systematic survey of the application of RL in code optimization and generation, highlighting its role in enhancing compiler optimization, resource allocation, and the development of frameworks and tools. Subsequent sections first delve into the intricate processes of compiler optimization, where RL algorithms are leveraged to improve efficiency and resource utilization. The discussion then progresses to the function of RL in resource allocation, emphasizing register allocation and system optimization. We also explore the burgeoning role of frameworks and tools in code generation, examining how RL can be integrated to bolster their capabilities. This survey aims to serve as a comprehensive resource for researchers and practitioners interested in harnessing the power of RL to advance code generation and optimization techniques.</description>
+   <guid>oai:arXiv.org:2412.20367v5</guid>
+   <category>cs.SE</category>
+   <category>cs.CL</category>
+   <pubdate>Fri, 08 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Junqiao Wang, Zeng Zhang, Yangfan He, Zihao Zhang, Xinyuan Song, Yuyang Song, Tianyu Shi, Yuchen Li, Hengyuan Xu, Kunyu Wu, Xin Yi, Zhongwei Wan, Xinhang Yuan, Zijun Wang, Kuan Lu, Menghao Huo, Tang Jingqun, Guangwu Qian, Keqin Li, Qiuwu Chen, Lewei He</creator>
   </item>
  </channel>
 </rss>
