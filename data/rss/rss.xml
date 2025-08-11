@@ -6,8 +6,218 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 11 Aug 2025 03:28:52 </lastBuildDate>
+  <lastBuildDate>Mon, 11 Aug 2025 04:37:21 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 11 Aug 2025 03:28:52 </pubDate>
+  <pubDate>Mon, 11 Aug 2025 04:37:21 </pubDate>
+  <item>
+   <title>Federated Continual Recommendation</title>
+   <link>https://arxiv.org/abs/2508.04792</link>
+   <description>The increasing emphasis on privacy in recommendation systems has led to the adoption of Federated Learning (FL) as a privacy-preserving solution, enabling collaborative training without sharing user data. While Federated Recommendation (FedRec) effectively protects privacy, existing methods struggle with non-stationary data streams, failing to maintain consistent recommendation quality over time. On the other hand, Continual Learning Recommendation (CLRec) methods address evolving user preferences but typically assume centralized data access, making them incompatible with FL constraints. To bridge this gap, we introduce Federated Continual Recommendation (FCRec), a novel task that integrates FedRec and CLRec, requiring models to learn from streaming data while preserving privacy. As a solution, we propose F3CRec, a framework designed to balance knowledge retention and adaptation under the strict constraints of FCRec. F3CRec introduces two key components: Adaptive Replay Memory on the client side, which selectively retains past preferences based on user-specific shifts, and Item-wise Temporal Mean on the server side, which integrates new knowledge while preserving prior information. Extensive experiments demonstrate that F3CRec outperforms existing approaches in maintaining recommendation quality over time in a federated environment.</description>
+   <guid>oai:arXiv.org:2508.04792v2</guid>
+   <category>cs.LG</category>
+   <category>cs.IR</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Jaehyung Lim, Wonbin Kweon, Woojoo Kim, Junyoung Kim, Seongjin Choi, Dongha Kim, Hwanjo Yu</creator>
+  </item>
+  <item>
+   <title>Graph Federated Learning for Personalized Privacy Recommendation</title>
+   <link>https://arxiv.org/abs/2508.06208</link>
+   <description>Federated recommendation systems (FedRecs) have gained significant attention for providing privacy-preserving recommendation services. However, existing FedRecs assume that all users have the same requirements for privacy protection, i.e., they do not upload any data to the server. The approaches overlook the potential to enhance the recommendation service by utilizing publicly available user data. In real-world applications, users can choose to be private or public. Private users' interaction data is not shared, while public users' interaction data can be shared. Inspired by the issue, this paper proposes a novel Graph Federated Learning for Personalized Privacy Recommendation (GFed-PP) that adapts to different privacy requirements while improving recommendation performance. GFed-PP incorporates the interaction data of public users to build a user-item interaction graph, which is then used to form a user relationship graph. A lightweight graph convolutional network (GCN) is employed to learn each user's user-specific personalized item embedding. To protect user privacy, each client learns the user embedding and the scoring function locally. Additionally, GFed-PP achieves optimization of the federated recommendation framework through the initialization of item embedding on clients and the aggregation of the user relationship graph on the server. Experimental results demonstrate that GFed-PP significantly outperforms existing methods for five datasets, offering superior recommendation accuracy without compromising privacy. This framework provides a practical solution for accommodating varying privacy preferences in federated recommendation systems.</description>
+   <guid>oai:arXiv.org:2508.06208v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ce Na, Kai Yang, Dengzhao Fang, Yu Li, Jingtong Gao, Chengcheng Zhu, Jiale Zhang, Xiaobing Sun, Yi Chang</creator>
+  </item>
+  <item>
+   <title>Beyond Prompt-Induced Lies: Investigating LLM Deception on Benign Prompts</title>
+   <link>https://arxiv.org/abs/2508.06361</link>
+   <description>Large Language Models (LLMs) have been widely deployed in reasoning, planning, and decision-making tasks, making their trustworthiness a critical concern. The potential for intentional deception, where an LLM deliberately fabricates or conceals information to serve a hidden objective, remains a significant and underexplored threat. Existing studies typically induce such deception by explicitly setting a &quot;hidden&quot; objective through prompting or fine-tuning, which may not fully reflect real-world human-LLM interactions. Moving beyond this human-induced deception, we investigate LLMs' self-initiated deception on benign prompts. To address the absence of ground truth in this evaluation, we propose a novel framework using &quot;contact searching questions.&quot; This framework introduces two statistical metrics derived from psychological principles to quantify the likelihood of deception. The first, the Deceptive Intention Score, measures the model's bias towards a hidden objective. The second, Deceptive Behavior Score, measures the inconsistency between the LLM's internal belief and its expressed output. Upon evaluating 14 leading LLMs, we find that both metrics escalate as task difficulty increases, rising in parallel for most models. Building on these findings, we formulate a mathematical model to explain this behavior. These results reveal that even the most advanced LLMs exhibit an increasing tendency toward deception when handling complex problems, raising critical concerns for the deployment of LLM agents in complex and crucial domains.</description>
+   <guid>oai:arXiv.org:2508.06361v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhaomin Wu, Mingzhe Du, See-Kiong Ng, Bingsheng He</creator>
+  </item>
+  <item>
+   <title>LLM Serving Optimization with Variable Prefill and Decode Lengths</title>
+   <link>https://arxiv.org/abs/2508.06133</link>
+   <description>We study the problem of serving LLM (Large Language Model) requests where each request has heterogeneous prefill and decode lengths. In LLM serving, the prefill length corresponds to the input prompt length, which determines the initial memory usage in the KV cache. The decode length refers to the number of output tokens generated sequentially, with each additional token increasing the KV cache memory usage by one unit. Given a set of n requests, our goal is to schedule and process them to minimize the total completion time. We show that this problem is NP-hard due to the interplay of batching, placement constraints, precedence relationships, and linearly increasing memory usage. We then analyze commonly used scheduling strategies in practice, such as First-Come-First-Serve (FCFS) and Shortest-First (SF), and prove that their competitive ratios scale up sublinearly with the memory limit-a significant drawback in real-world settings where memory demand is large. To address this, we propose a novel algorithm based on a new selection metric that efficiently forms batches over time. We prove that this algorithm achieves a constant competitive ratio. Finally, we develop and evaluate a few algorithm variants inspired by this approach, including dynamic programming variants, local search methods, and an LP-based scheduler, demonstrating through comprehensive simulations that they outperform standard baselines while maintaining computational efficiency.</description>
+   <guid>oai:arXiv.org:2508.06133v1</guid>
+   <category>math.OC</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Meixuan Wang, Yinyu Ye, Zijie Zhou</creator>
+  </item>
+  <item>
+   <title>Blockchain-Enabled Federated Learning</title>
+   <link>https://arxiv.org/abs/2508.06406</link>
+   <description>Blockchain-enabled federated learning (BCFL) addresses fundamental challenges of trust, privacy, and coordination in collaborative AI systems. This chapter provides comprehensive architectural analysis of BCFL systems through a systematic four-dimensional taxonomy examining coordination structures, consensus mechanisms, storage architectures, and trust models. We analyze design patterns from blockchain-verified centralized coordination to fully decentralized peer-to-peer networks, evaluating trade-offs in scalability, security, and performance. Through detailed examination of consensus mechanisms designed for federated learning contexts, including Proof of Quality and Proof of Federated Learning, we demonstrate how computational work can be repurposed from arbitrary cryptographic puzzles to productive machine learning tasks. The chapter addresses critical storage challenges by examining multi-tier architectures that balance blockchain's transaction constraints with neural networks' large parameter requirements while maintaining cryptographic integrity. A technical case study of the TrustMesh framework illustrates practical implementation considerations in BCFL systems through distributed image classification training, demonstrating effective collaborative learning across IoT devices with highly non-IID data distributions while maintaining complete transparency and fault tolerance. Analysis of real-world deployments across healthcare consortiums, financial services, and IoT security applications validates the practical viability of BCFL systems, achieving performance comparable to centralized approaches while providing enhanced security guarantees and enabling new models of trustless collaborative intelligence.</description>
+   <guid>oai:arXiv.org:2508.06406v1</guid>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Murtaza Rangwala, Venugopal K R, Rajkumar Buyya</creator>
+  </item>
+  <item>
+   <title>Federated Continual Recommendation</title>
+   <link>https://arxiv.org/abs/2508.04792</link>
+   <description>The increasing emphasis on privacy in recommendation systems has led to the adoption of Federated Learning (FL) as a privacy-preserving solution, enabling collaborative training without sharing user data. While Federated Recommendation (FedRec) effectively protects privacy, existing methods struggle with non-stationary data streams, failing to maintain consistent recommendation quality over time. On the other hand, Continual Learning Recommendation (CLRec) methods address evolving user preferences but typically assume centralized data access, making them incompatible with FL constraints. To bridge this gap, we introduce Federated Continual Recommendation (FCRec), a novel task that integrates FedRec and CLRec, requiring models to learn from streaming data while preserving privacy. As a solution, we propose F3CRec, a framework designed to balance knowledge retention and adaptation under the strict constraints of FCRec. F3CRec introduces two key components: Adaptive Replay Memory on the client side, which selectively retains past preferences based on user-specific shifts, and Item-wise Temporal Mean on the server side, which integrates new knowledge while preserving prior information. Extensive experiments demonstrate that F3CRec outperforms existing approaches in maintaining recommendation quality over time in a federated environment.</description>
+   <guid>oai:arXiv.org:2508.04792v2</guid>
+   <category>cs.LG</category>
+   <category>cs.IR</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Jaehyung Lim, Wonbin Kweon, Woojoo Kim, Junyoung Kim, Seongjin Choi, Dongha Kim, Hwanjo Yu</creator>
+  </item>
+  <item>
+   <title>X-VFL: A New Vertical Federated Learning Framework with Cross Completion and Decision Subspace Alignment</title>
+   <link>https://arxiv.org/abs/2508.05568</link>
+   <description>Vertical Federated Learning (VFL) enables collaborative learning by integrating disjoint feature subsets from multiple clients/parties. However, VFL typically faces two key challenges: i) the requirement for perfectly aligned data samples across all clients (missing features are not allowed); ii) the requirement for joint collaborative inference/prediction involving all clients (it does not support locally independent inference on a single client). To address these challenges, we propose X-VFL, a new VFL framework designed to deal with the non-aligned data samples with (partially) missing features and to support locally independent inference of new data samples for each client. In particular, we design two novel modules in X-VFL: Cross Completion (XCom) and Decision Subspace Alignment (DS-Align). XCom can complete/reconstruct missing features for non-aligned data samples by leveraging information from other clients. DS-Align aligns local features with completed and global features across all clients within the decision subspace, thus enabling locally independent inference at each client. Moreover, we provide convergence theorems for different algorithms used in training X-VFL, showing an $O(1/\sqrt{T})$ convergence rate for SGD-type algorithms and an $O(1/T)$ rate for PAGE-type algorithms, where $T$ denotes the number of training update steps. Extensive experiments on real-world datasets demonstrate that X-VFL significantly outperforms existing methods, e.g., achieving a 15% improvement in accuracy on the image CIFAR-10 dataset and a 43% improvement on the medical MIMIC-III dataset. These results validate the practical effectiveness and superiority of X-VFL, particularly in scenarios involving partially missing features and locally independent inference.</description>
+   <guid>oai:arXiv.org:2508.05568v2</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <category>cs.DC</category>
+   <category>math.OC</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Qinghua Yao, Xiangrui Xu, Zhize Li</creator>
+  </item>
+  <item>
+   <title>Blockchain-Enabled Federated Learning</title>
+   <link>https://arxiv.org/abs/2508.06406</link>
+   <description>Blockchain-enabled federated learning (BCFL) addresses fundamental challenges of trust, privacy, and coordination in collaborative AI systems. This chapter provides comprehensive architectural analysis of BCFL systems through a systematic four-dimensional taxonomy examining coordination structures, consensus mechanisms, storage architectures, and trust models. We analyze design patterns from blockchain-verified centralized coordination to fully decentralized peer-to-peer networks, evaluating trade-offs in scalability, security, and performance. Through detailed examination of consensus mechanisms designed for federated learning contexts, including Proof of Quality and Proof of Federated Learning, we demonstrate how computational work can be repurposed from arbitrary cryptographic puzzles to productive machine learning tasks. The chapter addresses critical storage challenges by examining multi-tier architectures that balance blockchain's transaction constraints with neural networks' large parameter requirements while maintaining cryptographic integrity. A technical case study of the TrustMesh framework illustrates practical implementation considerations in BCFL systems through distributed image classification training, demonstrating effective collaborative learning across IoT devices with highly non-IID data distributions while maintaining complete transparency and fault tolerance. Analysis of real-world deployments across healthcare consortiums, financial services, and IoT security applications validates the practical viability of BCFL systems, achieving performance comparable to centralized approaches while providing enhanced security guarantees and enabling new models of trustless collaborative intelligence.</description>
+   <guid>oai:arXiv.org:2508.06406v1</guid>
+   <category>cs.DC</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Murtaza Rangwala, Venugopal K R, Rajkumar Buyya</creator>
+  </item>
+  <item>
+   <title>X-VFL: A New Vertical Federated Learning Framework with Cross Completion and Decision Subspace Alignment</title>
+   <link>https://arxiv.org/abs/2508.05568</link>
+   <description>Vertical Federated Learning (VFL) enables collaborative learning by integrating disjoint feature subsets from multiple clients/parties. However, VFL typically faces two key challenges: i) the requirement for perfectly aligned data samples across all clients (missing features are not allowed); ii) the requirement for joint collaborative inference/prediction involving all clients (it does not support locally independent inference on a single client). To address these challenges, we propose X-VFL, a new VFL framework designed to deal with the non-aligned data samples with (partially) missing features and to support locally independent inference of new data samples for each client. In particular, we design two novel modules in X-VFL: Cross Completion (XCom) and Decision Subspace Alignment (DS-Align). XCom can complete/reconstruct missing features for non-aligned data samples by leveraging information from other clients. DS-Align aligns local features with completed and global features across all clients within the decision subspace, thus enabling locally independent inference at each client. Moreover, we provide convergence theorems for different algorithms used in training X-VFL, showing an $O(1/\sqrt{T})$ convergence rate for SGD-type algorithms and an $O(1/T)$ rate for PAGE-type algorithms, where $T$ denotes the number of training update steps. Extensive experiments on real-world datasets demonstrate that X-VFL significantly outperforms existing methods, e.g., achieving a 15% improvement in accuracy on the image CIFAR-10 dataset and a 43% improvement on the medical MIMIC-III dataset. These results validate the practical effectiveness and superiority of X-VFL, particularly in scenarios involving partially missing features and locally independent inference.</description>
+   <guid>oai:arXiv.org:2508.05568v2</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <category>cs.DC</category>
+   <category>math.OC</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Qinghua Yao, Xiangrui Xu, Zhize Li</creator>
+  </item>
+  <item>
+   <title>Towards Pareto Optimal Throughput in Small Language Model Serving</title>
+   <link>https://arxiv.org/abs/2404.03353</link>
+   <description>Large language models (LLMs) have revolutionized the state-of-the-art of many different natural language processing tasks. Although serving LLMs is computationally and memory demanding, the rise of Small Language Models (SLMs) offers new opportunities for resource-constrained users, who now are able to serve small models with cutting-edge performance. In this paper, we present a set of experiments designed to benchmark SLM inference at performance and energy levels. Our analysis provides a new perspective in serving, highlighting that the small memory footprint of SLMs allows for reaching the Pareto-optimal throughput within the resource capacity of a single accelerator. In this regard, we present an initial set of findings demonstrating how model replication can effectively improve resource utilization for serving SLMs.</description>
+   <guid>oai:arXiv.org:2404.03353v3</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Pol G. Recasens, Yue Zhu, Chen Wang, Eun Kyung Lee, Olivier Tardieu, Alaa Youssef, Jordi Torres, Josep Ll. Berral</creator>
+  </item>
+  <item>
+   <title>Can Large Models Fool the Eye? A New Turing Test for Biological Animation</title>
+   <link>https://arxiv.org/abs/2508.06072</link>
+   <description>Evaluating the abilities of large models and manifesting their gaps are challenging. Current benchmarks adopt either ground-truth-based score-form evaluation on static datasets or indistinct textual chatbot-style human preferences collection, which may not provide users with immediate, intuitive, and perceptible feedback on performance differences. In this paper, we introduce BioMotion Arena, a novel framework for evaluating large language models (LLMs) and multimodal large language models (MLLMs) via visual animation. Our methodology draws inspiration from the inherent visual perception of motion patterns characteristic of living organisms that utilizes point-light source imaging to amplify the performance discrepancies between models. Specifically, we employ a pairwise comparison evaluation and collect more than 45k votes for 53 mainstream LLMs and MLLMs on 90 biological motion variants. Data analyses show that the crowd-sourced human votes are in good agreement with those of expert raters, demonstrating the superiority of our BioMotion Arena in offering discriminative feedback. We also find that over 90\% of evaluated models, including the cutting-edge open-source InternVL3 and proprietary Claude-4 series, fail to produce fundamental humanoid point-light groups, much less smooth and biologically plausible motions. This enables BioMotion Arena to serve as a challenging benchmark for performance visualization and a flexible evaluation framework without restrictions on ground-truth.</description>
+   <guid>oai:arXiv.org:2508.06072v1</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zijian Chen, Lirong Deng, Zhengyu Chen, Kaiwei Zhang, Qi Jia, Yuan Tian, Yucheng Zhu, Guangtao Zhai</creator>
+  </item>
+  <item>
+   <title>FedX: Explanation-Guided Pruning for Communication-Efficient Federated Learning in Remote Sensing</title>
+   <link>https://arxiv.org/abs/2508.06256</link>
+   <description>Federated learning (FL) enables the collaborative training of deep neural networks across decentralized data archives (i.e., clients), where each client stores data locally and only shares model updates with a central server. This makes FL a suitable learning paradigm for remote sensing (RS) image classification tasks, where data centralization may be restricted due to legal and privacy constraints. However, a key challenge in applying FL to RS tasks is the communication overhead caused by the frequent exchange of large model updates between clients and the central server. To address this issue, in this paper we propose a novel strategy (denoted as FedX) that uses explanation-guided pruning to reduce communication overhead by minimizing the size of the transmitted models without compromising performance. FedX leverages backpropagation-based explanation methods to estimate the task-specific importance of model components and prunes the least relevant ones at the central server. The resulting sparse global model is then sent to clients, substantially reducing communication overhead. We evaluate FedX on multi-label scene classification using the BigEarthNet-S2 dataset and single-label scene classification using the EuroSAT dataset. Experimental results show the success of FedX in significantly reducing the number of shared model parameters while enhancing the generalization capability of the global model, compared to both unpruned model and state-of-the-art pruning methods. The code of FedX will be available at https://git.tu-berlin.de/rsim/FedX.</description>
+   <guid>oai:arXiv.org:2508.06256v1</guid>
+   <category>cs.CV</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Bar{\i}\c{s} B\&quot;uy\&quot;ukta\c{s}, Jonas Klotz, Beg\&quot;um Demir</creator>
+  </item>
+  <item>
+   <title>X-VFL: A New Vertical Federated Learning Framework with Cross Completion and Decision Subspace Alignment</title>
+   <link>https://arxiv.org/abs/2508.05568</link>
+   <description>Vertical Federated Learning (VFL) enables collaborative learning by integrating disjoint feature subsets from multiple clients/parties. However, VFL typically faces two key challenges: i) the requirement for perfectly aligned data samples across all clients (missing features are not allowed); ii) the requirement for joint collaborative inference/prediction involving all clients (it does not support locally independent inference on a single client). To address these challenges, we propose X-VFL, a new VFL framework designed to deal with the non-aligned data samples with (partially) missing features and to support locally independent inference of new data samples for each client. In particular, we design two novel modules in X-VFL: Cross Completion (XCom) and Decision Subspace Alignment (DS-Align). XCom can complete/reconstruct missing features for non-aligned data samples by leveraging information from other clients. DS-Align aligns local features with completed and global features across all clients within the decision subspace, thus enabling locally independent inference at each client. Moreover, we provide convergence theorems for different algorithms used in training X-VFL, showing an $O(1/\sqrt{T})$ convergence rate for SGD-type algorithms and an $O(1/T)$ rate for PAGE-type algorithms, where $T$ denotes the number of training update steps. Extensive experiments on real-world datasets demonstrate that X-VFL significantly outperforms existing methods, e.g., achieving a 15% improvement in accuracy on the image CIFAR-10 dataset and a 43% improvement on the medical MIMIC-III dataset. These results validate the practical effectiveness and superiority of X-VFL, particularly in scenarios involving partially missing features and locally independent inference.</description>
+   <guid>oai:arXiv.org:2508.05568v2</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <category>cs.DC</category>
+   <category>math.OC</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Qinghua Yao, Xiangrui Xu, Zhize Li</creator>
+  </item>
+  <item>
+   <title>Can Large Models Fool the Eye? A New Turing Test for Biological Animation</title>
+   <link>https://arxiv.org/abs/2508.06072</link>
+   <description>Evaluating the abilities of large models and manifesting their gaps are challenging. Current benchmarks adopt either ground-truth-based score-form evaluation on static datasets or indistinct textual chatbot-style human preferences collection, which may not provide users with immediate, intuitive, and perceptible feedback on performance differences. In this paper, we introduce BioMotion Arena, a novel framework for evaluating large language models (LLMs) and multimodal large language models (MLLMs) via visual animation. Our methodology draws inspiration from the inherent visual perception of motion patterns characteristic of living organisms that utilizes point-light source imaging to amplify the performance discrepancies between models. Specifically, we employ a pairwise comparison evaluation and collect more than 45k votes for 53 mainstream LLMs and MLLMs on 90 biological motion variants. Data analyses show that the crowd-sourced human votes are in good agreement with those of expert raters, demonstrating the superiority of our BioMotion Arena in offering discriminative feedback. We also find that over 90\% of evaluated models, including the cutting-edge open-source InternVL3 and proprietary Claude-4 series, fail to produce fundamental humanoid point-light groups, much less smooth and biologically plausible motions. This enables BioMotion Arena to serve as a challenging benchmark for performance visualization and a flexible evaluation framework without restrictions on ground-truth.</description>
+   <guid>oai:arXiv.org:2508.06072v1</guid>
+   <category>cs.CV</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zijian Chen, Lirong Deng, Zhengyu Chen, Kaiwei Zhang, Qi Jia, Yuan Tian, Yucheng Zhu, Guangtao Zhai</creator>
+  </item>
+  <item>
+   <title>LLM Serving Optimization with Variable Prefill and Decode Lengths</title>
+   <link>https://arxiv.org/abs/2508.06133</link>
+   <description>We study the problem of serving LLM (Large Language Model) requests where each request has heterogeneous prefill and decode lengths. In LLM serving, the prefill length corresponds to the input prompt length, which determines the initial memory usage in the KV cache. The decode length refers to the number of output tokens generated sequentially, with each additional token increasing the KV cache memory usage by one unit. Given a set of n requests, our goal is to schedule and process them to minimize the total completion time. We show that this problem is NP-hard due to the interplay of batching, placement constraints, precedence relationships, and linearly increasing memory usage. We then analyze commonly used scheduling strategies in practice, such as First-Come-First-Serve (FCFS) and Shortest-First (SF), and prove that their competitive ratios scale up sublinearly with the memory limit-a significant drawback in real-world settings where memory demand is large. To address this, we propose a novel algorithm based on a new selection metric that efficiently forms batches over time. We prove that this algorithm achieves a constant competitive ratio. Finally, we develop and evaluate a few algorithm variants inspired by this approach, including dynamic programming variants, local search methods, and an LP-based scheduler, demonstrating through comprehensive simulations that they outperform standard baselines while maintaining computational efficiency.</description>
+   <guid>oai:arXiv.org:2508.06133v1</guid>
+   <category>math.OC</category>
+   <category>cs.AI</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Meixuan Wang, Yinyu Ye, Zijie Zhou</creator>
+  </item>
+  <item>
+   <title>Graph Federated Learning for Personalized Privacy Recommendation</title>
+   <link>https://arxiv.org/abs/2508.06208</link>
+   <description>Federated recommendation systems (FedRecs) have gained significant attention for providing privacy-preserving recommendation services. However, existing FedRecs assume that all users have the same requirements for privacy protection, i.e., they do not upload any data to the server. The approaches overlook the potential to enhance the recommendation service by utilizing publicly available user data. In real-world applications, users can choose to be private or public. Private users' interaction data is not shared, while public users' interaction data can be shared. Inspired by the issue, this paper proposes a novel Graph Federated Learning for Personalized Privacy Recommendation (GFed-PP) that adapts to different privacy requirements while improving recommendation performance. GFed-PP incorporates the interaction data of public users to build a user-item interaction graph, which is then used to form a user relationship graph. A lightweight graph convolutional network (GCN) is employed to learn each user's user-specific personalized item embedding. To protect user privacy, each client learns the user embedding and the scoring function locally. Additionally, GFed-PP achieves optimization of the federated recommendation framework through the initialization of item embedding on clients and the aggregation of the user relationship graph on the server. Experimental results demonstrate that GFed-PP significantly outperforms existing methods for five datasets, offering superior recommendation accuracy without compromising privacy. This framework provides a practical solution for accommodating varying privacy preferences in federated recommendation systems.</description>
+   <guid>oai:arXiv.org:2508.06208v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Ce Na, Kai Yang, Dengzhao Fang, Yu Li, Jingtong Gao, Chengcheng Zhu, Jiale Zhang, Xiaobing Sun, Yi Chang</creator>
+  </item>
+  <item>
+   <title>Beyond Prompt-Induced Lies: Investigating LLM Deception on Benign Prompts</title>
+   <link>https://arxiv.org/abs/2508.06361</link>
+   <description>Large Language Models (LLMs) have been widely deployed in reasoning, planning, and decision-making tasks, making their trustworthiness a critical concern. The potential for intentional deception, where an LLM deliberately fabricates or conceals information to serve a hidden objective, remains a significant and underexplored threat. Existing studies typically induce such deception by explicitly setting a &quot;hidden&quot; objective through prompting or fine-tuning, which may not fully reflect real-world human-LLM interactions. Moving beyond this human-induced deception, we investigate LLMs' self-initiated deception on benign prompts. To address the absence of ground truth in this evaluation, we propose a novel framework using &quot;contact searching questions.&quot; This framework introduces two statistical metrics derived from psychological principles to quantify the likelihood of deception. The first, the Deceptive Intention Score, measures the model's bias towards a hidden objective. The second, Deceptive Behavior Score, measures the inconsistency between the LLM's internal belief and its expressed output. Upon evaluating 14 leading LLMs, we find that both metrics escalate as task difficulty increases, rising in parallel for most models. Building on these findings, we formulate a mathematical model to explain this behavior. These results reveal that even the most advanced LLMs exhibit an increasing tendency toward deception when handling complex problems, raising critical concerns for the deployment of LLM agents in complex and crucial domains.</description>
+   <guid>oai:arXiv.org:2508.06361v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 11 Aug 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Zhaomin Wu, Mingzhe Du, See-Kiong Ng, Bingsheng He</creator>
+  </item>
  </channel>
 </rss>
