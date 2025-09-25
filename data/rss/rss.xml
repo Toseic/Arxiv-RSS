@@ -6,65 +6,9 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Wed, 24 Sep 2025 04:15:01 </lastBuildDate>
+  <lastBuildDate>Thu, 25 Sep 2025 02:57:25 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Wed, 24 Sep 2025 04:15:01 </pubDate>
-  <item>
-   <title>A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning</title>
-   <link>https://arxiv.org/abs/2509.18120</link>
-   <description>Cross-silo federated learning (CFL) enables organizations (e.g., hospitals or banks) to collaboratively train artificial intelligence (AI) models while preserving data privacy by keeping data local. While prior work has primarily addressed statistical heterogeneity across organizations, a critical challenge arises from economic competition, where organizations may act as market rivals, making them hesitant to participate in joint training due to potential utility loss (i.e., reduced net benefit). Furthermore, the combined effects of statistical heterogeneity and inter-organizational competition on organizational behavior and system-wide social welfare remain underexplored. In this paper, we propose CoCoGen, a coopetitive-compatible data generation framework, leveraging generative AI (GenAI) and potential game theory to model, analyze, and optimize collaborative learning under heterogeneous and competitive settings. Specifically, CoCoGen characterizes competition and statistical heterogeneity through learning performance and utility-based formulations and models each training round as a weighted potential game. We then derive GenAI-based data generation strategies that maximize social welfare. Experimental results on the Fashion-MNIST dataset reveal how varying heterogeneity and competition levels affect organizational behavior and demonstrate that CoCoGen consistently outperforms baseline methods.</description>
-   <guid>oai:arXiv.org:2509.18120v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CE</category>
-   <category>cs.DC</category>
-   <category>cs.GT</category>
-   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Thanh Linh Nguyen, Quoc-Viet Pham</creator>
-  </item>
-  <item>
-   <title>A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning</title>
-   <link>https://arxiv.org/abs/2509.18120</link>
-   <description>Cross-silo federated learning (CFL) enables organizations (e.g., hospitals or banks) to collaboratively train artificial intelligence (AI) models while preserving data privacy by keeping data local. While prior work has primarily addressed statistical heterogeneity across organizations, a critical challenge arises from economic competition, where organizations may act as market rivals, making them hesitant to participate in joint training due to potential utility loss (i.e., reduced net benefit). Furthermore, the combined effects of statistical heterogeneity and inter-organizational competition on organizational behavior and system-wide social welfare remain underexplored. In this paper, we propose CoCoGen, a coopetitive-compatible data generation framework, leveraging generative AI (GenAI) and potential game theory to model, analyze, and optimize collaborative learning under heterogeneous and competitive settings. Specifically, CoCoGen characterizes competition and statistical heterogeneity through learning performance and utility-based formulations and models each training round as a weighted potential game. We then derive GenAI-based data generation strategies that maximize social welfare. Experimental results on the Fashion-MNIST dataset reveal how varying heterogeneity and competition levels affect organizational behavior and demonstrate that CoCoGen consistently outperforms baseline methods.</description>
-   <guid>oai:arXiv.org:2509.18120v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.CE</category>
-   <category>cs.DC</category>
-   <category>cs.GT</category>
-   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Thanh Linh Nguyen, Quoc-Viet Pham</creator>
-  </item>
-  <item>
-   <title>FedFiTS: Fitness-Selected, Slotted Client Scheduling for Trustworthy Federated Learning in Healthcare AI</title>
-   <link>https://arxiv.org/abs/2509.19120</link>
-   <description>Federated Learning (FL) has emerged as a powerful paradigm for privacy-preserving model training, yet deployments in sensitive domains such as healthcare face persistent challenges from non-IID data, client unreliability, and adversarial manipulation. This paper introduces FedFiTS, a trust and fairness-aware selective FL framework that advances the FedFaSt line by combining fitness-based client election with slotted aggregation. FedFiTS implements a three-phase participation strategy-free-for-all training, natural selection, and slotted team participation-augmented with dynamic client scoring, adaptive thresholding, and cohort-based scheduling to balance convergence efficiency with robustness. A theoretical convergence analysis establishes bounds for both convex and non-convex objectives under standard assumptions, while a communication-complexity analysis shows reductions relative to FedAvg and other baselines. Experiments on diverse datasets-medical imaging (X-ray pneumonia), vision benchmarks (MNIST, FMNIST), and tabular agricultural data (Crop Recommendation)-demonstrate that FedFiTS consistently outperforms FedAvg, FedRand, and FedPow in accuracy, time-to-target, and resilience to poisoning attacks. By integrating trust-aware aggregation with fairness-oriented client selection, FedFiTS advances scalable and secure FL, making it well suited for real-world healthcare and cross-domain deployments.</description>
-   <guid>oai:arXiv.org:2509.19120v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Ferdinand Kahenga, Antoine Bagula, Sajal K. Das, Patrick Sello</creator>
-  </item>
-  <item>
-   <title>FedFusion: Federated Learning with Diversity- and Cluster-Aware Encoders for Robust Adaptation under Label Scarcity</title>
-   <link>https://arxiv.org/abs/2509.19220</link>
-   <description>Federated learning in practice must contend with heterogeneous feature spaces, severe non-IID data, and scarce labels across clients. We present FedFusion, a federated transfer-learning framework that unifies domain adaptation and frugal labelling with diversity-/cluster-aware encoders (DivEn, DivEn-mix, DivEn-c). Labelled teacher clients guide learner clients via confidence-filtered pseudo-labels and domain-adaptive transfer, while clients maintain personalised encoders tailored to local data. To preserve global coherence under heterogeneity, FedFusion employs similarity-weighted classifier coupling (with optional cluster-wise averaging), mitigating dominance by data-rich sites and improving minority-client performance. The frugal-labelling pipeline combines self-/semi-supervised pretext training with selective fine-tuning, reducing annotation demands without sharing raw data. Across tabular and imaging benchmarks under IID, non-IID, and label-scarce regimes, FedFusion consistently outperforms state-of-the-art baselines in accuracy, robustness, and fairness while maintaining comparable communication and computation budgets. These results show that harmonising personalisation, domain adaptation, and label efficiency is an effective recipe for robust federated learning under real-world constraints.</description>
-   <guid>oai:arXiv.org:2509.19220v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AI</category>
-   <category>cs.DC</category>
-   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
-   <creator>Ferdinand Kahenga, Antoine Bagula, Patrick Sello, Sajal K. Das</creator>
-  </item>
+  <pubDate>Thu, 25 Sep 2025 02:57:25 </pubDate>
   <item>
    <title>MetaFed: Advancing Privacy, Performance, and Sustainability in Federated Metaverse Systems</title>
    <link>https://arxiv.org/abs/2508.17341</link>
@@ -81,38 +25,19 @@
    <creator>Muhammet Anil Yagiz, Zeynep Sude Cengiz, Polat Goktas</creator>
   </item>
   <item>
-   <title>LLMs as verification oracles for Solidity</title>
-   <link>https://arxiv.org/abs/2509.19153</link>
-   <description>Ensuring the correctness of smart contracts is critical, as even subtle flaws can lead to severe financial losses. While bug detection tools able to spot common vulnerability patterns can serve as a first line of defense, most real-world exploits and losses stem from errors in the contract business logic. Formal verification tools such as SolCMC and the Certora Prover address this challenge, but their impact remains limited by steep learning curves and restricted specification languages. Recent works have begun to explore the use of large language models (LLMs) for security-related tasks such as vulnerability detection and test generation. Yet, a fundamental question remains open: can LLMs serve as verification oracles, capable of reasoning about arbitrary contract-specific properties? In this paper, we provide the first systematic evaluation of GPT-5, a state-of-the-art reasoning LLM, in this role. We benchmark its performance on a large dataset of verification tasks, compare its outputs against those of established formal verification tools, and assess its practical effectiveness in real-world auditing scenarios. Our study combines quantitative metrics with qualitative analysis, and shows that recent reasoning-oriented LLMs can be surprisingly effective as verification oracles, suggesting a new frontier in the convergence of AI and formal methods for secure smart contract development and auditing.</description>
-   <guid>oai:arXiv.org:2509.19153v1</guid>
+   <title>MetaFed: Advancing Privacy, Performance, and Sustainability in Federated Metaverse Systems</title>
+   <link>https://arxiv.org/abs/2508.17341</link>
+   <description>The rapid expansion of immersive Metaverse applications introduces complex challenges at the intersection of performance, privacy, and environmental sustainability. Centralized architectures fall short in addressing these demands, often resulting in elevated energy consumption, latency, and privacy concerns. This paper proposes MetaFed, a decentralized federated learning (FL) framework that enables sustainable and intelligent resource orchestration for Metaverse environments. MetaFed integrates (i) multi-agent reinforcement learning for dynamic client selection, (ii) privacy-preserving FL using homomorphic encryption, and (iii) carbon-aware scheduling aligned with renewable energy availability. Evaluations on MNIST and CIFAR-10 using lightweight ResNet architectures demonstrate that MetaFed achieves up to 25% reduction in carbon emissions compared to conventional approaches, while maintaining high accuracy and minimal communication overhead. These results highlight MetaFed as a scalable solution for building environmentally responsible and privacy-compliant Metaverse infrastructures.</description>
+   <guid>oai:arXiv.org:2508.17341v2</guid>
+   <category>cs.LG</category>
    <category>cs.CR</category>
-   <category>cs.SE</category>
+   <category>cs.CY</category>
+   <category>cs.DC</category>
+   <category>cs.ET</category>
    <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Massimo Bartoletti, Enrico Lipparini, Livio Pompianu</creator>
-  </item>
-  <item>
-   <title>Prior-based Noisy Text Data Filtering: Fast and Strong Alternative For Perplexity</title>
-   <link>https://arxiv.org/abs/2509.18577</link>
-   <description>As large language models (LLMs) are pretrained on massive web corpora, careful selection of data becomes essential to ensure effective and efficient learning. While perplexity (PPL)-based filtering has shown strong performance, it suffers from drawbacks: substantial time costs and inherent unreliability of the model when handling noisy or out-of-distribution samples. In this work, we propose a simple yet powerful alternative: a prior-based data filtering method that estimates token priors using corpus-level term frequency statistics, inspired by linguistic insights on word roles and lexical density. Our approach filters documents based on the mean and standard deviation of token priors, serving as a fast proxy to PPL while requiring no model inference. Despite its simplicity, the prior-based filter achieves the highest average performance across 20 downstream benchmarks, while reducing time cost by over 1000x compared to PPL-based filtering. We further demonstrate its applicability to symbolic languages such as code and math, and its dynamic adaptability to multilingual corpora without supervision</description>
-   <guid>oai:arXiv.org:2509.18577v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Yeongbin Seo, Gayoung Kim, Jaehyung Kim, Jinyoung Yeo</creator>
-  </item>
-  <item>
-   <title>Extracting Conceptual Spaces from LLMs Using Prototype Embeddings</title>
-   <link>https://arxiv.org/abs/2509.19269</link>
-   <description>Conceptual spaces represent entities and concepts using cognitively meaningful dimensions, typically referring to perceptual features. Such representations are widely used in cognitive science and have the potential to serve as a cornerstone for explainable AI. Unfortunately, they have proven notoriously difficult to learn, although recent LLMs appear to capture the required perceptual features to a remarkable extent. Nonetheless, practical methods for extracting the corresponding conceptual spaces are currently still lacking. While various methods exist for extracting embeddings from LLMs, extracting conceptual spaces also requires us to encode the underlying features. In this paper, we propose a strategy in which features (e.g. sweetness) are encoded by embedding the description of a corresponding prototype (e.g. a very sweet food). To improve this strategy, we fine-tune the LLM to align the prototype embeddings with the corresponding conceptual space dimensions. Our empirical analysis finds this approach to be highly effective.</description>
-   <guid>oai:arXiv.org:2509.19269v1</guid>
-   <category>cs.CL</category>
-   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
+   <announce_type>replace-cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Nitesh Kumar, Usashi Chatterjee, Steven Schockaert</creator>
+   <creator>Muhammet Anil Yagiz, Zeynep Sude Cengiz, Polat Goktas</creator>
   </item>
   <item>
    <title>LogicGuard: Improving Embodied LLM agents through Temporal Logic based Critics</title>
@@ -156,19 +81,45 @@
    <creator>Ayan Sar, Sampurna Roy, Tanupriya Choudhury, Ajith Abraham</creator>
   </item>
   <item>
-   <title>MetaFed: Advancing Privacy, Performance, and Sustainability in Federated Metaverse Systems</title>
-   <link>https://arxiv.org/abs/2508.17341</link>
-   <description>The rapid expansion of immersive Metaverse applications introduces complex challenges at the intersection of performance, privacy, and environmental sustainability. Centralized architectures fall short in addressing these demands, often resulting in elevated energy consumption, latency, and privacy concerns. This paper proposes MetaFed, a decentralized federated learning (FL) framework that enables sustainable and intelligent resource orchestration for Metaverse environments. MetaFed integrates (i) multi-agent reinforcement learning for dynamic client selection, (ii) privacy-preserving FL using homomorphic encryption, and (iii) carbon-aware scheduling aligned with renewable energy availability. Evaluations on MNIST and CIFAR-10 using lightweight ResNet architectures demonstrate that MetaFed achieves up to 25% reduction in carbon emissions compared to conventional approaches, while maintaining high accuracy and minimal communication overhead. These results highlight MetaFed as a scalable solution for building environmentally responsible and privacy-compliant Metaverse infrastructures.</description>
-   <guid>oai:arXiv.org:2508.17341v2</guid>
+   <title>Decentor-V: Lightweight ML Training on Low-Power RISC-V Edge Devices</title>
+   <link>https://arxiv.org/abs/2509.18118</link>
+   <description>Modern IoT devices increasingly rely on machine learning solutions to process data locally. However, the lack of graphics processing units (GPUs) or dedicated accelerators on most platforms makes on-device training largely infeasible, often requiring cloud-based services to perform this task. This procedure often raises privacy-related concerns, and creates dependency on reliable and always-on connectivity. Federated Learning (FL) is a new trend that addresses these issues by enabling decentralized and collaborative training directly on devices, but it requires highly efficient optimization algorithms. L-SGD, a lightweight variant of stochastic gradient descent, has enabled neural network training on Arm Cortex-M Microcontroller Units (MCUs). This work extends L-SGD to RISC-V-based MCUs, an open and emerging architecture that still lacks robust support for on-device training. L-SGD was evaluated on both Arm and RISC-V platforms using 32-bit floating-point arithmetic, highlighting the performance impact of the absence of Floating-Point Units (FPUs) in RISC-V MCUs. To mitigate these limitations, we introduce an 8-bit quantized version of L-SGD for RISC-V, which achieves nearly 4x reduction in memory usage and a 2.2x speedup in training time, with negligible accuracy degradation.</description>
+   <guid>oai:arXiv.org:2509.18118v1</guid>
    <category>cs.LG</category>
-   <category>cs.CR</category>
-   <category>cs.CY</category>
-   <category>cs.DC</category>
-   <category>cs.ET</category>
+   <category>cs.AR</category>
    <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
+   <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Muhammet Anil Yagiz, Zeynep Sude Cengiz, Polat Goktas</creator>
+   <creator>Marcelo Ribeiro, Diogo Costa, Gon\c{c}alo Moreira, Sandro Pinto, Tiago Gomes</creator>
+  </item>
+  <item>
+   <title>Zero-Shot Visual Deepfake Detection: Can AI Predict and Prevent Fake Content Before It's Created?</title>
+   <link>https://arxiv.org/abs/2509.18461</link>
+   <description>Generative adversarial networks (GANs) and diffusion models have dramatically advanced deepfake technology, and its threats to digital security, media integrity, and public trust have increased rapidly. This research explored zero-shot deepfake detection, an emerging method even when the models have never seen a particular deepfake variation. In this work, we studied self-supervised learning, transformer-based zero-shot classifier, generative model fingerprinting, and meta-learning techniques that better adapt to the ever-evolving deepfake threat. In addition, we suggested AI-driven prevention strategies that mitigated the underlying generation pipeline of the deepfakes before they occurred. They consisted of adversarial perturbations for creating deepfake generators, digital watermarking for content authenticity verification, real-time AI monitoring for content creation pipelines, and blockchain-based content verification frameworks. Despite these advancements, zero-shot detection and prevention faced critical challenges such as adversarial attacks, scalability constraints, ethical dilemmas, and the absence of standardized evaluation benchmarks. These limitations were addressed by discussing future research directions on explainable AI for deepfake detection, multimodal fusion based on image, audio, and text analysis, quantum AI for enhanced security, and federated learning for privacy-preserving deepfake detection. This further highlighted the need for an integrated defense framework for digital authenticity that utilized zero-shot learning in combination with preventive deepfake mechanisms. Finally, we highlighted the important role of interdisciplinary collaboration between AI researchers, cybersecurity experts, and policymakers to create resilient defenses against the rising tide of deepfake attacks.</description>
+   <guid>oai:arXiv.org:2509.18461v1</guid>
+   <category>cs.GR</category>
+   <category>cs.AI</category>
+   <category>cs.CV</category>
+   <category>cs.MM</category>
+   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ayan Sar, Sampurna Roy, Tanupriya Choudhury, Ajith Abraham</creator>
+  </item>
+  <item>
+   <title>A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning</title>
+   <link>https://arxiv.org/abs/2509.18120</link>
+   <description>Cross-silo federated learning (CFL) enables organizations (e.g., hospitals or banks) to collaboratively train artificial intelligence (AI) models while preserving data privacy by keeping data local. While prior work has primarily addressed statistical heterogeneity across organizations, a critical challenge arises from economic competition, where organizations may act as market rivals, making them hesitant to participate in joint training due to potential utility loss (i.e., reduced net benefit). Furthermore, the combined effects of statistical heterogeneity and inter-organizational competition on organizational behavior and system-wide social welfare remain underexplored. In this paper, we propose CoCoGen, a coopetitive-compatible data generation framework, leveraging generative AI (GenAI) and potential game theory to model, analyze, and optimize collaborative learning under heterogeneous and competitive settings. Specifically, CoCoGen characterizes competition and statistical heterogeneity through learning performance and utility-based formulations and models each training round as a weighted potential game. We then derive GenAI-based data generation strategies that maximize social welfare. Experimental results on the Fashion-MNIST dataset reveal how varying heterogeneity and competition levels affect organizational behavior and demonstrate that CoCoGen consistently outperforms baseline methods.</description>
+   <guid>oai:arXiv.org:2509.18120v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CE</category>
+   <category>cs.DC</category>
+   <category>cs.GT</category>
+   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Thanh Linh Nguyen, Quoc-Viet Pham</creator>
   </item>
   <item>
    <title>A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning</title>
@@ -198,18 +149,6 @@
    <announce_type>cross</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
    <creator>Ayan Sar, Sampurna Roy, Tanupriya Choudhury, Ajith Abraham</creator>
-  </item>
-  <item>
-   <title>Enhancing Automatic Chord Recognition through LLM Chain-of-Thought Reasoning</title>
-   <link>https://arxiv.org/abs/2509.18700</link>
-   <description>Music Information Retrieval (MIR) encompasses a broad range of computational techniques for analyzing and understanding musical content, with recent deep learning advances driving substantial improvements. Building upon these advances, this paper explores how large language models (LLMs) can serve as an integrative bridge to connect and integrate information from multiple MIR tools, with a focus on enhancing automatic chord recognition performance. We present a novel approach that positions text-based LLMs as intelligent coordinators that process and integrate outputs from diverse state-of-the-art MIR tools-including music source separation, key detection, chord recognition, and beat tracking. Our method converts audio-derived musical information into textual representations, enabling LLMs to perform reasoning and correction specifically for chord recognition tasks. We design a 5-stage chain-of-thought framework that allows GPT-4o to systematically analyze, compare, and refine chord recognition results by leveraging music-theoretical knowledge to integrate information across different MIR components. Experimental evaluation on three datasets demonstrates consistent improvements across multiple evaluation metrics, with overall accuracy gains of 1-2.77% on the MIREX metric. Our findings demonstrate that LLMs can effectively function as integrative bridges in MIR pipelines, opening new directions for multi-tool coordination in music information retrieval tasks.</description>
-   <guid>oai:arXiv.org:2509.18700v1</guid>
-   <category>cs.SD</category>
-   <category>eess.AS</category>
-   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Chih-Cheng Chang, Bo-Yu Chen, Lu-Rong Chen, Li Su</creator>
   </item>
   <item>
    <title>Data Valuation and Selection in a Federated Model Marketplace</title>
@@ -375,58 +314,16 @@
    <creator>Anand Gokhale, Vaibhav Srivastava, Francesco Bullo</creator>
   </item>
   <item>
-   <title>Decentor-V: Lightweight ML Training on Low-Power RISC-V Edge Devices</title>
-   <link>https://arxiv.org/abs/2509.18118</link>
-   <description>Modern IoT devices increasingly rely on machine learning solutions to process data locally. However, the lack of graphics processing units (GPUs) or dedicated accelerators on most platforms makes on-device training largely infeasible, often requiring cloud-based services to perform this task. This procedure often raises privacy-related concerns, and creates dependency on reliable and always-on connectivity. Federated Learning (FL) is a new trend that addresses these issues by enabling decentralized and collaborative training directly on devices, but it requires highly efficient optimization algorithms. L-SGD, a lightweight variant of stochastic gradient descent, has enabled neural network training on Arm Cortex-M Microcontroller Units (MCUs). This work extends L-SGD to RISC-V-based MCUs, an open and emerging architecture that still lacks robust support for on-device training. L-SGD was evaluated on both Arm and RISC-V platforms using 32-bit floating-point arithmetic, highlighting the performance impact of the absence of Floating-Point Units (FPUs) in RISC-V MCUs. To mitigate these limitations, we introduce an 8-bit quantized version of L-SGD for RISC-V, which achieves nearly 4x reduction in memory usage and a 2.2x speedup in training time, with negligible accuracy degradation.</description>
-   <guid>oai:arXiv.org:2509.18118v1</guid>
-   <category>cs.LG</category>
-   <category>cs.AR</category>
-   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Marcelo Ribeiro, Diogo Costa, Gon\c{c}alo Moreira, Sandro Pinto, Tiago Gomes</creator>
-  </item>
-  <item>
-   <title>LogicGuard: Improving Embodied LLM agents through Temporal Logic based Critics</title>
-   <link>https://arxiv.org/abs/2507.03293</link>
-   <description>Large language models (LLMs) have shown promise in zero-shot and single step reasoning and decision making problems, but in long horizon sequential planning tasks, their errors compound, often leading to unreliable or inefficient behavior. We introduce LogicGuard, a modular actor-critic architecture in which an LLM actor is guided by a trajectory level LLM critic that communicates through Linear Temporal Logic (LTL). Our setup combines the reasoning strengths of language models with the guarantees of formal logic. The actor selects high-level actions from natural language observations, while the critic analyzes full trajectories and proposes new LTL constraints that shield the actor from future unsafe or inefficient behavior. LogicGuard supports both fixed safety rules and adaptive, learned constraints, and is model-agnostic: any LLM-based planner can serve as the actor, with LogicGuard acting as a logic-generating wrapper. We formalize planning as graph traversal under symbolic constraints, allowing LogicGuard to analyze failed or suboptimal trajectories and generate new temporal logic rules that improve future behavior. To demonstrate generality, we evaluate LogicGuard across two distinct settings: short-horizon general tasks and long-horizon specialist tasks. On the Behavior benchmark of 100 household tasks, LogicGuard increases task completion rates by 25% over a baseline InnerMonologue planner. On the Minecraft diamond-mining task, which is long-horizon and requires multiple interdependent subgoals, LogicGuard improves both efficiency and safety compared to SayCan and InnerMonologue. These results show that enabling LLMs to supervise each other through temporal logic yields more reliable, efficient and safe decision-making for both embodied agents.</description>
-   <guid>oai:arXiv.org:2507.03293v2</guid>
-   <category>cs.AI</category>
-   <category>cs.CL</category>
-   <category>cs.LG</category>
-   <category>cs.SY</category>
-   <category>eess.SY</category>
-   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
-   <creator>Anand Gokhale, Vaibhav Srivastava, Francesco Bullo</creator>
-  </item>
-  <item>
-   <title>MetaFed: Advancing Privacy, Performance, and Sustainability in Federated Metaverse Systems</title>
-   <link>https://arxiv.org/abs/2508.17341</link>
-   <description>The rapid expansion of immersive Metaverse applications introduces complex challenges at the intersection of performance, privacy, and environmental sustainability. Centralized architectures fall short in addressing these demands, often resulting in elevated energy consumption, latency, and privacy concerns. This paper proposes MetaFed, a decentralized federated learning (FL) framework that enables sustainable and intelligent resource orchestration for Metaverse environments. MetaFed integrates (i) multi-agent reinforcement learning for dynamic client selection, (ii) privacy-preserving FL using homomorphic encryption, and (iii) carbon-aware scheduling aligned with renewable energy availability. Evaluations on MNIST and CIFAR-10 using lightweight ResNet architectures demonstrate that MetaFed achieves up to 25% reduction in carbon emissions compared to conventional approaches, while maintaining high accuracy and minimal communication overhead. These results highlight MetaFed as a scalable solution for building environmentally responsible and privacy-compliant Metaverse infrastructures.</description>
-   <guid>oai:arXiv.org:2508.17341v2</guid>
-   <category>cs.LG</category>
-   <category>cs.CR</category>
-   <category>cs.CY</category>
-   <category>cs.DC</category>
-   <category>cs.ET</category>
-   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
-   <announce_type>replace-cross</announce_type>
-   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Muhammet Anil Yagiz, Zeynep Sude Cengiz, Polat Goktas</creator>
-  </item>
-  <item>
-   <title>BloomIntent: Automating Search Evaluation with LLM-Generated Fine-Grained User Intents</title>
-   <link>https://arxiv.org/abs/2509.18641</link>
-   <description>If 100 people issue the same search query, they may have 100 different goals. While existing work on user-centric AI evaluation highlights the importance of aligning systems with fine-grained user intents, current search evaluation methods struggle to represent and assess this diversity. We introduce BloomIntent, a user-centric search evaluation method that uses user intents as the evaluation unit. BloomIntent first generates a set of plausible, fine-grained search intents grounded on taxonomies of user attributes and information-seeking intent types. Then, BloomIntent provides an automated evaluation of search results against each intent powered by large language models. To support practical analysis, BloomIntent clusters semantically similar intents and summarizes evaluation outcomes in a structured interface. With three technical evaluations, we showed that BloomIntent generated fine-grained, evaluable, and realistic intents and produced scalable assessments of intent-level satisfaction that achieved 72% agreement with expert evaluators. In a case study (N=4), we showed that BloomIntent supported search specialists in identifying intents for ambiguous queries, uncovering underserved user needs, and discovering actionable insights for improving search experiences. By shifting from query-level to intent-level evaluation, BloomIntent reimagines how search systems can be assessed -- not only for performance but for their ability to serve a multitude of user goals.</description>
-   <guid>oai:arXiv.org:2509.18641v1</guid>
-   <category>cs.HC</category>
-   <category>cs.IR</category>
+   <title>Enhancing Automatic Chord Recognition through LLM Chain-of-Thought Reasoning</title>
+   <link>https://arxiv.org/abs/2509.18700</link>
+   <description>Music Information Retrieval (MIR) encompasses a broad range of computational techniques for analyzing and understanding musical content, with recent deep learning advances driving substantial improvements. Building upon these advances, this paper explores how large language models (LLMs) can serve as an integrative bridge to connect and integrate information from multiple MIR tools, with a focus on enhancing automatic chord recognition performance. We present a novel approach that positions text-based LLMs as intelligent coordinators that process and integrate outputs from diverse state-of-the-art MIR tools-including music source separation, key detection, chord recognition, and beat tracking. Our method converts audio-derived musical information into textual representations, enabling LLMs to perform reasoning and correction specifically for chord recognition tasks. We design a 5-stage chain-of-thought framework that allows GPT-4o to systematically analyze, compare, and refine chord recognition results by leveraging music-theoretical knowledge to integrate information across different MIR components. Experimental evaluation on three datasets demonstrates consistent improvements across multiple evaluation metrics, with overall accuracy gains of 1-2.77% on the MIREX metric. Our findings demonstrate that LLMs can effectively function as integrative bridges in MIR pipelines, opening new directions for multi-tool coordination in music information retrieval tasks.</description>
+   <guid>oai:arXiv.org:2509.18700v1</guid>
+   <category>cs.SD</category>
+   <category>eess.AS</category>
    <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
-   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
-   <creator>Yoonseo Choi, Eunhye Kim, Hyunwoo Kim, Donghyun Park, Honggu Lee, Jinyoung Kim, Juho Kim</creator>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Chih-Cheng Chang, Bo-Yu Chen, Lu-Rong Chen, Li Su</creator>
   </item>
   <item>
    <title>Data Valuation and Selection in a Federated Model Marketplace</title>
@@ -558,6 +455,62 @@
    <creator>Lishan Yang, Wei Emma Zhang, Nam Kha Nguygen, Po Hu, Yanjun Shu, Weitong Chen, Mong Yuan Sim</creator>
   </item>
   <item>
+   <title>A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning</title>
+   <link>https://arxiv.org/abs/2509.18120</link>
+   <description>Cross-silo federated learning (CFL) enables organizations (e.g., hospitals or banks) to collaboratively train artificial intelligence (AI) models while preserving data privacy by keeping data local. While prior work has primarily addressed statistical heterogeneity across organizations, a critical challenge arises from economic competition, where organizations may act as market rivals, making them hesitant to participate in joint training due to potential utility loss (i.e., reduced net benefit). Furthermore, the combined effects of statistical heterogeneity and inter-organizational competition on organizational behavior and system-wide social welfare remain underexplored. In this paper, we propose CoCoGen, a coopetitive-compatible data generation framework, leveraging generative AI (GenAI) and potential game theory to model, analyze, and optimize collaborative learning under heterogeneous and competitive settings. Specifically, CoCoGen characterizes competition and statistical heterogeneity through learning performance and utility-based formulations and models each training round as a weighted potential game. We then derive GenAI-based data generation strategies that maximize social welfare. Experimental results on the Fashion-MNIST dataset reveal how varying heterogeneity and competition levels affect organizational behavior and demonstrate that CoCoGen consistently outperforms baseline methods.</description>
+   <guid>oai:arXiv.org:2509.18120v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CE</category>
+   <category>cs.DC</category>
+   <category>cs.GT</category>
+   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Thanh Linh Nguyen, Quoc-Viet Pham</creator>
+  </item>
+  <item>
+   <title>FedFiTS: Fitness-Selected, Slotted Client Scheduling for Trustworthy Federated Learning in Healthcare AI</title>
+   <link>https://arxiv.org/abs/2509.19120</link>
+   <description>Federated Learning (FL) has emerged as a powerful paradigm for privacy-preserving model training, yet deployments in sensitive domains such as healthcare face persistent challenges from non-IID data, client unreliability, and adversarial manipulation. This paper introduces FedFiTS, a trust and fairness-aware selective FL framework that advances the FedFaSt line by combining fitness-based client election with slotted aggregation. FedFiTS implements a three-phase participation strategy-free-for-all training, natural selection, and slotted team participation-augmented with dynamic client scoring, adaptive thresholding, and cohort-based scheduling to balance convergence efficiency with robustness. A theoretical convergence analysis establishes bounds for both convex and non-convex objectives under standard assumptions, while a communication-complexity analysis shows reductions relative to FedAvg and other baselines. Experiments on diverse datasets-medical imaging (X-ray pneumonia), vision benchmarks (MNIST, FMNIST), and tabular agricultural data (Crop Recommendation)-demonstrate that FedFiTS consistently outperforms FedAvg, FedRand, and FedPow in accuracy, time-to-target, and resilience to poisoning attacks. By integrating trust-aware aggregation with fairness-oriented client selection, FedFiTS advances scalable and secure FL, making it well suited for real-world healthcare and cross-domain deployments.</description>
+   <guid>oai:arXiv.org:2509.19120v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
+   <creator>Ferdinand Kahenga, Antoine Bagula, Sajal K. Das, Patrick Sello</creator>
+  </item>
+  <item>
+   <title>FedFusion: Federated Learning with Diversity- and Cluster-Aware Encoders for Robust Adaptation under Label Scarcity</title>
+   <link>https://arxiv.org/abs/2509.19220</link>
+   <description>Federated learning in practice must contend with heterogeneous feature spaces, severe non-IID data, and scarce labels across clients. We present FedFusion, a federated transfer-learning framework that unifies domain adaptation and frugal labelling with diversity-/cluster-aware encoders (DivEn, DivEn-mix, DivEn-c). Labelled teacher clients guide learner clients via confidence-filtered pseudo-labels and domain-adaptive transfer, while clients maintain personalised encoders tailored to local data. To preserve global coherence under heterogeneity, FedFusion employs similarity-weighted classifier coupling (with optional cluster-wise averaging), mitigating dominance by data-rich sites and improving minority-client performance. The frugal-labelling pipeline combines self-/semi-supervised pretext training with selective fine-tuning, reducing annotation demands without sharing raw data. Across tabular and imaging benchmarks under IID, non-IID, and label-scarce regimes, FedFusion consistently outperforms state-of-the-art baselines in accuracy, robustness, and fairness while maintaining comparable communication and computation budgets. These results show that harmonising personalisation, domain adaptation, and label efficiency is an effective recipe for robust federated learning under real-world constraints.</description>
+   <guid>oai:arXiv.org:2509.19220v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.DC</category>
+   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-sa/4.0/</rights>
+   <creator>Ferdinand Kahenga, Antoine Bagula, Patrick Sello, Sajal K. Das</creator>
+  </item>
+  <item>
+   <title>MetaFed: Advancing Privacy, Performance, and Sustainability in Federated Metaverse Systems</title>
+   <link>https://arxiv.org/abs/2508.17341</link>
+   <description>The rapid expansion of immersive Metaverse applications introduces complex challenges at the intersection of performance, privacy, and environmental sustainability. Centralized architectures fall short in addressing these demands, often resulting in elevated energy consumption, latency, and privacy concerns. This paper proposes MetaFed, a decentralized federated learning (FL) framework that enables sustainable and intelligent resource orchestration for Metaverse environments. MetaFed integrates (i) multi-agent reinforcement learning for dynamic client selection, (ii) privacy-preserving FL using homomorphic encryption, and (iii) carbon-aware scheduling aligned with renewable energy availability. Evaluations on MNIST and CIFAR-10 using lightweight ResNet architectures demonstrate that MetaFed achieves up to 25% reduction in carbon emissions compared to conventional approaches, while maintaining high accuracy and minimal communication overhead. These results highlight MetaFed as a scalable solution for building environmentally responsible and privacy-compliant Metaverse infrastructures.</description>
+   <guid>oai:arXiv.org:2508.17341v2</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <category>cs.CY</category>
+   <category>cs.DC</category>
+   <category>cs.ET</category>
+   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Muhammet Anil Yagiz, Zeynep Sude Cengiz, Polat Goktas</creator>
+  </item>
+  <item>
    <title>BloomIntent: Automating Search Evaluation with LLM-Generated Fine-Grained User Intents</title>
    <link>https://arxiv.org/abs/2509.18641</link>
    <description>If 100 people issue the same search query, they may have 100 different goals. While existing work on user-centric AI evaluation highlights the importance of aligning systems with fine-grained user intents, current search evaluation methods struggle to represent and assess this diversity. We introduce BloomIntent, a user-centric search evaluation method that uses user intents as the evaluation unit. BloomIntent first generates a set of plausible, fine-grained search intents grounded on taxonomies of user attributes and information-seeking intent types. Then, BloomIntent provides an automated evaluation of search results against each intent powered by large language models. To support practical analysis, BloomIntent clusters semantically similar intents and summarizes evaluation outcomes in a structured interface. With three technical evaluations, we showed that BloomIntent generated fine-grained, evaluable, and realistic intents and produced scalable assessments of intent-level satisfaction that achieved 72% agreement with expert evaluators. In a case study (N=4), we showed that BloomIntent supported search specialists in identifying intents for ambiguous queries, uncovering underserved user needs, and discovering actionable insights for improving search experiences. By shifting from query-level to intent-level evaluation, BloomIntent reimagines how search systems can be assessed -- not only for performance but for their ability to serve a multitude of user goals.</description>
@@ -570,18 +523,66 @@
    <creator>Yoonseo Choi, Eunhye Kim, Hyunwoo Kim, Donghyun Park, Honggu Lee, Jinyoung Kim, Juho Kim</creator>
   </item>
   <item>
-   <title>Zero-Shot Visual Deepfake Detection: Can AI Predict and Prevent Fake Content Before It's Created?</title>
-   <link>https://arxiv.org/abs/2509.18461</link>
-   <description>Generative adversarial networks (GANs) and diffusion models have dramatically advanced deepfake technology, and its threats to digital security, media integrity, and public trust have increased rapidly. This research explored zero-shot deepfake detection, an emerging method even when the models have never seen a particular deepfake variation. In this work, we studied self-supervised learning, transformer-based zero-shot classifier, generative model fingerprinting, and meta-learning techniques that better adapt to the ever-evolving deepfake threat. In addition, we suggested AI-driven prevention strategies that mitigated the underlying generation pipeline of the deepfakes before they occurred. They consisted of adversarial perturbations for creating deepfake generators, digital watermarking for content authenticity verification, real-time AI monitoring for content creation pipelines, and blockchain-based content verification frameworks. Despite these advancements, zero-shot detection and prevention faced critical challenges such as adversarial attacks, scalability constraints, ethical dilemmas, and the absence of standardized evaluation benchmarks. These limitations were addressed by discussing future research directions on explainable AI for deepfake detection, multimodal fusion based on image, audio, and text analysis, quantum AI for enhanced security, and federated learning for privacy-preserving deepfake detection. This further highlighted the need for an integrated defense framework for digital authenticity that utilized zero-shot learning in combination with preventive deepfake mechanisms. Finally, we highlighted the important role of interdisciplinary collaboration between AI researchers, cybersecurity experts, and policymakers to create resilient defenses against the rising tide of deepfake attacks.</description>
-   <guid>oai:arXiv.org:2509.18461v1</guid>
-   <category>cs.GR</category>
-   <category>cs.AI</category>
-   <category>cs.CV</category>
-   <category>cs.MM</category>
+   <title>Prior-based Noisy Text Data Filtering: Fast and Strong Alternative For Perplexity</title>
+   <link>https://arxiv.org/abs/2509.18577</link>
+   <description>As large language models (LLMs) are pretrained on massive web corpora, careful selection of data becomes essential to ensure effective and efficient learning. While perplexity (PPL)-based filtering has shown strong performance, it suffers from drawbacks: substantial time costs and inherent unreliability of the model when handling noisy or out-of-distribution samples. In this work, we propose a simple yet powerful alternative: a prior-based data filtering method that estimates token priors using corpus-level term frequency statistics, inspired by linguistic insights on word roles and lexical density. Our approach filters documents based on the mean and standard deviation of token priors, serving as a fast proxy to PPL while requiring no model inference. Despite its simplicity, the prior-based filter achieves the highest average performance across 20 downstream benchmarks, while reducing time cost by over 1000x compared to PPL-based filtering. We further demonstrate its applicability to symbolic languages such as code and math, and its dynamic adaptability to multilingual corpora without supervision</description>
+   <guid>oai:arXiv.org:2509.18577v1</guid>
+   <category>cs.CL</category>
+   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yeongbin Seo, Gayoung Kim, Jaehyung Kim, Jinyoung Yeo</creator>
+  </item>
+  <item>
+   <title>Extracting Conceptual Spaces from LLMs Using Prototype Embeddings</title>
+   <link>https://arxiv.org/abs/2509.19269</link>
+   <description>Conceptual spaces represent entities and concepts using cognitively meaningful dimensions, typically referring to perceptual features. Such representations are widely used in cognitive science and have the potential to serve as a cornerstone for explainable AI. Unfortunately, they have proven notoriously difficult to learn, although recent LLMs appear to capture the required perceptual features to a remarkable extent. Nonetheless, practical methods for extracting the corresponding conceptual spaces are currently still lacking. While various methods exist for extracting embeddings from LLMs, extracting conceptual spaces also requires us to encode the underlying features. In this paper, we propose a strategy in which features (e.g. sweetness) are encoded by embedding the description of a corresponding prototype (e.g. a very sweet food). To improve this strategy, we fine-tune the LLM to align the prototype embeddings with the corresponding conceptual space dimensions. Our empirical analysis finds this approach to be highly effective.</description>
+   <guid>oai:arXiv.org:2509.19269v1</guid>
+   <category>cs.CL</category>
    <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
    <rights>http://creativecommons.org/licenses/by/4.0/</rights>
-   <creator>Ayan Sar, Sampurna Roy, Tanupriya Choudhury, Ajith Abraham</creator>
+   <creator>Nitesh Kumar, Usashi Chatterjee, Steven Schockaert</creator>
+  </item>
+  <item>
+   <title>LogicGuard: Improving Embodied LLM agents through Temporal Logic based Critics</title>
+   <link>https://arxiv.org/abs/2507.03293</link>
+   <description>Large language models (LLMs) have shown promise in zero-shot and single step reasoning and decision making problems, but in long horizon sequential planning tasks, their errors compound, often leading to unreliable or inefficient behavior. We introduce LogicGuard, a modular actor-critic architecture in which an LLM actor is guided by a trajectory level LLM critic that communicates through Linear Temporal Logic (LTL). Our setup combines the reasoning strengths of language models with the guarantees of formal logic. The actor selects high-level actions from natural language observations, while the critic analyzes full trajectories and proposes new LTL constraints that shield the actor from future unsafe or inefficient behavior. LogicGuard supports both fixed safety rules and adaptive, learned constraints, and is model-agnostic: any LLM-based planner can serve as the actor, with LogicGuard acting as a logic-generating wrapper. We formalize planning as graph traversal under symbolic constraints, allowing LogicGuard to analyze failed or suboptimal trajectories and generate new temporal logic rules that improve future behavior. To demonstrate generality, we evaluate LogicGuard across two distinct settings: short-horizon general tasks and long-horizon specialist tasks. On the Behavior benchmark of 100 household tasks, LogicGuard increases task completion rates by 25% over a baseline InnerMonologue planner. On the Minecraft diamond-mining task, which is long-horizon and requires multiple interdependent subgoals, LogicGuard improves both efficiency and safety compared to SayCan and InnerMonologue. These results show that enabling LLMs to supervise each other through temporal logic yields more reliable, efficient and safe decision-making for both embodied agents.</description>
+   <guid>oai:arXiv.org:2507.03293v2</guid>
+   <category>cs.AI</category>
+   <category>cs.CL</category>
+   <category>cs.LG</category>
+   <category>cs.SY</category>
+   <category>eess.SY</category>
+   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Anand Gokhale, Vaibhav Srivastava, Francesco Bullo</creator>
+  </item>
+  <item>
+   <title>LLMs as verification oracles for Solidity</title>
+   <link>https://arxiv.org/abs/2509.19153</link>
+   <description>Ensuring the correctness of smart contracts is critical, as even subtle flaws can lead to severe financial losses. While bug detection tools able to spot common vulnerability patterns can serve as a first line of defense, most real-world exploits and losses stem from errors in the contract business logic. Formal verification tools such as SolCMC and the Certora Prover address this challenge, but their impact remains limited by steep learning curves and restricted specification languages. Recent works have begun to explore the use of large language models (LLMs) for security-related tasks such as vulnerability detection and test generation. Yet, a fundamental question remains open: can LLMs serve as verification oracles, capable of reasoning about arbitrary contract-specific properties? In this paper, we provide the first systematic evaluation of GPT-5, a state-of-the-art reasoning LLM, in this role. We benchmark its performance on a large dataset of verification tasks, compare its outputs against those of established formal verification tools, and assess its practical effectiveness in real-world auditing scenarios. Our study combines quantitative metrics with qualitative analysis, and shows that recent reasoning-oriented LLMs can be surprisingly effective as verification oracles, suggesting a new frontier in the convergence of AI and formal methods for secure smart contract development and auditing.</description>
+   <guid>oai:arXiv.org:2509.19153v1</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <category>cs.SE</category>
+   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Massimo Bartoletti, Enrico Lipparini, Livio Pompianu</creator>
+  </item>
+  <item>
+   <title>BloomIntent: Automating Search Evaluation with LLM-Generated Fine-Grained User Intents</title>
+   <link>https://arxiv.org/abs/2509.18641</link>
+   <description>If 100 people issue the same search query, they may have 100 different goals. While existing work on user-centric AI evaluation highlights the importance of aligning systems with fine-grained user intents, current search evaluation methods struggle to represent and assess this diversity. We introduce BloomIntent, a user-centric search evaluation method that uses user intents as the evaluation unit. BloomIntent first generates a set of plausible, fine-grained search intents grounded on taxonomies of user attributes and information-seeking intent types. Then, BloomIntent provides an automated evaluation of search results against each intent powered by large language models. To support practical analysis, BloomIntent clusters semantically similar intents and summarizes evaluation outcomes in a structured interface. With three technical evaluations, we showed that BloomIntent generated fine-grained, evaluable, and realistic intents and produced scalable assessments of intent-level satisfaction that achieved 72% agreement with expert evaluators. In a case study (N=4), we showed that BloomIntent supported search specialists in identifying intents for ambiguous queries, uncovering underserved user needs, and discovering actionable insights for improving search experiences. By shifting from query-level to intent-level evaluation, BloomIntent reimagines how search systems can be assessed -- not only for performance but for their ability to serve a multitude of user goals.</description>
+   <guid>oai:arXiv.org:2509.18641v1</guid>
+   <category>cs.HC</category>
+   <category>cs.IR</category>
+   <pubdate>Wed, 24 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Yoonseo Choi, Eunhye Kim, Hyunwoo Kim, Donghyun Park, Honggu Lee, Jinyoung Kim, Juho Kim</creator>
   </item>
  </channel>
 </rss>
