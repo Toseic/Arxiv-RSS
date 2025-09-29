@@ -6,8 +6,525 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Mon, 29 Sep 2025 02:59:32 </lastBuildDate>
+  <lastBuildDate>Mon, 29 Sep 2025 04:15:40 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Mon, 29 Sep 2025 02:59:32 </pubDate>
+  <pubDate>Mon, 29 Sep 2025 04:15:40 </pubDate>
+  <item>
+   <title>UniVid: Unifying Vision Tasks with Pre-trained Video Generation Models</title>
+   <link>https://arxiv.org/abs/2509.21760</link>
+   <description>Large language models, trained on extensive corpora, successfully unify diverse linguistic tasks within a single generative framework. Inspired by this, recent works like Large Vision Model (LVM) extend this paradigm to vision by organizing tasks into sequential visual sentences, where visual prompts serve as the context to guide outputs. However, such modeling requires task-specific pre-training across modalities and sources, which is costly and limits scalability to unseen tasks. Given that pre-trained video generation models inherently capture temporal sequence dependencies, we explore a more unified and scalable alternative: can a pre-trained video generation model adapt to diverse image and video tasks? To answer this, we propose UniVid, a framework that fine-tunes a video diffusion transformer to handle various vision tasks without task-specific modifications. Tasks are represented as visual sentences, where the context sequence defines both the task and the expected output modality. We evaluate the generalization of UniVid from two perspectives: (1) cross-modal inference with contexts composed of both images and videos, extending beyond LVM's uni-modal setting; (2) cross-source tasks from natural to annotated data, without multi-source pre-training. Despite being trained solely on natural video data, UniVid generalizes well in both settings. Notably, understanding and generation tasks can easily switch by simply reversing the visual sentence order in this paradigm. These findings highlight the potential of pre-trained video generation models to serve as a scalable and unified foundation for vision modeling. Our code will be released at https://github.com/CUC-MIPG/UniVid.</description>
+   <guid>oai:arXiv.org:2509.21760v1</guid>
+   <category>cs.CV</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Lan Chen, Yuchao Gu, Qi Mao</creator>
+  </item>
+  <item>
+   <title>Exposing Hallucinations To Suppress Them: VLMs Representation Editing With Generative Anchors</title>
+   <link>https://arxiv.org/abs/2509.21997</link>
+   <description>Multimodal large language models (MLLMs) have achieved remarkable success across diverse vision-language tasks, yet they remain highly susceptible to hallucinations, producing content that is fluent but inconsistent with visual evidence. Such hallucinations, spanning objects, attributes, and relations, persist even in larger models, while existing mitigation approaches often require additional finetuning, handcrafted priors, or trade-offs that compromise informativeness and scalability. To address this limitation, we propose a training-free, self-supervised method for hallucination mitigation. Our approach introduces a novel hallucination amplification mechanism: a caption is projected into the visual space via a text-to-image model to reveal implicit hallucination signals, serving as a negative anchor, while the original image provides a positive anchor. Leveraging these dual anchors, we edit decoder hidden states by pulling representations toward faithful semantics and pushing them away from hallucination directions. This correction requires no human priors or additional training costs, ensuring both effectiveness and efficiency. Extensive experiments across multiple benchmarks show that our method significantly reduces hallucinations at the object, attribute, and relation levels while largely preserving recall and caption richness, e.g., achieving a hallucination reduction by over 5% using LLaVA-v1.5-7B on CHAIR. Furthermore, results on diverse architectures, including LLaVA-NEXT-7B, Cambrian-8B, and InstructBLIP-7B, validate strong cross-architecture generalization. More importantly, when applied to hallucination-free captions, our method introduces almost no side effects, underscoring its robustness and practical plug-and-play applicability. The implementation will be publicly available.</description>
+   <guid>oai:arXiv.org:2509.21997v1</guid>
+   <category>cs.CV</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Youxu Shi, Suorong Yang, Dong Liu</creator>
+  </item>
+  <item>
+   <title>EgoInstruct: An Egocentric Video Dataset of Face-to-face Instructional Interactions with Multi-modal LLM Benchmarking</title>
+   <link>https://arxiv.org/abs/2509.22019</link>
+   <description>Analyzing instructional interactions between an instructor and a learner who are co-present in the same physical space is a critical problem for educational support and skill transfer. Yet such face-to-face instructional scenes have not been systematically studied in computer vision. We identify two key reasons: i) the lack of suitable datasets and ii) limited analytical techniques. To address this gap, we present a new egocentric video dataset of face-to-face instruction and provide ground-truth annotations for two fundamental tasks that serve as a first step toward a comprehensive understanding of instructional interactions: procedural step segmentation and conversation-state classification. Using this dataset, we benchmark multimodal large language models (MLLMs) against conventional task-specific models. Since face-to-face instruction involves multiple modalities (speech content and prosody, gaze and body motion, and visual context), effective understanding requires methods that handle verbal and nonverbal communication in an integrated manner. Accordingly, we evaluate recently introduced MLLMs that jointly process images, audio, and text. This evaluation quantifies the extent to which current machine learning models understand face-to-face instructional scenes. In experiments, MLLMs outperform specialized baselines even without task-specific fine-tuning, suggesting their promise for holistic understanding of instructional interactions.</description>
+   <guid>oai:arXiv.org:2509.22019v1</guid>
+   <category>cs.CV</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Yuki Sakai, Ryosuke Furuta, Juichun Yen, Yoichi Sato</creator>
+  </item>
+  <item>
+   <title>Adaptive Dual-Mode Distillation with Incentive Schemes for Scalable, Heterogeneous Federated Learning on Non-IID Data</title>
+   <link>https://arxiv.org/abs/2509.22507</link>
+   <description>Federated Learning (FL) has emerged as a promising decentralized learning (DL) approach that enables the use of distributed data without compromising user privacy. However, FL poses several key challenges. First, it is frequently assumed that every client can train the same machine learning models, however, not all clients are able to meet this assumption because of differences in their business needs and computational resources. Second, statistical heterogeneity (a.k.a. non-IID data) poses a major challenge in FL, which can lead to lower global model performance. Third, while addressing these challenges, there is a need for a cost-effective incentive mechanism to encourage clients to participate in FL training. In response to these challenges, we propose several methodologies: DL-SH, which facilitates efficient, privacy-preserving, and communication-efficient learning in the context of statistical heterogeneity; DL-MH, designed to manage fully heterogeneous models while tackling statistical disparities; and I-DL-MH, an incentive-based extension of DL-MH that promotes client engagement in federated learning training by providing incentives within this complex federated learning framework. Comprehensive experiments were carried out to assess the performance and scalability of the proposed approaches across a range of complex experimental settings. This involved utilizing various model architectures, in diverse data distributions, including IID and several non-IID scenarios, as well as multiple datasets. Experimental results demonstrate that the proposed approaches significantly enhance accuracy and decrease communication costs while effectively addressing statistical heterogeneity and model heterogeneity in comparison to existing state-of-the-art approaches and baselines, with DL-SH improving global model accuracy by 153%, and I-DL-MH achieving a 225% improvement under non-IID conditions.</description>
+   <guid>oai:arXiv.org:2509.22507v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zahid Iqbal</creator>
+  </item>
+  <item>
+   <title>pFedMMA: Personalized Federated Fine-Tuning with Multi-Modal Adapter for Vision-Language Models</title>
+   <link>https://arxiv.org/abs/2507.05394</link>
+   <description>Vision-Language Models (VLMs) like CLIP have demonstrated remarkable generalization in zero- and few-shot settings, but adapting them efficiently to decentralized, heterogeneous data remains a challenge. While prompt tuning has emerged as a popular parameter-efficient approach in personalized federated learning, existing methods often sacrifice generalization in favor of personalization, struggling particularly on unseen classes or domains. In this work, we propose pFedMMA, the first personalized federated learning framework that leverages multi-modal adapters for vision-language tasks. Each adapter contains modality-specific up- and down-projection layers alongside a globally shared projection that aligns cross-modal features. Our optimization strategy allows clients to locally adapt to personalized data distributions while collaboratively training the shared projection to improve global generalization. This design is also communication-efficient, as only the shared component is exchanged during communication rounds. Through extensive experiments across eleven datasets, including domain- and label-shift scenarios, we show that pFedMMA achieves state-of-the-art trade-offs between personalization and generalization, outperforming recent federated prompt tuning methods.</description>
+   <guid>oai:arXiv.org:2507.05394v2</guid>
+   <category>cs.CV</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sajjad Ghiasvand, Mahnoosh Alizadeh, Ramtin Pedarsani</creator>
+  </item>
+  <item>
+   <title>Machine Learning-Assisted Sustainable Remanufacturing, Reusing and Recycling for Lithium-ion Batteries</title>
+   <link>https://arxiv.org/abs/2406.00276</link>
+   <description>The sustainable utilization of lithium-ion batteries (LIBs) is crucial to the global energy transition and carbon neutrality, yet data scarcity and heterogeneity remain major barriers across remanufacturing, reusing, and recycling. This dissertation develops a machine learning assisted framework to address these challenges throughout the battery lifecycle. A physics informed quality control model predicts long-term degradation from limited early-cycle data, while a generative learning based residual value assessment method enables rapid and accurate evaluation of retired batteries under random conditions. A federated learning strategy achieves privacy preserving and high precision cathode material sorting, supporting efficient recycling. Furthermore, a unified diagnostics and prognostics framework based on correlation alignment enhances adaptability across tasks such as state of health estimation, state of charge estimation, and remaining useful life prediction under varied testing protocols. Collectively, these contributions advance sustainable battery management by integrating physics, data generation, privacy preserving collaboration, and adaptive learning, offering methodological innovations to promote circular economy and global carbon neutrality.</description>
+   <guid>oai:arXiv.org:2406.00276v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CE</category>
+   <category>physics.data-an</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Shengyu Tao</creator>
+  </item>
+  <item>
+   <title>DroneFL: Federated Learning for Multi-UAV Visual Target Tracking</title>
+   <link>https://arxiv.org/abs/2509.21523</link>
+   <description>Multi-robot target tracking is a fundamental problem that requires coordinated monitoring of dynamic entities in applications such as precision agriculture, environmental monitoring, disaster response, and security surveillance. While Federated Learning (FL) has the potential to enhance learning across multiple robots without centralized data aggregation, its use in multi-Unmanned Aerial Vehicle (UAV) target tracking remains largely underexplored. Key challenges include limited onboard computational resources, significant data heterogeneity in FL due to varying targets and the fields of view, and the need for tight coupling between trajectory prediction and multi-robot planning. In this paper, we introduce DroneFL, the first federated learning framework specifically designed for efficient multi-UAV target tracking. We design a lightweight local model to predict target trajectories from sensor inputs, using a frozen YOLO backbone and a shallow transformer for efficient onboard training. The updated models are periodically aggregated in the cloud for global knowledge sharing. To alleviate the data heterogeneity that hinders FL convergence, DroneFL introduces a position-invariant model architecture with altitude-based adaptive instance normalization. Finally, we fuse predictions from multiple UAVs in the cloud and generate optimal trajectories that balance target prediction accuracy and overall tracking performance. Our results show that DroneFL reduces prediction error by 6%-83% and tracking distance by 0.4%-4.6% compared to a distributed non-FL framework. In terms of efficiency, DroneFL runs in real time on a Raspberry Pi 5 and has on average just 1.56 KBps data rate to the cloud.</description>
+   <guid>oai:arXiv.org:2509.21523v1</guid>
+   <category>cs.RO</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Xiaofan Yu, Yuwei Wu, Katherine Mao, Ye Tian, Vijay Kumar, Tajana Rosing</creator>
+  </item>
+  <item>
+   <title>Plan2Evolve: LLM Self-Evolution for Improved Planning Capability via Automated Domain Generation</title>
+   <link>https://arxiv.org/abs/2509.21543</link>
+   <description>Large Language Models (LLMs) have recently shown strong potential in robotic task planning, particularly through automatic planning domain generation that integrates symbolic search. Prior approaches, however, have largely treated these domains as search utilities, with limited attention to their potential as scalable sources of reasoning data. At the same time, progress in reasoning LLMs has been driven by chain-of-thought (CoT) supervision, whose application in robotics remains dependent on costly, human-curated datasets. We propose Plan2Evolve, an LLM self-evolving framework in which the base model generates planning domains that serve as engines for producing symbolic problem-plan pairs as reasoning traces. These pairs are then transformed into extended CoT trajectories by the same model through natural-language explanations, thereby explicitly aligning symbolic planning structures with natural language reasoning. The resulting data extend beyond the model's intrinsic planning capacity, enabling model fine-tuning that yields a planning-enhanced LLM with improved planning success, stronger cross-task generalization, and reduced inference costs.</description>
+   <guid>oai:arXiv.org:2509.21543v1</guid>
+   <category>cs.RO</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Jinbang Huang, Zhiyuan Li, Zhanguang Zhang, Xingyue Quan, Jianye Hao, Yingxue Zhang</creator>
+  </item>
+  <item>
+   <title>Leveraging Large Language Models for Robot-Assisted Learning of Morphological Structures in Preschool Children with Language Vulnerabilities</title>
+   <link>https://arxiv.org/abs/2509.22287</link>
+   <description>Preschool children with language vulnerabilities -- such as developmental language disorders or immigration related language challenges -- often require support to strengthen their expressive language skills. Based on the principle of implicit learning, speech-language therapists (SLTs) typically embed target morphological structures (e.g., third person -s) into everyday interactions or game-based learning activities. Educators are recommended by SLTs to do the same. This approach demands precise linguistic knowledge and real-time production of various morphological forms (e.g., &quot;Daddy wears these when he drives to work&quot;). The task becomes even more demanding when educators or parent also must keep children engaged and manage turn-taking in a game-based activity. In the TalBot project our multiprofessional team have developed an application in which the Furhat conversational robot plays the word retrieval game &quot;Alias&quot; with children to improve language skills. Our application currently employs a large language model (LLM) to manage gameplay, dialogue, affective responses, and turn-taking. Our next step is to further leverage the capacity of LLMs so the robot can generate and deliver specific morphological targets during the game. We hypothesize that a robot could outperform humans at this task. Novel aspects of this approach are that the robot could ultimately serve as a model and tutor for both children and professionals and that using LLM capabilities in this context would support basic communication needs for children with language vulnerabilities. Our long-term goal is to create a robust LLM-based Robot-Assisted Language Learning intervention capable of teaching a variety of morphological structures across different languages.</description>
+   <guid>oai:arXiv.org:2509.22287v1</guid>
+   <category>cs.RO</category>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Stina Sundstedt, Mattias Wingren, Susanne H\&quot;agglund, Daniel Ventus</creator>
+  </item>
+  <item>
+   <title>SuperCoder: Assembly Program Superoptimization with Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.11480</link>
+   <description>Superoptimization is the task of transforming a program into a faster one while preserving its input-output behavior. In this work, we investigate whether large language models (LLMs) can serve as superoptimizers, generating assembly programs that outperform code already optimized by industry-standard compilers. We construct the first large-scale benchmark for this problem, consisting of 8,072 real-world assembly programs averaging 130 lines, in contrast to prior datasets restricted to 2-15 straight-line, loop-free programs. We evaluate 23 LLMs on this benchmark and find that the strongest baseline, Claude-opus-4, achieves a 51.5% test-passing rate and a 1.43x average speedup over gcc -O3. To further enhance performance, we fine-tune models with reinforcement learning, optimizing a reward function that integrates correctness and performance speedup. Starting from Qwen2.5-Coder-7B-Instruct (61.4% correctness, 1.10x speedup), the fine-tuned model SuperCoder attains 95.0% correctness and 1.46x average speedup. Our results demonstrate, for the first time, that LLMs can be applied as superoptimizers for assembly programs, establishing a foundation for future research in program performance optimization beyond compiler heuristics.</description>
+   <guid>oai:arXiv.org:2505.11480v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.PF</category>
+   <category>cs.PL</category>
+   <category>cs.SE</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Anjiang Wei, Tarun Suresh, Huanmi Tan, Yinglun Xu, Gagandeep Singh, Ke Wang, Alex Aiken</creator>
+  </item>
+  <item>
+   <title>Incentives in Federated Learning with Heterogeneous Agents</title>
+   <link>https://arxiv.org/abs/2509.21612</link>
+   <description>Federated learning promises significant sample-efficiency gains by pooling data across multiple agents, yet incentive misalignment is an obstacle: each update is costly to the contributor but boosts every participant. We introduce a game-theoretic framework that captures heterogeneous data: an agent's utility depends on who supplies each sample, not just how many. Agents aim to meet a PAC-style accuracy threshold at minimal personal cost. We show that uncoordinated play yields pathologies: pure equilibria may not exist, and the best equilibrium can be arbitrarily more costly than cooperation. To steer collaboration, we analyze the cost-minimizing contribution vector, prove that computing it is NP-hard, and derive a polynomial-time linear program that achieves a logarithmic approximation. Finally, pairing the LP with a simple pay-what-you-contribute rule - each agent receives a payment equal to its sample cost - yields a mechanism that is strategyproof and, within the class of contribution-based transfers, is unique.</description>
+   <guid>oai:arXiv.org:2509.21612v1</guid>
+   <category>cs.GT</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Ariel D. Procaccia, Han Shao, Itai Shapira</creator>
+  </item>
+  <item>
+   <title>Do Data Valuations Make Good Data Prices?</title>
+   <link>https://arxiv.org/abs/2504.05563</link>
+   <description>As large language models increasingly rely on external data sources, compensating data contributors has become a central concern. But how should these payments be devised? We revisit data valuations from a $\textit{market-design perspective}$ where payments serve to compensate data owners for the $\textit{private}$ heterogeneous costs they incur for collecting and sharing data. We show that popular valuation methods-such as Leave-One-Out and Data Shapley-make for poor payments. They fail to ensure truthful reporting of the costs, leading to $\textit{inefficient market}$ outcomes. To address this, we adapt well-established payment rules from mechanism design, namely Myerson and Vickrey-Clarke-Groves (VCG), to the data market setting. We show that Myerson payment is the minimal truthful mechanism, optimal from the buyer's perspective. Additionally, we identify a condition under which both data buyers and sellers are utility-satisfied, and the market achieves efficiency. Our findings highlight the importance of incorporating incentive compatibility into data valuation design, paving the way for more robust and efficient data markets. Our data market framework is readily applicable to real-world scenarios. We illustrate this with simulations of contributor compensation in an LLM based retrieval-augmented generation (RAG) marketplace tasked with challenging medical question answering.</description>
+   <guid>oai:arXiv.org:2504.05563v2</guid>
+   <category>cs.GT</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Dongyang Fan, Tyler J. Rotello, Sai Praneeth Karimireddy</creator>
+  </item>
+  <item>
+   <title>PQFed: A Privacy-Preserving Quality-Controlled Federated Learning Framework</title>
+   <link>https://arxiv.org/abs/2509.21704</link>
+   <description>Federated learning enables collaborative model training without sharing raw data, but data heterogeneity consistently challenges the performance of the global model. Traditional optimization methods often rely on collaborative global model training involving all clients, followed by local adaptation to improve individual performance. In this work, we focus on early-stage quality control and propose PQFed, a novel privacy-preserving personalized federated learning framework that designs customized training strategies for each client prior to the federated training process. PQFed extracts representative features from each client's raw data and applies clustering techniques to estimate inter-client dataset similarity. Based on these similarity estimates, the framework implements a client selection strategy that enables each client to collaborate with others who have compatible data distributions. We evaluate PQFed on two benchmark datasets, CIFAR-10 and MNIST, integrated with three existing federated learning algorithms. Experimental results show that PQFed consistently improves the target client's model performance, even with a limited number of participants. We further benchmark PQFed against a baseline cluster-based algorithm, IFCA, and observe that PQFed also achieves better performance in low-participation scenarios. These findings highlight PQFed's scalability and effectiveness in personalized federated learning settings.</description>
+   <guid>oai:arXiv.org:2509.21704v1</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Weiqi Yue, Wenbiao Li, Yuzhou Jiang, Anisa Halimi, Roger French, Erman Ayday</creator>
+  </item>
+  <item>
+   <title>Beyond Johnson-Lindenstrauss: Uniform Bounds for Sketched Bilinear Forms</title>
+   <link>https://arxiv.org/abs/2509.21847</link>
+   <description>Uniform bounds on sketched inner products of vectors or matrices underpin several important computational and statistical results in machine learning and randomized algorithms, including the Johnson-Lindenstrauss (J-L) lemma, the Restricted Isometry Property (RIP), randomized sketching, and approximate linear algebra. However, many modern analyses involve *sketched bilinear forms*, for which existing uniform bounds either do not apply or are not sharp on general sets. In this work, we develop a general framework to analyze such sketched bilinear forms and derive uniform bounds in terms of geometric complexities of the associated sets. Our approach relies on generic chaining and introduces new techniques for handling suprema over pairs of sets. We further extend these results to the setting where the bilinear form involves a sum of $T$ independent sketching matrices and show that the deviation scales as $\sqrt{T}$. This unified analysis recovers known results such as the J-L lemma as special cases, while extending RIP-type guarantees. Additionally, we obtain improved convergence bounds for sketched Federated Learning algorithms where such cross terms arise naturally due to sketched gradient compression, and design sketched variants of bandit algorithms with sharper regret bounds that depend on the geometric complexity of the action and parameter sets, rather than the ambient dimension.</description>
+   <guid>oai:arXiv.org:2509.21847v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>stat.ML</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Rohan Deb, Qiaobo Li, Mayank Shrivastava, Arindam Banerjee</creator>
+  </item>
+  <item>
+   <title>Non-Linear Trajectory Modeling for Multi-Step Gradient Inversion Attacks in Federated Learning</title>
+   <link>https://arxiv.org/abs/2509.22082</link>
+   <description>Federated Learning (FL) preserves privacy by keeping raw data local, yet Gradient Inversion Attacks (GIAs) pose significant threats. In FedAVG multi-step scenarios, attackers observe only aggregated gradients, making data reconstruction challenging. Existing surrogate model methods like SME assume linear parameter trajectories, but we demonstrate this severely underestimates SGD's nonlinear complexity, fundamentally limiting attack effectiveness. We propose Non-Linear Surrogate Model Extension (NL-SME), the first method to introduce nonlinear parametric trajectory modeling for GIAs. Our approach replaces linear interpolation with learnable quadratic B\'ezier curves that capture SGD's curved characteristics through control points, combined with regularization and dvec scaling mechanisms for enhanced expressiveness. Extensive experiments on CIFAR-100 and FEMNIST datasets show NL-SME significantly outperforms baselines across all metrics, achieving order-of-magnitude improvements in cosine similarity loss while maintaining computational efficiency.This work exposes heightened privacy vulnerabilities in FL's multi-step update paradigm and offers novel perspectives for developing robust defense strategies.</description>
+   <guid>oai:arXiv.org:2509.22082v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CR</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Li Xia, Zheng Liu, Sili Huang, Wei Tang, Xuan Liu</creator>
+  </item>
+  <item>
+   <title>Role-Aware Multi-modal federated learning system for detecting phishing webpages</title>
+   <link>https://arxiv.org/abs/2509.22369</link>
+   <description>We present a federated, multi-modal phishing website detector that supports URL, HTML, and IMAGE inputs without binding clients to a fixed modality at inference: any client can invoke any modality head trained elsewhere. Methodologically, we propose role-aware bucket aggregation on top of FedProx, inspired by Mixture-of-Experts and FedMM. We drop learnable routing and use hard gating (selecting the IMAGE/HTML/URL expert by sample modality), enabling separate aggregation of modality-specific parameters to isolate cross-embedding conflicts and stabilize convergence. On TR-OP, the Fusion head reaches Acc 97.5% with FPR 2.4% across two data types; on the image subset (ablation) it attains Acc 95.5% with FPR 5.9%. For text, we use GraphCodeBERT for URLs and an early three-way embedding for raw, noisy HTML. On WebPhish (HTML) we obtain Acc 96.5% / FPR 1.8%; on TR-OP (raw HTML) we obtain Acc 95.1% / FPR 4.6%. Results indicate that bucket aggregation with hard-gated experts enables stable federated training under strict privacy, while improving the usability and flexibility of multi-modal phishing detection.</description>
+   <guid>oai:arXiv.org:2509.22369v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
+   <creator>Bo Wang, Imran Khan, Martin White, Natalia Beloff</creator>
+  </item>
+  <item>
+   <title>Adaptive Dual-Mode Distillation with Incentive Schemes for Scalable, Heterogeneous Federated Learning on Non-IID Data</title>
+   <link>https://arxiv.org/abs/2509.22507</link>
+   <description>Federated Learning (FL) has emerged as a promising decentralized learning (DL) approach that enables the use of distributed data without compromising user privacy. However, FL poses several key challenges. First, it is frequently assumed that every client can train the same machine learning models, however, not all clients are able to meet this assumption because of differences in their business needs and computational resources. Second, statistical heterogeneity (a.k.a. non-IID data) poses a major challenge in FL, which can lead to lower global model performance. Third, while addressing these challenges, there is a need for a cost-effective incentive mechanism to encourage clients to participate in FL training. In response to these challenges, we propose several methodologies: DL-SH, which facilitates efficient, privacy-preserving, and communication-efficient learning in the context of statistical heterogeneity; DL-MH, designed to manage fully heterogeneous models while tackling statistical disparities; and I-DL-MH, an incentive-based extension of DL-MH that promotes client engagement in federated learning training by providing incentives within this complex federated learning framework. Comprehensive experiments were carried out to assess the performance and scalability of the proposed approaches across a range of complex experimental settings. This involved utilizing various model architectures, in diverse data distributions, including IID and several non-IID scenarios, as well as multiple datasets. Experimental results demonstrate that the proposed approaches significantly enhance accuracy and decrease communication costs while effectively addressing statistical heterogeneity and model heterogeneity in comparison to existing state-of-the-art approaches and baselines, with DL-SH improving global model accuracy by 153%, and I-DL-MH achieving a 225% improvement under non-IID conditions.</description>
+   <guid>oai:arXiv.org:2509.22507v1</guid>
+   <category>cs.LG</category>
+   <category>cs.CV</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Zahid Iqbal</creator>
+  </item>
+  <item>
+   <title>Machine Learning-Assisted Sustainable Remanufacturing, Reusing and Recycling for Lithium-ion Batteries</title>
+   <link>https://arxiv.org/abs/2406.00276</link>
+   <description>The sustainable utilization of lithium-ion batteries (LIBs) is crucial to the global energy transition and carbon neutrality, yet data scarcity and heterogeneity remain major barriers across remanufacturing, reusing, and recycling. This dissertation develops a machine learning assisted framework to address these challenges throughout the battery lifecycle. A physics informed quality control model predicts long-term degradation from limited early-cycle data, while a generative learning based residual value assessment method enables rapid and accurate evaluation of retired batteries under random conditions. A federated learning strategy achieves privacy preserving and high precision cathode material sorting, supporting efficient recycling. Furthermore, a unified diagnostics and prognostics framework based on correlation alignment enhances adaptability across tasks such as state of health estimation, state of charge estimation, and remaining useful life prediction under varied testing protocols. Collectively, these contributions advance sustainable battery management by integrating physics, data generation, privacy preserving collaboration, and adaptive learning, offering methodological innovations to promote circular economy and global carbon neutrality.</description>
+   <guid>oai:arXiv.org:2406.00276v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CE</category>
+   <category>physics.data-an</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Shengyu Tao</creator>
+  </item>
+  <item>
+   <title>Whom to Trust? Adaptive Collaboration in Personalized Federated Learning</title>
+   <link>https://arxiv.org/abs/2507.00259</link>
+   <description>Data heterogeneity poses a fundamental challenge in federated learning (FL), especially when clients differ not only in distribution but also in the reliability of their predictions across individual examples. While personalized FL (PFL) aims to address this, we observe that many PFL methods fail to outperform two necessary baselines, local training and centralized training. This suggests that meaningful personalization only emerges in a narrow regime, where global models are insufficient, but collaboration across clients still holds value. Our empirical findings point to two key ingredients for success in this regime: adaptivity in collaboration and fine-grained trust, at the level of individual examples. We show that these properties can be achieved within federated semi-supervised learning, where clients exchange predictions over a shared unlabeled dataset. This enables each client to align with public consensus when it is helpful, and disregard it when it is not, without sharing model parameters or raw data. As a concrete realization of this idea, we develop FEDMOSAIC, a personalized co-training method where clients reweight their loss and their contribution to pseudo-labels based on per-example agreement and confidence. FEDMOSAIC outperforms strong FL and PFL baselines across a range of non-IID settings, and we prove convergence under standard smoothness, bounded-variance, and drift assumptions. In contrast to many of these baselines, it also outperforms local and centralized training. These results clarify when federated personalization can be effective, and how fine-grained, trust-aware collaboration enables it.</description>
+   <guid>oai:arXiv.org:2507.00259v3</guid>
+   <category>cs.LG</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Amr Abourayya, Jens Kleesiek, Bharat Rao, Michael Kamp</creator>
+  </item>
+  <item>
+   <title>Do Data Valuations Make Good Data Prices?</title>
+   <link>https://arxiv.org/abs/2504.05563</link>
+   <description>As large language models increasingly rely on external data sources, compensating data contributors has become a central concern. But how should these payments be devised? We revisit data valuations from a $\textit{market-design perspective}$ where payments serve to compensate data owners for the $\textit{private}$ heterogeneous costs they incur for collecting and sharing data. We show that popular valuation methods-such as Leave-One-Out and Data Shapley-make for poor payments. They fail to ensure truthful reporting of the costs, leading to $\textit{inefficient market}$ outcomes. To address this, we adapt well-established payment rules from mechanism design, namely Myerson and Vickrey-Clarke-Groves (VCG), to the data market setting. We show that Myerson payment is the minimal truthful mechanism, optimal from the buyer's perspective. Additionally, we identify a condition under which both data buyers and sellers are utility-satisfied, and the market achieves efficiency. Our findings highlight the importance of incorporating incentive compatibility into data valuation design, paving the way for more robust and efficient data markets. Our data market framework is readily applicable to real-world scenarios. We illustrate this with simulations of contributor compensation in an LLM based retrieval-augmented generation (RAG) marketplace tasked with challenging medical question answering.</description>
+   <guid>oai:arXiv.org:2504.05563v2</guid>
+   <category>cs.GT</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Dongyang Fan, Tyler J. Rotello, Sai Praneeth Karimireddy</creator>
+  </item>
+  <item>
+   <title>pFedMMA: Personalized Federated Fine-Tuning with Multi-Modal Adapter for Vision-Language Models</title>
+   <link>https://arxiv.org/abs/2507.05394</link>
+   <description>Vision-Language Models (VLMs) like CLIP have demonstrated remarkable generalization in zero- and few-shot settings, but adapting them efficiently to decentralized, heterogeneous data remains a challenge. While prompt tuning has emerged as a popular parameter-efficient approach in personalized federated learning, existing methods often sacrifice generalization in favor of personalization, struggling particularly on unseen classes or domains. In this work, we propose pFedMMA, the first personalized federated learning framework that leverages multi-modal adapters for vision-language tasks. Each adapter contains modality-specific up- and down-projection layers alongside a globally shared projection that aligns cross-modal features. Our optimization strategy allows clients to locally adapt to personalized data distributions while collaboratively training the shared projection to improve global generalization. This design is also communication-efficient, as only the shared component is exchanged during communication rounds. Through extensive experiments across eleven datasets, including domain- and label-shift scenarios, we show that pFedMMA achieves state-of-the-art trade-offs between personalization and generalization, outperforming recent federated prompt tuning methods.</description>
+   <guid>oai:arXiv.org:2507.05394v2</guid>
+   <category>cs.CV</category>
+   <category>cs.LG</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Sajjad Ghiasvand, Mahnoosh Alizadeh, Ramtin Pedarsani</creator>
+  </item>
+  <item>
+   <title>SuperCoder: Assembly Program Superoptimization with Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.11480</link>
+   <description>Superoptimization is the task of transforming a program into a faster one while preserving its input-output behavior. In this work, we investigate whether large language models (LLMs) can serve as superoptimizers, generating assembly programs that outperform code already optimized by industry-standard compilers. We construct the first large-scale benchmark for this problem, consisting of 8,072 real-world assembly programs averaging 130 lines, in contrast to prior datasets restricted to 2-15 straight-line, loop-free programs. We evaluate 23 LLMs on this benchmark and find that the strongest baseline, Claude-opus-4, achieves a 51.5% test-passing rate and a 1.43x average speedup over gcc -O3. To further enhance performance, we fine-tune models with reinforcement learning, optimizing a reward function that integrates correctness and performance speedup. Starting from Qwen2.5-Coder-7B-Instruct (61.4% correctness, 1.10x speedup), the fine-tuned model SuperCoder attains 95.0% correctness and 1.46x average speedup. Our results demonstrate, for the first time, that LLMs can be applied as superoptimizers for assembly programs, establishing a foundation for future research in program performance optimization beyond compiler heuristics.</description>
+   <guid>oai:arXiv.org:2505.11480v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.PF</category>
+   <category>cs.PL</category>
+   <category>cs.SE</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Anjiang Wei, Tarun Suresh, Huanmi Tan, Yinglun Xu, Gagandeep Singh, Ke Wang, Alex Aiken</creator>
+  </item>
+  <item>
+   <title>Towards Adapting Federated &amp; Quantum Machine Learning for Network Intrusion Detection: A Survey</title>
+   <link>https://arxiv.org/abs/2509.21389</link>
+   <description>This survey explores the integration of Federated Learning (FL) with Network Intrusion Detection Systems (NIDS), with particular emphasis on deep learning and quantum machine learning approaches. FL enables collaborative model training across distributed devices while preserving data privacy-a critical requirement in network security contexts where sensitive traffic data cannot be centralized. Our comprehensive analysis systematically examines the full spectrum of FL architectures, deployment strategies, communication protocols, and aggregation methods specifically tailored for intrusion detection. We provide an in-depth investigation of privacy-preserving techniques, model compression approaches, and attack-specific federated solutions for threats including DDoS, MITM, and botnet attacks. The survey further delivers a pioneering exploration of Quantum FL (QFL), discussing quantum feature encoding, quantum machine learning algorithms, and quantum-specific aggregation methods that promise exponential speedups for complex pattern recognition in network traffic. Through rigorous comparative analysis of classical and quantum approaches, identification of research gaps, and evaluation of real-world deployments, we outline a concrete roadmap for industrial adoption and future research directions. This work serves as an authoritative reference for researchers and practitioners seeking to enhance privacy, efficiency, and robustness of federated intrusion detection systems in increasingly complex network environments, while preparing for the quantum-enhanced cybersecurity landscape of tomorrow.</description>
+   <guid>oai:arXiv.org:2509.21389v1</guid>
+   <category>cs.CR</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Devashish Chaudhary, Sutharshan Rajasegarar, Shiva Raj Pokhrel</creator>
+  </item>
+  <item>
+   <title>Beyond Johnson-Lindenstrauss: Uniform Bounds for Sketched Bilinear Forms</title>
+   <link>https://arxiv.org/abs/2509.21847</link>
+   <description>Uniform bounds on sketched inner products of vectors or matrices underpin several important computational and statistical results in machine learning and randomized algorithms, including the Johnson-Lindenstrauss (J-L) lemma, the Restricted Isometry Property (RIP), randomized sketching, and approximate linear algebra. However, many modern analyses involve *sketched bilinear forms*, for which existing uniform bounds either do not apply or are not sharp on general sets. In this work, we develop a general framework to analyze such sketched bilinear forms and derive uniform bounds in terms of geometric complexities of the associated sets. Our approach relies on generic chaining and introduces new techniques for handling suprema over pairs of sets. We further extend these results to the setting where the bilinear form involves a sum of $T$ independent sketching matrices and show that the deviation scales as $\sqrt{T}$. This unified analysis recovers known results such as the J-L lemma as special cases, while extending RIP-type guarantees. Additionally, we obtain improved convergence bounds for sketched Federated Learning algorithms where such cross terms arise naturally due to sketched gradient compression, and design sketched variants of bandit algorithms with sharper regret bounds that depend on the geometric complexity of the action and parameter sets, rather than the ambient dimension.</description>
+   <guid>oai:arXiv.org:2509.21847v1</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>stat.ML</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Rohan Deb, Qiaobo Li, Mayank Shrivastava, Arindam Banerjee</creator>
+  </item>
+  <item>
+   <title>Question-Driven Analysis and Synthesis: Building Interpretable Thematic Trees with LLMs for Text Clustering and Controllable Generation</title>
+   <link>https://arxiv.org/abs/2509.22211</link>
+   <description>Unsupervised analysis of text corpora is challenging, especially in data-scarce domains where traditional topic models struggle. While these models offer a solution, they typically describe clusters with lists of keywords that require significant manual effort to interpret and often lack semantic coherence. To address this critical interpretability gap, we introduce Recursive Thematic Partitioning (RTP), a novel framework that leverages Large Language Models (LLMs) to interactively build a binary tree. Each node in the tree is a natural language question that semantically partitions the data, resulting in a fully interpretable taxonomy where the logic of each cluster is explicit. Our experiments demonstrate that RTP's question-driven hierarchy is more interpretable than the keyword-based topics from a strong baseline like BERTopic. Furthermore, we establish the quantitative utility of these clusters by showing they serve as powerful features in downstream classification tasks, particularly when the data's underlying themes correlate with the task labels. RTP introduces a new paradigm for data exploration, shifting the focus from statistical pattern discovery to knowledge-driven thematic analysis. Furthermore, we demonstrate that the thematic paths from the RTP tree can serve as structured, controllable prompts for generative models. This transforms our analytical framework into a powerful tool for synthesis, enabling the consistent imitation of specific characteristics discovered in the source corpus.</description>
+   <guid>oai:arXiv.org:2509.22211v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Tiago Fernandes Tavares</creator>
+  </item>
+  <item>
+   <title>Safety Compliance: Rethinking LLM Safety Reasoning through the Lens of Compliance</title>
+   <link>https://arxiv.org/abs/2509.22250</link>
+   <description>The proliferation of Large Language Models (LLMs) has demonstrated remarkable capabilities, elevating the critical importance of LLM safety. However, existing safety methods rely on ad-hoc taxonomy and lack a rigorous, systematic protection, failing to ensure safety for the nuanced and complex behaviors of modern LLM systems. To address this problem, we solve LLM safety from legal compliance perspectives, named safety compliance. In this work, we posit relevant established legal frameworks as safety standards for defining and measuring safety compliance, including the EU AI Act and GDPR, which serve as core legal frameworks for AI safety and data security in Europe. To bridge the gap between LLM safety and legal compliance, we first develop a new benchmark for safety compliance by generating realistic LLM safety scenarios seeded with legal statutes. Subsequently, we align Qwen3-8B using Group Policy Optimization (GRPO) to construct a safety reasoner, Compliance Reasoner, which effectively aligns LLMs with legal standards to mitigate safety risks. Our comprehensive experiments demonstrate that the Compliance Reasoner achieves superior performance on the new benchmark, with average improvements of +10.45% for the EU AI Act and +11.85% for GDPR.</description>
+   <guid>oai:arXiv.org:2509.22250v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Wenbin Hu, Huihao Jing, Haochen Shi, Haoran Li, Yangqiu Song</creator>
+  </item>
+  <item>
+   <title>Leveraging Large Language Models for Robot-Assisted Learning of Morphological Structures in Preschool Children with Language Vulnerabilities</title>
+   <link>https://arxiv.org/abs/2509.22287</link>
+   <description>Preschool children with language vulnerabilities -- such as developmental language disorders or immigration related language challenges -- often require support to strengthen their expressive language skills. Based on the principle of implicit learning, speech-language therapists (SLTs) typically embed target morphological structures (e.g., third person -s) into everyday interactions or game-based learning activities. Educators are recommended by SLTs to do the same. This approach demands precise linguistic knowledge and real-time production of various morphological forms (e.g., &quot;Daddy wears these when he drives to work&quot;). The task becomes even more demanding when educators or parent also must keep children engaged and manage turn-taking in a game-based activity. In the TalBot project our multiprofessional team have developed an application in which the Furhat conversational robot plays the word retrieval game &quot;Alias&quot; with children to improve language skills. Our application currently employs a large language model (LLM) to manage gameplay, dialogue, affective responses, and turn-taking. Our next step is to further leverage the capacity of LLMs so the robot can generate and deliver specific morphological targets during the game. We hypothesize that a robot could outperform humans at this task. Novel aspects of this approach are that the robot could ultimately serve as a model and tutor for both children and professionals and that using LLM capabilities in this context would support basic communication needs for children with language vulnerabilities. Our long-term goal is to create a robust LLM-based Robot-Assisted Language Learning intervention capable of teaching a variety of morphological structures across different languages.</description>
+   <guid>oai:arXiv.org:2509.22287v1</guid>
+   <category>cs.RO</category>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Stina Sundstedt, Mattias Wingren, Susanne H\&quot;agglund, Daniel Ventus</creator>
+  </item>
+  <item>
+   <title>Machine Learning-Assisted Sustainable Remanufacturing, Reusing and Recycling for Lithium-ion Batteries</title>
+   <link>https://arxiv.org/abs/2406.00276</link>
+   <description>The sustainable utilization of lithium-ion batteries (LIBs) is crucial to the global energy transition and carbon neutrality, yet data scarcity and heterogeneity remain major barriers across remanufacturing, reusing, and recycling. This dissertation develops a machine learning assisted framework to address these challenges throughout the battery lifecycle. A physics informed quality control model predicts long-term degradation from limited early-cycle data, while a generative learning based residual value assessment method enables rapid and accurate evaluation of retired batteries under random conditions. A federated learning strategy achieves privacy preserving and high precision cathode material sorting, supporting efficient recycling. Furthermore, a unified diagnostics and prognostics framework based on correlation alignment enhances adaptability across tasks such as state of health estimation, state of charge estimation, and remaining useful life prediction under varied testing protocols. Collectively, these contributions advance sustainable battery management by integrating physics, data generation, privacy preserving collaboration, and adaptive learning, offering methodological innovations to promote circular economy and global carbon neutrality.</description>
+   <guid>oai:arXiv.org:2406.00276v2</guid>
+   <category>cs.LG</category>
+   <category>cs.AI</category>
+   <category>cs.CE</category>
+   <category>physics.data-an</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-nd/4.0/</rights>
+   <creator>Shengyu Tao</creator>
+  </item>
+  <item>
+   <title>SuperCoder: Assembly Program Superoptimization with Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.11480</link>
+   <description>Superoptimization is the task of transforming a program into a faster one while preserving its input-output behavior. In this work, we investigate whether large language models (LLMs) can serve as superoptimizers, generating assembly programs that outperform code already optimized by industry-standard compilers. We construct the first large-scale benchmark for this problem, consisting of 8,072 real-world assembly programs averaging 130 lines, in contrast to prior datasets restricted to 2-15 straight-line, loop-free programs. We evaluate 23 LLMs on this benchmark and find that the strongest baseline, Claude-opus-4, achieves a 51.5% test-passing rate and a 1.43x average speedup over gcc -O3. To further enhance performance, we fine-tune models with reinforcement learning, optimizing a reward function that integrates correctness and performance speedup. Starting from Qwen2.5-Coder-7B-Instruct (61.4% correctness, 1.10x speedup), the fine-tuned model SuperCoder attains 95.0% correctness and 1.46x average speedup. Our results demonstrate, for the first time, that LLMs can be applied as superoptimizers for assembly programs, establishing a foundation for future research in program performance optimization beyond compiler heuristics.</description>
+   <guid>oai:arXiv.org:2505.11480v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.PF</category>
+   <category>cs.PL</category>
+   <category>cs.SE</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Anjiang Wei, Tarun Suresh, Huanmi Tan, Yinglun Xu, Gagandeep Singh, Ke Wang, Alex Aiken</creator>
+  </item>
+  <item>
+   <title>UniErase: Towards Balanced and Precise Unlearning in Language Models</title>
+   <link>https://arxiv.org/abs/2505.15674</link>
+   <description>Large language models (LLMs) require iterative updates to address the outdated information problem, where LLM unlearning offers an approach for selective removal. However, mainstream unlearning methods primarily rely on fine-tuning techniques, which often lack precision in targeted unlearning and struggle to balance unlearning efficacy with general ability under massive and sequential settings. To bridge this gap, in this work, we introduce UniErase, a novel unlearning framework that demonstrates precision and balanced performances between knowledge unlearning and ability retaining. We first propose the Unlearning Token, which is optimized to steer LLMs toward a forgetting space. To achieve concrete unlearning behaviors, we further introduce the lightweight Unlearning Edit to efficiently associate the unlearning targets with this meta-token. Serving as a new unlearning paradigm via editing, UniErase achieves outstanding performances across batch, sequential, and precise unlearning tasks under fictitious and real-world knowledge scenarios. On the TOFU benchmark, compared with 8 baselines, UniErase, modifying only $\sim$ \textbf{3.66%} of the LLM parameters, outperforms the previous best-forgetting baseline by \textbf{$\sim$ 4.01$\times$} for \textbf{model ability} with even higher unlearning efficacy. Similarly, UniErase, with better ability retention, also surpasses the previous best-retaining method by \textbf{35.96%} for \textbf{unlearning efficacy}, showing balanced and dual top-tier performances in the current unlearning community.</description>
+   <guid>oai:arXiv.org:2505.15674v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Miao Yu, Liang Lin, Guibin Zhang, Xinfeng Li, Junfeng Fang, Xingrui Yu, Ivor Tsang, Ningyu Zhang, Kun Wang, Yang Wang</creator>
+  </item>
+  <item>
+   <title>Role-Aware Multi-modal federated learning system for detecting phishing webpages</title>
+   <link>https://arxiv.org/abs/2509.22369</link>
+   <description>We present a federated, multi-modal phishing website detector that supports URL, HTML, and IMAGE inputs without binding clients to a fixed modality at inference: any client can invoke any modality head trained elsewhere. Methodologically, we propose role-aware bucket aggregation on top of FedProx, inspired by Mixture-of-Experts and FedMM. We drop learnable routing and use hard gating (selecting the IMAGE/HTML/URL expert by sample modality), enabling separate aggregation of modality-specific parameters to isolate cross-embedding conflicts and stabilize convergence. On TR-OP, the Fusion head reaches Acc 97.5% with FPR 2.4% across two data types; on the image subset (ablation) it attains Acc 95.5% with FPR 5.9%. For text, we use GraphCodeBERT for URLs and an early three-way embedding for raw, noisy HTML. On WebPhish (HTML) we obtain Acc 96.5% / FPR 1.8%; on TR-OP (raw HTML) we obtain Acc 95.1% / FPR 4.6%. Results indicate that bucket aggregation with hard-gated experts enables stable federated training under strict privacy, while improving the usability and flexibility of multi-modal phishing detection.</description>
+   <guid>oai:arXiv.org:2509.22369v1</guid>
+   <category>cs.LG</category>
+   <category>cs.DC</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://creativecommons.org/publicdomain/zero/1.0/</rights>
+   <creator>Bo Wang, Imran Khan, Martin White, Natalia Beloff</creator>
+  </item>
+  <item>
+   <title>Boosting LLM Serving through Spatial-Temporal GPU Resource Sharing</title>
+   <link>https://arxiv.org/abs/2504.19516</link>
+   <description>Modern LLM serving systems confront inefficient GPU utilization due to the fundamental mismatch between compute-intensive prefill and memory-bound decode phases. While current practices attempt to address this by organizing these phases into hybrid batches, such solutions create an inefficient tradeoff that sacrifices either throughput or latency, leaving substantial GPU resources underutilized. We identify two key root causes: 1) the prefill phase suffers from suboptimal compute utilization due to wave quantization and attention bottlenecks. 2) hybrid batches disproportionately prioritize latency over throughput, resulting in wasted compute and memory bandwidth. To mitigate the issues, we present Bullet, a novel spatial-temporal orchestration system that eliminates these inefficiencies through precise phase coordination. Bullet enables concurrent execution of prefill and decode phases, while dynamically provisioning GPU resources using real-time performance modeling. By integrating SLO-aware scheduling and adaptive resource allocation, Bullet maximizes utilization without compromising latency targets. Experimental evaluations on real-world workloads demonstrate that Bullet delivers 1.26x average throughput gains (up to 1.55x) over state-of-the-arts, while consistently meeting latency constraints.</description>
+   <guid>oai:arXiv.org:2504.19516v4</guid>
+   <category>cs.DC</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Zejia Lin, Hongxin Xu, Guanyi Chen, Zhiguang Chen, Yutong Lu, Xianwei Zhang</creator>
+  </item>
+  <item>
+   <title>I-ETL: an interoperability-aware health (meta) data pipeline to enable federated analyses</title>
+   <link>https://arxiv.org/abs/2509.22351</link>
+   <description>Clinicians are interested in better understanding complex diseases, such as cancer or rare diseases, so they need to produce and exchange data to mutualize sources and join forces. To do so and ensure privacy, a natural way consists in using a decentralized architecture and Federated Learning algorithms. This ensures that data stays in the organization in which it has been collected, but requires data to be collected in similar settings and similar models. In practice, this is often not the case because healthcare institutions work individually with different representations and raw data; they do not have means to normalize their data, and even less to do so across centers. For instance, clinicians have at hand phenotypic, clinical, imaging and genomic data (each individually collected) and want to better understand some diseases by analyzing them together. This example highlights the needs and challenges for a cooperative use of this wealth of information. We designed and implemented a framework, named I-ETL, for integrating highly heterogeneous healthcare datasets of hospitals in interoperable databases. Our proposal is twofold: (i) we devise two general and extensible conceptual models for modeling both data and metadata and (ii) we propose an Extract-Transform-Load (ETL) pipeline ensuring and assessing interoperability from the start. By conducting experiments on open-source datasets, we show that I-ETL succeeds in representing various health datasets in a unified way thanks to our two general conceptual models. Next, we demonstrate the importance of blending interoperability as a first-class citizen in integration pipelines, ensuring possible collaboration between different centers.</description>
+   <guid>oai:arXiv.org:2509.22351v1</guid>
+   <category>cs.DB</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Nelly Barret, Anna Bernasconi, Boris Bikbov, Pietro Pinoli</creator>
+  </item>
+  <item>
+   <title>Question-Driven Analysis and Synthesis: Building Interpretable Thematic Trees with LLMs for Text Clustering and Controllable Generation</title>
+   <link>https://arxiv.org/abs/2509.22211</link>
+   <description>Unsupervised analysis of text corpora is challenging, especially in data-scarce domains where traditional topic models struggle. While these models offer a solution, they typically describe clusters with lists of keywords that require significant manual effort to interpret and often lack semantic coherence. To address this critical interpretability gap, we introduce Recursive Thematic Partitioning (RTP), a novel framework that leverages Large Language Models (LLMs) to interactively build a binary tree. Each node in the tree is a natural language question that semantically partitions the data, resulting in a fully interpretable taxonomy where the logic of each cluster is explicit. Our experiments demonstrate that RTP's question-driven hierarchy is more interpretable than the keyword-based topics from a strong baseline like BERTopic. Furthermore, we establish the quantitative utility of these clusters by showing they serve as powerful features in downstream classification tasks, particularly when the data's underlying themes correlate with the task labels. RTP introduces a new paradigm for data exploration, shifting the focus from statistical pattern discovery to knowledge-driven thematic analysis. Furthermore, we demonstrate that the thematic paths from the RTP tree can serve as structured, controllable prompts for generative models. This transforms our analytical framework into a powerful tool for synthesis, enabling the consistent imitation of specific characteristics discovered in the source corpus.</description>
+   <guid>oai:arXiv.org:2509.22211v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Tiago Fernandes Tavares</creator>
+  </item>
+  <item>
+   <title>Safety Compliance: Rethinking LLM Safety Reasoning through the Lens of Compliance</title>
+   <link>https://arxiv.org/abs/2509.22250</link>
+   <description>The proliferation of Large Language Models (LLMs) has demonstrated remarkable capabilities, elevating the critical importance of LLM safety. However, existing safety methods rely on ad-hoc taxonomy and lack a rigorous, systematic protection, failing to ensure safety for the nuanced and complex behaviors of modern LLM systems. To address this problem, we solve LLM safety from legal compliance perspectives, named safety compliance. In this work, we posit relevant established legal frameworks as safety standards for defining and measuring safety compliance, including the EU AI Act and GDPR, which serve as core legal frameworks for AI safety and data security in Europe. To bridge the gap between LLM safety and legal compliance, we first develop a new benchmark for safety compliance by generating realistic LLM safety scenarios seeded with legal statutes. Subsequently, we align Qwen3-8B using Group Policy Optimization (GRPO) to construct a safety reasoner, Compliance Reasoner, which effectively aligns LLMs with legal standards to mitigate safety risks. Our comprehensive experiments demonstrate that the Compliance Reasoner achieves superior performance on the new benchmark, with average improvements of +10.45% for the EU AI Act and +11.85% for GDPR.</description>
+   <guid>oai:arXiv.org:2509.22250v1</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>new</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Wenbin Hu, Huihao Jing, Haochen Shi, Haoran Li, Yangqiu Song</creator>
+  </item>
+  <item>
+   <title>LLMAEL: Large Language Models are Good Context Augmenters for Entity Linking</title>
+   <link>https://arxiv.org/abs/2407.04020</link>
+   <description>Specialized entity linking (EL) models are well-trained at mapping mentions to unique knowledge base (KB) entities according to a given context. However, specialized EL models struggle to disambiguate long-tail entities due to their limited training data. Meanwhile, extensively pre-trained large language models (LLMs) possess broader knowledge of uncommon entities. Yet, with a lack of specialized EL training, LLMs frequently fail to generate accurate KB entity names, limiting their standalone effectiveness in EL. With the observation that LLMs are more adept at context generation instead of EL execution, we introduce LLM-Augmented Entity Linking (LLMAEL), the first framework to enhance specialized EL models with LLM data augmentation. LLMAEL leverages off-the-shelf, tuning-free LLMs as context augmenters, generating entity descriptions to serve as additional input for specialized EL models. Experiments show that LLMAEL sets new state-of-the-art results across 6 widely adopted EL benchmarks: compared to prior methods that integrate tuning-free LLMs into EL, LLMAEL achieves an absolute 8.9% gain in EL accuracy. We release our code and datasets.</description>
+   <guid>oai:arXiv.org:2407.04020v3</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Amy Xin, Yunjia Qi, Zijun Yao, Fangwei Zhu, Kaisheng Zeng, Xu Bin, Lei Hou, Juanzi Li</creator>
+  </item>
+  <item>
+   <title>SuperCoder: Assembly Program Superoptimization with Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.11480</link>
+   <description>Superoptimization is the task of transforming a program into a faster one while preserving its input-output behavior. In this work, we investigate whether large language models (LLMs) can serve as superoptimizers, generating assembly programs that outperform code already optimized by industry-standard compilers. We construct the first large-scale benchmark for this problem, consisting of 8,072 real-world assembly programs averaging 130 lines, in contrast to prior datasets restricted to 2-15 straight-line, loop-free programs. We evaluate 23 LLMs on this benchmark and find that the strongest baseline, Claude-opus-4, achieves a 51.5% test-passing rate and a 1.43x average speedup over gcc -O3. To further enhance performance, we fine-tune models with reinforcement learning, optimizing a reward function that integrates correctness and performance speedup. Starting from Qwen2.5-Coder-7B-Instruct (61.4% correctness, 1.10x speedup), the fine-tuned model SuperCoder attains 95.0% correctness and 1.46x average speedup. Our results demonstrate, for the first time, that LLMs can be applied as superoptimizers for assembly programs, establishing a foundation for future research in program performance optimization beyond compiler heuristics.</description>
+   <guid>oai:arXiv.org:2505.11480v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.PF</category>
+   <category>cs.PL</category>
+   <category>cs.SE</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Anjiang Wei, Tarun Suresh, Huanmi Tan, Yinglun Xu, Gagandeep Singh, Ke Wang, Alex Aiken</creator>
+  </item>
+  <item>
+   <title>UniErase: Towards Balanced and Precise Unlearning in Language Models</title>
+   <link>https://arxiv.org/abs/2505.15674</link>
+   <description>Large language models (LLMs) require iterative updates to address the outdated information problem, where LLM unlearning offers an approach for selective removal. However, mainstream unlearning methods primarily rely on fine-tuning techniques, which often lack precision in targeted unlearning and struggle to balance unlearning efficacy with general ability under massive and sequential settings. To bridge this gap, in this work, we introduce UniErase, a novel unlearning framework that demonstrates precision and balanced performances between knowledge unlearning and ability retaining. We first propose the Unlearning Token, which is optimized to steer LLMs toward a forgetting space. To achieve concrete unlearning behaviors, we further introduce the lightweight Unlearning Edit to efficiently associate the unlearning targets with this meta-token. Serving as a new unlearning paradigm via editing, UniErase achieves outstanding performances across batch, sequential, and precise unlearning tasks under fictitious and real-world knowledge scenarios. On the TOFU benchmark, compared with 8 baselines, UniErase, modifying only $\sim$ \textbf{3.66%} of the LLM parameters, outperforms the previous best-forgetting baseline by \textbf{$\sim$ 4.01$\times$} for \textbf{model ability} with even higher unlearning efficacy. Similarly, UniErase, with better ability retention, also surpasses the previous best-retaining method by \textbf{35.96%} for \textbf{unlearning efficacy}, showing balanced and dual top-tier performances in the current unlearning community.</description>
+   <guid>oai:arXiv.org:2505.15674v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Miao Yu, Liang Lin, Guibin Zhang, Xinfeng Li, Junfeng Fang, Xingrui Yu, Ivor Tsang, Ningyu Zhang, Kun Wang, Yang Wang</creator>
+  </item>
+  <item>
+   <title>What Factors Affect LLMs and RLLMs in Financial Question Answering?</title>
+   <link>https://arxiv.org/abs/2507.08339</link>
+   <description>Recently, the development of large language models (LLMs) and reasoning large language models (RLLMs) have gained considerable attention from many researchers. RLLMs enhance the reasoning capabilities of LLMs through Long Chain-of-Thought (Long CoT) processes, significantly improving the performance of LLMs in addressing complex problems. However, there are few works that systematically explore what methods can fully unlock the performance of LLMs and RLLMs within the financial domain. To investigate the impact of various methods on LLMs and RLLMs, we utilize five LLMs and three RLLMs to assess the effects of prompting methods, agentic frameworks, and multilingual alignment methods on financial question-answering tasks. Our research findings indicate: (1) Current prompting methods and agent frameworks enhance the performance of LLMs in financial question answering by simulating Long CoT; (2) RLLMs possess inherent Long CoT capabilities, which limits the effectiveness of conventional methods in further enhancing their performance; (3) Current advanced multilingual alignment methods primarily improve the multilingual performance of LLMs by extending the reasoning length, which yields minimal benefits for RLLMs. Additionally, we discuss strategies for enhancing the performance of LLMs and RLLMs in financial question answering, which may serve as a inspiration for future improvements. We hope that this study can serve as an important reference for LLMs and RLLMs in the field of financial question answering.</description>
+   <guid>oai:arXiv.org:2507.08339v3</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://creativecommons.org/licenses/by-nc-sa/4.0/</rights>
+   <creator>Peng Wang, Xuesi Hu, Jiageng Wu, Yuntao Zou, Qiancheng Zhang, Dagang Li</creator>
+  </item>
+  <item>
+   <title>Learning to Summarize by Learning to Quiz: Adversarial Agentic Collaboration for Long Document Summarization</title>
+   <link>https://arxiv.org/abs/2509.20900</link>
+   <description>Long document summarization remains a significant challenge for current large language models (LLMs), as existing approaches commonly struggle with information loss, factual inconsistencies, and coherence issues when processing excessively long documents. We propose SummQ, a novel adversarial multi-agent framework that addresses these limitations through collaborative intelligence between specialized agents operating in two complementary domains: summarization and quizzing. Our approach employs summary generators and reviewers that work collaboratively to create and evaluate comprehensive summaries, while quiz generators and reviewers create comprehension questions that serve as continuous quality checks for the summarization process. This adversarial dynamic, enhanced by an examinee agent that validates whether the generated summary contains the information needed to answer the quiz questions, enables iterative refinement through multifaceted feedback mechanisms. We evaluate SummQ on three widely used long document summarization benchmarks. Experimental results demonstrate that our framework significantly outperforms existing state-of-the-art methods across ROUGE and BERTScore metrics, as well as in LLM-as-a-Judge and human evaluations. Our comprehensive analyses reveal the effectiveness of the multi-agent collaboration dynamics, the influence of different agent configurations, and the impact of the quizzing mechanism. This work establishes a new approach for long document summarization that uses adversarial agentic collaboration to improve summarization quality.</description>
+   <guid>oai:arXiv.org:2509.20900v2</guid>
+   <category>cs.CL</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Weixuan Wang, Minghao Wu, Barry Haddow, Alexandra Birch</creator>
+  </item>
+  <item>
+   <title>SuperCoder: Assembly Program Superoptimization with Large Language Models</title>
+   <link>https://arxiv.org/abs/2505.11480</link>
+   <description>Superoptimization is the task of transforming a program into a faster one while preserving its input-output behavior. In this work, we investigate whether large language models (LLMs) can serve as superoptimizers, generating assembly programs that outperform code already optimized by industry-standard compilers. We construct the first large-scale benchmark for this problem, consisting of 8,072 real-world assembly programs averaging 130 lines, in contrast to prior datasets restricted to 2-15 straight-line, loop-free programs. We evaluate 23 LLMs on this benchmark and find that the strongest baseline, Claude-opus-4, achieves a 51.5% test-passing rate and a 1.43x average speedup over gcc -O3. To further enhance performance, we fine-tune models with reinforcement learning, optimizing a reward function that integrates correctness and performance speedup. Starting from Qwen2.5-Coder-7B-Instruct (61.4% correctness, 1.10x speedup), the fine-tuned model SuperCoder attains 95.0% correctness and 1.46x average speedup. Our results demonstrate, for the first time, that LLMs can be applied as superoptimizers for assembly programs, establishing a foundation for future research in program performance optimization beyond compiler heuristics.</description>
+   <guid>oai:arXiv.org:2505.11480v2</guid>
+   <category>cs.CL</category>
+   <category>cs.AI</category>
+   <category>cs.PF</category>
+   <category>cs.PL</category>
+   <category>cs.SE</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>replace-cross</announce_type>
+   <rights>http://creativecommons.org/licenses/by/4.0/</rights>
+   <creator>Anjiang Wei, Tarun Suresh, Huanmi Tan, Yinglun Xu, Gagandeep Singh, Ke Wang, Alex Aiken</creator>
+  </item>
+  <item>
+   <title>Leveraging Large Language Models for Robot-Assisted Learning of Morphological Structures in Preschool Children with Language Vulnerabilities</title>
+   <link>https://arxiv.org/abs/2509.22287</link>
+   <description>Preschool children with language vulnerabilities -- such as developmental language disorders or immigration related language challenges -- often require support to strengthen their expressive language skills. Based on the principle of implicit learning, speech-language therapists (SLTs) typically embed target morphological structures (e.g., third person -s) into everyday interactions or game-based learning activities. Educators are recommended by SLTs to do the same. This approach demands precise linguistic knowledge and real-time production of various morphological forms (e.g., &quot;Daddy wears these when he drives to work&quot;). The task becomes even more demanding when educators or parent also must keep children engaged and manage turn-taking in a game-based activity. In the TalBot project our multiprofessional team have developed an application in which the Furhat conversational robot plays the word retrieval game &quot;Alias&quot; with children to improve language skills. Our application currently employs a large language model (LLM) to manage gameplay, dialogue, affective responses, and turn-taking. Our next step is to further leverage the capacity of LLMs so the robot can generate and deliver specific morphological targets during the game. We hypothesize that a robot could outperform humans at this task. Novel aspects of this approach are that the robot could ultimately serve as a model and tutor for both children and professionals and that using LLM capabilities in this context would support basic communication needs for children with language vulnerabilities. Our long-term goal is to create a robust LLM-based Robot-Assisted Language Learning intervention capable of teaching a variety of morphological structures across different languages.</description>
+   <guid>oai:arXiv.org:2509.22287v1</guid>
+   <category>cs.RO</category>
+   <category>cs.AI</category>
+   <category>cs.HC</category>
+   <pubdate>Mon, 29 Sep 2025 00:00:00 -0400</pubdate>
+   <announce_type>cross</announce_type>
+   <rights>http://arxiv.org/licenses/nonexclusive-distrib/1.0/</rights>
+   <creator>Stina Sundstedt, Mattias Wingren, Susanne H\&quot;agglund, Daniel Ventus</creator>
+  </item>
  </channel>
 </rss>
