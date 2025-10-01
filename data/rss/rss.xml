@@ -6,9 +6,9 @@
   <description></description>
   <docs></docs>
   <language>en-us</language>
-  <lastBuildDate>Tue, 30 Sep 2025 04:15:43 </lastBuildDate>
+  <lastBuildDate>Wed, 01 Oct 2025 03:06:42 </lastBuildDate>
   <managingEditor></managingEditor>
-  <pubDate>Tue, 30 Sep 2025 04:15:43 </pubDate>
+  <pubDate>Wed, 01 Oct 2025 03:06:42 </pubDate>
   <item>
    <title>Anti-Regulatory AI: How &quot;AI Safety&quot; is Leveraged Against Regulatory Oversight</title>
    <link>https://arxiv.org/abs/2509.22872</link>
@@ -400,7 +400,7 @@
    <title>Ringleader ASGD: The First Asynchronous SGD with Optimal Time Complexity under Data Heterogeneity</title>
    <link>https://arxiv.org/abs/2509.22860</link>
    <description>Asynchronous stochastic gradient methods are central to scalable distributed optimization, particularly when devices differ in computational capabilities. Such settings arise naturally in federated learning, where training takes place on smartphones and other heterogeneous edge devices. In addition to varying computation speeds, these devices often hold data from different distributions. However, existing asynchronous SGD methods struggle in such heterogeneous settings and face two key limitations. First, many rely on unrealistic assumptions of similarity across workers' data distributions. Second, methods that relax this assumption still fail to achieve theoretically optimal performance under heterogeneous computation times. We introduce Ringleader ASGD, the first asynchronous SGD algorithm that attains the theoretical lower bounds for parallel first-order stochastic methods in the smooth nonconvex regime, thereby achieving optimal time complexity under data heterogeneity and without restrictive similarity assumptions. Our analysis further establishes that Ringleader ASGD remains optimal under arbitrary and even time-varying worker computation speeds, closing a fundamental gap in the theory of asynchronous optimization.</description>
-   <guid>oai:arXiv.org:2509.22860v1</guid>
+   <guid>oai:arXiv.org:2509.22860v2</guid>
    <category>math.OC</category>
    <category>cs.DC</category>
    <category>cs.LG</category>
@@ -680,7 +680,7 @@
    <title>TENET: Leveraging Tests Beyond Validation for Code Generation</title>
    <link>https://arxiv.org/abs/2509.24148</link>
    <description>Test-Driven Development (TDD) is a widely adopted software engineering practice that requires developers to create and execute tests alongside code implementation, ensuring that software behavior is continuously validated and refined. In the era of vibe coding, where developers increasingly delegate code writing to large language models (LLMs) by specifying high-level intentions, TDD becomes even more crucial, as test cases serve as executable specifications that explicitly define and verify intended functionality beyond what natural-language descriptions and code context can convey. While vibe coding under TDD is promising, there are three main challenges: (1) selecting a small yet effective test suite to improve the generation accuracy and control the execution workload, (2) retrieving context such as relevant code effectively, and (3) systematically using test feedback for effective code refinement. To address these challenges, we introduce TENET, an LLM agent for generating functions in complex real-world repositories under the TDD setting. TENET features three components: (1) a novel test harness mechanism that selects a concise test suite to maximize diversity of target usage scenarios; (2) a tailored agent toolset that performs efficient retrieval of relevant code with interactive debugging; and (3) a reflection-based refinement workflow that iteratively analyzes failures, replenishes context, and applies code refinement. TENET achieves 69.08% and 81.77% Pass@1 on RepoCod and RepoEval benchmarks, outperforming the best agentic baselines by 9.49 and 2.17 percentage points, respectively. In addition, this is the first study of test-driven code generation with repository-level context, examining how different aspects of test suites affect the performance of LLM agents under the TDD setting.</description>
-   <guid>oai:arXiv.org:2509.24148v1</guid>
+   <guid>oai:arXiv.org:2509.24148v2</guid>
    <category>cs.SE</category>
    <category>cs.AI</category>
    <pubdate>Tue, 30 Sep 2025 00:00:00 -0400</pubdate>
@@ -821,7 +821,7 @@
    <link>https://arxiv.org/abs/2509.23384</link>
    <description>LLM inference serving typically scales out with a two-tier architecture: a cluster router distributes requests to multiple inference engines, each of which then in turn performs its own internal scheduling. However, this commonly used paradigm suffers from critical, systemic inefficiency caused by the information gaps across two layers. At the cluster-layer, the router mainly relies on lagging, coarse-grained metrics, such as average latency and queue length to make decisions, resulting in &quot;decision lag&quot; that leads to suboptimal request routing. At the engine-layer, static heuristic scheduling policies cannot effectively handle the dynamic workloads, leading a poor balance between latency and throughput. Besides, these gaps may cause SLO violations and resource waste, especially in heterogeneous cloud environments.
   To bridge such gaps, we propose SynergySched, a cross-layer framework that shifts LLM serving system from reactive load balancing to predictive orchestration. The core of SynergySched lies in a structurally-informed online performance model that provides accurate, forward-looking per-step latency and capacity estimations. This model empowers two key components. At the engine-layer, LENS performs SLO-aware, adaptive scheduling, dynamically optimizing batching to meet SLOs under real-time loads. At the cluster-layer, PRISM uses predictive signals to perform state-driven routing, maximizing cluster-wide performance and SLO attainment. Performance evaluations show that SynergySched improves SLO attainment by 43% on average and achieves up to 3x throughput speedup in long-context and heterogeneous scenarios. Besides, we also deploy SynergySched on FlowGPT's clusters to demonstrate its advantages in production environment.</description>
-   <guid>oai:arXiv.org:2509.23384v1</guid>
+   <guid>oai:arXiv.org:2509.23384v2</guid>
    <category>cs.DC</category>
    <pubdate>Tue, 30 Sep 2025 00:00:00 -0400</pubdate>
    <announce_type>new</announce_type>
@@ -869,7 +869,7 @@
    <title>Ringleader ASGD: The First Asynchronous SGD with Optimal Time Complexity under Data Heterogeneity</title>
    <link>https://arxiv.org/abs/2509.22860</link>
    <description>Asynchronous stochastic gradient methods are central to scalable distributed optimization, particularly when devices differ in computational capabilities. Such settings arise naturally in federated learning, where training takes place on smartphones and other heterogeneous edge devices. In addition to varying computation speeds, these devices often hold data from different distributions. However, existing asynchronous SGD methods struggle in such heterogeneous settings and face two key limitations. First, many rely on unrealistic assumptions of similarity across workers' data distributions. Second, methods that relax this assumption still fail to achieve theoretically optimal performance under heterogeneous computation times. We introduce Ringleader ASGD, the first asynchronous SGD algorithm that attains the theoretical lower bounds for parallel first-order stochastic methods in the smooth nonconvex regime, thereby achieving optimal time complexity under data heterogeneity and without restrictive similarity assumptions. Our analysis further establishes that Ringleader ASGD remains optimal under arbitrary and even time-varying worker computation speeds, closing a fundamental gap in the theory of asynchronous optimization.</description>
-   <guid>oai:arXiv.org:2509.22860v1</guid>
+   <guid>oai:arXiv.org:2509.22860v2</guid>
    <category>math.OC</category>
    <category>cs.DC</category>
    <category>cs.LG</category>
@@ -1085,7 +1085,7 @@
    <title>TENET: Leveraging Tests Beyond Validation for Code Generation</title>
    <link>https://arxiv.org/abs/2509.24148</link>
    <description>Test-Driven Development (TDD) is a widely adopted software engineering practice that requires developers to create and execute tests alongside code implementation, ensuring that software behavior is continuously validated and refined. In the era of vibe coding, where developers increasingly delegate code writing to large language models (LLMs) by specifying high-level intentions, TDD becomes even more crucial, as test cases serve as executable specifications that explicitly define and verify intended functionality beyond what natural-language descriptions and code context can convey. While vibe coding under TDD is promising, there are three main challenges: (1) selecting a small yet effective test suite to improve the generation accuracy and control the execution workload, (2) retrieving context such as relevant code effectively, and (3) systematically using test feedback for effective code refinement. To address these challenges, we introduce TENET, an LLM agent for generating functions in complex real-world repositories under the TDD setting. TENET features three components: (1) a novel test harness mechanism that selects a concise test suite to maximize diversity of target usage scenarios; (2) a tailored agent toolset that performs efficient retrieval of relevant code with interactive debugging; and (3) a reflection-based refinement workflow that iteratively analyzes failures, replenishes context, and applies code refinement. TENET achieves 69.08% and 81.77% Pass@1 on RepoCod and RepoEval benchmarks, outperforming the best agentic baselines by 9.49 and 2.17 percentage points, respectively. In addition, this is the first study of test-driven code generation with repository-level context, examining how different aspects of test suites affect the performance of LLM agents under the TDD setting.</description>
-   <guid>oai:arXiv.org:2509.24148v1</guid>
+   <guid>oai:arXiv.org:2509.24148v2</guid>
    <category>cs.SE</category>
    <category>cs.AI</category>
    <pubdate>Tue, 30 Sep 2025 00:00:00 -0400</pubdate>
